@@ -1,14 +1,13 @@
 <img width="200" alt="entropyhub_logo" src="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub_profiler.png">
 
-# EntropyHub: 
-# An open-source toolkit for entropic time-series analysis.  
+# EntropyHub: ## An open-source toolkit for entropic time-series analysis.  
 
 Welcome to EntropyHub.
 
 As the name suggests, EntropyHub is a software package providing a comprehensive set of functions to calculate information-theoretic entropy measures from time-series data.
 
 Designed with all users in mind, EntropyHub is available in MatLab, Python and Julia, with a simple and consistent syntax across all three languages.
-From relatively straightforward (e.g. sample entropy) to more advanced measures (e.g. refined-composite multiscale corrected cross-conditional entropy), users can easily augment each entropy method from the command line by specifiying keyword arguments. 
+From relatively straightforward (e.g. sample entropy) to more advanced measures (e.g. composite multiscale corrected cross-conditional entropy), users can easily augment each entropy method from the command line by specifiying keyword arguments. 
 
 At present, there are 18 base/core entropy functions, 8 cross-entropy functions and 3 bidimensional entropy functions, all enabling state-space reconstruction with time-delayed embedding. In addition to these, multiscale variants of each base and cross-entropy function are also avaliable, including composite, refined and hierarchical multiscale apporaches.
 
