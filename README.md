@@ -1,4 +1,4 @@
-<img width="200" alt="entropyhub_logo" src="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/EntropyHubLogo3.png">
+<img width="150" alt="entropyhub_logo" src="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/EntropyHub_profiler.png">
 
 # EntropyHub: An open-source toolkit for entropic time-series analysis.  
 
@@ -25,7 +25,6 @@ For any questions or issues, email _entropyhubproject@gmail.com_
 
 We hope you find this software package useful.
 
-Enjoy,
 Matt
 
 
