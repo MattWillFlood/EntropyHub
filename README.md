@@ -1,6 +1,6 @@
 # EntropyHub: 
-## An open-source toolkit for entropic time-series analysis.  <img width="200" alt="entropyhub_logo" src="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub_profiler.png">
-
+## An open-source toolkit for entropic time-series analysis.  
+                                                                    <img width="200" alt="entropyhub_logo" src="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub_profiler.png">
 
 Welcome to EntropyHub.
 As the name suggests, EntropyHub is a software package providing a comprehensive set of functions to calculate information-theoretic entropy measures from time-series data.
