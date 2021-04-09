@@ -1,6 +1,6 @@
 <img width="200" alt="entropyhub_logo" src="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub_profiler.png">
 
-# EntropyHub: ## An open-source toolkit for entropic time-series analysis.  
+# EntropyHub: An open-source toolkit for entropic time-series analysis.  
 
 Welcome to EntropyHub.
 
