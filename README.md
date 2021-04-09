@@ -20,15 +20,27 @@ Any scientific outputs obtained using EntropyHub are required to include the fol
 
 **Matthew W. Flood and Bernd Grimm, _EntropyHub: An open-source toolkit for entropic time series analysis_, 2021**
 
+
 For any questions or issues, email _entropyhubproject@gmail.com_
 
+
 We hope you find this software package useful.
+
 Enjoy,
+
 Matt
 
 
 
-## Repositories
+## Installation
+
+### MatLab
+
+
+### Python
+
+
+### Julia
 
 Right now, we’re in your first GitHub **repository**. A repository is like a folder or storage space for your project. Your project's repository contains all its files such as code, documentation, images, and more. It also tracks every change that you—or your collaborators—make to each file, so you can always go back to previous versions of your project if you make any mistakes.
 
