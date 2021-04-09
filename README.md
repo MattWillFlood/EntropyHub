@@ -1,5 +1,5 @@
 # EntropyHub: An open-source toolkit for entropic time-series analysis.
-<img width="200" alt="entropyhub_logo" src="https://user-images.githubusercontent.com/18093541/63129466-956cc580-bf85-11e9-92d8-b028dd483fa5.png">
+<img width="200" alt="entropyhub_logo" src="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub_profiler.png">
 
 
 Welcome to EntropyHub.
