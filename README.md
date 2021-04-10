@@ -1,4 +1,4 @@
-<img src="https://github.com/MattWillFlood/EntropyHub/Graphics/EntropyHub_profiler.png" width="100" align="center">
+<img  width="120" src="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/EntropyHub_profiler2.png">
 
 # EntropyHub: An open-source toolkit for entropic time-series analysis. 
 
@@ -72,15 +72,15 @@ For more specific information on installation in MatLab, Python or Julia, see th
 
 Base Entropies                                        |	Function Name	
 ------------------------------------------------------|------------------
-Approximate Entropy                                	  |	ApEn
-Sample Entropy                                    		  |	SampEn
-Fuzzy Entropy                                     		  |	FuzzEn
-Kolmogorov Entropy                                		  |	K2En
-Permutation Entropy                               		  |	PermEn
-Conditional Entropy                               		  |	CondEn
-Distribution Entropy                              		  |	DistEn
-Spectral Entropy                                  		  |	SpecEn
-Dispersion Entropy                                		  |	DispEn
+Approximate Entropy                             	  |	ApEn
+Sample Entropy                                		  |	SampEn
+Fuzzy Entropy                                 		  |	FuzzEn
+Kolmogorov Entropy                            		  |	K2En
+Permutation Entropy                           		  |	PermEn
+Conditional Entropy                            		  |	CondEn
+Distribution Entropy                           		  |	DistEn
+Spectral Entropy                               		  |	SpecEn
+Dispersion Entropy                             		  |	DispEn
 Symbolic Dynamic Entropy                           	  |	SyDyEn
 Increment Entropy                                  	  |	IncrEn
 Cosine Similarity Entropy                          	  |	CoSiEn
@@ -104,11 +104,11 @@ Cross Spectral Entropy                             	  |	XSpecEn
 Cross Kolmogorov Entropy                              |	XK2En
 	
 
-Bi-Dimensional Entropies                              |	Function Name
+Bidimensional Entropies                              |	Function Name
 ------------------------------------------------------|------------------
-Bi-Dimensional Sample Entropy                         |	SampEn2D
-Bi-Dimensional Fuzzy Entropy                          |	FuzzEn2D
-Bi-Dimensional Distribution Entropy                   |	DistEn2D
+Bidimensional Sample Entropy                         |	SampEn2D
+Bidimensional Fuzzy Entropy                          |	FuzzEn2D
+Bidimensional Distribution Entropy                   |	DistEn2D
 	
 
 Multiscale Entropy Functions                          | Function Name
@@ -120,18 +120,18 @@ Refined-Composite Multiscale Entropy                  | rcMSEn
 Hierarchical Multiscale Entropy Object                | hMSEn
 
 
-Multiscale Entropies	MSEn                             |	Function Name
-------------------------------------------------------|------------------
+Multiscale Entropies	MSEn                             |	
+------------------------------------------------------|
 Multiscale Sample Entropy                             |	
 Multiscale Approximate Entropy                        |	
 Multiscale Fuzzy Entropy                              |	
 Multiscale Permutation Entropy                        |	
 Multiscale Dispersion Entropy                         |	
 Multiscale Cosine Similarity Entropy                  |	
-Multiscale Symblic Dynamic Entropy                    |	MSobject
-Multiscale Conditional Entropy                        |	     +
-Multiscale Entropy of Entropy                         | MSEn / cMSEn
-Multiscale Gridded Distribution Entropy               |	rMSEn / hMSEn
+Multiscale Symblic Dynamic Entropy                    |	
+Multiscale Conditional Entropy                        |	    
+Multiscale Entropy of Entropy                         | 
+Multiscale Gridded Distribution Entropy               |	
 Multiscale Slope Entropy                              |
 Multiscale Phase Entropy                              |		
 Multiscale Kolmogorov Entropy                         |	
@@ -150,13 +150,13 @@ Refined-Composite Multiscale Cross-Entropy            |   rcXMSEn
 Hierarchical Multiscale Entropy Object                |   hXMSEn
 
 
-Multiscale Cross-Entropies                            |	Function Name
-------------------------------------------------------|------------------
+Multiscale Cross-Entropies                            |	
+------------------------------------------------------|
 Multiscale Cross-Sample Entropy                       |	
 Multiscale Cross-Approximate Entropy                  |	
-Multiscale Cross-Fuzzy Entropy                        |	MSobject
-Multiscale Cross-Permutation Entropy                  |	    +
-Multiscale Cross-Distribution Entropy                 |	XMSEn / cXMSEn
-Multiscale Cross-Kolmogorov Entropy                   | rXMSEn / hXMSEn
+Multiscale Cross-Fuzzy Entropy                        |	
+Multiscale Cross-Permutation Entropy                  |	    
+Multiscale Cross-Distribution Entropy                 |	
+Multiscale Cross-Kolmogorov Entropy                   | 
 Multiscale Cross-Conditional Entropy                  |	
 
