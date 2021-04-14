@@ -116,12 +116,12 @@ Multiscale Entropy Functions                          | Function Name
 ------------------------------------------------------|------------------
 Multiscale Entropy                                    | MSEn
 Composite Multiscale Entropy                          | cMSEn
++ Refined-Composite Multiscale Entropy                | 
 Refined Multiscale Entropy                            | rMSEn
-Refined-Composite Multiscale Entropy                  | rcMSEn
 Hierarchical Multiscale Entropy Object                | hMSEn
 
 
-Multiscale Entropies	MSEn                             |	
+Multiscale Entropies	MSEn                          |	
 ------------------------------------------------------|
 Multiscale Sample Entropy                             |	
 Multiscale Approximate Entropy                        |	
@@ -146,8 +146,8 @@ Multiscale Cross-Entropy Functions                    | Function Name
 ------------------------------------------------------|------------------
 Multiscale Cross-Entropy                              |   XMSEn
 Composite Cross-Entropy                               |   cXMSEn
++ Refined-Composite Multiscale Cross-Entropy          |   
 Refined Multiscale Entropy                            |   rXMSEn
-Refined-Composite Multiscale Cross-Entropy            |   rcXMSEn
 Hierarchical Multiscale Entropy Object                |   hXMSEn
 
 
