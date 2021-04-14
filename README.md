@@ -10,17 +10,18 @@ EntropyHub is a software package providing a comprehensive set of functions to c
 Designed with all users in mind, EntropyHub is available in MatLab, Python and Julia, with a simple and consistent syntax across all three languages.
 From relatively straightforward measures (e.g. sample entropy) to more advanced measures (e.g. composite multiscale corrected cross-conditional entropy), users can easily augment each entropy method at the command line by specifiying keyword arguments. 
 
-Functions cover base/core entropies (e.g. approximate entropy, sample entropy, etc.), cross-entropies (e.g. cross-permutation entropy, cross-Kolmogorov entropy) and bidimensional [2D] entropies (e.g. bidimensional fuzzy entropy, bidimensional distribution entropy), all featuring time-delayed embedding. 
+Functions cover base/core entropies, cross-entropies and bidimensional [2D] entropies, all featuring time-delayed embedding. 
 Multiscale variants of each base and cross-entropy function are also avaliable, including composite, refined and hierarchical multiscale approaches.
+See the tables below for a full list of available functions.
 
 EntropyHub aims to make the process of measuring the complex simple. 
 As more methods of deriving approximating entropy emerge in the scientific literature, EntropyHub will be updated accordingly.
 
 This package is open for use by all in accordance with the terms of the attached License agreement.
 
-Any scientific outputs obtained using EntropyHub are required to include the following citation:
+Any research outputs obtained using EntropyHub are required to include the following citation:
 
-  **Matthew W. Flood and Bernd Grimm, _EntropyHub: An open-source toolkit for entropic time series analysis_, 2021**
+  **Matthew W. Flood and Bernd Grimm,   _EntropyHub: An open-source toolkit for entropic time series analysis_, 2021**
 
 
 For any questions or issues, email _entropyhubproject@gmail.com_
