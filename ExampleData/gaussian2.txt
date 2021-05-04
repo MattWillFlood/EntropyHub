@@ -1,3 +1,5 @@
+Normally distributed randon numbers with 0 mean and unit standard deviation
+
   -8.8312345e-01   7.8190383e-02
   -1.5294067e-01   1.9799754e+00
    7.9241879e-01   6.9681342e-01

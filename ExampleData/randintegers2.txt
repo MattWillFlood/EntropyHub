@@ -1,3 +1,5 @@
+Uniformly distributed pseudorandom integers in range [0 8]
+
    5.0000000e+00   1.0000000e+00
    8.0000000e+00   5.0000000e+00
    1.0000000e+00   8.0000000e+00
