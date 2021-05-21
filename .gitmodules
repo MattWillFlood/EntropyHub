@@ -1,0 +1,3 @@
+[submodule "EntropyHub - Julia"]
+	path = EntropyHub - Julia
+	url = https://github.com/MattWillFlood/EntropyHub.jl
