@@ -29,6 +29,6 @@ EntropyHubPy/
 
 EntropyHubMat/
 
-!Guide/EntropyHub Guide.pdf
+Guide/*
 
-Guide/
+!Guide/EntropyHub Guide.pdf
