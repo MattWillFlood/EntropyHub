@@ -1,0 +1,401 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>EntropyHub: Julia &mdash; EntropyHub 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="EntropyHub: Julia" href="jlexamples.html" />
+    <link rel="prev" title="Example 10: Bidimensional Fuzzy Entropy" href="../python/Examples/Ex10.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> EntropyHub
+          
+
+          
+            
+            <img src="../_static/Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Home.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../EHupdates.html">Latest Updates</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../matlab/EHmatlab.html">EntropyHub - MatLab</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../matlab/matAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matBase.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matCross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matMultiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matMultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../matlab/matexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../python/EHpython.html">EntropyHub - Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../python/pyAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/Base.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/Cross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/Multiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/MultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/Bidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../python/pyexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EntropyHub - Julia</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="jlexamples.html">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">EntropyHub</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>EntropyHub: Julia</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/julia/EHjulia.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="entropyhub-julia">
+<h1>EntropyHub: Julia<a class="headerlink" href="#entropyhub-julia" title="Permalink to this headline">¶</a></h1>
+<p class="centered">
+<strong>Links to installation files: <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Julia">GitHub</a> || <a href="#id1"><span class="problematic" id="id2">`Julia Registries &lt;&gt;`_</span></a></strong></p><p><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/dev">EntropyHub.jl</a> is the EntropyHub package for <em>Julia</em>.
+The complete documentation for <a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/dev">EntropyHub.jl can be found here</a></p>
+<a class="reference external image-reference" href="https://mattwillflood.github.io/EntropyHub.jl/dev"><img alt="../_images/EntropyHubJuliaLogo.png" class="align-center" src="../_images/EntropyHubJuliaLogo.png" style="width: 250px; height: 350px;" /></a>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="requirements-installation">
+<h2>Requirements &amp; Installation:<a class="headerlink" href="#requirements-installation" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>There are several package dependencies which will be installed alongside EntropyHub (if not already installed):</dt><dd><ul class="simple">
+<li><p><em>DSP</em>, <em>FFTW</em></p></li>
+<li><p><em>HTTP</em>, <em>DelimitedFiles</em></p></li>
+<li><p><em>Random</em></p></li>
+<li><p><em>Plots</em></p></li>
+<li><p><em>StatsBase</em>, <em>StatsFuns</em>, <em>Statistics</em></p></li>
+<li><p><em>GroupSlices</em>, <em>Combinatorics</em>, <em>Clustering</em></p></li>
+<li><p><em>LinearAlgebra</em>, <em>Dierckx</em></p></li>
+</ul>
+</dd>
+</dl>
+<p>EntropyHub was designed using Julia 1.5 and is intended for use with Julia versions &gt;= 1.2.</p>
+<hr class="docutils" />
+<p>There are two ways to install EntropyHub for Julia.</p>
+<div class="section" id="method-1">
+<h3>Method 1:<a class="headerlink" href="#method-1" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ol class="arabic">
+<li><p>In Julia, open the package REPL by typing <code class="docutils literal notranslate"><span class="pre">]</span></code>. The command line should appear as:</p>
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span> <span class="o">&gt;</span> <span class="p">]</span>
+
+<span class="nd">@vX</span><span class="o">.</span><span class="n">Y</span><span class="o">.</span> <span class="n">pkg</span> <span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Where X and Y refer to your version of Julia.</p>
+</li>
+<li><p>Type:</p>
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="nd">@vX</span><span class="o">.</span><span class="n">Y</span><span class="o">.</span> <span class="n">pkg</span> <span class="o">&gt;</span> <span class="n">add</span> <span class="n">EntropyHub</span>
+</pre></div>
+</div>
+<p>(Note: this is <strong>case sensitive</strong>)</p>
+</li>
+</ol>
+<p>Alternatively, one can use the <code class="docutils literal notranslate"><span class="pre">Pkg</span></code> module to perform the same procedure:</p>
+<blockquote>
+<div><div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span> <span class="o">&gt;</span> <span class="k">using</span> <span class="n">Pkg</span>
+<span class="n">julia</span> <span class="o">&gt;</span> <span class="n">Pkg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">&quot;EntropyHub&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="method-2">
+<h3>Method 2:<a class="headerlink" href="#method-2" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ol class="arabic">
+<li><p>In Julia, open the package REPL by typing <code class="docutils literal notranslate"><span class="pre">]</span></code>. The command line should appear as:</p>
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span> <span class="o">&gt;</span> <span class="p">]</span>
+
+<span class="nd">@vX</span><span class="o">.</span><span class="n">Y</span><span class="o">.</span> <span class="n">pkg</span> <span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Where X and Y refer to your version of Julia.</p>
+</li>
+<li><p>Type:</p>
+<blockquote>
+<div><p>&#64;vX.Y. pkg &gt;  add <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub.jl">https://github.com/MattWillFlood/EntropyHub.jl</a></p>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p>To use EntropyHub after installing, type:</p>
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span> <span class="o">&gt;</span> <span class="k">using</span> <span class="n">EntropyHub</span>
+</pre></div>
+</div>
+<p>To check that EntropyHub has been correctly installed and loaded, type:</p>
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span> <span class="o">&gt;</span> <span class="n">EntropyHub</span><span class="o">.</span><span class="n">greet</span><span class="p">()</span>
+
+    <span class="n">___</span>  <span class="n">_</span>   <span class="n">_</span>  <span class="n">_____</span>  <span class="n">_____</span>  <span class="n">____</span>  <span class="n">____</span>  <span class="n">_</span>     <span class="n">_</span>
+   <span class="o">|</span>  <span class="n">_</span><span class="o">||</span> <span class="o">\</span> <span class="o">|</span> <span class="o">||</span><span class="n">_</span>   <span class="n">_</span><span class="o">||</span>     <span class="o">\|</span>    <span class="o">||</span>    <span class="o">||</span> <span class="o">\</span>   <span class="o">/</span> <span class="o">|</span>   <span class="n">___________</span>
+   <span class="o">|</span> <span class="o">\</span><span class="n">_</span> <span class="o">|</span>  <span class="o">\|</span> <span class="o">|</span>  <span class="o">|</span> <span class="o">|</span>  <span class="o">|</span>   <span class="n">__</span><span class="o">/|</span>    <span class="o">||</span>  <span class="n">__</span><span class="o">|</span> <span class="o">\</span> <span class="o">\</span><span class="n">_</span><span class="o">/</span> <span class="o">/</span>   <span class="o">/</span>  <span class="n">_______</span>  <span class="o">\</span>
+   <span class="o">|</span>  <span class="n">_</span><span class="o">||</span> <span class="o">\</span> <span class="o">\</span> <span class="o">|</span>  <span class="o">|</span> <span class="o">|</span>  <span class="o">|</span>   <span class="o">\</span>  <span class="o">|</span>    <span class="o">||</span> <span class="o">|</span>     <span class="o">\</span>   <span class="o">/</span>   <span class="o">|</span>  <span class="o">/</span>  <span class="n">___</span>  <span class="o">\</span>  <span class="o">|</span>
+   <span class="o">|</span> <span class="o">\</span><span class="n">_</span> <span class="o">|</span> <span class="o">|\</span>  <span class="o">|</span>  <span class="o">|</span> <span class="o">|</span>  <span class="o">|</span> <span class="o">|\</span> <span class="o">\</span> <span class="o">|</span>    <span class="o">||</span> <span class="o">|</span>      <span class="o">|</span> <span class="o">|</span>    <span class="o">|</span> <span class="o">|</span>  <span class="o">/</span>   <span class="o">\</span>  <span class="o">|</span> <span class="o">|</span>
+   <span class="o">|</span><span class="n">___</span><span class="o">||</span><span class="n">_</span><span class="o">|</span> <span class="o">\</span><span class="n">_</span><span class="o">|</span>  <span class="o">|</span><span class="n">_</span><span class="o">|</span>  <span class="o">|</span><span class="n">_</span><span class="o">|</span> <span class="o">\</span><span class="n">_</span><span class="o">||</span><span class="n">____</span><span class="o">||</span><span class="n">_</span><span class="o">|</span>      <span class="o">|</span><span class="n">_</span><span class="o">|</span>   <span class="n">_</span><span class="o">|</span><span class="n">_</span><span class="o">|</span><span class="n">__</span><span class="o">\</span><span class="n">___</span><span class="o">/</span>  <span class="o">|</span> <span class="o">|</span>
+   <span class="n">_</span>   <span class="n">_</span>  <span class="n">_</span>   <span class="n">_</span>  <span class="n">____</span>                           <span class="o">/</span> <span class="o">|</span><span class="n">__</span><span class="o">\</span><span class="n">______</span><span class="o">\/</span>  <span class="o">|</span>
+   <span class="o">|</span> <span class="o">|</span> <span class="o">|</span> <span class="o">||</span> <span class="o">|</span> <span class="o">|</span> <span class="o">||</span>    <span class="o">\</span>     <span class="n">An</span> <span class="n">open</span><span class="o">-</span><span class="n">source</span>      <span class="o">|</span>  <span class="o">/\</span><span class="n">______</span><span class="o">\</span><span class="n">__</span><span class="o">|</span><span class="n">_</span><span class="o">/</span>
+   <span class="o">|</span> <span class="o">|</span><span class="n">_</span><span class="o">|</span> <span class="o">||</span> <span class="o">|</span> <span class="o">|</span> <span class="o">||</span>    <span class="o">|</span>     <span class="n">toolkit</span> <span class="k">for</span>         <span class="o">|</span> <span class="o">|</span>  <span class="o">/</span>   <span class="o">\</span>  <span class="o">|</span> <span class="o">|</span>
+   <span class="o">|</span>  <span class="n">_</span>  <span class="o">||</span> <span class="o">|</span> <span class="o">|</span> <span class="o">||</span>    <span class="o">\</span>     <span class="n">entropic</span> <span class="n">time</span><span class="o">-</span>      <span class="o">|</span> <span class="o">|</span>  <span class="o">\</span><span class="n">___</span><span class="o">/</span>  <span class="o">|</span> <span class="o">|</span>
+   <span class="o">|</span> <span class="o">|</span> <span class="o">|</span> <span class="o">||</span> <span class="o">|</span><span class="n">_</span><span class="o">|</span> <span class="o">||</span>     <span class="o">\</span>    <span class="n">series</span> <span class="n">analysis</span>     <span class="o">|</span>  <span class="o">\</span><span class="n">_______</span><span class="o">/</span>  <span class="o">|</span>
+   <span class="o">|</span><span class="n">_</span><span class="o">|</span> <span class="o">|</span><span class="n">_</span><span class="o">|\</span><span class="n">_____</span><span class="o">/|</span><span class="n">_____</span><span class="o">/</span>                         <span class="o">\</span><span class="n">___________</span><span class="o">/</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="documentation-help">
+<h2>Documentation &amp; Help:<a class="headerlink" href="#documentation-help" title="Permalink to this headline">¶</a></h2>
+<p>A key advantage of EntropyHub is the comprehensive documentation available to help users to make the most of the toolkit.</p>
+<p>To learn more about a specific function, one can do so easily from the command line by typing: <strong>?</strong>,
+which will open the julia help system, and then typing the function name.</p>
+<p>For example:</p>
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span><span class="o">&gt;</span> <span class="o">?</span>
+<span class="n">help</span><span class="o">?&gt;</span> <span class="n">SampEn</span>     <span class="c"># Documentation on sample entropy function</span>
+
+<span class="n">julia</span><span class="o">&gt;</span> <span class="o">?</span>
+<span class="n">help</span><span class="o">?&gt;</span> <span class="n">XSpecEn</span>    <span class="c"># Documentation on cross-spectral entropy function</span>
+
+<span class="n">julia</span><span class="o">&gt;</span> <span class="o">?</span>
+<span class="n">help</span><span class="o">?&gt;</span> <span class="n">hXMSEn</span>     <span class="c"># Documentation on hierarchical multiscale cross-entropy function</span>
+</pre></div>
+</div>
+<p>All information on the EntropyHub package is detailed in the <em>EntropyHub Guide</em>,
+a .pdf document available to <a class="reference download internal" download="" href="../_downloads/40d9c1910993d9509e60865d940bb066/EntropyHubGuide.pdf"><code class="xref download docutils literal notranslate"><span class="pre">download</span> <span class="pre">here</span></code></a>.</p>
+<p>The EntropyHub Julia API can be found at <a class="reference external" href="https://MattWillFlood.github.io/EntropyHub.jl/stable">https://MattWillFlood.github.io/EntropyHub.jl/stable</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="jlexamples.html" class="btn btn-neutral float-right" title="EntropyHub: Julia" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../python/Examples/Ex10.html" class="btn btn-neutral float-left" title="Example 10: Bidimensional Fuzzy Entropy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Matthew W. Flood.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

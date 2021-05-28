@@ -1,0 +1,586 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Bidimensional Entropies &mdash; EntropyHub 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Python Examples:" href="../pyexamples.html" />
+    <link rel="prev" title="Multiscale Cross-Entropies" href="MultiscaleCross.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> EntropyHub
+          
+
+          
+            
+            <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Home.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../EHupdates.html">Latest Updates</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../matlab/EHmatlab.html">EntropyHub - MatLab</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../matlab/matAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matBase.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matCross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../matlab/matexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../EHpython.html">EntropyHub - Python</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../pyAPI.html">API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Base.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Cross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Multiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="MultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pyexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../julia/jlexamples.html">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">EntropyHub</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../EHpython.html">EntropyHub: Python</a> &raquo;</li>
+        
+          <li><a href="../pyAPI.html">Python Functions:</a> &raquo;</li>
+        
+      <li>Bidimensional Entropies</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/python/Functions/Bidimensional.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bidimensional-entropies">
+<h1>Bidimensional Entropies<a class="headerlink" href="#bidimensional-entropies" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="functions-for-estimating-the-entropy-of-a-two-dimensional-univariate-matrix">
+<h2>Functions for estimating the entropy of a two-dimensional univariate matrix.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-two-dimensional-univariate-matrix" title="Permalink to this headline">¶</a></h2>
+<p>While EntropyHub functions primarily apply to time series data, with the following
+bidimensional entropy functions one can estimate the entropy of two-dimensional (2D)
+matrices. Hence, bidimensional entropy functions are useful for applications such as image analysis.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p><code class="docutils literal notranslate"><span class="pre">IMPORTANT:</span> <span class="pre">Locked</span> <span class="pre">Matrix</span> <span class="pre">Size</span></code></p>
+<p>Each bidimensional entropy function (<code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>) has
+an important keyword argument - <code class="docutils literal notranslate"><span class="pre">Lock</span></code>. Bidimensional entropy functions are
+“locked” by default (<code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">==</span> <span class="pre">true</span></code>) to only permit matrices with a maximum size of 128 x 128.</p>
+<p>The reason for this is because there are hundreds of millions of pairwise calculations
+performed in the estimation of bidimensional entropy, so memory errors often
+occur when storing data on RAM.</p>
+<p>e.g. For a matrix of size [200 x 200], an embedding dimension (<code class="docutils literal notranslate"><span class="pre">m</span></code>) = 3, and a time
+delay (<code class="docutils literal notranslate"><span class="pre">tau</span></code>) = 1, there are 753,049,836 pairwise matrix comparisons (6,777,448,524
+elemental subtractions).
+To pass matrices with sizes greater than [128 x 128], set <cite>Lock = false</cite>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">CAUTION:</span> <span class="pre">unlocking</span> <span class="pre">the</span> <span class="pre">permitted</span> <span class="pre">matrix</span> <span class="pre">size</span> <span class="pre">may</span> <span class="pre">cause</span> <span class="pre">your</span> <span class="pre">Julia</span> <span class="pre">IDE</span> <span class="pre">to</span> <span class="pre">crash.</span></code></p>
+</div>
+<p>These functions are directly available when EntropyHub is imported:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">EntropyHub</span> <span class="k">as</span> <span class="nn">EH</span>
+
+<span class="nb">dir</span><span class="p">(</span><span class="n">EH</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<span class="target" id="module-EntropyHub"></span><dl class="py function">
+<dt id="EntropyHub.DistEn2D">
+<code class="sig-name descname"><span class="pre">DistEn2D</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Sturges'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DistEn2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>DistEn2D  Estimates the bidimensional distribution entropy of a data matrix.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Dist2D</span> <span class="o">=</span> <span class="n">DistEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the bidimensional distribution entropy estimate (<code class="docutils literal notranslate"><span class="pre">Dist2D</span></code>)
+estimated for the data matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the default parameters:
+time delay = 1, binning method = ‘sturges’, logarithm = natural, 
+matrix template size = [floor(H/10) floor(W/10)] (where H and W represent
+the height (rows) and width (columns) of the data matrix <code class="docutils literal notranslate"><span class="pre">Mat</span></code>) 
+* The minimum dimension size of <code class="docutils literal notranslate"><span class="pre">Mat</span></code> must be &gt; 10.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Dist2D</span> <span class="o">=</span> <span class="n">DistEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the bidimensional distribution entropy (<code class="docutils literal notranslate"><span class="pre">Dist2D</span></code>) estimate for 
+the data matrix (Mat) using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Template submatrix dimensions, an integer scalar (for sub-matrix with same height and width) or a two-element tuple of integers [height, width] with a minimum value &gt; 1. (default: [floor(H/10) floor(W/10)])</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer  (default: 1)</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Bins</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Histogram bin selection method for distance distribution, one of the following:</p></li>
+</ul>
+<ul class="simple">
+<li><p>an integer &gt; 1 indicating the number of bins,</p></li>
+<li><p>or one of the following strings {<code class="docutils literal notranslate"><span class="pre">'sturges'</span></code>, <code class="docutils literal notranslate"><span class="pre">'sqrt'</span></code>, <code class="docutils literal notranslate"><span class="pre">'rice'</span></code>, <code class="docutils literal notranslate"><span class="pre">'doanes'</span></code>} [default: ‘sturges’]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Logx</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Logarithm base, a positive scalar (enter 0 for natural log)</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Norm</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Normalisation of Dist2D value, one of the following integers:</p></li>
+</ul>
+<ul class="simple">
+<li><p>[0]  no normalisation.</p></li>
+<li><p>[1]  normalises values of data matrix (Mat) to range [0 1].</p></li>
+<li><p>[2]  normalises values of data matrix (Mat) to range [0 1], and normalises the distribution entropy value (<code class="docutils literal notranslate"><span class="pre">Dist2D</span></code>) w.r.t the number of histogram bins.  [default]</p></li>
+<li><p>[3]  normalises the distribution entropy value (<code class="docutils literal notranslate"><span class="pre">Dist2D</span></code>) w.r.t the number of histogram bins, without normalising  data matrix values.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Lock</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>By default, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code> only permits matrices with a maximum size of 128 x 128 to prevent RAM overload.</p></li>
+</ul>
+<p>e.g. For <code class="docutils literal notranslate"><span class="pre">Mat</span></code> = [200 x 200], <code class="docutils literal notranslate"><span class="pre">m</span></code> = 3, and <code class="docutils literal notranslate"><span class="pre">tau</span></code> = 1, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code> 
+creates a vector of 753049836 elements. To enable matrices greater than [128 x 128] elements, set <code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">=</span> <span class="pre">False</span></code> (default: True)</p>
+<p><code class="docutils literal notranslate"><span class="pre">CAUTION:</span> <span class="pre">unlocking</span> <span class="pre">the</span> <span class="pre">permitted</span> <span class="pre">matrix</span> <span class="pre">size</span> <span class="pre">may</span> <span class="pre">cause</span> <span class="pre">memory</span></code>
+<code class="docutils literal notranslate"><span class="pre">errors</span> <span class="pre">that</span> <span class="pre">could</span> <span class="pre">lead</span> <span class="pre">your</span> <span class="pre">Python</span> <span class="pre">IDE</span> <span class="pre">to</span> <span class="pre">crash.</span></code></p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">DistEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XDistEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Hamed Azami, Javier Escudero and Anne Humeau-Heurtier,</dt><dd><p>“Bidimensional distribution entropy to analyze the irregularity
+of small-sized textures.”
+IEEE Signal Processing Letters 
+24.9 (2017): 1338-1342.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.FuzzEn2D">
+<code class="sig-name descname"><span class="pre">FuzzEn2D</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>FuzzEn2D  estimates the bidimensional fuzzy entropy of a data matrix.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Fuzz2D</span> <span class="o">=</span> <span class="n">FuzzEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the bidimensional fuzzy entropy estimate (<code class="docutils literal notranslate"><span class="pre">Fuzz2D</span></code>) estimated for 
+the data matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the default parameters: time delay = 1,
+fuzzy function (<code class="docutils literal notranslate"><span class="pre">Fx</span></code>) = <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, fuzzy function parameters (<code class="docutils literal notranslate"><span class="pre">r</span></code>) = (0.2, 2,
+logarithm = natural, matrix template size = [floor(H/10) floor(W/10)] 
+(where H and W represent the height (rows) and width (columns) of the data matrix <code class="docutils literal notranslate"><span class="pre">'Mat'</span></code>) 
+** The minimum number of rows and columns of Mat must be &gt; 10.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Fuzz2D</span> <span class="o">=</span> <span class="n">FuzzEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the bidimensional fuzzy entropy (<code class="docutils literal notranslate"><span class="pre">Fuzz2D</span></code>) estimates for the data
+matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Template submatrix dimensions, an integer (for sub-matrix with same height and width) or a two-element vector of integers [height, width] with a minimum value &gt; 1.  (default: [floor(H/10) floor(W/10)])</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer  (default: 1)</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Fx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Fuzzy funtion name, one of the following:</p></li>
+</ul>
+<p>{<code class="docutils literal notranslate"><span class="pre">'sigmoid'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modsampen'</span></code>, <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gudermannian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'linear'</span></code>}</p>
+</dd>
+<dt class="field-even">r</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Fuzzy function parameters, a 1 element scalar or a 2 element vector of positive values.</p></li>
+</ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy function are defined as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>sigmoid:      </dt><dd><p>r(1) = divisor of the exponential argument
+r(2) = value subtracted from argument (pre-division)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>modsampen:    </dt><dd><p>r(1) = divisor of the exponential argument
+r(2) = value subtracted from argument (pre-division)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>default:  </dt><dd><p>r(1) = divisor of the exponential argument
+r(2) = argument exponent (pre-division)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>gudermannian:   </dt><dd><p>r  = a scalar whose value is the numerator of  argument to gudermannian function:
+GD(x) = atan(tanh(r/x)). GD(x) is normalised to have a maximum value of 1.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>linear:        </dt><dd><p>r  = an integer value. When r = 0, the argument of the exponential function is 
+normalised between [0 1]. When r = 1, the minimuum value of the exponential argument is set to 0.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</dd>
+<dt class="field-odd">Logx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar    (default: natural)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Lock</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>By default, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code> only permits matrices with a maximum  size of 128 x 128 to prevent RAM overload.</p></li>
+</ul>
+<p>e.g. For <code class="docutils literal notranslate"><span class="pre">Mat</span></code> = [200 x 200], <code class="docutils literal notranslate"><span class="pre">m</span></code> = 3, and <code class="docutils literal notranslate"><span class="pre">tau</span></code> = 1, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code> 
+creates a vector of 753049836 elements. To enable matrices greater than [128 x 128] elements, set <code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">=</span> <span class="pre">False</span></code> (default: True)</p>
+<p><code class="docutils literal notranslate"><span class="pre">CAUTION:</span> <span class="pre">unlocking</span> <span class="pre">the</span> <span class="pre">permitted</span> <span class="pre">matrix</span> <span class="pre">size</span> <span class="pre">may</span> <span class="pre">cause</span> <span class="pre">memory</span></code>
+<code class="docutils literal notranslate"><span class="pre">errors</span> <span class="pre">that</span> <span class="pre">could</span> <span class="pre">lead</span> <span class="pre">your</span> <span class="pre">Python</span> <span class="pre">IDE</span> <span class="pre">to</span> <span class="pre">crash.</span></code></p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Luiz Fernando Segato Dos Santos, et al.,</dt><dd><p>“Multidimensional and fuzzy sample entropy (SampEnMF) for
+quantifying H&amp;E histological images of colorectal cancer.”
+Computers in biology and medicine 
+103 (2018): 148-160.</p>
+</dd>
+<dt>[2] Mirvana Hilal and Anne Humeau-Heurtier,</dt><dd><p>“Bidimensional fuzzy entropy: Principle analysis and biomedical
+applications.”
+41st Annual International Conference of the IEEE (EMBC) Society
+2019.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.SampEn2D">
+<code class="sig-name descname"><span class="pre">SampEn2D</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SampEn2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>SampEn2D  Estimates the bidimensional sample entropy of a data matrix.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SE2D</span><span class="p">,</span> <span class="n">Phi1</span><span class="p">,</span> <span class="n">Phi2</span> <span class="o">=</span> <span class="n">SampEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the bidimensional sample entropy estimate (<code class="docutils literal notranslate"><span class="pre">SE2D</span></code>) and the number
+of matched sub-matricess (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">Phi1</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">Phi2</span></code>) estimated for the data 
+matrix (Mat) using the default parameters: time delay = 1,
+radius distance threshold = 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Mat</span></code>), logarithm = natural
+matrix template size = [floor(H/10) floor(W/10)]  (where H and W represent
+the height (rows) and width (columns) of the data matrix <code class="docutils literal notranslate"><span class="pre">Mat</span></code>) 
+* The minimum dimension size of Mat must be &gt; 10.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SE2D</span><span class="p">,</span> <span class="n">Phi1</span><span class="p">,</span> <span class="n">Phi2</span> <span class="o">=</span> <span class="n">SampEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Returns the bidimensional sample entropy (<code class="docutils literal notranslate"><span class="pre">SE2D</span></code>) estimates for the data
+matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Template submatrix dimensions, an integer scalar (for sub-matrix with same height and width) or a two-element tuple of integers (height, width) with a minimum value &gt; 1. (default: [floor(H/10) floor(W/10)])</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer &gt; 1   (default: 1)</p></li>
+</ul>
+</dd>
+<dt class="field-odd">r</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Distance Threshold, a positive scalar   (default: 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Mat</span></code>))</p></li>
+</ul>
+</dd>
+<dt class="field-even">Logx</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Logarithm base, a positive scalar    (default: natural)</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Lock</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>By default, <code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code> only permits matrices with a maximum  size of 128 x 128 to prevent RAM overload.</p></li>
+</ul>
+<p>e.g. For <code class="docutils literal notranslate"><span class="pre">Mat</span></code> = [200 x 200], <code class="docutils literal notranslate"><span class="pre">m</span></code> = 3, and <code class="docutils literal notranslate"><span class="pre">tau</span></code> = 1, <code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code> 
+creates a vector of 753049836 elements. To enable matrices greater than [128 x 128] elements, set <code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">=</span> <span class="pre">False</span></code> (default: True)
+<code class="docutils literal notranslate"><span class="pre">CAUTION:</span> <span class="pre">unlocking</span> <span class="pre">the</span> <span class="pre">permitted</span> <span class="pre">matrix</span> <span class="pre">size</span> <span class="pre">may</span> <span class="pre">cause</span> <span class="pre">memory</span></code>
+<code class="docutils literal notranslate"><span class="pre">errors</span> <span class="pre">that</span> <span class="pre">could</span> <span class="pre">lead</span> <span class="pre">your</span> <span class="pre">Python</span> <span class="pre">IDE</span> <span class="pre">to</span> <span class="pre">crash.</span></code></p>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Luiz Eduardo Virgili Silva, et al.,</dt><dd><p>“Two-dimensional sample entropy: Assessing image texture 
+through irregularity.” 
+Biomedical Physics &amp; Engineering Express
+2.4 (2016): 045002.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../pyexamples.html" class="btn btn-neutral float-right" title="Python Examples:" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="MultiscaleCross.html" class="btn btn-neutral float-left" title="Multiscale Cross-Entropies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Matthew W. Flood.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
