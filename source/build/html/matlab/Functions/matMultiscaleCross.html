@@ -1,0 +1,684 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Multiscale Cross-Entropies &mdash; EntropyHub 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bidimensional Entropies" href="matBidimensional.html" />
+    <link rel="prev" title="Multiscale Entropies" href="matMultiscale.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> EntropyHub
+          
+
+          
+            
+            <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Home.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../EHupdates.html">Latest Updates</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../EHmatlab.html">EntropyHub - MatLab</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../matAPI.html">API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="matBase.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matCross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matMultiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../matexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/EHpython.html">EntropyHub - Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../python/pyAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Base.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Cross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Multiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/MultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Bidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/pyexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../julia/jlexamples.html">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">EntropyHub</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../EHmatlab.html">EntropyHub: MatLab</a> &raquo;</li>
+        
+          <li><a href="../matAPI.html">MatLab Functions:</a> &raquo;</li>
+        
+      <li>Multiscale Cross-Entropies</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/matlab/Functions/matMultiscaleCross.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="multiscale-cross-entropies">
+<h1>Multiscale Cross-Entropies<a class="headerlink" href="#multiscale-cross-entropies" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="functions-for-estimating-the-multiscale-cross-entropy-between-two-univariate-time-series">
+<h2>Functions for estimating the multiscale cross-entropy between two univariate time series.<a class="headerlink" href="#functions-for-estimating-the-multiscale-cross-entropy-between-two-univariate-time-series" title="Permalink to this headline">¶</a></h2>
+<p>Just as one can calculate multiscale entropy using any Base entropy, the same functionality is possible with multiscale cross-entropy using any cross-entropy function:
+<code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XK2En</span></code>, <code class="docutils literal notranslate"><span class="pre">XCondEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XPermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XSpecEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XDistEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code></p>
+<p>To do so, we again use the <code class="docutils literal notranslate"><span class="pre">MSobject</span></code> function to pass a multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) to the multiscale cross-entropy functions.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Multiscale cross-entropy functions have two positional arguments:</p>
+<ol class="arabic simple">
+<li><p>the time series signals, <code class="docutils literal notranslate"><span class="pre">Sig</span></code> (an Nx2 matrix),</p></li>
+<li><p>the multiscale entropy object, <code class="docutils literal notranslate"><span class="pre">Mobj</span></code>.</p></li>
+</ol>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>For cross-entropy and multiscale cross-entropy functions, the two time series signals are passed as a two-column or two-row matrix.
+At present, it is not possible to pass signals of different lengths separately.</p>
+</div>
+<hr class="docutils" />
+<span class="target" id="module-EntropyHub"></span><dl class="mat function">
+<dt id="EntropyHub.MSobject">
+<code class="sig-name descname"><span class="pre">MSobject</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">EnType</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MSobject" title="Permalink to this definition">¶</a></dt>
+<dd><p>MSobject  creates an object to store multiscale entropy parameters.</p>
+<p>[Mobj] = MSobject()</p>
+<p>Returns a multiscale entropy object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) based on that orignially
+proposed by Costa et al. (2002) using the following default
+parameters:
+EnType = <code class="docutils literal notranslate"><span class="pre">'SampEn'</span></code>, embedding dimension = 2, time delay = 1, 
+radius = 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>), logarithm = natural</p>
+<p>[Mobj] = MSobject(EnType)</p>
+<p>Returns a multiscale entropy object using the specified entropy method
+(<code class="docutils literal notranslate"><span class="pre">EnType</span></code>) and the default parameters for that entropy method.
+To see the default parameters for a particular entropy method,          
+type:   help <cite>EnType</cite>   (e.g.  <code class="docutils literal notranslate"><span class="pre">help</span> <span class="pre">SampEn</span></code>)</p>
+<p>[Mobj] = MSobject(EnType, name, value, …)</p>
+<p>Returns a multiscale entropy object using the specified entropy method
+(<code class="docutils literal notranslate"><span class="pre">EnType</span></code>) and the name/value parameters for that particular method.
+To see the default parameters for a particular entropy method,          
+type:   help <cite>EnType</cite>   (e.g.    <code class="docutils literal notranslate"><span class="pre">help</span> <span class="pre">SampEn</span></code>)</p>
+<p><code class="docutils literal notranslate"><span class="pre">EnType</span></code> can be any of the following (case sensitive) entropies:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'ApEn'</span></code>     - Approximate Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'SampEn'</span></code>    - Sample Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'FuzzEn'</span></code>    - Fuzzy Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'K2En'</span></code>      - Kolmogorov Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'PermEn'</span></code>    - Permutation Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'CondEn'</span></code>    - Conditional Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'DistEn'</span></code>    - Distribution Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'DispEn'</span></code>    - Dispersion Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'SpecEn'</span></code>    - Spectral Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'SyDyEn'</span></code>    - Symbolic Dynamic Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'IncrEn'</span></code>    - Increment Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'CoSiEn'</span></code>    - Cosine Similarity Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'PhasEn'</span></code>    - Phase Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'SlopEn'</span></code>    - Slope Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'BubbEn'</span></code>    - Bubble Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'GridEn'</span></code>    - Grid Distribution Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'EnofEn'</span></code>    - Entropy of Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'AttnEn'</span></code>    - Attention Entropy</p></li>
+</ul>
+</div></blockquote>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">'XApEn'</span></code>     - Cross-Approximate Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'XSampEn'</span></code>   - Cross-Sample Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'XFuzzEn'</span></code>   - Cross-Fuzzy Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'XK2En'</span></code>     - Cross-Kolmogorov Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'XPermEn'</span></code>   - Cross-Permutation Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'XCondEn'</span></code>   - Cross-Conditional Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'XDistEn'</span></code>   - Cross-Distribution Entropy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'XSpecEn'</span></code>   - Cross-Spectral Entropy</p></li>
+</ul>
+</div></blockquote>
+<dl class="simple">
+<dt>See also:</dt><dd><p>MSEn, cMSEn, rMSEn, hMSEn, XMSEn, rXMSEn, cXMSEn, hXMSEn</p>
+</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<p><strong>The following functions use the multiscale entropy object shown above.</strong></p>
+<hr class="docutils" />
+<span class="target" id="module-EntropyHub"></span><dl class="mat function">
+<dt id="EntropyHub.XMSEn">
+<code class="sig-name descname"><span class="pre">XMSEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">Mobj</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XMSEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>XMSEn  returns the multiscale cross-entropy between two univariate data sequences.</p>
+<p>[MSx,CI] = XMSEn(Sig, Mobj)</p>
+<p>Returns a vector of multiscale cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) and the
+complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using 
+the parameters specified by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) over 3 temporal
+scales with coarse-graining (default).</p>
+<p>[MSx,CI] = XMSEn(Sig, Mobj, name, value, …)</p>
+<p>Returns a vector of multiscale cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) and the
+complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> 
+using the parameters specified by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) and the
+following name/value pair arguments:</p>
+<blockquote>
+<div><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Scales</span></code>   - Number of temporal scales, an integer &gt; 1   (default = 3)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Methodx</span></code>  - Graining method, one of the following: [default = <code class="docutils literal notranslate"><span class="pre">'coarse'</span></code>]
+{<code class="docutils literal notranslate"><span class="pre">'coarse'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'imf'</span></code>, <code class="docutils literal notranslate"><span class="pre">'timeshift'</span></code>}</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RadNew</span></code>   - Radius rescaling method, an integer in the range [1 4].
+When the entropy specified by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code> is <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code> or <code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, 
+<code class="docutils literal notranslate"><span class="pre">RadNew</span></code> rescales the radius threshold in each sub-sequence
+at each time scale (Xt). If a radius value (<code class="docutils literal notranslate"><span class="pre">r</span></code>) is specified 
+by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code>, this becomes the rescaling coefficient, otherwise
+it is set to 0.2 (default). The value of <code class="docutils literal notranslate"><span class="pre">RadNew</span></code> specifies
+one of the following methods:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>[1]    Standard Deviation          - r*std(Xt)</p></li>
+<li><p>[2]    Variance                    - r*var(Xt)</p></li>
+<li><p>[3]    Mean Absolute Deviation     - r*mad(Xt)</p></li>
+<li><p>[4]    Median Absolute Deviation   - r*mad(Xt,1)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Plotx</span></code>    - When <code class="docutils literal notranslate"><span class="pre">Plotx</span> <span class="pre">==</span> <span class="pre">true</span></code>, returns a plot of the entropy value at
+each time scale (i.e. the multiscale entropy curve) [default: false]</p></li>
+</ul>
+</div></blockquote>
+<p>See also MSobject, XSampEn, XApEn, rXMSEn, cXMSEn, hXMSEn, MSEn</p>
+<dl class="simple">
+<dt>References:</dt><dd><dl class="simple">
+<dt>[1] Rui Yan, Zhuo Yang, and Tao Zhang,</dt><dd><p>“Multiscale cross entropy: a novel algorithm for analyzing two
+time series.” 
+5th International Conference on Natural Computation. 
+Vol. 1, pp: 411-413 IEEE, 2009.</p>
+</dd>
+<dt>[2] Madalena Costa, Ary Goldberger, and C-K. Peng,</dt><dd><p>“Multiscale entropy analysis of complex physiologic time series.”
+Physical review letters
+89.6 (2002): 068102.</p>
+</dd>
+<dt>[3] Vadim V. Nikulin, and Tom Brismar,</dt><dd><p>“Comment on “Multiscale entropy analysis of complex physiologic
+time series”.” 
+Physical review letters 
+92.8 (2004): 089803.</p>
+</dd>
+<dt>[4] Madalena Costa, Ary L. Goldberger, and C-K. Peng. </dt><dd><p>“Costa, Goldberger, and Peng reply.” 
+Physical Review Letters
+92.8 (2004): 089804.</p>
+</dd>
+<dt>[5] Antoine Jamin, et al,</dt><dd><p>“A novel multiscale cross-entropy method applied to navigation 
+data acquired with a bike simulator.” 
+41st annual international conference of the IEEE EMBC
+IEEE, 2019.</p>
+</dd>
+<dt>[6] Antoine Jamin and Anne Humeau-Heurtier. </dt><dd><p>“(Multiscale) Cross-Entropy Methods: A Review.” 
+Entropy 
+22.1 (2020): 45.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt id="EntropyHub.cXMSEn">
+<code class="sig-name descname"><span class="pre">cXMSEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">Mobj</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.cXMSEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>cXMSEn  returns the composite multiscale cross-entropy between two  univariate data sequences.</p>
+<p>[MSx, CI] = cXMSEn(Sig, Mobj)</p>
+<p>Returns a vector of composite multiscale cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) 
+between two univariate data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the 
+parameters specified by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) using the composite 
+multiscale entropy method (cMSE) over 3 temporal scales.</p>
+<p>[MSx, CI] = cXMSEn(Sig, Mobj, name, value, …)</p>
+<p>Returns a vector of composite multiscale cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) 
+between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the parameters
+specified by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) and the following name/value
+pair arguments:</p>
+<blockquote>
+<div><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Scales</span></code>   - Number of temporal scales, an integer &gt; 1   (default: 3)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RadNew</span></code>   - Radius rescaling method, an integer in the range [1 4].
+When the entropy specified by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code> is <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code> or <code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, 
+<code class="docutils literal notranslate"><span class="pre">RadNew</span></code> rescales the radius threshold in each sub-sequence
+at each time scale (Xt). If a radius value (<code class="docutils literal notranslate"><span class="pre">r</span></code>) is specified 
+by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code>, this becomes the rescaling coefficient, otherwise
+it is set to 0.2 (default). The value of <code class="docutils literal notranslate"><span class="pre">RadNew</span></code> specifies
+one of the following methods:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>[1]    Standard Deviation          - r*std(Xt)</p></li>
+<li><p>[2]    Variance                    - r*var(Xt)</p></li>
+<li><p>[3]    Mean Absolute Deviation     - r*mad(Xt)</p></li>
+<li><p>[4]    Median Absolute Deviation   - r*mad(Xt,1)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Refined</span></code>  - Refined-composite <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code> method. When <code class="docutils literal notranslate"><span class="pre">Refined</span> <span class="pre">==</span> <span class="pre">true</span></code>
+and the entropy function specified by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code> is <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cXMSEn</span></code>
+returns the refined-composite multiscale entropy (rcXMSEn) (default: false)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Plotx</span></code>    - When <code class="docutils literal notranslate"><span class="pre">Plotx</span> <span class="pre">==</span> <span class="pre">true</span></code>, returns a plot of the entropy value at 
+each time scale (i.e. the multiscale entropy curve)    (default: false)</p></li>
+</ul>
+</div></blockquote>
+<dl class="simple">
+<dt>See also:</dt><dd><p>MSobject, XMSEn, rXMSEn, hXMSEn, XSampEn, XApEn, MSEn, cMSEn, rMSEn</p>
+</dd>
+<dt>References:</dt><dd><dl class="simple">
+<dt>[1] Rui Yan, Zhuo Yang, and Tao Zhang,</dt><dd><p>“Multiscale cross entropy: a novel algorithm for analyzing two
+time series.” 
+5th International Conference on Natural Computation. 
+Vol. 1, pp: 411-413 IEEE, 2009.</p>
+</dd>
+<dt>[2] Yi Yin, Pengjian Shang, and Guochen Feng, </dt><dd><p>“Modified multiscale cross-sample entropy for complex time 
+series.”
+Applied Mathematics and Computation 
+289 (2016): 98-110.</p>
+</dd>
+<dt>[3] Madalena Costa, Ary Goldberger, and C-K. Peng,</dt><dd><p>“Multiscale entropy analysis of complex physiologic time series.”
+Physical review letters
+89.6 (2002): 068102.</p>
+</dd>
+<dt>[4] Antoine Jamin, et al,</dt><dd><p>“A novel multiscale cross-entropy method applied to navigation 
+data acquired with a bike simulator.” 
+41st annual international conference of the IEEE EMBC
+IEEE, 2019.</p>
+</dd>
+<dt>[5] Antoine Jamin and Anne Humeau-Heurtier. </dt><dd><p>“(Multiscale) Cross-Entropy Methods: A Review.” 
+Entropy 
+22.1 (2020): 45.</p>
+</dd>
+<dt>[6] Shuen-De Wu, et al.,</dt><dd><p>“Time series analysis using composite multiscale entropy.” 
+Entropy 
+15.3 (2013): 1069-1084.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt id="EntropyHub.rXMSEn">
+<code class="sig-name descname"><span class="pre">rXMSEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">Mobj</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.rXMSEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>rXMSEn  returns the refined multiscale cross-entropy between two  univariate data sequences.</p>
+<p>[MSx,CI] = rXMSEn(Sig, Mobj)</p>
+<p>Returns a vector of refined multiscale cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) and
+the complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) between the data sequences contained in
+<code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the parameters specified by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) and the
+following default parameters:   Scales = 3, Butterworth LPF Order = 6,
+Butterworth LPF cutoff frequency at scale (T): Fc = 0.5/T. 
+If the entropy function specified by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code> is <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code> or <code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rMSEn</span></code> 
+updates the threshold radius of the data sequences (Xt) at each scale
+to 0.2*std(Xt) when no <code class="docutils literal notranslate"><span class="pre">r</span></code> value is provided by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code>, or <code class="docutils literal notranslate"><span class="pre">r``*std(Xt)</span> <span class="pre">if</span> 
+<span class="pre">``r</span></code> is specified.</p>
+<p>[MSx,CI] = rXMSEn(Sig, Mobj, name, value, …)</p>
+<p>Returns a vector of refined multiscale cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) and 
+the complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) between the data sequences contained in
+<code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the parameters specified by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) and the
+following name/value pair arguments:</p>
+<blockquote>
+<div><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Scales</span></code>   - Number of temporal scales, an integer &gt; 1 (default: 3)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">F_Order</span></code>  - Butterworth low-pass filter order, a positive integer (default: 6)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">F_Num</span></code>    - Numerator of Butterworth low-pass filter cutoff frequency,
+a scalar value in range [0 &lt; <code class="docutils literal notranslate"><span class="pre">F_Num</span></code> &lt; 1]. The cutoff frequency
+at each scale (T) becomes: Fc = <code class="docutils literal notranslate"><span class="pre">F_Num</span></code>/T.  (default = 0.5)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RadNew</span></code>   - Radius rescaling method, an integer in the range [1 4].
+When the entropy specified by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code> is <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code> or <code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, 
+<code class="docutils literal notranslate"><span class="pre">RadNew</span></code> rescales the radius threshold in each sub-sequence
+at each time scale (Xt). If a radius value (<code class="docutils literal notranslate"><span class="pre">r</span></code>) is specified 
+by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code>, this becomes the rescaling coefficient, otherwise
+it is set to 0.2 (default). The value of <code class="docutils literal notranslate"><span class="pre">RadNew</span></code> specifies
+one of the following methods:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>[1]    Standard Deviation          - r*std(Xt)</p></li>
+<li><p>[2]    Variance                    - r*var(Xt)</p></li>
+<li><p>[3]    Mean Absolute Deviation     - r*mad(Xt)</p></li>
+<li><p>[4]    Median Absolute Deviation   - r*mad(Xt,1)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Plotx</span></code>    - When <code class="docutils literal notranslate"><span class="pre">Plotx</span> <span class="pre">==</span> <span class="pre">true</span></code>, returns a plot of the entropy value at 
+each time scale (i.e. the multiscale entropy curve)    (default: false)</p></li>
+</ul>
+</div></blockquote>
+<dl class="simple">
+<dt>See also:</dt><dd><p>MSobject, XMSEn, cXMSEn, hXMSEn, XSampEn, XApEn, MSEn, rMSEn</p>
+</dd>
+<dt>References:</dt><dd><dl class="simple">
+<dt>[1]   Matthew W. Flood,</dt><dd><p>“rXMSEn - EntropyHub Project”
+2021, <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub">https://github.com/MattWillFlood/EntropyHub</a></p>
+</dd>
+<dt>[2]   Rui Yan, Zhuo Yang, and Tao Zhang,</dt><dd><p>“Multiscale cross entropy: a novel algorithm for analyzing two
+time series.” 
+5th International Conference on Natural Computation. 
+Vol. 1, pp: 411-413 IEEE, 2009.</p>
+</dd>
+<dt>[3] José Fernando Valencia, et al.,</dt><dd><p>“Refined multiscale entropy: Application to 24-h holter 
+recordings of heart period variability in healthy and aortic 
+stenosis subjects.” 
+IEEE Transactions on Biomedical Engineering 
+56.9 (2009): 2202-2213.</p>
+</dd>
+<dt>[4] Puneeta Marwaha and Ramesh Kumar Sunkaria,</dt><dd><p>“Optimal selection of threshold value ‘r’for refined multiscale
+entropy.” 
+Cardiovascular engineering and technology 
+6.4 (2015): 557-576.</p>
+</dd>
+<dt>[5] Yi Yin, Pengjian Shang, and Guochen Feng, </dt><dd><p>“Modified multiscale cross-sample entropy for complex time 
+series.”
+Applied Mathematics and Computation 
+289 (2016): 98-110.</p>
+</dd>
+<dt>[6] Antoine Jamin, et al,</dt><dd><p>“A novel multiscale cross-entropy method applied to navigation 
+data acquired with a bike simulator.” 
+41st annual international conference of the IEEE EMBC
+IEEE, 2019.</p>
+</dd>
+<dt>[7] Antoine Jamin and Anne Humeau-Heurtier. </dt><dd><p>“(Multiscale) Cross-Entropy Methods: A Review.” 
+Entropy 
+22.1 (2020): 45.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt id="EntropyHub.hXMSEn">
+<code class="sig-name descname"><span class="pre">hXMSEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">Mobj</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.hXMSEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>hXMSEn  returns the hierarchical cross-entropy between two univariate data sequences.</p>
+<p>[MSx,Sn,CI] = hXMSEn(Sig, Mobj)</p>
+<p>Returns a vector of cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) calculated at each node 
+in the hierarchical tree, the average cross-entropy value across all 
+nodes at each scale (<code class="docutils literal notranslate"><span class="pre">Sn</span></code>), and the complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) of the hierarchical 
+tree (i.e. <code class="docutils literal notranslate"><span class="pre">sum(Sn)</span></code>) between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using
+the parameters specified by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) over 3 temporal
+scales (default).
+The entropy values in <code class="docutils literal notranslate"><span class="pre">MSx</span></code> are ordered from the root node (S_00) to the
+Nth subnode at scale T (S_TN): i.e. S_00, S_10, S_11, S_20, S_21, S_22,
+S_23, S_30, S_31, S_32, S_33, S_34, S_35, S_36, S_37, S_40, … , S_TN.
+The average cross-entropy values in <code class="docutils literal notranslate"><span class="pre">Sn</span></code> are ordered in the same way, with the
+value of the root node given first: i.e. S0, S1, S2, …, ST</p>
+<p>[MSx,Sn,CI] = hXMSEn(Sig, Mobj, name, value, …)</p>
+<p>Returns a vector of cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) calculated at each node 
+in the hierarchical tree, the average cross-entropy value across all
+nodes at each scale (<code class="docutils literal notranslate"><span class="pre">Sn</span></code>), and the complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) of the entire
+hierarchical tree between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using 
+the following name/value pair arguments:</p>
+<blockquote>
+<div><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Scales</span></code>   - Number of temporal scales, an integer &gt; 1   (default: 3)
+At each scale (T), entropy is estimated for 2^(T-1) nodes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">RadNew</span></code>   - Radius rescaling method, an integer in the range [1 4].
+When the entropy specified by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code> is <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code> or <code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, 
+<code class="docutils literal notranslate"><span class="pre">RadNew</span></code> rescales the radius threshold in each sub-sequence
+at each time scale (Xt). If a radius value (<code class="docutils literal notranslate"><span class="pre">r</span></code>) is specified 
+by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code>, this becomes the rescaling coefficient, otherwise
+it is set to 0.2 (default). The value of <code class="docutils literal notranslate"><span class="pre">RadNew</span></code> specifies
+one of the following methods:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>[1]    Standard Deviation          - r*std(Xt)</p></li>
+<li><p>[2]    Variance                    - r*var(Xt)</p></li>
+<li><p>[3]    Mean Absolute Deviation     - r*mad(Xt)</p></li>
+<li><p>[4]    Median Absolute Deviation   - r*mad(Xt,1)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Plotx</span></code>    - When <code class="docutils literal notranslate"><span class="pre">Plotx</span> <span class="pre">==</span> <span class="pre">true</span></code>, returns a plot of the average cross-entropy 
+value at each time scale (i.e. the multiscale cross-entropy curve)
+and a hierarchical graph showing the cross-entropy value of each node
+in the hierarchical tree decomposition.  (default: false)</p></li>
+</ul>
+</div></blockquote>
+<dl class="simple">
+<dt>See also:</dt><dd><p>MSobject, XMSEn, rXMSEn, cXMSEn, XSampEn, XApEn, MSEn, hMSEn, rMSEn, cMSEn</p>
+</dd>
+<dt>References:</dt><dd><dl class="simple">
+<dt>[1]   Matthew W. Flood,</dt><dd><p>“hXMSEn - EntropyHub Project”
+2021, <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub">https://github.com/MattWillFlood/EntropyHub</a></p>
+</dd>
+<dt>[2]   Rui Yan, Zhuo Yang, and Tao Zhang,</dt><dd><p>“Multiscale cross entropy: a novel algorithm for analyzing two
+time series.” 
+5th International Conference on Natural Computation. 
+Vol. 1, pp: 411-413 IEEE, 2009.</p>
+</dd>
+<dt>[3] Ying Jiang, C-K. Peng and Yuesheng Xu,</dt><dd><p>“Hierarchical entropy analysis for biological signals.”
+Journal of Computational and Applied Mathematics
+236.5 (2011): 728-742.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="matBidimensional.html" class="btn btn-neutral float-right" title="Bidimensional Entropies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="matMultiscale.html" class="btn btn-neutral float-left" title="Multiscale Entropies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Matthew W. Flood.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
