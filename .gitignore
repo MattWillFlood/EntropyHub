@@ -30,3 +30,7 @@ EntropyHubPy/
 EntropyHubMat/
 
 Guide/
+
+docs/*
+
+!docs/_build

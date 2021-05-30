@@ -19,7 +19,8 @@ The complete documentation for `EntropyHub.jl can be found here <https://mattwil
    :hidden:
    :titlesonly:
 
-   Examples <./jlexamples>
+   EntropyHub.jl  <https://mattwillflood.github.io/EntropyHub.jl/dev>
+   Examples <https://mattwillflood.github.io/EntropyHub.jl/dev/Examples/Examples>
 
 
 Requirements & Installation:
