@@ -1,0 +1,1594 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Base Entropies &mdash; EntropyHub 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Cross Entropies" href="Cross.html" />
+    <link rel="prev" title="Python Functions:" href="../pyAPI.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> EntropyHub
+          
+
+          
+            
+            <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Home.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../EHupdates.html">Latest Updates</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../matlab/EHmatlab.html">EntropyHub - MatLab</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../matlab/matAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matBase.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matCross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../matlab/matexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../EHpython.html">EntropyHub - Python</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../pyAPI.html">API</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Cross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Multiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="MultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Bidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pyexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/dev">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/dev/Examples/Examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">EntropyHub</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../EHpython.html">EntropyHub: Python</a> &raquo;</li>
+        
+          <li><a href="../pyAPI.html">Python Functions:</a> &raquo;</li>
+        
+      <li>Base Entropies</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/MattWillFlood/EntropyHub/blob/main/docs/python/Functions/Base.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="base-entropies">
+<h1>Base Entropies<a class="headerlink" href="#base-entropies" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="functions-for-estimating-the-entropy-of-a-single-univariate-time-series">
+<h2>Functions for estimating the entropy of a single univariate time series.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-single-univariate-time-series" title="Permalink to this headline">¶</a></h2>
+<p><em>The following functions also form the base entropy method used by</em> <strong>multiscale entropy</strong> <em>functions.</em></p>
+<hr class="docutils" />
+<p>These functions are directly available when EntropyHub is imported:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">EntropyHub</span> <span class="k">as</span> <span class="nn">EH</span>
+
+<span class="nb">dir</span><span class="p">(</span><span class="n">EH</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<span class="target" id="module-EntropyHub"></span><dl class="py function">
+<dt id="EntropyHub.ApEn">
+<code class="sig-name descname"><span class="pre">ApEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.ApEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>ApEn  estimates the approximate entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Ap</span><span class="p">,</span> <span class="n">Phi</span> <span class="o">=</span> <span class="n">ApEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the approximate entropy estimates (<code class="docutils literal notranslate"><span class="pre">Ap</span></code>) and the log-average number of 
+matched vectors (<code class="docutils literal notranslate"><span class="pre">Phi</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [0,1,2], estimated for the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
+using the default parameters:
+embedding dimension = 2, time delay = 1, radius threshold = 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>), logarithm = natural</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Ap</span><span class="p">,</span> <span class="n">Phi</span> <span class="o">=</span> <span class="n">ApEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the approximate entropy estimates (<code class="docutils literal notranslate"><span class="pre">Ap</span></code>) of the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
+for dimensions = [0, 1, …, <code class="docutils literal notranslate"><span class="pre">m</span></code>] using the specified keyword arguments:</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">r</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Radius Distance Threshold, a positive scalar</p></li>
+</ul>
+</dd>
+<dt class="field-even">Logx</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Logarithm base, a positive scalar</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CondEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Steven M. Pincus, </dt><dd><p>“Approximate entropy as a measure of system complexity.” 
+Proceedings of the National Academy of Sciences 
+88.6 (1991): 2297-2301.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.AttnEn">
+<code class="sig-name descname"><span class="pre">AttnEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.AttnEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>AttnEn  estimates the attention entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Attn</span><span class="p">,</span> <span class="p">(</span><span class="n">Hxx</span><span class="p">,</span> <span class="n">Hnn</span><span class="p">,</span> <span class="n">Hxn</span><span class="p">,</span> <span class="n">Hnx</span><span class="p">)</span> <span class="o">=</span> <span class="n">AttnEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the attention entropy (<code class="docutils literal notranslate"><span class="pre">Attn</span></code>) calculated as the average of the
+sub-entropies (<code class="docutils literal notranslate"><span class="pre">Hxx</span></code>, <code class="docutils literal notranslate"><span class="pre">Hxn</span></code>, <code class="docutils literal notranslate"><span class="pre">Hnn</span></code>, <code class="docutils literal notranslate"><span class="pre">Hnx</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) 
+using a base-2 logarithm.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Attn</span><span class="p">,</span> <span class="p">(</span><span class="n">Hxx</span><span class="p">,</span> <span class="n">Hnn</span><span class="p">,</span> <span class="n">Hxn</span><span class="p">,</span> <span class="n">Hnx</span><span class="p">)</span> <span class="o">=</span> <span class="n">AttnEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Logx</span> <span class="o">=</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the attention entropy (<code class="docutils literal notranslate"><span class="pre">Attn</span></code>) and a four-element tuple of
+sub-entropies (<code class="docutils literal notranslate"><span class="pre">Hxx</span></code>, <code class="docutils literal notranslate"><span class="pre">Hnn</span></code>, <code class="docutils literal notranslate"><span class="pre">Hxn</span></code>, <code class="docutils literal notranslate"><span class="pre">Hnx</span></code>) from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) where,</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Hxx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>entropy of local-maxima intervals</p></li>
+</ul>
+</dd>
+<dt class="field-even">Hnn</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>entropy of local minima intervals</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Hxn</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>entropy of intervals between local maxima and subsequent minima</p></li>
+</ul>
+</dd>
+<dt class="field-even">Hnx</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>entropy of intervals between local minima and subsequent maxima using the following keyword argument:</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Logx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar  (enter 0 for natural log)</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">EnofEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SpecEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XSpecEn</span></code>, <code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Jiawei Yang, et al.,</dt><dd><p>“Classification of Interbeat Interval Time-series Using Attention Entropy.” 
+IEEE Transactions on Affective Computing 
+(2020)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.BubbEn">
+<code class="sig-name descname"><span class="pre">BubbEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.BubbEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>BubbEn  estimates the bubble entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Bubb</span><span class="p">,</span> <span class="n">H</span> <span class="o">=</span> <span class="n">BubbEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the bubble entropy (<code class="docutils literal notranslate"><span class="pre">Bubb</span></code>) and the conditional Rényi entropy (<code class="docutils literal notranslate"><span class="pre">H</span></code>)
+estimate from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the default parameters: 
+embedding dimension = 2, time delay = 1, logarithm = natural</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Bubb</span><span class="p">,</span> <span class="n">H</span> <span class="o">=</span> <span class="n">BubbEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the bubble entropy (<code class="docutils literal notranslate"><span class="pre">Bubb</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)  
+using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, an integer &gt; 1</p></li>
+</ul>
+<p>BubbEn returns estimates for each dimension [2, …, <code class="docutils literal notranslate"><span class="pre">m</span></code>]</p>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Logx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">PhasEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] George Manis, M.D. Aktaruzzaman and Roberto Sassi,</dt><dd><p>“Bubble entropy: An entropy almost free of parameters.”
+IEEE Transactions on Biomedical Engineering
+64.11 (2017): 2711-2718.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.CoSiEn">
+<code class="sig-name descname"><span class="pre">CoSiEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.CoSiEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>CoSiEn  estimates the cosine similarity entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">CoSi</span><span class="p">,</span> <span class="n">Bm</span> <span class="o">=</span> <span class="n">CoSiEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the cosine similarity entropy (<code class="docutils literal notranslate"><span class="pre">CoSi</span></code>) and the corresponding
+global probabilities estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the
+default parameters:   embedding dimension = 2, time delay = 1, 
+angular threshold = .1,  logarithm = base 2,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">CoSi</span><span class="p">,</span> <span class="n">Bm</span> <span class="o">=</span> <span class="n">CoSiEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the cosine similarity entropy (<code class="docutils literal notranslate"><span class="pre">CoSi</span></code>) estimated from the data
+sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, an integer &gt; 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">r</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Angular threshold, a value in range [0 &lt; <code class="docutils literal notranslate"><span class="pre">r</span></code> &lt; 1]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Logx</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Logarithm base, a positive scalar (enter 0 for natural log)</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Norm</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">Sig</span></code>, one of the following integers:</p></li>
+</ul>
+<ol class="arabic simple" start="0">
+<li><p>no normalisation - default</p></li>
+<li><p>normalises <code class="docutils literal notranslate"><span class="pre">Sig</span></code> by removing median(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)</p></li>
+<li><p>normalises <code class="docutils literal notranslate"><span class="pre">Sig</span></code> by removing mean(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)</p></li>
+<li><p>normalises <code class="docutils literal notranslate"><span class="pre">Sig</span></code> w.r.t. SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)</p></li>
+<li><p>normalises <code class="docutils literal notranslate"><span class="pre">Sig</span></code> values to range [-1 1]</p></li>
+</ol>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">PhasEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SlopEn</span></code>, <code class="docutils literal notranslate"><span class="pre">GridEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hMSEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Theerasak Chanwimalueang and Danilo Mandic,</dt><dd><p>“Cosine similarity entropy: Self-correlation-based complexity
+analysis of dynamical systems.”
+Entropy 
+19.12 (2017): 652.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.CondEn">
+<code class="sig-name descname"><span class="pre">CondEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.CondEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>CondEn  estimates the corrected conditional entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Cond</span><span class="p">,</span> <span class="n">SEw</span><span class="p">,</span> <span class="n">SEz</span> <span class="o">=</span> <span class="n">CondEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the corrected conditional entropy estimates (<code class="docutils literal notranslate"><span class="pre">Cond</span></code>) and the
+corresponding Shannon entropies (<code class="docutils literal notranslate"><span class="pre">m</span></code>: <code class="docutils literal notranslate"><span class="pre">SEw</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1</span></code>: <code class="docutils literal notranslate"><span class="pre">SEz</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] 
+estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the default parameters:
+embedding dimension = 2, time delay = 1, symbols = 6, logarithm = natural, normalisation = False
+Note: <code class="docutils literal notranslate"><span class="pre">CondEn(m=1)</span></code> returns the Shannon entropy of <code class="docutils literal notranslate"><span class="pre">Sig</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Cond</span><span class="p">,</span> <span class="n">SEw</span><span class="p">,</span> <span class="n">SEz</span> <span class="o">=</span> <span class="n">CondEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the corrected conditional entropy estimates (Cond) from the data
+sequence (Sig) using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, an integer &gt; 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">c</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Number of symbols, an integer &gt; 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">Logx</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Logarithm base, a positive scalar</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Norm</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">Cond</span></code> value, a boolean:</p></li>
+</ul>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code>  no normalisation - default</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>   normalises w.r.t Shannon entropy of data sequence <code class="docutils literal notranslate"><span class="pre">Sig</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">XCondEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XPermEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Alberto Porta, et al.,</dt><dd><p>“Measuring regularity by means of a corrected conditional
+entropy in sympathetic outflow.” 
+Biological cybernetics 
+78.1 (1998): 71-78.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.DispEn">
+<code class="sig-name descname"><span class="pre">DispEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NCDF'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fluct</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rho</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DispEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>DispEn  estimates the dispersion entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Dispx</span><span class="p">,</span> <span class="n">Ppi</span> <span class="o">=</span> <span class="n">DispEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the dispersion entropy (<code class="docutils literal notranslate"><span class="pre">Dispx</span></code>) and the reverse dispersion entropy
+(<code class="docutils literal notranslate"><span class="pre">RDE</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the default parameters:
+embedding dimension = 2, time delay = 1, symbols = 3, logarithm = natural,
+data transform = normalised cumulative density function (ncdf)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Dispx</span><span class="p">,</span> <span class="n">Ppi</span> <span class="o">=</span> <span class="n">DispEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the dispersion entropy (<code class="docutils literal notranslate"><span class="pre">Dispx</span></code>) and the reverse dispersion entropy (<code class="docutils literal notranslate"><span class="pre">RDE</span></code>)
+estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension,  a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">c</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Number of symbols, an integer &gt; 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">Typex</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Typex of data-to-symbolic sequence transform, one of the following strings: {<code class="docutils literal notranslate"><span class="pre">'linear'</span></code>, <code class="docutils literal notranslate"><span class="pre">'kmeans'</span></code>, <code class="docutils literal notranslate"><span class="pre">'ncdf'</span></code>, <code class="docutils literal notranslate"><span class="pre">'finesort'</span></code>, <code class="docutils literal notranslate"><span class="pre">'equal'</span></code>}</p></li>
+</ul>
+<p>See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on these transforms.</p>
+</dd>
+<dt class="field-odd">Logx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar</p></li>
+</ul>
+</dd>
+<dt class="field-even">Fluct</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>When <code class="docutils literal notranslate"><span class="pre">Fluct</span> <span class="pre">==</span> <span class="pre">True</span></code>, DispEn returns the fluctuation-based Dispersion entropy.   [default: False]</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Norm</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">Dispx</span></code> value, a boolean:</p></li>
+</ul>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code>  no normalisation - default</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>  normalises w.r.t # possible vector permutations (c^m).</p></li>
+</ul>
+</dd>
+<dt class="field-even">rho</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a href="#id1"><span class="problematic" id="id2">*</span></a>If <code class="docutils literal notranslate"><span class="pre">Typex</span> <span class="pre">==</span> <span class="pre">'finesort'</span></code>, rho is the tuning parameter (default: 1)</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SyDyEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>.</p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Mostafa Rostaghi and Hamed Azami,</dt><dd><p>“Dispersion entropy: A measure for time-series analysis.” 
+IEEE Signal Processing Letters 
+23.5 (2016): 610-614.</p>
+</dd>
+<dt>[2] Hamed Azami and Javier Escudero,</dt><dd><p>“Amplitude-and fluctuation-based dispersion entropy.” 
+Entropy 
+20.3 (2018): 210.</p>
+</dd>
+<dt>[3] Li Yuxing, Xiang Gao and Long Wang,</dt><dd><p>“Reverse dispersion entropy: A new complexity measure for 
+sensor signal.” 
+Sensors 
+19.23 (2019): 5203.</p>
+</dd>
+<dt>[4] Wenlong Fu, et al.,</dt><dd><p>“Fault diagnosis for rolling bearings based on fine-sorted 
+dispersion entropy and SVM optimized with mutation SCA-PSO.”
+Entropy
+21.4 (2019): 404.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.DistEn">
+<code class="sig-name descname"><span class="pre">DistEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Sturges'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DistEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>DistEn  estimates the distribution entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Dist</span><span class="p">,</span> <span class="n">Ppi</span> <span class="o">=</span> <span class="n">DistEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the distribution entropy estimate (<code class="docutils literal notranslate"><span class="pre">Dist</span></code>) and the
+corresponding distribution probabilities (<code class="docutils literal notranslate"><span class="pre">Ppi</span></code>) estimated from the data 
+sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)  using the default  parameters: 
+embedding dimension = 2, time delay = 1, binning method = ‘Sturges’,
+logarithm = base 2, normalisation = w.r.t # of histogram bins</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Dist</span><span class="p">,</span> <span class="n">Ppi</span> <span class="o">=</span> <span class="n">DistEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the distribution entropy estimate (<code class="docutils literal notranslate"><span class="pre">Dist</span></code>) estimated from the data
+sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Bins</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Histogram bin selection method for distance distribution, one of the following:</p></li>
+</ul>
+<ul class="simple">
+<li><p>an integer &gt; 1 indicating the number of bins,</p></li>
+<li><p>or one of the following strings {<code class="docutils literal notranslate"><span class="pre">'sturges'</span></code>, <code class="docutils literal notranslate"><span class="pre">'sqrt'</span></code>, <code class="docutils literal notranslate"><span class="pre">'rice'</span></code>, <code class="docutils literal notranslate"><span class="pre">'doanes'</span></code>} [default: <code class="docutils literal notranslate"><span class="pre">'sturges'</span></code>]</p></li>
+</ul>
+</dd>
+<dt class="field-even">Logx</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Logarithm base, a positive scalar (enter 0 for natural log)</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Norm</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">Dist</span></code> value, a boolean:</p></li>
+</ul>
+<ul class="simple">
+<li><p>[False]  no normalisation.</p></li>
+<li><p>[True]   normalises w.r.t # of histogram bins - default</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">XDistEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">K2En</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Li, Peng, et al.,</dt><dd><p>“Assessing the complexity of short-term heartbeat interval 
+series by distribution entropy.” 
+Medical &amp; biological engineering &amp; computing 
+53.1 (2015): 77-87.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.EnofEn">
+<code class="sig-name descname"><span class="pre">EnofEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(10,</span> <span class="pre">5)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.EnofEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>EnofEn  estimates the entropy of entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">EoE</span><span class="p">,</span> <span class="n">AvEn</span> <span class="o">=</span> <span class="n">EnofEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the entropy of entropy (<code class="docutils literal notranslate"><span class="pre">EoE</span></code>) and the average Shannon entropy 
+across all windows (<code class="docutils literal notranslate"><span class="pre">AvEn</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using
+the default parameters: 
+window length (samples) = 10, slices (s1,s2) = [10 5], logarithm = natural</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">EoE</span><span class="p">,</span> <span class="n">AvEn</span> <span class="o">=</span> <span class="n">EnofEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the entropy of entropy (<code class="docutils literal notranslate"><span class="pre">EoE</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)  
+using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">tau</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Window length, an integer &gt; 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">S</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Number of slices (s1,s2), a two-element tuple of integers &gt; 2</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Logx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also:</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Chang Francis Hsu, et al.,</dt><dd><p>“Entropy of entropy: Measurement of dynamical complexity for biological systems.” 
+Entropy 
+19.10 (2017): 550.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.FuzzEn">
+<code class="sig-name descname"><span class="pre">FuzzEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.2,</span> <span class="pre">2)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>FuzzEn  estimates the fuzzy entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Fuzz</span><span class="p">,</span> <span class="n">Ps1</span><span class="p">,</span> <span class="n">Ps2</span> <span class="o">=</span> <span class="n">FuzzEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the fuzzy entropy estimates (<code class="docutils literal notranslate"><span class="pre">Fuzz</span></code>) and the average fuzzy distances 
+(<code class="docutils literal notranslate"><span class="pre">m</span></code>: <code class="docutils literal notranslate"><span class="pre">Ps1</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1</span></code>: <code class="docutils literal notranslate"><span class="pre">Ps2</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
+using the default parameters: embedding dimension = 2, time delay = 1, fuzzy function (<code class="docutils literal notranslate"><span class="pre">Fx</span></code>) = <code class="docutils literal notranslate"><span class="pre">'default'</span></code>,
+fuzzy function parameters (<code class="docutils literal notranslate"><span class="pre">r</span></code>) = (0.2, 2),
+logarithm = natural</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Fuzz</span><span class="p">,</span> <span class="n">Ps1</span><span class="p">,</span> <span class="n">Ps2</span> <span class="o">=</span> <span class="n">FuzzEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the fuzzy entropy estimates (<code class="docutils literal notranslate"><span class="pre">Fuzz</span></code>) for dimensions = [1, …, <code class="docutils literal notranslate"><span class="pre">m</span></code>]
+estimated for the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified name/value pair arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, a positive integer    [default: 2]</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer        [default: 1]</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Fx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Fuzzy function name, one of the following strings:  {<code class="docutils literal notranslate"><span class="pre">'sigmoid'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modsampen'</span></code>, <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gudermannian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'linear'</span></code>}</p></li>
+</ul>
+</dd>
+<dt class="field-even">r</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Fuzzy function parameters, a 1 element scalar or a 2 element vector of positive values. The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy</p></li>
+</ul>
+<p>function are defined as follows:      [default: (.2 2)]</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>sigmoid:      </dt><dd><ul>
+<li><p>r(1) = divisor of the exponential argument</p></li>
+<li><p>r(2) = value subtracted from argument (pre-division)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>modsampen:    </dt><dd><ul>
+<li><p>r(1) = divisor of the exponential argument</p></li>
+<li><p>r(2) = value subtracted from argument (pre-division)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>default:  </dt><dd><ul>
+<li><p>r(1) = divisor of the exponential argument</p></li>
+<li><p>r(2) = argument exponent (pre-division)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>gudermannian:   </dt><dd><ul>
+<li><p>r  = a scalar whose value is the numerator of  argument to gudermannian function: GD(x) = atan(tanh(r/x)). GD(x) is normalised to have a maximum value of 1.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>linear:        </dt><dd><p>r  = an integer value. When r = 0, the argument of the exponential function is 
+normalised between [0 1]. When r = 1, the minimuum value of the exponential argument is set to 0.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Logx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar  [default: natural]</p></li>
+</ul>
+</dd>
+</dl>
+<p>For further information on the keyword arguments, see the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">ApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Weiting Chen, et al.</dt><dd><p>“Characterization of surface EMG signal based on fuzzy entropy.”
+IEEE Transactions on neural systems and rehabilitation engineering
+15.2 (2007): 266-272.</p>
+</dd>
+<dt>[2] Hong-Bo Xie, Wei-Xing He, and Hui Liu</dt><dd><p>“Measuring time series regularity using nonlinear
+similarity-based sample entropy.”
+Physics Letters A
+372.48 (2008): 7140-7146.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.GridEn">
+<code class="sig-name descname"><span class="pre">GridEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.GridEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>GridEn  estimates the gridded distribution entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">GDE</span><span class="p">,</span> <span class="n">GDR</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">GridEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the gridded distribution entropy (<code class="docutils literal notranslate"><span class="pre">GDE</span></code>) and the gridded 
+distribution rate (<code class="docutils literal notranslate"><span class="pre">GDR</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using 
+the default  parameters: grid coarse-grain = 3, time delay = 1, logarithm = base 2</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">GDE</span><span class="p">,</span> <span class="n">GDR</span><span class="p">,</span> <span class="n">PIx</span><span class="p">,</span> <span class="n">GIx</span><span class="p">,</span> <span class="n">SIx</span><span class="p">,</span> <span class="n">AIx</span> <span class="o">=</span> <span class="n">GridEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the gridded distribution entropy (<code class="docutils literal notranslate"><span class="pre">GDE</span></code>) estimated from the data 
+sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Grid coarse-grain (m x m sectors), an integer &gt; 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Logx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar</p></li>
+</ul>
+</dd>
+<dt class="field-even">Plotx</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>When <code class="docutils literal notranslate"><span class="pre">Plotx</span> <span class="pre">==</span> <span class="pre">True</span></code>, returns gridded Poicaré plot and a bivariate histogram of the grid point distribution (default: False)</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">PhasEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CoSiEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SlopEn</span></code>, <code class="docutils literal notranslate"><span class="pre">BubbEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Chang Yan, et al.,</dt><dd><p>“Novel gridded descriptors of poincaré plot for analyzing 
+heartbeat interval time-series.” 
+Computers in biology and medicine 
+109 (2019): 280-289.</p>
+</dd>
+<dt>[2] Chang Yan, et al. </dt><dd><p>“Area asymmetry of heart rate variability signal.” 
+Biomedical engineering online 
+16.1 (2017): 1-14.</p>
+</dd>
+<dt>[3] Alberto Porta, et al.,</dt><dd><p>“Temporal asymmetries of short-term heart period variability 
+are linked to autonomic regulation.” 
+American Journal of Physiology-Regulatory, Integrative and 
+Comparative Physiology 
+295.2 (2008): R550-R557.</p>
+</dd>
+<dt>[4] C.K. Karmakar, A.H. Khandoker and M. Palaniswami,</dt><dd><p>“Phase asymmetry of heart rate variability signal.” 
+Physiological measurement 
+36.2 (2015): 303.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.IncrEn">
+<code class="sig-name descname"><span class="pre">IncrEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">R</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.IncrEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>IncrEn  estimates the increment entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Incr</span> <span class="o">=</span> <span class="n">IncrEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the increment entropy (<code class="docutils literal notranslate"><span class="pre">Incr</span></code>) estimate of the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
+using the default parameters: embedding dimension = 2, time delay = 1, quantifying resolution = 4, logarithm = base 2,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Incr</span> <span class="o">=</span> <span class="n">IncrEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the increment entropy (<code class="docutils literal notranslate"><span class="pre">Incr</span></code>) estimate of the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
+using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, an integer &gt; 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">R</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Quantifying resolution, a positive scalar</p></li>
+</ul>
+</dd>
+<dt class="field-even">Logx</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Logarithm base, a positive scalar (enter 0 for natural log)</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Norm</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">IncrEn</span></code> value, a boolean:</p></li>
+</ul>
+<ul class="simple">
+<li><p>[False]  no normalisation - default</p></li>
+<li><p>[True]   normalises w.r.t embedding dimension (m-1).</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SyDyEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Xiaofeng Liu, et al.,</dt><dd><p>“Increment entropy as a measure of complexity for time series.”
+Entropy
+18.1 (2016): 22.1.</p>
+</dd>
+<dt><a href="#id4"><span class="problematic" id="id5">**</span></a>*   “Correction on Liu, X.; Jiang, A.; Xu, N.; Xue, J. - Increment </dt><dd><p>Entropy as a Measure of Complexity for Time Series, Entropy 2016, 18, 22.” 
+Entropy 
+18.4 (2016): 133.</p>
+</dd>
+<dt>[2] Xiaofeng Liu, et al.,</dt><dd><p>“Appropriate use of the increment entropy for 
+electrophysiological time series.” 
+Computers in biology and medicine 
+95 (2018): 13-23.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.K2En">
+<code class="sig-name descname"><span class="pre">K2En</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.K2En" title="Permalink to this definition">¶</a></dt>
+<dd><p>K2En  estimates the Kolmogorov (K2) entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">K2</span><span class="p">,</span> <span class="n">Ci</span> <span class="o">=</span> <span class="n">K2En</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the Kolmogorov entropy estimates (<code class="docutils literal notranslate"><span class="pre">K2</span></code>) and the correlation
+integrals (<code class="docutils literal notranslate"><span class="pre">Ci</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
+using the default parameters: embedding dimension = 2, time delay = 1, 
+distance threshold (<code class="docutils literal notranslate"><span class="pre">r</span></code>) = 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>), logarithm = natural</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">K2</span><span class="p">,</span> <span class="n">Ci</span> <span class="o">=</span> <span class="n">K2En</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the Kolmogorov entropy estimates (<code class="docutils literal notranslate"><span class="pre">K2</span></code>) for dimensions = [1, …, <code class="docutils literal notranslate"><span class="pre">m</span></code>]
+estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">r</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Radius Distance Threshold, a positive scalar</p></li>
+</ul>
+</dd>
+<dt class="field-even">Logx</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Logarithm base, a positive scalar</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">DistEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XK2En</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Peter Grassberger and Itamar Procaccia,</dt><dd><p>“Estimation of the Kolmogorov entropy from a chaotic signal.” 
+Physical review A 28.4 (1983): 2591.</p>
+</dd>
+<dt>[2] Lin Gao, Jue Wang  and Longwei Chen</dt><dd><p>“Event-related desynchronization and synchronization 
+quantification in motor-related EEG by Kolmogorov entropy”
+J Neural Eng. 2013 Jun;10(3):03602</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.PermEn">
+<code class="sig-name descname"><span class="pre">PermEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'none'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tpx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PermEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>PermEn  estimates the permutation entropy of a univariate data sequence.</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Perm</span><span class="p">,</span> <span class="n">Pnorm</span><span class="p">,</span> <span class="n">cPE</span> <span class="o">=</span> <span class="n">PermEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the permuation entropy estimates (<code class="docutils literal notranslate"><span class="pre">Perm</span></code>), the normalised
+permutation entropy (<code class="docutils literal notranslate"><span class="pre">Pnorm</span></code>) and the conditional permutation entropy (<code class="docutils literal notranslate"><span class="pre">cPE</span></code>)
+for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the default 
+parameters: embedding dimension = 2, time delay = 1, 
+logarithm = base 2, normalisation = w.r.t #symbols (<code class="docutils literal notranslate"><span class="pre">m-1</span></code>)
+Note: using the standard PermEn estimation, <code class="docutils literal notranslate"><span class="pre">Perm</span></code> = 0 when <code class="docutils literal notranslate"><span class="pre">m</span></code> = 1.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Perm</span><span class="p">,</span> <span class="n">Pnorm</span><span class="p">,</span> <span class="n">cPE</span> <span class="o">=</span> <span class="n">PermEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the permutation entropy estimates (<code class="docutils literal notranslate"><span class="pre">Perm</span></code>) estimated from the data
+sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified embedding dimensions = [1,…, <code class="docutils literal notranslate"><span class="pre">m</span></code>] 
+with other default parameters as listed above.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Perm</span><span class="p">,</span> <span class="n">Pnorm</span><span class="p">,</span> <span class="n">cPE</span> <span class="o">=</span> <span class="n">PermEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the permutation entropy estimates (<code class="docutils literal notranslate"><span class="pre">Perm</span></code>) for dimensions = [1,…, <code class="docutils literal notranslate"><span class="pre">m</span></code>]
+estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, an integer &gt; 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Logx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar (enter 0 for natural log)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Norm</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">Pnorm</span></code> value, a boolean:</p></li>
+</ul>
+<ul class="simple">
+<li><p>False -  normalises w.r.t log(# of permutation symbols [<code class="docutils literal notranslate"><span class="pre">m-1]</span></code>) - default</p></li>
+<li><p>True  -  normalises w.r.t log(# of all possible permutations [<code class="docutils literal notranslate"><span class="pre">m!</span></code>])</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Note: Normalised permutation entropy is undefined for <code class="docutils literal notranslate"><span class="pre">m</span></code> = 1.</p></li>
+</ul>
+<p>** Note: When <code class="docutils literal notranslate"><span class="pre">Typex</span> <span class="pre">=</span> <span class="pre">'uniquant'</span></code> and <code class="docutils literal notranslate"><span class="pre">Norm</span> <span class="pre">=</span> <span class="pre">True</span></code>, normalisation is calculated w.r.t. <code class="docutils literal notranslate"><span class="pre">log(tpx^m)</span></code> **</p>
+</div></blockquote>
+</dd>
+<dt class="field-odd">Typex</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Permutation entropy variation, one of the following:</p></li>
+</ul>
+<dl class="simple">
+<dt>{<code class="docutils literal notranslate"><span class="pre">'uniquant'</span></code>, <code class="docutils literal notranslate"><span class="pre">'finegrain'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'ampaware'</span></code>, <code class="docutils literal notranslate"><span class="pre">'weighted'</span></code>, <code class="docutils literal notranslate"><span class="pre">'edge'</span></code>}</dt><dd><p>See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on PermEn variants.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">tpx</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Tuning parameter for associated permutation entropy variation.</p></li>
+</ul>
+<ul class="simple">
+<li><p>[uniquant]  ‘tpx’ is the L parameter, an integer &gt; 1 (default = 4).</p></li>
+<li><p>[finegrain] ‘tpx’ is the alpha parameter, a positive scalar (default = 1)</p></li>
+<li><p>[ampaware]  ‘tpx’ is the A parameter, a value in range [0 1] (default = 0.5)</p></li>
+<li><p>[edge]      ‘tpx’ is the r sensitivity parameter, a scalar &gt; 0 (default = 1)</p></li>
+</ul>
+</dd>
+</dl>
+<p>See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on PermEn variants.</p>
+</div></blockquote>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">XPermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">ApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CondEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Christoph Bandt and Bernd Pompe, </dt><dd><p>“Permutation entropy: A natural complexity measure for time series.” 
+Physical Review Letters,
+88.17 (2002): 174102.</p>
+</dd>
+<dt>[2] Xiao-Feng Liu, and Wang Yue,</dt><dd><dl class="simple">
+<dt>“Fine-grained permutation entropy as a measure of natural </dt><dd><p>complexity for time series.” 
+Chinese Physics B 
+18.7 (2009): 2690.</p>
+</dd>
+</dl>
+</dd>
+<dt>[3] Chunhua Bian, et al.,</dt><dd><p>“Modified permutation-entropy analysis of heartbeat dynamics.”
+Physical Review E
+85.2 (2012) : 021906</p>
+</dd>
+<dt>[4] Bilal Fadlallah, et al.,</dt><dd><p>“Weighted-permutation entropy: A complexity measure for time 
+series incorporating amplitude information.” 
+Physical Review E 
+87.2 (2013): 022911.</p>
+</dd>
+<dt>[5] Hamed Azami and Javier Escudero,</dt><dd><p>“Amplitude-aware permutation entropy: Illustration in spike 
+detection and signal segmentation.” 
+Computer methods and programs in biomedicine,
+128 (2016): 40-51.</p>
+</dd>
+<dt>[6] Zhiqiang Huo, et al.,</dt><dd><p>“Edge Permutation Entropy: An Improved Entropy Measure for 
+Time-Series Analysis,” 
+45th Annual Conference of the IEEE Industrial Electronics Soc,
+(2019), 5998-6003</p>
+</dd>
+<dt>[7] Zhe Chen, et al. </dt><dd><p>“Improved permutation entropy for measuring complexity of time
+series under noisy condition.” 
+Complexity 
+1403829 (2019).</p>
+</dd>
+<dt>[8] Maik Riedl, Andreas Müller, and Niels Wessel,</dt><dd><p>“Practical considerations of permutation entropy.” 
+The European Physical Journal Special Topics 
+222.2 (2013): 249-262.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.PhasEn">
+<code class="sig-name descname"><span class="pre">PhasEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PhasEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>PhasEn  estimates the phase entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Phas</span> <span class="o">=</span> <span class="n">PhasEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the phase entropy (<code class="docutils literal notranslate"><span class="pre">Phas</span></code>) estimate of the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
+using the default parameters: angular partitions = 4, time delay = 1, logarithm = natural,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Phas</span> <span class="o">=</span> <span class="n">PhasEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the phase entropy (<code class="docutils literal notranslate"><span class="pre">Phas</span></code>) estimate of the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)  
+using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">K</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Angular partitions (coarse graining), an integer &gt; 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Logx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar</p></li>
+</ul>
+</dd>
+<dt class="field-even">Norm</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Normalisation of Phas value, a boolean:</p></li>
+<li><p>[false]  no normalisation</p></li>
+<li><p>[true]   normalises w.r.t. the # partitions <code class="docutils literal notranslate"><span class="pre">Log(K)</span></code>  (Default)</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Plotx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>When <code class="docutils literal notranslate"><span class="pre">Plotx</span> <span class="pre">==</span> <span class="pre">true</span></code>, returns Poicaré plot (default: false)</p></li>
+</ul>
+</dd>
+<dt class="field-even">See also</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">ApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">GridEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SlopEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CoSiEn</span></code>, <code class="docutils literal notranslate"><span class="pre">BubbEn</span></code></p>
+</dd>
+<dt class="field-odd">References</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>[1] Ashish Rohila and Ambalika Sharma,</dt><dd><p>“Phase entropy: a new complexity measure for heart rate
+variability.” 
+Physiological measurement
+40.10 (2019): 105006.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.SampEn">
+<code class="sig-name descname"><span class="pre">SampEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SampEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>SampEn  estimates the sample entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Samp</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span> <span class="o">=</span> <span class="n">SampEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the sample entropy estimates (<code class="docutils literal notranslate"><span class="pre">Samp</span></code>) and the number of matched state
+vectors (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">A</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [0, 1, 2] estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
+using the default parameters: embedding dimension = 2, time delay = 1, 
+radius threshold = 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>), logarithm = natural</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Samp</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span> <span class="o">=</span> <span class="n">SampEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the sample entropy estimates (<code class="docutils literal notranslate"><span class="pre">Samp</span></code>) for dimensions = [0, 1, …, <code class="docutils literal notranslate"><span class="pre">m</span></code>]
+estimated for the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified keyword arguments:</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">r</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Radius Distance Threshold, a positive scalar</p></li>
+</ul>
+</dd>
+<dt class="field-even">Logx</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Logarithm base, a positive scalar</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">ApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CondEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Joshua S Richman and J. Randall Moorman. </dt><dd><p>“Physiological time-series analysis using approximate entropy
+and sample entropy.” 
+American Journal of Physiology-Heart and Circulatory Physiology 
+2000</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.SlopEn">
+<code class="sig-name descname"><span class="pre">SlopEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lvls</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(5,</span> <span class="pre">45)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SlopEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>SlopEn  estimates the slope entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Slop</span> <span class="o">=</span> <span class="n">SlopEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the slope entropy (<code class="docutils literal notranslate"><span class="pre">Slop</span></code>) of the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) for embedding 
+dimensions [2, …, <code class="docutils literal notranslate"><span class="pre">m</span></code>] using the default parameters:  embedding dimension = 2, 
+time delay = 1, angular thresholds = [5 45],  logarithm = base 2</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Slop</span><span class="p">]</span> <span class="o">=</span> <span class="n">SlopEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the slope entropy (<code class="docutils literal notranslate"><span class="pre">Slop</span></code>) estimates of the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)  
+using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, an integer &gt; 1</p></li>
+</ul>
+<p>SlopEn returns estimates for each dimension [2,…, <code class="docutils literal notranslate"><span class="pre">m</span></code>]</p>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Lvls</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Angular thresolds, a vector of monotonically increasing  values in the range [0 90] degrees.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Logx</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Logarithm base, a positive scalar (enter 0 for natural log)</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Norm</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">SlopEn</span></code> value, one of the following integers:</p></li>
+</ul>
+<ul class="simple">
+<li><p>[False]  no normalisation</p></li>
+<li><p>[True]   normalises w.r.t. the number of patterns found (default)</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">PhasEn</span></code>, <code class="docutils literal notranslate"><span class="pre">GridEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CoSiEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">ApEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] David Cuesta-Frau,</dt><dd><p>“Slope Entropy: A New Time Series Complexity Estimator Based on
+Both Symbolic Patterns and Amplitude Information.” 
+Entropy 
+21.12 (2019): 1167.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.SpecEn">
+<code class="sig-name descname"><span class="pre">SpecEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Freqs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SpecEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>SpecEn  estimates the spectral entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Spec</span><span class="p">,</span> <span class="n">BandEn</span> <span class="o">=</span> <span class="n">SpecEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the spectral entropy estimate of the full spectrum (<code class="docutils literal notranslate"><span class="pre">Spec</span></code>)
+and the within-band entropy (BandEn) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
+using the default  parameters: 
+N-point FFT = 2*len(Sig) + 1, normalised band edge frequencies = [0 1],
+logarithm = base 2, normalisation = w.r.t # of spectrum/band frequency values.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Spec</span><span class="p">,</span> <span class="n">BandEn</span> <span class="o">=</span> <span class="n">SpecEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the spectral entropy (<code class="docutils literal notranslate"><span class="pre">Spec</span></code>) and the within-band entropy (<code class="docutils literal notranslate"><span class="pre">BandEn</span></code>)
+estimate from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">N</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Resolution of spectrum (N-point FFT), an integer &gt; 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">Freqs</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Normalised band edge frequencies, a 2 element tuple with values in range [0 1] where 1 corresponds to the Nyquist frequency (Fs/2).</p></li>
+</ul>
+<ul class="simple">
+<li><p>Note: When no band frequencies are entered, <code class="docutils literal notranslate"><span class="pre">BandEn</span> <span class="pre">==</span> <span class="pre">SpecEn</span></code></p></li>
+</ul>
+</dd>
+<dt class="field-odd">Logx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar (enter 0 for natural log)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Norm</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Normalisation of Spec value, a boolean:</p></li>
+</ul>
+<ul class="simple">
+<li><p>[False]  no normalisation.</p></li>
+<li><p>[True]   normalises w.r.t # of spectrum/band frequency values - default.</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<p>For more info, see the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">XSpecEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy.fftpack</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] G.E. Powell and I.C. Percival,</dt><dd><p>“A spectral entropy method for distinguishing regular and 
+irregular motion of Hamiltonian systems.” 
+Journal of Physics A: Mathematical and General 
+12.11 (1979): 2053.</p>
+</dd>
+<dt>[2] Tsuyoshi Inouye, et al.,</dt><dd><p>“Quantification of EEG irregularity by use of the entropy of 
+the power spectrum.” 
+Electroencephalography and clinical neurophysiology 
+79.3 (1991): 204-210.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="EntropyHub.SyDyEn">
+<code class="sig-name descname"><span class="pre">SyDyEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SyDyEn" title="Permalink to this definition">¶</a></dt>
+<dd><p>SyDyEn  estimates the symbolic dynamic entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SyDy</span><span class="p">,</span> <span class="n">Zt</span> <span class="o">=</span> <span class="n">SyDyEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the symbolic dynamic entropy (<code class="docutils literal notranslate"><span class="pre">SyDy</span></code>) and the symbolic sequence
+(<code class="docutils literal notranslate"><span class="pre">Zt</span></code>) of the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the default parameters: 
+embedding dimension = 2, time delay = 1, symbols = 3, logarithm = natural,
+symbolic partition type = maximum entropy partitioning (<code class="docutils literal notranslate"><span class="pre">'MEP'</span></code>), 
+normalisation = normalises w.r.t # possible vector permutations (<code class="docutils literal notranslate"><span class="pre">c^m</span></code>)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SyDy</span><span class="p">,</span> <span class="n">Zt</span> <span class="o">=</span> <span class="n">SyDyEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the symbolic dynamic entropy (<code class="docutils literal notranslate"><span class="pre">SyDy</span></code>) and the symbolic sequence
+(<code class="docutils literal notranslate"><span class="pre">Zt</span></code>) of the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">c</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Number of symbols, an integer &gt; 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">Typex</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Type of symbolic sequence partitioning, one of the following:</p></li>
+</ul>
+<p>{<code class="docutils literal notranslate"><span class="pre">'linear'</span></code>, <code class="docutils literal notranslate"><span class="pre">'uniform'</span></code>, <code class="docutils literal notranslate"><span class="pre">'MEP'</span></code> (default), <code class="docutils literal notranslate"><span class="pre">'kmeans'</span></code>}</p>
+</dd>
+<dt class="field-odd">‘Logx</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar</p></li>
+</ul>
+</dd>
+<dt class="field-even">Norm</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Normalisation of SyDyEn value, a boolean:</p></li>
+</ul>
+<p>[False]  no normalisation 
+[True]   normalises w.r.t # possible vector permutations (<code class="docutils literal notranslate"><span class="pre">c^m+1</span></code>) - default</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on these parameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">See also</dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">DispEn</span></code>, <code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CondEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References</dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Yongbo Li, et al.,</dt><dd><p>“A fault diagnosis scheme for planetary gearboxes using 
+modified multi-scale symbolic dynamic entropy and mRMR feature 
+selection.” 
+Mechanical Systems and Signal Processing 
+91 (2017): 295-312.</p>
+</dd>
+<dt>[2] Jian Wang, et al.,</dt><dd><p>“Fault feature extraction for multiple electrical faults of 
+aviation electro-mechanical actuator based on symbolic dynamics
+entropy.” 
+IEEE International Conference on Signal Processing, 
+Communications and Computing (ICSPCC), 2015.</p>
+</dd>
+<dt>[3] Venkatesh Rajagopalan and Asok Ray,</dt><dd><p>“Symbolic time series analysis via wavelet-based partitioning.”
+Signal processing 
+86.11 (2006): 3309-3320.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Cross.html" class="btn btn-neutral float-right" title="Cross Entropies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../pyAPI.html" class="btn btn-neutral float-left" title="Python Functions:" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Matthew W. Flood.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,520 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Python Functions: &mdash; EntropyHub 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Base Entropies" href="Functions/Base.html" />
+    <link rel="prev" title="EntropyHub: Python" href="EHpython.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> EntropyHub
+          
+
+          
+            
+            <img src="../_static/Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Home.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../EHupdates.html">Latest Updates</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../matlab/EHmatlab.html">EntropyHub - MatLab</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../matlab/matAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matBase.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matCross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matMultiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matMultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../matlab/matexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="EHpython.html">EntropyHub - Python</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Functions/Base.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Functions/Cross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Functions/Multiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Functions/MultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Functions/Bidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pyexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../julia/EHjulia.html">EntropyHub - Julia</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/dev">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/dev/Examples/Examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">EntropyHub</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="EHpython.html">EntropyHub: Python</a> &raquo;</li>
+        
+      <li>Python Functions:</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/MattWillFlood/EntropyHub/blob/main/docs/python/pyAPI.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="python-functions">
+<h1>Python Functions:<a class="headerlink" href="#python-functions" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="entropyhub-functions-fall-into-5-categories">
+<h2>EntropyHub functions fall into 5 categories:<a class="headerlink" href="#entropyhub-functions-fall-into-5-categories" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="simple">
+<dt>Base</dt><dd><p>functions for estimating the entropy of a single univariate time series.</p>
+</dd>
+<dt>Cross</dt><dd><p>functions for estimating the entropy between two univariate time series.</p>
+</dd>
+<dt>Bidimensional</dt><dd><p>functions for estimating the entropy of a two-dimensional univariate matrix.</p>
+</dd>
+<dt>Multiscale</dt><dd><p>functions for estimating the multiscale entropy of a single univariate time series using any of the Base entropy functions.</p>
+</dd>
+<dt>Multiscale Cross</dt><dd><p>functions for estimating the multiscale entropy between two univariate time series using any of the Cross-entropy functions.</p>
+</dd>
+</dl>
+</div></blockquote>
+<hr class="docutils" />
+<p><strong>When new entropies are published in the scientific literature, efforts will be made to incorporate them in future releases.</strong></p>
+<hr class="docutils" />
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>For concision, function commands written in the following sections using Python
+syntax exclude the module prefix which would otherwise be required,</p>
+<p>i.e. <code class="docutils literal notranslate"><span class="pre">EntropyHub.SampEn()</span></code> is written as <code class="docutils literal notranslate"><span class="pre">SampEn()</span></code>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Python functions in EntropyHub are based primarily on the <a class="reference external" href="https://numpy.org/doc/stable/user/whatisnumpy.html">Numpy</a> package.
+Arguments shown in python functions with the <code class="docutils literal notranslate"><span class="pre">np.</span></code> prefix refer to <cite>numpy</cite> functions.</p>
+</div>
+<div class="section" id="base-entropies">
+<h3>Base Entropies:<a class="headerlink" href="#base-entropies" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 65%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Entropy Type</p></th>
+<th class="head"><p>Function Name</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Approximate Entropy</p></td>
+<td><p>ApEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sample Entropy</p></td>
+<td><p>SampEn</p></td>
+</tr>
+<tr class="row-even"><td><p>Fuzzy Entropy</p></td>
+<td><p>FuzzEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Kolmogorov Entropy</p></td>
+<td><p>K2En</p></td>
+</tr>
+<tr class="row-even"><td><p>Permutation Entropy</p></td>
+<td><p>PermEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Conditional Entropy</p></td>
+<td><p>CondEn</p></td>
+</tr>
+<tr class="row-even"><td><p>Distribution Entropy</p></td>
+<td><p>DistEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Spectral Entropy</p></td>
+<td><p>SpecEn</p></td>
+</tr>
+<tr class="row-even"><td><p>Dispersion Entropy</p></td>
+<td><p>DispEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Symbolic Dynamic Entropy</p></td>
+<td><p>SyDyEn</p></td>
+</tr>
+<tr class="row-even"><td><p>Increment Entropy</p></td>
+<td><p>IncrEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cosine Similarity Entropy</p></td>
+<td><p>CoSiEn</p></td>
+</tr>
+<tr class="row-even"><td><p>Phase Entropy</p></td>
+<td><p>PhasEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Slope Entropy</p></td>
+<td><p>SlopEn</p></td>
+</tr>
+<tr class="row-even"><td><p>Bubble Entropy</p></td>
+<td><p>BubbEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Gridded Distribution Entropy</p></td>
+<td><p>GridEn</p></td>
+</tr>
+<tr class="row-even"><td><p>Entropy of Entropy</p></td>
+<td><p>EnofEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Attention Entropy</p></td>
+<td><p>AttnEn</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="cross-entropies">
+<h3>Cross Entropies:<a class="headerlink" href="#cross-entropies" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 69%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Entropy Type</p></th>
+<th class="head"><p>Function Name</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Cross-Approximate Entropy</p></td>
+<td><p>XApEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cross-Sample Entropy</p></td>
+<td><p>XSampEn</p></td>
+</tr>
+<tr class="row-even"><td><p>Cross-Fuzzy Entropy</p></td>
+<td><p>XFuzzEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cross-Kolmogorov Entropy</p></td>
+<td><p>XK2En</p></td>
+</tr>
+<tr class="row-even"><td><p>Cross-Permutation Entropy</p></td>
+<td><p>XPermEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cross-Conditional Entropy</p></td>
+<td><p>XCondEn</p></td>
+</tr>
+<tr class="row-even"><td><p>Cross-Distribution Entropy</p></td>
+<td><p>XDistEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cross-Spectral Entropy</p></td>
+<td><p>XSpecEn</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="bidimensional-entropies">
+<h3>Bidimensional Entropies:<a class="headerlink" href="#bidimensional-entropies" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 69%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Entropy Type</p></th>
+<th class="head"><p>Function Name</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Bidimensional Sample Entropy</p></td>
+<td><p>SampEn2D</p></td>
+</tr>
+<tr class="row-odd"><td><p>Bidimensional Fuzzy Entropy</p></td>
+<td><p>FuzzEn2D</p></td>
+</tr>
+<tr class="row-even"><td><p>Bidimensioanl Distribution Entropy</p></td>
+<td><p>DistEn2D</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="multiscale-entropies">
+<h3>Multiscale  Entropies:<a class="headerlink" href="#multiscale-entropies" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 72%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Entropy Type</p></th>
+<th class="head"><p>Function Name</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Multiscale Entropy</p></td>
+<td><p>MSEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Composite Multiscale Entropy
+(+ Refined-Composite Multiscale Entropy)</p></td>
+<td><p>cMSEn</p></td>
+</tr>
+<tr class="row-even"><td><p>Refined Multiscale Entropy</p></td>
+<td><p>rMSEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hierarchical Multiscale Entropy</p></td>
+<td><p>hMSEn</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="multiscale-cross-entropies">
+<h3>Multiscale Cross-Entropies:<a class="headerlink" href="#multiscale-cross-entropies" title="Permalink to this headline">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 75%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Entropy Type</p></th>
+<th class="head"><p>Function Name</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Multiscale Cross-Entropy</p></td>
+<td><p>XMSEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Composite Multiscale Cross-Entropy
+(+ Refined-Composite Multiscale Cross-Entropy)</p></td>
+<td><p>cXMSEn</p></td>
+</tr>
+<tr class="row-even"><td><p>Refined Multiscale Cross-Entropy</p></td>
+<td><p>rXMSEn</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hierarchical Multiscale Cross-Entropy</p></td>
+<td><p>hXMSEn</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Functions/Base.html" class="btn btn-neutral float-right" title="Base Entropies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="EHpython.html" class="btn btn-neutral float-left" title="EntropyHub: Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Matthew W. Flood.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

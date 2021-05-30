@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>EntropyHub: MatLab &mdash; EntropyHub 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="MatLab Functions:" href="matAPI.html" />
+    <link rel="prev" title="Latest Updates:" href="../EHupdates.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> EntropyHub
+          
+
+          
+            
+            <img src="../_static/Logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Home.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../EHupdates.html">Latest Updates</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EntropyHub - MatLab</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="matAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Functions/matBase.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Functions/matCross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Functions/matMultiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Functions/matMultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="matexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../python/EHpython.html">EntropyHub - Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../python/pyAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/Base.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/Cross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/Multiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/MultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/Bidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../python/pyexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../julia/EHjulia.html">EntropyHub - Julia</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/dev">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/dev/Examples/Examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">EntropyHub</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>EntropyHub: MatLab</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/MattWillFlood/EntropyHub/blob/main/docs/matlab/EHmatlab.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="entropyhub-matlab">
+<h1>EntropyHub: MatLab<a class="headerlink" href="#entropyhub-matlab" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p class="centered">
+<strong>Links to installation files:  <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20MatLab">GitHub</a> || <a class="reference external" href="https://www.mathworks.com/matlabcentral/fileexchange/">MatLab File Exchange</a></strong></p><hr class="docutils" />
+<div class="section" id="requirements-installation">
+<h2>Requirements &amp; Installation:<a class="headerlink" href="#requirements-installation" title="Permalink to this headline">¶</a></h2>
+<p>There are two additional MatLab toolboxes required to get the <strong>full</strong> functionality of the EntropyHub toolkit:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em>Signal Processing Toolbox</em></p></li>
+<li><p><em>Statistics and Machine Learning Toolbox</em>.</p></li>
+</ul>
+</div></blockquote>
+<p>However, most functions will work without these toolboxes.</p>
+<p>EntropyHub is intended for use with MatLab versions &gt;= 2016a.
+In some cases the toolkit may work on versions 2015a &amp; 2015b.
+However, it is not recommended to install on MatLab versions older than 2016 and should only be done so with caution.</p>
+<hr class="docutils" />
+<p>There are 2 ways to install EntropyHub for MatLab.</p>
+<div class="section" id="method-1">
+<h3>Method 1:<a class="headerlink" href="#method-1" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p>Go to the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20MatLab">MatLab folder in the EntropyHub repository</a> on GitHub.</p></li>
+<li><p>Download the MatLab toolbox file (<strong>EntropyHub.mltbx</strong>) file.</p></li>
+<li><p>Open matlab and change the current folder to the directory where the .mltbx file is saved.</p>
+<a class="reference internal image-reference" href="../_images/MATLAB_README1.png"><img alt="../_images/MATLAB_README1.png" class="align-center" src="../_images/MATLAB_README1.png" style="width: 600px; height: 600px;" /></a>
+</li>
+<li><p>Double-click the .mltbx file to open it and click install.</p>
+<img alt="../_images/MATLAB_README2.png" class="align-center" src="../_images/MATLAB_README2.png" />
+</li>
+</ol>
+</div>
+<div class="section" id="method-2">
+<h3>Method 2:<a class="headerlink" href="#method-2" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p>In MatLab, open the Add-Ons browser under the home tab by clicking ‘Get Add-Ons’.</p>
+<a class="reference internal image-reference" href="../_images/MATLAB_README3.png"><img alt="../_images/MATLAB_README3.png" class="align-center" src="../_images/MATLAB_README3.png" style="width: 800px; height: 400px;" /></a>
+</li>
+<li><p>In the search bar, search for <em>EntroypHub</em>.</p></li>
+<li><p>Open the resulting link, and click ‘<em>add</em>’ in the top-right corner.</p></li>
+<li><p>Follow the instructions to install the toolbox. <strong>Note: You must be logged in to your MathWorks account</strong>.</p></li>
+</ol>
+<p>To check that EntropyHub has been correctly installed, enter <code class="docutils literal notranslate"><span class="pre">EntropyHub</span></code> at the command line and the EntropyHUb logo should be displayed.</p>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">EntropyHub</span><span class="w"></span>
+
+<span class="w">      </span><span class="n">___</span><span class="w">  </span><span class="n">_</span><span class="w">   </span><span class="n">_</span><span class="w">  </span><span class="n">_____</span><span class="w">  </span><span class="n">_____</span><span class="w">  </span><span class="n">____</span><span class="w">  </span><span class="n">____</span><span class="w">  </span><span class="n">_</span><span class="w">     </span><span class="n">_</span><span class="w"></span>
+<span class="w">   </span><span class="o">|</span><span class="w">  </span><span class="n">_</span><span class="o">||</span><span class="w"> </span><span class="o">\</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">||</span><span class="n">_</span><span class="w">   </span><span class="n">_</span><span class="o">||</span><span class="w">     </span><span class="o">\|</span><span class="w">    </span><span class="o">||</span><span class="w">    </span><span class="o">||</span><span class="w"> </span><span class="o">\</span><span class="w">   </span><span class="o">/</span><span class="w"> </span><span class="o">|</span><span class="w">   </span><span class="n">___________</span><span class="w"></span>
+<span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="o">\</span><span class="n">_</span><span class="w"> </span><span class="o">|</span><span class="w">  </span><span class="o">\|</span><span class="w"> </span><span class="o">|</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w">  </span><span class="o">|</span><span class="w">   </span><span class="n">__</span><span class="o">/|</span><span class="w">    </span><span class="o">||</span><span class="w">  </span><span class="n">__</span><span class="o">|</span><span class="w"> </span><span class="o">\</span><span class="w"> </span><span class="o">\</span><span class="n">_</span><span class="o">/</span><span class="w"> </span><span class="o">/</span><span class="w">   </span><span class="o">/</span><span class="w">  </span><span class="n">_______</span><span class="w">  </span><span class="o">\</span><span class="w"></span>
+<span class="w">   </span><span class="o">|</span><span class="w">  </span><span class="n">_</span><span class="o">||</span><span class="w"> </span><span class="o">\</span><span class="w"> </span><span class="o">\</span><span class="w"> </span><span class="o">|</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w">  </span><span class="o">|</span><span class="w">   </span><span class="o">\</span><span class="w">  </span><span class="o">|</span><span class="w">    </span><span class="o">||</span><span class="w"> </span><span class="o">|</span><span class="w">     </span><span class="o">\</span><span class="w">   </span><span class="o">/</span><span class="w">   </span><span class="o">|</span><span class="w">  </span><span class="o">/</span><span class="w">  </span><span class="n">___</span><span class="w">  </span><span class="o">\</span><span class="w">  </span><span class="o">|</span><span class="w"></span>
+<span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="o">\</span><span class="n">_</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">|\</span><span class="w">  </span><span class="o">|</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="o">|\</span><span class="w"> </span><span class="o">\</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="o">||</span><span class="w"> </span><span class="o">|</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w">  </span><span class="o">/</span><span class="w">   </span><span class="o">\</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
+<span class="w">   </span><span class="o">|</span><span class="n">___</span><span class="o">||</span><span class="n">_</span><span class="o">|</span><span class="w"> </span><span class="o">\</span><span class="n">_</span><span class="o">|</span><span class="w">  </span><span class="o">|</span><span class="n">_</span><span class="o">|</span><span class="w">  </span><span class="o">|</span><span class="n">_</span><span class="o">|</span><span class="w"> </span><span class="o">\</span><span class="n">_</span><span class="o">||</span><span class="n">____</span><span class="o">||</span><span class="n">_</span><span class="o">|</span><span class="w">      </span><span class="o">|</span><span class="n">_</span><span class="o">|</span><span class="w">   </span><span class="n">_</span><span class="o">|</span><span class="n">_</span><span class="o">|</span><span class="n">__</span><span class="o">\</span><span class="n">___</span><span class="o">/</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
+<span class="w">   </span><span class="n">_</span><span class="w">   </span><span class="n">_</span><span class="w">  </span><span class="n">_</span><span class="w">   </span><span class="n">_</span><span class="w">  </span><span class="n">____</span><span class="w">                           </span><span class="o">/</span><span class="w"> </span><span class="o">|</span><span class="n">__</span><span class="o">\</span><span class="n">______</span><span class="o">\/</span><span class="w">  </span><span class="o">|</span><span class="w"></span>
+<span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">||</span><span class="w">    </span><span class="o">\</span><span class="w">     </span><span class="n">An</span><span class="w"> </span><span class="nb">open</span><span class="o">-</span><span class="n">source</span><span class="w">      </span><span class="o">|</span><span class="w">  </span><span class="o">/\</span><span class="n">______</span><span class="o">\</span><span class="n">__</span><span class="o">|</span><span class="n">_</span><span class="o">/</span><span class="w"></span>
+<span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="n">_</span><span class="o">|</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">||</span><span class="w">    </span><span class="o">|</span><span class="w">     </span><span class="n">toolkit</span><span class="w"> </span><span class="k">for</span><span class="w">         </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w">  </span><span class="o">/</span><span class="w">   </span><span class="o">\</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
+<span class="w">   </span><span class="o">|</span><span class="w">  </span><span class="n">_</span><span class="w">  </span><span class="o">||</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">||</span><span class="w">    </span><span class="o">\</span><span class="w">     </span><span class="n">entropic</span><span class="w"> </span><span class="nb">time</span><span class="o">-</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w">  </span><span class="o">\</span><span class="n">___</span><span class="o">/</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
+<span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">|</span><span class="n">_</span><span class="o">|</span><span class="w"> </span><span class="o">||</span><span class="w">     </span><span class="o">\</span><span class="w">    </span><span class="n">series</span><span class="w"> </span><span class="n">analysis</span><span class="w">     </span><span class="o">|</span><span class="w">  </span><span class="o">\</span><span class="n">_______</span><span class="o">/</span><span class="w">  </span><span class="o">|</span><span class="w"></span>
+<span class="w">   </span><span class="o">|</span><span class="n">_</span><span class="o">|</span><span class="w"> </span><span class="o">|</span><span class="n">_</span><span class="o">|\</span><span class="n">_____</span><span class="o">/|</span><span class="n">_____</span><span class="o">/</span><span class="w">                         </span><span class="o">\</span><span class="n">___________</span><span class="o">/</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="documentation-help">
+<h2>Documentation &amp; Help:<a class="headerlink" href="#documentation-help" title="Permalink to this headline">¶</a></h2>
+<p>A key advantage of EntropyHub is the comprehensive documentation available to help users to make the most of the toolkit.
+In the supplemental software section of the MatLab help browser, you can find custom EntropyHub documentation on each EntropyHub function,
+complete with several examples and references to relevant scientific sources.
+To learn more about a specific function, one can do so easily from the command line by typing: <cite>doc FunctionName</cite>, which will display the documentation in the help browser.
+For example:</p>
+<p><code class="docutils literal notranslate"><span class="pre">doc</span> <span class="pre">SampEn</span></code>     Documentation on sample entropy function</p>
+<p><code class="docutils literal notranslate"><span class="pre">doc</span> <span class="pre">XSpecEn</span></code>    Documentation on cross-spectral entropy function</p>
+<p><code class="docutils literal notranslate"><span class="pre">doc</span> <span class="pre">hXMSEn</span></code>     Documentation on hierarchical multiscale cross-entropy function</p>
+<p>Alternatively, one can simply access the docstrings of a function (like any MatLab function) by typing <cite>help FunctionName</cite> in the command line,
+which will display the docstrings in the command window - e.g. <code class="docutils literal notranslate"><span class="pre">help</span> <span class="pre">SampEn</span></code></p>
+<p>All information on the EntropyHub package is also detailed in the <em>EntropyHub Guide</em>,
+a .pdf document available to <a class="reference download internal" download="" href="../_downloads/40d9c1910993d9509e60865d940bb066/EntropyHubGuide.pdf"><code class="xref download docutils literal notranslate"><span class="pre">download</span> <span class="pre">here</span></code></a>.</p>
+<p>The MatLab API subsections outline the syntax for each base, cross-, multiscale, multiscale-cross, and bidimensional entropy MatLab function.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="matAPI.html" class="btn btn-neutral float-right" title="MatLab Functions:" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../EHupdates.html" class="btn btn-neutral float-left" title="Latest Updates:" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Matthew W. Flood.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
