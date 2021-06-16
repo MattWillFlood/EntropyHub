@@ -5,7 +5,7 @@
 </p>
 
   Available in 
-  [MatLab](https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20MatLab "EH4MATLAB")  // 
+  [MatLab](https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub "EH4MATLAB")  // 
   [Python](https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Python "EH4PYTHON")  // 
   [Julia](https://github.com/MattWillFlood/EntropyHub.jl "EH4JULIA") 
 
@@ -105,7 +105,7 @@ realized using the software:
  
         Matthew W. Flood and Bernd Grimm, 
         EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,
-        2021 github.com/MattWillFlood/EntropyHub
+        2021 www.EntropyHub.xyz
 
 __________________________________________________________________
 
@@ -136,7 +136,7 @@ MatLab File Exchange, PyPI or Julia Packages as this helps us to gauge user
 satisfaction.
 
 If you have any questions about the package or identify any issues, 
-please do not hesitate to contact us at:    entropyhubproject@gmail.com
+please do not hesitate to contact us at:    info@entropyhub.xyz
 
 
 ***Thank you*** for using EntropyHub.
