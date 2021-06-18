@@ -68,7 +68,7 @@ These examples are merely a snippet of the full range of EntropyHub functionalit
     *multiscale cross-* entropy functions using the multiscale entropy object given by ``MSobject()``.
     *Base* and *cross-* entropy methods are declared with ``MSobject()`` using a string of the function name.
 
-    Each bidimensional entropy function (*SampEn2D*, *FuzzEn2D*, *DistEn2D*) has
+    Each bidimensional entropy function (*SampEn2D*, *FuzzEn2D*, *DistEn2D*, *DispEn2D*) has
     an important keyword argument - ``Lock``. *Bidimensional* entropy functions are
     "locked" by default (``Lock == true``) to only permit matrices with a maximum size of 128 x 128.
 

@@ -30,21 +30,6 @@ Python Examples:
         import EntropyHub as EH
         EH.SampEn(...)
 
-             ___  _   _  _____  _____  ____  ____  _     _          
-            |  _|| \ | ||_   _||     \|    ||    || \   / |   ___________ 
-            | \_ |  \| |  | |  |   __/|    ||  __| \ \_/ /   /  _______  \
-            |  _|| \ \ |  | |  |   \  |    || |     \   /   |  /  ___  \  |
-            | \_ | |\  |  | |  | |\ \ |    || |      | |    | |  /   \  | | 
-            |___||_| \_|  |_|  |_| \_||____||_|      |_|   _|_|__\___/  | | 
-            _   _  _   _  ____                           / |__\______\/  | 
-            | | | || | | ||    \     An open-source      |  /\______\__|_/ 
-            | |_| || | | ||    |     toolkit for         | |  /   \  | | 
-            |  _  || | | ||    \     entropic time-      | |  \___/  | |          
-            | | | || |_| ||     \    series analysis     |  \_______/  |
-            |_| |_|\_____/|_____/                         \___________/
-
-
-
 .....................................................................................................
 
 **The following sections provide some basic examples of EntropyHub functions. 
@@ -84,7 +69,7 @@ These examples are merely a snippet of the full range of EntropyHub functionalit
     *multiscale cross-* entropy functions using the multiscale entropy object given by ``MSobject()``.
     *Base* and *cross-* entropy methods are declared with ``MSobject()`` using a string of the function name.
 
-    Each bidimensional entropy function (*SampEn2D*, *FuzzEn2D*, *DistEn2D*) has
+    Each bidimensional entropy function (*SampEn2D*, *FuzzEn2D*, *DistEn2D*, *DispEn2D*) has
     an important keyword argument - ``Lock``. *Bidimensional* entropy functions are
     "locked" by default (``Lock == True``) to only permit matrices with a maximum size of 128 x 128.
 

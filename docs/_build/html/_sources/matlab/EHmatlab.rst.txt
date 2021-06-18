@@ -54,23 +54,21 @@ Method 1:
    .. image:: ../_images/matscreen3.png
       :width: 800px
       :align: center
-      :height: 400px  
+      :height: 250px  
 
 3. Open the resulting link, and click '*add*' in the top-right corner.
 
    .. image:: ../_images/matscreen4.png
-      :width: 800px
+      :width: 600px
       :align: center
-      :height: 400px  
+      :height: 500px  
 
 4. Follow the instructions to install the toolbox. **Note: You must be logged in to your MathWorks account**. 
 
    .. image:: ../_images/matscreen5.png
-      :width: 800px
+      :width: 600px
       :align: center
-      :height: 400px  
-
-
+      :height: 500px  
 
 	
 Method 2:
@@ -81,21 +79,21 @@ Method 2:
    .. image:: ../_images/MATLAB_README4.png
       :width: 600px
       :align: center
-      :height: 600px 
+      :height: 500px 
 
 2. Open the link to the MatLab toolbox file (**EntropyHub.mltbx**) file.
 
    .. image:: ../_images/matscreen8.png
       :width: 600px
       :align: center
-      :height: 600px 
+      :height: 500px 
 
 3. Download the toolbox file.
 
    .. image:: ../_images/matscreen9.png
       :width: 600px
       :align: center
-      :height: 600px 
+      :height: 500px 
 
 4. Open matlab and change the current folder to the directory where the .mltbx file is saved.
 

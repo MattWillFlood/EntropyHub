@@ -2,7 +2,7 @@
 EntropyHub: Julia
 ******************
 
-.. centered:: Links to installation files: `GitHub <https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Julia>`_ || `Julia Registries <>`_
+.. centered:: Links to installation files: `GitHub <https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Julia>`_ || `Julia Registries <https://github.com/JuliaRegistries/General/tree/master/E/EntropyHub>`_
 
 `EntropyHub.jl <https://mattwillflood.github.io/EntropyHub.jl/dev>`_ is the EntropyHub package for *Julia*.
 The complete documentation for `EntropyHub.jl can be found here <https://mattwillflood.github.io/EntropyHub.jl/dev>`_
@@ -83,8 +83,10 @@ Method 2:
       Where X and Y refer to your version of Julia.
   
    2. Type:
-   
-       @vX.Y. pkg >  add https://github.com/MattWillFlood/EntropyHub.jl
+
+      .. code-block:: julia
+
+        @vX.Y. pkg >  add https://github.com/MattWillFlood/EntropyHub.jl
 	     
  
 
@@ -120,7 +122,7 @@ Documentation & Help:
 
 A key advantage of EntropyHub is the comprehensive documentation available to help users to make the most of the toolkit.
  
-To learn more about a specific function, one can do so easily from the command line by typing: **?**, 
+To learn more about a specific function, one can do so easily from the command line by typing: ``?``, 
 which will open the julia help system, and then typing the function name.
 
 For example:
@@ -139,4 +141,4 @@ For example:
 All information on the EntropyHub package is detailed in the *EntropyHub Guide*,
 a .pdf document available to :download:`download here <../_static/EntropyHubGuide.pdf>`.
 
-The EntropyHub Julia API can be found at https://MattWillFlood.github.io/EntropyHub.jl/stable.
+The EntropyHub Julia API can be found at https://MattWillFlood.github.io/EntropyHub.jl/dev.

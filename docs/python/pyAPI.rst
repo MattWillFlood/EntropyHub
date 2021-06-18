@@ -128,6 +128,8 @@ Bidimensional Entropies:
 +------------------------------------+----------------+
 |Bidimensioanl Distribution Entropy  | DistEn2D       |
 +------------------------------------+----------------+
+|Bidimensioanl Dispersion Entropy    | DispEn2D       |
++------------------------------------+----------------+
 
 
 Multiscale  Entropies:

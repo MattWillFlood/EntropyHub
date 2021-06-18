@@ -242,7 +242,7 @@
 <div class="toctree-wrapper compound">
 </div>
 <p class="centered">
-<strong>Links to installation files:  <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Python">GitHub</a> || <a class="reference external" href="pypi.python.org">PyPi</a></strong></p><hr class="docutils" />
+<strong>Links to installation files:  <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Python">GitHub</a> || <a class="reference external" href="https://pypi.org/project/EntropyHub/">PyPi</a></strong></p><hr class="docutils" />
 <div class="section" id="requirements-installation">
 <h2>Requirements &amp; Installation:<a class="headerlink" href="#requirements-installation" title="Permalink to this headline">¶</a></h2>
 <dl class="simple">
@@ -276,24 +276,29 @@ Python versions &gt; 3.6 are required for using EntropyHub.</p>
 <h3>Method 2:<a class="headerlink" href="#method-2" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ol class="arabic">
-<li><p>Download the <code class="docutils literal notranslate"><span class="pre">EntropyHub.x.x.x.tar.gz</span></code> folder on the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Python">EntropyHub GitHub repo</a>  and unzip it.</p></li>
+<li><p>Download the <code class="docutils literal notranslate"><span class="pre">EntropyHub.x.x.x.tar.gz</span></code> folder from the <a class="reference external" href="https://pypi.org/project/EntropyHub/">EntropyHub PyPI repo</a>
+(or the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Python">EntropyHub GitHub repo</a>)  and unzip it.</p>
+<a class="reference internal image-reference" href="../_images/pyscreen1.png"><img alt="../_images/pyscreen1.png" class="align-center" src="../_images/pyscreen1.png" style="width: 600px; height: 450px;" /></a>
+<a class="reference internal image-reference" href="../_images/pyscreen2.png"><img alt="../_images/pyscreen2.png" class="align-center" src="../_images/pyscreen2.png" style="width: 600px; height: 450px;" /></a>
+</li>
 <li><p>Open a command terminal (<em>cmd</em> on Windows, <em>terminal</em> on Mac)
 or use the Anaconda prompt if you use Anaconda as your python package distribution.</p></li>
 <li><p>In the command prompt/terminal, navigate to the directory where you saved and extracted the <code class="docutils literal notranslate"><span class="pre">.tar.gz</span></code> folder.</p></li>
-<li><p>Enter the following in the command line:
-.. code-block:: python3</p>
+<li><p>Enter the following in the command line:</p>
 <blockquote>
-<div><p>python setup.py install</p>
+<div><div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span>
+</pre></div>
+</div>
 </div></blockquote>
 </li>
 </ol>
 <ul>
-<li><dl>
-<dt>Ensure that an up-to-date version of setuptools is installed:</dt><dd><div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">setuptools</span>
+<li><p>Ensure that an up-to-date version of setuptools is installed:</p>
+<blockquote>
+<div><div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">setuptools</span>
 </pre></div>
 </div>
-</dd>
-</dl>
+</div></blockquote>
 </li>
 </ul>
 </div></blockquote>
@@ -306,6 +311,12 @@ or use the Anaconda prompt if you use Anaconda as your python package distributi
 <p>or in abbreviated form,</p>
 <blockquote>
 <div><div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">EntropyHub</span> <span class="k">as</span> <span class="nn">EH</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>To check that EntropyHub has imported correctly, type:</p>
+<blockquote>
+<div><div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">EntropyHub</span><span class="o">.</span><span class="n">greet</span><span class="p">()</span>
 
      <span class="n">___</span>  <span class="n">_</span>   <span class="n">_</span>  <span class="n">_____</span>  <span class="n">_____</span>  <span class="n">____</span>  <span class="n">____</span>  <span class="n">_</span>     <span class="n">_</span>
     <span class="o">|</span>  <span class="n">_</span><span class="o">||</span> \ <span class="o">|</span> <span class="o">||</span><span class="n">_</span>   <span class="n">_</span><span class="o">||</span>     \<span class="o">|</span>    <span class="o">||</span>    <span class="o">||</span> \   <span class="o">/</span> <span class="o">|</span>   <span class="n">___________</span>

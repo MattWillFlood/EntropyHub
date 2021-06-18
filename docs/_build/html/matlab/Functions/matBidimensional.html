@@ -253,7 +253,7 @@ matrices. Hence, bidimensional entropy functions are useful for applications suc
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <p><code class="docutils literal notranslate"><span class="pre">IMPORTANT:</span> <span class="pre">Locked</span> <span class="pre">Matrix</span> <span class="pre">Size</span></code></p>
-<p>Each bidimensional entropy function (<code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>) has
+<p>Each bidimensional entropy function (<code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn2D</span></code>) has
 an important keyword argument - <code class="docutils literal notranslate"><span class="pre">Lock</span></code>. Bidimensional entropy functions are
 “locked” by default (<code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">==</span> <span class="pre">true</span></code>) to only permit matrices with a maximum size of 128 x 128.</p>
 <p>The reason for this is because there are hundreds of millions of pairwise calculations
@@ -468,6 +468,68 @@ errors that could lead Matlab to crash.</strong></p>
 of small-sized textures.”
 IEEE Signal Processing Letters 
 24.9 (2017): 1338-1342.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt id="EntropyHub.DispEn2D">
+<code class="sig-name descname"><span class="pre">DispEn2D</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DispEn2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>DispEn2D  estimates the bidimensional dispersion entropy of a data matrix.</p>
+<p>[Disp2D, RDE] = DispEn2D(Mat)</p>
+<p>Returns the bidimensional dispersion entropy estimate (<code class="docutils literal notranslate"><span class="pre">Disp2D</span></code>) and 
+reverse bidimensional dispersion entropy (<code class="docutils literal notranslate"><span class="pre">RDE</span></code>) estimated for the data 
+matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the default parameters:  time delay = 1, symbols = 3,
+logarithm = natural, data transform = normalised cumulative density function (ncdf)
+matrix template size = [floor(H/10) floor(W/10)]  
+(where H and W represent the height (rows) and width (columns) of the
+data matrix <code class="docutils literal notranslate"><span class="pre">Mat</span></code>) 
+* The minimum number of rows and columns of Mat must be &gt; 10.</p>
+<p>[Disp2D, RDE] = DispEn2D(Mat, name, value, …)</p>
+<p>Returns the bidimensional dispersion entropy (<code class="docutils literal notranslate"><span class="pre">Disp2D</span></code>) estimate and
+reverse bidimensional dispersion entropy (<code class="docutils literal notranslate"><span class="pre">RDE</span></code>) for the data matrix
+(<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the specified name/value pair arguments:</p>
+<blockquote>
+<div><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>     - Template submatrix dimensions, an integer scalar 
+(for submatrix with same height and width) or a two-element vector of
+integers [height, width] with a minimum value &gt; 1.
+(default: [floor(H/10) floor(W/10)])</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>   - Time Delay, a positive integer   (default: 1)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">c</span></code>     - Number of symbols, an integer &gt; 1</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Typex</span></code> - Type of symbolic mapping transform, one of the following:
+{<code class="docutils literal notranslate"><span class="pre">linear</span></code>, <code class="docutils literal notranslate"><span class="pre">kmeans</span></code>, <code class="docutils literal notranslate"><span class="pre">ncdf</span></code>, <code class="docutils literal notranslate"><span class="pre">equal</span></code>}
+See the <cite>EntropyHub Guide</cite> for more info on these transforms.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Logx</span></code>  - Logarithm base, a positive scalar</p></li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">Norm</span></code>  - Normalisation of <code class="docutils literal notranslate"><span class="pre">Disp2D</span></code> and <code class="docutils literal notranslate"><span class="pre">RDE</span></code> values, a boolean:</dt><dd><ul class="simple">
+<li><p>[false]   no normalisation - default</p></li>
+<li><p>[true]    normalises w.r.t number of possible dispersion 
+patterns (<code class="docutils literal notranslate"><span class="pre">c^m</span></code>).</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Lock</span></code>  - By default, <code class="docutils literal notranslate"><span class="pre">DispEn2D</span></code> only permits matrices with a maximum
+size of 128 x 128 to prevent RAM overload. 
+e.g. For <code class="docutils literal notranslate"><span class="pre">Mat</span></code> = [200 x 200], <code class="docutils literal notranslate"><span class="pre">m</span> <span class="pre">=</span> <span class="pre">3</span></code>, and <code class="docutils literal notranslate"><span class="pre">tau</span> <span class="pre">=</span> <span class="pre">1</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn2D</span></code> 
+creates a vector of 753049836 elements. To enable matrices
+greater than [128 x 128] elements, set <code class="docutils literal notranslate"><span class="pre">'Lock'</span> <span class="pre">=</span> <span class="pre">false</span></code>. (default: true)</p>
+<p><strong>WARNING: unlocking the permitted matrix size may cause memory
+errors that could lead Matlab to crash.</strong></p>
+</li>
+</ul>
+</div></blockquote>
+<dl class="simple">
+<dt>See also:</dt><dd><p>DispEn, SampEn2D, FuzzEn2D, DistEn2D</p>
+</dd>
+<dt>References:</dt><dd><dl class="simple">
+<dt>[1] Hamed Azami, et al.,</dt><dd><p>“Two-dimensional dispersion entropy: An information-theoretic 
+method for irregularity analysis of images.”
+Signal Processing: Image Communication, 
+75 (2019): 178-187.</p>
 </dd>
 </dl>
 </dd>
