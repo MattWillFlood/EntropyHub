@@ -11,7 +11,7 @@ EntropyHub: Python
    Examples <./pyexamples>
 
 
-.. centered:: Links to installation files:  `GitHub <https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Python>`_ || `PyPi <pypi.python.org>`_
+.. centered:: Links to installation files:  `GitHub <https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Python>`_ || `PyPi <https://pypi.org/project/EntropyHub/>`_
 
 ......................................................................................................
 
@@ -41,16 +41,32 @@ Method 1:
 	
 Method 2:
 *********
-   1. Download the ``EntropyHub.x.x.x.tar.gz`` folder on the `EntropyHub GitHub repo <https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Python>`_  and unzip it.
+   1. Download the ``EntropyHub.x.x.x.tar.gz`` folder from the `EntropyHub PyPI repo <https://pypi.org/project/EntropyHub/>`_       
+      (or the `EntropyHub GitHub repo <https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Python>`_)  and unzip it.
+
+      .. image:: ../_images/pyscreen1.png
+         :width: 600px
+         :align: center
+         :height: 450px 
+
+      __________________________________________________________________
+
+      .. image:: ../_images/pyscreen2.png
+         :width: 600px
+         :align: center
+         :height: 450px 
+
    2. Open a command terminal (*cmd* on Windows, *terminal* on Mac) 
       or use the Anaconda prompt if you use Anaconda as your python package distribution. 
    3. In the command prompt/terminal, navigate to the directory where you saved and extracted the ``.tar.gz`` folder.
    4. Enter the following in the command line:
-      .. code-block:: python3
+        
+        .. code-block:: python3
                
             python setup.py install
 
    - Ensure that an up-to-date version of setuptools is installed:
+        
         .. code-block:: python3
         
             python -m pip install --upgrade setuptools
@@ -68,6 +84,12 @@ or in abbreviated form,
 
         import EntropyHub as EH
 
+To check that EntropyHub has imported correctly, type:
+
+    .. code-block:: python3
+        
+        EntropyHub.greet()
+
              ___  _   _  _____  _____  ____  ____  _     _          
             |  _|| \ | ||_   _||     \|    ||    || \   / |   ___________ 
             | \_ |  \| |  | |  |   __/|    ||  __| \ \_/ /   /  _______  \
@@ -80,7 +102,6 @@ or in abbreviated form,
             |  _  || | | ||    \     entropic time-      | |  \___/  | |          
             | | | || |_| ||     \    series analysis     |  \_______/  |
             |_| |_|\_____/|_____/                         \___________/
-
 ......................................................................................................
 
 Documentation & Help:
