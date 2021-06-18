@@ -7,7 +7,7 @@ Latest Updates:
 June 2021
 #########
 
-First release of EntropyHub (v1.0)
+First release of EntropyHub (v0.1)
 
 
 ..............................................................
