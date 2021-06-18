@@ -207,9 +207,10 @@ _______________________________________________________________________
 
 Entropy Type   |  Function Name 
 --|--
-Bi-Dimensional Sample Entropy                         |	SampEn2D
-Bi-Dimensional Fuzzy Entropy                          |	FuzzEn2D
-Bi-Dimensional Distribution Entropy                   |	DistEn2D
+Bidimensional Sample Entropy                         |	SampEn2D
+Bidimensional Fuzzy Entropy                          |	FuzzEn2D
+Bidimensional Distribution Entropy                   |	DistEn2D
+Bidimensional Dispersion Entropy                   |	DispEn2D
 	
 _________________________________________________________________________
 
