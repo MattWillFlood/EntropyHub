@@ -11,7 +11,7 @@ An open-source toolkit for entropic time series analysis
     :height: 150px
 
 .. centered:: Available in: 
-.. centered:: `Matlab  <http://www.python.org/>`_ // `Python <http://www.python.org/>`_  // `Julia <http://mattwillflood.github.io/EntropyHub.jl/dev/>`_
+.. centered:: `Matlab  <https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub>`_ // `Python <https://pypi.org/project/EntropyHub/>`_  // `Julia <https://github.com/JuliaRegistries/General/tree/master/E/EntropyHub>`_
 
 .. toctree::
    :maxdepth: 3
@@ -88,7 +88,7 @@ realized using the software:
  
         Matthew W. Flood and Bernd Grimm, 
         EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,
-        2021 github.com/MattWillFlood/EntropyHub
+        2021 www.EntropyHub.xyz
 
 __________________________________________________________________
 
@@ -115,9 +115,15 @@ __________________________________________________________________
 Contact
 #######
 
-If you find this package useful, please consider starring it on GitHub, MatLab File Exchange, PyPI or Julia Packages as this helps us to gauge user satisfaction.
+If you find this package useful, please consider starring it on
+`GitHub <https://www.github.com/MattWillFlood/EntropyHub>`_, `Matlab File Exchange <https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub>`_ /
+`PyPI <https://pypi.org/project/EntropyHub/>`_ , `Julia Packages <https://www.github.com/MattWillFlood/EntropyHub.jl>`_
+Julia Packages as this helps us to gauge user satisfaction.
 
-If you have any questions about the package or identify any issues, please do not hesitate to contact us at: ``entropyhubproject@gmail.com``
+If you have any questions about the package, please do not hesitate to contact us at:  ``info@entropyhub.xyz`` 
+
+If you identify any bugs or need any help, please contact us at:
+``fix@entropyhub.xyz``,  ``help@entropyhub.xyz`` 
 
 
 **Thank you** for using EntropyHub.
