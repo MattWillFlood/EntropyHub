@@ -514,10 +514,10 @@ See the <cite>EntropyHub Guide</cite> for more info on these transforms.</p></li
 <li><p><code class="docutils literal notranslate"><span class="pre">Fluct</span></code> - When <code class="docutils literal notranslate"><span class="pre">Fluct</span> <span class="pre">==</span> <span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn</span></code> returns the fluctuation-based
 Dispersion entropy.   [default: false]</p></li>
 <li><dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">Norm</span></code>  - Normalisation of <code class="docutils literal notranslate"><span class="pre">Dispx</span></code> value, a boolean:</dt><dd><ul>
+<dt><code class="docutils literal notranslate"><span class="pre">Norm</span></code>  - Normalisation of <code class="docutils literal notranslate"><span class="pre">Dispx</span></code> and <code class="docutils literal notranslate"><span class="pre">RDE</span></code> values, a boolean:</dt><dd><ul>
 <li><p>[false]   no normalisation - default</p></li>
-<li><p>[true]    normalises w.r.t number of possible vector 
-permutations (<code class="docutils literal notranslate"><span class="pre">c^m</span></code>).</p></li>
+<li><p>[true]    normalises w.r.t number of possible dispersion 
+patterns (<code class="docutils literal notranslate"><span class="pre">c^m</span></code>  or <code class="docutils literal notranslate"><span class="pre">(2c</span> <span class="pre">-1)^m-1</span></code> if <code class="docutils literal notranslate"><span class="pre">Fluct</span> <span class="pre">==</span> <span class="pre">true</span></code>).</p></li>
 </ul>
 </dd>
 </dl>

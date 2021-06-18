@@ -605,11 +605,12 @@ estimated from the data sequence (<code class="docutils literal notranslate"><sp
 </dd>
 <dt class="field-odd">Norm</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">Dispx</span></code> value, a boolean:</p></li>
+<li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">Dispx</span></code> and <code class="docutils literal notranslate"><span class="pre">RDE</span></code> values, a boolean:</p></li>
 </ul>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">False</span></code>  no normalisation - default</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>  normalises w.r.t # possible vector permutations (c^m).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>  normalises w.r.t # possible vector permutations 
+(<code class="docutils literal notranslate"><span class="pre">c^m</span></code>  or <code class="docutils literal notranslate"><span class="pre">(2c</span> <span class="pre">-1)^m-1</span></code> if <code class="docutils literal notranslate"><span class="pre">Fluct</span> <span class="pre">==</span> <span class="pre">True</span></code>).</p></li>
 </ul>
 </dd>
 <dt class="field-even">rho</dt>
@@ -1508,7 +1509,7 @@ normalisation = normalises w.r.t # possible vector permutations (<code class="do
 <li><p>Normalisation of SyDyEn value, a boolean:</p></li>
 </ul>
 <p>[False]  no normalisation 
-[True]   normalises w.r.t # possible vector permutations (<code class="docutils literal notranslate"><span class="pre">c^m+1</span></code>) - default</p>
+[True]   normalises w.r.t # possible dispersion patterns (<code class="docutils literal notranslate"><span class="pre">c^m+1</span></code>) - default</p>
 </dd>
 </dl>
 </div></blockquote>
