@@ -6,8 +6,8 @@
 
   Available in 
   [MatLab](https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub "EH4MATLAB")  // 
-  [Python](https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Python "EH4PYTHON")  // 
-  [Julia](https://github.com/MattWillFlood/EntropyHub.jl "EH4JULIA") 
+  [Python](https://pypi.org/project/EntropyHub/ "EH4PYTHON")  // 
+  [Julia](https://juliahub.com/ui/Packages/EntropyHub/npy5E/0.1.0 "EH4JULIA") 
 
  
 
