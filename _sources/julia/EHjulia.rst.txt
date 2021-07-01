@@ -2,7 +2,7 @@
 EntropyHub: Julia
 ******************
 
-.. centered:: Links to installation files: `GitHub <https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Julia>`_ || `Julia Registries <https://github.com/JuliaRegistries/General/tree/master/E/EntropyHub>`_
+.. centered:: Links to installation files: `GitHub <https://github.com/MattWillFlood/EntropyHub.jl>`_ || `Julia Registry <https://juliahub.com/ui/Packages/EntropyHub/npy5E/0.1.0>`_
 
 `EntropyHub.jl <https://mattwillflood.github.io/EntropyHub.jl/dev>`_ is the EntropyHub package for *Julia*.
 The complete documentation for `EntropyHub.jl can be found here <https://mattwillflood.github.io/EntropyHub.jl/dev>`_

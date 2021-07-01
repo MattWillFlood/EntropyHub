@@ -11,7 +11,7 @@ An open-source toolkit for entropic time series analysis
     :height: 150px
 
 .. centered:: Available in: 
-.. centered:: `Matlab  <https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub>`_ // `Python <https://pypi.org/project/EntropyHub/>`_  // `Julia <https://github.com/JuliaRegistries/General/tree/master/E/EntropyHub>`_
+.. centered:: `Matlab  <https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub>`_ // `Python <https://pypi.org/project/EntropyHub/>`_  // `Julia <https://juliahub.com/ui/Packages/EntropyHub/npy5E/0.1.0>`_
 
 .. toctree::
    :maxdepth: 3
