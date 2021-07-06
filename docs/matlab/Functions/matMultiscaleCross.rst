@@ -11,7 +11,7 @@ Multiscale Cross-Entropies
 Functions for estimating the multiscale cross-entropy between two univariate time series.
 *****************************************************************************************
 
-Just as one can calculate multiscale entropy using any Base entropy, the same functionality is possible with multiscale cross-entropy using any cross-entropy function:
+Just as one can calculate multiscale entropy using any Base entropy, the same functionality is possible with multiscale cross-entropy using any of the :ref:`matCross`:
 ``XApEn``, ``XSampEn``, ``XK2En``, ``XCondEn``, ``XPermEn``, ``XSpecEn``, ``XDistEn``, ``XFuzzEn``
 
 To do so, we again use the ``MSobject`` function to pass a multiscale object (``Mobj``) to the multiscale cross-entropy functions.

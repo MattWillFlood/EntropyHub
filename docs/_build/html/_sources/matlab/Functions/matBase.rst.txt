@@ -1,5 +1,5 @@
 .. currentmodule:: EntropyHub
-
+.. _matBase:
 
 ==============
 Base Entropies

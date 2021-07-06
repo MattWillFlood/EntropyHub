@@ -1,4 +1,4 @@
-.. _Cross
+.. _pyCross:
 
 ==============
 Cross Entropies
