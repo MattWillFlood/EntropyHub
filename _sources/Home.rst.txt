@@ -117,8 +117,9 @@ Julia Packages as this helps us to gauge user satisfaction.
 
 If you have any questions about the package, please do not hesitate to contact us at:  ``info@entropyhub.xyz`` 
 
-If you identify any bugs or need any help, please contact us at:
-``fix@entropyhub.xyz``,  ``help@entropyhub.xyz`` 
+If you identify any bugs, please contact us at:  ``fix@entropyhub.xyz``
+
+If you need any help installing or using the toolkit, please contact us at:  ``help@entropyhub.xyz`` 
 
 
 **Thank you** for using EntropyHub.

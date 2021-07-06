@@ -1,4 +1,4 @@
-.. _pyBase
+.. _pyBase:
 
 ==============
 Base Entropies

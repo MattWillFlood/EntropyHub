@@ -8,10 +8,10 @@ Multiscale Entropies
    :maxdepth: 3
 
 
-Functions for estimating the multiscale entropy between of a univariate time series.
-************************************************************************************
+Functions for estimating the multiscale entropy of a univariate time series.
+****************************************************************************
 
-Multiscale entropy can be calculated using any of the base entropies: 
+Multiscale entropy can be calculated using any of the :ref:`matBase`: 
 ``ApEn``, ``AttnEn``, ``BubbEn``, ``CondEn``, ``CoSiEn``, ``DistEn``, 
 ``DispEn``, ``EnofEn``, ``FuzzEn``, ``GridEn``, ``IncrEn``, ``K2En``,
 ``PermEn``, ``PhasEn``, ``SampEn``, ``SlopEn``, ``SpecEn``, ``SyDyEn``.

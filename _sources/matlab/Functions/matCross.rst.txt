@@ -1,4 +1,5 @@
 .. currentmodule:: EntropyHub
+.. _matCross:
 
 ===============
 Cross Entropies
