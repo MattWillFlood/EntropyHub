@@ -17,7 +17,8 @@ An open-source toolkit for entropic time series analysis
    :maxdepth: 3
    :titlesonly:
 
-   Latest Updates <./EHupdates>
+* `Latest Updates <./EHupdates.html>`_
+* `Take part in our user survey <https://forms.gle/QxwUQASUh3bVhpfN9>`_
     
 
 Welcome
@@ -27,7 +28,7 @@ Welcome to EntropyHub!
 
 This is a toolkit that provides a wide range of functions to calculate different entropy statistics.
 
-There is an ever-growing range of information-theoretic entropy measures presented in the scientific literature. 
+There is an ever-growing range of information-theoretic and dynamical systems entropy measures presented in the scientific literature. 
 Although many functions for estimating these entropies can be found in various corners of the internet, 
 there is currently no toolkit to perform entropic time-series analysis in MatLab, Python and Julia, all with an extensive documentation and consistent syntax.
 
@@ -43,19 +44,20 @@ In the context of information and probability theory, **Entropy** quantifies tha
 
 The concept of entropy has its origins in `classical physics <http://www.scholarpedia.org/article/Entropy>`_ under the second law of thermodynamics, 
 a law `considered to underpin our fundamental understanding <https://www.penguin.co.uk/books/301539/the-order-of-time/9780141984964.html>`_
-of `time in physics <https://en.wikipedia.org/wiki/Time_in_physics>`_.
+of `time in physics <https://en.wikipedia.org/wiki/Time_in_physics>`_. 
+In the context of nonlinear dynamics, entropy is central in quantifying the degree of uncertainty or information gain, and is therefore widely used
+to explain complex nonlinear behaviour in real-world systems.
 Attempting to analyse the analog world around us requires that we measure time in discrete steps, but doing so compromises 
 our ability to measure entropy accurately. Various measures have been derived to estimate entropy (uncertainty) from discrete time series, each seeking to 
 best capture the uncertainty of the system under examination. This has resulted in many entropy statistics from approximate entropy and sample entropy, to
 multiscale sample entropy and refined-composite multiscale cross-sample entropy.
 
-As the number of statisitcal entropy measures grows, it becomes more difficult to identify, contrast and compare the performance of each measure. 
+As the number of statisitcal entropy measures grows, it becomes ever more difficult to identify, contrast and compare the performance of each measure. 
 To overcome this, we have developed EntropyHub - an open-source toolkit designed to integrate the many established entropy methods into one package.
 The goal of EntropyHub is to provide a comprehensive set of functions with a simple and consistent syntax that allows the user to augment parameters at the command 
 line, enabling a range from basic to advanced entropy methods to be implemented with ease.
 
-**It is important to clarify that the entropy functions herein described estimate entropy in the context of probability theory and information theory as
-defined by Shannon, and not thermodynamic or other entropies from classical physics.**
+**It is important to clarify that the entropy functions herein described estimate entropy in the context of nonlinear dynamics, probability theory and information theory, and not thermodynamic or other entropies from classical physics.**
 
 .........................................................................................................
 
@@ -78,17 +80,21 @@ Citation and Licensing
 ######################
 
 EntropyHub is licensed under the Apache License (Version 2.0) and is free to
-use by all on condition that the following reference be included on any outputs
+use by all on condition that the following reference be included on any scientific outputs
 realized using the software:
  
-        Matthew W. Flood and Bernd Grimm, 
-        EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,
-        2021 www.EntropyHub.xyz
+        | **Matthew W. Flood and Bernd Grimm,**     
+        | **EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,**    
+        | **PLoS One (2021),** 
+        | **DOI: 10.1371/journal.pone.0259448**    
+
+        | *www.EntropyHub.xyz*
 
 __________________________________________________________________
 
 
         © Copyright 2021 Matthew W. Flood, EntropyHub
+
         Licensed under the Apache License, Version 2.0 (the "License");
         you may not use this file except in compliance with the License.
         You may obtain a copy of the License at
@@ -111,15 +117,12 @@ Contact
 #######
 
 If you find this package useful, please consider starring it on
-`GitHub <https://www.github.com/MattWillFlood/EntropyHub>`_, `Matlab File Exchange <https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub>`_ /
-`PyPI <https://pypi.org/project/EntropyHub/>`_ , `Julia Packages <https://www.github.com/MattWillFlood/EntropyHub.jl>`_
-Julia Packages as this helps us to gauge user satisfaction.
+`GitHub <https://www.github.com/MattWillFlood/EntropyHub>`_, `Matlab File Exchange <https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub>`_, 
+`PyPI <https://pypi.org/project/EntropyHub/>`_ , and `Julia Packages <https://www.github.com/MattWillFlood/EntropyHub.jl>`_ as this helps us to gauge user satisfaction.
 
-If you have any questions about the package, please do not hesitate to contact us at:  ``info@entropyhub.xyz`` 
-
-If you identify any bugs, please contact us at:  ``fix@entropyhub.xyz``
-
-If you need any help installing or using the toolkit, please contact us at:  ``help@entropyhub.xyz`` 
+| If you have any questions about the package, please do not hesitate to contact us at:  ``info@entropyhub.xyz`` 
+| If you identify any bugs, please contact us at:  ``fix@entropyhub.xyz``
+| If you need any help installing or using the toolkit, please contact us at:  ``help@entropyhub.xyz`` 
 
 
 **Thank you** for using EntropyHub.

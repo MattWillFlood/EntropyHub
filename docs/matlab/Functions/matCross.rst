@@ -12,7 +12,7 @@ Cross Entropies
 Functions for estimating the entropy between two univariate time series.
 ************************************************************************
 
-*The following functions also form the base entropy method used by* **multiscale cross-entropy** *functions.*
+*The following functions also form the cross-entropy method used by* **multiscale cross-entropy** *functions.*
 
 .....................................................................................................
 

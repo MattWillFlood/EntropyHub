@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>EntropyHub &mdash; EntropyHub 0.0.1 documentation</title>
+  <title>EntropyHub &mdash; EntropyHub 0.1 documentation</title>
   
 
   
@@ -90,8 +90,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="Home.html">Home</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="EHupdates.html">Latest Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Home.html">Home</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="matlab/EHmatlab.html">EntropyHub - MatLab</a><ul>
@@ -247,13 +246,14 @@
 </div>
 <ul class="simple">
 <li><p><a class="reference external" href="./EHupdates.html">Latest Updates</a></p></li>
+<li><p><a class="reference external" href="https://forms.gle/QxwUQASUh3bVhpfN9">Take part in our user survey</a></p></li>
 </ul>
 </div>
 <div class="section" id="welcome">
 <h2>Welcome<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h2>
 <p>Welcome to EntropyHub!</p>
 <p>This is a toolkit that provides a wide range of functions to calculate different entropy statistics.</p>
-<p>There is an ever-growing range of information-theoretic entropy measures presented in the scientific literature.
+<p>There is an ever-growing range of information-theoretic and dynamical systems entropy measures presented in the scientific literature.
 Although many functions for estimating these entropies can be found in various corners of the internet,
 there is currently no toolkit to perform entropic time-series analysis in MatLab, Python and Julia, all with an extensive documentation and consistent syntax.</p>
 <p>The goal of EntropyHub is to integrate the many established entropy methods in one open-source package.</p>
@@ -266,16 +266,17 @@ In the context of information and probability theory, <strong>Entropy</strong> q
 <p>The concept of entropy has its origins in <a class="reference external" href="http://www.scholarpedia.org/article/Entropy">classical physics</a> under the second law of thermodynamics,
 a law <a class="reference external" href="https://www.penguin.co.uk/books/301539/the-order-of-time/9780141984964.html">considered to underpin our fundamental understanding</a>
 of <a class="reference external" href="https://en.wikipedia.org/wiki/Time_in_physics">time in physics</a>.
+In the context of nonlinear dynamics, entropy is central in quantifying the degree of uncertainty or information gain, and is therefore widely used
+to explain complex nonlinear behaviour in real-world systems.
 Attempting to analyse the analog world around us requires that we measure time in discrete steps, but doing so compromises
 our ability to measure entropy accurately. Various measures have been derived to estimate entropy (uncertainty) from discrete time series, each seeking to
 best capture the uncertainty of the system under examination. This has resulted in many entropy statistics from approximate entropy and sample entropy, to
 multiscale sample entropy and refined-composite multiscale cross-sample entropy.</p>
-<p>As the number of statisitcal entropy measures grows, it becomes more difficult to identify, contrast and compare the performance of each measure.
+<p>As the number of statisitcal entropy measures grows, it becomes ever more difficult to identify, contrast and compare the performance of each measure.
 To overcome this, we have developed EntropyHub - an open-source toolkit designed to integrate the many established entropy methods into one package.
 The goal of EntropyHub is to provide a comprehensive set of functions with a simple and consistent syntax that allows the user to augment parameters at the command
 line, enabling a range from basic to advanced entropy methods to be implemented with ease.</p>
-<p><strong>It is important to clarify that the entropy functions herein described estimate entropy in the context of probability theory and information theory as
-defined by Shannon, and not thermodynamic or other entropies from classical physics.</strong></p>
+<p><strong>It is important to clarify that the entropy functions herein described estimate entropy in the context of nonlinear dynamics, probability theory and information theory, and not thermodynamic or other entropies from classical physics.</strong></p>
 </div>
 <hr class="docutils" />
 <div class="section" id="documentation-help">
@@ -289,17 +290,23 @@ defined by Shannon, and not thermodynamic or other entropies from classical phys
 <div class="section" id="citation-and-licensing">
 <h2>Citation and Licensing<a class="headerlink" href="#citation-and-licensing" title="Permalink to this headline">¶</a></h2>
 <p>EntropyHub is licensed under the Apache License (Version 2.0) and is free to
-use by all on condition that the following reference be included on any outputs
+use by all on condition that the following reference be included on any scientific outputs
 realized using the software:</p>
 <blockquote>
-<div><p>Matthew W. Flood and Bernd Grimm,
-EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,
-2021 www.EntropyHub.xyz</p>
+<div><div class="line-block">
+<div class="line"><strong>Matthew W. Flood and Bernd Grimm,</strong></div>
+<div class="line"><strong>EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,</strong></div>
+<div class="line"><strong>PLoS One (2021),</strong></div>
+<div class="line"><strong>DOI: 10.1371/journal.pone.0259448</strong></div>
+</div>
+<div class="line-block">
+<div class="line"><em>www.EntropyHub.xyz</em></div>
+</div>
 </div></blockquote>
 <hr class="docutils" />
 <blockquote>
-<div><p>© Copyright 2021 Matthew W. Flood, EntropyHub
-Licensed under the Apache License, Version 2.0 (the “License”);
+<div><p>© Copyright 2021 Matthew W. Flood, EntropyHub</p>
+<p>Licensed under the Apache License, Version 2.0 (the “License”);
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at</p>
 <blockquote>
@@ -317,14 +324,14 @@ limitations under the License.</p>
 <div class="section" id="contact">
 <h2>Contact<a class="headerlink" href="#contact" title="Permalink to this headline">¶</a></h2>
 <p>If you find this package useful, please consider starring it on
-<a class="reference external" href="https://www.github.com/MattWillFlood/EntropyHub">GitHub</a>, <a class="reference external" href="https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub">Matlab File Exchange</a> /
-<a class="reference external" href="https://pypi.org/project/EntropyHub/">PyPI</a> , <a class="reference external" href="https://www.github.com/MattWillFlood/EntropyHub.jl">Julia Packages</a>
-Julia Packages as this helps us to gauge user satisfaction.</p>
-<p>If you have any questions about the package, please do not hesitate to contact us at:  <code class="docutils literal notranslate"><span class="pre">info&#64;entropyhub.xyz</span></code></p>
-<p>If you identify any bugs, please contact us at:  <code class="docutils literal notranslate"><span class="pre">fix&#64;entropyhub.xyz</span></code></p>
-<p>If you need any help installing or using the toolkit, please contact us at:  <code class="docutils literal notranslate"><span class="pre">help&#64;entropyhub.xyz</span></code></p>
+<a class="reference external" href="https://www.github.com/MattWillFlood/EntropyHub">GitHub</a>, <a class="reference external" href="https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub">Matlab File Exchange</a>,
+<a class="reference external" href="https://pypi.org/project/EntropyHub/">PyPI</a> , and <a class="reference external" href="https://www.github.com/MattWillFlood/EntropyHub.jl">Julia Packages</a> as this helps us to gauge user satisfaction.</p>
+<div class="line-block">
+<div class="line">If you have any questions about the package, please do not hesitate to contact us at:  <code class="docutils literal notranslate"><span class="pre">info&#64;entropyhub.xyz</span></code></div>
+<div class="line">If you identify any bugs, please contact us at:  <code class="docutils literal notranslate"><span class="pre">fix&#64;entropyhub.xyz</span></code></div>
+<div class="line">If you need any help installing or using the toolkit, please contact us at:  <code class="docutils literal notranslate"><span class="pre">help&#64;entropyhub.xyz</span></code></div>
+</div>
 <p><strong>Thank you</strong> for using EntropyHub.</p>
-<p>Yours in research,</p>
 <p>Matt</p>
 <a class="reference internal image-reference" href="_images/EntropyHubLogo3.png"><img alt="_images/EntropyHubLogo3.png" class="align-center" src="_images/EntropyHubLogo3.png" style="width: 250px; height: 350px;" /></a>
 </div>

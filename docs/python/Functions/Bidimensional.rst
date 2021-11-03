@@ -46,5 +46,5 @@ These functions are directly available when EntropyHub is imported:
 .................................................................................................
 
 .. automodule:: EntropyHub
-   :members: SampEn2D, FuzzEn2D, DistEn2D
+   :members: SampEn2D, FuzzEn2D, DistEn2D, DispEn2D
 
