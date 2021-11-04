@@ -2,6 +2,10 @@
 Latest Updates: 
 ***************
 
+.. toctree::
+   :maxdepth: 3
+   :titlesonly:
+
 ..............................................................
 
 November 2021
@@ -14,7 +18,7 @@ November 2021
 
         | *Matthew W. Flood and Bernd Grimm,*     
         | *EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,*    
-        | *PLoS One (2021),* 
+        | *PLoS One 16(11):e0259448 (2021),*
         | *DOI: 10.1371/journal.pone.0259448*
 
 ..............................................................
