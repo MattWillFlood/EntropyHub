@@ -16,6 +16,9 @@ An open-source toolkit for entropic time series analysis
 .. toctree::
    :maxdepth: 3
    :titlesonly:
+   :hidden:
+
+   EHupdates
 
 * `Latest Updates <./EHupdates.html>`_
 * `Take part in our user survey <https://forms.gle/QxwUQASUh3bVhpfN9>`_
@@ -85,7 +88,7 @@ realized using the software:
  
         | **Matthew W. Flood and Bernd Grimm,**     
         | **EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,**    
-        | **PLoS One (2021),** 
+        | **PLoS One 16(11):e0259448 (2021),** 
         | **DOI: 10.1371/journal.pone.0259448**    
 
         | *www.EntropyHub.xyz*
