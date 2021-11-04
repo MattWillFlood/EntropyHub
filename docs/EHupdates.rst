@@ -33,7 +33,7 @@ The initial release of the EntropyHub toolkit on all platforms including:
 + `GitHub <https://www.github.com/MattWillFlood/EntropyHub>`_,     
 + `Matlab File Exchange <https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub>`_,    
 + `PyPI <https://pypi.org/project/EntropyHub/>`_ ,    
-+ `Julia Packages <https://www.github.com/MattWillFlood/EntropyHub.jl>`_
++ `Julia Packages <https://juliahub.com/ui/Packages/EntropyHub/npy5E/>`_
 
 As with all initial releases, there may be some bugs, typo's or other small issues that will be ironed out in time.
 

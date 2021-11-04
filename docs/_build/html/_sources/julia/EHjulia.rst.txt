@@ -2,16 +2,16 @@
 EntropyHub: Julia
 ******************
 
-.. centered:: Links to installation files: `GitHub <https://github.com/MattWillFlood/EntropyHub.jl>`_ || `Julia Registry <https://juliahub.com/ui/Packages/EntropyHub/npy5E/0.1.0>`_
+.. centered:: Links to installation files: `GitHub <https://github.com/MattWillFlood/EntropyHub.jl>`_ || `Julia Registry <https://juliahub.com/ui/Packages/EntropyHub/npy5E/>`_
 
-`EntropyHub.jl <https://mattwillflood.github.io/EntropyHub.jl/dev>`_ is the EntropyHub package for *Julia*.
-The complete documentation for `EntropyHub.jl can be found here <https://mattwillflood.github.io/EntropyHub.jl/dev>`_
+`EntropyHub.jl <https://mattwillflood.github.io/EntropyHub.jl/stable>`_ is the EntropyHub package for *Julia*.
+The complete documentation for `EntropyHub.jl can be found here <https://mattwillflood.github.io/EntropyHub.jl/stable>`_
 
 .. image:: ../_images/EntropyHubJuliaLogo.png
     :width: 250px
     :align: center
     :height: 350px
-    :target: https://mattwillflood.github.io/EntropyHub.jl/dev
+    :target: https://mattwillflood.github.io/EntropyHub.jl/stable
 
  
 .. toctree::
@@ -19,8 +19,8 @@ The complete documentation for `EntropyHub.jl can be found here <https://mattwil
    :hidden:
    :titlesonly:
 
-   EntropyHub.jl  <https://mattwillflood.github.io/EntropyHub.jl/dev>
-   Examples <https://mattwillflood.github.io/EntropyHub.jl/dev/Examples/Examples>
+   EntropyHub.jl  <https://mattwillflood.github.io/EntropyHub.jl/stable>
+   Examples <https://mattwillflood.github.io/EntropyHub.jl/stable/Examples/Examples>
 
 
 Requirements & Installation:
@@ -141,4 +141,4 @@ For example:
 All information on the EntropyHub package is detailed in the *EntropyHub Guide*,
 a .pdf document available to :download:`download here <../_static/EntropyHubGuide.pdf>`.
 
-The EntropyHub Julia API can be found at https://MattWillFlood.github.io/EntropyHub.jl/dev.
+The EntropyHub Julia API can be found at https://MattWillFlood.github.io/EntropyHub.jl/stable.

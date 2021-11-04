@@ -11,7 +11,7 @@ An open-source toolkit for entropic time series analysis
     :height: 150px
 
 .. centered:: Available in: 
-.. centered:: `Matlab  <https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub>`_ // `Python <https://pypi.org/project/EntropyHub/>`_  // `Julia <https://juliahub.com/ui/Packages/EntropyHub/npy5E/0.1.0>`_
+.. centered:: `Matlab  <https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub>`_ // `Python <https://pypi.org/project/EntropyHub/>`_  // `Julia <https://juliahub.com/ui/Packages/EntropyHub/npy5E/>`_
 
 .. toctree::
    :maxdepth: 3
@@ -124,7 +124,7 @@ Contact
 
 If you find this package useful, please consider starring it on
 `GitHub <https://www.github.com/MattWillFlood/EntropyHub>`_, `Matlab File Exchange <https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub>`_, 
-`PyPI <https://pypi.org/project/EntropyHub/>`_ , and `Julia Packages <https://www.github.com/MattWillFlood/EntropyHub.jl>`_ as this helps us to gauge user satisfaction.
+`PyPI <https://pypi.org/project/EntropyHub/>`_ , and `Julia Packages <https://juliahub.com/ui/Packages/EntropyHub/npy5E/>`_ as this helps us to gauge user satisfaction.
 
 | If you have any questions about the package, please do not hesitate to contact us at:  ``info@entropyhub.xyz`` 
 | If you identify any bugs, please contact us at:  ``fix@entropyhub.xyz``
