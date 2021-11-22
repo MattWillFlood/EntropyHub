@@ -91,7 +91,10 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../Home.html">Home</a><ul class="simple">
+<li class="toctree-l1"><a class="reference internal" href="../../Home.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../EHupdates.html">Latest Updates:</a><ul class="simple">
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../matlab/EHmatlab.html">EntropyHub - MatLab</a><ul>
@@ -163,8 +166,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/dev">EntropyHub.jl</a></li>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/dev/Examples/Examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/Examples/Examples">Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -248,7 +251,7 @@
 <h2>Functions for estimating the entropy of a two-dimensional univariate matrix.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-two-dimensional-univariate-matrix" title="Permalink to this headline">¶</a></h2>
 <p>While EntropyHub functions primarily apply to time series data, with the following
 bidimensional entropy functions one can estimate the entropy of two-dimensional (2D)
-matrices. Hence, bidimensional entropy functions are useful for applications such as image analysis.</p>
+matrices. Hence, bidimensional entropy functions are useful for applications such as image/texture analysis.</p>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <p><code class="docutils literal notranslate"><span class="pre">IMPORTANT:</span> <span class="pre">Locked</span> <span class="pre">Matrix</span> <span class="pre">Size</span></code></p>
@@ -262,7 +265,7 @@ occur when storing data on RAM.</p>
 delay (<code class="docutils literal notranslate"><span class="pre">tau</span></code>) = 1, there are 753,049,836 pairwise matrix comparisons (6,777,448,524
 elemental subtractions).
 To pass matrices with sizes greater than [128 x 128], set <cite>Lock = false</cite>.</p>
-<p><code class="docutils literal notranslate"><span class="pre">CAUTION:</span> <span class="pre">unlocking</span> <span class="pre">the</span> <span class="pre">permitted</span> <span class="pre">matrix</span> <span class="pre">size</span> <span class="pre">may</span> <span class="pre">cause</span> <span class="pre">your</span> <span class="pre">Julia</span> <span class="pre">IDE</span> <span class="pre">to</span> <span class="pre">crash.</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">CAUTION:</span> <span class="pre">unlocking</span> <span class="pre">the</span> <span class="pre">permitted</span> <span class="pre">matrix</span> <span class="pre">size</span> <span class="pre">may</span> <span class="pre">cause</span> <span class="pre">your</span> <span class="pre">Python</span> <span class="pre">IDE</span> <span class="pre">to</span> <span class="pre">crash.</span></code></p>
 </div>
 <p>These functions are directly available when EntropyHub is imported:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">EntropyHub</span> <span class="k">as</span> <span class="nn">EH</span>
