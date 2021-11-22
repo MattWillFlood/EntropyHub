@@ -32,7 +32,7 @@ Welcome
 
 Welcome to EntropyHub!
 
-This is a toolkit that provides a wide range of functions to calculate different entropy statistics.
+This toolkit provides a wide range of functions to calculate different entropy statistics.
 
 There is an ever-growing range of information-theoretic and dynamical systems entropy measures presented in the scientific literature. 
 Although many functions for estimating these entropies can be found in various corners of the internet, 

@@ -13,7 +13,7 @@ Functions for estimating the entropy of a two-dimensional univariate matrix.
 
 While EntropyHub functions primarily apply to time series data, with the following
 bidimensional entropy functions one can estimate the entropy of two-dimensional (2D)
-matrices. Hence, bidimensional entropy functions are useful for applications such as image analysis.
+matrices. Hence, bidimensional entropy functions are useful for applications such as image/texture analysis.
 
 .. danger:: 
     
@@ -32,7 +32,7 @@ matrices. Hence, bidimensional entropy functions are useful for applications suc
     elemental subtractions).
     To pass matrices with sizes greater than [128 x 128], set `Lock = false`.
 
-    ``CAUTION: unlocking the permitted matrix size may cause your Julia IDE to crash.``
+    ``CAUTION: unlocking the permitted matrix size may cause your Python IDE to crash.``
 
     
 These functions are directly available when EntropyHub is imported:

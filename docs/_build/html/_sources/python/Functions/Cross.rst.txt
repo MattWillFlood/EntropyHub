@@ -18,7 +18,8 @@ Functions for estimating the entropy between two univariate time series.
 .. attention:: 
 
     For cross-entropy and multiscale cross-entropy functions, the two time series signals are passed as a two-column or two-row matrix. 
-    At present, it is not possible  to pass signals of different lengths separately
+    At present, it is not possible  to pass signals of different lengths separately.
+    We are currently working to enable different signal lengths for cross-entropy estimation.
 
 
 These functions are directly available when EntropyHub is imported:

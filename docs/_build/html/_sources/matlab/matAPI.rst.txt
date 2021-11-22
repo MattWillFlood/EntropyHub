@@ -24,9 +24,9 @@ EntropyHub functions fall into 5 categories:
     Bidimensional   
       functions for estimating the entropy of a two-dimensional univariate matrix.
     Multiscale     
-      functions for estimating the multiscale entropy of a single univariate time series using any of the Base entropy functions.
+      functions for estimating the multiscale entropy of a single univariate time series using any of the *Base* entropy functions.
     Multiscale Cross  
-      functions for estimating the multiscale entropy between two univariate time series using any of the Cross-entropy functions.
+      functions for estimating the multiscale entropy between two univariate time series using any of the *Cross*-entropy functions.
 
 
 .........................................................................................................................
