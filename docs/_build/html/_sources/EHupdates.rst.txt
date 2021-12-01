@@ -27,6 +27,7 @@ November 2021
 
 
 **Version Update - EntropyHub v0.1.1**
+
 EntropyHub v0.1.1 includes corrections to the entropy of entropy (EnofEn) function.
 Following this update, users can specify the amplitude range (xmin, xmax) over which the number of slices (S1) are partitioned.
 See the source literature for more info.
