@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Base Entropies &mdash; EntropyHub 0.1 documentation</title>
+  <title>Base Entropies &mdash; EntropyHub 0.1.1 documentation</title>
   
 
   
@@ -558,19 +558,25 @@ Entropy
 <dt id="EntropyHub.EnofEn">
 <code class="sig-name descname"><span class="pre">EnofEn</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.EnofEn" title="Permalink to this definition">¶</a></dt>
 <dd><p>EnofEn  estimates the entropy of entropy from a univariate data sequence.</p>
-<p>[EoE, AvEn] = EnofEn(Sig)</p>
-<p>Returns the entropy of entropy (<code class="docutils literal notranslate"><span class="pre">EoE</span></code>) and the average Shannon entropy 
-(<code class="docutils literal notranslate"><span class="pre">AvEn</span></code>) across all windows estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using
-the default parameters: 
-window length (samples) = 10, slices (s1,s2) = [10 5], logarithm = natural</p>
-<p>[EoE, AvEn] = EnofEn(Sig, name, value, …)</p>
+<p>[EoE, AvEn, S2] = EnofEn(Sig)</p>
+<p>Returns the entropy of entropy (<code class="docutils literal notranslate"><span class="pre">EoE</span></code>), the average Shannon entropy 
+(<code class="docutils literal notranslate"><span class="pre">AvEn</span></code>), and the number of levels (<code class="docutils literal notranslate"><span class="pre">S2</span></code>) across all windows 
+estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the default parameters: 
+window length (samples) = 10, slices = 10, logarithm = natural
+heartbeat interval range (xmin, xmax) = [min(Sig) max(Sig)]</p>
+<p>[EoE, AvEn, S2] = EnofEn(Sig, name, value, …)</p>
 <p>Returns the entropy of entropy (<code class="docutils literal notranslate"><span class="pre">EoE</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)  
 using the specified name/value pair arguments:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>   - Window length, an integer &gt; 1</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">S</span></code>     - Number of slices (s1,s2), a two-element vector of integers &gt; 2</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Logx</span></code>  - Logarithm base, a positive scalar</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>    - Window length, an integer &gt; 1</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">S</span></code>      - Number of slices, an integer &gt; 1</p></li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">Xrange</span></code> - The min and max heartbeat interval,</dt><dd><p>a two-element vector where X(1) &lt; X(2)</p>
+</dd>
+</dl>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Logx</span></code>   - Logarithm base, a positive scalar</p></li>
 </ul>
 </div></blockquote>
 <dl class="simple">
@@ -830,7 +836,9 @@ permutation entropy (<code class="docutils literal notranslate"><span class="pre
 (<code class="docutils literal notranslate"><span class="pre">cPE</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
 using the default parameters: embedding dimension = 2, time delay = 1, 
 logarithm = base 2, normalisation = w.r.t #symbols (<code class="docutils literal notranslate"><span class="pre">m-1</span></code>)
-Note: using the standard PermEn estimation, <code class="docutils literal notranslate"><span class="pre">Perm</span> <span class="pre">=</span> <span class="pre">0</span></code> when <code class="docutils literal notranslate"><span class="pre">m</span> <span class="pre">=</span> <span class="pre">1</span></code>.</p>
+Note: using the standard PermEn estimation, <code class="docutils literal notranslate"><span class="pre">Perm</span> <span class="pre">=</span> <span class="pre">0</span></code> when <code class="docutils literal notranslate"><span class="pre">m</span> <span class="pre">=</span>
+<span class="pre">1</span></code>. It is recommeneded that signal length, N &gt; 5m! 
+(see [8] and Amigo et al., Europhys. Lett. 83:60005, 2008)</p>
 <p>[Perm, Pnorm, cPE] = PermEn(Sig, m)</p>
 <p>Returns the permutation entropy estimates (<code class="docutils literal notranslate"><span class="pre">Perm</span></code>) estimated from the data
 sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified embedding dimensions = [1, …, <code class="docutils literal notranslate"><span class="pre">m</span></code>] 
@@ -934,7 +942,19 @@ normalisation = true</p>
 using the specified name/value pair arguments:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">K</span></code>     - Angular partitions (coarse graining), an integer &gt; 1</p></li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">K</span></code>     - Angular partitions (coarse graining), an integer &gt; 1</dt><dd><ul>
+<li><dl class="simple">
+<dt>Note: Division of partitions begins along the positive</dt><dd><p>x-axis. As this point is somewhat arbitrary, it is
+recommended to use even-numbered (preferably
+multiples of 4) partitions for sake of symmetry.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>   - Time Delay, a positive integer</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Logx</span></code>  - Logarithm base, a positive scalar</p></li>
 <li><dl class="simple">
@@ -945,7 +965,7 @@ using the specified name/value pair arguments:</p>
 </dd>
 </dl>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Plotx</span></code> - When <code class="docutils literal notranslate"><span class="pre">Plotx</span> <span class="pre">==</span> <span class="pre">true</span></code>, returns Poicare plot (default: false)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Plotx</span></code> - When <code class="docutils literal notranslate"><span class="pre">Plotx</span> <span class="pre">==</span> <span class="pre">true</span></code>, returns Poincaré plot (default: false)</p></li>
 </ul>
 </div></blockquote>
 <dl class="simple">

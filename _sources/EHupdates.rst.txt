@@ -6,6 +6,10 @@ Latest Updates:
    :maxdepth: 3
    :titlesonly:
 
+
+
+
+
 ..............................................................
 
 November 2021
@@ -20,6 +24,12 @@ November 2021
         | *EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,*    
         | *PLoS One 16(11):e0259448 (2021),*
         | *DOI: 10.1371/journal.pone.0259448*
+
+
+**Version Update - EntropyHub v0.1.1**
+EntropyHub v0.1.1 includes corrections to the entropy of entropy (EnofEn) function.
+Following this update, users can specify the amplitude range (xmin, xmax) over which the number of slices (S1) are partitioned.
+See the source literature for more info.
 
 ..............................................................
 
