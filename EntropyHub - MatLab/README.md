@@ -148,6 +148,8 @@ Bidimensional Sample Entropy                         |	SampEn2D
 Bidimensional Fuzzy Entropy                          |	FuzzEn2D
 Bidimensional Distribution Entropy                   |	DistEn2D
 Bidimensional Dispersion Entropy                     |	DispEn2D
+Bidimensional Permutation Entropy                    |	PermEn2D
+Bidimensional Espinosa Entropy                       |	EspEn2D
 	
 _________________________________________________________________________
 
