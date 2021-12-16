@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Bidimensional Entropies &mdash; EntropyHub 0.1.1 documentation</title>
+  <title>Bidimensional Entropies &mdash; EntropyHub 0.2 documentation</title>
   
 
   
@@ -255,7 +255,7 @@ matrices. Hence, bidimensional entropy functions are useful for applications suc
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <p><code class="docutils literal notranslate"><span class="pre">IMPORTANT:</span> <span class="pre">Locked</span> <span class="pre">Matrix</span> <span class="pre">Size</span></code></p>
-<p>Each bidimensional entropy function (<code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn2D</span></code>) has
+<p>Each bidimensional entropy function (<code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">PermEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">EspEn2D</span></code>) has
 an important keyword argument - <code class="docutils literal notranslate"><span class="pre">Lock</span></code>. Bidimensional entropy functions are
 “locked” by default (<code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">==</span> <span class="pre">true</span></code>) to only permit matrices with a maximum size of 128 x 128.</p>
 <p>The reason for this is because there are hundreds of millions of pairwise calculations
@@ -532,6 +532,137 @@ errors that could lead Matlab to crash.</strong></p>
 method for irregularity analysis of images.”
 Signal Processing: Image Communication, 
 75 (2019): 178-187.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt id="EntropyHub.PermEn2D">
+<code class="sig-name descname"><span class="pre">PermEn2D</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PermEn2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>m, tau, Logx
+PermEn2D  estimates the bidimensional permutation entropy of a data matrix.</p>
+<blockquote>
+<div><p>[Perm2D] = PermEn2D(Mat)</p>
+<p>Returns the bidimensional permutation entropy estimate (<code class="docutils literal notranslate"><span class="pre">Perm2D</span></code>) estimated for 
+the data matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the default parameters: time delay = 1,
+logarithm = natural, template matrix size = [floor(H/10) floor(W/10)]  
+(where H and W represent the height (rows) and width (columns) of the data matrix <code class="docutils literal notranslate"><span class="pre">Mat</span></code>) 
+** The minimum number of rows and columns of <code class="docutils literal notranslate"><span class="pre">Mat</span></code> must be &gt; 10.</p>
+<p>[Perm2D] = PermEn2D(Mat, name, value, …)</p>
+<p>Returns the bidimensional permutation entropy (<code class="docutils literal notranslate"><span class="pre">Perm2D</span></code>) estimates for the data
+matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the specified name/value pair arguments:</p>
+<blockquote>
+<div><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>     - Template submatrix dimensions, an integer scalar (for sub-
+matrix with same height and width) or a two-element vector of
+integers [height, width] with a minimum value &gt; 1.
+(default: [floor(H/10) floor(W/10)])</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>   - Time Delay, a positive integer        [default: 1]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Norm</span></code>  - Normalization of the PermEn2D value by maximum Shannon
+entropy (Smax = log((mx*my)!)         [default: true]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Logx</span></code>  - Logarithm base, a positive scalar  [default: natural]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Lock</span></code>  - By default, <code class="docutils literal notranslate"><span class="pre">PermEn2D</span></code> only permits matrices with a maximum
+size of 128 x 128 to prevent RAM overload. 
+e.g. For <code class="docutils literal notranslate"><span class="pre">Mat</span></code> = [200 x 200], <code class="docutils literal notranslate"><span class="pre">m</span> <span class="pre">=</span> <span class="pre">3</span></code>, and <code class="docutils literal notranslate"><span class="pre">tau</span> <span class="pre">=</span> <span class="pre">1</span></code>, <code class="docutils literal notranslate"><span class="pre">PermEn2D</span></code> 
+creates a vector of 753049836 elements. To enable matrices
+greater than [128 x 128] elements, set <code class="docutils literal notranslate"><span class="pre">'Lock'</span> <span class="pre">=</span> <span class="pre">false</span></code>. (default: true)</p>
+<p><strong>WARNING: unlocking the permitted matrix size may cause memory
+errors that could lead Matlab to crash.</strong></p>
+</li>
+</ul>
+</div></blockquote>
+<dl>
+<dt><strong>NOTE</strong> </dt><dd><p>The original bidimensional permutation entropy algorithms 
+[1][2] do not account for equal-valued elements of the embedding
+matrices.
+To overcome this, PermEn2D uses the lowest common rank for
+such instances. For example, given an embedding matrix A where,     
+A =</p>
+<blockquote>
+<div><p>[3.4  5.5  7.3]    
+[2.1  6    9.9]      
+[7.3  1.1  2.1]</p>
+</div></blockquote>
+<dl class="simple">
+<dt>would normally be mapped to an ordinal pattern like so,      </dt><dd><p>[3.4  5.5  7.3  2.1  6  9.9  7.3  1.1  2.1] =&gt;      
+[ 8    4    9    1   2   5    3    7    6 ]</p>
+</dd>
+</dl>
+<p>However, indices 4 &amp; 9, and 3 &amp; 7 have the same values, 2.1
+and 7.3 respectively. Instead, PermEn2D uses the ordinal pattern       
+[ 8    4    4    1   2   5    3    3    6 ]    
+where the lowest rank (4 &amp; 3) are used instead (of 9 &amp; 7). 
+Therefore, the number of possible permutations is no longer 
+(mx*my)!, but (mx*my)^(mx*my). Here, the PermEn2D value is 
+normalized by the maximum Shannon entropy (Smax = log((mx*my)!) 
+<code class="docutils literal notranslate"><span class="pre">assuming</span> <span class="pre">that</span> <span class="pre">no</span> <span class="pre">equal</span> <span class="pre">values</span> <span class="pre">are</span> <span class="pre">found</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">permutation</span>
+<span class="pre">motif</span> <span class="pre">matrices</span></code>, as presented in [1].</p>
+</dd>
+<dt>See also:</dt><dd><p>SampEn2D, DistEn2D, FuzzEn2D, DispEn2D, PermEn</p>
+</dd>
+<dt>References:</dt><dd><dl class="simple">
+<dt>[1] Haroldo Ribeiro et al.,</dt><dd><p>“Complexity-Entropy Causality Plane as a Complexity Measure 
+for Two-Dimensional Patterns”
+PLoS ONE (2012), 7(8):e40689,</p>
+</dd>
+<dt>[2] Luciano Zunino and Haroldo Ribeiro,</dt><dd><p>“Discriminating image textures with the multiscale
+two-dimensional complexity-entropy causality plane”
+Chaos, Solitons and Fractals,  91:679-688 (2016)</p>
+</dd>
+<dt>[3] Matthew Flood and Bernd Grimm,</dt><dd><p>“EntropyHub: An Open-source Toolkit for Entropic Time Series Analysis”
+PLoS ONE (2021) 16(11): e0259448.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="mat function">
+<dt id="EntropyHub.EspEn2D">
+<code class="sig-name descname"><span class="pre">EspEn2D</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.EspEn2D" title="Permalink to this definition">¶</a></dt>
+<dd><p>EspEn2D  estimates the bidimensional Espinosa entropy of a data matrix.</p>
+<p>[Esp2D] = EspEn2D(Mat)</p>
+<p>Returns the bidimensional Espinosa entropy estimate (<code class="docutils literal notranslate"><span class="pre">Esp2D</span></code>) 
+estimated for the data matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the default parameters: 
+time delay = 1, tolerance threshold = 20, percentage similarity = 0.7
+logarithm = natural, matrix template size = [floor(H/10) floor(W/10)]  
+(where H and W represent the height (rows) and width (columns) of 
+the data matrix <code class="docutils literal notranslate"><span class="pre">Mat</span></code>) 
+** The minimum number of rows and columns of <code class="docutils literal notranslate"><span class="pre">Mat</span></code> must be &gt; 10.</p>
+<p>[Esp2D] = EspEn2D(Mat, name, value, …)</p>
+<p>Returns the bidimensional Espinosa entropy (<code class="docutils literal notranslate"><span class="pre">Esp2D</span></code>) estimates for the data
+matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the specified name/value pair arguments:</p>
+<blockquote>
+<div><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>     - Template submatrix dimensions, an integer scalar (for sub-
+matrix with same height and width) or a two-element vector of
+integers [height, width] with a minimum value &gt; 1.
+(default: [floor(H/10) floor(W/10)])</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>   - Time Delay, a positive integer   (default: 1)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">r</span></code>     - Tolerance Threshold, a positive scalar (default: 20)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ps</span></code>    - Percentage similarity, a scalar in range [0 1] (default: 0.7)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Logx</span></code>  - Logarithm base, a positive scalar    (default: natural)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Lock</span></code>  - By default, <code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code> only permits matrices with a maximum
+size of 128 x 128 to prevent RAM overload. 
+e.g. For <code class="docutils literal notranslate"><span class="pre">Mat</span></code> = [200 x 200], <code class="docutils literal notranslate"><span class="pre">m</span> <span class="pre">=</span> <span class="pre">3</span></code>, and <code class="docutils literal notranslate"><span class="pre">tau</span> <span class="pre">=</span> <span class="pre">1</span></code>, <code class="docutils literal notranslate"><span class="pre">EspEn2D</span></code> 
+creates a vector of 753049836 elements. To enable matrices
+greater than [128 x 128] elements, set <code class="docutils literal notranslate"><span class="pre">'Lock'</span> <span class="pre">=</span> <span class="pre">false</span></code>. (default: true)</p>
+<p><strong>WARNING: unlocking the permitted matrix size may cause memory
+errors that could lead Matlab to crash.</strong></p>
+</li>
+</ul>
+</div></blockquote>
+<dl class="simple">
+<dt>See also:</dt><dd><p>SampEn2D, FuzzEn2D, DistEn2D, DispEn2D.</p>
+</dd>
+<dt>References:</dt><dd><dl class="simple">
+<dt>[1] Ricardo Espinosa, et al.,</dt><dd><p>“Two-dimensional EspEn: A New Approach to Analyze Image Texture 
+by Irregularity.” 
+Entropy,
+23:1261 (2021)</p>
 </dd>
 </dl>
 </dd>
