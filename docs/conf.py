@@ -15,7 +15,7 @@ project = 'EntropyHub'
 copyright = '2021, Matthew W. Flood'
 author = 'Matthew W. Flood'
 # The full version, including alpha/beta/rc tags
-release = '0.1.1'
+release = '0.2'
 
 # -- General configuration ---------------------------------------------------
 extensions = [ 'sphinx_rtd_theme', 'sphinx.ext.autodoc',

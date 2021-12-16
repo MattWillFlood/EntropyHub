@@ -117,6 +117,10 @@ Bidimensional Entropies:
 +------------------------------------+----------------+
 |Bidimensioanl Dispersion Entropy    | DispEn2D       |
 +------------------------------------+----------------+
+|Bidimensioanl Permutation Entropy   | PermEn2D       |
++------------------------------------+----------------+
+|Bidimensioanl Espinosa Entropy      | EspEn2D        |
++------------------------------------+----------------+
 
 
 Multiscale  Entropies:

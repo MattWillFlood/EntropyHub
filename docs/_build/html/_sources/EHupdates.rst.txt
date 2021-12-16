@@ -7,7 +7,17 @@ Latest Updates:
    :titlesonly:
 
 
+..............................................................
 
+December 2021
+#############
+
+**Version Update - EntropyHub v0.2**
+
+EntropyHub v0.2 includes two new bidimensional entropy methods:      
+
+| * `Bidimensional permutation entropy (PermEn2D) <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0040689>`_         
+| * `Bidimensional Espinosa entropy (EspEn2D) <https://www.mdpi.com/1099-4300/23/10/1261>`_
 
 
 ..............................................................
