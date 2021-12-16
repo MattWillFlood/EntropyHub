@@ -103,11 +103,11 @@ EntropyHub is licensed under the Apache License (Version 2.0) and is free to
 use by all on condition that the following reference be included on any outputs
 realized using the software:
  
-        Matthew W. Flood and Bernd Grimm (2021) 
-        [EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,](https://doi.org/10.1371/journal.pone.0259448)
-        PLoS ONE 16(11):e0259448 
-	DOI: 10.1371/journal.pone.0259448
-	www.EntropyHub.xyz
+| Matthew W. Flood and Bernd Grimm (2021) 
+| [EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,](https://doi.org/10.1371/journal.pone.0259448)
+| PLoS ONE 16(11):e0259448 
+| DOI: 10.1371/journal.pone.0259448
+| [www.EntropyHub.xyz](https://www.EntropyHub.xyz)
 
 __________________________________________________________________
 
