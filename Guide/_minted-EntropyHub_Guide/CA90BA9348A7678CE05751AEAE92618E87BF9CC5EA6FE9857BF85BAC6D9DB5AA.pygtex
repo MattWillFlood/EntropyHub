@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{X}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{ExampleData}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}mandelbrot\PYGZus{}Mat\PYGZsq{}}\PYG{p}{);}
+
+\PYG{n+nb}{figure}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}Color\PYGZsq{}}\PYG{p}{,}\PYG{l+s}{\PYGZsq{}k\PYGZsq{}}\PYG{p}{),}
+\PYG{n+nb}{imshow}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,[],}\PYG{l+s}{\PYGZsq{}InitialMagnification\PYGZsq{}}\PYG{p}{,}\PYG{l+m+mi}{500}\PYG{p}{),}
+\PYG{n+nb}{colormap}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}hot\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{X}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{ExampleData}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}randintegers2\PYGZsq{}}\PYG{p}{);}
+
+\PYG{n}{Mobj}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{MSobject}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}XApEn\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}tau\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}r\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.5}\PYG{p}{)}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{Mobj}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{struct}\PYG{+w}{ }\PYG{n}{with}\PYG{+w}{ }\PYG{n}{fields}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n}{Func}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{@}\PYG{n}{XApEn}
+\PYG{+w}{       }\PYG{n}{m}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mi}{2}
+\PYG{+w}{     }\PYG{n}{tau}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mi}{2}
+\PYG{+w}{       }\PYG{n}{r}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mf}{0.5000}
+\end{Verbatim}

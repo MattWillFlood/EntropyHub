@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Data} \PYG{o}{=} \PYG{n}{eh}\PYG{o}{.}\PYG{n}{ExampleData}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}lorenz\PYGZsq{}}\PYG{p}{);}
+
+\PYG{k+kn}{from} \PYG{n+nn}{matplotlib.pyplot} \PYG{k+kn}{import} \PYG{n}{fig}\PYG{p}{,} \PYG{n}{scatter}\PYG{p}{,} \PYG{n}{axis}
+
+\PYG{n}{fig} \PYG{o}{=} \PYG{n}{figure}\PYG{p}{(}\PYG{n}{facecolor}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}k\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ax} \PYG{o}{=} \PYG{n}{fig}\PYG{o}{.}\PYG{n}{add\PYGZus{}subplot}\PYG{p}{(}\PYG{l+m+mi}{111}\PYG{p}{,} \PYG{n}{projection}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}3d\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}facecolor}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}k\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{scatter}\PYG{p}{(}\PYG{n}{Data}\PYG{p}{[:,}\PYG{l+m+mi}{0}\PYG{p}{],} \PYG{n}{Data}\PYG{p}{[:,}\PYG{l+m+mi}{1}\PYG{p}{],} \PYG{n}{Data}\PYG{p}{[:,}\PYG{l+m+mi}{2}\PYG{p}{],} \PYG{n}{c}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}g\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axis}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}off\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

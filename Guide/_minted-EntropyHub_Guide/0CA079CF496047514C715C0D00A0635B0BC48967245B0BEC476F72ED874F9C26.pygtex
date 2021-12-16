@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Samp}\PYG{p}{,} \PYG{n}{Phi1}\PYG{p}{,} \PYG{n}{Phi2} \PYG{o}{=} \PYG{n}{eh}\PYG{o}{.}\PYG{n}{SampEn}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{m} \PYG{o}{=} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{n}{tau} \PYG{o}{=} \PYG{l+m+mi}{2}\PYG{p}{)}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{Samp} \PYG{o}{=}
+    \PYG{n}{array}\PYG{p}{([}\PYG{l+m+mf}{2.1789}    \PYG{l+m+mf}{2.1833}    \PYG{l+m+mf}{2.1880}    \PYG{l+m+mf}{2.1892}    \PYG{l+m+mf}{2.1441}\PYG{p}{])}
+\end{Verbatim}

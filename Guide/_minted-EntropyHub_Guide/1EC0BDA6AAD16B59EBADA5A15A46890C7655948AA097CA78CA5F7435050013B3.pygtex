@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}} \PYG{n}{MSx}\PYG{p}{,} \PYG{n}{\PYGZus{}} \PYG{o}{=} \PYG{n}{cXMSEn}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{Mobj}\PYG{p}{,} \PYG{n}{Scales} \PYG{o}{=} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{n}{RadNew} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{)}
+
+ \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.}
+\PYG{p}{[}\PYG{l+m+mf}{1.0893229452569062}\PYG{p}{,} \PYG{l+m+mf}{1.4745638145624824}\PYG{p}{,} \PYG{l+m+mf}{1.293182408488266}\PYG{p}{]}
+\end{Verbatim}

@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}} \PYG{n}{Mobj} \PYG{o}{=} \PYG{n}{MSobject}\PYG{p}{(}\PYG{n}{FuzzEn}\PYG{p}{,} \PYG{n}{m} \PYG{o}{=} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{tau} \PYG{o}{=} \PYG{l+m+mi}{2}\PYG{p}{,}
+			\PYG{n}{Fx} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}sigmoid\PYGZdq{}}\PYG{p}{,} \PYG{n}{r} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mf}{1.2}\PYG{p}{))}
+\PYG{p}{(}\PYG{n}{Func} \PYG{o}{=} \PYG{n}{EntropyHub}\PYG{o}{.}\PYG{n}{\PYGZus{}FuzzEn}\PYG{o}{.}\PYG{n}{FuzzEn}\PYG{p}{,} \PYG{n}{m} \PYG{o}{=} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{tau} \PYG{o}{=} \PYG{l+m+mi}{2}\PYG{p}{,}
+		 \PYG{n}{Fx} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}sigmoid\PYGZdq{}}\PYG{p}{,} \PYG{n}{r} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mf}{1.2}\PYG{p}{))}
+\end{Verbatim}

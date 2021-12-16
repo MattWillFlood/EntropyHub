@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{MSx}\PYG{p}{,} \PYG{n}{Ci} \PYG{o}{=} \PYG{n}{eh}\PYG{o}{.}\PYG{n}{rMSEn}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{Mobj}\PYG{p}{,} \PYG{n}{Scales} \PYG{o}{=} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{F\PYGZus{}Order} \PYG{o}{=} \PYG{l+m+mi}{3}\PYG{p}{,}
+                \PYG{n}{F\PYGZus{}Num} \PYG{o}{=} \PYG{l+m+mf}{0.6}\PYG{p}{,} \PYG{n}{RadNew} \PYG{o}{=} \PYG{l+m+mi}{4}\PYG{p}{)}
+
+ \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.}
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{MSx}
+	\PYG{n}{array}\PYG{p}{([}\PYG{l+m+mf}{0.5280}\PYG{p}{,} \PYG{l+m+mf}{0.5734}\PYG{p}{,} \PYG{l+m+mf}{0.5940}\PYG{p}{,} \PYG{l+m+mf}{0.5908}\PYG{p}{,} \PYG{l+m+mf}{0.5564}\PYG{p}{])}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{Ci}
+	\PYG{l+m+mf}{2.842518179468045}
+\end{Verbatim}

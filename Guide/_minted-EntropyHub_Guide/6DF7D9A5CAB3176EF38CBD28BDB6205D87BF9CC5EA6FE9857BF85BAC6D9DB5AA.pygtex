@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{FE2D}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{FuzzEn2D}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{8}\PYG{+w}{ }\PYG{l+m+mi}{5}\PYG{p}{],}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}tau\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}Fx\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{.}\PYG{+w}{ }\PYG{p}{.}\PYG{+w}{ }\PYG{p}{.}
+\PYG{+w}{	}\PYG{l+s}{\PYGZsq{}linear\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}r\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}Logx\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{)}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{FE2D}\PYG{+w}{ }\PYG{p}{=}
+\PYG{+w}{	}\PYG{l+m+mf}{0.0016}
+\end{Verbatim}

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{X} \PYG{o}{=} \PYG{n}{Data}\PYG{p}{[:,}\PYG{l+m+mi}{0}\PYG{p}{]}
+\PYG{n}{Phas} \PYG{o}{=} \PYG{n}{eh}\PYG{o}{.}\PYG{n}{PhasEn}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{K} \PYG{o}{=} \PYG{l+m+mi}{11}\PYG{p}{,} \PYG{n}{tau} \PYG{o}{=} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{Plotx} \PYG{o}{=} \PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{Phas}
+	\PYG{l+m+mf}{0.8395}
+\end{Verbatim}

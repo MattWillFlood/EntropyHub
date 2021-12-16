@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{[}\PYG{n}{MSx}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Sn}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Ci}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{hXMSEn}\PYG{p}{(}\PYG{n}{Data}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Mobj}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}Scales\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{...}
+\PYG{+w}{   }\PYG{l+s}{\PYGZsq{}Plotx\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{)}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{Only}\PYG{+w}{ }\PYG{n}{first}\PYG{+w}{ }\PYG{l+m+mi}{4096}\PYG{+w}{ }\PYG{n}{samples}\PYG{+w}{ }\PYG{n}{were}\PYG{+w}{ }\PYG{n}{used}\PYG{+w}{ }\PYG{n}{in}
+\PYG{+w}{   }\PYG{n}{hierarchical}\PYG{+w}{ }\PYG{n+nb}{decomposition}\PYG{p}{.}
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{The}\PYG{+w}{ }\PYG{n}{last}\PYG{+w}{ }\PYG{l+m+mi}{404}\PYG{+w}{ }\PYG{n}{samples}\PYG{+w}{ }\PYG{n}{of}\PYG{+w}{ }\PYG{n}{each}\PYG{+w}{ }\PYG{n}{data}\PYG{+w}{ }\PYG{n}{sequence}\PYG{+w}{ }\PYG{n}{were}\PYG{+w}{ }\PYG{n}{ignored}\PYG{p}{.}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{MSx}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}×\PYG{l+m+mi}{15}
+\PYG{+w}{    }\PYG{l+m+mf}{0.5159}\PYG{+w}{    }\PYG{l+m+mf}{0.6245}\PYG{+w}{    }\PYG{l+m+mf}{0.5634}\PYG{+w}{    }\PYG{l+m+mf}{0.7022}\PYG{+w}{    }\PYG{l+m+mf}{0.6533}
+\PYG{+w}{      }\PYG{l+m+mf}{0.5853}\PYG{+w}{    }\PYG{l+m+mf}{0.7956}\PYG{+w}{    }\PYG{l+m+mf}{0.8447}\PYG{+w}{    }\PYG{l+m+mf}{0.7605}\PYG{+w}{    }\PYG{l+m+mf}{0.8415}
+\PYG{+w}{        }\PYG{l+m+mf}{0.8115}\PYG{+w}{    }\PYG{l+m+mf}{0.5128}\PYG{+w}{    }\PYG{l+m+mf}{0.6862}\PYG{+w}{    }\PYG{l+m+mf}{0.8679}\PYG{+w}{    }\PYG{l+m+mf}{0.8287}
+\PYG{n}{Sn}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}×\PYG{l+m+mi}{4}
+\PYG{+w}{    }\PYG{l+m+mf}{0.5159}\PYG{+w}{    }\PYG{l+m+mf}{0.5940}\PYG{+w}{    }\PYG{l+m+mf}{0.6841}\PYG{+w}{    }\PYG{l+m+mf}{0.7692}
+\PYG{n}{Ci}\PYG{+w}{ }\PYG{p}{=}
+\PYG{l+m+mf}{2.5632}
+\end{Verbatim}

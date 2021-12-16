@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}} \PYG{n}{X} \PYG{o}{=} \PYG{n}{ExampleData}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}randintegers\PYGZdq{}}\PYG{p}{);}
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}} \PYG{n}{Mobj} \PYG{o}{=} \PYG{n}{MSobject}\PYG{p}{(}\PYG{n}{SampEn}\PYG{p}{,} \PYG{n}{m} \PYG{o}{=} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{n}{r} \PYG{o}{=} \PYG{l+m+mf}{1.25}\PYG{p}{)}
+\PYG{p}{(}\PYG{n}{Func} \PYG{o}{=} \PYG{n}{EntropyHub}\PYG{o}{.}\PYG{n}{\PYGZus{}SampEn}\PYG{o}{.}\PYG{n}{SampEn}\PYG{p}{,} \PYG{n}{m} \PYG{o}{=} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{n}{r} \PYG{o}{=} \PYG{l+m+mf}{1.25}\PYG{p}{)}
+\end{Verbatim}

@@ -1,0 +1,56 @@
+\glsdefs@newdocentry{textit{m}}%
+{%
+name={m},%
+sort={m},%
+type={main},%
+first={m},%
+firstplural={ms},%
+text={m},%
+plural={ms},%
+description={embedding dimension},%
+descriptionplural={embedding dimension},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{textit{tau}}%
+{%
+name={tau},%
+sort={tau},%
+type={main},%
+first={tau},%
+firstplural={taus},%
+text={tau},%
+plural={taus},%
+description={time delay},%
+descriptionplural={time delay},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+

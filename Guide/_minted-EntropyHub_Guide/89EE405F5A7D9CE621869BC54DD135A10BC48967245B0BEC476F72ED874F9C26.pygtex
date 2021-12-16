@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Mobj} \PYG{o}{=} \PYG{n}{eh}\PYG{o}{.}\PYG{n}{MSobject}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}FuzzEn\PYGZsq{}}\PYG{p}{,} \PYG{n}{m} \PYG{o}{=} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{tau} \PYG{o}{=} \PYG{l+m+mi}{2}\PYG{p}{,}
+			\PYG{n}{Fx} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}sigmoid\PYGZsq{}}\PYG{p}{,} \PYG{n}{r} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mf}{1.2}\PYG{p}{))}
+
+\PYG{n}{Mobj}\PYG{o}{.}\PYG{n}{Func}
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{o}{\PYGZlt{}}\PYG{n}{function} \PYG{n}{EntropyHub}\PYG{o}{.}\PYG{n}{\PYGZus{}FuzzEn}\PYG{o}{.}\PYG{n}{FuzzEn}\PYG{p}{(}\PYG{n}{Sig}\PYG{p}{,} \PYG{n}{m}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,}
+	\PYG{n}{tau}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{r}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mf}{0.2}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{),} \PYG{n}{Fx}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}default\PYGZsq{}}\PYG{p}{,} \PYG{n}{Logx}\PYG{o}{=}\PYG{l+m+mf}{2.71828}\PYG{p}{)}\PYG{o}{\PYGZgt{}}
+	
+\PYG{n}{Mobj}\PYG{o}{.}\PYG{n}{Kwargs}
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{:} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}tau\PYGZsq{}}\PYG{p}{:} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Fx\PYGZsq{}}\PYG{p}{:} \PYG{l+s+s1}{\PYGZsq{}sigmoid\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}r\PYGZsq{}}\PYG{p}{:} \PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mf}{1.2}\PYG{p}{)\PYGZcb{}}
+\end{Verbatim}

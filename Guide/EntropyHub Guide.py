@@ -1,0 +1,3 @@
+
+print("pip install EntropyHub")
+

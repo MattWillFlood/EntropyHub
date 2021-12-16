@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{X} \PYG{o}{=} \PYG{n}{eh}\PYG{o}{.}\PYG{n}{ExampleData}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}mandelbrot\PYGZus{}Mat\PYGZsq{}}\PYG{p}{);}
+
+\PYG{k+kn}{from} \PYG{n+nn}{matplotlib.pyplot} \PYG{k+kn}{import} \PYG{n}{imshow}\PYG{p}{,} \PYG{n}{show}
+
+\PYG{n}{imshow}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{cmap} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}hot\PYGZsq{}}\PYG{p}{),} \PYG{n}{show}\PYG{p}{()}
+\end{Verbatim}
