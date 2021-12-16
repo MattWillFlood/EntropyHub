@@ -7,7 +7,7 @@
   Available in 
   [MatLab](https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub "EH4MATLAB")  // 
   [Python](https://pypi.org/project/EntropyHub/ "EH4PYTHON")  // 
-  [Julia](https://juliahub.com/ui/Packages/EntropyHub/npy5E/0.1.0 "EH4JULIA") 
+  [Julia](https://juliahub.com/ui/Packages/EntropyHub/npy5E/ "EH4JULIA") 
 
  
 
@@ -103,9 +103,11 @@ EntropyHub is licensed under the Apache License (Version 2.0) and is free to
 use by all on condition that the following reference be included on any outputs
 realized using the software:
  
-        Matthew W. Flood and Bernd Grimm, 
-        EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,
-        2021 www.EntropyHub.xyz
+        Matthew W. Flood and Bernd Grimm (2021) 
+        [EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,](https://doi.org/10.1371/journal.pone.0259448)
+        PLoS ONE 16(11):e0259448 
+	DOI: 10.1371/journal.pone.0259448
+	www.EntropyHub.xyz
 
 __________________________________________________________________
 
@@ -210,7 +212,9 @@ Entropy Type   |  Function Name
 Bidimensional Sample Entropy                         |	SampEn2D
 Bidimensional Fuzzy Entropy                          |	FuzzEn2D
 Bidimensional Distribution Entropy                   |	DistEn2D
-Bidimensional Dispersion Entropy                   |	DispEn2D
+Bidimensional Dispersion Entropy                     |	DispEn2D
+Bidimensional Permutation Entropy                    |	PermEn2D
+Bidimensional Espinosa Entropy	                     |	EspEn2D
 	
 _________________________________________________________________________
 
