@@ -6,6 +6,24 @@ Latest Updates:
    :maxdepth: 3
    :titlesonly:
 
+..............................................................
+
+February 2022
+#############
+
+**EntropyHub Presentation at IEEE EMBC Glasgow 2022**
+
+.. image:: ./_images/EMBC22.png
+    :width: 500px
+    :align: left
+    :height: 150px
+
+| The `2022 IEEE Engineering in Medicine and Biology Conference (EMBC) <https://embc.embs.org/2022/>`_ will take place in Glasgow from 11-15 July. As part of the conference, there will be a symposium titled *Recent Advances in Entropy Quantification Algorithms for Biomedical Signals: Beyond Univariate Time Series*, where novel appications of entropy in biomedicine will be discussed.
+| Dr Matt Flood - founder and lead developer of EntropyHub - will give a presentation on *EntropyHub* as part of this symposium, introducing the toolkit, demonstrating its functionality, and revealing plans for future releases.
+
+Read more about the conference programme `here <https://embc.embs.org/2022/wp-content/uploads/sites/80/2022/04/WS_MS_SS_program.pdf>`_          
+
+Hope to meet you there!
 
 ..............................................................
 
@@ -19,13 +37,17 @@ EntropyHub v0.2 includes two new bidimensional entropy methods:
 | * `Bidimensional permutation entropy (PermEn2D) <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0040689>`_         
 | * `Bidimensional Espinosa entropy (EspEn2D) <https://www.mdpi.com/1099-4300/23/10/1261>`_
 
-
 ..............................................................
 
 November 2021
 #############
 
 **Publication of paper on EntropyHub in PLoS One.**
+
+.. image:: ./_images/PLOS.png
+    :width: 500px
+    :align: left
+    :height: 150px
 
 | To bring EntropyHub to the attention of the wider scientific community, we are happy to announce that a paper describing the toolkit has been `published in PLoS One <https://www.doi.org/10.1371/journal.pone.0259448>`_.
 | Users of the toolkit are **required** to cite this paper if they use EntropyHub in the work.
