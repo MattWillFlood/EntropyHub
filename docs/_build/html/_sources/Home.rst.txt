@@ -19,6 +19,7 @@ An open-source toolkit for entropic time series analysis
    :hidden:
 
    EHupdates
+   Publications
 
 * `Latest Updates <./EHupdates.html>`_
 * `Take part in our user survey <https://forms.gle/QxwUQASUh3bVhpfN9>`_

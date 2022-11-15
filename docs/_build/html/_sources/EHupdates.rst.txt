@@ -1,12 +1,60 @@
-***************
-Latest Updates: 
-***************
+**************
+Latest Updates 
+**************
 
 .. toctree::
    :maxdepth: 3
    :titlesonly:
 
 ..............................................................
+
+January 2023
+############
+
+**New announcements coming soon!!! :)**
+
+..............................................................
+
+
+November 2022
+#############
+
+**EntropyHub is 1 year old!**
+
+| There has been great interest in EntropyHub in the first year since its `original publication in Plos One <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0259448>`_.
+| To date, 
+| * there are about 11 `publications citing EntropyHub <./Publications.html>`_, covering a broad range of scientific disciplines including neuroscience, meteorology and mathematics.
+| * the `EntropyHub <https://github.com/MattWillFlood/EntropyHub>`_ and `EntropyHub.jl <https://github.com/MattWillFlood/EntropyHub.jl>`_ GitHub repositories have over 50 stars (42 and 11 respectively).
+| * the EntropyHub MatLab toolkit has been downloaded over 600 times from the `MatLab file exchange <https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub>`_!
+
+| We would like to extend our gratitude to all those who have used EntropyHub in their work, who have provided helpful feedback, and who starred the toolkit on GitHub and MatLab.
+| We plan to expand EntropyHub in the coming years and we hope that you will continue to support us in this endeavour.
+| Spread the word! ;)
+
+..............................................................
+
+
+July 2022
+#########
+
+**IEEE EMBC Symposium on Entropy Algorithms**
+
+.. image:: ./_images/EMBC1.jpg
+    :width: 500px
+    :align: left
+    :height: 400px
+
+| At the 2022 IEEE EMBC conference in Glasgow, a symposium entitled *Recent Advances in Entropy Algorithms for Biomedical Signals: Beyond Univariate Time Series* 
+| was organised by Prof. Javier Escudero and Prof. Anne Humeau-Huertier, introducing the latest methods in entropy analysis to the biomedical engineering community.
+| As part of this symposium, Dr Matt Flood presented EntropyHub, introducing the audience to the advantages and benefits offered by the toolkit.
+ 
+.. image:: ./_images/EMBC2.jpg
+    :width: 500px
+    :align: center
+    :height: 400px
+
+..............................................................
+
 
 February 2022
 #############

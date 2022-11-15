@@ -1,0 +1,66 @@
+************
+Publications 
+************
+
+.. toctree::
+   :maxdepth: 3
+   :titlesonly:
+
+..............................................................
+
+List of research articles citing EntropyHub
+###########################################
+
+2022
+----
+
+* `The complexity analysis of cerebral oxygen saturation during pneumoperitoneum and Trendelenburg position: a retrospective cohort study <https://link.springer.com/article/10.1007/s40520-022-02283-w>`_
+    | Xiaoxiao Wang, Chang Liu, Kai Zhang, Yunliang Zhang, Yao Yu, Weidong Mi, Hao Li           
+    | *Aging Clinical and Experimental Research*
+
+* `Assessing the chaos strength of Taylor approximations of the sine chaotic map <https://link.springer.com/article/10.1007/s11071-022-07929-y>`_     
+    | Ioannis Kafetzis, Lazaros Moysis, Christos Volos          
+    | *Nonlinear Dynamics*
+
+* `Utility of sample entropy from intraoperative cerebral NIRS oximetry data in the diagnosis of postoperative cognitive improvement <https://doi.org/10.3389/fphys.2022.965768>`_
+    | Xiaoxiao Wang, Ran Huo, Wanzhong Yuan, Huishu Yuan, Tao Wang, Nan Li     
+    | *Frontiers in Physiology*
+
+* `Entropy Measures of Electroencephalograms towards the Diagnosis of Psychogenic Non-Epileptic Seizures <https://www.mdpi.com/1099-4300/24/10/1348/pdf>`_
+    | Chloe Hinchliffe, Mahinda Yogarajah, Samia Elkommos, Hongying Tang, Daniel Abasolo          
+    | *Entropy*
+
+* `What can Entropy Metrics Tell Us About Types of Fixations during Video Viewing? <https://digital.library.txstate.edu/handle/10877/16142>`_
+    | K Melnyk, L Friedman, O Komogortsev 
+    | *Texas State Digital Library*
+
+* `Dynamical Complexity Response in Traveling Ionospheric Disturbances Across Eastern Africa Sector During Geomagnetic Storms Using Neural Network Entropy <https://doi.org/10.1029/2022ja030630>`_
+    | I. A. Oludehinwa, A. Velichko, B. O. Ogunsua, O. I. Olusola, O. O. Odeyemi, A. N. Njah, O. T. Ologun     
+    | *Journal of Geophysical Research Space Physics*
+
+* `A Novel Acoustic Method for Cavitation Identification of Propeller <https://doi.org/10.3390/jmse10091225>`_
+    | Yang Li, Lilin Cui     
+    | *Journal of Marine Science and Engineering*
+
+* `Classification of Electroencephalograms during Mathematical Calculations Using Deep Learning <https://doi.org/10.48550/arxiv.2209.00627>`_
+    | Umang Goenka, Param Patil, Kush Gosalia, Aaryan Jagetia
+    | *arXiv*
+    
+* `Pressure Injury Link to Entropy of Abdominal Temperature <https://doi.org/10.3390/e24081127>`_
+    | Nikhil Padhye, Denise Rios, Vaunette Fay, Sandra K Hanneman
+    | *Entropy*
+    
+* `Classification of Electroencephalograms during Mathematical Calculations Using Deep Learning <https://doi.org/10.1109/iri54793.2022.00016>`_
+    | Umang Goenka, Param Patil, Kush Gosalia, Aaryan Jagetia
+    | *IEEE 23rd International Conference on Information Reuse and Integration for Data Science (IRI)*
+
+* `The Structure of Chaos: An Empirical Comparison of Fractal Physiology Complexity Indices Using NeuroKit2 <https://doi.org/10.3390/e24081036>`_
+    | Dominique Makowski, An Shu Te, Tam Pham, Zen Juen Lau, S. H. Annabel Chen
+    | *Entropy*
+
+..............................................................
+
+.. image:: ./_images/EntropyHubLogo3.png
+    :width: 250px
+    :align: center
+    :height: 350px
