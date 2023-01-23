@@ -11,6 +11,7 @@ Publications
 List of research articles citing EntropyHub
 ###########################################
 
+
 2022
 ----
 
@@ -29,6 +30,14 @@ List of research articles citing EntropyHub
 * `Entropy Measures of Electroencephalograms towards the Diagnosis of Psychogenic Non-Epileptic Seizures <https://www.mdpi.com/1099-4300/24/10/1348/pdf>`_
     | Chloe Hinchliffe, Mahinda Yogarajah, Samia Elkommos, Hongying Tang, Daniel Abasolo          
     | *Entropy*
+
+* `Application of Two-Dimensional Entropy Measures to Detect the Radiographic Signs of Tooth Resorption and Hypercementosis in an Equine Model <https://www.mdpi.com/2227-9059/10/11/2914>`_
+    | Kamil Górski, Marta Borowska, Elżbieta Stefanik, Izabela Polkowska, Bernard Turek, Andrzej Bereznowski, Małgorzata Domino 
+    | *Biomedicines*
+
+* `Application of the Two-Dimensional Entropy Measures in the Infrared Thermography-Based Detection of Rider: Horse Bodyweight Ratio in Horseback Riding <https://www.mdpi.com/1424-8220/22/16/6052>`_
+    |  Małgorzata Domino, Marta Borowska, Łukasz Zdrojkowski, Tomasz Jasiński, Urszula Sikorska, Michał Skibniewski, Małgorzata Maśko
+    | *Sesnors*
 
 * `What can Entropy Metrics Tell Us About Types of Fixations during Video Viewing? <https://digital.library.txstate.edu/handle/10877/16142>`_
     | K Melnyk, L Friedman, O Komogortsev 
