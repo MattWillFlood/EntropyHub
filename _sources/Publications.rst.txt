@@ -12,6 +12,17 @@ List of research articles citing EntropyHub
 ###########################################
 
 
+2023
+----
+
+* `Enhancing classification of preterm-term birth using continuous wavelet transform and entropy-based methods of electrohysterogram signals <https://www.frontiersin.org/articles/10.3389/fendo.2022.1035615/full>`_
+    | Héctor Romero-Morales, Jenny Noemí Muñoz-Montes de Oca, Rodrigo Mora-Martínez, Yecid Mina-Paz, José Javier Reyes-Lagos
+    | *Frontiers in Endocrinology*
+
+* `Analysis of the complexity and variability of fine and gross motor tasks in fibromyalgia patients: precision and retrospective cross-sectional studies <https://repositorio.ipsantarem.pt/handle/10400.15/4270>`_
+    | Nancy Anacleto Brígida
+    | *Repositório Científico do Instituto Politécnico de Santarém*
+
 2022
 ----
 
@@ -36,8 +47,8 @@ List of research articles citing EntropyHub
     | *Biomedicines*
 
 * `Application of the Two-Dimensional Entropy Measures in the Infrared Thermography-Based Detection of Rider: Horse Bodyweight Ratio in Horseback Riding <https://www.mdpi.com/1424-8220/22/16/6052>`_
-    |  Małgorzata Domino, Marta Borowska, Łukasz Zdrojkowski, Tomasz Jasiński, Urszula Sikorska, Michał Skibniewski, Małgorzata Maśko
-    | *Sesnors*
+    | Małgorzata Domino, Marta Borowska, Łukasz Zdrojkowski, Tomasz Jasiński, Urszula Sikorska, Michał Skibniewski, Małgorzata Maśko
+    | *Sensors*
 
 * `What can Entropy Metrics Tell Us About Types of Fixations during Video Viewing? <https://digital.library.txstate.edu/handle/10877/16142>`_
     | K Melnyk, L Friedman, O Komogortsev 
@@ -66,6 +77,11 @@ List of research articles citing EntropyHub
 * `The Structure of Chaos: An Empirical Comparison of Fractal Physiology Complexity Indices Using NeuroKit2 <https://doi.org/10.3390/e24081036>`_
     | Dominique Makowski, An Shu Te, Tam Pham, Zen Juen Lau, S. H. Annabel Chen
     | *Entropy*
+
+* `Novel techniques for improvement the NNetEn entropy calculation for short and noisy time series <https://arxiv.org/abs/2202.12703>`_    
+    | Hanif Heidari, Andrei Velichko
+    | *arXiv*
+
 
 ..............................................................
 
