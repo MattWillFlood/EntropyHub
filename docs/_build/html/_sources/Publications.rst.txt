@@ -14,6 +14,9 @@ List of research articles citing EntropyHub
 
 2023
 ----
+* `Complexity and Entropy in Physiological Signals (CEPS): Resonance Breathing Rate Assessed Using Measures of Fractal Dimension, Heart Rate Asymmetry and Permutation Entropy <https://www.mdpi.com/1099-4300/25/2/301>`_
+    | David Mayor, Tony Steffert, George Datseris, Andrea Firth, Deepak Panday, Harikala Kandel, Duncan Banks
+    | *Entropy*
 
 * `Enhancing classification of preterm-term birth using continuous wavelet transform and entropy-based methods of electrohysterogram signals <https://www.frontiersin.org/articles/10.3389/fendo.2022.1035615/full>`_
     | Héctor Romero-Morales, Jenny Noemí Muñoz-Montes de Oca, Rodrigo Mora-Martínez, Yecid Mina-Paz, José Javier Reyes-Lagos
