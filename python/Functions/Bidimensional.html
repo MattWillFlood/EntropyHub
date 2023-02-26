@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bidimensional Entropies &mdash; EntropyHub 0.2 documentation</title>
@@ -18,7 +18,6 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -31,12 +30,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> EntropyHub
-            <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            EntropyHub
+              <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -121,8 +124,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable">EntropyHub.jl</a></li>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/Examples/Examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://docs.juliahub.com/EntropyHub/npy5E/0.2.0/">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/Examples/Examples">Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -140,7 +143,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../EHpython.html">EntropyHub: Python</a></li>
           <li class="breadcrumb-item"><a href="../pyAPI.html">Python Functions:</a></li>
       <li class="breadcrumb-item active">Bidimensional Entropies</li>
@@ -206,7 +209,7 @@ data matrix <code class="docutils literal notranslate"><span class="pre">Mat</sp
 the data matrix (Mat) using the specified ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list">
-<dt class="field-odd">m</dt>
+<dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Template submatrix dimensions, an integer scalar</p></li>
 </ul>
@@ -214,29 +217,29 @@ the data matrix (Mat) using the specified ‘keyword’ arguments:</p>
 integers [height, width] with a minimum value &gt; 1.
 (default: [floor(H/10) floor(W/10)])</p>
 </dd>
-<dt class="field-even">tau</dt>
+<dt class="field-even">tau<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Time Delay, a positive integer  (default: 1)</p></li>
 </ul>
 </dd>
-<dt class="field-odd">c</dt>
+<dt class="field-odd">c<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Number of symbols, an integer &gt; 1</p></li>
 </ul>
 </dd>
-<dt class="field-even">Typex</dt>
+<dt class="field-even">Typex<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Typex of data-to-symbol mapping, one of the following strings:</p></li>
 </ul>
 <p>{<code class="docutils literal notranslate"><span class="pre">'linear'</span></code>, <code class="docutils literal notranslate"><span class="pre">'kmeans'</span></code>, <code class="docutils literal notranslate"><span class="pre">'ncdf'</span></code>, <code class="docutils literal notranslate"><span class="pre">'equal'</span></code>}
 See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on these transforms.</p>
 </dd>
-<dt class="field-odd">Logx</dt>
+<dt class="field-odd">Logx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Logarithm base, a positive scalar</p></li>
 </ul>
 </dd>
-<dt class="field-even">Norm</dt>
+<dt class="field-even">Norm<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">Disp2D</span></code> and <code class="docutils literal notranslate"><span class="pre">RDE</span></code> values, a boolean:</p></li>
 </ul>
@@ -245,7 +248,7 @@ See the <a class="reference external" href="https://github.com/MattWillFlood/Ent
 <li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>  normalises w.r.t # possible vector permutations (c^m).</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Lock</dt>
+<dt class="field-odd">Lock<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>By default, <code class="docutils literal notranslate"><span class="pre">DispEn2D</span></code> only permits matrices with a maximum size of 128 x 128 to prevent RAM overload.</p></li>
 </ul>
@@ -257,10 +260,10 @@ creates a vector of 753049836 elements. To enable matrices greater than [128 x 1
 </dl>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">DispEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Hamed Azami, et al.,</dt><dd><p>“Two-dimensional dispersion entropy: An information-theoretic 
 method for irregularity analysis of images.”
@@ -292,17 +295,17 @@ the height (rows) and width (columns) of the data matrix <code class="docutils l
 the data matrix (Mat) using the specified ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list">
-<dt class="field-odd">m</dt>
+<dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Template submatrix dimensions, an integer scalar (for sub-matrix with same height and width) or a two-element tuple of integers [height, width] with a minimum value &gt; 1. (default: [floor(H/10) floor(W/10)])</p></li>
 </ul>
 </dd>
-<dt class="field-even">tau</dt>
+<dt class="field-even">tau<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Time Delay, a positive integer  (default: 1)</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Bins</dt>
+<dt class="field-odd">Bins<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Histogram bin selection method for distance distribution, one of the following:</p></li>
 </ul>
@@ -311,12 +314,12 @@ the data matrix (Mat) using the specified ‘keyword’ arguments:</p>
 <li><p>or one of the following strings {<code class="docutils literal notranslate"><span class="pre">'sturges'</span></code>, <code class="docutils literal notranslate"><span class="pre">'sqrt'</span></code>, <code class="docutils literal notranslate"><span class="pre">'rice'</span></code>, <code class="docutils literal notranslate"><span class="pre">'doanes'</span></code>} [default: ‘sturges’]</p></li>
 </ul>
 </dd>
-<dt class="field-even">Logx</dt>
+<dt class="field-even">Logx<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Logarithm base, a positive scalar (enter 0 for natural log)</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Norm</dt>
+<dt class="field-odd">Norm<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Normalisation of Dist2D value, one of the following integers:</p></li>
 </ul>
@@ -327,7 +330,7 @@ the data matrix (Mat) using the specified ‘keyword’ arguments:</p>
 <li><p>[3]  normalises the distribution entropy value (<code class="docutils literal notranslate"><span class="pre">Dist2D</span></code>) w.r.t the number of histogram bins, without normalising  data matrix values.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Lock</dt>
+<dt class="field-even">Lock<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>By default, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code> only permits matrices with a maximum size of 128 x 128 to prevent RAM overload.</p></li>
 </ul>
@@ -339,10 +342,10 @@ creates a vector of 753049836 elements. To enable matrices greater than [128 x 1
 </dl>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">DistEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XDistEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Hamed Azami, Javier Escudero and Anne Humeau-Heurtier,</dt><dd><p>“Bidimensional distribution entropy to analyze the irregularity
 of small-sized textures.”
@@ -377,32 +380,32 @@ the data matrix <code class="docutils literal notranslate"><span class="pre">Mat
 matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the specified ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list">
-<dt class="field-odd">m</dt>
+<dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Template submatrix dimensions, an integer scalar (for sub-matrix with same height and width) or a two-element tuple of integers (height, width) with a minimum value &gt; 1. (default: [floor(H/10) floor(W/10)])</p></li>
 </ul>
 </dd>
-<dt class="field-even">tau</dt>
+<dt class="field-even">tau<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Time Delay, a positive integer &gt; 1   (default: 1)</p></li>
 </ul>
 </dd>
-<dt class="field-odd">r</dt>
+<dt class="field-odd">r<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Tolerance Threshold, a positive scalar   (default: 20)</p></li>
 </ul>
 </dd>
-<dt class="field-even">ps</dt>
+<dt class="field-even">ps<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Percentage similarity, a scalar in range [0 1] (default: 0.7)</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Logx</dt>
+<dt class="field-odd">Logx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Logarithm base, a positive scalar    (default: natural)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Lock</dt>
+<dt class="field-even">Lock<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>By default, <code class="docutils literal notranslate"><span class="pre">EspEn2D</span></code> only permits matrices with a maximum  size of 128 x 128 to prevent RAM overload.</p></li>
 </ul>
@@ -414,10 +417,10 @@ creates a vector of 753049836 elements. To enable matrices greater than [128 x 1
 </dl>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn2D</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Ricardo Espinosa, et al.,</dt><dd><p>“Two-dimensional EspEn: A New Approach to Analyze Image Texture 
 by Irregularity.” 
@@ -449,23 +452,23 @@ logarithm = natural, matrix template size = [floor(H/10) floor(W/10)]
 matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the specified ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list">
-<dt class="field-odd">m</dt>
+<dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Template submatrix dimensions, an integer (for sub-matrix with same height and width) or a two-element vector of integers [height, width] with a minimum value &gt; 1.  (default: [floor(H/10) floor(W/10)])</p></li>
 </ul>
 </dd>
-<dt class="field-even">tau</dt>
+<dt class="field-even">tau<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Time Delay, a positive integer  (default: 1)</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Fx</dt>
+<dt class="field-odd">Fx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Fuzzy funtion name, one of the following:</p></li>
 </ul>
 <p>{<code class="docutils literal notranslate"><span class="pre">'sigmoid'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modsampen'</span></code>, <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gudermannian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'linear'</span></code>}</p>
 </dd>
-<dt class="field-even">r</dt>
+<dt class="field-even">r<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Fuzzy function parameters, a 1 element scalar or a 2 element vector of positive values.</p></li>
 </ul>
@@ -505,12 +508,12 @@ normalised between [0 1]. When r = 1, the minimuum value of the exponential argu
 </ul>
 </div></blockquote>
 </dd>
-<dt class="field-odd">Logx</dt>
+<dt class="field-odd">Logx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Logarithm base, a positive scalar    (default: natural)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Lock</dt>
+<dt class="field-even">Lock<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>By default, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code> only permits matrices with a maximum  size of 128 x 128 to prevent RAM overload.</p></li>
 </ul>
@@ -522,10 +525,10 @@ creates a vector of 753049836 elements. To enable matrices greater than [128 x 1
 </dl>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Luiz Fernando Segato Dos Santos, et al.,</dt><dd><p>“Multidimensional and fuzzy sample entropy (SampEnMF) for
 quantifying H&amp;E histological images of colorectal cancer.”
@@ -563,27 +566,27 @@ logarithm = natural, template matrix size = [floor(H/10) floor(W/10)]
 matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the specified ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list">
-<dt class="field-odd">m</dt>
+<dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Template submatrix dimensions, an integer scalar (for sub-matrix with same height and width) or a two-element tuple of integers (height, width) with a minimum value &gt; 1. (default: [floor(H/10) floor(W/10)])</p></li>
 </ul>
 </dd>
-<dt class="field-even">tau</dt>
+<dt class="field-even">tau<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Time Delay, a positive integer &gt; 1   (default: 1)</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Norm</dt>
+<dt class="field-odd">Norm<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Normalization of the PermEn2D value by maximum Shannon entropy (Smax = log((mx*my)!)         [default: true]</p></li>
 </ul>
 </dd>
-<dt class="field-even">Logx</dt>
+<dt class="field-even">Logx<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Logarithm base, a positive scalar    (default: natural)</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Lock</dt>
+<dt class="field-odd">Lock<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>By default, <code class="docutils literal notranslate"><span class="pre">PermEn2D</span></code> only permits matrices with a maximum size of 128 x 128 to prevent RAM overload.</p></li>
 </ul>
@@ -620,10 +623,10 @@ normalized by the maximum Shannon entropy (Smax = log((mx*my)!)
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">EspEn2D</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Haroldo Ribeiro et al.,</dt><dd><p>“Complexity-Entropy Causality Plane as a Complexity Measure 
 for Two-Dimensional Patterns”
@@ -664,27 +667,27 @@ the height (rows) and width (columns) of the data matrix <code class="docutils l
 matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the specified ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list">
-<dt class="field-odd">m</dt>
+<dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Template submatrix dimensions, an integer scalar (for sub-matrix with same height and width) or a two-element tuple of integers (height, width) with a minimum value &gt; 1. (default: [floor(H/10) floor(W/10)])</p></li>
 </ul>
 </dd>
-<dt class="field-even">tau</dt>
+<dt class="field-even">tau<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Time Delay, a positive integer &gt; 1   (default: 1)</p></li>
 </ul>
 </dd>
-<dt class="field-odd">r</dt>
+<dt class="field-odd">r<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Distance Threshold, a positive scalar   (default: 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Mat</span></code>))</p></li>
 </ul>
 </dd>
-<dt class="field-even">Logx</dt>
+<dt class="field-even">Logx<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Logarithm base, a positive scalar    (default: natural)</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Lock</dt>
+<dt class="field-odd">Lock<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>By default, <code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code> only permits matrices with a maximum  size of 128 x 128 to prevent RAM overload.</p></li>
 </ul>
@@ -696,10 +699,10 @@ creates a vector of 753049836 elements. To enable matrices greater than [128 x 1
 </dl>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Luiz Eduardo Virgili Silva, et al.,</dt><dd><p>“Two-dimensional sample entropy: Assessing image texture 
 through irregularity.” 

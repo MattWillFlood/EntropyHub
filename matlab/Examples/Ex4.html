@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Example 4: Cross-Distribution Entropy w/ Different Binning Methods &mdash; EntropyHub 0.2 documentation</title>
@@ -18,7 +18,6 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -31,12 +30,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> EntropyHub
-            <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            EntropyHub
+              <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -121,8 +124,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable">EntropyHub.jl</a></li>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/Examples/Examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://docs.juliahub.com/EntropyHub/npy5E/0.2.0/">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/Examples/Examples">Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -140,7 +143,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../EHmatlab.html">EntropyHub: MatLab</a></li>
           <li class="breadcrumb-item"><a href="../matexamples.html">MatLab Examples:</a></li>
       <li class="breadcrumb-item active">Example 4: Cross-Distribution Entropy w/ Different Binning Methods</li>
@@ -158,22 +161,22 @@
 <p>Import a signal of pseudorandom integers in the range [1, 8] and calculate the cross-
 distribution entropy with an embedding dimension (<code class="docutils literal notranslate"><span class="pre">m</span></code>) of 5, a time delay (<code class="docutils literal notranslate"><span class="pre">tau</span></code>) of 3,
 and Sturges’ bin selection method.</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">ExampleData</span><span class="p">(</span><span class="s">&#39;randintegers2&#39;</span><span class="p">);</span>
-<span class="n">XDist</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">XDistEn</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;m&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;tau&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">ExampleData</span><span class="p">(</span><span class="s">&#39;randintegers2&#39;</span><span class="p">);</span><span class="w"></span>
+<span class="n">XDist</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">XDistEn</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;m&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;tau&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"></span>
 
-<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Note</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="o">/</span><span class="mi">25</span><span class="w"> </span><span class="n">bins</span><span class="w"> </span><span class="n">were</span><span class="w"> </span><span class="nb">empty</span>
-<span class="w">    </span><span class="n">XDist</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.5248</span>
+<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Note</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="o">/</span><span class="mi">25</span><span class="w"> </span><span class="n">bins</span><span class="w"> </span><span class="n">were</span><span class="w"> </span><span class="nb">empty</span><span class="w"></span>
+<span class="w">    </span><span class="n">XDist</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.5248</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Use Rice’s method to determine the number of histogram bins and return the probability
 of each bin (<code class="docutils literal notranslate"><span class="pre">Ppi</span></code>).</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">XDist</span><span class="p">,</span><span class="w"> </span><span class="n">Ppi</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">XDistEn</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;m&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;tau&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Bins&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;rice&#39;</span><span class="p">)</span>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">XDist</span><span class="p">,</span><span class="w"> </span><span class="n">Ppi</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">XDistEn</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;m&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;tau&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Bins&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;rice&#39;</span><span class="p">)</span><span class="w"></span>
 
-<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Note</span><span class="p">:</span><span class="w"> </span><span class="mi">407</span><span class="o">/</span><span class="mi">415</span><span class="w"> </span><span class="n">bins</span><span class="w"> </span><span class="n">were</span><span class="w"> </span><span class="nb">empty</span>
-<span class="w">    </span><span class="n">XDist</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.2802</span>
+<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Note</span><span class="p">:</span><span class="w"> </span><span class="mi">407</span><span class="o">/</span><span class="mi">415</span><span class="w"> </span><span class="n">bins</span><span class="w"> </span><span class="n">were</span><span class="w"> </span><span class="nb">empty</span><span class="w"></span>
+<span class="w">    </span><span class="n">XDist</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.2802</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">Ppi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span>×<span class="mi">8</span>
-<span class="w">    </span><span class="mf">0.0000</span><span class="w"> </span><span class="mf">0.0047</span><span class="w"> </span><span class="mf">0.0368</span><span class="w"> </span><span class="mf">0.1096</span><span class="w"> </span><span class="mf">0.1978</span><span class="w"> </span><span class="mf">0.2558</span><span class="w"> </span><span class="mf">0.2421</span><span class="w"> </span><span class="mf">0.1531</span>
+<span class="w">    </span><span class="n">Ppi</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span>×<span class="mi">8</span><span class="w"></span>
+<span class="w">    </span><span class="mf">0.0000</span><span class="w"> </span><span class="mf">0.0047</span><span class="w"> </span><span class="mf">0.0368</span><span class="w"> </span><span class="mf">0.1096</span><span class="w"> </span><span class="mf">0.1978</span><span class="w"> </span><span class="mf">0.2558</span><span class="w"> </span><span class="mf">0.2421</span><span class="w"> </span><span class="mf">0.1531</span><span class="w"></span>
 </pre></div>
 </div>
 </section>

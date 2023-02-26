@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cross Entropies &mdash; EntropyHub 0.2 documentation</title>
@@ -18,7 +18,6 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -31,12 +30,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> EntropyHub
-            <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            EntropyHub
+              <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -121,8 +124,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable">EntropyHub.jl</a></li>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/Examples/Examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://docs.juliahub.com/EntropyHub/npy5E/0.2.0/">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/Examples/Examples">Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -140,7 +143,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../EHpython.html">EntropyHub: Python</a></li>
           <li class="breadcrumb-item"><a href="../pyAPI.html">Python Functions:</a></li>
       <li class="breadcrumb-item active">Cross Entropies</li>
@@ -196,22 +199,22 @@ radius distance threshold = 0.2*SD(Sig),  logarithm = natural</p>
 sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the specified ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list simple">
-<dt class="field-odd">m</dt>
+<dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Embedding Dimension,  a positive integer   [default: 2]</p></li>
 </ul>
 </dd>
-<dt class="field-even">tau</dt>
+<dt class="field-even">tau<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Time Delay, a positive integer        [default: 1]</p></li>
 </ul>
 </dd>
-<dt class="field-odd">r</dt>
+<dt class="field-odd">r<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Radius Distance Threshold, a positive scalar [default: 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)]</p></li>
 </ul>
 </dd>
-<dt class="field-even">Logx</dt>
+<dt class="field-even">Logx<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Logarithm base, a positive scalar     [default: natural]</p></li>
 </ul>
@@ -219,10 +222,10 @@ sequences contained in <code class="docutils literal notranslate"><span class="p
 </dl>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">ApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Steven Pincus and Burton H. Singer,</dt><dd><p>“Randomness and degrees of irregularity.” 
 Proceedings of the National Academy of Sciences 
@@ -260,27 +263,27 @@ the amount of information carried by y(i) when the pattern u(i) is found.</p>
 the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the specified ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list">
-<dt class="field-odd">m</dt>
+<dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Embedding Dimension, an integer &gt; 1        [default: 2]</p></li>
 </ul>
 </dd>
-<dt class="field-even">tau</dt>
+<dt class="field-even">tau<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Time Delay, a positive integer             [default: 1]</p></li>
 </ul>
 </dd>
-<dt class="field-odd">c</dt>
+<dt class="field-odd">c<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Number of symbols, an integer &gt; 1          [default: 6]</p></li>
 </ul>
 </dd>
-<dt class="field-even">Logx</dt>
+<dt class="field-even">Logx<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Logarithm base, a positive scalar          [default: natural]</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Norm</dt>
+<dt class="field-odd">Norm<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Normalisation of XCond value, one of the following integers:</p></li>
 </ul>
@@ -292,10 +295,10 @@ the data sequences contained in <code class="docutils literal notranslate"><span
 </dl>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XPermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CondEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Alberto Porta, et al.,</dt><dd><p>“Conditional entropy approach for the evaluation of the 
 coupling strength.” 
@@ -326,17 +329,17 @@ logarithm = base 2, normalisation = w.r.t # of histogram bins</p>
 data sequences contained in ‘Sig’ using the specified ‘keyword’ = arguments:</p>
 <blockquote>
 <div><dl class="field-list">
-<dt class="field-odd">m</dt>
+<dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Embedding Dimension, a positive integer   [default: 2]</p></li>
 </ul>
 </dd>
-<dt class="field-even">tau</dt>
+<dt class="field-even">tau<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Time Delay, a positive integer            [default: 1]</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Bins</dt>
+<dt class="field-odd">Bins<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Histogram bin selection method for distance distribution,</p></li>
 </ul>
@@ -345,12 +348,12 @@ data sequences contained in ‘Sig’ using the specified ‘keyword’ = argume
 <li><p>following strings {<code class="docutils literal notranslate"><span class="pre">'sturges'</span></code>, <code class="docutils literal notranslate"><span class="pre">'sqrt'</span></code>, <code class="docutils literal notranslate"><span class="pre">'rice'</span></code>, <code class="docutils literal notranslate"><span class="pre">'doanes'</span></code>} [default: ‘sturges’]</p></li>
 </ul>
 </dd>
-<dt class="field-even">Logx</dt>
+<dt class="field-even">Logx<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Logarithm base, a positive scalar [default: 2] (enter 0 for natural log)</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Norm</dt>
+<dt class="field-odd">Norm<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Normalisation of DistEn value, a boolean value:</p></li>
 </ul>
@@ -362,10 +365,10 @@ data sequences contained in ‘Sig’ using the specified ‘keyword’ = argume
 </dl>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XPermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XCondEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Yuanyuan Wang and Pengjian Shang,</dt><dd><p>“Analysis of financial stock markets through the multiscale
 cross-distribution entropy based on the Tsallis entropy.”
@@ -396,22 +399,22 @@ fuzzy function parameters (<code class="docutils literal notranslate"><span clas
 estimated for the data sequences in ‘Sig’ using the specified ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list simple">
-<dt class="field-odd">m</dt>
+<dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Embedding Dimension, a positive integer   [default: 2]</p></li>
 </ul>
 </dd>
-<dt class="field-even">tau</dt>
+<dt class="field-even">tau<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Time Delay, a positive integer            [default: 1]</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Fx</dt>
+<dt class="field-odd">Fx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Fuzzy function name, one of the following strings:  {<code class="docutils literal notranslate"><span class="pre">'sigmoid'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modsampen'</span></code>, <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gudermannian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'linear'</span></code>}</p></li>
 </ul>
 </dd>
-<dt class="field-even">r</dt>
+<dt class="field-even">r<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Fuzzy function parameters, a 1 element scalar or a 2 element vector of positive values. The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy function are defined as follows:      [default: (.2, 2)]</p></li>
 <li><dl class="simple">
@@ -456,7 +459,7 @@ normalised between [0 1]. When r = 1, the minimuum value of the exponential argu
 </dl>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">Logx</dt>
+<dt class="field-odd">Logx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Logarithm base, a positive scalar  [default: natural]</p></li>
 </ul>
@@ -464,10 +467,10 @@ normalised between [0 1]. When r = 1, the minimuum value of the exponential argu
 </dl>
 <p>For further information on the keyword arguments, see the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Hong-Bo Xie, et al.,</dt><dd><p>“Cross-fuzzy entropy: A new method to test pattern synchrony of
 bivariate time series.” 
@@ -498,22 +501,22 @@ logarithm = natural</p>
 the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the specified ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list simple">
-<dt class="field-odd">m</dt>
+<dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Embedding Dimension, a positive integer [default: 2]</p></li>
 </ul>
 </dd>
-<dt class="field-even">tau</dt>
+<dt class="field-even">tau<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Time Delay, a positive integer         [default: 1]</p></li>
 </ul>
 </dd>
-<dt class="field-odd">r</dt>
+<dt class="field-odd">r<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Radius Distance Threshold, a positive scalar [default: 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)]</p></li>
 </ul>
 </dd>
-<dt class="field-even">Logx</dt>
+<dt class="field-even">Logx<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Logarithm base, a positive scalar      [default: natural]</p></li>
 </ul>
@@ -521,10 +524,10 @@ the data sequences contained in <code class="docutils literal notranslate"><span
 </dl>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">K2En</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XDistEn</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Matthew W. Flood,</dt><dd><p>“XK2En - EntropyHub Project”
 (2021) <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub">https://github.com/MattWillFlood/EntropyHub</a></p>
@@ -551,18 +554,18 @@ embedding dimension = 3, time delay = 1, logarithm = base 2,</p>
 sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the specified ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list">
-<dt class="field-odd">m</dt>
+<dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Embedding Dimension, an integer &gt; 2   [default: 3]</p></li>
 </ul>
 <p><a href="#id3"><span class="problematic" id="id4">**</span></a>Note: <code class="docutils literal notranslate"><span class="pre">XPerm</span></code> is undefined for embedding dimensions &lt; 3.</p>
 </dd>
-<dt class="field-even">tau</dt>
+<dt class="field-even">tau<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Time Delay, a positive integer        [default: 1]</p></li>
 </ul>
 </dd>
-<dt class="field-odd">Logx</dt>
+<dt class="field-odd">Logx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Logarithm base, a positive scalar     [default: 2]   (enter 0 for natural log).</p></li>
 </ul>
@@ -570,10 +573,10 @@ sequences contained in <code class="docutils literal notranslate"><span class="p
 </dl>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Wenbin Shi, Pengjian Shang, and Aijing Lin,</dt><dd><p>“The coupling analysis of stock market indices based on 
 cross-permutation entropy.”
@@ -603,22 +606,22 @@ embedding dimension = 2, time delay = 1, radius = 0.2*SD(<code class="docutils l
 estimated between the data sequences in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the specified ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list simple">
-<dt class="field-odd">m</dt>
+<dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Embedding Dimension, a positive integer  [default: 2]</p></li>
 </ul>
 </dd>
-<dt class="field-even">tau</dt>
+<dt class="field-even">tau<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Time Delay, a positive integer         [default: 1]</p></li>
 </ul>
 </dd>
-<dt class="field-odd">r</dt>
+<dt class="field-odd">r<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Radius, a positive scalar              [default: 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)]</p></li>
 </ul>
 </dd>
-<dt class="field-even">Logx</dt>
+<dt class="field-even">Logx<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Logarithm base, a positive scalar      [default: natural]</p></li>
 </ul>
@@ -626,10 +629,10 @@ estimated between the data sequences in <code class="docutils literal notranslat
 </dl>
 </div></blockquote>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">ApEn</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Joshua S Richman and J. Randall Moorman. </dt><dd><p>“Physiological time-series analysis using approximate entropy
 and sample entropy.” 
@@ -662,12 +665,12 @@ values.</p>
 following specified ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list">
-<dt class="field-odd">N</dt>
+<dt class="field-odd">N<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Resolution of spectrum (N-point FFT), an integer &gt; 1</p></li>
 </ul>
 </dd>
-<dt class="field-even">Freqs</dt>
+<dt class="field-even">Freqs<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Normalised and edge frequencies, a scalar in range [0 1]  where 1 corresponds to the Nyquist frequency (Fs/2).</p></li>
 </ul>
@@ -675,12 +678,12 @@ following specified ‘keyword’ arguments:</p>
 <li><p>Note: When no band frequencies are entered, <code class="docutils literal notranslate"><span class="pre">BandEn</span> <span class="pre">==</span> <span class="pre">SpecEn</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-odd">Logx</dt>
+<dt class="field-odd">Logx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Logarithm base, a positive scalar     [default: natural]</p></li>
 </ul>
 </dd>
-<dt class="field-even">Norm</dt>
+<dt class="field-even">Norm<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">XSpec</span></code> value, one of the following integers:</p></li>
 </ul>
@@ -691,10 +694,10 @@ following specified ‘keyword’ arguments:</p>
 </div></blockquote>
 <p>See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info.</p>
 <dl class="field-list simple">
-<dt class="field-odd">See also</dt>
+<dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">SpecEn</span></code>, <code class="docutils literal notranslate"><span class="pre">fft</span></code>, <code class="docutils literal notranslate"><span class="pre">XDistEn</span></code>, <code class="docutils literal notranslate"><span class="pre">periodogram</span></code>, <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XApEn</span></code></p>
 </dd>
-<dt class="field-even">References</dt>
+<dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Matthew W. Flood,</dt><dd><p>“XSpecEn - EntropyHub Project”
 (2021) <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub">https://github.com/MattWillFlood/EntropyHub</a></p>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Python Examples: &mdash; EntropyHub 0.2 documentation</title>
@@ -18,7 +18,6 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -31,12 +30,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> EntropyHub
-            <img src="../_static/Logo.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            EntropyHub
+              <img src="../_static/Logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -121,8 +124,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../julia/EHjulia.html">EntropyHub - Julia</a><ul>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable">EntropyHub.jl</a></li>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/Examples/Examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://docs.juliahub.com/EntropyHub/npy5E/0.2.0/">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/Examples/Examples">Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -140,7 +143,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="EHpython.html">EntropyHub: Python</a></li>
       <li class="breadcrumb-item active">Python Examples:</li>
       <li class="wy-breadcrumbs-aside">
@@ -189,46 +192,46 @@ To use this function as outlined in the examples below, <strong>an internet conn
 <hr class="docutils" />
 <p><code class="docutils literal notranslate"><span class="pre">EntropyHub.ExampleData()</span></code> accepts any of the following strings:</p>
 <dl class="field-list simple">
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'uniform'</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'uniform'</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>vector of uniformly distributed random numbers in range [0 1]</p>
 </dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'gaussian'</span></code></dt>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'gaussian'</span></code><span class="colon">:</span></dt>
 <dd class="field-even"><p>vector of normally distributed random numbers with mean = 0; SD = 1</p>
 </dd>
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'randintegers'</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'randintegers'</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>vector of uniformly distributed pseudorandom integers in range [1 8]</p>
 </dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'chirp'</span></code></dt>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'chirp'</span></code><span class="colon">:</span></dt>
 <dd class="field-even"><p>vector of chirp signal with the following parameters,  f0 = :01; t1 = 4000; f1 = :025</p>
 </dd>
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'lorenz'</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'lorenz'</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>3-column matrix: X, Y, Z components of the Lorenz system,  (alpha = 10; beta = 8/3; rho = 28); [Xo = 10; Yo = 20; Zo = 10]</p>
 </dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'henon'</span></code></dt>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'henon'</span></code><span class="colon">:</span></dt>
 <dd class="field-even"><p>2-column matrix: X, Y components of the Henon attractor (alpha = 1.4; beta = 0.3); [Xo = 0; Yo = 0]</p>
 </dd>
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'uniform2'</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'uniform2'</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>2-column matrix: uniformly distributed random numbers in range [0 1]</p>
 </dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'gaussian2'</span></code></dt>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'gaussian2'</span></code><span class="colon">:</span></dt>
 <dd class="field-even"><p>2-column matrix: normally distributed random numbers with mean = 0; SD = 1</p>
 </dd>
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'randintegers2'</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'randintegers2'</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>2-column matrix: uniformly distributed pseudorandom integers in range [1 8]</p>
 </dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'uniform_Mat'</span></code></dt>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'uniform_Mat'</span></code><span class="colon">:</span></dt>
 <dd class="field-even"><p>Matrix of uniformly distributed random numbers in range [0 1]</p>
 </dd>
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'gaussian_Mat'</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'gaussian_Mat'</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>Matrix of normally distributed random numbers with mean = 0; SD = 1</p>
 </dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'randintegers_Mat'</span></code></dt>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'randintegers_Mat'</span></code><span class="colon">:</span></dt>
 <dd class="field-even"><p>Matrix of uniformly distributed pseudorandom integers in range [1 8]</p>
 </dd>
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'mandelbrot_Mat'</span></code></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'mandelbrot_Mat'</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>Matrix of image of fractal generated from the mandelbrot set</p>
 </dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'entropyhub_Mat'</span></code></dt>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'entropyhub_Mat'</span></code><span class="colon">:</span></dt>
 <dd class="field-even"><p>Matrix of image of the entropyhub logo</p>
 </dd>
 </dl>
