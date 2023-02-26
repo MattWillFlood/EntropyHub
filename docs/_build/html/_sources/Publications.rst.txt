@@ -14,6 +14,10 @@ List of research articles citing EntropyHub
 
 2023
 ----
+* `Single-neuron spiking variability in hippocampus dynamically tracks sensory content during memory formation in humans <https://www.biorxiv.org/content/10.1101/2023.02.23.529684v1>`_
+    | Leonhard Waschke, Fabian Kamp, Evi van den Elzen, Suresh Krishna, Ulman Lindenberger,  Ueli Rutishauser, Douglas D. Garrett
+    | *BioRxiv*
+
 * `Complexity and Entropy in Physiological Signals (CEPS): Resonance Breathing Rate Assessed Using Measures of Fractal Dimension, Heart Rate Asymmetry and Permutation Entropy <https://www.mdpi.com/1099-4300/25/2/301>`_
     | David Mayor, Tony Steffert, George Datseris, Andrea Firth, Deepak Panday, Harikala Kandel, Duncan Banks
     | *Entropy*
@@ -64,10 +68,6 @@ List of research articles citing EntropyHub
 * `A Novel Acoustic Method for Cavitation Identification of Propeller <https://doi.org/10.3390/jmse10091225>`_
     | Yang Li, Lilin Cui     
     | *Journal of Marine Science and Engineering*
-
-* `Classification of Electroencephalograms during Mathematical Calculations Using Deep Learning <https://doi.org/10.48550/arxiv.2209.00627>`_
-    | Umang Goenka, Param Patil, Kush Gosalia, Aaryan Jagetia
-    | *arXiv*
     
 * `Pressure Injury Link to Entropy of Abdominal Temperature <https://doi.org/10.3390/e24081127>`_
     | Nikhil Padhye, Denise Rios, Vaunette Fay, Sandra K Hanneman
@@ -75,7 +75,7 @@ List of research articles citing EntropyHub
     
 * `Classification of Electroencephalograms during Mathematical Calculations Using Deep Learning <https://doi.org/10.1109/iri54793.2022.00016>`_
     | Umang Goenka, Param Patil, Kush Gosalia, Aaryan Jagetia
-    | *IEEE 23rd International Conference on Information Reuse and Integration for Data Science (IRI)*
+    | *IEEE 23rd International Conference on Information Reuse and Integration for Data Science (IRI)* , `arXiv <https://doi.org/10.48550/arxiv.2209.00627>`_
 
 * `The Structure of Chaos: An Empirical Comparison of Fractal Physiology Complexity Indices Using NeuroKit2 <https://doi.org/10.3390/e24081036>`_
     | Dominique Makowski, An Shu Te, Tam Pham, Zen Juen Lau, S. H. Annabel Chen

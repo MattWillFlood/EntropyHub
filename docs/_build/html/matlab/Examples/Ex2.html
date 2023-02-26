@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Example 2: (Fine-Grained) Permutation Entropy &mdash; EntropyHub 0.2 documentation</title>
@@ -18,7 +18,6 @@
         <script src="../../_static/underscore.js"></script>
         <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../../_static/doctools.js"></script>
-        <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -31,12 +30,16 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../index.html" class="icon icon-home"> EntropyHub
-            <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            EntropyHub
+              <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -121,8 +124,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable">EntropyHub.jl</a></li>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/Examples/Examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://docs.juliahub.com/EntropyHub/npy5E/0.2.0/">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/Examples/Examples">Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -140,7 +143,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../EHmatlab.html">EntropyHub: MatLab</a></li>
           <li class="breadcrumb-item"><a href="../matexamples.html">MatLab Examples:</a></li>
       <li class="breadcrumb-item active">Example 2: (Fine-Grained) Permutation Entropy</li>
@@ -156,14 +159,14 @@
   <section id="example-2-fine-grained-permutation-entropy">
 <h1>Example 2: (Fine-Grained) Permutation Entropy<a class="headerlink" href="#example-2-fine-grained-permutation-entropy" title="Permalink to this heading"></a></h1>
 <p>Import the x, y, and z components of the Lorenz system of equations.</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">Data</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">ExampleData</span><span class="p">(</span><span class="s">&#39;lorenz&#39;</span><span class="p">);</span>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">Data</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">ExampleData</span><span class="p">(</span><span class="s">&#39;lorenz&#39;</span><span class="p">);</span><span class="w"></span>
 
-<span class="nb">figure</span><span class="p">(</span><span class="s">&#39;Color&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;k&#39;</span><span class="p">)</span>
-<span class="nb">plot3</span><span class="p">(</span><span class="n">Data</span><span class="p">(:,</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="n">Data</span><span class="p">(:,</span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="n">Data</span><span class="p">(:,</span><span class="mi">3</span><span class="p">),</span><span class="w"> </span><span class="s">&#39;g.&#39;</span><span class="p">)</span>
-<span class="nb">xlabel</span><span class="p">(</span><span class="s">&#39;x-component&#39;</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;g&#39;</span><span class="p">),</span>
-<span class="nb">ylabel</span><span class="p">(</span><span class="s">&#39;y-component&#39;</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;g&#39;</span><span class="p">),</span>
-<span class="nb">zlabel</span><span class="p">(</span><span class="s">&#39;z-component&#39;</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;g&#39;</span><span class="p">),</span>
-<span class="nb">view</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span><span class="w"> </span><span class="nb">set</span><span class="p">(</span><span class="nb">gca</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;k&#39;</span><span class="p">),</span><span class="w"> </span><span class="nb">axis</span><span class="w"> </span><span class="n">square</span>
+<span class="nb">figure</span><span class="p">(</span><span class="s">&#39;Color&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;k&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="nb">plot3</span><span class="p">(</span><span class="n">Data</span><span class="p">(:,</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="n">Data</span><span class="p">(:,</span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="n">Data</span><span class="p">(:,</span><span class="mi">3</span><span class="p">),</span><span class="w"> </span><span class="s">&#39;g.&#39;</span><span class="p">)</span><span class="w"></span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="s">&#39;x-component&#39;</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;g&#39;</span><span class="p">),</span><span class="w"></span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="s">&#39;y-component&#39;</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;g&#39;</span><span class="p">),</span><span class="w"></span>
+<span class="nb">zlabel</span><span class="p">(</span><span class="s">&#39;z-component&#39;</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;g&#39;</span><span class="p">),</span><span class="w"></span>
+<span class="nb">view</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span><span class="w"> </span><span class="nb">set</span><span class="p">(</span><span class="nb">gca</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;k&#39;</span><span class="p">),</span><span class="w"> </span><span class="nb">axis</span><span class="w"> </span><span class="n">square</span><span class="w"></span>
 </pre></div>
 </div>
 <img alt="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/lorenz.png?raw=true" src="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/lorenz.png?raw=true" />
@@ -171,18 +174,18 @@
 10) with an embedding dimension of 3, time delay of 2, an alpha parameter of 1.234.
 Return <code class="docutils literal notranslate"><span class="pre">Pnorm</span></code> normalised w.r.t the number of all possible permutations (<code class="docutils literal notranslate"><span class="pre">m!</span></code>) and the
 condition permutation entropy (<code class="docutils literal notranslate"><span class="pre">cPE</span></code>) estimate.</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">Z</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">Data</span><span class="p">(:,</span><span class="mi">3</span><span class="p">);</span>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">Z</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">Data</span><span class="p">(:,</span><span class="mi">3</span><span class="p">);</span><span class="w"></span>
 
-<span class="p">[</span><span class="n">Perm</span><span class="p">,</span><span class="w"> </span><span class="n">Pnorm</span><span class="p">,</span><span class="w"> </span><span class="n">cPE</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">PermEn</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;m&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;tau&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Typex&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;finegrain&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;tpx&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">1.234</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Logx&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Norm&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">)</span>
+<span class="p">[</span><span class="n">Perm</span><span class="p">,</span><span class="w"> </span><span class="n">Pnorm</span><span class="p">,</span><span class="w"> </span><span class="n">cPE</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">PermEn</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;m&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;tau&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Typex&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;finegrain&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;tpx&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">1.234</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Logx&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Norm&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">)</span><span class="w"></span>
 
-<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Perm</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span>×<span class="mi">3</span>
-<span class="w">    </span><span class="mi">0</span><span class="w">   </span><span class="mf">0.8687</span><span class="w"> </span><span class="mf">0.9468</span>
+<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Perm</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span>×<span class="mi">3</span><span class="w"></span>
+<span class="w">    </span><span class="mi">0</span><span class="w">   </span><span class="mf">0.8687</span><span class="w"> </span><span class="mf">0.9468</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">Pnorm</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span>×<span class="mi">3</span>
-<span class="w">    </span><span class="nb">NaN</span><span class="w"> </span><span class="mf">0.8687</span><span class="w"> </span><span class="mf">0.4734</span>
+<span class="w">    </span><span class="n">Pnorm</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span>×<span class="mi">3</span><span class="w"></span>
+<span class="w">    </span><span class="nb">NaN</span><span class="w"> </span><span class="mf">0.8687</span><span class="w"> </span><span class="mf">0.4734</span><span class="w"></span>
 
-<span class="w">    </span><span class="n">cPE</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span>×<span class="mi">2</span>
-<span class="w">    </span><span class="mf">0.8687</span><span class="w"> </span><span class="mf">0.0781</span>
+<span class="w">    </span><span class="n">cPE</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">1</span>×<span class="mi">2</span><span class="w"></span>
+<span class="w">    </span><span class="mf">0.8687</span><span class="w"> </span><span class="mf">0.0781</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
