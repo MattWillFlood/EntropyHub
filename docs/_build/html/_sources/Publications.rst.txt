@@ -14,6 +14,11 @@ List of research articles citing EntropyHub
 
 2023
 ----
+
+* `Improved Stress Classification Using Automatic Feature Selection from Heart Rate and Respiratory Rate Time Signals <https://www.mdpi.com/2076-3417/13/5/2950>`_
+    | Talha Iqbal, Adnan Elahi, William Wijns, Bilal Amin, Atif Shahzad
+    | *Applied Sciences*
+
 * `Single-neuron spiking variability in hippocampus dynamically tracks sensory content during memory formation in humans <https://www.biorxiv.org/content/10.1101/2023.02.23.529684v1>`_
     | Leonhard Waschke, Fabian Kamp, Evi van den Elzen, Suresh Krishna, Ulman Lindenberger,  Ueli Rutishauser, Douglas D. Garrett
     | *BioRxiv*
@@ -84,6 +89,10 @@ List of research articles citing EntropyHub
 * `Novel techniques for improvement the NNetEn entropy calculation for short and noisy time series <https://arxiv.org/abs/2202.12703>`_    
     | Hanif Heidari, Andrei Velichko
     | *arXiv*
+
+* `Privacy-preserving human mobility and activity modelling <https://spiral.imperial.ac.uk/handle/10044/1/101456>`_
+    | Yuting Zhan
+    | *Imperial College London Repository*
 
 
 ..............................................................
