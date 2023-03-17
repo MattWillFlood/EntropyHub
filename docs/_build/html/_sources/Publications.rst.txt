@@ -15,6 +15,14 @@ List of research articles citing EntropyHub
 2023
 ----
 
+* `Fasting and prolonged food restriction differentially affect GH secretion independently of GH receptor signaling in AgRP neurons <https://onlinelibrary.wiley.com/doi/abs/10.1111/jne.13254>`_
+    | Maria E. de Sousa, Daniela O. Gusmao, Willian O. dos Santos, Henrique T. Moriya, Felipe F. de Lima, Edward O. List, John J. Kopchick, Jose Donato Jr.
+    | *Journal of Neuroendocrinology*
+
+* `Non-invasive Waveform Analysis for Emergency Triage via Simulated Hemorrhage: An Experimental Study using Novel Dynamic Lower Body Negative Pressure Model <https://arxiv.org/abs/2303.06064>`_
+    | Naimahmed Nesaragi, Lars Øivind Høiseth, Hemin Ali Qadir, Leiv Arne Rosseland, Per Steinar Halvorsen, Ilangko Balasingham
+    | *arXiv*
+
 * `Improved Stress Classification Using Automatic Feature Selection from Heart Rate and Respiratory Rate Time Signals <https://www.mdpi.com/2076-3417/13/5/2950>`_
     | Talha Iqbal, Adnan Elahi, William Wijns, Bilal Amin, Atif Shahzad
     | *Applied Sciences*
