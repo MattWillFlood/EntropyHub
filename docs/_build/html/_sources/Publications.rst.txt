@@ -14,6 +14,9 @@ List of research articles citing EntropyHub
 
 2023
 ----
+* `Early fault diagnosis based on reinforcement learning optimized-SVM model with vibration-monitored signals <https://www.tandfonline.com/doi/abs/10.1080/08982112.2023.2193255?journalCode=lqen20>`_
+    | Wenqin Zhao,Yaqiong Lv, Jialun Liu, Carman K. M. Lee, Lei Tu
+    | *Quality Engineering*
 
 * `Fasting and prolonged food restriction differentially affect GH secretion independently of GH receptor signaling in AgRP neurons <https://onlinelibrary.wiley.com/doi/abs/10.1111/jne.13254>`_
     | Maria E. de Sousa, Daniela O. Gusmao, Willian O. dos Santos, Henrique T. Moriya, Felipe F. de Lima, Edward O. List, John J. Kopchick, Jose Donato Jr.
