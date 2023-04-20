@@ -14,6 +14,10 @@ List of research articles citing EntropyHub
 
 2023
 ----
+* `Analysing Fairness of Privacy-Utility Mobility Models <https://arxiv.org/abs/2304.06469>`_
+    | Yuting Zhan, Hamed Haddadi, Afra Mashhadi
+    | *arXiv*
+
 * `Early fault diagnosis based on reinforcement learning optimized-SVM model with vibration-monitored signals <https://www.tandfonline.com/doi/abs/10.1080/08982112.2023.2193255?journalCode=lqen20>`_
     | Wenqin Zhao,Yaqiong Lv, Jialun Liu, Carman K. M. Lee, Lei Tu
     | *Quality Engineering*
