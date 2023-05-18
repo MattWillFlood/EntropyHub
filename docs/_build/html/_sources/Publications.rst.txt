@@ -14,6 +14,15 @@ List of research articles citing EntropyHub
 
 2023
 ----
+
+* `Neural Network Entropy (NNetEn): Entropy-Based EEG Signal and Chaotic Time Series Classification, Python Package for NNetEn Calculation <https://www.mdpi.com/1999-4893/16/5/255>`_
+    | Andrei Velichko, Maksim Belyaev, Yuriy Izotov, Murugappan Murugappan, Hanif Heidari
+    | *Algorithms*
+
+* `Changes in surface electromyography characteristics and foot-tapping rate of force development as measures of spasticity in patients with multiple sclerosis. <https://shareok.org/handle/11244/337631>`_
+    | Brian Pribble
+    | *University of Oklahoma Library*
+
 * `Analysing Fairness of Privacy-Utility Mobility Models <https://arxiv.org/abs/2304.06469>`_
     | Yuting Zhan, Hamed Haddadi, Afra Mashhadi
     | *arXiv*
