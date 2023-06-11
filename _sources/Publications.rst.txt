@@ -15,6 +15,10 @@ List of research articles citing EntropyHub
 2023
 ----
 
+* `The Influence of Stress Noise and Music Stimulation on the Autonomous Nervous System <https://ieeexplore.ieee.org/document/10144438>`_
+    | Mariana Jacob Rodrigues, Octavian Postolache, Francisco Cercas
+    | *IEEE Transactions on Instrumentation and Measurement*
+
 * `Neural Network Entropy (NNetEn): Entropy-Based EEG Signal and Chaotic Time Series Classification, Python Package for NNetEn Calculation <https://www.mdpi.com/1999-4893/16/5/255>`_
     | Andrei Velichko, Maksim Belyaev, Yuriy Izotov, Murugappan Murugappan, Hanif Heidari
     | *Algorithms*
