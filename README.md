@@ -4,6 +4,9 @@
 <img src="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/EntropyHub_profiler.png" alt = "EntropyHub Git" width="250" height="250" />
 </p>
 
+#### See full documentation at [www.EntropyHub.xyz](https://www.EntropyHub.xyz)
+
+  
   Available in 
   [MatLab](https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub "EH4MATLAB")  // 
   [Python](https://pypi.org/project/EntropyHub/ "EH4PYTHON")  // 
