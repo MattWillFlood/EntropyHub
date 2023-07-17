@@ -15,6 +15,18 @@ List of research articles citing EntropyHub
 2023
 ----
 
+* `A Dynamical Systems Approach to Characterizing Brain–Body Interactions during Movement: Challenges, Interpretations, and Recommendations <https://www.mdpi.com/1424-8220/23/14/6296>`_
+    | Derek C. Monroe, Nathaniel T. Berry, Peter C. Fino, Christopher K. Rhea
+    | *Sensors*
+
+* `The impact of hardware and design choices on data quality in mouse resting-state functional magnetic resonance imaging (fMRI) <https://escholarship.mcgill.ca/concern/theses/xk81js05z>`_
+    | Mila Urosevic
+    | *McGill University eScholarship*
+
+* `Approximate Entropy Analysis for Nonlinear Beam Dynamics <https://arxiv.org/abs/2306.17297>`_
+    | Yongjun Li    
+    | *arXiv*
+
 * `The Influence of Stress Noise and Music Stimulation on the Autonomous Nervous System <https://ieeexplore.ieee.org/document/10144438>`_
     | Mariana Jacob Rodrigues, Octavian Postolache, Francisco Cercas
     | *IEEE Transactions on Instrumentation and Measurement*
