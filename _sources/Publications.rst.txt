@@ -15,6 +15,10 @@ List of research articles citing EntropyHub
 2023
 ----
 
+* `Topological entropy bounds multiscale entropy <https://doi.org/10.1016/j.topol.2023.108647>`_
+    | Jose S. Cánovas
+    | *Topology and its Applications*
+
 * `A Dynamical Systems Approach to Characterizing Brain–Body Interactions during Movement: Challenges, Interpretations, and Recommendations <https://www.mdpi.com/1424-8220/23/14/6296>`_
     | Derek C. Monroe, Nathaniel T. Berry, Peter C. Fino, Christopher K. Rhea
     | *Sensors*
