@@ -15,6 +15,10 @@ List of research articles citing EntropyHub
 2023
 ----
 
+* `Adazd-Net: Automated adaptive and explainable Alzheimer’s disease detection system using EEG signals <https://doi.org/10.1016/j.knosys.2023.110858>`_
+    | Smith K. Khare, U. Rajendra Acharya
+    | *Knowledge-Based Systems*
+
 * `Topological entropy bounds multiscale entropy <https://doi.org/10.1016/j.topol.2023.108647>`_
     | Jose S. Cánovas
     | *Topology and its Applications*
