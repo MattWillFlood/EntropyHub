@@ -14,8 +14,9 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          template: repository
           token: ${{ secrets.METRIC_EH }}          
-          filename: metrics.entropyhub.svg
+          filename: metrics.entropyhub.png
           user: MattWillFlood
           repo: EntropyHub
           plugin_lines: yes
