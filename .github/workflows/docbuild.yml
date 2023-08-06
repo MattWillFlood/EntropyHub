@@ -17,7 +17,7 @@ jobs:
           folder: docs/_build/html # The folder the action should deploy.
 
       - name: Example
-        uses: lowlighter/metrics@latest
+        uses: MattWillFlood/EntropyHub@latest
         with:
           template: repository
           filename: metrics.repository.svg
@@ -27,4 +27,6 @@ jobs:
           plugin_lines: yes
           plugin_followup: yes
           plugin_projects: yes
+          plugin_projects_repositories: lowlighter/metrics/projects/1
+
 
