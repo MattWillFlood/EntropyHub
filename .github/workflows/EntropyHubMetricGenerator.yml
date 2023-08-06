@@ -21,7 +21,7 @@ jobs:
           base: ""
           # repo: EntropyHub
           plugin_repositories: yes
-          plugin_repositories_featured: (MattWillFlood/EntropyHub, MattWillFlood/EntropyHub.jl)
+          plugin_repositories_featured: MattWillFlood/EntropyHub, MattWillFlood/EntropyHub.jl
           # plugin_lines: yes
           # plugin_followup: yes
           # plugin_stargazers_charts: yes
