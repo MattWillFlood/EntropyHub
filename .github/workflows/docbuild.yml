@@ -16,17 +16,3 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: docs/_build/html # The folder the action should deploy.
 
-      - name: Example
-        uses: MattWillFlood/EntropyHub@latest
-        with:
-          template: repository
-          filename: metrics.repository.svg
-          token: ${{ secrets.METRICS_TOKEN_WITH_SCOPES }}
-          user: MattWillFlood
-          repo: EntropyHub
-          plugin_lines: yes
-          plugin_followup: yes
-          plugin_projects: yes
-          plugin_projects_repositories: lowlighter/metrics/projects/1
-
-
