@@ -16,12 +16,15 @@ jobs:
           branch: gh-pages # The branch the action should deploy to.
           folder: docs/_build/html # The folder the action should deploy.
 
-      - name: Featured star list
+      - name: Example
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.starlists.svg
-          token: NOT_NEEDED
-          base: ""
-          plugin_starlists: yes
-          plugin_starlists_limit_repositories: 2
-          plugin_starlists_only: (EntropyHub, EntropyHub.jl)
+          template: repository
+          filename: metrics.repository.svg
+          token: ${{ secrets.METRICS_TOKEN_WITH_SCOPES }}
+          user: MattWillFlood
+          repo: EntropyHub
+          plugin_lines: yes
+          plugin_followup: yes
+          plugin_projects: yes
+
