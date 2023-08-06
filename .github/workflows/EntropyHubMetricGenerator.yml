@@ -5,7 +5,7 @@ on:
   # (optional) Run workflow manually
   # workflow_dispatch:
   # (optional) Run workflow when pushing on master/main
-  push: {branches: ["master", "main"]}
+  push: {branches: "main"}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -16,10 +16,10 @@ jobs:
         with:
           template: repository
           token: ${{ secrets.METRIC_EH }}          
-          filename: metrics.entropyhub.png
+          filename: metrics.entropyhub.svg
           user: MattWillFlood
           repo: EntropyHub
           plugin_lines: yes
-          #plugin_followup: yes
-          #plugin_projects: no
+          plugin_followup: yes
+          plugin_projects: no
           # plugin_projects_repositories: lowlighter/metrics/projects/1
