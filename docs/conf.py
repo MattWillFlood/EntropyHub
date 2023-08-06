@@ -40,7 +40,7 @@ html_logo = "./_images/Logo.png"
 html_sidebars = { '**': ['globaltoc.html', 'relations.html', 'sourcelink.html', 'searchbox.html'] }
 html_theme_options = {'collapse_navigation': False,}
 html_static_path = ['_static']
-html_show_sphinx = True
+html_show_sphinx = False
 html_context = {'display_github': True, 'github_user': 'MattWillFlood', 'github_repo': 'EntropyHub','github_version': 'main/docs/'}
 html_favicon = './_images/favicon.ico'
 
