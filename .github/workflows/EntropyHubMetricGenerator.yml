@@ -17,10 +17,11 @@ jobs:
           # template: repository
           token: ${{ secrets.METRIC_EH }}          
           filename: metrics.entropyhub.svg
-          user: MattWillFlood
-          repo: EntropyHub
+          # user: MattWillFlood
+          base: ""
+          # repo: EntropyHub
           plugin_repositories: yes
-          plugin_repositories_featured: [MattWillFLood/EntropyHub,MattWillFLood/EntropyHub.jl] 
+          plugin_repositories_featured: [MattWillFLood/EntropyHub, MattWillFLood/EntropyHub.jl] 
           # plugin_lines: yes
           # plugin_followup: yes
           # plugin_stargazers_charts: yes
