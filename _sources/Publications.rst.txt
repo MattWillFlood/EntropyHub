@@ -9,12 +9,18 @@ Publications
 
 ..............................................................
 
+.. image:: https://raw.githubusercontent.com/MattWillFlood/EntropyHub/7ca475740f6578bec6db122512051b47e24c7dd4/metrics.entropyhub.svg
+    :align: left
+    :target: https://github.com/MattWillFlood/EntropyHub
+    :scale: 50 %
+
 .. raw:: html
         
     <div style="display: flex;"> 
         <div style="text-align:right;" class="__dimensions_badge_embed__" data-doi="10.1371/journal.pone.0259448" data-legend="always" data-style="large_circle"></div><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script> 
         <div style="text-align:left;" class="altmetric-embed" data-badge-type='large-donut' data-badge-details='right' data-altmetric-id="116252437"></div><script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
     </div>
+
 
 List of research articles citing EntropyHub
 ###########################################

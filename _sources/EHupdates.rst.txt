@@ -1,3 +1,8 @@
+.. image:: https://raw.githubusercontent.com/MattWillFlood/EntropyHub/7ca475740f6578bec6db122512051b47e24c7dd4/metrics.entropyhub.svg
+    :align: right
+    :height: 80px
+    :target: https://github.com/MattWillFlood/EntropyHub
+
 **************
 Latest Updates 
 **************
