@@ -1,0 +1,29 @@
+name: Metrics
+on:
+  # Schedule daily updates
+  schedule: [{cron: "0 * * * *"}]
+  # (optional) Run workflow manually
+  # workflow_dispatch:
+  # (optional) Run workflow when pushing on master/main
+  push: {branches: "main"}
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # template: repository
+          token: ${{ secrets.METRIC_EH }}          
+          filename: metrics.entropyhub.svg
+          # user: MattWillFlood
+          base: ""
+          # repo: EntropyHub
+          plugin_repositories: yes
+          plugin_repositories_featured: MattWillFlood/EntropyHub, MattWillFlood/EntropyHub.jl
+          # plugin_lines: yes
+          # plugin_followup: yes
+          # plugin_stargazers_charts: yes
+          # plugin_stargazers_charts_type: classic
+          # plugin_projects_repositories: lowlighter/metrics/projects/1
