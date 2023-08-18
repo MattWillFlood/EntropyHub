@@ -9,6 +9,8 @@ import sphinx_rtd_theme
 
 def setup(app):
     app.add_css_file('custom.css')
+   # app.add_js_file("widget-popup.js")
+
 
 # -- Project information -----------------------------------------------------
 project = 'EntropyHub'
@@ -43,6 +45,8 @@ html_static_path = ['_static']
 html_show_sphinx = False
 html_context = {'display_github': True, 'github_user': 'MattWillFlood', 'github_repo': 'EntropyHub','github_version': 'main/docs/'}
 html_favicon = './_images/favicon.ico'
+
+#html_js_files = ["widget-popup.js"]
 
 matlab_src_dir = r'../EntropyHubMat/'
 

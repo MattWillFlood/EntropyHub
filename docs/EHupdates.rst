@@ -13,10 +13,12 @@ Latest Updates
 
 ..............................................................
 
+
 January 2023
 ############
 
 **New announcements coming soon!!! :)**
+
 
 ..............................................................
 
@@ -140,3 +142,6 @@ As with all initial releases, there may be some bugs, typo's or other small issu
     :width: 250px
     :align: center
     :height: 350px
+
+
+

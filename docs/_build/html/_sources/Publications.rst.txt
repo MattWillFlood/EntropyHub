@@ -28,6 +28,10 @@ List of research articles citing EntropyHub
 2023
 ----
 
+* `A Bio-Inspired Chaos Sensor Model Based on the Perceptron Neural Network: Machine Learning Concept and Application for Computational Neuro-Science <https://www.mdpi.com/1424-8220/23/16/7137>`_
+    | Andrei Velichko, Petr Boriskov,Maksim Belyaev, Vadim Putrolaynen
+    | *Sensors*
+
 * `Adazd-Net: Automated adaptive and explainable Alzheimer’s disease detection system using EEG signals <https://doi.org/10.1016/j.knosys.2023.110858>`_
     | Smith K. Khare, U. Rajendra Acharya
     | *Knowledge-Based Systems*
