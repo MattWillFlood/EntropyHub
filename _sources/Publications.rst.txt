@@ -28,6 +28,10 @@ List of research articles citing EntropyHub
 2023
 ----
 
+* `Ensemble Wavelet Decomposition-Based Detection of Mental States Using Electroencephalography Signals  <https://www.mdpi.com/1424-8220/23/18/7860>`_
+    | Smith K. Khare, Varun Bajaj, Nikhil B. Gaikwad, G.R. Sinha
+    | *Sensors*
+
 * `A Bio-Inspired Chaos Sensor Model Based on the Perceptron Neural Network: Machine Learning Concept and Application for Computational Neuro-Science <https://www.mdpi.com/1424-8220/23/16/7137>`_
     | Andrei Velichko, Petr Boriskov,Maksim Belyaev, Vadim Putrolaynen
     | *Sensors*
