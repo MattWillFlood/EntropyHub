@@ -28,6 +28,10 @@ List of research articles citing EntropyHub
 2023
 ----
 
+* `Entropy-based machine learning model for diagnosis and monitoring of Parkinson's Disease in smart IoT environment <https://arxiv.org/abs/2309.07134>`_
+    | Maksim Belyaev, Murugappan Murugappan, Andrei Velichko, Dmitry Korzun
+    | *arXiv*
+     
 * `Ensemble Wavelet Decomposition-Based Detection of Mental States Using Electroencephalography Signals  <https://www.mdpi.com/1424-8220/23/18/7860>`_
     | Smith K. Khare, Varun Bajaj, Nikhil B. Gaikwad, G.R. Sinha
     | *Sensors*
