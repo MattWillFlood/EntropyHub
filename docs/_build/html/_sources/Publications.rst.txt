@@ -48,6 +48,10 @@ List of research articles citing EntropyHub
     | Jose S. Cánovas
     | *Topology and its Applications*
 
+* `Normalization for connectivity of brain regions in schizophrenia classification <https://ieeexplore.ieee.org/abstract/document/10271000/>`_
+    | Shunliang Li, Haifeng Wu
+    | *IEEE 8th International Conference on Signal and Image Processing (ICSIP)*
+
 * `A Dynamical Systems Approach to Characterizing Brain–Body Interactions during Movement: Challenges, Interpretations, and Recommendations <https://www.mdpi.com/1424-8220/23/14/6296>`_
     | Derek C. Monroe, Nathaniel T. Berry, Peter C. Fino, Christopher K. Rhea
     | *Sensors*
