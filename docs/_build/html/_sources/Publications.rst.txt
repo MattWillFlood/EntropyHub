@@ -28,9 +28,9 @@ List of research articles citing EntropyHub
 2023
 ----
 
-* `Entropy-based machine learning model for diagnosis and monitoring of Parkinson's Disease in smart IoT environment <https://arxiv.org/abs/2309.07134>`_
+* `Entropy-Based Machine Learning Model for Fast Diagnosis and Monitoring of Parkinson’s Disease <https://www.mdpi.com/1424-8220/23/20/8609>`_
     | Maksim Belyaev, Murugappan Murugappan, Andrei Velichko, Dmitry Korzun
-    | *arXiv*
+    | *Sensors*
      
 * `Ensemble Wavelet Decomposition-Based Detection of Mental States Using Electroencephalography Signals  <https://www.mdpi.com/1424-8220/23/18/7860>`_
     | Smith K. Khare, Varun Bajaj, Nikhil B. Gaikwad, G.R. Sinha
@@ -111,6 +111,11 @@ List of research articles citing EntropyHub
 * `Analysis of the complexity and variability of fine and gross motor tasks in fibromyalgia patients: precision and retrospective cross-sectional studies <https://repositorio.ipsantarem.pt/handle/10400.15/4270>`_
     | Nancy Anacleto Brígida
     | *Repositório Científico do Instituto Politécnico de Santarém*
+
+* `Extraction of Information Theory-Based Indices from Fetal-Maternal Heart Rate Simultaneous Signals <https://repositorio-aberto.up.pt/bitstream/10216/152787/2/641576.pdf>`_
+    | Ana Filipa Soeiro Gomes
+    | *Repositório do Faculdade de Engenharia da Universidade do Porto*
+
 
 2022
 ----
