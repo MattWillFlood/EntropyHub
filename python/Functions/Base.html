@@ -692,7 +692,7 @@ Entropy
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.FuzzEn">
-<span class="sig-name descname"><span class="pre">FuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.2,</span> <span class="pre">2)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.2,</span> <span class="pre">2.0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn" title="Permalink to this definition"></a></dt>
 <dd><p>FuzzEn  estimates the fuzzy entropy of a univariate data sequence.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Fuzz</span><span class="p">,</span> <span class="n">Ps1</span><span class="p">,</span> <span class="n">Ps2</span> <span class="o">=</span> <span class="n">FuzzEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
@@ -1120,7 +1120,7 @@ estimated from the data sequence (<code class="docutils literal notranslate"><sp
 <li><p>Permutation entropy variation, one of the following:</p></li>
 </ul>
 <dl class="simple">
-<dt>{<code class="docutils literal notranslate"><span class="pre">'uniquant'</span></code>, <code class="docutils literal notranslate"><span class="pre">'finegrain'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'ampaware'</span></code>, <code class="docutils literal notranslate"><span class="pre">'weighted'</span></code>, <code class="docutils literal notranslate"><span class="pre">'edge'</span></code>}</dt><dd><p>See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on PermEn variants.</p>
+<dt>{<code class="docutils literal notranslate"><span class="pre">'uniquant'</span></code>, <code class="docutils literal notranslate"><span class="pre">'finegrain'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'ampaware'</span></code>, <code class="docutils literal notranslate"><span class="pre">'weighted'</span></code>, <code class="docutils literal notranslate"><span class="pre">'edge'</span></code>, <code class="docutils literal notranslate"><span class="pre">'phase'</span></code>}</dt><dd><p>See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on PermEn variants.</p>
 </dd>
 </dl>
 </dd>
@@ -1183,6 +1183,11 @@ Complexity
 <dt>[8] Maik Riedl, Andreas Müller, and Niels Wessel,</dt><dd><p>“Practical considerations of permutation entropy.” 
 The European Physical Journal Special Topics 
 222.2 (2013): 249-262.</p>
+</dd>
+<dt>[9] Kang Huan, Xiaofeng Zhang, and Guangbin Zhang,</dt><dd><p>“Phase permutation entropy: A complexity measure for nonlinear time 
+series incorporating phase information.” 
+Physica A: Statistical Mechanics and its Applications 
+568 (2021): 125686.</p>
 </dd>
 </dl>
 </dd>
