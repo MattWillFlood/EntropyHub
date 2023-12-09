@@ -28,6 +28,27 @@ List of research articles citing EntropyHub
 2023
 ----
 
+
+* `Radiological Complexity of Nuclear Facilities: An Information Complexity Approach to Workplace Monitoring <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4643418>`_
+    | Abinash Chakraborty, Neeraj Parashar, DK Pandey, Pankaj Kumar, UV Deokar, JPN Pandey
+    | *SSRN - Social Science Research Network*
+
+* `Nonlinear Analysis of the Dynamical Characteristics of EEG Signals in Epileptic Brains <https://mhnursing.or.kr/index.php/JKPMHN/article/view/153>`_
+    | Shervin Skaria, Sreelatha KS
+    | *Journal of the Korean Academy of Pyschiatric and Mental Health Nursing*
+
+* `NLDyn - An open source MATLAB toolbox for the univariate and multivariate nonlinear dynamical analysis of physiological data <https://www.doi.org/10.1016/j.cmpb.2023.107941>`_
+    | Mostafa Rostaghi, Sadegh Rostaghi, Anne Humeau-Heurtier, Tarek K. Rajji, Hamed Azami
+    | *Computer Methods and Programs in Biomedicine*
+
+* `Functional near-infrared spectroscopy for human brain age group classification by machine learning <https://doi.org/10.22541/au.170004063.32719671/v1>`_
+    | Martti Ilvesmäki, Hany Ferdinando, Kai Noponen, Tapio Seppänen, Vesa Korhonen, Vesa Kiviniemi, Teemu Myllylä
+    | *Authorea*
+
+* `Acceleration profiles of adolescent soccer players across a season <https://trace.tennessee.edu/utk_graddiss/8578/>`_
+    | Jake Melaro
+    | *University of Tennessee (Knoxville) Repository*
+
 * `Entropy-Based Machine Learning Model for Fast Diagnosis and Monitoring of Parkinson’s Disease <https://www.mdpi.com/1424-8220/23/20/8609>`_
     | Maksim Belyaev, Murugappan Murugappan, Andrei Velichko, Dmitry Korzun
     | *Sensors*
