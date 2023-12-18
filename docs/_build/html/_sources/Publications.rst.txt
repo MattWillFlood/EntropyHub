@@ -45,6 +45,10 @@ List of research articles citing EntropyHub
     | Martti Ilvesmäki, Hany Ferdinando, Kai Noponen, Tapio Seppänen, Vesa Korhonen, Vesa Kiviniemi, Teemu Myllylä
     | *Authorea*
 
+* `A Retrospective Study on Classifying Gait Signals Using Entropy Measures <https://doi-org.proxy.bnl.lu/10.1109/TENCON58879.2023.10322319>`_
+    | Wael Suliman, Vinayakumar Ravi, Tuan D. Pham
+    | *IEEE TENCON 2023*
+
 * `Acceleration profiles of adolescent soccer players across a season <https://trace.tennessee.edu/utk_graddiss/8578/>`_
     | Jake Melaro
     | *University of Tennessee (Knoxville) Repository*
@@ -53,6 +57,10 @@ List of research articles citing EntropyHub
     | Maksim Belyaev, Murugappan Murugappan, Andrei Velichko, Dmitry Korzun
     | *Sensors*
      
+* `Linear and Nonlinear Analysis of Trunk Sway Time Series in Office Workers With and Without Chronic Spinal Pain <https://run.unl.pt/bitstream/10362/161075/1/Julio_2023.pdf>`_
+    | Afonso Manuel Caetano Julio
+    | *Repositorio Universidade Nova de Lisboa*
+
 * `Ensemble Wavelet Decomposition-Based Detection of Mental States Using Electroencephalography Signals  <https://www.mdpi.com/1424-8220/23/18/7860>`_
     | Smith K. Khare, Varun Bajaj, Nikhil B. Gaikwad, G.R. Sinha
     | *Sensors*
