@@ -25,9 +25,17 @@ Publications
 List of research articles citing EntropyHub
 ###########################################
 
-2023
+
+2024
 ----
 
+* `What can entropy metrics tell us about the characteristics of ocular fixation trajectories? <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0291823>`_
+    | Kateryna Melnyk, Lee Friedman, Oleg V. Komogortsev
+    | *PLoS One*
+
+
+2023
+----
 
 * `Radiological Complexity of Nuclear Facilities: An Information Complexity Approach to Workplace Monitoring <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4643418>`_
     | Abinash Chakraborty, Neeraj Parashar, DK Pandey, Pankaj Kumar, UV Deokar, JPN Pandey
