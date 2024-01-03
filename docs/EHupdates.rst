@@ -14,10 +14,10 @@ Latest Updates
 ..............................................................
 
 
-January 2023
+January 2024
 ############
 
-**New announcements coming soon!!! :)**
+**New announcements coming soon! :)**
 
 
 ..............................................................
