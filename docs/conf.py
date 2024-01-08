@@ -4,7 +4,7 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os, sys
-sys.path.insert(0, os.path.abspath('../EntropyHubPy/'))
+sys.path.insert(0, os.path.abspath('../EntropyHubPy/build/lib/'))
 import sphinx_rtd_theme
 
 def setup(app):
