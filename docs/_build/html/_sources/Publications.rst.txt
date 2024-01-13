@@ -29,6 +29,10 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `Approximate entropy analysis for nonlinear beam dynamics <https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.27.011601>`_
+    | Yongjun Li, Robert Rainer
+    | *Physical Reviews Accelerators and Beams*
+
 * `What can entropy metrics tell us about the characteristics of ocular fixation trajectories? <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0291823>`_
     | Kateryna Melnyk, Lee Friedman, Oleg V. Komogortsev
     | *PLoS One*
