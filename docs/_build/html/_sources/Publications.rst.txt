@@ -29,6 +29,10 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `Recognition of map activities using eye tracking and EEG data <https://www.tandfonline.com/doi/full/10.1080/13658816.2024.2309188>`_
+    | Tong Qin, Wim Fias, Nico Van de Weghe, Haosheng Huang
+    | *International Journal of Geographical Information Science*
+
 * `Approximate entropy analysis for nonlinear beam dynamics <https://journals.aps.org/prab/abstract/10.1103/PhysRevAccelBeams.27.011601>`_
     | Yongjun Li, Robert Rainer
     | *Physical Reviews Accelerators and Beams*
