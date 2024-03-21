@@ -29,6 +29,10 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `Monitoring chaos at the cot-side <https://www.nature.com/articles/s41390-024-03151-1>`_
+    | Michael J. Beacom, Martin G. Frasch, Christopher A. Lear, Alistair J. Gunn
+    | *Pediatric Research*
+
 * `Recognition of map activities using eye tracking and EEG data <https://www.tandfonline.com/doi/full/10.1080/13658816.2024.2309188>`_
     | Tong Qin, Wim Fias, Nico Van de Weghe, Haosheng Huang
     | *International Journal of Geographical Information Science*
