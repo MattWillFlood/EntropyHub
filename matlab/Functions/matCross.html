@@ -173,27 +173,26 @@ We are currently working to enable different signal lengths for cross-entropy es
 <hr class="docutils" />
 <span class="target" id="module-EntropyHub"></span><dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XApEn">
-<span class="sig-name descname"><span class="pre">XApEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XApEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XApEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XApEn" title="Permalink to this definition"></a></dt>
 <dd><p>XApEn  estimates the cross-approximate entropy between two univariate  data sequences.</p>
-<p>[XAp, Phi] = XApEn(Sig)</p>
+<p>[XAp, Phi] = XApEn(Sig1, Sig2)</p>
 <p>Returns the cross-approximate entropy estimates (<code class="docutils literal notranslate"><span class="pre">XAp</span></code>) and the log-average
 number of matched vectors (<code class="docutils literal notranslate"><span class="pre">Phi</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [0,1,2], estimated for the data
-sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the default parameters:
-embedding dimension = 2, time delay = 1, 
-radius distance threshold = 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>),  logarithm = natural</p>
+sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the default parameters:
+embedding dimension = 2, time delay = 1,
+radius distance threshold = 0.2*SDpooled(<code class="docutils literal notranslate"><span class="pre">Sig1</span></code>,``Sig2``),  logarithm = natural</p>
 <ul class="simple">
-<li><p>NOTE: <code class="docutils literal notranslate"><span class="pre">XApEn</span></code> is direction-dependent. Thus, the first row/column of
-<code class="docutils literal notranslate"><span class="pre">Sig</span></code> is used as the template data sequence, and the second row/column 
-is the matching sequence.</p></li>
+<li><p>NOTE: <code class="docutils literal notranslate"><span class="pre">XApEn</span></code> is direction-dependent. Thus, the <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> is used as</p></li>
 </ul>
-<p>[XAp, Phi] = XApEn(Sig, name, value, …)</p>
+<p>the template data sequence, and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> is the matching sequence.</p>
+<p>[XAp, Phi] = XApEn(Sig1, Sig2, name, value, …)</p>
 <p>Returns the cross-approximate entropy estimates (<code class="docutils literal notranslate"><span class="pre">XAp</span></code>) between the data
-sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the specified name/value pair arguments:</p>
+sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the specified name/value pair arguments:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>     - Embedding Dimension, a positive integer   [default: 2]</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>   - Time Delay, a positive integer        [default: 1]</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">r</span></code>     - Radius Distance Threshold, a positive scalar [default: 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">r</span></code>     - Radius Distance Threshold, a positive scalar [default: 0.2*SDpooled(<code class="docutils literal notranslate"><span class="pre">Sig1</span></code>,``Sig2``)]</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Logx</span></code>  - Logarithm base, a positive scalar     [default: natural]</p></li>
 </ul>
 </div></blockquote>
@@ -201,12 +200,12 @@ sequences contained in <code class="docutils literal notranslate"><span class="p
 <dt>See also:</dt><dd><p>XSampEn, XFuzzEn, XMSEn, ApEn, SampEn, MSEn</p>
 </dd>
 <dt>References:</dt><dd><dl class="simple">
-<dt>[1] Steven Pincus and Burton H. Singer,</dt><dd><p>“Randomness and degrees of irregularity.” 
-Proceedings of the National Academy of Sciences 
+<dt>[1] Steven Pincus and Burton H. Singer,</dt><dd><p>“Randomness and degrees of irregularity.”
+Proceedings of the National Academy of Sciences
 93.5 (1996): 2083-2088.</p>
 </dd>
 <dt>[2] Steven Pincus,</dt><dd><p>“Assessing serial irregularity and its implications for health.”
-Annals of the New York Academy of Sciences 
+Annals of the New York Academy of Sciences
 954.1 (2001): 245-267.</p>
 </dd>
 </dl>
@@ -216,21 +215,21 @@ Annals of the New York Academy of Sciences
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XCondEn">
-<span class="sig-name descname"><span class="pre">XCondEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XCondEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XCondEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XCondEn" title="Permalink to this definition"></a></dt>
 <dd><p>XCondEn  estimates the corrected cross-conditional entropy between two univariate data sequences.</p>
-<p>[XCond, SEw, SEz] = XCondEn(Sig)</p>
+<p>[XCond, SEw, SEz] = XCondEn(Sig1, Sig2)</p>
 <p>Returns the corrected cross-conditional entropy estimates (<code class="docutils literal notranslate"><span class="pre">XCond</span></code>) and
 the corresponding Shannon entropies (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">SEw</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">SEz</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] 
-estimated for the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the default
+estimated for the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the default
 parameters:  embedding dimension = 2, time delay = 1,
 number of symbols = 6,  logarithm = natural</p>
 <ul class="simple">
 <li><p>Note: <code class="docutils literal notranslate"><span class="pre">XCondEn</span></code> is direction-dependent. Therefore, the order of the
-data sequences in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> matters. If the first row/column of <code class="docutils literal notranslate"><span class="pre">Sig</span></code> is 
-sequence ‘y’, and the second row/column is sequence ‘u’, then <code class="docutils literal notranslate"><span class="pre">XCond</span></code> is
+data sequences  <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> matters. If <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> is 
+sequence ‘y’, and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> is sequence ‘u’, then <code class="docutils literal notranslate"><span class="pre">XCond</span></code> is
 the amount of information carried by y(i) when the pattern u(i) is found.</p></li>
 </ul>
-<p>[XCond, SEw, SEz] = XCondEn(Sig, name, value, …)</p>
+<p>[XCond, SEw, SEz] = XCondEn(Sig1, Sig2, name, value, …)</p>
 <p>Returns the corrected cross-conditional entropy estimates (<code class="docutils literal notranslate"><span class="pre">XCond</span></code>) for
 the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the specified name/value
 pair arguments:</p>
@@ -266,17 +265,17 @@ Biological cybernetics
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XDistEn">
-<span class="sig-name descname"><span class="pre">XDistEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XDistEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XDistEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XDistEn" title="Permalink to this definition"></a></dt>
 <dd><p>XDistEn  estimates the cross-distribution entropy between two univariate data sequences.</p>
-<p>[XDist, Ppi] = XDistEn(Sig)</p>
+<p>[XDist, Ppi] = XDistEn(Sig1, Sig2)</p>
 <p>Returns the cross-distribution entropy estimate (<code class="docutils literal notranslate"><span class="pre">XDist</span></code>) and the
 corresponding distribution probabilities (<code class="docutils literal notranslate"><span class="pre">Ppi</span></code>) estimated between the data 
-sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the default parameters: 
+sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the default parameters: 
 embedding dimension = 2, time delay = 1, binning method = <code class="docutils literal notranslate"><span class="pre">'Sturges'</span></code>,
 logarithm = base 2, normalisation = w.r.t number of histogram bins</p>
-<p>[XDist, Pi] = XDistEn(Sig, name, value, …)</p>
+<p>[XDist, Pi] = XDistEn(Sig1, Sig2, name, value, …)</p>
 <p>Returns the cross-distribution entropy estimate (<code class="docutils literal notranslate"><span class="pre">XDist</span></code>) estimated beween the 
-data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the specified name/value pair 
+data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the specified name/value pair 
 arguments:</p>
 <blockquote>
 <div><ul class="simple">
@@ -313,24 +312,24 @@ Nonlinear Dynamics
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XFuzzEn">
-<span class="sig-name descname"><span class="pre">XFuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XFuzzEn" title="Permalink to this definition"></a></dt>
-<dd><p>XFuzzEn  estimates the cross-fuzzy entropy between two univariate data  sequences.</p>
-<p>[XFuzz, Ps1, Ps2] = XFuzzEn(Sig)</p>
+<span class="sig-name descname"><span class="pre">XFuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XFuzzEn" title="Permalink to this definition"></a></dt>
+<dd><p>XFuzzEn  estimates the cross-fuzzy entropy between two univariate data sequences.</p>
+<p>[XFuzz, Ps1, Ps2] = XFuzzEn(Sig1, Sig2)</p>
 <p>Returns the cross-fuzzy entropy estimates (<code class="docutils literal notranslate"><span class="pre">XFuzz</span></code>) and the average fuzzy
 distances (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">Ps1</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">Ps2</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] estimated for the data sequences
-contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code>, using the default parameters: 
+contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code>, using the default parameters: 
 embedding dimension = 2, time delay = 1, fuzzy function (<code class="docutils literal notranslate"><span class="pre">Fx</span></code>) = <code class="docutils literal notranslate"><span class="pre">'default'</span></code>,
 fuzzy function paramters (<code class="docutils literal notranslate"><span class="pre">r</span></code>) = [0.2, 2], logarithm = natural</p>
-<p>[XFuzz, Ps1, Ps2] = XFuzzEn(Sig, name, value, …)</p>
+<p>[XFuzz, Ps1, Ps2] = XFuzzEn(Sig1, Sig2, name, value, …)</p>
 <p>Returns the cross-fuzzy entropy estimates (<code class="docutils literal notranslate"><span class="pre">XFuzz</span></code>) for dimensions = [1, …, <code class="docutils literal notranslate"><span class="pre">m</span></code>]
-estimated for the data sequences in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the specified name/value 
+estimated for the data sequences in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the specified name/value 
 pair arguments:</p>
 <blockquote>
 <div><ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>     - Embedding Dimension, a positive integer   [default: 2]</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>   - Time Delay, a positive integer        [default: 1]</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Fx</span></code>    - Fuzzy function name, one of the following strings:
-{<code class="docutils literal notranslate"><span class="pre">'sigmoid'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modsampen'</span></code>, <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gudermannian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'linear'</span></code>}</p></li>
+{<code class="docutils literal notranslate"><span class="pre">'sigmoid'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modsampen'</span></code>, <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gudermannian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'bell'</span></code>, <code class="docutils literal notranslate"><span class="pre">'triangular'</span></code>, <code class="docutils literal notranslate"><span class="pre">'trapezoidal1'</span></code>, <code class="docutils literal notranslate"><span class="pre">'trapezoidal2'</span></code>, <code class="docutils literal notranslate"><span class="pre">'z_shaped'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gaussian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'constgaussian'</span></code>}</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">r</span></code>     - Fuzzy function parameters, a 1 element scalar or a 2 element
 vector of positive values. The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy
 function are defined as follows:  (default: [.2 2])</p>
@@ -360,7 +359,7 @@ GD(x) = atan(tanh(r/x)). GD(x) is
 normalised to have a maximum value of 1.</p>
 </div></blockquote>
 </dd>
-<dt>linear:       </dt><dd><ul class="simple">
+<dt>[DEPRICATED] linear:       </dt><dd><ul class="simple">
 <li><p>r  = an integer value. When <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">==</span> <span class="pre">0</span></code>, the</p></li>
 </ul>
 <blockquote>
@@ -369,6 +368,40 @@ normalised between [0 1]. When <code class="docutils literal notranslate"><span 
 the minimuum value of the exponential 
 argument is set to 0.</p>
 </div></blockquote>
+</dd>
+<dt>triangular:  </dt><dd><ul class="simple">
+<li><p>r = a positive scalar whose value is the threshold 
+(corner point) of the triangular function.</p></li>
+</ul>
+</dd>
+<dt>trapezoidal1:  </dt><dd><ul class="simple">
+<li><p>r = a positive scalar whose value corresponds
+to the upper (2r) and lower (r) corner points of the trapezoid.</p></li>
+</ul>
+</dd>
+<dt>trapezoidal2:  </dt><dd><ul class="simple">
+<li><p>r(1) = a value corresponding to the upper corner point of the trapezoid.</p></li>
+<li><p>r(2) = a value corresponding to the lower corner point of the trapezoid.</p></li>
+</ul>
+</dd>
+<dt>z_shaped:  </dt><dd><ul class="simple">
+<li><p>r = a scalar whose value corresponds to the
+upper (2r) and lower (r) corner points of the z-shape.</p></li>
+</ul>
+</dd>
+<dt>bell:  </dt><dd><ul class="simple">
+<li><p>r(1) = divisor of the distance value</p></li>
+<li><p>r(2) = exponent of generalized bell-shaped function</p></li>
+</ul>
+</dd>
+<dt>gaussian:  </dt><dd><ul class="simple">
+<li><p>r = a scalar whose value scales the slope of the Gaussian curve.</p></li>
+</ul>
+</dd>
+<dt>constgaussian:  </dt><dd><ul class="simple">
+<li><p>r = a scalar whose value defines the lower 
+threshod and shape of the Gaussian curve.</p></li>
+</ul>
 </dd>
 </dl>
 </div></blockquote>
@@ -387,6 +420,11 @@ bivariate time series.”
 Information Sciences 
 180.9 (2010): 1715-1724.</p>
 </dd>
+<dt>[2] Hamed Azami, et al.</dt><dd><p>“Fuzzy Entropy Metrics for the Analysis of Biomedical Signals: 
+Assessment and Comparison”
+IEEE Access
+7 (2019): 104833-104847</p>
+</dd>
 </dl>
 </dd>
 </dl>
@@ -394,23 +432,23 @@ Information Sciences
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XK2En">
-<span class="sig-name descname"><span class="pre">XK2En</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XK2En" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XK2En</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XK2En" title="Permalink to this definition"></a></dt>
 <dd><p>XK2En  estimates the cross-Kolmogorov (K2) entropy between two univariate data sequences.</p>
-<p>[XK2, Ci] = XK2En(Sig)</p>
+<p>[XK2, Ci] = XK2En(Sig1, Sig2)</p>
 <p>Returns the cross-Kolmogorov entropy estimates (<code class="docutils literal notranslate"><span class="pre">XK2</span></code>) and the correlation
 integrals (<code class="docutils literal notranslate"><span class="pre">Ci</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] estimated between the data sequences 
-contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the default parameters: 
+contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the default parameters: 
 embedding dimension = 2, time delay = 1, 
-distance threshold (<code class="docutils literal notranslate"><span class="pre">r</span></code>) = 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>), logarithm = natural</p>
+distance threshold (<code class="docutils literal notranslate"><span class="pre">r</span></code>) = 0.2*SDpooled(<code class="docutils literal notranslate"><span class="pre">Sig1</span></code>,``Sig2``), logarithm = natural</p>
 <p>[XK2, Ci] = XK2En(Sig, name, value, …)</p>
 <p>Returns the cross-Kolmogorov entropy estimates (<code class="docutils literal notranslate"><span class="pre">XK2</span></code>) estimated between
-the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the specified name/value
+the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the specified name/value
 pair arguments:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>     - Embedding Dimension, a positive integer [default: 2]</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>   - Time Delay, a positive integer         [default: 1]</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">r</span></code>     - Radius Distance Threshold, a positive scalar [default: 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">r</span></code>     - Radius Distance Threshold, a positive scalar [default: 0.2*SDpooled(<code class="docutils literal notranslate"><span class="pre">Sig1</span></code>,``Sig2``)]</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Logx</span></code>  - Logarithm base, a positive scalar      [default: natural]</p></li>
 </ul>
 </div></blockquote>
@@ -428,15 +466,15 @@ pair arguments:</p>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XPermEn">
-<span class="sig-name descname"><span class="pre">XPermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XPermEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XPermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XPermEn" title="Permalink to this definition"></a></dt>
 <dd><p>XPermEn  estimates the cross-permutation entropy between two univariate data sequences.</p>
-<p>[XPerm] = XPermEn(Sig)</p>
+<p>[XPerm] = XPermEn(Sig1, Sig2)</p>
 <p>Returns the cross-permuation entropy estimates (<code class="docutils literal notranslate"><span class="pre">XPerm</span></code>) estimated betweeen
-the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the default parameters:
+the data sequences contained in  <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the default parameters:
 embedding dimension = 3, time delay = 1, logarithm = base 2,</p>
-<p>[XPerm] = XPermEn(Sig, name, value, …)</p>
+<p>[XPerm] = XPermEn(Sig1, Sig2, name, value, …)</p>
 <p>Returns the permutation entropy estimates (<code class="docutils literal notranslate"><span class="pre">XPerm</span></code>) for the data sequences
-contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the specified name/value pair arguments:</p>
+contained in  <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the specified name/value pair arguments:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>     - Embedding Dimension, an integer &gt; 2   [default: 3]
@@ -462,24 +500,34 @@ Nonlinear Dynamics
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XSampEn">
-<span class="sig-name descname"><span class="pre">XSampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XSampEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XSampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XSampEn" title="Permalink to this definition"></a></dt>
 <dd><p>XSampEn  estimates the cross-sample entropy between two univariate data sequences.</p>
-<p>[XSamp, A, B] = XSampEn(Sig)</p>
+<p>[XSamp, A, B] = XSampEn(Sig1, Sig2)</p>
 <p>Returns the cross-sample entropy estimates (<code class="docutils literal notranslate"><span class="pre">XSamp</span></code>) and the number of 
 matched vectors (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">A</span></code>) for m = [0,1,2] estimated for the two 
-univariate data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the default parameters:
+univariate data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the default parameters:
 embedding dimension = 2, time delay = 1, 
-radius distance threshold = 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>), logarithm = natural</p>
-<p>[XSamp, A, B] = XSampEn(Sig, name, value, …)</p>
+radius distance threshold = 0.2*SDpooled(<code class="docutils literal notranslate"><span class="pre">Sig1</span></code>,``Sig2``), logarithm = natural</p>
+<p>[XSamp, A, B, (Vcp, Ka, Kb)] = XSampEn(Sig1, Sig2, …, Vcp = true)</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">Vcp</span> <span class="pre">==</span> <span class="pre">True</span></code>, an additional vector <code class="docutils literal notranslate"><span class="pre">(Vcp,</span> <span class="pre">Ka,</span> <span class="pre">Kb)</span></code> is returned with    
+the cross-sample entropy estimates (<code class="docutils literal notranslate"><span class="pre">XSamp</span></code>) and the number of matched state
+vectors (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">A</span></code>). <code class="docutils literal notranslate"><span class="pre">(Vcp,</span> <span class="pre">Ka,</span> <span class="pre">Kb)</span></code>  contains the variance of the conditional
+probabilities (<code class="docutils literal notranslate"><span class="pre">Vcp</span></code>), i.e. CP = A/B,  and the number of <strong>overlapping</strong>
+matching vector pairs of lengths m+1 (<code class="docutils literal notranslate"><span class="pre">Ka</span></code>) and m (<code class="docutils literal notranslate"><span class="pre">Kb</span></code>),
+respectively.  Note <code class="docutils literal notranslate"><span class="pre">Vcp</span></code> is undefined for the zeroth embedding dimension (m = 0) 
+and due to the computational demand, <strong>will take substantially more time to return function outputs.</strong>
+See Appendix B in [2] for more info.</p>
+<p>[XSamp, A, B] = XSampEn(Sig1, Sig2, name, value, …)</p>
 <p>Returns the cross-sample entropy estimates (<code class="docutils literal notranslate"><span class="pre">XSamp</span></code>) for dimensions 
-[0,1, …, <code class="docutils literal notranslate"><span class="pre">m</span></code>] estimated between the data sequences in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the 
-specified name/value pair  arguments:</p>
+[0,1, …, <code class="docutils literal notranslate"><span class="pre">m</span></code>] estimated between the data sequences in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code>
+using the  specified name/value pair  arguments:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>     - Embedding Dimension, a positive integer  [default: 2]</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>   - Time Delay, a positive integer         [default: 1]</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">r</span></code>     - Radius Distance Threshold, a positive scalar [default: 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">r</span></code>     - Radius Distance Threshold, a positive scalar [default: 0.2*SDpooled(<code class="docutils literal notranslate"><span class="pre">Sig1</span></code>,``Sig2``)]</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Logx</span></code>  - Logarithm base, a positive scalar      [default: natural]</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Vcp</span></code>   - Option to return variance of conditional probabilities and the number of overlapping matching vector pairs, a boolean [default: false]</p></li>
 </ul>
 </div></blockquote>
 <dl class="simple">
@@ -491,6 +539,10 @@ and sample entropy.”
 American Journal of Physiology-Heart and Circulatory Physiology
 (2000)</p>
 </dd>
+<dt>[2]  Douglas E Lake, Joshua S Richman, M.P. Griffin, J. Randall Moorman</dt><dd><p>“Sample entropy analysis of neonatal heart rate variability.”
+American Journal of Physiology-Regulatory, Integrative and Comparative Physiology
+283, no. 3 (2002): R789-R797.</p>
+</dd>
 </dl>
 </dd>
 </dl>
@@ -498,19 +550,19 @@ American Journal of Physiology-Heart and Circulatory Physiology
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XSpecEn">
-<span class="sig-name descname"><span class="pre">XSpecEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XSpecEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XSpecEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XSpecEn" title="Permalink to this definition"></a></dt>
 <dd><p>XSpecEn  estimates the cross-spectral entropy between two univariate  data sequences.</p>
-<p>[XSpec, BandEn] = XSpecEn(Sig)</p>
+<p>[XSpec, BandEn] = XSpecEn(Sig1, Sig2)</p>
 <p>Returns the cross-spectral entropy estimate (<code class="docutils literal notranslate"><span class="pre">XSpec</span></code>) of the full cross-
 spectrum and the within-band entropy (<code class="docutils literal notranslate"><span class="pre">BandEn</span></code>) estimated between the data 
-sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the default  parameters: 
-N-point FFT = length of <code class="docutils literal notranslate"><span class="pre">Sig</span></code>, normalised band edge frequencies = [0 1],
-logarithm = natural, normalisation = w.r.t # of spectrum/band frequency 
-values.</p>
-<p>[XSpec, BandEn] = XSpecEn(Sig, name, value, …)</p>
+sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the default  parameters: 
+N-point FFT = 2 * max length of <code class="docutils literal notranslate"><span class="pre">Sig1</span></code>/<code class="docutils literal notranslate"><span class="pre">Sig2</span></code>,
+normalised band edge frequencies = [0 1], logarithm = natural, 
+normalisation = w.r.t # of spectrum/band frequency values.</p>
+<p>[XSpec, BandEn] = XSpecEn(Sig1, Sig2, name, value, …)</p>
 <p>Returns the cross-spectral entropy (<code class="docutils literal notranslate"><span class="pre">XSpec</span></code>) and the within-band entropy 
-(<code class="docutils literal notranslate"><span class="pre">BandEn</span></code>) estimate between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the
-following specified name/value pair arguments:</p>
+(<code class="docutils literal notranslate"><span class="pre">BandEn</span></code>) estimate between the data sequences contained in  <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> 
+and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the following specified name/value pair arguments:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">N</span></code>     - Resolution of spectrum (N-point FFT), an integer &gt; 1</p></li>

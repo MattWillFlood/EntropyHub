@@ -252,7 +252,7 @@ integers [height, width] with a minimum value &gt; 1.
 (default: [floor(H/10) floor(W/10)])</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>   - Time Delay, a positive integer        [default: 1]</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Fx</span></code>    - Fuzzy function name, one of the following strings:
-{<code class="docutils literal notranslate"><span class="pre">'sigmoid'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modsampen'</span></code>, <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gudermannian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'linear'</span></code>}</p></li>
+{<code class="docutils literal notranslate"><span class="pre">'sigmoid'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modsampen'</span></code>, <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gudermannian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'bell'</span></code>, <code class="docutils literal notranslate"><span class="pre">'triangular'</span></code>, <code class="docutils literal notranslate"><span class="pre">'trapezoidal1'</span></code>, <code class="docutils literal notranslate"><span class="pre">'trapezoidal2'</span></code>, <code class="docutils literal notranslate"><span class="pre">'z_shaped'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gaussian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'constgaussian'</span></code>}</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">r</span></code>     - Fuzzy function parameters, a 1 element scalar or a 2 element
 vector of positive values. The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy
 function are defined as follows:  (default: [.2 2])</p>
@@ -282,7 +282,7 @@ GD(x) = atan(tanh(r/x)). GD(x) is
 normalised to have a maximum value of 1.</p>
 </div></blockquote>
 </dd>
-<dt>linear:       </dt><dd><ul class="simple">
+<dt>[DEPRICATED] linear:       </dt><dd><ul class="simple">
 <li><p>r  = an integer value. When <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">==</span> <span class="pre">0</span></code>, the</p></li>
 </ul>
 <blockquote>
@@ -291,6 +291,40 @@ normalised between [0 1]. When <code class="docutils literal notranslate"><span 
 the minimuum value of the exponential 
 argument is set to 0.</p>
 </div></blockquote>
+</dd>
+<dt>triangular:  </dt><dd><ul class="simple">
+<li><p>r = a positive scalar whose value is the threshold 
+(corner point) of the triangular function.</p></li>
+</ul>
+</dd>
+<dt>trapezoidal1:  </dt><dd><ul class="simple">
+<li><p>r = a positive scalar whose value corresponds
+to the upper (2r) and lower (r) corner points of the trapezoid.</p></li>
+</ul>
+</dd>
+<dt>trapezoidal2:  </dt><dd><ul class="simple">
+<li><p>r(1) = a value corresponding to the upper corner point of the trapezoid.</p></li>
+<li><p>r(2) = a value corresponding to the lower corner point of the trapezoid.</p></li>
+</ul>
+</dd>
+<dt>z_shaped:  </dt><dd><ul class="simple">
+<li><p>r = a scalar whose value corresponds to the
+upper (2r) and lower (r) corner points of the z-shape.</p></li>
+</ul>
+</dd>
+<dt>bell:  </dt><dd><ul class="simple">
+<li><p>r(1) = divisor of the distance value</p></li>
+<li><p>r(2) = exponent of generalized bell-shaped function</p></li>
+</ul>
+</dd>
+<dt>gaussian:  </dt><dd><ul class="simple">
+<li><p>r = a scalar whose value scales the slope of the Gaussian curve.</p></li>
+</ul>
+</dd>
+<dt>constgaussian:  </dt><dd><ul class="simple">
+<li><p>r = a scalar whose value defines the lower 
+threshod and shape of the Gaussian curve.</p></li>
+</ul>
 </dd>
 </dl>
 </div></blockquote>
@@ -319,6 +353,11 @@ Computers in biology and medicine
 applications.”
 41st Annual International Conference of the IEEE (EMBC) Society
 2019.</p>
+</dd>
+<dt>[3] Hamed Azami, et al.</dt><dd><p>“Fuzzy Entropy Metrics for the Analysis of Biomedical Signals: 
+Assessment and Comparison”
+IEEE Access
+7 (2019): 104833-104847</p>
 </dd>
 </dl>
 </dd>
