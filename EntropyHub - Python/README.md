@@ -1,6 +1,11 @@
-# EntropyHub: An open-source toolkit for entropic time series analysis
+# EntropyHub: An open-source toolkit for entropic data analysis
 
 __*Python Edition*__
+
+<p align="center">
+<img src="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/EntropyHub_profiler.png" alt = "EntropyHub Git" width="250" height="250" />
+</p>
+
 
 
         
@@ -26,25 +31,12 @@ the more uncertainty there is, the more information we gain by removing that
 uncertainty. In the context of information and probability theory, ***Entropy*** 
 quantifies that uncertainty. 
 
-The concept of entropy has its origins in 
-[classical physics](http://www.scholarpedia.org/article/Entropy "Scholarpedia")
-under the second law of thermodynamics, a law 
-[considered to underpin our fundamental understanding](https://www.penguin.co.uk/books/301539/the-order-of-time/9780141984964.html "Rovelli") 
-of [time in physics](https://en.wikipedia.org/wiki/Time_in_physics "Wiki Time"). 
-Attempting to analyse the analog world around
-us requires that we measure time in discrete steps, but doing so compromises 
-our ability to measure entropy accurately. Various measures have been derived 
-to estimate entropy (uncertainty) from discrete time series, each seeking to 
-best capture the uncertainty of the system under examination. This has resulted 
-in many entropy statistics from approximate entropy and sample entropy, to
+Various measures have been derived to estimate entropy (uncertainty) from discrete 
+data sequences, each seeking to best capture the uncertainty of the system under examination. 
+This has resulted in many entropy statistics from approximate entropy and sample entropy, to
 multiscale sample entropy and refined-composite multiscale cross-sample entropy.
 
-
-As the number of statisitcal entropy measures grows, it becomes more difficult
-to identify, contrast and compare the performance of each measure. To overcome
-this, we have developed EntropyHub - an open-source toolkit designed to 
-integrate the many established entropy methods into one package. The goal of 
-EntropyHub is to provide a comprehensive set of functions with a simple and 
+The goal of EntropyHub is to provide a comprehensive set of functions with a simple and 
 consistent syntax that allows the user to augment parameters at the command 
 line, enabling a range from basic to advanced entropy methods to be implemented
 with ease.
@@ -71,7 +63,8 @@ There are two ways to install EntropyHub for Python. Method 1 is strongly recomm
          `python setup.py install`
        
 ### System Requirements & Dependencies
-  There are several package dependencies which will be installed alongside EntropyHub: Numpy, Scipy, Matplotlib, PyEMD
+  There are several package dependencies which will be installed alongside EntropyHub:             
+  Numpy, Scipy, Matplotlib, PyEMD
   
   EntropyHub was designed using Python 3 and thus is not intended for use with Python 2.
   Python versions > 3.6 are required for using EntropyHub. 
@@ -113,17 +106,19 @@ Kolmogorov Entropy                            		  |	K2En
 Permutation Entropy                           		  |	PermEn
 Conditional Entropy                           		  |	CondEn
 Distribution Entropy                          		  |	DistEn
+Range Entropy                                             |     RangEn
+Diversity Entropy                                         |     DivEn
 Spectral Entropy                              		  |	SpecEn
 Dispersion Entropy                            		  |	DispEn
 Symbolic Dynamic Entropy                          	  |	SyDyEn
 Increment Entropy                                 	  |	IncrEn
 Cosine Similarity Entropy                         	  |	CoSiEn
-Phase Entropy                                         |	PhasEn
+Phase Entropy                                             |	PhasEn
 Slope Entropy                                      	  |	SlopEn
 Bubble Entropy                                		  |	BubbEn
-Gridded Distribution Entropy                          |	GridEn
-Entropy of Entropy                            	      |	EnofEn
-Attention Entropy                                     |	AttnEn
+Gridded Distribution Entropy                              |	GridEn
+Entropy of Entropy                            	          |	EnofEn
+Attention Entropy                                         |	AttnEn
 
 _______________________________________________________________________
 
@@ -176,14 +171,12 @@ Hierarchical Multiscale Cross-Entropy                 |   hXMSEn
 
 
 
-
-
 ## License and Terms of Use
 EntropyHub is licensed under the Apache License (Version 2.0) and is free to
 use by all on condition that the following reference be included on any outputs
 realized using the software:
  
-        Matthew W. Flood and Bernd Grimm (2021), 
+        Matthew W. Flood (2021), 
         EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,
         PLoS ONE 16(11):e0259448
         DOI: 10.1371/journal.pone.0259448
@@ -192,7 +185,7 @@ realized using the software:
 __________________________________________________________________
 
 
-        © Copyright 2021 Matthew W. Flood, EntropyHub
+        © Copyright 2024 Matthew W. Flood, EntropyHub
         Licensed under the Apache License, Version 2.0 (the "License");
         you may not use this file except in compliance with the License.
         You may obtain a copy of the License at
@@ -219,11 +212,12 @@ For general queries and information about EntropyHub, contact:    info@entropyhu
 If you have any questions or need help using the package, please contact us at:    help@entropyhub.xyz
 If you notice or identify any issues, please do not hesitate to contact us at:    fix@entropyhub.xyz
 
-
 __Thank you__ for using EntropyHub.
-
-Yours in research,
 
 Matt
 
+
+<p  align="center">
+	<img src="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/EntropyHubLogo3.png" width="250" height="350"/>
+</p>
         
