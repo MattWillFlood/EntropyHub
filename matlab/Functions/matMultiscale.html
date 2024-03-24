@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Multiscale Entropies &mdash; EntropyHub 0.2 documentation</title>
+  <title>Multiscale Entropies &mdash; EntropyHub 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -164,13 +164,13 @@
 <h2>Functions for estimating the multiscale entropy of a univariate time series.<a class="headerlink" href="#functions-for-estimating-the-multiscale-entropy-of-a-univariate-time-series" title="Permalink to this heading"></a></h2>
 <p>Multiscale entropy can be calculated using any of the <a class="reference internal" href="matBase.html#matbase"><span class="std std-ref">Base Entropies</span></a>:
 <code class="docutils literal notranslate"><span class="pre">ApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">AttnEn</span></code>, <code class="docutils literal notranslate"><span class="pre">BubbEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CondEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CoSiEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn</span></code>,
-<code class="docutils literal notranslate"><span class="pre">DispEn</span></code>, <code class="docutils literal notranslate"><span class="pre">EnofEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">GridEn</span></code>, <code class="docutils literal notranslate"><span class="pre">IncrEn</span></code>, <code class="docutils literal notranslate"><span class="pre">K2En</span></code>,
-<code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">PhasEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SlopEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SpecEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SyDyEn</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">DispEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DivEn</span></code>, <code class="docutils literal notranslate"><span class="pre">EnofEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">GridEn</span></code>, <code class="docutils literal notranslate"><span class="pre">IncrEn</span></code>, <code class="docutils literal notranslate"><span class="pre">K2En</span></code>,
+<code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">PhasEn</span></code>, <code class="docutils literal notranslate"><span class="pre">RangEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SlopEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SpecEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SyDyEn</span></code>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Multiscale cross-entropy functions have two positional arguments:</p>
 <ol class="arabic simple">
-<li><p>the time series signal, <code class="docutils literal notranslate"><span class="pre">Sig</span></code> (a vector &gt; 10 elements),</p></li>
+<li><p>the data sequence, <code class="docutils literal notranslate"><span class="pre">Sig</span></code> (a vector &gt; 10 elements),</p></li>
 <li><p>the multiscale entropy object, <code class="docutils literal notranslate"><span class="pre">Mobj</span></code>.</p></li>
 </ol>
 </div>
@@ -579,7 +579,7 @@ Journal of Computational and Applied Mathematics
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Matthew W. Flood.</p>
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
   </div>
 
    

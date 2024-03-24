@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Python Examples: &mdash; EntropyHub 0.2 documentation</title>
+  <title>Python Examples: &mdash; EntropyHub 1.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -202,7 +202,7 @@ To use this function as outlined in the examples below, <strong>an internet conn
 <dd class="field-odd"><p>vector of uniformly distributed pseudorandom integers in range [1 8]</p>
 </dd>
 <dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'chirp'</span></code><span class="colon">:</span></dt>
-<dd class="field-even"><p>vector of chirp signal with the following parameters,  f0 = :01; t1 = 4000; f1 = :025</p>
+<dd class="field-even"><p>vector of chirp signal with the following parameters,  f0 = .01; t1 = 4000; f1 = .025</p>
 </dd>
 <dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'lorenz'</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><p>3-column matrix: X, Y, Z components of the Lorenz system,  (alpha = 10; beta = 8/3; rho = 28); [Xo = 10; Yo = 20; Zo = 10]</p>
@@ -237,12 +237,10 @@ To use this function as outlined in the examples below, <strong>an internet conn
 </dl>
 <div class="admonition-things-to-remember admonition">
 <p class="admonition-title">THINGS TO REMEMBER</p>
-<p>For <em>cross-entropy</em> and <em>multiscale cross-entropy</em> functions, the two time series signals are passed as a two-column or two-row matrix.
-At present, it is not possible to pass signals of different lengths separately.</p>
 <p>Parameters of the <em>base</em> or <em>cross-</em> entropy methods are passed to <em>multiscale</em> and
 <em>multiscale cross-</em> entropy functions using the multiscale entropy object given by <code class="docutils literal notranslate"><span class="pre">MSobject()</span></code>.
 <em>Base</em> and <em>cross-</em> entropy methods are declared with <code class="docutils literal notranslate"><span class="pre">MSobject()</span></code> using a string of the function name.</p>
-<p>Each bidimensional entropy function (<em>SampEn2D</em>, <em>FuzzEn2D</em>, <em>DistEn2D</em>, <em>DispEn2D</em>) has
+<p>Each bidimensional entropy function (<em>SampEn2D</em>, <em>FuzzEn2D</em>, <em>DistEn2D</em>, <em>DispEn2D</em>, <em>EspEn2D</em>) has
 an important keyword argument - <code class="docutils literal notranslate"><span class="pre">Lock</span></code>. <em>Bidimensional</em> entropy functions are
 “locked” by default (<code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">==</span> <span class="pre">True</span></code>) to only permit matrices with a maximum size of 128 x 128.</p>
 <p>In <em>hierarchical multiscale entropy</em> (<code class="docutils literal notranslate"><span class="pre">hMSEn()</span></code>) and <em>hierarchical multiscale cross-
@@ -263,7 +261,7 @@ i.e. For a signal of 5000 points, only the first 4096 are used. For a signal of 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Matthew W. Flood.</p>
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
   </div>
 
    

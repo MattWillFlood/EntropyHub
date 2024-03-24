@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Multiscale Cross-Entropies &mdash; EntropyHub 0.2 documentation</title>
+  <title>Multiscale Cross-Entropies &mdash; EntropyHub 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -167,16 +167,12 @@
 <p>To do so, we again use the <code class="docutils literal notranslate"><span class="pre">MSobject</span></code> function to pass a multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) to the multiscale cross-entropy functions.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Multiscale cross-entropy functions have two positional arguments:</p>
+<p>Multiscale cross-entropy functions have three positional arguments:</p>
 <ol class="arabic simple">
-<li><p>the time series signals, <code class="docutils literal notranslate"><span class="pre">Sig</span></code> (an Nx2 matrix),</p></li>
+<li><p>the first data sequence, <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> (a vector &gt; 10 elements),</p></li>
+<li><p>the second data sequence, <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> (a vector &gt; 10 elements),</p></li>
 <li><p>the multiscale entropy object, <code class="docutils literal notranslate"><span class="pre">Mobj</span></code>.</p></li>
 </ol>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>For cross-entropy and multiscale cross-entropy functions, the two time series signals are passed as a two-column or two-row matrix.
-At present, it is not possible to pass signals of different lengths separately.</p>
 </div>
 <hr class="docutils" />
 <span class="target" id="module-EntropyHub"></span><dl class="py function">
@@ -205,7 +201,7 @@ type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notrans
 To see the default parameters for a particular entropy method,          
 type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notranslate"><span class="pre">help(SampEn)</span></code>)</p>
 <p><code class="docutils literal notranslate"><span class="pre">EnType</span></code> can be any of the following (case sensitive) string names:</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Base Entropies<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="field-list simple">
 <dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'ApEn'</span></code><span class="colon">:</span></dt>
@@ -299,6 +295,8 @@ type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notrans
 </ul>
 </dd>
 </dl>
+<p>[<code class="docutils literal notranslate"><span class="pre">'DivEn'</span></code>]:    - Diversity Entropy
+[<code class="docutils literal notranslate"><span class="pre">'RangEn'</span></code>]:   - Range Entropy</p>
 </dd>
 <dt class="field-even">Cross Entropies<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="field-list simple">
@@ -344,8 +342,42 @@ type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notrans
 </dd>
 </dl>
 </dd>
-<dt class="field-odd">See also<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hXMSEn</span></code></p>
+<dt class="field-odd">Bidimensional Entropies<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="field-list simple">
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'SampEn2D'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Bidimensional Sample Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'FuzzEn2D'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Bidimensional Fuzzy Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'DispEn2D'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Bidimensional Dispersion Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'DistEn2D'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Bidimensional Distribution Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'PermEn2D'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Bidimensional Permutation Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'EspEn2D'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Bidimensional Espinosa Entropy</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">See also<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hXMSEn</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -355,22 +387,22 @@ type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notrans
 <hr class="docutils" />
 <span class="target" id="module-0"></span><dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.XMSEn">
-<span class="sig-name descname"><span class="pre">XMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Methodx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'coarse'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XMSEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Sig2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Methodx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'coarse'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XMSEn" title="Permalink to this definition"></a></dt>
 <dd><p>XMSEn  returns the multiscale cross-entropy between two univariate data sequences.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">XMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">XMSEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
 </pre></div>
 </div>
 <p>Returns a vector of multiscale cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) and the
-complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using 
+complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using 
 the parameters specified by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) over 3 temporal
 scales with coarse-graining (default).</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">XMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">XMSEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Returns a vector of multiscale cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) and the
-complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) between the data sequences contained in ‘Sig’ 
+complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> 
 using the parameters specified by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) and the
-following ‘keywrod’ arguments:</p>
+following ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list">
 <dt class="field-odd">Scales<span class="colon">:</span></dt>
@@ -380,7 +412,7 @@ following ‘keywrod’ arguments:</p>
 </dd>
 <dt class="field-even">Methodx<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p>Graining method, one of the following: [default: <code class="docutils literal notranslate"><span class="pre">'coarse'</span></code>]  {<code class="docutils literal notranslate"><span class="pre">'coarse'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'imf'</span></code> , <code class="docutils literal notranslate"><span class="pre">'timeshift'</span></code>}</p></li>
+<li><p>Graining method, one of the following: [default: <code class="docutils literal notranslate"><span class="pre">'coarse'</span></code>]  {<code class="docutils literal notranslate"><span class="pre">'coarse'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'imf'</span></code> , <code class="docutils literal notranslate"><span class="pre">'timeshift'</span></code>, <code class="docutils literal notranslate"><span class="pre">'generalized'</span></code>}</p></li>
 </ul>
 </dd>
 <dt class="field-odd">RadNew<span class="colon">:</span></dt>
@@ -392,8 +424,8 @@ at each time scale (Ykj). If a radius value (<code class="docutils literal notra
 it is set to 0.2 (default). The value of RadNew specifies one of the following methods:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>[1] Standard Deviation          - <code class="docutils literal notranslate"><span class="pre">r*std(Ykj)</span></code></p></li>
-<li><p>[2] Variance                    - <code class="docutils literal notranslate"><span class="pre">r*var(Ykj)</span></code></p></li>
+<li><p>[1] Pooled Standard Deviation   - <code class="docutils literal notranslate"><span class="pre">r*std(Ykj)</span></code></p></li>
+<li><p>[2] Pooled Variance             - <code class="docutils literal notranslate"><span class="pre">r*var(Ykj)</span></code></p></li>
 <li><p>[3] Mean Absolute Deviation     - <code class="docutils literal notranslate"><span class="pre">r*mad(Ykj)</span></code></p></li>
 <li><p>[4] Median Absolute Deviation   - <code class="docutils literal notranslate"><span class="pre">r*mad(Ykj,1)</span></code></p></li>
 </ul>
@@ -446,20 +478,29 @@ Entropy
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.cXMSEn">
-<span class="sig-name descname"><span class="pre">cXMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Refined</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.cXMSEn" title="Permalink to this definition"></a></dt>
-<dd><p>cXMSEn  returns the composite multiscale cross-entropy between two univariate data sequences.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">cXMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
+<span class="sig-name descname"><span class="pre">cXMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Sig2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Refined</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.cXMSEn" title="Permalink to this definition"></a></dt>
+<dd><p>cXMSEn  returns the composite (or refined-composite) multiscale cross-entropy between two univariate data sequences.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">cXMSEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
 </pre></div>
 </div>
 <p>Returns a vector of composite multiscale cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) 
-between two univariate data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using the 
+between two univariate data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the 
 parameters specified by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) using the composite 
 multiscale method (cMSE) over 3 temporal scales.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">cXMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">cXMSEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">Refined</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns a vector of refined-composite multiscale cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) for the data 
+sequences (<code class="docutils literal notranslate"><span class="pre">Sig1</span></code>, <code class="docutils literal notranslate"><span class="pre">Sig2</span></code>) using the parameters specified by the multiscale object 
+(<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) using the refined-composite multiscale entropy method (rcMSE) over 3 temporal
+scales. When <code class="docutils literal notranslate"><span class="pre">Refined</span> <span class="pre">==</span> <span class="pre">True</span></code>, the base entropy method must be <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code> or <code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code>.
+If the entropy method is <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, cXMSEn employs the method described in [7]. 
+If the entropy method is <code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code>, cXMSEn employs the method described in [8].</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">cXMSEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Returns a vector of composite multiscale cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) 
-between the data sequences contained in ‘Sig’ using the parameters
+between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the parameters
 specified by the multiscale object (Mobj) and the following ‘keyword’ arguments:</p>
 <blockquote>
 <div><dl class="field-list">
@@ -477,8 +518,8 @@ at each time scale (Ykj). If a radius value (<code class="docutils literal notra
 it is set to 0.2 (default). The value of RadNew specifies one of the following methods:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>[1] Standard Deviation          - <code class="docutils literal notranslate"><span class="pre">r*std(Ykj)</span></code></p></li>
-<li><p>[2] Variance                    - <code class="docutils literal notranslate"><span class="pre">r*var(Ykj)</span></code></p></li>
+<li><p>[1] Pooled Standard Deviation   - <code class="docutils literal notranslate"><span class="pre">r*std(Ykj)</span></code></p></li>
+<li><p>[2] Pooled Variance             - <code class="docutils literal notranslate"><span class="pre">r*var(Ykj)</span></code></p></li>
 <li><p>[3] Mean Absolute Deviation     - <code class="docutils literal notranslate"><span class="pre">r*mad(Ykj)</span></code></p></li>
 <li><p>[4] Median Absolute Deviation   - <code class="docutils literal notranslate"><span class="pre">r*mad(Ykj,1)</span></code></p></li>
 </ul>
@@ -486,8 +527,9 @@ it is set to 0.2 (default). The value of RadNew specifies one of the following m
 </dd>
 <dt class="field-odd">Refined<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p>Refined-composite XMSEn method. When <code class="docutils literal notranslate"><span class="pre">Refined</span> <span class="pre">==</span> <span class="pre">True</span></code> and the cross-entropy function specified by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code> is <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>,  <code class="docutils literal notranslate"><span class="pre">cXMSEn</span></code> returns the refined-composite multiscale entropy (rcXMSEn) [default: False]</p></li>
+<li><p>Refined-composite XMSEn method. When <code class="docutils literal notranslate"><span class="pre">Refined</span> <span class="pre">==</span> <span class="pre">True</span></code> and the cross-entropy function specified by</p></li>
 </ul>
+<p><code class="docutils literal notranslate"><span class="pre">Mobj</span></code> is <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code> or <code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code>,  <code class="docutils literal notranslate"><span class="pre">cXMSEn</span></code> returns the refined-composite multiscale entropy (rcXMSEn) [default: False]</p>
 </dd>
 <dt class="field-even">Plotx<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
@@ -529,6 +571,16 @@ Entropy
 Entropy 
 15.3 (2013): 1069-1084.</p>
 </dd>
+<dt>[7] Shuen-De Wu, et al.,</dt><dd><p>“Analysis of complex time series using refined composite 
+multiscale entropy.” 
+Physics Letters A 
+378.20 (2014): 1369-1374.</p>
+</dd>
+<dt>[8] Hamed Azami et al.,</dt><dd><p>“Refined multiscale fuzzy entropy based on standard deviation 
+for biomedical signal analysis”
+Med Biol Eng Comput 
+55 (2017):2037–2052</p>
+</dd>
 </dl>
 </dd>
 </dl>
@@ -536,28 +588,28 @@ Entropy
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.hXMSEn">
-<span class="sig-name descname"><span class="pre">hXMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.hXMSEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">hXMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Sig2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.hXMSEn" title="Permalink to this definition"></a></dt>
 <dd><p>hXMSEn  returns the hierarchical cross-entropy between two univariate data sequences.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">Sn</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">hXMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">Sn</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">hXMSEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
 </pre></div>
 </div>
 <p>Returns a vector of cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) calculated at each node 
 in the hierarchical tree, the average cross-entropy value across all 
 nodes at each scale (<code class="docutils literal notranslate"><span class="pre">Sn</span></code>), and the complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) of the hierarchical 
-tree (i.e. <code class="docutils literal notranslate"><span class="pre">sum(Sn)</span></code>) between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using
+tree (i.e. <code class="docutils literal notranslate"><span class="pre">sum(Sn)</span></code>) between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and``Sig2`` using
 the parameters specified by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) over 3 temporal scales (default).
 The entropy values in <code class="docutils literal notranslate"><span class="pre">MSx</span></code> are ordered from the root node (S_00) to the
 Nth subnode at scale T (S_TN): i.e. S_00, S_10, S_11, S_20, S_21, S_22,
 S_23, S_30, S_31, S_32, S_33, S_34, S_35, S_36, S_37, S_40, … , S_TN.
 The average cross-entropy values in Sn are ordered in the same way, with the
 value of the root node given first: i.e. S0, S1, S2, …, ST</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">Sn</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">hXMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">Keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">Sn</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">hXMSEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">Keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Returns a vector of cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) calculated at each node 
 in the hierarchical tree, the average cross-entropy value across all
 nodes at each scale (<code class="docutils literal notranslate"><span class="pre">Sn</span></code>), and the complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) of the entire
-hierarchical tree between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code> using 
+hierarchical tree between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using 
 the following keyword arguments:</p>
 <blockquote>
 <div><dl class="field-list">
@@ -575,8 +627,8 @@ at each time scale (Ykj). If a radius value (<code class="docutils literal notra
 it is set to 0.2 (default). The value of RadNew specifies one of the following methods:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>[1] Standard Deviation          - <code class="docutils literal notranslate"><span class="pre">r*std(Ykj)</span></code></p></li>
-<li><p>[2] Variance                    - <code class="docutils literal notranslate"><span class="pre">r*var(Ykj)</span></code></p></li>
+<li><p>[1] Pooled Standard Deviation   - <code class="docutils literal notranslate"><span class="pre">r*std(Ykj)</span></code></p></li>
+<li><p>[2] Pooled Variance             - <code class="docutils literal notranslate"><span class="pre">r*var(Ykj)</span></code></p></li>
 <li><p>[3] Mean Absolute Deviation     - <code class="docutils literal notranslate"><span class="pre">r*mad(Ykj)</span></code></p></li>
 <li><p>[4] Median Absolute Deviation   - <code class="docutils literal notranslate"><span class="pre">r*mad(Ykj,1)</span></code></p></li>
 </ul>
@@ -614,25 +666,25 @@ Journal of Computational and Applied Mathematics
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.rXMSEn">
-<span class="sig-name descname"><span class="pre">rXMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">F_Order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">F_Num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.rXMSEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">rXMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Sig2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">F_Order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">F_Num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.rXMSEn" title="Permalink to this definition"></a></dt>
 <dd><p>rXMSEn  returns the refined multiscale cross-entropy between two   univariate data sequences.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">rXMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">rXMSEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
 </pre></div>
 </div>
 <p>Returns a vector of refined multiscale cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) and
-the complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code>
+the complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code>
 using the parameters specified by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) and the
-following default parameters:   Scales = 3, Butterworth LPF Order = 6,
+following default parameters:   Scales = 3, Butterworth LPF Order = 6, 
 Butterworth LPF cutoff frequency at scale (T): Fc = 0.5/T. 
-If the entropy function specified by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code> is <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code> or <code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rMSEn</span></code>
-updates the threshold radius of the data sequences (Xt) at each scale
-to 0.2*std(Xt) if no <code class="docutils literal notranslate"><span class="pre">r</span></code> value is provided by Mobj, or r*std(Xt) if <code class="docutils literal notranslate"><span class="pre">r</span></code>
+If the entropy function specified by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code> is <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code> or <code class="docutils literal notranslate"><span class="pre">XApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rXMSEn</span></code>
+updates the threshold radius of the data sequences at each scale
+to 0.2*SDpooled(Sig1,Sig2) if no <code class="docutils literal notranslate"><span class="pre">r</span></code> value is provided by Mobj, or r*SDpooled(Sig1,Sig2) if <code class="docutils literal notranslate"><span class="pre">r</span></code>
 is specified.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">rXMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">rXMSEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Returns a vector of refined multiscale cross-entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) and 
-the complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig</span></code>
+the complexity index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) between the data sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> 
 using the parameters specified by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) and the
 following ‘keyword’ arguments:</p>
 <blockquote>
@@ -661,8 +713,8 @@ at each time scale (Ykj). If a radius value (<code class="docutils literal notra
 it is set to 0.2 (default). The value of RadNew specifies one of the following methods:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>[1] Standard Deviation          - <code class="docutils literal notranslate"><span class="pre">r*std(Ykj)</span></code></p></li>
-<li><p>[2] Variance                    - <code class="docutils literal notranslate"><span class="pre">r*var(Ykj)</span></code></p></li>
+<li><p>[1] Pooled Standard Deviation   - <code class="docutils literal notranslate"><span class="pre">r*std(Ykj)</span></code></p></li>
+<li><p>[2] Pooled Variance             - <code class="docutils literal notranslate"><span class="pre">r*var(Ykj)</span></code></p></li>
 <li><p>[3] Mean Absolute Deviation     - <code class="docutils literal notranslate"><span class="pre">r*mad(Ykj)</span></code></p></li>
 <li><p>[4] Median Absolute Deviation   - <code class="docutils literal notranslate"><span class="pre">r*mad(Ykj,1)</span></code></p></li>
 </ul>
@@ -682,7 +734,7 @@ it is set to 0.2 (default). The value of RadNew specifies one of the following m
 <dt class="field-even">References<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt>[1] Matthew W. Flood,</dt><dd><p>“rXMSEn - EntropyHub Project”
-2021, <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub">https://github.com/MattWillFlood/EntropyHub</a></p>
+2024, <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub">https://github.com/MattWillFlood/EntropyHub</a></p>
 </dd>
 <dt>[2] Rui Yan, Zhuo Yang, and Tao Zhang,</dt><dd><p>“Multiscale cross entropy: a novel algorithm for analyzing two
 time series.” 
@@ -695,7 +747,7 @@ stenosis subjects.”
 IEEE Transactions on Biomedical Engineering 
 56.9 (2009): 2202-2213.</p>
 </dd>
-<dt>[4] Puneeta Marwaha and Ramesh Kumar Sunkaria,</dt><dd><p>“Optimal selection of threshold value ‘r’for refined multiscale
+<dt>[4] Puneeta Marwaha and Ramesh Kumar Sunkaria,</dt><dd><p>“Optimal selection of threshold value ‘r’ for refined multiscale
 entropy.” 
 Cardiovascular engineering and technology 
 6.4 (2015): 557-576.</p>
@@ -733,7 +785,7 @@ Entropy
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Matthew W. Flood.</p>
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
   </div>
 
    

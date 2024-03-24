@@ -17,5 +17,5 @@ Functions for estimating the entropy of a single univariate time series.
 ................................................................................
 
 .. mat:automodule:: EntropyHub
-   :members: ApEn, AttnEn, BubbEn, CondEn, CoSiEn, DistEn, DispEn, EnofEn, FuzzEn, GridEn, IncrEn, K2En, PermEn, PhasEn, SampEn, SlopEn, SpecEn, SyDyEn
+   :members: ApEn, AttnEn, BubbEn, CondEn, CoSiEn, DistEn, DispEn, DivEn, EnofEn, FuzzEn, GridEn, IncrEn, K2En, PermEn, PhasEn, RangEn, SampEn, SlopEn, SpecEn, SyDyEn
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bidimensional Entropies &mdash; EntropyHub 0.2 documentation</title>
+  <title>Bidimensional Entropies &mdash; EntropyHub 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -162,7 +162,7 @@
 </div>
 <section id="functions-for-estimating-the-entropy-of-a-two-dimensional-univariate-matrix">
 <h2>Functions for estimating the entropy of a two-dimensional univariate matrix.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-two-dimensional-univariate-matrix" title="Permalink to this heading"></a></h2>
-<p>While EntropyHub functions primarily apply to time series data, with the following
+<p>While EntropyHub functions primarily apply to univarite data sequences, with the following
 bidimensional entropy functions one can estimate the entropy of two-dimensional (2D)
 matrices. Hence, bidimensional entropy functions are useful for applications such as image/texture analysis.</p>
 <div class="admonition danger">
@@ -441,7 +441,7 @@ Entropy,
 </div>
 <p>Returns the bidimensional fuzzy entropy estimate (<code class="docutils literal notranslate"><span class="pre">Fuzz2D</span></code>) estimated for 
 the data matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the default parameters: time delay = 1,
-fuzzy function (<code class="docutils literal notranslate"><span class="pre">Fx</span></code>) = <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, fuzzy function parameters (<code class="docutils literal notranslate"><span class="pre">r</span></code>) = (0.2, 2,
+fuzzy function (<code class="docutils literal notranslate"><span class="pre">Fx</span></code>) = <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, fuzzy function parameters (<code class="docutils literal notranslate"><span class="pre">r</span></code>) = (0.2*SD(Mat), 2),
 logarithm = natural, matrix template size = [floor(H/10) floor(W/10)] 
 (where H and W represent the height (rows) and width (columns) of the data matrix <code class="docutils literal notranslate"><span class="pre">'Mat'</span></code>) 
 ** The minimum number of rows and columns of Mat must be &gt; 10.</p>
@@ -464,49 +464,107 @@ matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span><
 </dd>
 <dt class="field-odd">Fx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p>Fuzzy funtion name, one of the following:</p></li>
+<li><p>Fuzzy function name, one of the following strings:</p></li>
 </ul>
-<p>{<code class="docutils literal notranslate"><span class="pre">'sigmoid'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modsampen'</span></code>, <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gudermannian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'linear'</span></code>}</p>
+<p>{<code class="docutils literal notranslate"><span class="pre">'sigmoid'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modsampen'</span></code>, <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gudermannian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'bell'</span></code>, <code class="docutils literal notranslate"><span class="pre">'triangular'</span></code>, <code class="docutils literal notranslate"><span class="pre">'trapezoidal1'</span></code>, <code class="docutils literal notranslate"><span class="pre">'trapezoidal2'</span></code>, <code class="docutils literal notranslate"><span class="pre">'z_shaped'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gaussian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'constgaussian'</span></code>}</p>
 </dd>
 <dt class="field-even">r<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p>Fuzzy function parameters, a 1 element scalar or a 2 element vector of positive values.</p></li>
 </ul>
-<p>The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy function are defined as follows:</p>
-<blockquote>
-<div><ul class="simple">
+<dl class="simple">
+<dt>The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy  function are defined as follows:   [default: (0.2*SD(Mat), 2)]</dt><dd><ul class="simple">
 <li><dl class="simple">
-<dt>sigmoid:      </dt><dd><p>r(1) = divisor of the exponential argument
-r(2) = value subtracted from argument (pre-division)</p>
+<dt>default:      [Tuple]</dt><dd><ul>
+<li><p>r(1) = divisor of the exponential argument</p></li>
+<li><p>r(2) = argument exponent (pre-division)</p></li>
+</ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>modsampen:    </dt><dd><p>r(1) = divisor of the exponential argument
-r(2) = value subtracted from argument (pre-division)</p>
+<dt>sigmoid:      [Tuple]</dt><dd><ul>
+<li><p>r(1) = divisor of the exponential argument</p></li>
+<li><p>r(2) = value subtracted from argument (pre-division)</p></li>
+</ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>default:  </dt><dd><p>r(1) = divisor of the exponential argument
-r(2) = argument exponent (pre-division)</p>
+<dt>modsampen:    [Tuple]</dt><dd><ul>
+<li><p>r(1) = divisor of the exponential argument</p></li>
+<li><p>r(2) = value subtracted from argument (pre-division)</p></li>
+</ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>gudermannian:   </dt><dd><p>r  = a scalar whose value is the numerator of  argument to gudermannian function:
-GD(x) = atan(tanh(r/x)). GD(x) is normalised to have a maximum value of 1.</p>
+<dt>gudermannian:   </dt><dd><ul>
+<li><p>r  = a scalar whose value is the numerator of  argument to gudermannian function: GD(x) = atan(tanh(r/x)). GD(x) is normalised to have a maximum value of 1.</p></li>
+</ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>linear:        </dt><dd><p>r  = an integer value. When r = 0, the argument of the exponential function is 
+<dt>triangular:  </dt><dd><ul>
+<li><p>r = a scalar whose value is the threshold (corner point) of the triangular function.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>trapezoidal1:  </dt><dd><ul>
+<li><p>r = a scalar whose value corresponds to the upper (2r) and lower (r) corner points of the trapezoid.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>trapezoidal2:  [Tuple]</dt><dd><ul>
+<li><p>r(1) = a value corresponding to the upper corner point of the trapezoid.</p></li>
+<li><p>r(2) = a value corresponding to the lower corner point of the trapezoid.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>z_shaped:  </dt><dd><ul>
+<li><p>r = a scalar whose value corresponds to the upper (2r) and lower (r) corner points of the z-shape.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>bell:  </dt><dd><ul>
+<li><p>r(1) = divisor of the distance value</p></li>
+<li><p>r(2) = exponent of generalized bell-shaped function</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>gaussian:  </dt><dd><ul>
+<li><p>r = a scalar whose value scales the slope of the Gaussian curve.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>constgaussian:  </dt><dd><ul>
+<li><p>r = a scalar whose value defines the lower threshod and shape of the Gaussian curve.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>[DEPRICATED] linear:       </dt><dd><p>r  = an integer value. When r = 0, the argument of the exponential function is 
 normalised between [0 1]. When r = 1, the minimuum value of the exponential argument is set to 0.</p>
 </dd>
 </dl>
 </li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
 </dd>
 <dt class="field-odd">Logx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -539,6 +597,11 @@ Computers in biology and medicine
 applications.”
 41st Annual International Conference of the IEEE (EMBC) Society
 2019.</p>
+</dd>
+<dt>[3] Hamed Azami, et al.</dt><dd><p>“Fuzzy Entropy Metrics for the Analysis of Biomedical Signals: 
+Assessment and Comparison”
+IEEE Access
+7 (2019): 104833-104847</p>
 </dd>
 </dl>
 </dd>
@@ -599,16 +662,16 @@ greater than [128 x 128] elements, set <code class="docutils literal notranslate
 </dl>
 </div></blockquote>
 <dl>
-<dt><strong>NOTE</strong> - <a href="#id1"><span class="problematic" id="id2">``</span></a>The original bidimensional permutation entropy algorithms </dt><dd><p>[1][2] do not account for equal-valued elements of the embedding
-matrices. ``
+<dt><strong>NOTE</strong>: </dt><dd><p><code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">original</span> <span class="pre">bidimensional</span> <span class="pre">permutation</span> <span class="pre">entropy</span> <span class="pre">algorithms</span> <span class="pre">[1][2]</span></code>
+<code class="docutils literal notranslate"><span class="pre">do</span> <span class="pre">not</span> <span class="pre">account</span> <span class="pre">for</span> <span class="pre">equal-valued</span> <span class="pre">elements</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">embedding</span> <span class="pre">matrices.</span></code>
 To overcome this, PermEn2D uses the lowest common rank for
 such instances. For example, given an embedding matrix A where,
 A = [3.4  5.5  7.3]</p>
 <blockquote>
-<div><p><a href="#id3"><span class="problematic" id="id4">|2.1  6    9.9|</span></a>
+<div><p>[2.1  6    9.9]       
 [7.3  1.1  2.1]</p>
 </div></blockquote>
-<p>would normally be mapped to an ordinal pattern like so,
+<p>would normally be mapped to an ordinal pattern like so,      
 [3.4  5.5  7.3  2.1  6  9.9  7.3  1.1  2.1] =&gt;
 [ 8    4    9    1   2   5    3    7    6 ]
 However, indices 4 &amp; 9, and 3 &amp; 7 have the same values, 2.1
@@ -728,7 +791,7 @@ Biomedical Physics &amp; Engineering Express
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Matthew W. Flood.</p>
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
   </div>
 
    

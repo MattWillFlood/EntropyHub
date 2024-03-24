@@ -33,7 +33,7 @@ There are several package dependencies which will be installed alongside Entropy
     - *Plots*
     - *StatsBase*, *StatsFuns*, *Statistics*
     - *GroupSlices*, *Combinatorics*, *Clustering*
-    - *LinearAlgebra*, *Dierckx* 
+    - *LinearAlgebra*, *DataInterpolations* 
 
 EntropyHub was designed using Julia 1.5 and is intended for use with Julia versions >= 1.2.
 

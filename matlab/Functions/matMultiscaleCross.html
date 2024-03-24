@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Multiscale Cross-Entropies &mdash; EntropyHub 0.2 documentation</title>
+  <title>Multiscale Cross-Entropies &mdash; EntropyHub 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -167,16 +167,12 @@
 <p>To do so, we again use the <code class="docutils literal notranslate"><span class="pre">MSobject</span></code> function to pass a multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) to the multiscale cross-entropy functions.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Multiscale cross-entropy functions have two positional arguments:</p>
+<p>Multiscale cross-entropy functions have three positional arguments:</p>
 <ol class="arabic simple">
-<li><p>the time series signals, <code class="docutils literal notranslate"><span class="pre">Sig</span></code> (an Nx2 matrix),</p></li>
+<li><p>the first data sequence, <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> (a vector &gt; 10 elements),</p></li>
+<li><p>the second data sequence, <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> (a vector &gt; 10 elements),</p></li>
 <li><p>the multiscale entropy object, <code class="docutils literal notranslate"><span class="pre">Mobj</span></code>.</p></li>
 </ol>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>For cross-entropy and multiscale cross-entropy functions, the two time series signals are passed as a two-column or two-row matrix.
-At present, it is not possible to pass signals of different lengths separately.</p>
 </div>
 <hr class="docutils" />
 <span class="target" id="module-EntropyHub"></span><dl class="mat function">
@@ -583,7 +579,7 @@ Journal of Computational and Applied Mathematics
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Matthew W. Flood.</p>
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
   </div>
 
    
