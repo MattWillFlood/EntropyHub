@@ -22,28 +22,6 @@ __*Python Edition*__
         | | | || |_| ||     \    series analysis     |  \_______/  |
         |_| |_|\_____/|_____/                         \___________/ 
         
-        
-
-## About
-
-Information and uncertainty can be regarded as two sides of the same coin: 
-the more uncertainty there is, the more information we gain by removing that 
-uncertainty. In the context of information and probability theory, ***Entropy*** 
-quantifies that uncertainty. 
-
-Various measures have been derived to estimate entropy (uncertainty) from discrete 
-data sequences, each seeking to best capture the uncertainty of the system under examination. 
-This has resulted in many entropy statistics from approximate entropy and sample entropy, to
-multiscale sample entropy and refined-composite multiscale cross-sample entropy.
-
-The goal of EntropyHub is to provide a comprehensive set of functions with a simple and 
-consistent syntax that allows the user to augment parameters at the command 
-line, enabling a range from basic to advanced entropy methods to be implemented
-with ease.
-
-***It is important to clarify that the entropy functions herein described 
-estimate entropy in the context of probability theory and information theory as
-defined by Shannon, and not thermodynamic or other entropies from classical physics.***
 
 
 ## Installation
