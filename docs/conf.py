@@ -14,10 +14,10 @@ def setup(app):
 
 # -- Project information -----------------------------------------------------
 project = 'EntropyHub'
-copyright = '2023, Matthew W. Flood'
+copyright = '2024, Matthew W. Flood'
 author = 'Matthew W. Flood'
 # The full version, including alpha/beta/rc tags
-release = '0.2'
+release = '1.0'
 
 # -- General configuration ---------------------------------------------------
 extensions = [ 'sphinx_rtd_theme', 'sphinx.ext.autodoc',

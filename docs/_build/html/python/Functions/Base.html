@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Base Entropies &mdash; EntropyHub 0.2 documentation</title>
+  <title>Base Entropies &mdash; EntropyHub 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -343,7 +343,7 @@ IEEE Transactions on Biomedical Engineering
 </pre></div>
 </div>
 <p>Returns the cosine similarity entropy (<code class="docutils literal notranslate"><span class="pre">CoSi</span></code>) and the corresponding
-global probabilities estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the
+global probabilities (<code class="docutils literal notranslate"><span class="pre">Bm</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the
 default parameters:   embedding dimension = 2, time delay = 1, 
 angular threshold = .1,  logarithm = base 2,</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">CoSi</span><span class="p">,</span> <span class="n">Bm</span> <span class="o">=</span> <span class="n">CoSiEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
@@ -635,6 +635,71 @@ Medical &amp; biological engineering &amp; computing
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="EntropyHub.DivEn">
+<span class="sig-name descname"><span class="pre">DivEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DivEn" title="Permalink to this definition"></a></dt>
+<dd><p>DivEn  estimates the diversity entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Div</span><span class="p">,</span> <span class="n">CDEn</span><span class="p">,</span> <span class="n">Bm</span> <span class="o">=</span> <span class="n">DivEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the diversity entropy (<code class="docutils literal notranslate"><span class="pre">Div</span></code>), the cumulative diversity entropy (<code class="docutils literal notranslate"><span class="pre">CDEn</span></code>),
+and the corresponding probabilities (<code class="docutils literal notranslate"><span class="pre">Bm</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) 
+using the default parameters:   embedding dimension = 2, time delay = 1, 
+# bins = 5,  logarithm = natural,</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Div</span><span class="p">,</span> <span class="n">CDEn</span><span class="p">,</span> <span class="n">Bm</span> <span class="o">=</span> <span class="n">DivEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the diversity entropy (<code class="docutils literal notranslate"><span class="pre">Div</span></code>) estimated from the data
+sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified ‘keyword’ arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">m<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, an integer &gt; 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">r<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Histogram bins #: either</p></li>
+</ul>
+<ul class="simple">
+<li><p>an integer [1 &lt; <code class="docutils literal notranslate"><span class="pre">r</span></code>] representing the number of bins</p></li>
+<li><p>a list/numpy array of 3 or more increasing values in range [-1 1] representing the bin edges including the rightmost edge.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Logx<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Logarithm base, a positive scalar (enter 0 for natural log)</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">CoSiEn</span></code>, <code class="docutils literal notranslate"><span class="pre">PhasEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SlopEn</span></code>, <code class="docutils literal notranslate"><span class="pre">GridEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] X. Wang, S. Si and Y. Li, </dt><dd><p>“Multiscale Diversity Entropy: A Novel Dynamical Measure for Fault 
+Diagnosis of Rotating Machinery,” 
+IEEE Transactions on Industrial Informatics,
+vol. 17, no. 8, pp. 5419-5429, Aug. 2021</p>
+</dd>
+<dt>[2] Y. Wang, M. Liu, Y. Guo, F. Shu, C. Chen and W. Chen, </dt><dd><p>“Cumulative Diversity Pattern Entropy (CDEn): A High-Performance, 
+Almost-Parameter-Free Complexity Estimator for Nonstationary Time Series,”
+IEEE Transactions on Industrial Informatics
+vol. 19, no. 9, pp. 9642-9653, Sept. 2023</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.EnofEn">
 <span class="sig-name descname"><span class="pre">EnofEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Xrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.EnofEn" title="Permalink to this definition"></a></dt>
 <dd><p>EnofEn  estimates the entropy of entropy of a univariate data sequence.</p>
@@ -692,7 +757,7 @@ Entropy
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.FuzzEn">
-<span class="sig-name descname"><span class="pre">FuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.2,</span> <span class="pre">2)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.2,</span> <span class="pre">2.0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn" title="Permalink to this definition"></a></dt>
 <dd><p>FuzzEn  estimates the fuzzy entropy of a univariate data sequence.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Fuzz</span><span class="p">,</span> <span class="n">Ps1</span><span class="p">,</span> <span class="n">Ps2</span> <span class="o">=</span> <span class="n">FuzzEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
@@ -721,35 +786,36 @@ estimated for the data sequence (<code class="docutils literal notranslate"><spa
 </dd>
 <dt class="field-odd">Fx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p>Fuzzy function name, one of the following strings:  {<code class="docutils literal notranslate"><span class="pre">'sigmoid'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modsampen'</span></code>, <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gudermannian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'linear'</span></code>}</p></li>
+<li><p>Fuzzy function name, one of the following strings:</p></li>
 </ul>
+<p>{<code class="docutils literal notranslate"><span class="pre">'sigmoid'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modsampen'</span></code>, <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gudermannian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'bell'</span></code>, <code class="docutils literal notranslate"><span class="pre">'triangular'</span></code>, <code class="docutils literal notranslate"><span class="pre">'trapezoidal1'</span></code>, <code class="docutils literal notranslate"><span class="pre">'trapezoidal2'</span></code>, <code class="docutils literal notranslate"><span class="pre">'z_shaped'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gaussian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'constgaussian'</span></code>}</p>
 </dd>
 <dt class="field-even">r<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p>Fuzzy function parameters, a 1 element scalar or a 2 element vector of positive values. The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy</p></li>
+<li><p>Fuzzy function parameters, a 1 element scalar or a 2 element vector of positive values.</p></li>
 </ul>
-<p>function are defined as follows:      [default: (.2 2)]</p>
-<ul class="simple">
+<dl class="simple">
+<dt>The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy  function are defined as follows:   [default: (.2 2)]</dt><dd><ul class="simple">
 <li><dl class="simple">
-<dt>sigmoid:      </dt><dd><ul>
-<li><p>r(1) = divisor of the exponential argument</p></li>
-<li><p>r(2) = value subtracted from argument (pre-division)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>modsampen:    </dt><dd><ul>
-<li><p>r(1) = divisor of the exponential argument</p></li>
-<li><p>r(2) = value subtracted from argument (pre-division)</p></li>
+<dt>default:      [Tuple]</dt><dd><ul>
+<li><p>r[0] = divisor of the exponential argument</p></li>
+<li><p>r[1] = argument exponent (pre-division)</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>default:  </dt><dd><ul>
-<li><p>r(1) = divisor of the exponential argument</p></li>
-<li><p>r(2) = argument exponent (pre-division)</p></li>
+<dt>sigmoid:      [Tuple]</dt><dd><ul>
+<li><p>r[0] = divisor of the exponential argument</p></li>
+<li><p>r[1] = value subtracted from argument (pre-division)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>modsampen:    [Tuple]</dt><dd><ul>
+<li><p>r[0] = divisor of the exponential argument</p></li>
+<li><p>r[1] = value subtracted from argument (pre-division)</p></li>
 </ul>
 </dd>
 </dl>
@@ -762,7 +828,58 @@ estimated for the data sequence (<code class="docutils literal notranslate"><spa
 </dl>
 </li>
 <li><dl class="simple">
-<dt>linear:        </dt><dd><p>r  = an integer value. When r = 0, the argument of the exponential function is 
+<dt>triangular:  </dt><dd><ul>
+<li><p>r = a scalar whose value is the threshold (corner point) of the triangular function.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>trapezoidal1:  </dt><dd><ul>
+<li><p>r = a scalar whose value corresponds to the upper (2r) and lower (r) corner points of the trapezoid.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>trapezoidal2:  [Tuple]</dt><dd><ul>
+<li><p>r[0] = a value corresponding to the upper corner point of the trapezoid.</p></li>
+<li><p>r[1] = a value corresponding to the lower corner point of the trapezoid.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>z_shaped:  </dt><dd><ul>
+<li><p>r = a scalar whose value corresponds to the upper (2r) and lower (r) corner points of the z-shape.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>bell:  </dt><dd><ul>
+<li><p>r[0] = divisor of the distance value</p></li>
+<li><p>r[1] = exponent of generalized bell-shaped function</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>gaussian:  </dt><dd><ul>
+<li><p>r = a scalar whose value scales the slope of the Gaussian curve.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>constgaussian:  </dt><dd><ul>
+<li><p>r = a scalar whose value defines the lower threshod and shape of the Gaussian curve.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>[DEPRICATED] linear:       </dt><dd><p>r  = an integer value. When r = 0, the argument of the exponential function is 
 normalised between [0 1]. When r = 1, the minimuum value of the exponential argument is set to 0.</p>
 </dd>
 </dl>
@@ -770,14 +887,14 @@ normalised between [0 1]. When r = 1, the minimuum value of the exponential argu
 </ul>
 </dd>
 </dl>
-</div></blockquote>
-<dl class="field-list simple">
+</dd>
 <dt class="field-odd">Logx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Logarithm base, a positive scalar  [default: natural]</p></li>
 </ul>
 </dd>
 </dl>
+</div></blockquote>
 <p>For further information on the keyword arguments, see the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">See also<span class="colon">:</span></dt>
@@ -793,6 +910,11 @@ IEEE Transactions on neural systems and rehabilitation engineering
 similarity-based sample entropy.”
 Physics Letters A
 372.48 (2008): 7140-7146.</p>
+</dd>
+<dt>[3] Hamed Azami, et al.</dt><dd><p>“Fuzzy Entropy Metrics for the Analysis of Biomedical Signals: 
+Assessment and Comparison”
+IEEE Access
+7 (2019): 104833-104847</p>
 </dd>
 </dl>
 </dd>
@@ -1061,7 +1183,7 @@ estimated from the data sequence (<code class="docutils literal notranslate"><sp
 <li><p>Permutation entropy variation, one of the following:</p></li>
 </ul>
 <dl class="simple">
-<dt>{<code class="docutils literal notranslate"><span class="pre">'uniquant'</span></code>, <code class="docutils literal notranslate"><span class="pre">'finegrain'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'ampaware'</span></code>, <code class="docutils literal notranslate"><span class="pre">'weighted'</span></code>, <code class="docutils literal notranslate"><span class="pre">'edge'</span></code>}</dt><dd><p>See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on PermEn variants.</p>
+<dt>{<code class="docutils literal notranslate"><span class="pre">'uniquant'</span></code>, <code class="docutils literal notranslate"><span class="pre">'finegrain'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'ampaware'</span></code>, <code class="docutils literal notranslate"><span class="pre">'weighted'</span></code>, <code class="docutils literal notranslate"><span class="pre">'edge'</span></code>, <code class="docutils literal notranslate"><span class="pre">'phase'</span></code>}</dt><dd><p>See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on PermEn variants.</p>
 </dd>
 </dl>
 </dd>
@@ -1124,6 +1246,11 @@ Complexity
 <dt>[8] Maik Riedl, Andreas Müller, and Niels Wessel,</dt><dd><p>“Practical considerations of permutation entropy.” 
 The European Physical Journal Special Topics 
 222.2 (2013): 249-262.</p>
+</dd>
+<dt>[9] Kang Huan, Xiaofeng Zhang, and Guangbin Zhang,</dt><dd><p>“Phase permutation entropy: A complexity measure for nonlinear time 
+series incorporating phase information.” 
+Physica A: Statistical Mechanics and its Applications 
+568 (2021): 125686.</p>
 </dd>
 </dl>
 </dd>
@@ -1198,8 +1325,73 @@ Physiological measurement
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="EntropyHub.RangEn">
+<span class="sig-name descname"><span class="pre">RangEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Methodx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SampEn'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.RangEn" title="Permalink to this definition"></a></dt>
+<dd><p>RangEn  estimates the range entropy of a univariate data sequence.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Rangx</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span> <span class="o">=</span> <span class="n">RangEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the range entropy estimate (<code class="docutils literal notranslate"><span class="pre">Rangx</span></code>) and the number of matched state
+vectors (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">A</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
+using the sample entropy algorithm and the following default parameters: 
+embedding dimension = 2, time delay = 1, radius threshold = 0.2, logarithm = natural.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Rangx</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span> <span class="o">=</span> <span class="n">RangEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the range entropy estimates (<code class="docutils literal notranslate"><span class="pre">Rangx</span></code>) for dimensions = <code class="docutils literal notranslate"><span class="pre">m</span></code>
+estimated for the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified keyword arguments:</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">m<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Embedding Dimension, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-even">tau<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Time Delay, a positive integer</p></li>
+</ul>
+</dd>
+<dt class="field-odd">r<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Radius Distance Threshold, a positive value between 0 and 1</p></li>
+</ul>
+</dd>
+<dt class="field-even">Methodx<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Base entropy method, either ‘SampEn’ [default] or ‘ApEn’</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Logx<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">ApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>,  <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Omidvarnia, Amir, et al.</dt><dd><p>“Range entropy: A bridge between signal complexity and self-similarity”
+Entropy 
+20.12 (2018): 962.</p>
+</dd>
+<dt>[2] Joshua S Richman and J. Randall Moorman. </dt><dd><p>“Physiological time-series analysis using approximate entropy
+and sample entropy.” 
+American Journal of Physiology-Heart and Circulatory Physiology 
+2000</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.SampEn">
-<span class="sig-name descname"><span class="pre">SampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SampEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">SampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Vcp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SampEn" title="Permalink to this definition"></a></dt>
 <dd><p>SampEn  estimates the sample entropy of a univariate data sequence.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Samp</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span> <span class="o">=</span> <span class="n">SampEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
@@ -1207,7 +1399,18 @@ Physiological measurement
 <p>Returns the sample entropy estimates (<code class="docutils literal notranslate"><span class="pre">Samp</span></code>) and the number of matched state
 vectors (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">A</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [0, 1, 2] estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
 using the default parameters: embedding dimension = 2, time delay = 1, 
-radius threshold = 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>), logarithm = natural</p>
+radius threshold = 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>), logarithm = natural.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Samp</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">,</span> <span class="p">(</span><span class="n">Vcp</span><span class="p">,</span> <span class="n">Ka</span><span class="p">,</span> <span class="n">Kb</span><span class="p">)</span> <span class="o">=</span> <span class="n">SampEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="n">Vcp</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>If <code class="docutils literal notranslate"><span class="pre">Vcp</span> <span class="pre">==</span> <span class="pre">True</span></code>, an additional tuple <code class="docutils literal notranslate"><span class="pre">(Vcp,</span> <span class="pre">Ka,</span> <span class="pre">Kb)</span></code> is returned with    
+the sample entropy estimates (<code class="docutils literal notranslate"><span class="pre">Samp</span></code>) and the number of matched state
+vectors (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">A</span></code>). <code class="docutils literal notranslate"><span class="pre">(Vcp,</span> <span class="pre">Ka,</span> <span class="pre">Kb)</span></code>  contains the variance of the conditional
+probabilities (<code class="docutils literal notranslate"><span class="pre">Vcp</span></code>), i.e. CP = A/B,  and the number of <strong>overlapping</strong>
+matching vector pairs of lengths m+1 (<code class="docutils literal notranslate"><span class="pre">Ka</span></code>) and m (<code class="docutils literal notranslate"><span class="pre">Kb</span></code>),
+respectively.  Note <code class="docutils literal notranslate"><span class="pre">Vcp</span></code> is undefined for the zeroth embedding dimension (m = 0) 
+and due to the computational demand, <strong>will take substantially more time to return function outputs.</strong>
+See Appendix B in [2] for more info.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Samp</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span> <span class="o">=</span> <span class="n">SampEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1235,6 +1438,11 @@ estimated for the data sequence (<code class="docutils literal notranslate"><spa
 <li><p>Logarithm base, a positive scalar</p></li>
 </ul>
 </dd>
+<dt class="field-odd">Vcp<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Option to return variance of conditional probabilities and the number of overlapping matching vector pairs, a boolean [default: False]</p></li>
+</ul>
+</dd>
 </dl>
 </div></blockquote>
 <dl class="field-list simple">
@@ -1247,6 +1455,10 @@ estimated for the data sequence (<code class="docutils literal notranslate"><spa
 and sample entropy.” 
 American Journal of Physiology-Heart and Circulatory Physiology 
 2000</p>
+</dd>
+<dt>[2]  Douglas E Lake, Joshua S Richman, M.P. Griffin, J. Randall Moorman</dt><dd><p>“Sample entropy analysis of neonatal heart rate variability.”
+American Journal of Physiology-Regulatory, Integrative and Comparative Physiology
+283, no. 3 (2002): R789-R797.</p>
 </dd>
 </dl>
 </dd>
@@ -1484,7 +1696,7 @@ Signal processing
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Matthew W. Flood.</p>
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
   </div>
 
    

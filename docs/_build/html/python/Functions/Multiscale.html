@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Multiscale Entropies &mdash; EntropyHub 0.2 documentation</title>
+  <title>Multiscale Entropies &mdash; EntropyHub 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -164,13 +164,13 @@
 <h2>Functions for estimating the multiscale entropy of a univariate time series.<a class="headerlink" href="#functions-for-estimating-the-multiscale-entropy-of-a-univariate-time-series" title="Permalink to this heading"></a></h2>
 <p>Multiscale entropy can be calculated using any of the <a class="reference internal" href="Base.html#pybase"><span class="std std-ref">Base Entropies</span></a>:
 <code class="docutils literal notranslate"><span class="pre">ApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">AttnEn</span></code>, <code class="docutils literal notranslate"><span class="pre">BubbEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CondEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CoSiEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn</span></code>,
-<code class="docutils literal notranslate"><span class="pre">DispEn</span></code>, <code class="docutils literal notranslate"><span class="pre">EnofEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">GridEn</span></code>, <code class="docutils literal notranslate"><span class="pre">IncrEn</span></code>, <code class="docutils literal notranslate"><span class="pre">K2En</span></code>,
-<code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">PhasEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SlopEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SpecEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SyDyEn</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">DispEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DivEn</span></code>, <code class="docutils literal notranslate"><span class="pre">EnofEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">GridEn</span></code>, <code class="docutils literal notranslate"><span class="pre">IncrEn</span></code>, <code class="docutils literal notranslate"><span class="pre">K2En</span></code>,
+<code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">PhasEn</span></code>, <code class="docutils literal notranslate"><span class="pre">RangEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SlopEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SpecEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SyDyEn</span></code>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Multiscale cross-entropy functions have two positional arguments:</p>
 <ol class="arabic simple">
-<li><p>the time series signal, <code class="docutils literal notranslate"><span class="pre">Sig</span></code> (a vector &gt; 10 elements),</p></li>
+<li><p>the data sequence, <code class="docutils literal notranslate"><span class="pre">Sig</span></code> (a vector &gt; 10 elements),</p></li>
 <li><p>the multiscale entropy object, <code class="docutils literal notranslate"><span class="pre">Mobj</span></code>.</p></li>
 </ol>
 </div>
@@ -201,7 +201,7 @@ type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notrans
 To see the default parameters for a particular entropy method,          
 type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notranslate"><span class="pre">help(SampEn)</span></code>)</p>
 <p><code class="docutils literal notranslate"><span class="pre">EnType</span></code> can be any of the following (case sensitive) string names:</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Base Entropies<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="field-list simple">
 <dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'ApEn'</span></code><span class="colon">:</span></dt>
@@ -295,6 +295,8 @@ type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notrans
 </ul>
 </dd>
 </dl>
+<p>[<code class="docutils literal notranslate"><span class="pre">'DivEn'</span></code>]:    - Diversity Entropy
+[<code class="docutils literal notranslate"><span class="pre">'RangEn'</span></code>]:   - Range Entropy</p>
 </dd>
 <dt class="field-even">Cross Entropies<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="field-list simple">
@@ -340,8 +342,42 @@ type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notrans
 </dd>
 </dl>
 </dd>
-<dt class="field-odd">See also<span class="colon">:</span></dt>
-<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hXMSEn</span></code></p>
+<dt class="field-odd">Bidimensional Entropies<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="field-list simple">
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'SampEn2D'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Bidimensional Sample Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'FuzzEn2D'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Bidimensional Fuzzy Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'DispEn2D'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Bidimensional Dispersion Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'DistEn2D'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Bidimensional Distribution Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'PermEn2D'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Bidimensional Permutation Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'EspEn2D'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Bidimensional Espinosa Entropy</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">See also<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hXMSEn</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -375,7 +411,7 @@ the multiscale object (<code class="docutils literal notranslate"><span class="p
 </dd>
 <dt class="field-even">Methodx<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p>Graining method, one of the following: [default: <code class="docutils literal notranslate"><span class="pre">'coarse'</span></code>]  {<code class="docutils literal notranslate"><span class="pre">'coarse'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'imf'</span></code> , <code class="docutils literal notranslate"><span class="pre">'timeshift'</span></code>}</p></li>
+<li><p>Graining method, one of the following: [default: <code class="docutils literal notranslate"><span class="pre">'coarse'</span></code>]  {<code class="docutils literal notranslate"><span class="pre">'coarse'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'imf'</span></code> , <code class="docutils literal notranslate"><span class="pre">'timeshift'</span></code> , <code class="docutils literal notranslate"><span class="pre">'generalized'</span></code>}</p></li>
 </ul>
 </dd>
 <dt class="field-odd">RadNew<span class="colon">:</span></dt>
@@ -458,6 +494,10 @@ Entropy
 and dispersion entropy.” 
 Entropy 20.2 (2018): 138.</p>
 </dd>
+<dt>[12] Madalena Costa and Ary L. Goldberger,</dt><dd><p>“Generalized multiscale entropy analysis: Application to quantifying 
+the complex volatility of human heartbeat time series.” 
+Entropy 17.3 (2015): 1197-1203.</p>
+</dd>
 </dl>
 </dd>
 </dl>
@@ -466,7 +506,7 @@ Entropy 20.2 (2018): 138.</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.cMSEn">
 <span class="sig-name descname"><span class="pre">cMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Refined</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.cMSEn" title="Permalink to this definition"></a></dt>
-<dd><p>cMSEn  Returns the composite multiscale entropy of a univariate data sequence.</p>
+<dd><p>cMSEn  Returns the composite (or refined-composite) multiscale entropy of a univariate data sequence.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">cMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -474,6 +514,15 @@ Entropy 20.2 (2018): 138.</p>
 sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the parameters specified by the multiscale object 
 (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) using the composite multiscale entropy method (cMSE) over 3 temporal
 scales.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">cMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">Refined</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns a vector of refined-composite multiscale entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) for the data 
+sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the parameters specified by the multiscale object 
+(<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) using the refined-composite multiscale entropy method (rcMSE) over 3 temporal
+scales. When <code class="docutils literal notranslate"><span class="pre">Refined</span> <span class="pre">==</span> <span class="pre">True</span></code>, the base entropy method must be <code class="docutils literal notranslate"><span class="pre">SampEn</span></code> or <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>.
+If the entropy method is <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, cMSEn employs the method described in [5]. 
+If the entropy method is <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>, cMSEn employs the method described in [6].</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">cMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -505,7 +554,7 @@ it is set to 0.2 (default). The value of RadNew specifies one of the following m
 </dd>
 <dt class="field-odd">Refined<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p>Refined-composite MSEn method. When <code class="docutils literal notranslate"><span class="pre">Refined</span> <span class="pre">==</span> <span class="pre">True</span></code> and the entropy function specified by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code> is <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>,</p></li>
+<li><p>Refined-composite MSEn method. When <code class="docutils literal notranslate"><span class="pre">Refined</span> <span class="pre">==</span> <span class="pre">True</span></code> and the entropy function specified by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code> is <code class="docutils literal notranslate"><span class="pre">SampEn</span></code> or <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>,</p></li>
 </ul>
 <p><code class="docutils literal notranslate"><span class="pre">cMSEn</span></code> returns the refined-composite multiscale entropy (rcMSEn) [default: False]</p>
 </dd>
@@ -543,6 +592,11 @@ Entropy
 multiscale entropy.” 
 Physics Letters A 
 378.20 (2014): 1369-1374.</p>
+</dd>
+<dt>[6] Hamed Azami et al.,</dt><dd><p>“Refined multiscale fuzzy entropy based on standard deviation 
+for biomedical signal analysis”
+Med Biol Eng Comput 
+55 (2017):2037–2052</p>
 </dd>
 </dl>
 </dd>
@@ -729,7 +783,7 @@ Cardiovascular engineering and technology
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Matthew W. Flood.</p>
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
   </div>
 
    

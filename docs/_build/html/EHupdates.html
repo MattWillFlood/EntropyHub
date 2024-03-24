@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Latest Updates &mdash; EntropyHub 0.2 documentation</title>
+  <title>Latest Updates &mdash; EntropyHub 1.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -161,9 +161,87 @@
 <div class="toctree-wrapper compound">
 </div>
 <hr class="docutils" />
-<section id="january-2024">
-<h2>January 2024<a class="headerlink" href="#january-2024" title="Permalink to this heading"></a></h2>
-<p><strong>New announcements coming soon! :)</strong></p>
+<section id="march-2024">
+<h2>March 2024<a class="headerlink" href="#march-2024" title="Permalink to this heading"></a></h2>
+<section id="version-1-0-is-here">
+<h3>Version 1.0 is here!<a class="headerlink" href="#version-1-0-is-here" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">EntropyHub is continuously growing to incorporate the lastest developments in the scientific literature.</div>
+<div class="line">This new major release (v1.0) reflects that with many new functions and features to provide you with a versatile environment that makes complex entropy methods easy to implement.</div>
+<div class="line">The following list summarizes some of the main updates available in v1.0.</div>
+</div>
+<blockquote>
+<div><dl>
+<dt><strong>+ New entropy methods</strong></dt><dd><div class="line-block">
+<div class="line">Two new base entropy functions (and their multiscale versions) have been added:</div>
+<div class="line">+ <a class="reference external" href="https://ieeexplore.ieee.org/document/9194995">Diversity Entropy</a></div>
+<div class="line">+ <a class="reference external" href="https://www.mdpi.com/1099-4300/20/12/962">Range Entropy</a></div>
+</div>
+</dd>
+<dt><strong>+ New fuzzy membership functions</strong></dt><dd><div class="line-block">
+<div class="line">Several new fuzzy membership functions have been added to FuzzEn, XFuzzEn and FuzzEn2D to provide more options for mapping the degree of similarity between embedding vectors.</div>
+<div class="line">These include <em>trapezoidal</em>, <em>triangular</em> and <em>gaussian</em>, among others.</div>
+<div class="line">Further info on these membership functions can be found <a class="reference external" href="https://hal.science/hal-02267711/document">here.</a></div>
+</div>
+</dd>
+<dt><strong>+ Phase Permutation Entropy</strong></dt><dd><div class="line-block">
+<div class="line">A new variant - ‘<em>phase</em>’ permutation entropy - has been added to PermEn.</div>
+<div class="line">This method employs a hilbert transformation of the data sequence, based on the methods outlined <a class="reference external" href="https://doi.org/10.1016/j.physa.2020.125686">here.</a></div>
+</div>
+</dd>
+<dt><strong>+ Cross-Entropy with different length sequences</strong></dt><dd><div class="line-block">
+<div class="line">EntropyHub v1.0 now allows for cross-entropy (and multiscale cross-entropy) estimation with different length signals (<em>except XCondEn and XPermEn</em>).</div>
+<div class="line">As a result, the new cross-entropy functions require a separate input for each sequence (Sig1, Sig2).</div>
+</div>
+</dd>
+<dt><strong>+ Refined-Composite Multiscale Fuzzy Entropy</strong></dt><dd><div class="line-block">
+<div class="line">In addition to the refined-composite multiscale sample entropy that was available in earlier versions, now one can estimate the refined-composite multiscale fuzzy entropy based on the method outlined <a class="reference external" href="https://link.springer.com/article/10.1007/s11517-017-1647-5">here.</a></div>
+<div class="line">What’s more, refined-composite multicale cross-fuzzy entropy is also available, and both can be estimated using any of the fuzzy membership functions in FuzzEn or XFuzzEn.</div>
+</div>
+</dd>
+<dt><strong>+ Generalized Multiscale Entropy</strong></dt><dd><div class="line-block">
+<div class="line">Generaized multiscale entropy and generalized multiscale cross-entropy can now be estimated. Just choose the ‘<em>generalized</em>’ as the graining procedure in MSEn or XMSEn.</div>
+</div>
+</dd>
+<dt><strong>+ Variance of sample entropy estimate</strong></dt><dd><div class="line-block">
+<div class="line">Based on the <a class="reference external" href="https://journals.physiology.org/doi/epdf/10.1152/ajpregu.00069.2002">method outlined by Lake et al.,</a> it is now possible to obtain a measure of the variance in the sample entropy estimate.</div>
+<div class="line">This is achieved by approximating the number of overlapping embedding vectors.</div>
+<div class="line">To do so, just set the parameter ‘<em>Vcp</em>’==true in SampEn and XSampEn, but note that doing so requires <em>a lot</em> of computer memory.</div>
+</div>
+</dd>
+</dl>
+</div></blockquote>
+<p>Several little bugs and inconsistencies have also been fixed in this release. We want to thank all of you who have identified and alerted us to these bugs.
+Most of these bugs have been noted via the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/issues">GitHub issues portal</a>.</p>
+<blockquote>
+<div><dl>
+<dt><strong>Bug fixes</strong></dt><dd><div class="line-block">
+<div class="line">- The DispEn2D function in python has now fixed <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/issues/8">this issue</a>.</div>
+<div class="line">- The type hint for FuzzEn in python has been updated <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/issues/1">as requested</a>.</div>
+<div class="line">- <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub.jl/issues/3">Compatbility issues with EntropyHub.jl</a> are now resolved.</div>
+<div class="line">- A bug in the K2En python function led to incorrect entropy estimates for data sequences with many equal values. This has been corrected.</div>
+</div>
+</dd>
+<dt><strong>Other Changes</strong></dt><dd><div class="line-block">
+<div class="line">- The <em>‘equal’</em> method for discretizing data in DispEn and DispEn2D has been updated to be consistent across Python, MatLab and Julia.</div>
+<div class="line-block">
+<div class="line">This is unlikely to have impacted any users previously.</div>
+</div>
+<div class="line">- The zeroth dimension (m=0) estimate of ApEn and XApEn has been changed to -phi(1).</div>
+<div class="line">- The default radius threshold distance for XApEn, XSampEn and XK2En has been changed to use the <em>pooled</em> standard deviation [i.e. 0.2*SDpooled(X,Y)].</div>
+</div>
+</dd>
+</dl>
+</div></blockquote>
+</section>
+<section id="more-to-come">
+<h3>More to come!<a class="headerlink" href="#more-to-come" title="Permalink to this heading"></a></h3>
+<div class="line-block">
+<div class="line">We are currently adding several new elements to EntropyHub that we hope will benefit many users. However, this is a time-consuming effort.</div>
+<div class="line">Keep checking in here to find out more in the future!</div>
+<div class="line">Thanks for all your support so far :)</div>
+</div>
+</section>
 </section>
 <hr class="docutils" />
 <section id="november-2022">
@@ -266,7 +344,7 @@ See the source literature for more info.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Matthew W. Flood.</p>
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
   </div>
 
    

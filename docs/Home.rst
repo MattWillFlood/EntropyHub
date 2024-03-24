@@ -9,7 +9,7 @@
 EntropyHub 
 **********
 
-An open-source toolkit for entropic time series analysis
+An open-source toolkit for entropic data analysis
 ########################################################
 
 .. image:: ./_images/EntropyHub_Profiler.png
@@ -32,30 +32,22 @@ An open-source toolkit for entropic time series analysis
 * `Take part in our user survey <https://forms.gle/QxwUQASUh3bVhpfN9>`_
     
 
-Welcome
-#######
+Welcome!
+########
 
-Welcome to EntropyHub!
+| This toolkit provides a wide range of functions to calculate different entropy statistics.
+| There is an ever-growing range of information-theoretic and dynamical systems entropy measures presented in the scientific literature. 
+| The goal of EntropyHub is to integrate the many established entropy methods in one open-source package.
 
-This toolkit provides a wide range of functions to calculate different entropy statistics.
-
-There is an ever-growing range of information-theoretic and dynamical systems entropy measures presented in the scientific literature. 
-Although many functions for estimating these entropies can be found in various corners of the internet, 
-there is currently no toolkit to perform entropic time-series analysis in MatLab, Python and Julia, all with an extensive documentation and consistent syntax.
-
-The goal of EntropyHub is to integrate the many established entropy methods in one open-source package.
-
+.........................................................................................................
 
 About
 #####
 
 Information and uncertainty can be regarded as two sides of the same coin: 
 the more uncertainty there is, the more information we gain by removing that uncertainty.
-In the context of information and probability theory, **Entropy** quantifies that uncertainty. 
+In the context of dynamical systems and information theory, **Entropy** quantifies that uncertainty. 
 
-The concept of entropy has its origins in `classical physics <http://www.scholarpedia.org/article/Entropy>`_ under the second law of thermodynamics, 
-a law `considered to underpin our fundamental understanding <https://www.penguin.co.uk/books/301539/the-order-of-time/9780141984964.html>`_
-of `time in physics <https://en.wikipedia.org/wiki/Time_in_physics>`_. 
 In the context of nonlinear dynamics, entropy is central in quantifying the degree of uncertainty or information gain, and is therefore widely used
 to explain complex nonlinear behaviour in real-world systems.
 Attempting to analyse the analog world around us requires that we measure time in discrete steps, but doing so compromises 
@@ -68,24 +60,20 @@ To overcome this, we have developed EntropyHub - an open-source toolkit designed
 The goal of EntropyHub is to provide a comprehensive set of functions with a simple and consistent syntax that allows the user to augment parameters at the command 
 line, enabling a range from basic to advanced entropy methods to be implemented with ease.
 
-**It is important to clarify that the entropy functions herein described estimate entropy in the context of nonlinear dynamics, probability theory and information theory, and not thermodynamic or other entropies from classical physics.**
+.. note::
+
+    It is important to clarify that the entropy functions herein described estimate entropy in the context of nonlinear dynamics, probability theory and information theory, and not thermodynamic or other entropies from classical physics.
 
 .........................................................................................................
-
 
 Documentation & Help 
 ####################
 
-The `EntropyHub Guide <https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf>`_ is a .pdf booklet written to help you use the toolkit effectively 
-(available for :download:`download here <./_static/EntropyHubGuide.pdf>`).
-
-In this guide you will find descriptions of function syntax, examples of function use, and references to the source literature of each function.
-
-*The MatLab version of the toolkit has a comprehensive help section which can be accessed through the help browser.*
-
+| The `EntropyHub Guide <https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf>`_ is a .pdf booklet written to help you use the toolkit effectively (available for :download:`download here <./_static/EntropyHubGuide.pdf>`).
+| In this guide you will find descriptions of function syntax, examples of function use, and references to the source literature of each function.
+| *The MatLab version of the toolkit has a comprehensive help section which can be accessed through the MatLab help browser under* **Supplementary Software**.
 
 .........................................................................................................
-
 
 Citation and Licensing
 ######################
@@ -94,7 +82,7 @@ EntropyHub is licensed under the Apache License (Version 2.0) and is free to
 use by all on condition that the following reference be included on any scientific outputs
 realized using the software:
  
-        | **Matthew W. Flood and Bernd Grimm,**     
+        | **Matthew W. Flood**     
         | **EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,**    
         | **PLoS One 16(11):e0259448 (2021),** 
         | **DOI: 10.1371/journal.pone.0259448**    
@@ -104,7 +92,7 @@ realized using the software:
 __________________________________________________________________
 
 
-        © Copyright 2021 Matthew W. Flood, EntropyHub
+        © Copyright 2024 Matthew W. Flood, EntropyHub
 
         Licensed under the Apache License, Version 2.0 (the "License");
         you may not use this file except in compliance with the License.

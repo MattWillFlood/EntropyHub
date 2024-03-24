@@ -12,7 +12,7 @@ Bidimensional Entropies
 Functions for estimating the entropy of a two-dimensional univariate matrix.
 ****************************************************************************
 
-While EntropyHub functions primarily apply to time series data, with the following
+While EntropyHub functions primarily apply to univariate data sequences, with the following
 bidimensional entropy functions one can estimate the entropy of two-dimensional (2D)
 matrices. Hence, bidimensional entropy functions are useful for applications such as image/texture analysis.
 

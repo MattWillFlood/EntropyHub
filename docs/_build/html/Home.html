@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EntropyHub &mdash; EntropyHub 0.2 documentation</title>
+  <title>EntropyHub &mdash; EntropyHub 1.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -159,8 +159,8 @@
     <div  class="altmetric-embed" data-badge-type='donut' data-badge-popover='right' data-altmetric-id="116252437"></div><script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 </div><section id="entropyhub">
 <h1>EntropyHub<a class="headerlink" href="#entropyhub" title="Permalink to this heading"></a></h1>
-<section id="an-open-source-toolkit-for-entropic-time-series-analysis">
-<h2>An open-source toolkit for entropic time series analysis<a class="headerlink" href="#an-open-source-toolkit-for-entropic-time-series-analysis" title="Permalink to this heading"></a></h2>
+<section id="an-open-source-toolkit-for-entropic-data-analysis">
+<h2>An open-source toolkit for entropic data analysis<a class="headerlink" href="#an-open-source-toolkit-for-entropic-data-analysis" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="_images/EntropyHub_Profiler.png"><img alt="_images/EntropyHub_Profiler.png" class="align-center" src="_images/EntropyHub_Profiler.png" style="width: 150px; height: 150px;" /></a>
 <p class="centered">
 <strong>Available in:</strong></p><p class="centered">
@@ -172,23 +172,22 @@
 </ul>
 </section>
 <section id="welcome">
-<h2>Welcome<a class="headerlink" href="#welcome" title="Permalink to this heading"></a></h2>
-<p>Welcome to EntropyHub!</p>
-<p>This toolkit provides a wide range of functions to calculate different entropy statistics.</p>
-<p>There is an ever-growing range of information-theoretic and dynamical systems entropy measures presented in the scientific literature.
-Although many functions for estimating these entropies can be found in various corners of the internet,
-there is currently no toolkit to perform entropic time-series analysis in MatLab, Python and Julia, all with an extensive documentation and consistent syntax.</p>
-<p>The goal of EntropyHub is to integrate the many established entropy methods in one open-source package.</p>
+<h2>Welcome!<a class="headerlink" href="#welcome" title="Permalink to this heading"></a></h2>
+<div class="line-block">
+<div class="line">This toolkit provides a wide range of functions to calculate different entropy statistics.</div>
+<div class="line">There is an ever-growing range of information-theoretic and dynamical systems entropy measures presented in the scientific literature.</div>
+<div class="line">Although many functions for estimating these entropies can be found in various corners of the internet,</div>
+<div class="line">there is currently no toolkit to perform entropic data analysis in MatLab, Python and Julia, all with an extensive documentation and consistent syntax.</div>
+<div class="line">The goal of EntropyHub is to integrate the many established entropy methods in one open-source package.</div>
+</div>
 </section>
+<hr class="docutils" />
 <section id="about">
 <h2>About<a class="headerlink" href="#about" title="Permalink to this heading"></a></h2>
 <p>Information and uncertainty can be regarded as two sides of the same coin:
 the more uncertainty there is, the more information we gain by removing that uncertainty.
-In the context of information and probability theory, <strong>Entropy</strong> quantifies that uncertainty.</p>
-<p>The concept of entropy has its origins in <a class="reference external" href="http://www.scholarpedia.org/article/Entropy">classical physics</a> under the second law of thermodynamics,
-a law <a class="reference external" href="https://www.penguin.co.uk/books/301539/the-order-of-time/9780141984964.html">considered to underpin our fundamental understanding</a>
-of <a class="reference external" href="https://en.wikipedia.org/wiki/Time_in_physics">time in physics</a>.
-In the context of nonlinear dynamics, entropy is central in quantifying the degree of uncertainty or information gain, and is therefore widely used
+In the context of dynamical systems and information theory, <strong>Entropy</strong> quantifies that uncertainty.</p>
+<p>In the context of nonlinear dynamics, entropy is central in quantifying the degree of uncertainty or information gain, and is therefore widely used
 to explain complex nonlinear behaviour in real-world systems.
 Attempting to analyse the analog world around us requires that we measure time in discrete steps, but doing so compromises
 our ability to measure entropy accurately. Various measures have been derived to estimate entropy (uncertainty) from discrete time series, each seeking to
@@ -198,15 +197,19 @@ multiscale sample entropy and refined-composite multiscale cross-sample entropy.
 To overcome this, we have developed EntropyHub - an open-source toolkit designed to integrate the many established entropy methods into one package.
 The goal of EntropyHub is to provide a comprehensive set of functions with a simple and consistent syntax that allows the user to augment parameters at the command
 line, enabling a range from basic to advanced entropy methods to be implemented with ease.</p>
-<p><strong>It is important to clarify that the entropy functions herein described estimate entropy in the context of nonlinear dynamics, probability theory and information theory, and not thermodynamic or other entropies from classical physics.</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is important to clarify that the entropy functions herein described estimate entropy in the context of nonlinear dynamics, probability theory and information theory, and not thermodynamic or other entropies from classical physics.</p>
+</div>
 </section>
 <hr class="docutils" />
 <section id="documentation-help">
 <h2>Documentation &amp; Help<a class="headerlink" href="#documentation-help" title="Permalink to this heading"></a></h2>
-<p>The <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub Guide</a> is a .pdf booklet written to help you use the toolkit effectively
-(available for <a class="reference download internal" download="" href="_downloads/40d9c1910993d9509e60865d940bb066/EntropyHubGuide.pdf"><code class="xref download docutils literal notranslate"><span class="pre">download</span> <span class="pre">here</span></code></a>).</p>
-<p>In this guide you will find descriptions of function syntax, examples of function use, and references to the source literature of each function.</p>
-<p><em>The MatLab version of the toolkit has a comprehensive help section which can be accessed through the help browser.</em></p>
+<div class="line-block">
+<div class="line">The <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub Guide</a> is a .pdf booklet written to help you use the toolkit effectively (available for <a class="reference download internal" download="" href="_downloads/40d9c1910993d9509e60865d940bb066/EntropyHubGuide.pdf"><code class="xref download docutils literal notranslate"><span class="pre">download</span> <span class="pre">here</span></code></a>).</div>
+<div class="line">In this guide you will find descriptions of function syntax, examples of function use, and references to the source literature of each function.</div>
+<div class="line"><em>The MatLab version of the toolkit has a comprehensive help section which can be accessed through the MatLab help browser under</em> <strong>Supplementary Software</strong>.</div>
+</div>
 </section>
 <hr class="docutils" />
 <section id="citation-and-licensing">
@@ -216,7 +219,7 @@ use by all on condition that the following reference be included on any scientif
 realized using the software:</p>
 <blockquote>
 <div><div class="line-block">
-<div class="line"><strong>Matthew W. Flood and Bernd Grimm,</strong></div>
+<div class="line"><strong>Matthew W. Flood</strong></div>
 <div class="line"><strong>EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis,</strong></div>
 <div class="line"><strong>PLoS One 16(11):e0259448 (2021),</strong></div>
 <div class="line"><strong>DOI: 10.1371/journal.pone.0259448</strong></div>
@@ -227,7 +230,7 @@ realized using the software:</p>
 </div></blockquote>
 <hr class="docutils" />
 <blockquote>
-<div><p>© Copyright 2021 Matthew W. Flood, EntropyHub</p>
+<div><p>© Copyright 2024 Matthew W. Flood, EntropyHub</p>
 <p>Licensed under the Apache License, Version 2.0 (the “License”);
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at</p>
@@ -270,7 +273,7 @@ limitations under the License.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Matthew W. Flood.</p>
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
   </div>
 
    

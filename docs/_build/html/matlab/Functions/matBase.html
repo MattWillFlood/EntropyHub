@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Base Entropies &mdash; EntropyHub 0.2 documentation</title>
+  <title>Base Entropies &mdash; EntropyHub 1.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -461,6 +461,56 @@ Sensors
 dispersion entropy and SVM optimized with mutation SCA-PSO.”
 Entropy
 21.4 (2019): 404.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
+<dt class="sig sig-object mat" id="EntropyHub.DivEn">
+<span class="sig-name descname"><span class="pre">DivEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DivEn" title="Permalink to this definition"></a></dt>
+<dd><p>DivEn  estimates the diversity entropy of a univariate data sequence.</p>
+<p>[Div, CDEn, Bm] = DivEn(Sig)</p>
+<p>Returns the diversity entropy (<code class="docutils literal notranslate"><span class="pre">Div</span></code>), the cumulative diversity entropy (<code class="docutils literal notranslate"><span class="pre">CDEn</span></code>),
+and the corresponding probabilities (<code class="docutils literal notranslate"><span class="pre">Bm</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
+using the default parameters:   embedding dimension = 2, time delay = 1,
+# bins = 5,  logarithm = natural,</p>
+<p>[Div, CDEn, Bm] = DivEn(Sig, name, value, …)</p>
+<p>Returns the diversity entropy (<code class="docutils literal notranslate"><span class="pre">Div</span></code>) estimated from the data
+sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified name/value pair arguments:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>     - Embedding Dimension, an integer &gt; 1</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>   - Time Delay, a positive integer</p></li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">r</span></code>     - Histogram bins #: either</dt><dd><ul>
+<li><p>an integer [<code class="docutils literal notranslate"><span class="pre">r</span></code> &gt; 1] representing the number of bins</p></li>
+<li><p>a vector array of 3 or more increasing values in range [-1 1] representing the bin edges including the rightmost edge.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Logx</span></code>  - Logarithm base, a positive scalar (enter 0 for natural log)</p></li>
+</ul>
+</div></blockquote>
+<dl>
+<dt>See also:</dt><dd><blockquote>
+<div><p>CoSiEn, PhasEn, SlopEn, GridEn, MSEn</p>
+</div></blockquote>
+<dl class="simple">
+<dt>References:</dt><dd><dl class="simple">
+<dt>[1] X. Wang, S. Si and Y. Li,</dt><dd><p>“Multiscale Diversity Entropy: A Novel Dynamical Measure for Fault
+Diagnosis of Rotating Machinery,”
+IEEE Transactions on Industrial Informatics,
+vol. 17, no. 8, pp. 5419-5429, Aug. 2021</p>
+</dd>
+<dt>[2] Y. Wang, M. Liu, Y. Guo, F. Shu, C. Chen and W. Chen,</dt><dd><p>“Cumulative Diversity Pattern Entropy (CDEn): A High-Performance,
+Almost-Parameter-Free Complexity Estimator for Nonstationary Time Series,”
+IEEE Transactions on Industrial Informatics
+vol. 19, no. 9, pp. 9642-9653, Sept. 2023</p>
+</dd>
+</dl>
 </dd>
 </dl>
 </dd>
@@ -944,6 +994,45 @@ Physiological measurement
 </dd></dl>
 
 <dl class="mat function">
+<dt class="sig sig-object mat" id="EntropyHub.RangEn">
+<span class="sig-name descname"><span class="pre">RangEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.RangEn" title="Permalink to this definition"></a></dt>
+<dd><p>RangEn  estimates the range entropy of a univariate data sequence.</p>
+<p>[Rangx, A, B] = RangEn(Sig)</p>
+<p>Returns the range entropy estimate (<code class="docutils literal notranslate"><span class="pre">Rangx</span></code>) and the number of matched state
+vectors (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">A</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
+using the sample entropy algorithm and the following default parameters:
+embedding dimension = 2, time delay = 1, radius threshold = 0.2, logarithm = natural.</p>
+<p>Rangx, A, B = RangEn(Sig, name, value, …)</p>
+<p>Returns the range entropy estimates (<code class="docutils literal notranslate"><span class="pre">Rangx</span></code>) for dimensions = <code class="docutils literal notranslate"><span class="pre">m</span></code>
+estimated for the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified name-value arguments:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>         - Embedding Dimension, a positive integer</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>       - Time Delay, a positive integer</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">r</span></code>         - Radius Distance Threshold, a positive scalar between 0 and 1</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Methodx</span></code>   - Base entropy method, either ‘SampEn’ [default] or ‘ApEn’</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Logx</span></code>      - Logarithm base, a positive scalar</p></li>
+</ul>
+</div></blockquote>
+<dl class="simple">
+<dt>See also:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">ApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>,  <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt>References:</dt><dd><dl class="simple">
+<dt>[1] Omidvarnia, Amir, et al.</dt><dd><p>“Range entropy: A bridge between signal complexity and self-similarity”
+Entropy
+20.12 (2018): 962.</p>
+</dd>
+<dt>[2] Joshua S Richman and J. Randall Moorman.</dt><dd><p>“Physiological time-series analysis using approximate entropy
+and sample entropy.”
+American Journal of Physiology-Heart and Circulatory Physiology
+2000</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.SampEn">
 <span class="sig-name descname"><span class="pre">SampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SampEn" title="Permalink to this definition"></a></dt>
 <dd><p>SampEn  estimates the sample entropy of a univariate data sequence.</p>
@@ -1158,7 +1247,7 @@ Signal processing
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Matthew W. Flood.</p>
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
   </div>
 
    
