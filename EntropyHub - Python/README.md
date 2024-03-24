@@ -6,24 +6,6 @@ __*Python Edition*__
 <img src="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/EntropyHub_profiler.png" alt = "EntropyHub Git" width="250" height="250" />
 </p>
 
-
-
-        
-         ___  _   _  _____  _____  ____  ____  _     _          
-        |  _|| \ | ||_   _||     \|    ||    || \   / |   ___________ 
-        | \_ |  \| |  | |  |   __/|    ||  __| \ \_/ /   /  _______  \
-        |  _|| \ \ |  | |  |   \  |    || |     \   /   |  /  ___  \  |
-        | \_ | |\  |  | |  | |\ \ |    || |      | |    | |  /   \  | | 
-        |___||_| \_|  |_|  |_| \_||____||_|      |_|   _|_|__\___/  | | 
-         _   _  _   _  ____                           / |__\______\/  | 
-        | | | || | | ||    \     An open-source      |  /\______\__|_/ 
-        | |_| || | | ||    |     toolkit for         | |  /   \  | | 
-        |  _  || | | ||    \     entropic time-      | |  \___/  | |          
-        | | | || |_| ||     \    series analysis     |  \_______/  |
-        |_| |_|\_____/|_____/                         \___________/ 
-        
-
-
 ## Installation
 
 There are two ways to install EntropyHub for Python. Method 1 is strongly recommended.
