@@ -29,6 +29,14 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `Predictability and Complexity of Fine and Gross Motor Skills in Fibromyalgia Patients: A Pilot Study <https://www.mdpi.com/2075-4663/12/4/90#>`_
+    | Nancy Brígida, David Catela, Cristiana Mercê, Marco Branco
+    | *Sports (MDPI)*
+
+* `Exploring the Entropy-Based Classification of Time Series Using Visibility Graphs from Chaotic Maps <https://www.mdpi.com/2227-7390/12/7/938>`_
+    | J. Alberto Conejero, Andrei Velichko, Òscar Garibo-i-Orts, Yuriy Izotov, Viet-Thanh Pham 
+    | *Mathematics (MDPI)*
+
 * `Monitoring chaos at the cot-side <https://www.nature.com/articles/s41390-024-03151-1>`_
     | Michael J. Beacom, Martin G. Frasch, Christopher A. Lear, Alistair J. Gunn
     | *Pediatric Research*
@@ -75,7 +83,7 @@ List of research articles citing EntropyHub
 
 * `Entropy-Based Machine Learning Model for Fast Diagnosis and Monitoring of Parkinson’s Disease <https://www.mdpi.com/1424-8220/23/20/8609>`_
     | Maksim Belyaev, Murugappan Murugappan, Andrei Velichko, Dmitry Korzun
-    | *Sensors*
+    | *Sensors (MDPI)*
      
 * `Linear and Nonlinear Analysis of Trunk Sway Time Series in Office Workers With and Without Chronic Spinal Pain <https://run.unl.pt/bitstream/10362/161075/1/Julio_2023.pdf>`_
     | Afonso Manuel Caetano Julio
@@ -83,11 +91,11 @@ List of research articles citing EntropyHub
 
 * `Ensemble Wavelet Decomposition-Based Detection of Mental States Using Electroencephalography Signals  <https://www.mdpi.com/1424-8220/23/18/7860>`_
     | Smith K. Khare, Varun Bajaj, Nikhil B. Gaikwad, G.R. Sinha
-    | *Sensors*
+    | *Sensors (MDPI)*
 
 * `A Bio-Inspired Chaos Sensor Model Based on the Perceptron Neural Network: Machine Learning Concept and Application for Computational Neuro-Science <https://www.mdpi.com/1424-8220/23/16/7137>`_
     | Andrei Velichko, Petr Boriskov,Maksim Belyaev, Vadim Putrolaynen
-    | *Sensors*
+    | *Sensors (MDPI)*
 
 * `Adazd-Net: Automated adaptive and explainable Alzheimer’s disease detection system using EEG signals <https://doi.org/10.1016/j.knosys.2023.110858>`_
     | Smith K. Khare, U. Rajendra Acharya
@@ -103,7 +111,7 @@ List of research articles citing EntropyHub
 
 * `A Dynamical Systems Approach to Characterizing Brain–Body Interactions during Movement: Challenges, Interpretations, and Recommendations <https://www.mdpi.com/1424-8220/23/14/6296>`_
     | Derek C. Monroe, Nathaniel T. Berry, Peter C. Fino, Christopher K. Rhea
-    | *Sensors*
+    | *Sensors (MDPI)*
 
 * `The impact of hardware and design choices on data quality in mouse resting-state functional magnetic resonance imaging (fMRI) <https://escholarship.mcgill.ca/concern/theses/xk81js05z>`_
     | Mila Urosevic
@@ -119,7 +127,7 @@ List of research articles citing EntropyHub
 
 * `Neural Network Entropy (NNetEn): Entropy-Based EEG Signal and Chaotic Time Series Classification, Python Package for NNetEn Calculation <https://www.mdpi.com/1999-4893/16/5/255>`_
     | Andrei Velichko, Maksim Belyaev, Yuriy Izotov, Murugappan Murugappan, Hanif Heidari
-    | *Algorithms*
+    | *Algorithms (MDPI)*
 
 * `Changes in surface electromyography characteristics and foot-tapping rate of force development as measures of spasticity in patients with multiple sclerosis. <https://shareok.org/handle/11244/337631>`_
     | Brian Pribble
@@ -143,7 +151,7 @@ List of research articles citing EntropyHub
 
 * `Improved Stress Classification Using Automatic Feature Selection from Heart Rate and Respiratory Rate Time Signals <https://www.mdpi.com/2076-3417/13/5/2950>`_
     | Talha Iqbal, Adnan Elahi, William Wijns, Bilal Amin, Atif Shahzad
-    | *Applied Sciences*
+    | *Applied Sciences (MDPI)*
 
 * `Single-neuron spiking variability in hippocampus dynamically tracks sensory content during memory formation in humans <https://www.biorxiv.org/content/10.1101/2023.02.23.529684v1>`_
     | Leonhard Waschke, Fabian Kamp, Evi van den Elzen, Suresh Krishna, Ulman Lindenberger,  Ueli Rutishauser, Douglas D. Garrett
@@ -151,7 +159,7 @@ List of research articles citing EntropyHub
 
 * `Complexity and Entropy in Physiological Signals (CEPS): Resonance Breathing Rate Assessed Using Measures of Fractal Dimension, Heart Rate Asymmetry and Permutation Entropy <https://www.mdpi.com/1099-4300/25/2/301>`_
     | David Mayor, Tony Steffert, George Datseris, Andrea Firth, Deepak Panday, Harikala Kandel, Duncan Banks
-    | *Entropy*
+    | *Entropy (MDPI)*
 
 * `Enhancing classification of preterm-term birth using continuous wavelet transform and entropy-based methods of electrohysterogram signals <https://www.frontiersin.org/articles/10.3389/fendo.2022.1035615/full>`_
     | Héctor Romero-Morales, Jenny Noemí Muñoz-Montes de Oca, Rodrigo Mora-Martínez, Yecid Mina-Paz, José Javier Reyes-Lagos
@@ -183,15 +191,15 @@ List of research articles citing EntropyHub
 
 * `Entropy Measures of Electroencephalograms towards the Diagnosis of Psychogenic Non-Epileptic Seizures <https://www.mdpi.com/1099-4300/24/10/1348/pdf>`_
     | Chloe Hinchliffe, Mahinda Yogarajah, Samia Elkommos, Hongying Tang, Daniel Abasolo          
-    | *Entropy*
+    | *Entropy (MDPI)*
 
 * `Application of Two-Dimensional Entropy Measures to Detect the Radiographic Signs of Tooth Resorption and Hypercementosis in an Equine Model <https://www.mdpi.com/2227-9059/10/11/2914>`_
     | Kamil Górski, Marta Borowska, Elżbieta Stefanik, Izabela Polkowska, Bernard Turek, Andrzej Bereznowski, Małgorzata Domino 
-    | *Biomedicines*
+    | *Biomedicines (MDPI)*
 
 * `Application of the Two-Dimensional Entropy Measures in the Infrared Thermography-Based Detection of Rider: Horse Bodyweight Ratio in Horseback Riding <https://www.mdpi.com/1424-8220/22/16/6052>`_
     | Małgorzata Domino, Marta Borowska, Łukasz Zdrojkowski, Tomasz Jasiński, Urszula Sikorska, Michał Skibniewski, Małgorzata Maśko
-    | *Sensors*
+    | *Sensors (MDPI)*
 
 * `What can Entropy Metrics Tell Us About Types of Fixations during Video Viewing? <https://digital.library.txstate.edu/handle/10877/16142>`_
     | K Melnyk, L Friedman, O Komogortsev 
@@ -207,7 +215,7 @@ List of research articles citing EntropyHub
     
 * `Pressure Injury Link to Entropy of Abdominal Temperature <https://doi.org/10.3390/e24081127>`_
     | Nikhil Padhye, Denise Rios, Vaunette Fay, Sandra K Hanneman
-    | *Entropy*
+    | *Entropy (MDPI)*
     
 * `Classification of Electroencephalograms during Mathematical Calculations Using Deep Learning <https://doi.org/10.1109/iri54793.2022.00016>`_
     | Umang Goenka, Param Patil, Kush Gosalia, Aaryan Jagetia
@@ -215,7 +223,7 @@ List of research articles citing EntropyHub
 
 * `The Structure of Chaos: An Empirical Comparison of Fractal Physiology Complexity Indices Using NeuroKit2 <https://doi.org/10.3390/e24081036>`_
     | Dominique Makowski, An Shu Te, Tam Pham, Zen Juen Lau, S. H. Annabel Chen
-    | *Entropy*
+    | *Entropy (MDPI)*
 
 * `Novel techniques for improvement the NNetEn entropy calculation for short and noisy time series <https://arxiv.org/abs/2202.12703>`_    
     | Hanif Heidari, Andrei Velichko
