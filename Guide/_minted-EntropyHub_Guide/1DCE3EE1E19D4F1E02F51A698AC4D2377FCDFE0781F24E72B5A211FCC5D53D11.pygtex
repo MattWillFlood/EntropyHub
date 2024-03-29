@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{X}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{Data}\PYG{p}{[}\PYG{o}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{Phas}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{PhasEn}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{K}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{11}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{tau}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Plotx}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{)}
+\PYG{l+m+mf}{0.8395391613164361}
+\end{Verbatim}

@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{Mobj}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{MSobject}\PYG{p}{(}\PYG{n}{XCondEn}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{m}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{6}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{c}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{11}\PYG{p}{)}
+\PYG{p}{(}\PYG{n}{Func}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{EntropyHub}\PYG{o}{.}\PYG{n}{\PYGZus{}XCondEn}\PYG{o}{.}\PYG{n}{XCondEn}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{m}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{6}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{c}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{11}\PYG{p}{)}
+\end{Verbatim}

@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{k}{using} \PYG{n}{Pkg}
-\PYG{n}{Pkg}\PYG{o}{.}\PYG{n}{add}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}EntropyHub\PYGZdq{}}\PYG{p}{)}
-\end{Verbatim}

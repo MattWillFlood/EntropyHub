@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{XDist}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Ppi}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{XDistEn}\PYG{p}{(}\PYG{n}{X}\PYG{p}{[}\PYG{o}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{],}\PYG{+w}{ }\PYG{n}{X}\PYG{p}{[}\PYG{o}{:}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{],}\PYG{+w}{ }\PYG{n}{m}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{tau}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{,}
+\PYG{+w}{		}\PYG{n}{Bins}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}rice\PYGZdq{}}\PYG{p}{)}
+\PYG{n}{Note}\PYG{o}{:}\PYG{+w}{ }\PYG{l+m+mi}{407}\PYG{o}{/}\PYG{l+m+mi}{415}\PYG{+w}{ }\PYG{n}{bins}\PYG{+w}{ }\PYG{n}{were}\PYG{+w}{ }\PYG{n}{empty}
+\PYG{p}{(}\PYG{l+m+mf}{0.28024570808915084}\PYG{p}{,}
+\PYG{p}{[}\PYG{l+m+mf}{3.59537211e\PYGZhy{}5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.004693585}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.03679902}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.1095869}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.1978132}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+m+mf}{0.25581946}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.24212389}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.1531279}\PYG{p}{])}
+\end{Verbatim}

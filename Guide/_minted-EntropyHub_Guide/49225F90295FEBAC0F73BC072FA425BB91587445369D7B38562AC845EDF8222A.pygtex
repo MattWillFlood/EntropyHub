@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{matplotlib.pyplot} \PYG{k+kn}{import} \PYG{n}{figure}\PYG{p}{,} \PYG{n}{plot}\PYG{p}{,} \PYG{n}{axis}
+
+\PYG{n}{Data} \PYG{o}{=} \PYG{n}{eh}\PYG{o}{.}\PYG{n}{ExampleData}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}henon\PYGZsq{}}\PYG{p}{);}
+
+\PYG{n}{fig} \PYG{o}{=} \PYG{n}{figure}\PYG{p}{(}\PYG{n}{facecolor}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}k\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plot}\PYG{p}{(}\PYG{n}{Data}\PYG{p}{[:,}\PYG{l+m+mi}{0}\PYG{p}{],} \PYG{n}{Data}\PYG{p}{[:,}\PYG{l+m+mi}{1}\PYG{p}{],} \PYG{l+s+s1}{\PYGZsq{}g.\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{axis}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}off\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{Mobj} \PYG{o}{=} \PYG{n}{eh}\PYG{o}{.}\PYG{n}{MSobject}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}XCondEn\PYGZsq{}}\PYG{p}{,} \PYG{n}{m} \PYG{o}{=} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{tau} \PYG{o}{=} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{c} \PYG{o}{=} \PYG{l+m+mi}{12}\PYG{p}{,}
+		\PYG{n}{Logx} \PYG{o}{=} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{Norm} \PYG{o}{=} \PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{n}{Mobj}\PYG{o}{.}\PYG{n}{Func}
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{o}{\PYGZlt{}}\PYG{n}{function} \PYG{n}{EntropyHub}\PYG{o}{.}\PYG{n}{\PYGZus{}XCondEn}\PYG{o}{.}\PYG{n}{XCondEn}\PYG{p}{(}\PYG{n}{Sig}\PYG{p}{,} \PYG{n}{m}\PYG{o}{=}\PYG{l+m+mi}{2}\PYG{p}{,}
+		\PYG{n}{tau}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{c}\PYG{o}{=}\PYG{l+m+mi}{6}\PYG{p}{,} \PYG{n}{Logx}\PYG{o}{=}\PYG{l+m+mf}{2.71828}\PYG{p}{,} \PYG{n}{Norm}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}\PYG{o}{\PYGZgt{}}
+
+\PYG{n}{Mobj}\PYG{o}{.}\PYG{n}{Kwargs}
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{:} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}tau\PYGZsq{}}\PYG{p}{:} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}c\PYGZsq{}}\PYG{p}{:} \PYG{l+m+mi}{12}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Logx\PYGZsq{}}\PYG{p}{:} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}Norm\PYGZsq{}}\PYG{p}{:} \PYG{k+kc}{True}\PYG{p}{\PYGZcb{}}
+
+\end{Verbatim}

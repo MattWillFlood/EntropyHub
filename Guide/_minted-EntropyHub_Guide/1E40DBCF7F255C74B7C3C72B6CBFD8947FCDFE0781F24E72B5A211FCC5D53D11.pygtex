@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{MSx}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Sn}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Ci}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{hXMSEn}\PYG{p}{(}\PYG{n}{Data}\PYG{p}{[}\PYG{o}{:}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{],}\PYG{+w}{ }\PYG{n}{Data}\PYG{p}{[}\PYG{o}{:}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{],}\PYG{+w}{ }\PYG{n}{Mobj}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Scales}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{p}{,}
+\PYG{+w}{		 }\PYG{n}{Plotx}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{)}
+\PYG{p}{[}\PYG{n}{Warning}\PYG{o}{:}\PYG{+w}{ }\PYG{n}{Only}\PYG{+w}{ }\PYG{n}{first}\PYG{+w}{ }\PYG{l+m+mi}{4096}\PYG{+w}{ }\PYG{n}{samples}\PYG{+w}{ }\PYG{n}{were}\PYG{+w}{ }\PYG{n}{used}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{n}{hierarchical}
+\PYG{o}{|}\PYG{+w}{	}\PYG{n}{decomposition}\PYG{o}{.}
+\PYG{o}{|}\PYG{+w}{   }\PYG{n}{The}\PYG{+w}{ }\PYG{n}{last}\PYG{+w}{ }\PYG{l+m+mi}{404}\PYG{+w}{ }\PYG{n}{samples}\PYG{+w}{ }\PYG{n}{of}\PYG{+w}{ }\PYG{n}{the}\PYG{+w}{ }\PYG{n}{data}\PYG{+w}{ }\PYG{n}{sequence}\PYG{+w}{ }\PYG{n}{were}\PYG{+w}{ }\PYG{n}{ignored}\PYG{o}{.}
+\PYG{p}{[}\PYG{err}{@}\PYG{+w}{ }\PYG{n}{EntropyHub}\PYG{o}{.}\PYG{n}{\PYGZus{}hXMSEn}
+\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}
+\PYG{p}{([}\PYG{l+m+mf}{0.5159119}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.62451155}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.563417}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.7022124}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.653264}\PYG{p}{,}
+\PYG{l+m+mf}{0.58528238}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.7956453}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.8446734}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.7604554}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.8415218}\PYG{p}{,}
+\PYG{l+m+mf}{0.81153266}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.51284941}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.68619314}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.86785005}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.8287299}\PYG{p}{],}
+\PYG{p}{[}\PYG{l+m+mf}{0.5159119}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.59396428}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.68410104}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.76922575}\PYG{p}{],}
+\PYG{l+m+mf}{2.5632030151318776}\PYG{p}{)}
+\end{Verbatim}

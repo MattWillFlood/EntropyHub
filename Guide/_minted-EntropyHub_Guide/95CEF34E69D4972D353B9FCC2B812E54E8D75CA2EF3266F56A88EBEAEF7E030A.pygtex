@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Mobj}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{MSobject}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}XCondEn\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{6}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}c\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{11}\PYG{p}{)}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{Mobj}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n+nb}{struct}\PYG{+w}{ }\PYG{n}{with}\PYG{+w}{ }\PYG{n}{fields}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n}{Func}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{@}\PYG{n}{XCondEn}
+\PYG{+w}{       }\PYG{n}{m}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mi}{6}
+\PYG{+w}{       }\PYG{n}{c}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mi}{11}
+\end{Verbatim}

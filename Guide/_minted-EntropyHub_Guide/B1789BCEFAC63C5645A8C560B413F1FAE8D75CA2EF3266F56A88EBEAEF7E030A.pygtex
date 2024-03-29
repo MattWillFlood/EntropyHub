@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{[}\PYG{n}{XDist}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Ppi}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{XDistEn}\PYG{p}{(}\PYG{n}{X}\PYG{p}{(:,}\PYG{l+m+mi}{1}\PYG{p}{),}\PYG{+w}{ }\PYG{n}{X}\PYG{p}{(:,}\PYG{l+m+mi}{2}\PYG{p}{),}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}tau\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{.}\PYG{+w}{ }\PYG{p}{.}\PYG{+w}{ }\PYG{p}{.}
+\PYG{+w}{		 }\PYG{l+s}{\PYGZsq{}Bins\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}rice\PYGZsq{}}\PYG{p}{)}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{Note}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mi}{407}\PYG{o}{/}\PYG{l+m+mi}{415}\PYG{+w}{ }\PYG{n}{bins}\PYG{+w}{ }\PYG{n}{were}\PYG{+w}{ }\PYG{n+nb}{empty}
+\PYG{+w}{	}\PYG{n}{XDist}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mf}{0.2802}
+\PYG{+w}{	}\PYG{n}{Ppi}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}×\PYG{l+m+mi}{8}
+\PYG{+w}{    }\PYG{l+m+mf}{0.0000}\PYG{+w}{    }\PYG{l+m+mf}{0.0047}\PYG{+w}{    }\PYG{l+m+mf}{0.0368}\PYG{+w}{    }\PYG{l+m+mf}{0.1096}\PYG{+w}{    }\PYG{k}{...}
+\PYG{+w}{    	}\PYG{l+m+mf}{0.1978}\PYG{+w}{    }\PYG{l+m+mf}{0.2558}\PYG{+w}{    }\PYG{l+m+mf}{0.2421}\PYG{+w}{    }\PYG{l+m+mf}{0.1531}
+\end{Verbatim}

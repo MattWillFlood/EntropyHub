@@ -1,3 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{python} \PYG{o}{\PYGZhy{}}\PYG{n}{m} \PYG{n}{pip} \PYG{n}{install} \PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{n}{upgrade} \PYG{n}{setuptools}
-\end{Verbatim}

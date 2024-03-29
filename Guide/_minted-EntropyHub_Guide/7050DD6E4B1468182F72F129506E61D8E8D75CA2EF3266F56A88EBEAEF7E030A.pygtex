@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Y}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{Data}\PYG{p}{(:,}\PYG{l+m+mi}{2}\PYG{p}{);}
+\PYG{n}{Phas}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{PhasEn}\PYG{p}{(}\PYG{n}{Y}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}K\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{7}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}Norm\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{false}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}Logx\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{...}
+\PYG{+w}{	}\PYG{l+s}{\PYGZsq{}Plotx\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{)}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{Phas}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mf}{2.0193}
+\end{Verbatim}

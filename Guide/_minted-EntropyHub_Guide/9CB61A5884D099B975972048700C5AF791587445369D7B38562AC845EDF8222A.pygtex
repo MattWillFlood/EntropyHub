@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{MSx}\PYG{p}{,} \PYG{n}{Sn}\PYG{p}{,} \PYG{n}{Ci} \PYG{o}{=} \PYG{n}{eh}\PYG{o}{.}\PYG{n}{hXMSEn}\PYG{p}{(}\PYG{n}{Data}\PYG{p}{[:,}\PYG{l+m+mi}{0}\PYG{p}{],} \PYG{n}{Data}\PYG{p}{[:,}\PYG{l+m+mi}{1}\PYG{p}{],} \PYG{n}{Mobj}\PYG{p}{,}
+		\PYG{n}{Scales} \PYG{o}{=} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{n}{Plotx} \PYG{o}{=} \PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{WARNING}\PYG{p}{:} \PYG{n}{Only} \PYG{n}{first} \PYG{l+m+mi}{4096} \PYG{n}{samples} \PYG{n}{were} \PYG{n}{used} \PYG{o+ow}{in}
+   \PYG{n}{hierarchical} \PYG{n}{decomposition}\PYG{o}{.}
+\PYG{n}{The} \PYG{n}{last} \PYG{l+m+mi}{404} \PYG{n}{samples} \PYG{n}{of} \PYG{n}{each} \PYG{n}{data} \PYG{n}{sequence} \PYG{n}{were} \PYG{n}{ignored}\PYG{o}{.}
+\PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.} \PYG{o}{.}
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{MSx} \PYG{o}{=}
+    \PYG{n}{array}\PYG{p}{([}\PYG{l+m+mf}{0.5159}\PYG{p}{,} \PYG{l+m+mf}{0.6245}\PYG{p}{,} \PYG{l+m+mf}{0.5634}\PYG{p}{,} \PYG{l+m+mf}{0.7022}\PYG{p}{,} \PYG{l+m+mf}{0.6533}\PYG{p}{,}
+    	 	\PYG{l+m+mf}{0.5853}\PYG{p}{,} \PYG{l+m+mf}{0.7956}\PYG{p}{,} \PYG{l+m+mf}{0.8447}\PYG{p}{,} \PYG{l+m+mf}{0.7605}\PYG{p}{,} \PYG{l+m+mf}{0.8415}\PYG{p}{,}
+    	 	 \PYG{l+m+mf}{0.8115}\PYG{p}{,} \PYG{l+m+mf}{0.5128}\PYG{p}{,} \PYG{l+m+mf}{0.6862}\PYG{p}{,} \PYG{l+m+mf}{0.8679}\PYG{p}{,} \PYG{l+m+mf}{0.8287}\PYG{p}{])}
+\PYG{n}{Sn} \PYG{o}{=}
+    \PYG{n}{array}\PYG{p}{([}\PYG{l+m+mf}{0.5159}\PYG{p}{,} \PYG{l+m+mf}{0.5940}\PYG{p}{,} \PYG{l+m+mf}{0.6841}\PYG{p}{,} \PYG{l+m+mf}{0.7692}\PYG{p}{])}
+\PYG{n}{Ci} \PYG{o}{=}
+	\PYG{l+m+mf}{2.5632}
+\end{Verbatim}

@@ -1,111 +1,113 @@
 
 \makeatletter
-\def\PYGfruity@reset{\let\PYGfruity@it=\relax \let\PYGfruity@bf=\relax%
-    \let\PYGfruity@ul=\relax \let\PYGfruity@tc=\relax%
-    \let\PYGfruity@bc=\relax \let\PYGfruity@ff=\relax}
-\def\PYGfruity@tok#1{\csname PYGfruity@tok@#1\endcsname}
-\def\PYGfruity@toks#1+{\ifx\relax#1\empty\else%
-    \PYGfruity@tok{#1}\expandafter\PYGfruity@toks\fi}
-\def\PYGfruity@do#1{\PYGfruity@bc{\PYGfruity@tc{\PYGfruity@ul{%
-    \PYGfruity@it{\PYGfruity@bf{\PYGfruity@ff{#1}}}}}}}
-\def\PYGfruity#1#2{\PYGfruity@reset\PYGfruity@toks#1+\relax+\PYGfruity@do{#2}}
+\def\PYG@reset{\let\PYG@it=\relax \let\PYG@bf=\relax%
+    \let\PYG@ul=\relax \let\PYG@tc=\relax%
+    \let\PYG@bc=\relax \let\PYG@ff=\relax}
+\def\PYG@tok#1{\csname PYG@tok@#1\endcsname}
+\def\PYG@toks#1+{\ifx\relax#1\empty\else%
+    \PYG@tok{#1}\expandafter\PYG@toks\fi}
+\def\PYG@do#1{\PYG@bc{\PYG@tc{\PYG@ul{%
+    \PYG@it{\PYG@bf{\PYG@ff{#1}}}}}}}
+\def\PYG#1#2{\PYG@reset\PYG@toks#1+\relax+\PYG@do{#2}}
 
-\@namedef{PYGfruity@tok@}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@w}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
-\@namedef{PYGfruity@tok@g}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@go}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.27,0.27,0.27}{##1}}\def\PYGfruity@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.13,0.13,0.13}{\strut ##1}}}}
-\@namedef{PYGfruity@tok@k}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
-\@namedef{PYGfruity@tok@kp}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
-\@namedef{PYGfruity@tok@l}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@m}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
-\@namedef{PYGfruity@tok@n}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@nt}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
-\@namedef{PYGfruity@tok@nv}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
-\@namedef{PYGfruity@tok@c}{\let\PYGfruity@it=\textit\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}\def\PYGfruity@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
-\@namedef{PYGfruity@tok@na}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,0.00,0.53}{##1}}}
-\@namedef{PYGfruity@tok@s}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@nf}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,0.00,0.53}{##1}}}
-\@namedef{PYGfruity@tok@gh}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@kt}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.80,0.79,0.66}{##1}}}
-\@namedef{PYGfruity@tok@gu}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@no}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@cp}{\let\PYGfruity@bf=\textbf\let\PYGfruity@it=\textit\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,0.00,0.03}{##1}}\def\PYGfruity@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
-\@namedef{PYGfruity@tok@esc}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@err}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@x}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@kc}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
-\@namedef{PYGfruity@tok@kd}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
-\@namedef{PYGfruity@tok@kn}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
-\@namedef{PYGfruity@tok@kr}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
-\@namedef{PYGfruity@tok@nb}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@bp}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@nc}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@nd}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@ni}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@ne}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@fm}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,0.00,0.53}{##1}}}
-\@namedef{PYGfruity@tok@py}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@nl}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@nn}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@nx}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@vc}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
-\@namedef{PYGfruity@tok@vg}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
-\@namedef{PYGfruity@tok@vi}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
-\@namedef{PYGfruity@tok@vm}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
-\@namedef{PYGfruity@tok@ld}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@sa}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@sb}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@sc}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@dl}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@sd}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@s2}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@se}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@sh}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@si}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@sx}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@sr}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@s1}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@ss}{\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
-\@namedef{PYGfruity@tok@mb}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
-\@namedef{PYGfruity@tok@mf}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
-\@namedef{PYGfruity@tok@mh}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
-\@namedef{PYGfruity@tok@mi}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
-\@namedef{PYGfruity@tok@il}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
-\@namedef{PYGfruity@tok@mo}{\let\PYGfruity@bf=\textbf\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
-\@namedef{PYGfruity@tok@o}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@ow}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@p}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@ch}{\let\PYGfruity@it=\textit\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}\def\PYGfruity@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
-\@namedef{PYGfruity@tok@cm}{\let\PYGfruity@it=\textit\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}\def\PYGfruity@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
-\@namedef{PYGfruity@tok@cpf}{\let\PYGfruity@it=\textit\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}\def\PYGfruity@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
-\@namedef{PYGfruity@tok@c1}{\let\PYGfruity@it=\textit\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}\def\PYGfruity@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
-\@namedef{PYGfruity@tok@cs}{\let\PYGfruity@it=\textit\def\PYGfruity@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}\def\PYGfruity@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
-\@namedef{PYGfruity@tok@gd}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@ge}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@gr}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@gi}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@gp}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@gs}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
-\@namedef{PYGfruity@tok@gt}{\def\PYGfruity@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@w}{\def\PYG@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\@namedef{PYG@tok@g}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@go}{\def\PYG@tc##1{\textcolor[rgb]{0.27,0.27,0.27}{##1}}\def\PYG@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.13,0.13,0.13}{\strut ##1}}}}
+\@namedef{PYG@tok@k}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
+\@namedef{PYG@tok@kp}{\def\PYG@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
+\@namedef{PYG@tok@l}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@m}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
+\@namedef{PYG@tok@n}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@nt}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
+\@namedef{PYG@tok@nv}{\def\PYG@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
+\@namedef{PYG@tok@c}{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}\def\PYG@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
+\@namedef{PYG@tok@na}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{1.00,0.00,0.53}{##1}}}
+\@namedef{PYG@tok@s}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@nf}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{1.00,0.00,0.53}{##1}}}
+\@namedef{PYG@tok@gh}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@kt}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.80,0.79,0.66}{##1}}}
+\@namedef{PYG@tok@gu}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@no}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@cp}{\let\PYG@bf=\textbf\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{1.00,0.00,0.03}{##1}}\def\PYG@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
+\@namedef{PYG@tok@esc}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@err}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@x}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@kc}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
+\@namedef{PYG@tok@kd}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
+\@namedef{PYG@tok@kn}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
+\@namedef{PYG@tok@kr}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
+\@namedef{PYG@tok@nb}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@bp}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@nc}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@nd}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@ni}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@ne}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@fm}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{1.00,0.00,0.53}{##1}}}
+\@namedef{PYG@tok@py}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@nl}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@nn}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@nx}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@vc}{\def\PYG@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
+\@namedef{PYG@tok@vg}{\def\PYG@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
+\@namedef{PYG@tok@vi}{\def\PYG@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
+\@namedef{PYG@tok@vm}{\def\PYG@tc##1{\textcolor[rgb]{0.98,0.40,0.04}{##1}}}
+\@namedef{PYG@tok@ld}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@sa}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@sb}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@sc}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@dl}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@sd}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@s2}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@se}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@sh}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@si}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@sx}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@sr}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@s1}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@ss}{\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.82}{##1}}}
+\@namedef{PYG@tok@mb}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
+\@namedef{PYG@tok@mf}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
+\@namedef{PYG@tok@mh}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
+\@namedef{PYG@tok@mi}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
+\@namedef{PYG@tok@il}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
+\@namedef{PYG@tok@mo}{\let\PYG@bf=\textbf\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.97}{##1}}}
+\@namedef{PYG@tok@o}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@ow}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@p}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@pm}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@ch}{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}\def\PYG@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
+\@namedef{PYG@tok@cm}{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}\def\PYG@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
+\@namedef{PYG@tok@cpf}{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}\def\PYG@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
+\@namedef{PYG@tok@c1}{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}\def\PYG@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
+\@namedef{PYG@tok@cs}{\let\PYG@it=\textit\def\PYG@tc##1{\textcolor[rgb]{0.00,0.53,0.00}{##1}}\def\PYG@bc##1{{\setlength{\fboxsep}{0pt}\colorbox[rgb]{0.06,0.08,0.06}{\strut ##1}}}}
+\@namedef{PYG@tok@gd}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@ge}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@gr}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@gi}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@gp}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@gs}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@ges}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
+\@namedef{PYG@tok@gt}{\def\PYG@tc##1{\textcolor[rgb]{1.00,1.00,1.00}{##1}}}
 
-\def\PYGfruityZbs{\char`\\}
-\def\PYGfruityZus{\char`\_}
-\def\PYGfruityZob{\char`\{}
-\def\PYGfruityZcb{\char`\}}
-\def\PYGfruityZca{\char`\^}
-\def\PYGfruityZam{\char`\&}
-\def\PYGfruityZlt{\char`\<}
-\def\PYGfruityZgt{\char`\>}
-\def\PYGfruityZsh{\char`\#}
-\def\PYGfruityZpc{\char`\%}
-\def\PYGfruityZdl{\char`\$}
-\def\PYGfruityZhy{\char`\-}
-\def\PYGfruityZsq{\char`\'}
-\def\PYGfruityZdq{\char`\"}
-\def\PYGfruityZti{\char`\~}
+\def\PYGZbs{\char`\\}
+\def\PYGZus{\char`\_}
+\def\PYGZob{\char`\{}
+\def\PYGZcb{\char`\}}
+\def\PYGZca{\char`\^}
+\def\PYGZam{\char`\&}
+\def\PYGZlt{\char`\<}
+\def\PYGZgt{\char`\>}
+\def\PYGZsh{\char`\#}
+\def\PYGZpc{\char`\%}
+\def\PYGZdl{\char`\$}
+\def\PYGZhy{\char`\-}
+\def\PYGZsq{\char`\'}
+\def\PYGZdq{\char`\"}
+\def\PYGZti{\char`\~}
 % for compatibility with earlier versions
-\def\PYGfruityZat{@}
-\def\PYGfruityZlb{[}
-\def\PYGfruityZrb{]}
+\def\PYGZat{@}
+\def\PYGZlb{[}
+\def\PYGZrb{]}
 \makeatother
 

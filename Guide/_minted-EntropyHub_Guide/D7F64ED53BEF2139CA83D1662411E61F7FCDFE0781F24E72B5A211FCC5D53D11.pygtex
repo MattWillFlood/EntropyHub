@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{k}{using}\PYG{+w}{ }\PYG{n}{Plots}
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{Plots}\PYG{o}{.}\PYG{n}{backend}\PYG{p}{()}\PYG{+w}{  }\PYG{c}{\PYGZsh{} Check that the right backend is in use!}
+
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{X}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{ExampleData}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}mandelbrot\PYGZus{}Mat\PYGZdq{}}\PYG{p}{);}
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{heatmap}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{background\PYGZus{}color}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}black\PYGZdq{}}\PYG{p}{)}
+\end{Verbatim}

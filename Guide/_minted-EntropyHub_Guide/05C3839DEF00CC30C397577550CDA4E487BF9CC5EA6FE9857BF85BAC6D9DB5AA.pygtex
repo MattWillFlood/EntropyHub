@@ -1,8 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{X}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{ExampleData}\PYG{p}{(}\PYG{l+s}{\PYGZsq{}gaussian\PYGZsq{}}\PYG{p}{);}
-
-\PYG{n}{Samp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{SampEn}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{p}{)}
-
-\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{Samp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}×\PYG{l+m+mi}{5}
-\PYG{+w}{    }\PYG{l+m+mf}{2.1789}\PYG{+w}{    }\PYG{l+m+mf}{2.1757}\PYG{+w}{    }\PYG{l+m+mf}{2.1820}\PYG{+w}{    }\PYG{l+m+mf}{2.2210}\PYG{+w}{    }\PYG{l+m+mf}{2.1756}
-\end{Verbatim}

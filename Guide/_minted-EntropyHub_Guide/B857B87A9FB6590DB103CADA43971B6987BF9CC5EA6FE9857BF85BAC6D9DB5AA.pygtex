@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{p}{[}\PYG{n}{MSx}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Ci}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{rMSEn}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Mobj}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}Scales\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}F\PYGZus{}Order\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{...}
-\PYG{+w}{   }\PYG{l+s}{\PYGZsq{}F\PYGZus{}Num\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.6}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}RadNew\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{p}{)}
-
-\PYG{+w}{ }\PYG{p}{.}\PYG{+w}{ }\PYG{p}{.}\PYG{+w}{ }\PYG{p}{.}\PYG{+w}{ }\PYG{p}{.}\PYG{+w}{ }\PYG{p}{.}\PYG{+w}{ }\PYG{p}{.}
-\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{n}{MSx}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}×\PYG{l+m+mi}{5}
-\PYG{+w}{    }\PYG{l+m+mf}{0.5280}\PYG{+w}{    }\PYG{l+m+mf}{0.5734}\PYG{+w}{    }\PYG{l+m+mf}{0.5939}\PYG{+w}{    }\PYG{l+m+mf}{0.5908}\PYG{+w}{    }\PYG{l+m+mf}{0.5563}
-\PYG{+w}{   }\PYG{n}{Ci}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mf}{2.8424}
-\end{Verbatim}

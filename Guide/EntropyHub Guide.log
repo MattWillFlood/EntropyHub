@@ -1,33 +1,33 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.26)  26 FEB 2023 20:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  29 MAR 2024 19:09
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **"./EntropyHub Guide.tex"
 (EntropyHub Guide.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-02-07>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
-Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/base\bk12.clo
-File: bk12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count185
-\c@chapter=\count186
-\c@section=\count187
-\c@subsection=\count188
-\c@subsubsection=\count189
-\c@paragraph=\count190
-\c@subparagraph=\count191
-\c@figure=\count192
-\c@table=\count193
+\c@part=\count188
+\c@chapter=\count189
+\c@section=\count190
+\c@subsection=\count191
+\c@subsubsection=\count192
+\c@paragraph=\count193
+\c@subparagraph=\count194
+\c@figure=\count195
+\c@table=\count196
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\courier.sty
 Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
@@ -35,15 +35,15 @@ Package: courier 2020/03/25 PSNFSS-v9.3 (WaS)
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
 \wrapoverhang=\dimen141
 \WF@size=\dimen142
-\c@WF@wrappedlines=\count194
+\c@WF@wrappedlines=\count197
 \WF@box=\box51
-\WF@everypar=\toks18
+\WF@everypar=\toks19
 Package: wrapfig 2003/01/31  v 3.6
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
-Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks19
-\verbatim@line=\toks20
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks20
+\verbatim@line=\toks21
 \verbatim@in@stream=\read2
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/quotchap\quotchap.sty
@@ -69,7 +69,7 @@ Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks21
+\KV@toks@=\toks22
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
@@ -87,27 +87,27 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@width=\dimen144
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
-Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
 \ESO@tempdima=\dimen145
 \ESO@tempdimb=\dimen146
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
-Package: titlesec 2021/07/05 v2.14 Sectioning titles
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \ttl@box=\box53
 \beforetitleunit=\skip50
 \aftertitleunit=\skip51
 \ttl@plus=\dimen147
 \ttl@minus=\dimen148
-\ttl@toksa=\toks22
+\ttl@toksa=\toks23
 \titlewidth=\dimen149
 \titlewidthlast=\dimen150
 \titlewidthfirst=\dimen151
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen152
 \captionmargin=\dimen153
 \caption@leftmargin=\dimen154
@@ -118,15 +118,15 @@ Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
 \caption@hangindent=\dimen159
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count195
-\c@continuedfloat=\count196
+\c@caption@flags=\count198
+\c@continuedfloat=\count199
 Package caption Info: wrapfig package is loaded.
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tools\indentfirst.sty
-Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
-Package: ragged2e 2023/02/22 v3.3 ragged2e Package
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \CenteringLeftskip=\skip52
 \RaggedLeftLeftskip=\skip53
 \RaggedRightLeftskip=\skip54
@@ -143,13 +143,24 @@ Package: ragged2e 2023/02/22 v3.3 ragged2e Package
 \JustifyingParindent=\skip65
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
 
-(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
 .sty
@@ -163,29 +174,15 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)
-(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
-ty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
-.sty
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
-Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
@@ -197,41 +194,45 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count197
+\c@section@level=\count266
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count267
 )
 \@linkdim=\dimen160
-\Hy@linkcounter=\count198
-\Hy@pagecounter=\count199
- (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
+\Hy@linkcounter=\count268
+\Hy@pagecounter=\count269
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-\Hy@SavedSpaceFactor=\count266
- (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count270
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4177.
-Package hyperref Info: Link nesting OFF on input line 4182.
-Package hyperref Info: Hyper index ON on input line 4185.
-Package hyperref Info: Plain pages OFF on input line 4192.
-Package hyperref Info: Backreferencing OFF on input line 4197.
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4425.
-\c@Hy@tempcnt=\count267
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count271
 
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4763.
+LaTeX Info: Redefining \url on input line 4784.
 \XeTeXLinkMargin=\dimen161
 
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
@@ -242,36 +243,36 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count268
+\Fld@menulength=\count272
 \Field@Width=\dimen162
 \Fld@charsize=\dimen163
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode OFF on input line 6072.
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
 
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count269
-\c@Item=\count270
-\c@Hfootnote=\count271
+\Hy@abspage=\count273
+\c@Item=\count274
+\c@Hfootnote=\count275
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
 
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count272
-\c@bookmark@seq@number=\count273
+\Fld@listcount=\count276
+\c@bookmark@seq@number=\count277
 
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -286,27 +287,4465 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip66
 )
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tabu\tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 
-! LaTeX Error: File `tabu.sty' not found.
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen164
+\ar@mcellbox=\box54
+\extrarowheight=\dimen165
+\NC@list=\toks24
+\extratabsurround=\skip67
+\backup@length=\skip68
+\ar@cellbox=\box55
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box56
+\sift@deathcycles=\count278
+\@vwid@loff=\dimen166
+\@vwid@roff=\dimen167
+)
+\c@taburow=\count279
+\tabu@nbcols=\count280
+\tabu@cnt=\count281
+\tabu@Xcol=\count282
+\tabu@alloc=\count283
+\tabu@nested=\count284
+\tabu@target=\dimen168
+\tabu@spreadtarget=\dimen169
+\tabu@naturalX=\dimen170
+\tabucolX=\dimen171
+\tabu@Xsum=\dimen172
+\extrarowdepth=\dimen173
+\abovetabulinesep=\dimen174
+\belowtabulinesep=\dimen175
+\tabustrutrule=\dimen176
+\tabu@thebody=\toks25
+\tabu@footnotes=\toks26
+\tabu@box=\box57
+\tabu@arstrutbox=\box58
+\tabu@hleads=\box59
+\tabu@vleads=\box60
+\tabu@cellskip=\skip69
+) (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks27
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 
-Enter file name: 
-! Emergency stop.
-<read *> 
-         
-l.15 \usepackage
-                {amssymb}^^M
-*** (cannot \read from terminal in nonstop modes)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+LaTeX Info: Redefining \color on input line 758.
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+) (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2024/02/20 v1.0g Color table columns (DPC)
+\everycr=\toks28
+\minrowclearance=\skip70
+\rownum=\count285
+) (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip71
 
- 
+For additional information on amsmath, use the `?' option.
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks29
+\ex@=\dimen177
+))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen178
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count286
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count287
+\leftroot@=\count288
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count289
+\DOTSCASE@=\count290
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box61
+\strutbox@=\box62
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen179
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count291
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count292
+\dotsspace@=\muskip17
+\c@parentequation=\count293
+\dspbrk@lvl=\count294
+\tag@help=\toks30
+\row@=\count295
+\column@=\count296
+\maxfields@=\count297
+\andhelp@=\toks31
+\eqnshift@=\dimen180
+\alignsep@=\dimen181
+\tagshift@=\dimen182
+\tagwidth@=\dimen183
+\totwidth@=\dimen184
+\lineht@=\dimen185
+\@envbody=\toks32
+\multlinegap=\skip72
+\multlinetaggap=\skip73
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen186
+\pgfutil@tempdimb=\dimen187
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box63
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks37
+))
+\pgf@x=\dimen188
+\pgf@y=\dimen189
+\pgf@xa=\dimen190
+\pgf@ya=\dimen191
+\pgf@xb=\dimen192
+\pgf@yb=\dimen193
+\pgf@xc=\dimen194
+\pgf@yc=\dimen195
+\pgf@xd=\dimen196
+\pgf@yd=\dimen197
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count298
+\c@pgf@countb=\count299
+\c@pgf@countc=\count300
+\c@pgf@countd=\count301
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
+\pgf@sys@id@count=\count302
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count303
+\pgfsyssoftpath@bigbuffer@items=\count304
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen198
+\pgfmath@count=\count305
+\pgfmath@box=\box64
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count306
+))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen199
+\pgf@picmaxx=\dimen256
+\pgf@picminy=\dimen257
+\pgf@picmaxy=\dimen258
+\pgf@pathminx=\dimen259
+\pgf@pathmaxx=\dimen260
+\pgf@pathminy=\dimen261
+\pgf@pathmaxy=\dimen262
+\pgf@xx=\dimen263
+\pgf@xy=\dimen264
+\pgf@yx=\dimen265
+\pgf@yy=\dimen266
+\pgf@zx=\dimen267
+\pgf@zy=\dimen268
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen269
+\pgf@path@lasty=\dimen270
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen271
+\pgf@shorten@start@additional=\dimen272
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box65
+\pgf@hbox=\box66
+\pgf@layerbox@main=\box67
+\pgf@picture@serial@count=\count307
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen273
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen274
+\pgf@pt@y=\dimen275
+\pgf@pt@temp=\dimen276
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen277
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen278
+\pgf@sys@shading@range@num=\count308
+\pgf@shadingcount=\count309
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box68
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box69
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen279
+\pgf@nodesepend=\dimen280
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen281
+\pgffor@skip=\dimen282
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
+))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count310
+\pgfplotmarksize=\dimen283
+)
+\tikz@lastx=\dimen284
+\tikz@lasty=\dimen285
+\tikz@lastxsaved=\dimen286
+\tikz@lastysaved=\dimen287
+\tikz@lastmovetox=\dimen288
+\tikz@lastmovetoy=\dimen289
+\tikzleveldistance=\dimen290
+\tikzsiblingdistance=\dimen291
+\tikz@figbox=\box70
+\tikz@figbox@bg=\box71
+\tikz@tempbox=\box72
+\tikz@tempbox@bg=\box73
+\tikztreelevel=\count311
+\tikznumberofchildren=\count312
+\tikznumberofcurrentchild=\count313
+\tikz@fig@count=\count314
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count315
+\pgfmatrixcurrentcolumn=\count316
+\pgf@matrix@numberofcolumns=\count317
+)
+\tikz@expandcount=\count318
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip74
+\enit@outerparindent=\dimen292
+\enit@toks=\toks46
+\enit@inbox=\box74
+\enit@count@id=\count319
+\enitdp@description=\count320
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul.sty
+Package: soul 2023-06-14 v3.1 Permit use of UTF-8 characters in soul (HO)
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/soul\soul-ori.sty
+Package: soul-ori 2023-06-14 v3.1 letterspacing/underlining (mf)
+\SOUL@word=\toks47
+\SOUL@lasttoken=\toks48
+\SOUL@syllable=\toks49
+\SOUL@cmds=\toks50
+\SOUL@buffer=\toks51
+\SOUL@token=\toks52
+\SOUL@syllgoal=\dimen293
+\SOUL@syllwidth=\dimen294
+\SOUL@charkern=\dimen295
+\SOUL@hyphkern=\dimen296
+\SOUL@dimen=\dimen297
+\SOUL@dimeni=\dimen298
+\SOUL@minus=\count321
+\SOUL@comma=\count322
+\SOUL@apo=\count323
+\SOUL@grave=\count324
+\SOUL@spaceskip=\skip75
+\SOUL@ttwidth=\dimen299
+\SOUL@uldp=\dimen300
+\SOUL@ulht=\dimen301
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
+ty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box75
+\tcb@upperbox=\box76
+\tcb@lowerbox=\box77
+\tcb@phantombox=\box78
+\c@tcbbreakpart=\count325
+\c@tcblayer=\count326
+\c@tcolorbox@number=\count327
+\l__tcobox_tmpa_box=\box79
+\l__tcobox_tmpa_dim=\dimen302
+\tcb@temp=\box80
+\tcb@temp=\box81
+\tcb@temp=\box82
+\tcb@temp=\box83
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.cod
+e.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.2.0'
+\c@tcbrastercolumn=\count328
+\c@tcbrasterrow=\count329
+\c@tcbrasternum=\count330
+\c@tcbraster=\count331
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code
+.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.2.0'
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill.image
+.sty
+Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill-commo
+n.sty
+Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfil
+l.image.code.tex
+File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
+\l__tikzfill_img_box=\box84
+))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsa
+w.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.2.0'
+))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.
+code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.2.0'
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+)
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box85
+\tcb@totalupperbox=\box86
+\tcb@totallowerbox=\box87
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbhooks.code
+.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.2.0'
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.c
+ode.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.2.0'
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.co
+de.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.2.0'
+\tcbfitdim=\dimen303
+\tcb@lowerfitdim=\dimen304
+\tcb@upperfitdim=\dimen305
+\tcb@cur@hbadness=\count332
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsut
+f8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.2.0'
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.c
+ode.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.2.0'
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count333
+\lst@gtempboxa=\box88
+\lst@token=\toks53
+\lst@length=\count334
+\lst@currlwidth=\dimen306
+\lst@column=\count335
+\lst@pos=\count336
+\lst@lostspace=\dimen307
+\lst@width=\dimen308
+\lst@newlines=\count337
+\lst@lineno=\count338
+\lst@maxwidth=\dimen309
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2024/03/11 1.10a (Carsten Heinz)
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/03/11 1.10a (Carsten Heinz)
+\c@lstnumber=\count339
+\lst@skipnumbers=\count340
+\lst@framebox=\box89
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2024/03/11 1.10a listings configuration
+))
+Package: listings 2024/03/11 1.10a (Carsten Heinz)
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsco
+re.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.2.0'
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbprocessing
+.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.2.0'
+)
+\c@tcblisting=\count341
+))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/listingsutf8\listingsut
+f8.sty
+Package: listingsutf8 2019-12-10 v1.5 Allow UTF-8 in listings input (HO)
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbexternal.c
+ode.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.2.0'
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbmagazine.c
+ode.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.2.0'
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbvignette.c
+ode.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.2.0'
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryfadings.code.tex
+File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbposter.cod
+e.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.2.0'
+)) (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tabto-ltx\tabto.sty
+Package: tabto 2018/12/28  v 1.4  Another tabbing mechanism
+\CurrentLineWidth=\dimen310
+\TabPrevPos=\dimen311
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tocbibind\tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2024/02/07 v24.2 The Babel package
+\babel@savecnt=\count342
+\U@D=\dimen312
+\l@unhyphenated=\language79
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read4
+\bbl@dirlevel=\count343
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.l
+df
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language73). Reported on input line 108.
+))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel
+-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip76
+\cftbeforetoctitleskip=\skip77
+\cftaftertoctitleskip=\skip78
+\cftbeforepartskip=\skip79
+\cftpartnumwidth=\skip80
+\cftpartindent=\skip81
+\cftbeforechapskip=\skip82
+\cftchapindent=\skip83
+\cftchapnumwidth=\skip84
+\cftbeforesecskip=\skip85
+\cftsecindent=\skip86
+\cftsecnumwidth=\skip87
+\cftbeforesubsecskip=\skip88
+\cftsubsecindent=\skip89
+\cftsubsecnumwidth=\skip90
+\cftbeforesubsubsecskip=\skip91
+\cftsubsubsecindent=\skip92
+\cftsubsubsecnumwidth=\skip93
+\cftbeforeparaskip=\skip94
+\cftparaindent=\skip95
+\cftparanumwidth=\skip96
+\cftbeforesubparaskip=\skip97
+\cftsubparaindent=\skip98
+\cftsubparanumwidth=\skip99
+\cftbeforeloftitleskip=\skip100
+\cftafterloftitleskip=\skip101
+\cftbeforefigskip=\skip102
+\cftfigindent=\skip103
+\cftfignumwidth=\skip104
+\c@lofdepth=\count344
+\c@lotdepth=\count345
+\cftbeforelottitleskip=\skip105
+\cftafterlottitleskip=\skip106
+\cftbeforetabskip=\skip107
+\cfttabindent=\skip108
+\cfttabnumwidth=\skip109
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/minted\minted.sty
+Package: minted 2023/12/18 v2.9 Yet another Pygments shim for LaTeX
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/fvextra\fvextra.sty
+Package: fvextra 2023/11/28 v1.6.1 fvextra - extensions and patches for fancyvr
+b
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count346
+\FV@InFile=\read5
+\FV@TabBox=\box90
+\c@FancyVerbLine=\count347
+\FV@StepNumber=\count348
+\FV@OutFile=\write4
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/upquote\upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/lineno\lineno.sty
+Package: lineno 2023/05/20 line numbers on paragraphs v5.3
+\linenopenalty=\count349
+\output=\toks54
+\linenoprevgraf=\count350
+\linenumbersep=\dimen313
+\linenumberwidth=\dimen314
+\c@linenumber=\count351
+\c@pagewiselinenumber=\count352
+\c@LN@truepage=\count353
+\c@internallinenumber=\count354
+\c@internallinenumbers=\count355
+\quotelinenumbersep=\dimen315
+\bframerule=\dimen316
+\bframesep=\dimen317
+\bframebox=\box91
+\linenoamsmath@ams@eqpen=\count356
+LaTeX Info: Redefining \\ on input line 3180.
+)
+\c@FancyVerbWriteLine=\count357
+\c@FancyVerbBufferIndex=\count358
+\c@FancyVerbBufferLength=\count359
+\c@FancyVerbBufferLine=\count360
+\c@FV@oldbufferlength=\count361
+\c@FV@TrueTabGroupLevel=\count362
+\c@FV@TrueTabCounter=\count363
+\FV@TabBox@Group=\box92
+\FV@TmpLength=\skip110
+\c@FV@HighlightLinesStart=\count364
+\c@FV@HighlightLinesStop=\count365
+\FV@LoopCount=\count366
+\FV@NCharsBox=\box93
+\FV@BreakIndent=\dimen318
+\FV@BreakIndentNChars=\count367
+\FV@BreakSymbolSepLeft=\dimen319
+\FV@BreakSymbolSepLeftNChars=\count368
+\FV@BreakSymbolSepRight=\dimen320
+\FV@BreakSymbolSepRightNChars=\count369
+\FV@BreakSymbolIndentLeft=\dimen321
+\FV@BreakSymbolIndentLeftNChars=\count370
+\FV@BreakSymbolIndentRight=\dimen322
+\FV@BreakSymbolIndentRightNChars=\count371
+\c@FancyVerbLineBreakLast=\count372
+\FV@LineBox=\box94
+\FV@LineIndentBox=\box95
+\c@FV@BreakBufferDepth=\count373
+\FV@LineWidth=\dimen323
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/ifplatform\ifplatform.s
+ty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/catchfile\catchfile.s
+ty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+))
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
+\xs_counta=\count374
+\xs_countb=\count375
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+) (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip111
+\fb@frw=\dimen324
+\fb@frh=\dimen325
+\FrameRule=\dimen326
+\FrameSep=\dimen327
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count376
+\float@exts=\toks55
+\float@box=\box96
+\@float@everytoks=\toks56
+\@floatcapt=\box97
+)
+\minted@appexistsfile=\read6
+\minted@bgbox=\box98
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count377
+\c@minted@pygmentizecounter=\count378
+\@float@every@listing=\toks57
+\c@listing=\count379
+)
+runsystem(if not exist _minted-EntropyHub_Guide mkdir _minted-EntropyHub_Guide)
+...executed.
+
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count380
+\Gm@cntv=\count381
+\c@Gm@tempcnt=\count382
+\Gm@bindingoffset=\dimen328
+\Gm@wd@mp=\dimen329
+\Gm@odd@mp=\dimen330
+\Gm@even@mp=\dimen331
+\Gm@layoutwidth=\dimen332
+\Gm@layoutheight=\dimen333
+\Gm@layouthoffset=\dimen334
+\Gm@layoutvoffset=\dimen335
+\Gm@dimlist=\toks58
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+Package hyperref Info: Option `colorlinks' set `true' on input line 39.
+(Kramer.fd
+File: Kramer.fd 2003/04/02 Font definition file for U/Kramer
+)
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > En
+tropyHub_Guide.aex <nul: /p x=^%~$PATH:i>> EntropyHub_Guide.aex)...executed.
+
+runsystem(del EntropyHub_Guide.aex)...executed.
+
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count383
+\l__pdf_internal_box=\box99
+) (EntropyHub Guide.aux
+
+LaTeX Warning: Label `BiBox' multiply defined.
+
+
+LaTeX Warning: Label `BiBox' multiply defined.
+
+)
+\openout1 = `"EntropyHub Guide.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count384
+\scratchdimen=\dimen336
+\scratchbox=\box100
+\nofMPsegments=\count385
+\nofMParguments=\count386
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count387
+\MPscratchDim=\dimen337
+\MPnumerator=\count388
+\makeMPintoPDFobject=\count389
+\everyMPtoPDFconversion=\toks60
+)
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring ON on input line 57.
+ (EntropyHub Guide.out) (EntropyHub Guide.out)
+\@outlinefile=\write6
+\openout6 = `"EntropyHub Guide.out"'.
+
+\c@lstlisting=\count390
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=731.23584pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-47.36449pt
+* \headheight=12.0pt
+* \headsep=20.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(TitlePage.tex
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <60> not available
+(Font)              size <24.88> substituted on input line 6.
+
+
+Overfull \hbox (1.71588pt too wide) in paragraph at lines 4--7
+\U/Kramer/xl/n/60 ENTROPYHUB 
+ []
+
+<../Graphics/EntropyHub_profiler.png, id=422, 681.747pt x 692.5875pt>
+File: ../Graphics/EntropyHub_profiler.png Graphic file (type png)
+<use ../Graphics/EntropyHub_profiler.png>
+Package pdftex.def Info: ../Graphics/EntropyHub_profiler.png  used on input lin
+e 14.
+(pdftex.def)             Requested size: 113.81102pt x 115.61414pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--24
+
+ []
+
+[1
+
+
+
+{C:/Users/mattw/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <../Graphics/
+EntropyHub_profiler.png>]) (BookFace.tex
+<../Graphics/EntropyHubLogo3.png, id=433, 228.855pt x 314.3745pt>
+File: ../Graphics/EntropyHubLogo3.png Graphic file (type png)
+<use ../Graphics/EntropyHubLogo3.png>
+Package pdftex.def Info: ../Graphics/EntropyHubLogo3.png  used on input line 9.
+
+(pdftex.def)             Requested size: 171.64082pt x 235.78029pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 65.
+
+ (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 65.
+
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+[2 <../Graphics/EntropyHubLogo3.png>]
+LaTeX Font Info:    Trying to load font information for OT1+pbk on input line 7
+5.
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pbk.fd
+File: ot1pbk.fd 2001/06/04 font definitions for OT1/pbk.
+)
+LaTeX Font Info:    Font shape `OT1/pbk/b/n' in size <24.88> not available
+(Font)              Font shape `OT1/pbk/db/n' tried instead on input line 75.
+LaTeX Font Info:    Font shape `OT1/pbk/b/n' in size <100> not available
+(Font)              Font shape `OT1/pbk/db/n' tried instead on input line 75.
+
+
+Package xcolor Warning: Incompatible color definition on input line 75.
+
+<../Graphics/Preface2.png, id=450, 1606.0pt x 1676.2625pt>
+File: ../Graphics/Preface2.png Graphic file (type png)
+<use ../Graphics/Preface2.png>
+Package pdftex.def Info: ../Graphics/Preface2.png  used on input line 85.
+(pdftex.def)             Requested size: 281.05421pt x 293.35033pt.
+<../Graphics/Preface1.png, id=451, 3011.25pt x 2007.5pt>
+File: ../Graphics/Preface1.png Graphic file (type png)
+<use ../Graphics/Preface1.png>
+Package pdftex.def Info: ../Graphics/Preface1.png  used on input line 86.
+(pdftex.def)             Requested size: 451.66801pt x 301.11201pt.
+<../Graphics/Chapter Banner2.png, id=452, 1505.625pt x 752.8125pt>
+File: ../Graphics/Chapter Banner2.png Graphic file (type png)
+<use ../Graphics/Chapter Banner2.png>
+Package pdftex.def Info: ../Graphics/Chapter Banner2.png  used on input line 93
+.
+(pdftex.def)             Requested size: 455.25195pt x 85.34825pt.
+[3
+
+ <../Graphics/Chapter Banner2.png>] [4 <../Graphics/Preface2.png> <../Graphics/
+Preface1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+[5]
+
+Package xcolor Warning: Incompatible color definition on input line 126.
+
+(EntropyHub Guide.toc [6
+
+]
+Overfull \hbox (36.61636pt too wide) in paragraph at lines 71--71
+ [][] [][][]\OT1/cmr/m/n/12 Example 9:   Hi-er-ar-chi-cal Mul-ti-scale \OT1/cmr
+/m/it/12 cor-rected \OT1/cmr/m/n/12 Cross-[Conditional] 
+ []
+
+
+Overfull \hbox (36.61636pt too wide) in paragraph at lines 82--82
+ [][] [][][]\OT1/cmr/m/n/12 Example 9:   Hi-er-ar-chi-cal Mul-ti-scale \OT1/cmr
+/m/it/12 cor-rected \OT1/cmr/m/n/12 Cross-[Conditional] 
+ []
+
+[7]
+Overfull \hbox (36.61636pt too wide) in paragraph at lines 93--93
+ [][] [][][]\OT1/cmr/m/n/12 Example 9:   Hi-er-ar-chi-cal Mul-ti-scale \OT1/cmr
+/m/it/12 cor-rected \OT1/cmr/m/n/12 Cross-[Conditional] 
+ []
+
+)
+\tf@toc=\write7
+\openout7 = `"EntropyHub Guide.toc"'.
+
+ [8]
+Chapter 1.
+
+Package xcolor Warning: Incompatible color definition on input line 135.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
+
+ []
+
+File: ../Graphics/Chapter Banner2.png Graphic file (type png)
+<use ../Graphics/Chapter Banner2.png>
+Package pdftex.def Info: ../Graphics/Chapter Banner2.png  used on input line 15
+6.
+(pdftex.def)             Requested size: 455.25195pt x 85.34825pt.
+[1
+
+
+{C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+56.
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <12> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 179.
+
+Overfull \hbox (13.0835pt too wide) in paragraph at lines 181--182
+[] \OT1/pcr/m/n/12 help(\OT1/pcr/m/sl/12 EntropyHub.function-name\OT1/pcr/m/n/1
+2 )   \OT1/cmr/m/n/12 e.g. \OT1/pcr/m/n/12 help EntropyHub.PermEn 
+ []
+
+[2]
+Overfull \hbox (2.48242pt too wide) in paragraph at lines 198--198
+[]|[]\OT1/cmr/m/it/12 Function[]| 
+ []
+
+
+Overfull \hbox (0.56488pt too wide) in paragraph at lines 202--202
+[]|\OT1/cmr/m/n/12 SampEn| 
+ []
+
+
+Overfull \hbox (1.18697pt too wide) in paragraph at lines 212--213
+[]|\OT1/cmr/m/n/12 SampEn2D| 
+ []
+
+
+Overfull \hbox (2.48242pt too wide) in paragraph at lines 222--222
+[]|[]\OT1/cmr/m/it/12 Function[]| 
+ []
+
+
+Underfull \hbox (badness 4647) in paragraph at lines 224--224
+[]|\OT1/cmr/m/n/12 Composite Mul-ti-scale En-tropy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 224--224
+[]|\OT1/cmr/m/n/12 Composite Mul-ti-scale Cross-
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 224--224
+\OT1/cmr/m/n/12 Entropy (+ Refined-Composite
+ []
+
+
+Underfull \hbox (badness 7888) in paragraph at lines 226--226
+[]|\OT1/cmr/m/n/12 Hierarchical Mul-ti-scale Cross-
+ []
+
+
+Overfull \hbox (35.77353pt too wide) in paragraph at lines 195--230
+[][] 
+ []
+
+[3]
+Overfull \hbox (13.76445pt too wide) in paragraph at lines 252--256
+\OT1/cmr/m/n/12 Several new fuzzy mem-ber-ship func-tions have been added to \O
+T1/pcr/b/n/12 FuzzEn \OT1/cmr/m/n/12 ([][]3.1.3[][]), \OT1/pcr/b/n/12 XFuzzEn
+ []
+
+[4]
+Overfull \hbox (2.4843pt too wide) in paragraph at lines 302--303
+[]\OT1/cmr/m/n/12 The de-fault ra-dius thresh-old dis-tance for \OT1/pcr/b/n/12
+ XApEn\OT1/cmr/m/n/12 ([][]3.2.1[][]), \OT1/pcr/b/n/12 XSampEn \OT1/cmr/m/n/12 
+([][]3.2.2[][]) and \OT1/pcr/b/n/12 XK2En
+ []
+
+
+Overfull \hbox (11.47607pt too wide) in paragraph at lines 302--303
+\OT1/cmr/m/n/12 ([][]3.2.4[][]) has been changed to use the pooled stan-dard de
+-vi-a-tion [i.e. $0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 2 \OMS/cmsy/m/n/12 ^^C \OM
+L/cmm/m/it/12 SD[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X; Y\OT1/cmr/m/n/12 )$]. 
+ []
+
+[5]
+Overfull \hbox (7.65274pt too wide) in paragraph at lines 333--334
+[]|[][]\OT1/cmr/m/n/12 www.mathworks.com/matlabcentral/fileexchange/94185-
+ []
+
+
+Overfull \hbox (25.19995pt too wide) in paragraph at lines 314--352
+[][] 
+ []
+
+[6]
+Chapter 2.
+
+Package xcolor Warning: Incompatible color definition on input line 367.
+
+<../Graphics/matscreen1.png, id=693, 959.83594pt x 673.76718pt>
+File: ../Graphics/matscreen1.png Graphic file (type png)
+<use ../Graphics/matscreen1.png>
+Package pdftex.def Info: ../Graphics/matscreen1.png  used on input line 396.
+(pdftex.def)             Requested size: 431.92218pt x 303.19243pt.
+
+Overfull \hbox (6.05276pt too wide) in paragraph at lines 396--398
+ [][] 
+ []
+
+File: ../Graphics/Chapter Banner2.png Graphic file (type png)
+<use ../Graphics/Chapter Banner2.png>
+Package pdftex.def Info: ../Graphics/Chapter Banner2.png  used on input line 39
+9.
+(pdftex.def)             Requested size: 455.25195pt x 85.34825pt.
+[7
+
+]
+<../Graphics/matscreen2.png, id=699, 962.84718pt x 441.14813pt>
+File: ../Graphics/matscreen2.png Graphic file (type png)
+<use ../Graphics/matscreen2.png>
+Package pdftex.def Info: ../Graphics/matscreen2.png  used on input line 402.
+(pdftex.def)             Requested size: 433.27722pt x 198.51482pt.
+
+Overfull \hbox (7.4078pt too wide) in paragraph at lines 402--402
+ [][] 
+ []
+
+<../Graphics/matscreen3.png, id=700, 959.83594pt x 262.73157pt>
+File: ../Graphics/matscreen3.png Graphic file (type png)
+<use ../Graphics/matscreen3.png>
+Package pdftex.def Info: ../Graphics/matscreen3.png  used on input line 407.
+(pdftex.def)             Requested size: 431.92218pt x 118.2281pt.
+
+Overfull \hbox (6.05276pt too wide) in paragraph at lines 407--407
+ [][] 
+ []
+
+<../Graphics/matscreen4.png, id=701, 965.10562pt x 782.925pt>
+File: ../Graphics/matscreen4.png Graphic file (type png)
+<use ../Graphics/matscreen4.png>
+Package pdftex.def Info: ../Graphics/matscreen4.png  used on input line 414.
+(pdftex.def)             Requested size: 337.79202pt x 274.02785pt.
+<../Graphics/matscreen5.png, id=702, 965.10562pt x 782.925pt>
+File: ../Graphics/matscreen5.png Graphic file (type png)
+<use ../Graphics/matscreen5.png>
+Package pdftex.def Info: ../Graphics/matscreen5.png  used on input line 421.
+(pdftex.def)             Requested size: 337.79202pt x 274.02785pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--424
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--424
+
+ []
+
+[8 <../Graphics/matscreen1.png> <../Graphics/matscreen2.png> <../Graphics/matsc
+reen3.png>]
+<../Graphics/matfileexchange.png, id=710, 971.12813pt x 698.61pt>
+File: ../Graphics/matfileexchange.png Graphic file (type png)
+<use ../Graphics/matfileexchange.png>
+Package pdftex.def Info: ../Graphics/matfileexchange.png  used on input line 43
+3.
+(pdftex.def)             Requested size: 339.89993pt x 244.51715pt.
+ [9 <../Graphics/matscreen4.png> <../Graphics/matscreen5.png>]
+<../Graphics/MATLAB_README1.png, id=716, 637.63219pt x 623.32875pt>
+File: ../Graphics/MATLAB_README1.png Graphic file (type png)
+<use ../Graphics/MATLAB_README1.png>
+Package pdftex.def Info: ../Graphics/MATLAB_README1.png  used on input line 440
+.
+(pdftex.def)             Requested size: 382.58226pt x 374.00014pt.
+<../Graphics/MATLAB_README2.png, id=717, 450.9347pt x 237.13594pt>
+File: ../Graphics/MATLAB_README2.png Graphic file (type png)
+<use ../Graphics/MATLAB_README2.png>
+Package pdftex.def Info: ../Graphics/MATLAB_README2.png  used on input line 445
+.
+(pdftex.def)             Requested size: 315.65213pt x 165.994pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--448
+
+ []
+
+[10 <../Graphics/matfileexchange.png> <../Graphics/MATLAB_README1.png>]
+<../Graphics/MATLAB_README4.png, id=725, 703.12688pt x 591.71063pt>
+File: ../Graphics/MATLAB_README4.png Graphic file (type png)
+<use ../Graphics/MATLAB_README4.png>
+Package pdftex.def Info: ../Graphics/MATLAB_README4.png  used on input line 455
+.
+(pdftex.def)             Requested size: 421.87938pt x 355.02911pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 452--458
+
+ []
+
+<../Graphics/matscreen8.png, id=726, 818.30719pt x 621.07031pt>
+File: ../Graphics/matscreen8.png Graphic file (type png)
+<use ../Graphics/matscreen8.png>
+Package pdftex.def Info: ../Graphics/matscreen8.png  used on input line 461.
+(pdftex.def)             Requested size: 409.15259pt x 310.5344pt.
+<../Graphics/matscreen9.png, id=727, 831.105pt x 575.14874pt>
+File: ../Graphics/matscreen9.png Graphic file (type png)
+<use ../Graphics/matscreen9.png>
+Package pdftex.def Info: ../Graphics/matscreen9.png  used on input line 462.
+(pdftex.def)             Requested size: 415.55148pt x 287.57367pt.
+[11 <../Graphics/MATLAB_README2.png> <../Graphics/MATLAB_README4.png>]
+File: ../Graphics/MATLAB_README1.png Graphic file (type png)
+<use ../Graphics/MATLAB_README1.png>
+Package pdftex.def Info: ../Graphics/MATLAB_README1.png  used on input line 468
+.
+(pdftex.def)             Requested size: 382.58226pt x 374.00014pt.
+File: ../Graphics/MATLAB_README2.png Graphic file (type png)
+<use ../Graphics/MATLAB_README2.png>
+Package pdftex.def Info: ../Graphics/MATLAB_README2.png  used on input line 469
+.
+(pdftex.def)             Requested size: 315.65213pt x 165.994pt.
+ [12 <../Graphics/matscreen8.png> <../Graphics/matscreen9.png>] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 488--490
+
+ []
+
+\openout4 = `EntropyHub_Guide.pyg'.
+
+(_minted-EntropyHub_Guide/fruity.pygstyle)
+(_minted-EntropyHub_Guide/78078FC2806959B45E460015C37E6E7591587445369D7B38562AC
+845EDF8222A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/3BEF9E19533E89EFF7B0D7F7CF08A8BC91587445369D7B38562AC
+845EDF8222A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/C27920E85AAD6B92C20B5C20ACAC834591587445369D7B38562AC
+845EDF8222A.pygtex)
+<../Graphics/pyscreen1.png, id=746, 819.8128pt x 569.87906pt>
+File: ../Graphics/pyscreen1.png Graphic file (type png)
+<use ../Graphics/pyscreen1.png>
+Package pdftex.def Info: ../Graphics/pyscreen1.png  used on input line 515.
+(pdftex.def)             Requested size: 409.9054pt x 284.93883pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--518
+
+ []
+
+[14]
+<../Graphics/pyscreen2.png, id=753, 819.06pt x 571.38469pt>
+File: ../Graphics/pyscreen2.png Graphic file (type png)
+<use ../Graphics/pyscreen2.png>
+Package pdftex.def Info: ../Graphics/pyscreen2.png  used on input line 522.
+(pdftex.def)             Requested size: 409.52899pt x 285.69164pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--525
+
+ []
+
+\openout4 = `EntropyHub_Guide.pyg'.
+
+[15 <../Graphics/pyscreen1.png> <../Graphics/pyscreen2.png>]
+(_minted-EntropyHub_Guide/7543618DB7DA8281554F4E091168BC9491587445369D7B38562AC
+845EDF8222A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/E871F7AAB6BFBA49DD725B487E634E9E91587445369D7B38562AC
+845EDF8222A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/3BEF9E19533E89EFF7B0D7F7CF08A8BC91587445369D7B38562AC
+845EDF8222A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/C27920E85AAD6B92C20B5C20ACAC834591587445369D7B38562AC
+845EDF8222A.pygtex) [16]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/91CCBB4609287E7D8C6CD2EAEF5A3BDB7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/A12403A87A585A47C8298AE7D878E97C7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/738EFB91E2C6F333CA6F4F711308D9AB7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/4B71114F549E6E50BA3B12833DAEF2A17FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex) [17]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/C1BBB59C61949A878B0EE108AA17CE9A7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/738EFB91E2C6F333CA6F4F711308D9AB7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/4B71114F549E6E50BA3B12833DAEF2A17FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex) [18]
+Chapter 3.
+
+Package xcolor Warning: Incompatible color definition on input line 611.
+
+File: ../Graphics/Chapter Banner2.png Graphic file (type png)
+<use ../Graphics/Chapter Banner2.png>
+Package pdftex.def Info: ../Graphics/Chapter Banner2.png  used on input line 62
+9.
+(pdftex.def)             Requested size: 455.25195pt x 85.34825pt.
+[19
+
+]
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 650.
+
+[20]
+Overfull \hbox (31.9559pt too wide) in paragraph at lines 662--666
+\OT1/pcr/m/n/10 [Samp, A, B, Vcp[]Ka[]Kb] = SampEn(Sig, `m', 2, `tau', 1, `r', 
+0.2*std(Sig), `Logx',
+ []
+
+
+Overfull \hbox (1.9559pt too wide) in paragraph at lines 662--666
+\OT1/pcr/m/n/10 Samp, A, B, Vcp[]Ka[]Kb = SampEn(Sig, m = 2, tau = 1, r = 0.2*n
+p.std(Sig), Logx
+ []
+
+
+Overfull \hbox (43.9559pt too wide) in paragraph at lines 662--666
+\OT1/pcr/m/n/10 Samp, A, B, Vcp[]Ka[]Kb = SampEn(Sig, m = 2, tau = 1, r = 0.2*s
+td(Sig), Logx = exp(1),
+ []
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 681.
+
+
+Overfull \hbox (0.97295pt too wide) in paragraph at lines 686--687
+[]\OT1/cmr/m/n/10 Estimate of the vari-ance of con-di-tional prob-a-bil-i-ties 
+used
+ []
+
+
+Overfull \hbox (40.57527pt too wide) in paragraph at lines 690--693
+\OT1/cmr/m/n/10 com-pu-ta-tional de-mand, $[]$. 
+ []
+
+[21]
+Overfull \hbox (0.75589pt too wide) in paragraph at lines 703--707
+\OT1/pcr/m/n/10 [Fuzz, Ps1, Ps2] = FuzzEn(Sig, `m', 2, `tau', 1, `Fx', 'default
+', `r', [0.2,
+ []
+
+
+Overfull \hbox (18.75589pt too wide) in paragraph at lines 703--707
+\OT1/pcr/m/n/10 Fuzz, Ps1, Ps2 = FuzzEn(Sig, m = 2, tau = 1, Fx = "default", r 
+= (0.2, 2), Logx
+ []
+
+
+Overfull \hbox (18.75589pt too wide) in paragraph at lines 703--707
+\OT1/pcr/m/n/10 Fuzz, Ps1, Ps2 = FuzzEn(Sig, m = 2, tau = 1, Fx = "default", r 
+= (0.2, 2), Logx
+ []
+
+
+Overfull \hbox (23.28369pt too wide) in paragraph at lines 715--715
+[][]\OT1/pcr/b/n/10 "default"[]  
+ []
+
+<../Graphics/Fuzz1v1.png, id=800, 421.575pt x 316.18124pt>
+File: ../Graphics/Fuzz1v1.png Graphic file (type png)
+<use ../Graphics/Fuzz1v1.png>
+Package pdftex.def Info: ../Graphics/Fuzz1v1.png  used on input line 716.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 715--717
+
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 715--717
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 715--717
+
+ []
+
+
+Overfull \hbox (95.28369pt too wide) in paragraph at lines 718--718
+[][]\OT1/pcr/b/n/10 "sigmoid"/"modsampen"[]  
+ []
+
+<../Graphics/Fuzz2v1.png, id=801, 421.575pt x 316.18124pt>
+File: ../Graphics/Fuzz2v1.png Graphic file (type png)
+<use ../Graphics/Fuzz2v1.png>
+Package pdftex.def Info: ../Graphics/Fuzz2v1.png  used on input line 719.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--720
+
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 718--720
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 718--720
+
+ []
+
+
+Overfull \hbox (41.28369pt too wide) in paragraph at lines 721--721
+[][]\OT1/pcr/b/n/10 "triangular"[]  
+ []
+
+<../Graphics/FuzzTriv1.png, id=802, 421.575pt x 316.18124pt>
+File: ../Graphics/FuzzTriv1.png Graphic file (type png)
+<use ../Graphics/FuzzTriv1.png>
+Package pdftex.def Info: ../Graphics/FuzzTriv1.png  used on input line 723.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 721--724
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 721--724
+
+ []
+
+[22 <../Graphics/Fuzz1v1.png (PNG copy)> <../Graphics/Fuzz2v1.png (PNG copy)>]
+Overfull \hbox (53.28369pt too wide) in paragraph at lines 725--725
+[][]\OT1/pcr/b/n/10 "trapezoidal1"[]  
+ []
+
+<../Graphics/FuzzTrap1v1.png, id=811, 421.575pt x 316.18124pt>
+File: ../Graphics/FuzzTrap1v1.png Graphic file (type png)
+<use ../Graphics/FuzzTrap1v1.png>
+Package pdftex.def Info: ../Graphics/FuzzTrap1v1.png  used on input line 728.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 725--729
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--729
+
+ []
+
+
+Overfull \hbox (53.28369pt too wide) in paragraph at lines 730--730
+[][]\OT1/pcr/b/n/10 "trapezoidal2"[]  
+ []
+
+<../Graphics/FuzzTrap2v1.png, id=812, 421.575pt x 316.18124pt>
+File: ../Graphics/FuzzTrap2v1.png Graphic file (type png)
+<use ../Graphics/FuzzTrap2v1.png>
+Package pdftex.def Info: ../Graphics/FuzzTrap2v1.png  used on input line 733.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 730--734
+
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 730--734
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 730--734
+
+ []
+
+
+Overfull \hbox (26.8837pt too wide) in paragraph at lines 735--735
+[][]\OT1/pcr/b/n/10 "z[]shaped"[]  
+ []
+
+<../Graphics/FuzzZSv1.png, id=813, 421.575pt x 316.18124pt>
+File: ../Graphics/FuzzZSv1.png Graphic file (type png)
+<use ../Graphics/FuzzZSv1.png>
+Package pdftex.def Info: ../Graphics/FuzzZSv1.png  used on input line 739.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 735--740
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 735--740
+
+ []
+
+[23 <../Graphics/FuzzTriv1.png (PNG copy)> <../Graphics/FuzzTrap1v1.png (PNG co
+py)> <../Graphics/FuzzTrap2v1.png (PNG copy)>]
+Overfull \hbox (5.28369pt too wide) in paragraph at lines 741--741
+[][]\OT1/pcr/b/n/10 "bell"[]  
+ []
+
+<../Graphics/FuzzBv1.png, id=819, 421.575pt x 316.18124pt>
+File: ../Graphics/FuzzBv1.png Graphic file (type png)
+<use ../Graphics/FuzzBv1.png>
+Package pdftex.def Info: ../Graphics/FuzzBv1.png  used on input line 742.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 741--743
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--743
+
+ []
+
+
+Overfull \hbox (29.28369pt too wide) in paragraph at lines 744--744
+[][]\OT1/pcr/b/n/10 "gaussian"[]  
+ []
+
+<../Graphics/FuzzGaussv1.png, id=820, 421.575pt x 316.18124pt>
+File: ../Graphics/FuzzGaussv1.png Graphic file (type png)
+<use ../Graphics/FuzzGaussv1.png>
+Package pdftex.def Info: ../Graphics/FuzzGaussv1.png  used on input line 745.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 744--746
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 744--746
+
+ []
+
+
+Overfull \hbox (59.28369pt too wide) in paragraph at lines 747--747
+[][]\OT1/pcr/b/n/10 "constgaussian"[]  
+ []
+
+<../Graphics/FuzzCGv1.png, id=821, 421.575pt x 316.18124pt>
+File: ../Graphics/FuzzCGv1.png Graphic file (type png)
+<use ../Graphics/FuzzCGv1.png>
+Package pdftex.def Info: ../Graphics/FuzzCGv1.png  used on input line 749.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (0.8427pt too wide) in paragraph at lines 747--750
+   |[] $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) 
+= []$ 
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 747--750
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--750
+
+ []
+
+[24 <../Graphics/FuzzZSv1.png (PNG copy)> <../Graphics/FuzzBv1.png (PNG copy)> 
+<../Graphics/FuzzGaussv1.png (PNG copy)>]
+Overfull \hbox (53.28369pt too wide) in paragraph at lines 751--751
+[][]\OT1/pcr/b/n/10 "gudermannian"[]  
+ []
+
+<../Graphics/FuzzGv1.png, id=827, 421.575pt x 316.18124pt>
+File: ../Graphics/FuzzGv1.png Graphic file (type png)
+<use ../Graphics/FuzzGv1.png>
+Package pdftex.def Info: ../Graphics/FuzzGv1.png  used on input line 754.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--755
+
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 753--755
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 753--755
+
+ []
+
+
+Package enumitem Warning: Negative labelwidth. This does not make much
+(enumitem)                sense, on input line 758.
+
+LaTeX Font Info:    Font shape `OT1/pcr/b/it' in size <10> not available
+(Font)              Font shape `OT1/pcr/b/sl' tried instead on input line 759.
+
+Overfull \hbox (96.64195pt too wide) in paragraph at lines 759--759
+[][]\OT1/pcr/b/sl/10 Default[]  
+ []
+
+
+Overfull \hbox (156.78185pt too wide) in paragraph at lines 760--760
+[][]\OT1/pcr/b/sl/10 Sigmoid/ModSampEn[]  
+ []
+
+
+Overfull \hbox (126.64195pt too wide) in paragraph at lines 761--761
+[][]\OT1/pcr/b/sl/10 Trapezoidal2[]  
+ []
+
+
+Overfull \hbox (78.64195pt too wide) in paragraph at lines 762--762
+[][]\OT1/pcr/b/sl/10 Bell[]  
+ []
+
+
+Overfull \hbox (126.64195pt too wide) in paragraph at lines 763--763
+[][]\OT1/pcr/b/sl/10 Trapezoidal1[]  
+ []
+
+
+Overfull \hbox (115.18187pt too wide) in paragraph at lines 764--764
+[][]\OT1/pcr/b/sl/10 Triangular[]  
+ []
+
+
+Overfull \hbox (100.68188pt too wide) in paragraph at lines 765--765
+[][]\OT1/pcr/b/sl/10 Z[]Shaped[]  
+ []
+
+
+Overfull \hbox (102.78185pt too wide) in paragraph at lines 766--766
+[][]\OT1/pcr/b/sl/10 Gaussian[]  
+ []
+
+
+Overfull \hbox (132.78185pt too wide) in paragraph at lines 767--767
+[][]\OT1/pcr/b/sl/10 ConstGaussian[]  
+ []
+
+
+Overfull \hbox (126.78185pt too wide) in paragraph at lines 768--768
+[][]\OT1/pcr/b/sl/10 Gudermannian[]  
+ []
+
+[25 <../Graphics/FuzzCGv1.png (PNG copy)> <../Graphics/FuzzGv1.png (PNG copy)>]
+[26]
+Overfull \hbox (12.75589pt too wide) in paragraph at lines 815--819
+\OT1/pcr/m/n/10 [Perm, Pnorm, cPE] = PermEn(Sig, `m', 2, `tau', 1, `Typex', 'no
+ne', `tpx', [],
+ []
+
+
+Overfull \hbox (6.75589pt too wide) in paragraph at lines 815--819
+\OT1/pcr/m/n/10 Perm, Pnorm, cPE = PermEn(Sig, m = 2, tau = 1, Typex = `none', 
+tpx = -1, Logx
+ []
+
+
+Overfull \hbox (6.75589pt too wide) in paragraph at lines 815--819
+\OT1/pcr/m/n/10 Perm, Pnorm, cPE = PermEn(Sig, m = 2, tau = 1, Typex = "none", 
+tpx = nothing,
+ []
+
+
+Package enumitem Warning: Negative labelwidth. This does not make much
+(enumitem)                sense, on input line 827.
+
+
+Overfull \hbox (80.64189pt too wide) in paragraph at lines 828--828
+[][]\OT1/pcr/b/n/10 "finegrain"[]  
+ []
+
+
+Overfull \hbox (74.64189pt too wide) in paragraph at lines 829--829
+[][]\OT1/pcr/b/n/10 "modified"[]  
+ []
+
+
+Overfull \hbox (74.64189pt too wide) in paragraph at lines 830--830
+[][]\OT1/pcr/b/n/10 "weighted"[]  
+ []
+
+
+Overfull \hbox (74.64189pt too wide) in paragraph at lines 831--831
+[][]\OT1/pcr/b/n/10 "ampaware"[]  
+ []
+
+
+Overfull \hbox (50.64189pt too wide) in paragraph at lines 832--832
+[][]\OT1/pcr/b/n/10 "edge"[]  
+ []
+
+
+Overfull \hbox (74.64189pt too wide) in paragraph at lines 833--833
+[][]\OT1/pcr/b/n/10 "uniquant"[]  
+ []
+
+
+Overfull \hbox (56.64189pt too wide) in paragraph at lines 834--834
+[][]\OT1/pcr/b/n/10 "phase"[]  
+ []
+
+
+Package enumitem Warning: Negative labelwidth. This does not make much
+(enumitem)                sense, on input line 837.
+
+
+Overfull \hbox (68.78178pt too wide) in paragraph at lines 838--838
+[][]\OT1/pcr/b/sl/10 finegrain[]  
+ []
+
+
+Overfull \hbox (62.68181pt too wide) in paragraph at lines 839--839
+[][]\OT1/pcr/b/sl/10 ampaware[]  
+ []
+
+
+Overfull \hbox (38.68181pt too wide) in paragraph at lines 840--840
+[][]\OT1/pcr/b/sl/10 edge[]  
+ []
+
+
+Overfull \hbox (62.64189pt too wide) in paragraph at lines 841--841
+[][]\OT1/pcr/b/sl/10 uniquant[]  
+ []
+
+
+Overfull \hbox (44.68181pt too wide) in paragraph at lines 842--842
+[][]\OT1/pcr/b/sl/10 phase[]  
+ []
+
+[27]
+Overfull \hbox (24.75589pt too wide) in paragraph at lines 866--870
+\OT1/pcr/m/n/10 [Cond, SEw, SEz] = CondEn(Sig, `m', 2, `tau', 1, `c', 6, `Logx'
+, exp(1), `Norm',
+ []
+
+
+Overfull \hbox (0.75589pt too wide) in paragraph at lines 866--870
+\OT1/pcr/m/n/10 Cond, SEw, SEz = CondEn(Sig, m = 2, tau = 1, c = 6, Logx = np.e
+xp(1), Norm =
+ []
+
+
+Overfull \hbox (24.75589pt too wide) in paragraph at lines 866--870
+\OT1/pcr/m/n/10 Cond, SEw, SEz = CondEn(Sig, m = 2, tau = 1, c = 6, Logx = exp(
+1), Norm = false) 
+ []
+
+[28]
+Overfull \hbox (30.75589pt too wide) in paragraph at lines 897--901
+\OT1/pcr/m/n/10 [Dist, Ppi] = DistEn(Sig, `m', 2, `tau', 1, `Bins', `sturges', 
+`Logx', 2, `Norm',
+ []
+
+
+Overfull \hbox (24.75589pt too wide) in paragraph at lines 897--901
+\OT1/pcr/m/n/10 Dist, Ppi = DistEn(Sig, m = 2, tau = 1, Bins = `sturges', Logx 
+= 2, Norm = True) 
+ []
+
+
+Overfull \hbox (24.75589pt too wide) in paragraph at lines 897--901
+\OT1/pcr/m/n/10 Dist, Ppi = DistEn(Sig, m = 2, tau = 1, Bins = "sturges", Logx 
+= 2, Norm = true) 
+ []
+
+[29]
+Overfull \hbox (36.75589pt too wide) in paragraph at lines 931--935
+\OT1/pcr/m/n/10 [Spec, BandEn] = SpecEn(Sig, `N', 2*length(Sig)+1, `Freqs', [0,
+1], `Logx', exp(1),
+ []
+
+
+Overfull \hbox (18.75589pt too wide) in paragraph at lines 931--935
+\OT1/pcr/m/n/10 Spec, BandEn = SpecEn(Sig, N = 2*len(Sig) + 1, Freqs = (0,1), L
+ogx = np.exp(1),
+ []
+
+
+Overfull \hbox (18.75589pt too wide) in paragraph at lines 931--935
+\OT1/pcr/m/n/10 Spec, BandEn = SpecEn(Sig, N = 2*length(Sig) + 1, Freqs = (0,1)
+, Logx = exp(1),
+ []
+
+<../Graphics/Spec1.png, id=890, 361.35pt x 351.9549pt>
+File: ../Graphics/Spec1.png Graphic file (type png)
+<use ../Graphics/Spec1.png>
+Package pdftex.def Info: ../Graphics/Spec1.png  used on input line 942.
+(pdftex.def)             Requested size: 198.74312pt x 193.57579pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 955--959
+
+ []
+
+[30 <../Graphics/Spec1.png>]
+Overfull \hbox (6.75589pt too wide) in paragraph at lines 964--968
+\OT1/pcr/m/n/10 [Dispx, RDE] = DispEn(Sig, `m', 2, `tau', 1, 'c', 3, `Typex', `
+ncdf', `Logx',
+ []
+
+
+Overfull \hbox (12.75589pt too wide) in paragraph at lines 964--968
+\OT1/pcr/m/n/10 Dispx, RDE = DispEn(Sig, m = 2, tau = 1, c = 3, Typex = `ncdf',
+ Logx = exp(1),
+ []
+
+
+Overfull \hbox (12.75589pt too wide) in paragraph at lines 964--968
+\OT1/pcr/m/n/10 Dispx, RDE = DispEn(Sig, m = 2, tau = 1, c = 3, Typex = "ncdf",
+ Logx = exp(1),
+ []
+
+
+Overfull \hbox (0.64182pt too wide) in paragraph at lines 977--977
+[][]\OT1/pcr/b/n/10 "ncdf"[]  
+ []
+
+
+Overfull \hbox (12.64182pt too wide) in paragraph at lines 978--978
+[][]\OT1/pcr/b/n/10 "kmeans"[]  
+ []
+
+
+Overfull \hbox (12.64182pt too wide) in paragraph at lines 981--981
+[][]\OT1/pcr/b/n/10 "linear"[]  
+ []
+
+
+Overfull \hbox (24.64182pt too wide) in paragraph at lines 982--982
+[][]\OT1/pcr/b/n/10 "finesort"[]  
+ []
+
+
+Overfull \hbox (6.64182pt too wide) in paragraph at lines 983--983
+[][]\OT1/pcr/b/n/10 "equal"[]  
+ []
+
+<../Graphics/Disp1.png, id=902, 361.35pt x 351.9549pt>
+File: ../Graphics/Disp1.png Graphic file (type png)
+<use ../Graphics/Disp1.png>
+Package pdftex.def Info: ../Graphics/Disp1.png  used on input line 984.
+(pdftex.def)             Requested size: 271.01184pt x 263.96553pt.
+[31 <../Graphics/Disp1.png>] [32]
+Overfull \hbox (36.75589pt too wide) in paragraph at lines 1007--1011
+\OT1/pcr/m/n/10 [SyDy, Zt] = SyDyEn(Sig, 'm', 2, 'tau', 1, 'c', 3, 'Typex', 'ME
+P', 'Logx', exp(1),
+ []
+
+
+Overfull \hbox (12.75589pt too wide) in paragraph at lines 1007--1011
+\OT1/pcr/m/n/10 SyDy, Zt = SyDyEn(Sig, m = 2, tau = 1, c = 3, Typex = 'MEP', Lo
+gx = np.exp(1),
+ []
+
+
+Overfull \hbox (24.75589pt too wide) in paragraph at lines 1007--1011
+\OT1/pcr/m/n/10 SyDy, Zt = SyDyEn(Sig, m = 2, tau = 1, c = 3, Typex = "MEP", Lo
+gx = exp(1), Norm
+ []
+
+
+Overfull \hbox (12.64182pt too wide) in paragraph at lines 1021--1021
+[][]\OT1/pcr/b/n/10 "kmeans"[]  
+ []
+
+
+Overfull \hbox (12.64182pt too wide) in paragraph at lines 1024--1024
+[][]\OT1/pcr/b/n/10 "linear"[]  
+ []
+
+
+Overfull \hbox (18.64182pt too wide) in paragraph at lines 1025--1025
+[][]\OT1/pcr/b/n/10 "uniform"[]  
+ []
+
+<../Graphics/SyDy1.png, id=923, 361.35pt x 351.9549pt>
+File: ../Graphics/SyDy1.png Graphic file (type png)
+<use ../Graphics/SyDy1.png>
+Package pdftex.def Info: ../Graphics/SyDy1.png  used on input line 1026.
+(pdftex.def)             Requested size: 271.01184pt x 263.96553pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1026--1027
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1030--1033
+
+ []
+
+[33 <../Graphics/SyDy1.png>] [34] [35] [36]
+Overfull \hbox (36.75589pt too wide) in paragraph at lines 1110--1114
+\OT1/pcr/m/n/10 Phas = PhasEn(Sig, `K', 4, `tau', 1, `Logx', exp(1), 'Norm', tr
+ue, 'Plotx', false) 
+ []
+
+
+Overfull \hbox (24.75589pt too wide) in paragraph at lines 1110--1114
+\OT1/pcr/m/n/10 Phas = PhasEn(Sig, K = 4, tau = 1, Logx = np.exp(1), Norm = Tru
+e, Plotx = False) 
+ []
+
+
+Overfull \hbox (6.75589pt too wide) in paragraph at lines 1110--1114
+\OT1/pcr/m/n/10 Phas = PhasEn(Sig, K = 4, tau = 1, Logx = exp(1), Norm = true, 
+Plotx = false) 
+ []
+
+<../Graphics/Phas1.png, id=956, 696.6828pt x 703.9098pt>
+File: ../Graphics/Phas1.png Graphic file (type png)
+<use ../Graphics/Phas1.png>
+Package pdftex.def Info: ../Graphics/Phas1.png  used on input line 1127.
+(pdftex.def)             Requested size: 236.86902pt x 239.32617pt.
+[37 <../Graphics/Phas1.png>]
+Overfull \hbox (12.75589pt too wide) in paragraph at lines 1142--1146
+\OT1/pcr/m/n/10 Slop = SlopEn(Sig, `m', 2, `tau', 1, `Logx', 2, 'Lvls', [5, 45]
+, 'Norm', true) 
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1183--1184
+
+ []
+
+[39]
+Overfull \hbox (12.75589pt too wide) in paragraph at lines 1199--1203
+\OT1/pcr/m/n/10 [GDE, GDR, PIx, GIx, SIx, AIx] = GridEn(Sig, `m', 3, `tau', 1, 
+`Logx', exp(1),
+ []
+
+
+Overfull \hbox (0.75589pt too wide) in paragraph at lines 1199--1203
+\OT1/pcr/m/n/10 GDE, GDR, PIx, GIx, SIx, AIx = GridEn(Sig, m = 3, tau = 1, Logx
+ = np.exp(1),
+ []
+
+
+Overfull \hbox (18.75589pt too wide) in paragraph at lines 1199--1203
+\OT1/pcr/m/n/10 GDE, GDR, PIx, GIx, SIx, AIx = GridEn(Sig, m = 3, tau = 1, Logx
+ = exp(1), Plotx
+ []
+
+<../Graphics/Grid1.png, id=976, 392.4261pt x 200.1879pt>
+File: ../Graphics/Grid1.png Graphic file (type png)
+<use ../Graphics/Grid1.png>
+Package pdftex.def Info: ../Graphics/Grid1.png  used on input line 1211.
+(pdftex.def)             Requested size: 196.21257pt x 100.09369pt.
+<../Graphics/Grid2.png, id=977, 390.9807pt x 199.4652pt>
+File: ../Graphics/Grid2.png Graphic file (type png)
+<use ../Graphics/Grid2.png>
+Package pdftex.def Info: ../Graphics/Grid2.png  used on input line 1214.
+(pdftex.def)             Requested size: 195.48987pt x 99.73235pt.
+[40 <../Graphics/Grid1.png> <../Graphics/Grid2.png>]
+Overfull \hbox (24.75589pt too wide) in paragraph at lines 1234--1238
+\OT1/pcr/m/n/10 [EoE, AvEn, S2] = EnofEn(Sig, `tau', 10, `S', 10, `Xrange', [mi
+n(Sig) max(Sig)],
+ []
+
+
+Overfull \hbox (36.75589pt too wide) in paragraph at lines 1234--1238
+\OT1/pcr/m/n/10 EoE, AvEn, S2 = EnofEn(Sig, tau = 10, S = 10, Xrange = (np.min(
+Sig), np.max(Sig)),
+ []
+
+
+Overfull \hbox (24.75589pt too wide) in paragraph at lines 1234--1238
+\OT1/pcr/m/n/10 EoE, AvEn, S2 = EnofEn(Sig, tau = 10, S = 10, Xrange = (min(Sig
+),max(Sig)), Logx
+ []
+
+[41] [42] [43]
+Overfull \hbox (0.75589pt too wide) in paragraph at lines 1320--1324
+\OT1/pcr/m/n/10 [Rangx, A, B] = RangEn(Sig, 'm', 2, 'tau', 1, 'r', 0.2, 'Method
+x', 'SampEn',
+ []
+
+
+Overfull \hbox (6.75589pt too wide) in paragraph at lines 1320--1324
+\OT1/pcr/m/n/10 Rangx, A, B = RangEn(Sig, m = 2, tau = 1, r = 0.2, Methodx = "S
+ampEn", Logx =
+ []
+
+
+Overfull \hbox (6.75589pt too wide) in paragraph at lines 1320--1324
+\OT1/pcr/m/n/10 Rangx, A, B = RangEn(Sig, m = 2, tau = 1, r = 0.2, Methodx = "S
+ampEn", Logx =
+ []
+
+[44]
+Overfull \hbox (14.45587pt too wide) in paragraph at lines 1358--1362
+\OT1/pcr/m/n/10 [XAp, Phi] = XApEn(Sig1, Sig2, `m', 2, `tau', 1, `r', 0.2*std$[
+]$(Sig1, Sig2),
+ []
+
+
+Overfull \hbox (14.45587pt too wide) in paragraph at lines 1358--1362
+\OT1/pcr/m/n/10 XAp, Phi = XApEn(Sig1, Sig2, m = 2, tau = 1, r = 0.2*std$[]$(Si
+g1, Sig2), Logx
+ []
+
+
+Overfull \hbox (14.45587pt too wide) in paragraph at lines 1358--1362
+\OT1/pcr/m/n/10 XAp, Phi = XApEn(Sig1, Sig2, m = 2, tau = 1, r = 0.2*std$[]$(Si
+g1, Sig2), Logx
+ []
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1377.
+
+[45]
+Overfull \hbox (63.65588pt too wide) in paragraph at lines 1388--1392
+\OT1/pcr/m/n/10 [XSamp, A, B, Vcp[]Ka[]Kb] = XSampEn(Sig1, Sig2, `m', 2, `tau',
+ 1, `r', 0.2*std$[]$(Sig1,
+ []
+
+
+Overfull \hbox (33.65588pt too wide) in paragraph at lines 1388--1392
+\OT1/pcr/m/n/10 XSamp, A, B, Vcp[]Ka[]Kb = XSampEn(Sig1, Sig2, m = 2, tau = 1, 
+r = 0.2*std$[]$(Sig1,
+ []
+
+
+Overfull \hbox (33.65588pt too wide) in paragraph at lines 1388--1392
+\OT1/pcr/m/n/10 XSamp, A, B, Vcp[]Ka[]Kb = XSampEn(Sig1, Sig2, m = 2, tau = 1, 
+r = 0.2*std$[]$(Sig1,
+ []
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1407.
+
+
+Overfull \hbox (0.97295pt too wide) in paragraph at lines 1413--1414
+[]\OT1/cmr/m/n/10 Estimate of the vari-ance of con-di-tional prob-a-bil-i-ties 
+used
+ []
+
+
+Overfull \hbox (40.57527pt too wide) in paragraph at lines 1417--1420
+\OT1/cmr/m/n/10 com-pu-ta-tional de-mand, $[]$. 
+ []
+
+[46]
+Overfull \hbox (12.75589pt too wide) in paragraph at lines 1429--1433
+\OT1/pcr/m/n/10 [XFuzz, Ps1, Ps2] = XFuzzEn(Sig1, Sig2, `m', 2, `tau', 1, `Fx',
+ `default, `r',
+ []
+
+
+Overfull \hbox (18.75589pt too wide) in paragraph at lines 1429--1433
+\OT1/pcr/m/n/10 XFuzz, Ps1, Ps2 = XFuzzEn(Sig1, Sig2, m = 2, tau = 1, Fx = 'def
+ault', r = (0.2,
+ []
+
+
+Overfull \hbox (18.75589pt too wide) in paragraph at lines 1429--1433
+\OT1/pcr/m/n/10 XFuzz, Ps1, Ps2 = XFuzzEn(Sig1, Sig2, m = 2, tau = 1, Fx = "def
+ault", r = (0.2,
+ []
+
+
+Overfull \hbox (23.28369pt too wide) in paragraph at lines 1442--1442
+[][]\OT1/pcr/b/n/10 "default"[]  
+ []
+
+File: ../Graphics/Fuzz1v1.png Graphic file (type png)
+<use ../Graphics/Fuzz1v1.png>
+Package pdftex.def Info: ../Graphics/Fuzz1v1.png  used on input line 1443.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1442--1444
+
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 1442--1444
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1442--1444
+
+ []
+
+
+Overfull \hbox (95.28369pt too wide) in paragraph at lines 1445--1445
+[][]\OT1/pcr/b/n/10 "sigmoid"/"modsampen"[]  
+ []
+
+File: ../Graphics/Fuzz2v1.png Graphic file (type png)
+<use ../Graphics/Fuzz2v1.png>
+Package pdftex.def Info: ../Graphics/Fuzz2v1.png  used on input line 1446.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1445--1447
+
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 1445--1447
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1445--1447
+
+ []
+
+
+Overfull \hbox (41.28369pt too wide) in paragraph at lines 1448--1448
+[][]\OT1/pcr/b/n/10 "triangular"[]  
+ []
+
+File: ../Graphics/FuzzTriv1.png Graphic file (type png)
+<use ../Graphics/FuzzTriv1.png>
+Package pdftex.def Info: ../Graphics/FuzzTriv1.png  used on input line 1450.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 1448--1451
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1448--1451
+
+ []
+
+[47]
+Overfull \hbox (53.28369pt too wide) in paragraph at lines 1452--1452
+[][]\OT1/pcr/b/n/10 "trapezoidal1"[]  
+ []
+
+File: ../Graphics/FuzzTrap1v1.png Graphic file (type png)
+<use ../Graphics/FuzzTrap1v1.png>
+Package pdftex.def Info: ../Graphics/FuzzTrap1v1.png  used on input line 1455.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 1452--1456
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1452--1456
+
+ []
+
+
+Overfull \hbox (53.28369pt too wide) in paragraph at lines 1457--1457
+[][]\OT1/pcr/b/n/10 "trapezoidal2"[]  
+ []
+
+File: ../Graphics/FuzzTrap2v1.png Graphic file (type png)
+<use ../Graphics/FuzzTrap2v1.png>
+Package pdftex.def Info: ../Graphics/FuzzTrap2v1.png  used on input line 1460.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1461
+
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 1457--1461
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1461
+
+ []
+
+
+Overfull \hbox (26.8837pt too wide) in paragraph at lines 1462--1462
+[][]\OT1/pcr/b/n/10 "z[]shaped"[]  
+ []
+
+File: ../Graphics/FuzzZSv1.png Graphic file (type png)
+<use ../Graphics/FuzzZSv1.png>
+Package pdftex.def Info: ../Graphics/FuzzZSv1.png  used on input line 1466.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 1462--1467
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1462--1467
+
+ []
+
+[48]
+Overfull \hbox (5.28369pt too wide) in paragraph at lines 1468--1468
+[][]\OT1/pcr/b/n/10 "bell"[]  
+ []
+
+File: ../Graphics/FuzzBv1.png Graphic file (type png)
+<use ../Graphics/FuzzBv1.png>
+Package pdftex.def Info: ../Graphics/FuzzBv1.png  used on input line 1469.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 1468--1470
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1468--1470
+
+ []
+
+
+Overfull \hbox (29.28369pt too wide) in paragraph at lines 1471--1471
+[][]\OT1/pcr/b/n/10 "gaussian"[]  
+ []
+
+File: ../Graphics/FuzzGaussv1.png Graphic file (type png)
+<use ../Graphics/FuzzGaussv1.png>
+Package pdftex.def Info: ../Graphics/FuzzGaussv1.png  used on input line 1472.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 1471--1473
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1471--1473
+
+ []
+
+
+Overfull \hbox (59.28369pt too wide) in paragraph at lines 1474--1474
+[][]\OT1/pcr/b/n/10 "constgaussian"[]  
+ []
+
+File: ../Graphics/FuzzCGv1.png Graphic file (type png)
+<use ../Graphics/FuzzCGv1.png>
+Package pdftex.def Info: ../Graphics/FuzzCGv1.png  used on input line 1476.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (0.8427pt too wide) in paragraph at lines 1474--1477
+   |[] $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) 
+= []$ 
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 1474--1477
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1474--1477
+
+ []
+
+[49]
+Overfull \hbox (53.28369pt too wide) in paragraph at lines 1478--1478
+[][]\OT1/pcr/b/n/10 "gudermannian"[]  
+ []
+
+File: ../Graphics/FuzzGv1.png Graphic file (type png)
+<use ../Graphics/FuzzGv1.png>
+Package pdftex.def Info: ../Graphics/FuzzGv1.png  used on input line 1481.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1482
+
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 1480--1482
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1482
+
+ []
+
+
+Package enumitem Warning: Negative labelwidth. This does not make much
+(enumitem)                sense, on input line 1485.
+
+
+Overfull \hbox (96.64195pt too wide) in paragraph at lines 1486--1486
+[][]\OT1/pcr/b/sl/10 Default[]  
+ []
+
+
+Overfull \hbox (156.78185pt too wide) in paragraph at lines 1487--1487
+[][]\OT1/pcr/b/sl/10 Sigmoid/ModSampEn[]  
+ []
+
+
+Overfull \hbox (126.64195pt too wide) in paragraph at lines 1488--1488
+[][]\OT1/pcr/b/sl/10 Trapezoidal2[]  
+ []
+
+
+Overfull \hbox (78.64195pt too wide) in paragraph at lines 1489--1489
+[][]\OT1/pcr/b/sl/10 Bell[]  
+ []
+
+
+Overfull \hbox (126.64195pt too wide) in paragraph at lines 1490--1490
+[][]\OT1/pcr/b/sl/10 Trapezoidal1[]  
+ []
+
+
+Overfull \hbox (115.18187pt too wide) in paragraph at lines 1491--1491
+[][]\OT1/pcr/b/sl/10 Triangular[]  
+ []
+
+
+Overfull \hbox (100.68188pt too wide) in paragraph at lines 1492--1492
+[][]\OT1/pcr/b/sl/10 Z[]Shaped[]  
+ []
+
+
+Overfull \hbox (102.78185pt too wide) in paragraph at lines 1493--1493
+[][]\OT1/pcr/b/sl/10 Gaussian[]  
+ []
+
+
+Overfull \hbox (132.78185pt too wide) in paragraph at lines 1494--1494
+[][]\OT1/pcr/b/sl/10 ConstGaussian[]  
+ []
+
+
+Overfull \hbox (126.78185pt too wide) in paragraph at lines 1495--1495
+[][]\OT1/pcr/b/sl/10 Gudermannian[]  
+ []
+
+[50]
+Overfull \hbox (8.45587pt too wide) in paragraph at lines 1515--1519
+\OT1/pcr/m/n/10 [XK2, Ci] = XK2En(Sig1, Sig2, `m', 2, `tau', 1, `r', 0.2*std$[]
+$(Sig1, Sig2),
+ []
+
+
+Overfull \hbox (8.45587pt too wide) in paragraph at lines 1515--1519
+\OT1/pcr/m/n/10 XK2, Ci = XK2En(Sig1, Sig2, m = 2, tau = 1, r = 0.2*std$[]$(Sig
+1, Sig2), Logx
+ []
+
+
+Overfull \hbox (8.45587pt too wide) in paragraph at lines 1515--1519
+\OT1/pcr/m/n/10 XK2, Ci = XK2En(Sig1, Sig2, m = 2, tau = 1, r = 0.2*std$[]$(Sig
+1, Sig2), Logx
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 1562--1563
+
+ []
+
+[52]
+Overfull \hbox (30.75589pt too wide) in paragraph at lines 1572--1576
+\OT1/pcr/m/n/10 [XCond, SEw, SEz] = XCondEn(Sig1, Sig2, `m', 2, `tau', 1, `c', 
+6, `Logx', exp(1),
+ []
+
+
+Overfull \hbox (12.75589pt too wide) in paragraph at lines 1572--1576
+\OT1/pcr/m/n/10 XCond, SEw, SEz = XCondEn(Sig1, Sig2, m = 2, tau = 1, c = 6, Lo
+gx = np.exp(1),
+ []
+
+
+Overfull \hbox (24.75589pt too wide) in paragraph at lines 1572--1576
+\OT1/pcr/m/n/10 XCond, SEw, SEz = XCondEn(Sig1, Sig2, m = 2, tau = 1, c = 6, Lo
+gx = exp(1), Norm
+ []
+
+[53]
+Overfull \hbox (18.75589pt too wide) in paragraph at lines 1607--1611
+\OT1/pcr/m/n/10 [XDist, Ppi] = XDistEn(Sig1, Sig2, `m', 2, `tau', 1, `Bins', `s
+turges', `Logx',
+ []
+
+
+Overfull \hbox (0.75589pt too wide) in paragraph at lines 1607--1611
+\OT1/pcr/m/n/10 XDist, Ppi = XDistEn(Sig1, Sig2, m = 2, tau = 1, Bins = `sturge
+s', Logx = 2,
+ []
+
+
+Overfull \hbox (0.75589pt too wide) in paragraph at lines 1607--1611
+\OT1/pcr/m/n/10 XDist, Ppi = XDistEn(Sig1, Sig2, m = 2, tau = 1, Bins = "sturge
+s", Logx = 2,
+ []
+
+[54]
+Overfull \hbox (18.75589pt too wide) in paragraph at lines 1642--1646
+\OT1/pcr/m/n/10 [XSpec, BandEn] = XSpecEn(Sig1, Sig2, `N', 2*max(length(Sig1), 
+length(Sig2))+1,
+ []
+
+
+Overfull \hbox (12.75589pt too wide) in paragraph at lines 1642--1646
+\OT1/pcr/m/n/10 XSpec, BandEn = XSpecEn(Sig1, Sig2, N = 2*np.maximum(len(Sig1),
+len(Sig2)) + 1,
+ []
+
+
+Overfull \hbox (0.75589pt too wide) in paragraph at lines 1642--1646
+\OT1/pcr/m/n/10 XSpec, BandEn = XSpecEn(Sig, N = 2*max(length(Sig1),length(Sig2
+)) + 1, Freqs
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1666--1670
+
+ []
+
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 1688--1692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1688--1692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1693--1696
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1697--1700
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1701--1704
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1705--1708
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1709--1713
+
+ []
+
+
+Overfull \hbox (0.3807pt too wide) in paragraph at lines 1709--1713
+[]\OT1/pcr/m/n/10 Mobj = MSobject("PermEn", m = 4, Typex = "edge", tpx = 2.66, 
+Norm = true) 
+ []
+
+[56]
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 1721.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1725--1727
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1725--1727
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1727--1728
+
+ []
+
+[57]
+Overfull \hbox (42.75589pt too wide) in paragraph at lines 1739--1743
+\OT1/pcr/m/n/10 [MSx, Ci] = MSEn(Sig, Mobj, 'Scales', 3, `Methodx', 'coarse', '
+RadNew', 0, `Plotx',
+ []
+
+
+Overfull \hbox (6.75589pt too wide) in paragraph at lines 1739--1743
+\OT1/pcr/m/n/10 MSx, Ci = MSEn(Sig, Mobj, Scales = 3, Methodx = 'coarse', RadNe
+w = 0, Plotx =
+ []
+
+
+Overfull \hbox (6.75589pt too wide) in paragraph at lines 1739--1743
+\OT1/pcr/m/n/10 MSx, Ci = MSEn(Sig, Mobj, Scales = 3, Methodx = "coarse", RadNe
+w = 0, Plotx =
+ []
+
+
+Overfull \hbox (42.64186pt too wide) in paragraph at lines 1751--1751
+[][]\OT1/pcr/b/n/10 "coarse"[]  
+ []
+
+
+Overfull \hbox (72.64186pt too wide) in paragraph at lines 1754--1754
+[][]\OT1/pcr/b/n/10 "generalized"[]  
+ []
+
+
+Overfull \hbox (54.64186pt too wide) in paragraph at lines 1757--1757
+[][]\OT1/pcr/b/n/10 "modified"[]  
+ []
+
+
+Overfull \hbox (60.64186pt too wide) in paragraph at lines 1759--1759
+[][]\OT1/pcr/b/n/10 "timeshift"[]  
+ []
+
+
+Overfull \hbox (24.64186pt too wide) in paragraph at lines 1763--1763
+[][]\OT1/pcr/b/n/10 "imf"[]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1763--1766
+
+ []
+
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 1776--1777
+
+ []
+
+<../Graphics/MSEn1.png, id=1115, 462.528pt x 346.896pt>
+File: ../Graphics/MSEn1.png Graphic file (type png)
+<use ../Graphics/MSEn1.png>
+Package pdftex.def Info: ../Graphics/MSEn1.png  used on input line 1781.
+(pdftex.def)             Requested size: 346.89514pt x 260.17136pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1777--1782
+
+ []
+
+[59 <../Graphics/MSEn1.png>]
+Overfull \hbox (30.75589pt too wide) in paragraph at lines 1797--1801
+\OT1/pcr/m/n/10 [MSx, Ci] = cMSEn(Sig, Mobj, 'Scales', 3, 'RadNew', 0, 'Refined
+', false, `Plotx',
+ []
+
+
+Overfull \hbox (36.75589pt too wide) in paragraph at lines 1797--1801
+\OT1/pcr/m/n/10 MSx, Ci = cMSEn(Sig, Mobj, Scales = 3, RadNew = 0, Refined = Fa
+lse, Plotx = False) 
+ []
+
+
+Overfull \hbox (36.75589pt too wide) in paragraph at lines 1797--1801
+\OT1/pcr/m/n/10 MSx, Ci = cMSEn(Sig, Mobj, Scales = 3, RadNew = 0, Refined = fa
+lse, Plotx = false) 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1816--1817
+
+ []
+
+<../Graphics/cMSEn1.png, id=1144, 462.528pt x 346.896pt>
+File: ../Graphics/cMSEn1.png Graphic file (type png)
+<use ../Graphics/cMSEn1.png>
+Package pdftex.def Info: ../Graphics/cMSEn1.png  used on input line 1821.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+<../Graphics/rcMSEn1.png, id=1145, 462.528pt x 346.896pt>
+File: ../Graphics/rcMSEn1.png Graphic file (type png)
+<use ../Graphics/rcMSEn1.png>
+Package pdftex.def Info: ../Graphics/rcMSEn1.png  used on input line 1822.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+[60] [61 <../Graphics/cMSEn1.png> <../Graphics/rcMSEn1.png>]
+Overfull \hbox (13.9559pt too wide) in paragraph at lines 1840--1844
+\OT1/pcr/m/n/10 [MSx, Ci] = rMSEn(Sig, Mobj, 'Scales', 3, 'F[]Order', 6, 'F[]Nu
+m', 0.5, 'RadNew',
+ []
+
+
+Overfull \hbox (31.9559pt too wide) in paragraph at lines 1840--1844
+\OT1/pcr/m/n/10 MSx, Ci = rMSEn(Sig, Mobj, Scales = 3, F[]Order = 6, F[]Num = 0
+.5, RadNew = 0, Plotx
+ []
+
+
+Overfull \hbox (31.9559pt too wide) in paragraph at lines 1840--1844
+\OT1/pcr/m/n/10 MSx, Ci = rMSEn(Sig, Mobj, Scales = 3, F[]Order = 6, F[]Num = 0
+.5, RadNew = 0, Plotx
+ []
+
+<../Graphics/rMSEn1.png, id=1163, 462.528pt x 346.896pt>
+File: ../Graphics/rMSEn1.png Graphic file (type png)
+<use ../Graphics/rMSEn1.png>
+Package pdftex.def Info: ../Graphics/rMSEn1.png  used on input line 1866.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+[62] [63 <../Graphics/rMSEn1.png>]
+<../Graphics/hMSEn1.png, id=1181, 542.7477pt x 445.1832pt>
+File: ../Graphics/hMSEn1.png Graphic file (type png)
+<use ../Graphics/hMSEn1.png>
+Package pdftex.def Info: ../Graphics/hMSEn1.png  used on input line 1907.
+(pdftex.def)             Requested size: 352.78181pt x 289.36565pt.
+ [64] [65 <../Graphics/hMSEn1.png>]
+Overfull \hbox (32.35834pt too wide) in paragraph at lines 1929--1930
+\OT1/cmr/m/n/12 (\OT1/pcr/b/n/12 XApEn, XSampEn, XK2En, XCondEn, XPermEn, XSpec
+En, XDistEn, XFuzzEn\OT1/cmr/m/n/12 ).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1944--1948
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1944--1948
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1949--1952
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1953--1956
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1957--1960
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1961--1964
+
+ []
+
+[66] [67]
+Underfull \hbox (badness 10000) in paragraph at lines 1981--1983
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1981--1983
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1983--1984
+
+ []
+
+[68]
+Overfull \hbox (18.75589pt too wide) in paragraph at lines 1995--1999
+\OT1/pcr/m/n/10 [MSx, Ci] = XMSEn(Sig1, Sig2, Mobj, 'Scales', 3, `Methodx', 'co
+arse', 'RadNew',
+ []
+
+
+Overfull \hbox (6.75589pt too wide) in paragraph at lines 1995--1999
+\OT1/pcr/m/n/10 MSx, Ci = XMSEn(Sig1, Sig2, Mobj, Scales = 3, Methodx = 'coarse
+', RadNew = 0,
+ []
+
+
+Overfull \hbox (6.75589pt too wide) in paragraph at lines 1995--1999
+\OT1/pcr/m/n/10 MSx, Ci = XMSEn(Sig1, Sig2, Mobj, Scales = 3, Methodx = "coarse
+", RadNew = 0,
+ []
+
+
+Overfull \hbox (42.64186pt too wide) in paragraph at lines 2008--2008
+[][]\OT1/pcr/b/n/10 "coarse"[]  
+ []
+
+
+Overfull \hbox (72.64186pt too wide) in paragraph at lines 2011--2011
+[][]\OT1/pcr/b/n/10 "generalized"[]  
+ []
+
+
+Overfull \hbox (54.64186pt too wide) in paragraph at lines 2014--2014
+[][]\OT1/pcr/b/n/10 "modified"[]  
+ []
+
+
+Overfull \hbox (60.64186pt too wide) in paragraph at lines 2016--2016
+[][]\OT1/pcr/b/n/10 "timeshift"[]  
+ []
+
+
+Overfull \hbox (24.64186pt too wide) in paragraph at lines 2020--2020
+[][]\OT1/pcr/b/n/10 "imf"[]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2020--2022
+
+ []
+
+[69]
+Overfull \hbox (7.10805pt too wide) in paragraph at lines 2030--2031
+   [] \OT1/cmr/m/n/10 Com-bined Me-dian Ab-so-lute De-vi-a-tion - $\OML/cmm/m/i
+t/10 r\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 median\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10
+ j\OML/cmm/m/it/10 XY[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 median\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 XY[]\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )
+)$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2032--2033
+
+ []
+
+<../Graphics/XMSEn1.png, id=1222, 523.2348pt x 346.896pt>
+File: ../Graphics/XMSEn1.png Graphic file (type png)
+<use ../Graphics/XMSEn1.png>
+Package pdftex.def Info: ../Graphics/XMSEn1.png  used on input line 2037.
+(pdftex.def)             Requested size: 366.26186pt x 242.82553pt.
+[70 <../Graphics/XMSEn1.png>]
+Overfull \hbox (24.75589pt too wide) in paragraph at lines 2053--2057
+\OT1/pcr/m/n/10 [MSx, Ci] = cXMSEn(Sig1, Sig2, Mobj, 'Scales', 3, 'RadNew', 0, 
+'Refined', false,
+ []
+
+
+Overfull \hbox (30.75589pt too wide) in paragraph at lines 2053--2057
+\OT1/pcr/m/n/10 MSx, Ci = cXMSEn(Sig1, Sig2, Mobj, Scales = 3, RadNew = 0, Refi
+ned = False, Plotx
+ []
+
+
+Overfull \hbox (30.75589pt too wide) in paragraph at lines 2053--2057
+\OT1/pcr/m/n/10 MSx, Ci = cXMSEn(Sig1, Sig2, Mobj, Scales = 3, RadNew = 0, Refi
+ned = false, Plotx
+ []
+
+
+Overfull \hbox (7.10805pt too wide) in paragraph at lines 2071--2072
+   [] \OT1/cmr/m/n/10 Com-bined Me-dian Ab-so-lute De-vi-a-tion - $\OML/cmm/m/i
+t/10 r\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 median\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10
+ j\OML/cmm/m/it/10 XY[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 median\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 XY[]\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )
+)$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2073--2074
+
+ []
+
+<../Graphics/cXMSEn1.png, id=1242, 462.528pt x 346.896pt>
+File: ../Graphics/cXMSEn1.png Graphic file (type png)
+<use ../Graphics/cXMSEn1.png>
+Package pdftex.def Info: ../Graphics/cXMSEn1.png  used on input line 2079.
+(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
+<../Graphics/rcXMSEn1.png, id=1243, 462.528pt x 346.896pt>
+File: ../Graphics/rcXMSEn1.png Graphic file (type png)
+<use ../Graphics/rcXMSEn1.png>
+Package pdftex.def Info: ../Graphics/rcXMSEn1.png  used on input line 2080.
+(pdftex.def)             Requested size: 300.63962pt x 225.47972pt.
+[71] [72 <../Graphics/cXMSEn1.png> <../Graphics/rcXMSEn1.png>]
+Overfull \hbox (1.9559pt too wide) in paragraph at lines 2098--2102
+\OT1/pcr/m/n/10 [MSx, Ci] = rXMSEn(Sig1, Sig2, Mobj, 'Scales', 3, 'F[]Order', 6
+, 'F[]Num', 0.5,
+ []
+
+
+Overfull \hbox (13.9559pt too wide) in paragraph at lines 2098--2102
+\OT1/pcr/m/n/10 MSx, Ci = rXMSEn(Sig1, Sig2, Mobj, Scales = 3, F[]Order = 6, F[
+]Num = 0.5, RadNew
+ []
+
+
+Overfull \hbox (13.9559pt too wide) in paragraph at lines 2098--2102
+\OT1/pcr/m/n/10 MSx, Ci = rXMSEn(Sig1, Sig2, Mobj, Scales = 3, F[]Order = 6, F[
+]Num = 0.5, RadNew
+ []
+
+
+Overfull \hbox (7.10805pt too wide) in paragraph at lines 2119--2120
+   [] \OT1/cmr/m/n/10 Com-bined Me-dian Ab-so-lute De-vi-a-tion - $\OML/cmm/m/i
+t/10 r\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 median\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10
+ j\OML/cmm/m/it/10 XY[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 median\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 XY[]\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )
+)$ 
+ []
+
+<../Graphics/rXMSEn1.png, id=1262, 462.528pt x 346.896pt>
+File: ../Graphics/rXMSEn1.png Graphic file (type png)
+<use ../Graphics/rXMSEn1.png>
+Package pdftex.def Info: ../Graphics/rXMSEn1.png  used on input line 2125.
+(pdftex.def)             Requested size: 323.76738pt x 242.82553pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2125
+
+ []
+
+[73] [74 <../Graphics/rXMSEn1.png>]
+Overfull \hbox (12.75589pt too wide) in paragraph at lines 2140--2144
+\OT1/pcr/m/n/10 [MSx, Ci] = hXMSEn(Sig1, Sig2, Mobj, 'Scales', 3, 'RadNew', 0, 
+`Plotx', false) 
+ []
+
+
+Overfull \hbox (7.10805pt too wide) in paragraph at lines 2160--2161
+   [] \OT1/cmr/m/n/10 Com-bined Me-dian Ab-so-lute De-vi-a-tion - $\OML/cmm/m/i
+t/10 r\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 median\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10
+ j\OML/cmm/m/it/10 XY[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 median\OT1/cmr/m/
+n/10 (\OML/cmm/m/it/10 XY[]\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 j\OT1/cmr/m/n/10 )
+)$ 
+ []
+
+<../Graphics/hXMSEn1.png, id=1276, 462.528pt x 376.5267pt>
+File: ../Graphics/hXMSEn1.png Graphic file (type png)
+<use ../Graphics/hXMSEn1.png>
+Package pdftex.def Info: ../Graphics/hXMSEn1.png  used on input line 2166.
+(pdftex.def)             Requested size: 300.63962pt x 244.73944pt.
+[75] [76 <../Graphics/hXMSEn1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2187--2188
+
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 2190--2191
+[]\OT1/cmr/m/n/12 Each bidi-men-sional en-tropy func-tion (\OT1/pcr/b/n/12 Samp
+En2D, FuzzEn2D, DistEn2D,
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 2190--2191
+\OT1/pcr/b/n/12 DispEn2D, PermEn2D, EspEn2D\OT1/cmr/m/n/12 ) has an im-por-tant
+ key-word ar-gu-ment -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2190--2191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2190--2191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2192--2196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2192--2196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2192--2196
+
+ []
+
+[77]
+Overfull \hbox (30.75589pt too wide) in paragraph at lines 2202--2206
+\OT1/pcr/m/n/10 SE2D, Phi1, Phi2 = SampEn2D(Mat, m = Mat.shape//10, tau = 1, r 
+= 0.2*np.std(Mat),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2216--2219
+
+ []
+
+[78]
+Overfull \hbox (24.75589pt too wide) in paragraph at lines 2235--2239
+\OT1/pcr/m/n/10 Fuzz2D = FuzzEn2D(Mat, `m', floor(size(Mat)/10), `tau', 1, `Fx'
+, 'default', `r',
+ []
+
+
+Overfull \hbox (90.75589pt too wide) in paragraph at lines 2235--2239
+\OT1/pcr/m/n/10 Fuzz2D = FuzzEn2D(Mat, m = Mat.shape//10, tau = 1, Fx = 'defaul
+t', r = (0.2*np.std(Mat[:]),
+ []
+
+
+Overfull \hbox (12.75589pt too wide) in paragraph at lines 2235--2239
+\OT1/pcr/m/n/10 Fuzz2D = FuzzEn2D(Mat, m = floor(Int, size(Mat)./10), tau = 1, 
+Fx = "default",
+ []
+
+
+Overfull \hbox (23.28369pt too wide) in paragraph at lines 2249--2249
+[][]\OT1/pcr/b/n/10 "default"[]  
+ []
+
+File: ../Graphics/Fuzz1v1.png Graphic file (type png)
+<use ../Graphics/Fuzz1v1.png>
+Package pdftex.def Info: ../Graphics/Fuzz1v1.png  used on input line 2250.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2249--2251
+
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 2249--2251
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2249--2251
+
+ []
+
+
+Overfull \hbox (95.28369pt too wide) in paragraph at lines 2252--2252
+[][]\OT1/pcr/b/n/10 "sigmoid"/"modsampen"[]  
+ []
+
+File: ../Graphics/Fuzz2v1.png Graphic file (type png)
+<use ../Graphics/Fuzz2v1.png>
+Package pdftex.def Info: ../Graphics/Fuzz2v1.png  used on input line 2253.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2252--2254
+
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 2252--2254
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2252--2254
+
+ []
+
+
+Overfull \hbox (41.28369pt too wide) in paragraph at lines 2255--2255
+[][]\OT1/pcr/b/n/10 "triangular"[]  
+ []
+
+File: ../Graphics/FuzzTriv1.png Graphic file (type png)
+<use ../Graphics/FuzzTriv1.png>
+Package pdftex.def Info: ../Graphics/FuzzTriv1.png  used on input line 2257.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 2255--2258
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2255--2258
+
+ []
+
+[79]
+Overfull \hbox (53.28369pt too wide) in paragraph at lines 2259--2259
+[][]\OT1/pcr/b/n/10 "trapezoidal1"[]  
+ []
+
+File: ../Graphics/FuzzTrap1v1.png Graphic file (type png)
+<use ../Graphics/FuzzTrap1v1.png>
+Package pdftex.def Info: ../Graphics/FuzzTrap1v1.png  used on input line 2262.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 2259--2263
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2259--2263
+
+ []
+
+
+Overfull \hbox (53.28369pt too wide) in paragraph at lines 2264--2264
+[][]\OT1/pcr/b/n/10 "trapezoidal2"[]  
+ []
+
+File: ../Graphics/FuzzTrap2v1.png Graphic file (type png)
+<use ../Graphics/FuzzTrap2v1.png>
+Package pdftex.def Info: ../Graphics/FuzzTrap2v1.png  used on input line 2267.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2264--2268
+
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 2264--2268
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2264--2268
+
+ []
+
+
+Overfull \hbox (26.8837pt too wide) in paragraph at lines 2269--2269
+[][]\OT1/pcr/b/n/10 "z[]shaped"[]  
+ []
+
+File: ../Graphics/FuzzZSv1.png Graphic file (type png)
+<use ../Graphics/FuzzZSv1.png>
+Package pdftex.def Info: ../Graphics/FuzzZSv1.png  used on input line 2273.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 2269--2274
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2269--2274
+
+ []
+
+[80]
+Overfull \hbox (5.28369pt too wide) in paragraph at lines 2275--2275
+[][]\OT1/pcr/b/n/10 "bell"[]  
+ []
+
+File: ../Graphics/FuzzBv1.png Graphic file (type png)
+<use ../Graphics/FuzzBv1.png>
+Package pdftex.def Info: ../Graphics/FuzzBv1.png  used on input line 2276.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 2275--2277
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2275--2277
+
+ []
+
+
+Overfull \hbox (29.28369pt too wide) in paragraph at lines 2278--2278
+[][]\OT1/pcr/b/n/10 "gaussian"[]  
+ []
+
+File: ../Graphics/FuzzGaussv1.png Graphic file (type png)
+<use ../Graphics/FuzzGaussv1.png>
+Package pdftex.def Info: ../Graphics/FuzzGaussv1.png  used on input line 2279.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 2278--2280
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2278--2280
+
+ []
+
+
+Overfull \hbox (59.28369pt too wide) in paragraph at lines 2281--2281
+[][]\OT1/pcr/b/n/10 "constgaussian"[]  
+ []
+
+File: ../Graphics/FuzzCGv1.png Graphic file (type png)
+<use ../Graphics/FuzzCGv1.png>
+Package pdftex.def Info: ../Graphics/FuzzCGv1.png  used on input line 2283.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Overfull \hbox (0.8427pt too wide) in paragraph at lines 2281--2284
+   |[] $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) 
+= []$ 
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 2281--2284
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2281--2284
+
+ []
+
+[81]
+Overfull \hbox (53.28369pt too wide) in paragraph at lines 2285--2285
+[][]\OT1/pcr/b/n/10 "gudermannian"[]  
+ []
+
+File: ../Graphics/FuzzGv1.png Graphic file (type png)
+<use ../Graphics/FuzzGv1.png>
+Package pdftex.def Info: ../Graphics/FuzzGv1.png  used on input line 2288.
+(pdftex.def)             Requested size: 210.78697pt x 158.09023pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2287--2289
+
+ []
+
+
+Overfull \hbox (11.61765pt too wide) in paragraph at lines 2287--2289
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2287--2289
+
+ []
+
+
+Package enumitem Warning: Negative labelwidth. This does not make much
+(enumitem)                sense, on input line 2292.
+
+
+Overfull \hbox (96.64195pt too wide) in paragraph at lines 2293--2293
+[][]\OT1/pcr/b/sl/10 Default[]  
+ []
+
+
+Overfull \hbox (156.78185pt too wide) in paragraph at lines 2294--2294
+[][]\OT1/pcr/b/sl/10 Sigmoid/ModSampEn[]  
+ []
+
+
+Overfull \hbox (126.64195pt too wide) in paragraph at lines 2295--2295
+[][]\OT1/pcr/b/sl/10 Trapezoidal2[]  
+ []
+
+
+Overfull \hbox (78.64195pt too wide) in paragraph at lines 2296--2296
+[][]\OT1/pcr/b/sl/10 Bell[]  
+ []
+
+
+Overfull \hbox (126.64195pt too wide) in paragraph at lines 2297--2297
+[][]\OT1/pcr/b/sl/10 Trapezoidal1[]  
+ []
+
+
+Overfull \hbox (115.18187pt too wide) in paragraph at lines 2298--2298
+[][]\OT1/pcr/b/sl/10 Triangular[]  
+ []
+
+
+Overfull \hbox (100.68188pt too wide) in paragraph at lines 2299--2299
+[][]\OT1/pcr/b/sl/10 Z[]Shaped[]  
+ []
+
+
+Overfull \hbox (102.78185pt too wide) in paragraph at lines 2300--2300
+[][]\OT1/pcr/b/sl/10 Gaussian[]  
+ []
+
+
+Overfull \hbox (132.78185pt too wide) in paragraph at lines 2301--2301
+[][]\OT1/pcr/b/sl/10 ConstGaussian[]  
+ []
+
+
+Overfull \hbox (126.78185pt too wide) in paragraph at lines 2302--2302
+[][]\OT1/pcr/b/sl/10 Gudermannian[]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2305--2308
+
+ []
+
+[82]
+Overfull \hbox (6.75589pt too wide) in paragraph at lines 2322--2326
+\OT1/pcr/m/n/10 Dist2D = DistEn2D(Mat, `m', floor(size(Mat)/10), 'tau', 1, 'Bin
+s', 'sturges',
+ []
+
+
+Overfull \hbox (12.75589pt too wide) in paragraph at lines 2322--2326
+\OT1/pcr/m/n/10 Dist2D = DistEn2D(Mat, m = Mat.shape//10, tau = 1, Bins = 'stur
+ges', Logx = 2,
+ []
+
+
+Overfull \hbox (24.75589pt too wide) in paragraph at lines 2322--2326
+\OT1/pcr/m/n/10 Dist2D = DistEn2D(Mat, m = floor(Int, size(Mat)./10), tau = 1, 
+Bins = "Sturges",
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2342--2345
+
+ []
+
+[83]
+Overfull \hbox (36.75589pt too wide) in paragraph at lines 2359--2363
+\OT1/pcr/m/n/10 [Disp2D, RDE] = DispEn2D(Mat, `m', floor(size(Mat)/10), 'tau', 
+1, 'c', 3, 'Typex',
+ []
+
+
+Overfull \hbox (12.75589pt too wide) in paragraph at lines 2359--2363
+\OT1/pcr/m/n/10 Disp2D, RDE = DispEn2D(Mat, m = Mat.shape//10, tau = 1, c = 3, 
+Typex = 'ncdf',
+ []
+
+
+Overfull \hbox (24.75589pt too wide) in paragraph at lines 2359--2363
+\OT1/pcr/m/n/10 Disp2D, RDE = DispEn2D(Mat, m = floor(Int, size(Mat)./10), tau 
+= 1, c = 3, Typex
+ []
+
+
+Overfull \hbox (0.64182pt too wide) in paragraph at lines 2374--2374
+[][]\OT1/pcr/b/n/10 "ncdf"[]  
+ []
+
+
+Overfull \hbox (12.64182pt too wide) in paragraph at lines 2375--2375
+[][]\OT1/pcr/b/n/10 "kmeans"[]  
+ []
+
+
+Overfull \hbox (12.64182pt too wide) in paragraph at lines 2378--2378
+[][]\OT1/pcr/b/n/10 "linear"[]  
+ []
+
+
+Overfull \hbox (24.64182pt too wide) in paragraph at lines 2379--2379
+[][]\OT1/pcr/b/n/10 "finesort"[]  
+ []
+
+
+Overfull \hbox (6.64182pt too wide) in paragraph at lines 2380--2380
+[][]\OT1/pcr/b/n/10 "equal"[]  
+ []
+
+File: ../Graphics/Disp1.png Graphic file (type png)
+<use ../Graphics/Disp1.png>
+Package pdftex.def Info: ../Graphics/Disp1.png  used on input line 2381.
+(pdftex.def)             Requested size: 271.01184pt x 263.96553pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2387--2390
+
+ []
+
+[84] [85]
+Overfull \hbox (36.75589pt too wide) in paragraph at lines 2405--2410
+\OT1/pcr/m/n/10 Perm2D = PermEn2D(Mat, `m', floor(size(Mat)/10), 'tau', 1, 'Log
+x', exp(1), 'Norm',
+ []
+
+
+Overfull \hbox (30.75589pt too wide) in paragraph at lines 2405--2410
+\OT1/pcr/m/n/10 Perm2D = PermEn2D(Mat, m = Mat.shape//10, tau = 1, Logx = np.ex
+p(1), Norm = True,
+ []
+
+
+Overfull \hbox (6.75589pt too wide) in paragraph at lines 2405--2410
+\OT1/pcr/m/n/10 Perm2D = PermEn2D(Mat, m = floor(Int, size(Mat)./10), tau = 1, 
+Logx = exp(1),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2412--2421
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2422--2428
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2429--2434
+
+ []
+
+[86]
+Underfull \hbox (badness 10000) in paragraph at lines 2455--2458
+
+ []
+
+[87]
+Overfull \hbox (0.75589pt too wide) in paragraph at lines 2472--2476
+\OT1/pcr/m/n/10 Esp2D = EspEn2D(Mat, `m', floor(size(Mat)/10), `tau', 1, `r', 2
+0, 'ps', 0.7,
+ []
+
+
+Overfull \hbox (48.75589pt too wide) in paragraph at lines 2472--2476
+\OT1/pcr/m/n/10 Esp2D = EspEn2D(Mat, m = Mat.shape//10, tau = 1, r = 20, ps = 0
+.7, Logx = np.exp(1),
+ []
+
+
+Overfull \hbox (6.75589pt too wide) in paragraph at lines 2472--2476
+\OT1/pcr/m/n/10 Esp2D = EspEn2D(Mat, m = floor(Int,size(Mat)./10), tau = 1, r =
+ 20, ps = 0.7,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2487--2490
+
+ []
+
+[88]
+Chapter 4.
+
+Package xcolor Warning: Incompatible color definition on input line 2513.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2518--2522
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2518--2522
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2525--2526
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2530--2534
+
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 2530--2534
+\OT1/cmr/m/n/12 Each bidi-men-sional en-tropy func-tion (\OT1/pcr/b/n/12 SampEn
+2D, FuzzEn2D, DistEn2D,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2530--2534
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2530--2534
+
+ []
+
+File: ../Graphics/Chapter Banner2.png Graphic file (type png)
+<use ../Graphics/Chapter Banner2.png>
+Package pdftex.def Info: ../Graphics/Chapter Banner2.png  used on input line 25
+38.
+(pdftex.def)             Requested size: 455.25195pt x 85.34825pt.
+[89
+
+] [90]
+Underfull \hbox (badness 10000) in paragraph at lines 2556--2558
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2560--2562
+
+ []
+
+
+Overfull \hbox (4.64172pt too wide) in paragraph at lines 2565--2565
+[][]\OT1/pcr/b/n/10 'randintegers2'[]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2565--2566
+
+ []
+
+
+Overfull \hbox (20.24173pt too wide) in paragraph at lines 2569--2569
+[][]\OT1/pcr/b/n/10 'randintegers[]Mat'[]  
+ []
+
+
+Overfull \hbox (8.24173pt too wide) in paragraph at lines 2570--2570
+[][]\OT1/pcr/b/n/10 'mandelbrot[]Mat'[]  
+ []
+
+
+Overfull \hbox (8.24173pt too wide) in paragraph at lines 2571--2571
+[][]\OT1/pcr/b/n/10 'entropyhub[]Mat'[]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2571--2572
+
+ []
+
+[91]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/05C3839DEF00CC30C397577550CDA4E4E8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex
+LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 2
+.
+
+(C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1pcr.fd
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+))
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/62D58C16E503BECF6F749AE7B4C89677E8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/8AB066D4D687318C2A6877541E4236F6E8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex) [92]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/9EC9E07C0927A4E1D7EA72368498A8B9E8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex)
+<../Graphics/lorenz.png, id=1390, 562.1pt x 421.575pt>
+File: ../Graphics/lorenz.png Graphic file (type png)
+<use ../Graphics/lorenz.png>
+Package pdftex.def Info: ../Graphics/lorenz.png  used on input line 2629.
+(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2628--2643
+
+ []
+
+
+(_minted-EntropyHub_Guide/38D58FB53B31A1A55F5F54D8C7B76F8DE8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex) [93 <../Graphics/lorenz.png>]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/44ADDC674A7FCFAF238621B83A8B30D0E8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex)
+<../Graphics/henon.png, id=1396, 562.1pt x 421.575pt>
+File: ../Graphics/henon.png Graphic file (type png)
+<use ../Graphics/henon.png>
+Package pdftex.def Info: ../Graphics/henon.png  used on input line 2656.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2655--2664
+
+ []
+
+
+(_minted-EntropyHub_Guide/7050DD6E4B1468182F72F129506E61D8E8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex)
+<../Graphics/phasex1.png, id=1397, 562.1pt x 421.575pt>
+File: ../Graphics/phasex1.png Graphic file (type png)
+<use ../Graphics/phasex1.png>
+Package pdftex.def Info: ../Graphics/phasex1.png  used on input line 2665.
+(pdftex.def)             Requested size: 365.36067pt x 274.0205pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2664--2672
+
+ []
+
+[94 <../Graphics/henon.png>]
+(_minted-EntropyHub_Guide/2B610CA3068FCA4F7082FD3B2CA46B1BE8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex)
+<../Graphics/phasex2.png, id=1403, 562.1pt x 421.575pt>
+File: ../Graphics/phasex2.png Graphic file (type png)
+<use ../Graphics/phasex2.png>
+Package pdftex.def Info: ../Graphics/phasex2.png  used on input line 2673.
+(pdftex.def)             Requested size: 365.36067pt x 274.0205pt.
+ [95 <../Graphics/phasex1.png> <../Graphics/phasex2.png>]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/60A0541885C36E5AB2BE6A8FD129147BE8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/B1789BCEFAC63C5645A8C560B413F1FAE8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex) [96]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/A96C26C27AA5B75412656C153EBFD80BE8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/95CEF34E69D4972D353B9FCC2B812E54E8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex) [97]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Overfull \hbox (34.35568pt too wide) in paragraph at lines 2727--2738
+\OT1/pcr/b/n/12 EnType = IncrEn(), embedding dimension = 3, a quantifying resol
+ution
+ []
+
+
+(_minted-EntropyHub_Guide/AD9B05646E3ADA6DEB168E72B5744327E8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/40D8C676AD4C86EB46FD5053A7FCA1F2E8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex) [98]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Overfull \hbox (27.15569pt too wide) in paragraph at lines 2754--2765
+\OT1/pcr/b/n/12 EnType = SampEn(), embedding dimension = 4, radius threshold = 
+1.25
+ []
+
+
+(_minted-EntropyHub_Guide/9422EEE3FDE5F14A9DF8D4D4B54FA76AE8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/B857B87A9FB6590DB103CADA43971B69E8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex) [99]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Overfull \hbox (12.75569pt too wide) in paragraph at lines 2781--2793
+\OT1/pcr/b/n/12 EnType = XApEn(), embedding dimension = 2, time delay = 2, radi
+us
+ []
+
+
+(_minted-EntropyHub_Guide/597DA8540C66B36F6185672680F70D5CE8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/38275996844ACDF3116F2B8B3DB2569CE8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex) [100]
+Overfull \hbox (21.5851pt too wide) in paragraph at lines 2808--2808
+|[]\OT1/cmr/bx/n/12 Example 9:   Hi-er-ar-chi-cal Mul-ti-scale \OT1/cmr/bx/it/1
+2 cor-rected \OT1/cmr/bx/n/12 Cross-[Conditional]
+ []
+
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Overfull \hbox (27.15569pt too wide) in paragraph at lines 2809--2822
+\OT1/pcr/b/n/12 EnType = XCondEn(), embedding dimension = 2, time delay = 2, nu
+mber
+ []
+
+
+(_minted-EntropyHub_Guide/E9BA8A9C82C81A2DD30204EB85DB2D33E8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex)
+File: ../Graphics/henon.png Graphic file (type png)
+<use ../Graphics/henon.png>
+Package pdftex.def Info: ../Graphics/henon.png  used on input line 2823.
+(pdftex.def)             Requested size: 365.36067pt x 274.0205pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2822--2841
+
+ []
+
+
+(_minted-EntropyHub_Guide/64AB520D2B724B4C6D21C7248C33777EE8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex) [101]
+<../Graphics/xhier.png, id=1436, 562.1pt x 421.575pt>
+File: ../Graphics/xhier.png Graphic file (type png)
+<use ../Graphics/xhier.png>
+Package pdftex.def Info: ../Graphics/xhier.png  used on input line 2842.
+(pdftex.def)             Requested size: 393.46732pt x 295.10048pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2841--2843
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2841--2843
+
+ []
+
+[102 <../Graphics/xhier.png>]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/CA90BA9348A7678CE05751AEAE92618EE8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex)
+<../Graphics/mandelbrot.png, id=1442, 757.83125pt x 555.07375pt>
+File: ../Graphics/mandelbrot.png Graphic file (type png)
+<use ../Graphics/mandelbrot.png>
+Package pdftex.def Info: ../Graphics/mandelbrot.png  used on input line 2855.
+(pdftex.def)             Requested size: 303.12714pt x 222.02556pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2854--2863
+
+ []
+
+
+(_minted-EntropyHub_Guide/E3DC66A7BDE989775D9F43E33905C28BE8D75CA2EF3266F56A88E
+BEAEF7E030A.pygtex) [103 <../Graphics/mandelbrot.png>]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/140D3905C97BA5B90D9026F877A0858F91587445369D7B38562AC
+845EDF8222A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/635D23129F097F652CFF3AE2EC764B1791587445369D7B38562AC
+845EDF8222A.pygtex) [104]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/E884F303F89E9DA75CCE98F3CD7DF5CB91587445369D7B38562AC
+845EDF8222A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/227AD0D0E54981117B171366B7CD7D8391587445369D7B38562AC
+845EDF8222A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/0CA079CF496047514C715C0D00A0635B91587445369D7B38562AC
+845EDF8222A.pygtex) [105]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/1ACF2E0FA197304F037F2DE762B78EB691587445369D7B38562AC
+845EDF8222A.pygtex)
+File: ../Graphics/lorenz.png Graphic file (type png)
+<use ../Graphics/lorenz.png>
+Package pdftex.def Info: ../Graphics/lorenz.png  used on input line 2946.
+(pdftex.def)             Requested size: 224.83601pt x 168.627pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2945--2960
+
+ []
+
+
+(_minted-EntropyHub_Guide/31CFA92F503521320EB811093CCFFF7191587445369D7B38562AC
+845EDF8222A.pygtex) [106]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/B48265413731E744B770C726E6E3A74391587445369D7B38562AC
+845EDF8222A.pygtex)
+File: ../Graphics/henon.png Graphic file (type png)
+<use ../Graphics/henon.png>
+Package pdftex.def Info: ../Graphics/henon.png  used on input line 2974.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2973--2983
+
+ []
+
+
+(_minted-EntropyHub_Guide/1186C4A89A0919BD640BB4575D80460891587445369D7B38562AC
+845EDF8222A.pygtex)
+File: ../Graphics/phasex1.png Graphic file (type png)
+<use ../Graphics/phasex1.png>
+Package pdftex.def Info: ../Graphics/phasex1.png  used on input line 2984.
+(pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2983--2992
+
+ []
+
+[107]
+(_minted-EntropyHub_Guide/EC48B883318CCEA98B11624EF5D456EF91587445369D7B38562AC
+845EDF8222A.pygtex)
+File: ../Graphics/phasex2.png Graphic file (type png)
+<use ../Graphics/phasex2.png>
+Package pdftex.def Info: ../Graphics/phasex2.png  used on input line 2993.
+(pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
+ [108]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/918798FC526BDD15E824706F6202D17D91587445369D7B38562AC
+845EDF8222A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/7FDD1ABE53E064EDEF1C7B028DC56EC791587445369D7B38562AC
+845EDF8222A.pygtex) [109]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/89EE405F5A7D9CE621869BC54DD135A191587445369D7B38562AC
+845EDF8222A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/E0BA6AEC409D0D5FD30B22CDEABFA56191587445369D7B38562AC
+845EDF8222A.pygtex) [110]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Overfull \hbox (34.35568pt too wide) in paragraph at lines 3051--3064
+\OT1/pcr/b/n/12 EnType = IncrEn(), embedding dimension = 3, a quantifying resol
+ution
+ []
+
+
+(_minted-EntropyHub_Guide/BD1EC9AEA076BD0098231EC2FEB6A92C91587445369D7B38562AC
+845EDF8222A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/C42AADF97B0CD59140A2132EDD4AD19991587445369D7B38562AC
+845EDF8222A.pygtex) [111]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Overfull \hbox (27.15569pt too wide) in paragraph at lines 3080--3093
+\OT1/pcr/b/n/12 EnType = SampEn(), embedding dimension = 4, radius threshold = 
+1.25
+ []
+
+
+(_minted-EntropyHub_Guide/62632B39A6885C6C40C91096B4F23A7191587445369D7B38562AC
+845EDF8222A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/F0BBF610B0B632CD43E8FD2E19C55D1C91587445369D7B38562AC
+845EDF8222A.pygtex) [112]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Overfull \hbox (12.75569pt too wide) in paragraph at lines 3110--3123
+\OT1/pcr/b/n/12 EnType = XApEn(), embedding dimension = 2, time delay = 2, radi
+us
+ []
+
+
+(_minted-EntropyHub_Guide/B88524FAC7E1DE87B23040A123FAD1E991587445369D7B38562AC
+845EDF8222A.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/232FF35C8E6500295F1D655A426AAFA291587445369D7B38562AC
+845EDF8222A.pygtex) [113]
+Overfull \hbox (21.5851pt too wide) in paragraph at lines 3136--3136
+|[]\OT1/cmr/bx/n/12 Example 9:   Hi-er-ar-chi-cal Mul-ti-scale \OT1/cmr/bx/it/1
+2 cor-rected \OT1/cmr/bx/n/12 Cross-[Conditional]
+ []
+
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Overfull \hbox (27.15569pt too wide) in paragraph at lines 3137--3158
+\OT1/pcr/b/n/12 EnType = XCondEn(), embedding dimension = 2, time delay = 2, nu
+mber
+ []
+
+
+(_minted-EntropyHub_Guide/49225F90295FEBAC0F73BC072FA425BB91587445369D7B38562AC
+845EDF8222A.pygtex)
+File: ../Graphics/henon.png Graphic file (type png)
+<use ../Graphics/henon.png>
+Package pdftex.def Info: ../Graphics/henon.png  used on input line 3159.
+(pdftex.def)             Requested size: 281.04932pt x 210.78697pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3158--3177
+
+ []
+
+[114]
+(_minted-EntropyHub_Guide/9CB61A5884D099B975972048700C5AF791587445369D7B38562AC
+845EDF8222A.pygtex)
+File: ../Graphics/xhier.png Graphic file (type png)
+<use ../Graphics/xhier.png>
+Package pdftex.def Info: ../Graphics/xhier.png  used on input line 3178.
+(pdftex.def)             Requested size: 421.57397pt x 316.18047pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3177--3179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3177--3179
+
+ []
+
+[115]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/97946DD8C90995124600D333DA744E9391587445369D7B38562AC
+845EDF8222A.pygtex)
+File: ../Graphics/mandelbrot.png Graphic file (type png)
+<use ../Graphics/mandelbrot.png>
+Package pdftex.def Info: ../Graphics/mandelbrot.png  used on input line 3191.
+(pdftex.def)             Requested size: 303.12714pt x 222.02556pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3190--3199
+
+ []
+
+
+(_minted-EntropyHub_Guide/E0FD6DA60D06AC2B28273C753AF0D6C091587445369D7B38562AC
+845EDF8222A.pygtex) [116]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/738EFB91E2C6F333CA6F4F711308D9AB7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/DDA835383D7A501533C0F0746EF492967FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex) [117]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/3B12D5D59BD39557E065A60338760FA07FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/1DA48D093E19EB6AC99EE8F1B467328F7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/0DD4F54AE1314FDD7285361D3F9E005A7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex) [118]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/A29CAAF51B2FCA26B6732B1F91B08AEC7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+<../Graphics/lorenzjl.png, id=1510, 702.625pt x 501.875pt>
+File: ../Graphics/lorenzjl.png Graphic file (type png)
+<use ../Graphics/lorenzjl.png>
+Package pdftex.def Info: ../Graphics/lorenzjl.png  used on input line 3288.
+(pdftex.def)             Requested size: 351.31163pt x 250.93687pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3287--3298
+
+ []
+
+
+(_minted-EntropyHub_Guide/BE0488F26CCDBD2F5301AEB6250025EC7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex) [119 <../Graphics/lorenzjl.png>]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/00DB6208FC975ECDF8F74D932B9A3BB27FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+<../Graphics/henonjl.png, id=1517, 702.625pt x 501.875pt>
+File: ../Graphics/henonjl.png Graphic file (type png)
+<use ../Graphics/henonjl.png>
+Package pdftex.def Info: ../Graphics/henonjl.png  used on input line 3313.
+(pdftex.def)             Requested size: 351.31163pt x 250.93687pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3312--3320
+
+ []
+
+
+(_minted-EntropyHub_Guide/11D78D6CFC6F79ADE1178707928D52037FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+<../Graphics/phasx1jl.png, id=1518, 702.625pt x 501.875pt>
+File: ../Graphics/phasx1jl.png Graphic file (type png)
+<use ../Graphics/phasx1jl.png>
+Package pdftex.def Info: ../Graphics/phasx1jl.png  used on input line 3321.
+(pdftex.def)             Requested size: 351.31163pt x 250.93687pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3320--3327
+
+ []
+
+[120 <../Graphics/henonjl.png>]
+(_minted-EntropyHub_Guide/1DCE3EE1E19D4F1E02F51A698AC4D2377FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+<../Graphics/phasx2jl.png, id=1524, 702.625pt x 501.875pt>
+File: ../Graphics/phasx2jl.png Graphic file (type png)
+<use ../Graphics/phasx2jl.png>
+Package pdftex.def Info: ../Graphics/phasx2jl.png  used on input line 3328.
+(pdftex.def)             Requested size: 351.31163pt x 250.93687pt.
+ [121 <../Graphics/phasx1jl.png> <../Graphics/phasx2jl.png>]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/B5841A1C8227BB1165030ADC98ED1B9C7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/82BEDBF9578B0934A84E329390D680867FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex) [122]
+Underfull \hbox (badness 10000) in paragraph at lines 3354--3355
+
+ []
+
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/DAE1B9FC6B9D69AEEBE85DEDDC9FBA117FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/4E3F61CE5CCD51E9D36E217AC1BB787D7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex) [123]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Overfull \hbox (34.35568pt too wide) in paragraph at lines 3372--3379
+\OT1/pcr/b/n/12 EnType = IncrEn(), embedding dimension = 3, a quantifying resol
+ution
+ []
+
+
+(_minted-EntropyHub_Guide/116C7DEA14905DFCDF116F1A4C8F15D77FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/7362FB182CA8F4F462F11B89BD5F916B7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex) [124]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Overfull \hbox (27.15569pt too wide) in paragraph at lines 3393--3399
+\OT1/pcr/b/n/12 EnType = SampEn(), embedding dimension = 4, radius threshold = 
+1.25
+ []
+
+
+(_minted-EntropyHub_Guide/F5765A98E790B9BEFE5ECCFD52B7CF837FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/8F00424B6C4F9C77334176F409A59FCE7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex) [125]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Overfull \hbox (12.75569pt too wide) in paragraph at lines 3412--3418
+\OT1/pcr/b/n/12 EnType = XApEn(), embedding dimension = 2, time delay = 2, radi
+us
+ []
+
+
+(_minted-EntropyHub_Guide/7613A572EC2156FE7B692560A27A17477FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/DCBFC12F8C1DA41C2BF9F178A37398427FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex) [126]
+Overfull \hbox (21.5851pt too wide) in paragraph at lines 3430--3430
+|[]\OT1/cmr/bx/n/12 Example 9:   Hi-er-ar-chi-cal Mul-ti-scale \OT1/cmr/bx/it/1
+2 cor-rected \OT1/cmr/bx/n/12 Cross-[Conditional]
+ []
+
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Overfull \hbox (27.15569pt too wide) in paragraph at lines 3431--3446
+\OT1/pcr/b/n/12 EnType = XCondEn(), embedding dimension = 2, time delay = 2, nu
+mber
+ []
+
+
+(_minted-EntropyHub_Guide/76444FDFE5729916824A5D9CF81A0DEF7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+File: ../Graphics/henonjl.png Graphic file (type png)
+<use ../Graphics/henonjl.png>
+Package pdftex.def Info: ../Graphics/henonjl.png  used on input line 3447.
+(pdftex.def)             Requested size: 351.31163pt x 250.93687pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3446--3462
+
+ []
+
+[127]
+(_minted-EntropyHub_Guide/1E40DBCF7F255C74B7C3C72B6CBFD8947FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+<../Graphics/hXMSEnjl.png, id=1556, 702.625pt x 501.875pt>
+File: ../Graphics/hXMSEnjl.png Graphic file (type png)
+<use ../Graphics/hXMSEnjl.png>
+Package pdftex.def Info: ../Graphics/hXMSEnjl.png  used on input line 3463.
+(pdftex.def)             Requested size: 351.31163pt x 250.93687pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3462--3464
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3462--3464
+
+ []
+
+[128 <../Graphics/hXMSEnjl.png>]
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+(_minted-EntropyHub_Guide/D7F64ED53BEF2139CA83D1662411E61F7FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex)
+<../Graphics/mandelbrotjl.png, id=1562, 702.625pt x 501.875pt>
+File: ../Graphics/mandelbrotjl.png Graphic file (type png)
+<use ../Graphics/mandelbrotjl.png>
+Package pdftex.def Info: ../Graphics/mandelbrotjl.png  used on input line 3477.
+
+(pdftex.def)             Requested size: 351.31163pt x 250.93687pt.
+\openout4 = `EntropyHub_Guide.pyg'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3476--3483
+
+ []
+
+
+(_minted-EntropyHub_Guide/C0C9A1E9786004E8B498892A5E45D9247FCDFE0781F24E72B5A21
+1FCC5D53D11.pygtex) [129 <../Graphics/mandelbrotjl.png>]
+Chapter 5.
+
+Package xcolor Warning: Incompatible color definition on input line 3497.
+
+File: ../Graphics/Chapter Banner2.png Graphic file (type png)
+<use ../Graphics/Chapter Banner2.png>
+Package pdftex.def Info: ../Graphics/Chapter Banner2.png  used on input line 35
+50.
+(pdftex.def)             Requested size: 455.25195pt x 85.34825pt.
+[130
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3582--3585
+
+ []
+
+[131] [132] [133] [134] [135]
+Chapter 6.
+
+Package xcolor Warning: Incompatible color definition on input line 3905.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3911--3912
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3912--3913
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3913--3914
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3914--3915
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3915--3916
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3916--3917
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3917--3918
+
+ []
+
+File: ../Graphics/Chapter Banner2.png Graphic file (type png)
+<use ../Graphics/Chapter Banner2.png>
+Package pdftex.def Info: ../Graphics/Chapter Banner2.png  used on input line 39
+18.
+(pdftex.def)             Requested size: 455.25195pt x 85.34825pt.
+[136
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 3918--3919
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3919--3920
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3920--3921
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3921--3922
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3922--3923
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3923--3926
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3926--3927
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3927--3928
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3928--3929
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3929--3931
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3931--3933
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3933--3934
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3934--3937
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3937--3938
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3938--3939
+
+ []
+
+[137]
+Underfull \hbox (badness 10000) in paragraph at lines 3939--3940
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3940--3941
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3941--3942
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3942--3943
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3943--3944
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3944--3945
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3945--3947
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3947--3948
+
+ []
+
+[138] (EntropyHub Guide.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-03-14>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 35.12pt have occurred.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `"EntropyHub Guide".out' has not changed.
+(rerunfilecheck)             Checksum: 99467F1A5FD8B3CFF333DC3D5D8783E7;23674.
+runsystem(del EntropyHub_Guide.pyg)...executed.
+
+ ) 
 Here is how much of TeX's memory you used:
- 9549 strings out of 476339
- 158490 string characters out of 5788119
- 1849340 words of memory out of 5000000
- 29894 multiletter control sequences out of 15000+600000
- 512585 words of font info for 33 fonts, out of 8000000 for 9000
+ 37190 strings out of 474424
+ 791209 string characters out of 5741739
+ 1959496 words of memory out of 5000000
+ 58300 multiletter control sequences out of 15000+600000
+ 579595 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,0n,76p,263b,48s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 88i,13n,96p,860b,831s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<./Kramer.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmbx10.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx12.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><C:/Users/mattw/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/mattw/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/matt
+w/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><
+C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi5.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmmi6.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/mattw/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/mattw/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/mattw/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/matt
+w/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Use
+rs/mattw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+<C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r8.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsl10.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmsl12.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/mattw/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/mattw/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/mattw/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/ma
+ttw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
+/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7
+.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmti8.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/symbols/msam10.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/
+type1/urw/bookman/ubkd8a.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/font
+s/type1/urw/courier/ucrb8a.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fo
+nts/type1/urw/courier/ucrbo8a.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX
+/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/mattw/AppData/Local/Programs/MiKT
+eX/fonts/type1/urw/courier/ucrro8a.pfb>
+Output written on "EntropyHub Guide.pdf" (146 pages, 4281367 bytes).
+PDF statistics:
+ 1825 PDF objects out of 2073 (max. 8388607)
+ 351 named destinations out of 1000 (max. 500000)
+ 1197 words of extra memory for PDF output out of 10000 (max. 10000000)
+

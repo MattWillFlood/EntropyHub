@@ -1,91 +1,96 @@
-\babel@toc {english}{}
+\babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}\textbf {Introduction}}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}\textbf {Contact}}{4}{section.1.1}%
-\contentsline {chapter}{\numberline {2}\textbf {Installation}}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}\textbf {MatLab}}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}\textbf {Python}}{12}{section.2.2}%
-\contentsline {section}{\numberline {2.3}\textbf {Julia}}{15}{section.2.3}%
-\contentsline {chapter}{\numberline {3}\textbf {Functions}}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Base Entropy Functions}{17}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}\normalsize ApEn: \hspace {15mm} Approximate Entropy}{17}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}\normalsize SampEn: \hspace {15mm} Sample Entropy}{18}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}\normalsize FuzzEn: \hspace {15mm} Fuzzy Entropy}{19}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}\normalsize K2En: \hspace {15mm} Kolmogorov Entropy}{21}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}\normalsize PermEn: \hspace {15mm} Permutation Entropy}{22}{subsection.3.1.5}%
-\contentsline {subsection}{\numberline {3.1.6}\normalsize CondEn: \hspace {15mm} \textit {corrected} Conditional Entropy}{23}{subsection.3.1.6}%
-\contentsline {subsection}{\numberline {3.1.7}\normalsize DistEn: \hspace {15mm} Distribution Entropy}{24}{subsection.3.1.7}%
-\contentsline {subsection}{\numberline {3.1.8}\normalsize SpecEn: \hspace {15mm} Spectral Entropy}{25}{subsection.3.1.8}%
-\contentsline {subsection}{\numberline {3.1.9}\normalsize DispEn: \hspace {15mm} Dispersion Entropy}{26}{subsection.3.1.9}%
-\contentsline {subsection}{\numberline {3.1.10}\normalsize SyDyEn: \hspace {15mm} Symbolic Dynamic Entropy}{28}{subsection.3.1.10}%
-\contentsline {subsection}{\numberline {3.1.11}\normalsize IncrEn: \hspace {15mm} Increment Entropy}{30}{subsection.3.1.11}%
-\contentsline {subsection}{\numberline {3.1.12}\normalsize CoSiEn: \hspace {15mm} Cosine Similarity Entropy}{31}{subsection.3.1.12}%
-\contentsline {subsection}{\numberline {3.1.13}\normalsize PhasEn: \hspace {15mm} Phase Entropy}{32}{subsection.3.1.13}%
-\contentsline {subsection}{\numberline {3.1.14}\normalsize SlopEn: \hspace {15mm} Slope Entropy}{33}{subsection.3.1.14}%
-\contentsline {subsection}{\numberline {3.1.15}\normalsize BubbEn: \hspace {15mm} Bubble Entropy}{34}{subsection.3.1.15}%
-\contentsline {subsection}{\numberline {3.1.16}\normalsize GridEn: \hspace {15mm} Gridded Distribution Entropy}{35}{subsection.3.1.16}%
-\contentsline {subsection}{\numberline {3.1.17}\normalsize EnofEn: \hspace {15mm} Entropy of Entropy}{36}{subsection.3.1.17}%
-\contentsline {subsection}{\numberline {3.1.18}\normalsize AttnEn: \hspace {15mm} Attention Entropy}{37}{subsection.3.1.18}%
-\contentsline {section}{\numberline {3.2}Cross-Entropy Functions}{38}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}\normalsize XApEn: \hspace {15mm} Cross-Approximate Entropy}{38}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}\normalsize XSampEn: \hspace {15mm} Cross-Sample Entropy}{39}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}\normalsize XFuzzEn: \hspace {15mm} Cross-Fuzzy Entropy}{40}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}\normalsize XK2En: \hspace {15mm} Cross-Kolmogorov Entropy}{42}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}\normalsize XPermEn: \hspace {15mm} Cross-Permutation Entropy}{43}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}\normalsize XCondEn: \hspace {15mm} Cross-Conditional Entropy}{44}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}\normalsize XDistEn: \hspace {15mm} Cross-Distribution Entropy}{45}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}\normalsize XSpecEn: \hspace {15mm} Cross-Spectral Entropy}{46}{subsection.3.2.8}%
-\contentsline {section}{\numberline {3.3}Multiscale Entropy Functions}{47}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}\normalsize MSobject: \hspace {15mm} Multiscale Entropy Object}{48}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}\normalsize MSEn: \hspace {15mm} Multiscale Entropy}{49}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}\normalsize cMSEn: \hspace {10mm} Composite \& Refined-Composite Multiscale Entropy}{51}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}\normalsize rMSEn: \hspace {15mm} Refined Multiscale Entropy}{53}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}\normalsize hMSEn: \hspace {15mm} Hierarchical Multiscale Entropy}{55}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}Multiscale Cross-Entropy Functions}{57}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}\normalsize MSobject: \hspace {15mm} Multiscale Entropy Object}{58}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}\normalsize XMSEn: \hspace {15mm} Multiscale Cross-Entropy}{59}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}\normalsize cXMSEn: \hspace {15mm} Composite \& Refined-Composite Multiscale Cross-Entropy}{61}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}\normalsize rXMSEn: \hspace {15mm} Refined Multiscale Cross-Entropy}{63}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}\normalsize hXMSEn: \hspace {15mm} Hierarchical Multiscale Cross-Entropy}{65}{subsection.3.4.5}%
-\contentsline {section}{\numberline {3.5}Bidimensional Entropy Functions}{67}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}\normalsize SampEn2D: \hspace {15mm} Bidimensional Sample Entropy}{68}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}\normalsize FuzzEn2D: \hspace {15mm} Bidimensional Fuzzy Entropy}{69}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}\normalsize DistEn2D: \hspace {15mm} Bidimensional Distribution Entropy}{71}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}\normalsize DispEn2D: \hspace {15mm} Bidimensional Dispersion Entropy}{72}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}\normalsize PermEn2D: \hspace {15mm} Bidimensional Permutation Entropy}{74}{subsection.3.5.5}%
-\contentsline {subsection}{\numberline {3.5.6}\normalsize EspEn2D: \hspace {15mm} Bidimensional Espinosa Entropy}{76}{subsection.3.5.6}%
-\contentsline {chapter}{\numberline {4}\textbf {Examples}}{77}{chapter.4}%
-\contentsline {section}{\numberline {4.1}MatLab:}{79}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}\normalsize Example 1: \hspace {15mm} Sample Entropy}{79}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}\normalsize Example 2: \hspace {15mm} (Fine-Grained) Permutation Entropy}{80}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}\normalsize Example 3: \hspace {15mm} Phase Entropy w/ Poincaré plot}{81}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}\normalsize Example 4: \hspace {15mm} Cross-Distribution Entropy w/ Different Binning Methods}{83}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}\normalsize Example 5: \hspace {15mm} Multiscale Entropy Object [MSobject()]}{84}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}\normalsize Example 6: \hspace {15mm} Multiscale [Increment] Entropy}{85}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}\normalsize Example 7: \hspace {15mm} Refined Multiscale [Sample] Entropy}{86}{subsection.4.1.7}%
-\contentsline {subsection}{\numberline {4.1.8}\normalsize Example 8: \hspace {15mm}Composite Multiscale Cross-[Approximate] Entropy}{87}{subsection.4.1.8}%
-\contentsline {subsection}{\numberline {4.1.9}\normalsize Example 9: \hspace {15mm} Hierarchical Multiscale \emph {corrected} Cross-[Conditional] Entropy}{88}{subsection.4.1.9}%
-\contentsline {subsection}{\numberline {4.1.10}\normalsize Example 10: \hspace {15mm} Bidimensional Fuzzy Entropy}{90}{subsection.4.1.10}%
-\contentsline {section}{\numberline {4.2}Python:}{91}{section.4.2}%
+\contentsline {section}{\numberline {1.1}\textbf {Updates}}{4}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}\textbf {v1.0} - [March 2024]}{4}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}\textbf {Contact}}{6}{section.1.2}%
+\contentsline {chapter}{\numberline {2}\textbf {Installation}}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}\textbf {MatLab}}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}\textbf {Python}}{14}{section.2.2}%
+\contentsline {section}{\numberline {2.3}\textbf {Julia}}{17}{section.2.3}%
+\contentsline {chapter}{\numberline {3}\textbf {Functions}}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Base Entropy Functions}{20}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}\normalsize ApEn: \hspace {15mm} Approximate Entropy}{20}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}\normalsize SampEn: \hspace {15mm} Sample Entropy}{21}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}\normalsize FuzzEn: \hspace {15mm} Fuzzy Entropy}{22}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}\normalsize K2En: \hspace {15mm} Kolmogorov Entropy}{26}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}\normalsize PermEn: \hspace {15mm} Permutation Entropy}{27}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}\normalsize CondEn: \hspace {15mm} \textit {corrected} Conditional Entropy}{28}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}\normalsize DistEn: \hspace {15mm} Distribution Entropy}{29}{subsection.3.1.7}%
+\contentsline {subsection}{\numberline {3.1.8}\normalsize SpecEn: \hspace {15mm} Spectral Entropy}{30}{subsection.3.1.8}%
+\contentsline {subsection}{\numberline {3.1.9}\normalsize DispEn: \hspace {15mm} Dispersion Entropy}{31}{subsection.3.1.9}%
+\contentsline {subsection}{\numberline {3.1.10}\normalsize SyDyEn: \hspace {15mm} Symbolic Dynamic Entropy}{33}{subsection.3.1.10}%
+\contentsline {subsection}{\numberline {3.1.11}\normalsize IncrEn: \hspace {15mm} Increment Entropy}{35}{subsection.3.1.11}%
+\contentsline {subsection}{\numberline {3.1.12}\normalsize CoSiEn: \hspace {15mm} Cosine Similarity Entropy}{36}{subsection.3.1.12}%
+\contentsline {subsection}{\numberline {3.1.13}\normalsize PhasEn: \hspace {15mm} Phase Entropy}{37}{subsection.3.1.13}%
+\contentsline {subsection}{\numberline {3.1.14}\normalsize SlopEn: \hspace {15mm} Slope Entropy}{38}{subsection.3.1.14}%
+\contentsline {subsection}{\numberline {3.1.15}\normalsize BubbEn: \hspace {15mm} Bubble Entropy}{39}{subsection.3.1.15}%
+\contentsline {subsection}{\numberline {3.1.16}\normalsize GridEn: \hspace {15mm} Gridded Distribution Entropy}{40}{subsection.3.1.16}%
+\contentsline {subsection}{\numberline {3.1.17}\normalsize EnofEn: \hspace {15mm} Entropy of Entropy}{41}{subsection.3.1.17}%
+\contentsline {subsection}{\numberline {3.1.18}\normalsize AttnEn: \hspace {15mm} Attention Entropy}{42}{subsection.3.1.18}%
+\contentsline {subsection}{\numberline {3.1.19}\normalsize DivEn: \hspace {15mm} Diversity Entropy}{43}{subsection.3.1.19}%
+\contentsline {subsection}{\numberline {3.1.20}\normalsize RangEn: \hspace {15mm} Range Entropy}{44}{subsection.3.1.20}%
+\contentsline {section}{\numberline {3.2}Cross-Entropy Functions}{45}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}\normalsize XApEn: \hspace {15mm} Cross-Approximate Entropy}{45}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}\normalsize XSampEn: \hspace {15mm} Cross-Sample Entropy}{46}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}\normalsize XFuzzEn: \hspace {15mm} Cross-Fuzzy Entropy}{47}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}\normalsize XK2En: \hspace {15mm} Cross-Kolmogorov Entropy}{51}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}\normalsize XPermEn: \hspace {15mm} Cross-Permutation Entropy}{52}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}\normalsize XCondEn: \hspace {15mm} Cross-Conditional Entropy}{53}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}\normalsize XDistEn: \hspace {15mm} Cross-Distribution Entropy}{54}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}\normalsize XSpecEn: \hspace {15mm} Cross-Spectral Entropy}{55}{subsection.3.2.8}%
+\contentsline {section}{\numberline {3.3}Multiscale Entropy Functions}{56}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}\normalsize MSobject: \hspace {15mm} Multiscale Entropy Object}{57}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}\normalsize MSEn: \hspace {15mm} Multiscale Entropy}{58}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}\normalsize cMSEn: \hspace {10mm} Composite \& Refined-Composite Multiscale Entropy}{60}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}\normalsize rMSEn: \hspace {15mm} Refined Multiscale Entropy}{62}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}\normalsize hMSEn: \hspace {15mm} Hierarchical Multiscale Entropy}{64}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Multiscale Cross-Entropy Functions}{66}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}\normalsize MSobject: \hspace {15mm} Multiscale Entropy Object}{68}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}\normalsize XMSEn: \hspace {15mm} Multiscale Cross-Entropy}{69}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}\normalsize cXMSEn: \hspace {15mm} Composite \& Refined-Composite Multiscale Cross-Entropy}{71}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}\normalsize rXMSEn: \hspace {15mm} Refined Multiscale Cross-Entropy}{73}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}\normalsize hXMSEn: \hspace {15mm} Hierarchical Multiscale Cross-Entropy}{75}{subsection.3.4.5}%
+\contentsline {section}{\numberline {3.5}Bidimensional Entropy Functions}{77}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}\normalsize SampEn2D: \hspace {15mm} Bidimensional Sample Entropy}{78}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}\normalsize FuzzEn2D: \hspace {15mm} Bidimensional Fuzzy Entropy}{79}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}\normalsize DistEn2D: \hspace {15mm} Bidimensional Distribution Entropy}{83}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}\normalsize DispEn2D: \hspace {15mm} Bidimensional Dispersion Entropy}{84}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}\normalsize PermEn2D: \hspace {15mm} Bidimensional Permutation Entropy}{86}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}\normalsize EspEn2D: \hspace {15mm} Bidimensional Espinosa Entropy}{88}{subsection.3.5.6}%
+\contentsline {chapter}{\numberline {4}\textbf {Examples}}{89}{chapter.4}%
+\contentsline {section}{\numberline {4.1}\normalsize ExampleData(): Import Example Datasets}{91}{section.4.1}%
+\contentsline {section}{\numberline {4.2}MatLab:}{92}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}\normalsize Example 1: \hspace {15mm} Sample Entropy}{92}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}\normalsize Example 2: \hspace {15mm} (Fine-Grained) Permutation Entropy}{93}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}\normalsize Example 3: \hspace {15mm} Phase Entropy w/ Poincaré plot}{95}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}\normalsize Example 4: \hspace {15mm} Cross-Distribution Entropy w/ Different Binning Methods}{97}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}\normalsize Example 5: \hspace {15mm} Multiscale Entropy Object [MSobject()]}{98}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}\normalsize Example 6: \hspace {15mm} Multiscale [Increment] Entropy}{99}{subsection.4.2.6}%
-\contentsline {subsection}{\numberline {4.2.7}\normalsize Example 7: \hspace {15mm} Refined Multiscale [Sample] Entropy}{100}{subsection.4.2.7}%
-\contentsline {subsection}{\numberline {4.2.8}\normalsize Example 8: \hspace {15mm}Composite Multiscale Cross-[Approximate] Entropy}{101}{subsection.4.2.8}%
-\contentsline {subsection}{\numberline {4.2.9}\normalsize Example 9: \hspace {15mm} Hierarchical Multiscale \emph {corrected} Cross-[Conditional] Entropy}{102}{subsection.4.2.9}%
-\contentsline {subsection}{\numberline {4.2.10}\normalsize Example 10: \hspace {15mm} Bidimensional Fuzzy Entropy}{104}{subsection.4.2.10}%
-\contentsline {section}{\numberline {4.3}Julia:}{105}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}\normalsize Example 1: \hspace {15mm} Sample Entropy}{106}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}\normalsize Example 2: \hspace {15mm} (Fine-Grained) Permutation Entropy}{107}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}\normalsize Example 3: \hspace {15mm} Phase Entropy w/ Poincaré plot}{108}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}\normalsize Example 4: \hspace {15mm} Cross-Distribution Entropy w/ Different Binning Methods}{110}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}\normalsize Example 5: \hspace {15mm} Multiscale Entropy Object [MSobject()]}{111}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}\normalsize Example 6: \hspace {15mm} Multiscale [Increment] Entropy}{112}{subsection.4.3.6}%
-\contentsline {subsection}{\numberline {4.3.7}\normalsize Example 7: \hspace {15mm} Refined Multiscale [Sample] Entropy}{113}{subsection.4.3.7}%
-\contentsline {subsection}{\numberline {4.3.8}\normalsize Example 8: \hspace {15mm}Composite Multiscale Cross-[Approximate] Entropy}{114}{subsection.4.3.8}%
-\contentsline {subsection}{\numberline {4.3.9}\normalsize Example 9: \hspace {15mm} Hierarchical Multiscale \emph {corrected} Cross-[Conditional] Entropy}{115}{subsection.4.3.9}%
-\contentsline {subsection}{\numberline {4.3.10}\normalsize Example 10: \hspace {15mm} Bidimensional Fuzzy Entropy}{117}{subsection.4.3.10}%
-\contentsline {chapter}{\numberline {5}\textbf {References}}{118}{chapter.5}%
-\contentsline {chapter}{\numberline {6}\textbf {Glossary of Function Syntax}}{124}{chapter.6}%
+\contentsline {subsection}{\numberline {4.2.3}\normalsize Example 3: \hspace {15mm} Phase Entropy w/ Poincaré plot}{94}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}\normalsize Example 4: \hspace {15mm} Cross-Distribution Entropy w/ Different Binning Methods}{96}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}\normalsize Example 5: \hspace {15mm} Multiscale Entropy Object [MSobject()]}{97}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}\normalsize Example 6: \hspace {15mm} Multiscale [Increment] Entropy}{98}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}\normalsize Example 7: \hspace {15mm} Refined Multiscale [Sample] Entropy}{99}{subsection.4.2.7}%
+\contentsline {subsection}{\numberline {4.2.8}\normalsize Example 8: \hspace {15mm}Composite Multiscale Cross-[Approximate] Entropy}{100}{subsection.4.2.8}%
+\contentsline {subsection}{\numberline {4.2.9}\normalsize Example 9: \hspace {15mm} Hierarchical Multiscale \emph {corrected} Cross-[Conditional] Entropy}{101}{subsection.4.2.9}%
+\contentsline {subsection}{\numberline {4.2.10}\normalsize Example 10: \hspace {15mm} Bidimensional Fuzzy Entropy}{103}{subsection.4.2.10}%
+\contentsline {section}{\numberline {4.3}Python:}{104}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}\normalsize Example 1: \hspace {15mm} Sample Entropy}{105}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}\normalsize Example 2: \hspace {15mm} (Fine-Grained) Permutation Entropy}{106}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}\normalsize Example 3: \hspace {15mm} Phase Entropy w/ Poincaré plot}{107}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}\normalsize Example 4: \hspace {15mm} Cross-Distribution Entropy w/ Different Binning Methods}{109}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}\normalsize Example 5: \hspace {15mm} Multiscale Entropy Object [MSobject()]}{110}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}\normalsize Example 6: \hspace {15mm} Multiscale [Increment] Entropy}{111}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.7}\normalsize Example 7: \hspace {15mm} Refined Multiscale [Sample] Entropy}{112}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}\normalsize Example 8: \hspace {15mm}Composite Multiscale Cross-[Approximate] Entropy}{113}{subsection.4.3.8}%
+\contentsline {subsection}{\numberline {4.3.9}\normalsize Example 9: \hspace {15mm} Hierarchical Multiscale \emph {corrected} Cross-[Conditional] Entropy}{114}{subsection.4.3.9}%
+\contentsline {subsection}{\numberline {4.3.10}\normalsize Example 10: \hspace {15mm} Bidimensional Fuzzy Entropy}{116}{subsection.4.3.10}%
+\contentsline {section}{\numberline {4.4}Julia:}{117}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}\normalsize Example 1: \hspace {15mm} Sample Entropy}{118}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}\normalsize Example 2: \hspace {15mm} (Fine-Grained) Permutation Entropy}{119}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}\normalsize Example 3: \hspace {15mm} Phase Entropy w/ Poincaré plot}{120}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}\normalsize Example 4: \hspace {15mm} Cross-Distribution Entropy w/ Different Binning Methods}{122}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}\normalsize Example 5: \hspace {15mm} Multiscale Entropy Object [MSobject()]}{123}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.6}\normalsize Example 6: \hspace {15mm} Multiscale [Increment] Entropy}{124}{subsection.4.4.6}%
+\contentsline {subsection}{\numberline {4.4.7}\normalsize Example 7: \hspace {15mm} Refined Multiscale [Sample] Entropy}{125}{subsection.4.4.7}%
+\contentsline {subsection}{\numberline {4.4.8}\normalsize Example 8: \hspace {15mm}Composite Multiscale Cross-[Approximate] Entropy}{126}{subsection.4.4.8}%
+\contentsline {subsection}{\numberline {4.4.9}\normalsize Example 9: \hspace {15mm} Hierarchical Multiscale \emph {corrected} Cross-[Conditional] Entropy}{127}{subsection.4.4.9}%
+\contentsline {subsection}{\numberline {4.4.10}\normalsize Example 10: \hspace {15mm} Bidimensional Fuzzy Entropy}{129}{subsection.4.4.10}%
+\contentsline {chapter}{\numberline {5}\textbf {References}}{130}{chapter.5}%
+\contentsline {chapter}{\numberline {6}\textbf {Glossary of Function Syntax}}{136}{chapter.6}%

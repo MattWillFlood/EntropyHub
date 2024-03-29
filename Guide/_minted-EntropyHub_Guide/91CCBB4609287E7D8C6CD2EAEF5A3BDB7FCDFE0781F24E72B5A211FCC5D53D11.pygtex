@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{p}{]}
+\PYG{n}{pkg}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{add}\PYG{+w}{ }\PYG{n}{EntropyHub}
+\end{Verbatim}

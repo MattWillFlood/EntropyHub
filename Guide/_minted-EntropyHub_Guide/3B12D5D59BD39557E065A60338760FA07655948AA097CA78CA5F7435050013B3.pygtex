@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{julia}\PYG{o}{\PYGZgt{}} \PYG{n}{X} \PYG{o}{=} \PYG{n}{ExampleData}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}gaussian\PYGZdq{}}\PYG{p}{);}
-
-\PYG{n}{julia}\PYG{o}{\PYGZgt{}} \PYG{n}{Samp}\PYG{p}{,} \PYG{n}{\PYGZus{}} \PYG{o}{=} \PYG{n}{SampEn}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{m} \PYG{o}{=} \PYG{l+m+mi}{4}\PYG{p}{)}
-\PYG{p}{([}\PYG{l+m+mf}{2.17892361}\PYG{p}{,} \PYG{l+m+mf}{2.17574232}\PYG{p}{,} \PYG{l+m+mf}{2.1819695}\PYG{p}{,} \PYG{l+m+mf}{2.22098397}\PYG{p}{,} \PYG{l+m+mf}{2.175566717}\PYG{p}{])}
-\end{Verbatim}

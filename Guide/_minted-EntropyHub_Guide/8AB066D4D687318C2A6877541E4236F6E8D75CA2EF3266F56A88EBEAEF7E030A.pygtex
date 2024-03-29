@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{n}{Samp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{SampEn}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}tau\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{Samp}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}×\PYG{l+m+mi}{5}
+\PYG{+w}{    }\PYG{l+m+mf}{2.1789}\PYG{+w}{    }\PYG{l+m+mf}{2.1833}\PYG{+w}{    }\PYG{l+m+mf}{2.1880}\PYG{+w}{    }\PYG{l+m+mf}{2.1892}\PYG{+w}{    }\PYG{l+m+mf}{2.1441}
+\end{Verbatim}

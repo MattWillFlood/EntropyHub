@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{MSx}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Ci}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{rMSEn}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Mobj}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Scales}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{F\PYGZus{}Order}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n}{F\PYGZus{}Num}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{0.6}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{RadNew}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{4}\PYG{p}{)}
+\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}
+\PYG{p}{([}\PYG{l+m+mf}{0.52796539}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.57338645}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.593936}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.5907829}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.5564473}\PYG{p}{],}
+\PYG{l+m+mf}{2.842518179}\PYG{p}{)}
+\end{Verbatim}

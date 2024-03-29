@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{X}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{Data}\PYG{p}{(:,}\PYG{l+m+mi}{1}\PYG{p}{);}
-\PYG{n}{Phas}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{PhasEn}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}K\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{11}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}tau\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}Plotx\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{)}
-
-\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{Phas}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mf}{0.8395}
-\end{Verbatim}

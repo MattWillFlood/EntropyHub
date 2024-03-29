@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{FE2D} \PYG{o}{=} \PYG{n}{eh}\PYG{o}{.}\PYG{n}{FuzzEn2D}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,} \PYG{n}{m} \PYG{o}{=} \PYG{p}{(}\PYG{l+m+mi}{8}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{),} \PYG{n}{tau} \PYG{o}{=} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{n}{Fx} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}linear\PYGZsq{}}\PYG{p}{,}
-				\PYG{n}{r} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{Logx} \PYG{o}{=} \PYG{l+m+mi}{3}\PYG{p}{)}
-
-\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{FE2D} \PYG{o}{=}
-	\PYG{l+m+mf}{0.00159093}
-\end{Verbatim}

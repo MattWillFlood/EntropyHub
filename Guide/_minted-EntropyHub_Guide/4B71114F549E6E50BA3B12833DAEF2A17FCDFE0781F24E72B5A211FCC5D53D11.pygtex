@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{using}\PYG{+w}{ }\PYG{n}{EntropyHub}\PYG{o}{:}\PYG{+w}{ }\PYG{n}{SampEn}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{MSobject}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{MSEn}
+\end{Verbatim}

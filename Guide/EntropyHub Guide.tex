@@ -95,11 +95,12 @@ Although many functions for estimating these entropies can be found in various c
 EntropyHub features multiscale variants of all base and cross-entropy methods, (including composite, refined and hierarchical multiscale approaches), in addition to bidimensional entropies for 2D matrix analysis. As the scientific community develops novel entropic measures, efforts will be made to incorporate them in later versions of the package.
 
 
-EntropyHub is licensed under the Apache License (Version 2.0) and is free to use by all on condition that the following reference be included on any outputs realized using the software:\\
+\noindent EntropyHub is licensed under the Apache License (Version 2.0) and is free to use by all on condition that the following reference be included on any outputs realized using the software:\\
 \vspace{3mm}
 
 
-\footnotesize\textbf{Matthew W. Flood and Bernd Grimm (2021),\\
+\footnotesize
+\indent\indent\textbf{Matthew W. Flood (2021),\\
 \indent\indent\emph{EntropyHub: An Open-Source Toolkit for Entropic Time Series Analysis, }\\
 \indent\indent PLoS ONE 16(11):e0259448 \\
 \indent\indent DOI: 10.1371/journal.pone.0259448  \\
@@ -134,18 +135,20 @@ EntropyHub is licensed under the Apache License (Version 2.0) and is free to use
 \chapter{\textbf{Introduction}}
 \chapterimage[width=16cm, height=3cm]{Chapter Banner2.png}
 
-\vspace{50mm}
-It is important to clarify at the outset that the term \emph{entropy} henceforth described refers to entropy in the context of probability theory and information theory as defined by Shannon\footnote{Claude E.  Shannon,\\ \indent\indent \emph{A Mathematical Theory of Communication}
+\vspace{35mm}
+\begin{tcolorbox}[sharp corners, colback=ehone!20, colframe=ehone, title=\textbf{IMPORTANT NOTE}]
+It is important to clarify at the outset that the term \emph{entropy} henceforth described refers to entropy in the context of dynamical systems, probability theory and information theory as defined by Shannon\footnote{Claude E.  Shannon,\\ \indent\indent \emph{A Mathematical Theory of Communication}
 \\\indent\indent Bell System Technical Journal (1948), 27 (3): 379–423.}
-, and not thermodynamic or other entropies from classical physics.\\ \ \newline
-EntropyHub functions fall into five categories:\\
+, and not thermodynamic or other entropies from classical physics.
+\end{tcolorbox}
+\ \\ EntropyHub functions fall into five categories:\\
 \begin{description}[labelsep=5mm, labelwidth=3cm, nosep,style=multiline,leftmargin=45mm]
 %\renewcommand{\labelitemi}{\scriptsize$\blacksquare$}
-\item[Base] functions for estimating the entropy of a single univariate time series.
-\item[Cross] functions for estimating the entropy between two univariate time series.
+\item[Base] functions for estimating the entropy of a single univariate data sequence.
+\item[Cross] functions for estimating the entropy between two univariate data sequences.
 \item[Bidimensional] functions for estimating the entropy of a two-dimensional univariate matrix.
-\item[Multiscale] functions for estimating the multiscale entropy of a single univariate time series using any of the Base entropy functions.
-\item [Multiscale Cross-] functions for estimating the multiscale entropy between two univariate time series using any of the Cross-entropy functions.
+\item[Multiscale] functions for estimating the multiscale entropy of a single univariate data sequences using any of the Base entropy functions.
+\item [Multiscale Cross-] functions for estimating the multiscale entropy between two univariate data sequences using any of the Cross-entropy functions.
 \end{description}
 \ \noindent \newline
 \indent\indent [See \emph{Table \ref{table: tab_1}} for a list of all functions]\\
@@ -213,6 +216,8 @@ Bubble Entropy			&	BubbEn		 	&	2D Dispersion Entropy 		&	DispEn2D\\
 Gridded Distribution Entropy &	GridEn	  	&	2D Permutation Entropy		&	PermEn2D\\ 	 
 Entropy of Entropy		& 	EnofEn	  		&	2D Espinosa Entropy			&	EspEn2D\\ 	 
 Attention Entropy		&   AttnEn 		 	&		\						&	\\ 
+Range Entropy			&   RangEn 		 	&		\						&	\\ 
+Diversity Entropy		&   DivEn 		 	&		\						&	\\ 
 \						&	\				&		\						&	\\ 	 	 
 \rowcolor{ehone} \emph{\textcolor{white}{Multiscale Entropy}} &	\emph{\textcolor{white}{Function}}	&  \emph{\textcolor{white}{Multiscale Cross-Entropy}}		&	\emph{\textcolor{white}{Function}} \\
 Multiscale Entropy		&	MSEn			&	Multiscale Cross-Entropy	&	XMSEn \\
@@ -229,6 +234,78 @@ Hierarchical Multiscale Entropy	&	hMSEn	&	Hierarchical Multiscale Cross-Entropy 
 \end{center}
 
 \newpage
+\section{\textbf{Updates}}
+\subsection{\textbf{v1.0} - [March 2024]}
+EntropyHub is continuously growing to incorporate the lastest developments in the scientific literature.
+This new major release (v1.0) reflects that with many new functions and features to provide you with a versatile environment that makes complex entropy methods easy to implement.\\ 
+The following list summarizes some of the main updates.
+\begin{itemize}
+\item[\textbf{+}] \textbf{New entropy methods}\\
+Two new base entropy functions (and their multiscale versions) have been added:
+\begin{itemize}
+\item[] \emph{Diversity Entropy} - \ref{DivEn} \hspace{17mm}\texttt{\textbf{DivEn()}} \\
+A method that employs cosine similarity to measure similarity between delay vectors.\cite{Div1}
+\item[] \emph{Range Entropy} - \ref{RangEn} \hspace{20mm} \texttt{\textbf{RangEn()}}\\
+A method that uses the rescaled range to normalize distances between delay vectors, thereby reducing the ambiguity in selecting the threshold tolerance in ApEn or SampEn.\cite{Rang1}
+\end{itemize}
+
+\item[\textbf{+}] \textbf{New fuzzy membership functions} \\
+Several new fuzzy membership functions have been added to \texttt{\textbf{FuzzEn}} (\ref{FuzzEn}), \texttt{\textbf{XFuzzEn}} (\ref{XFuzzEn}) and \texttt{\textbf{FuzzEn2D}} (\ref{FuzzEn2D}) to provide more options for mapping the degree of similarity between embedding vectors.
+These include
+\begin{itemize}
+\item \texttt{trapezoidal}
+\item \texttt{triangular} 
+\item \texttt{gaussian}
+\item \texttt{constgaussian}
+\item \texttt{z-shaped}
+\item \texttt{bell-shaped}
+\end{itemize} 
+Further info on these membership functions can be found here.
+
+\item[\textbf{+}] \textbf{\emph{Phase} Permutation Entropy} \\
+A new variant - \textbf{\textit{phase}} permutation entropy - has been added to \texttt{\textbf{PermEn}} (\ref{PermEn}).
+This method employs a hilbert transformation of the data sequence, based on the methods outlined here.
+
+\item[\textbf{+}] \textbf{Cross-Entropy with different length sequences}\\
+EntropyHub now allows for cross-entropy (and multiscale cross-entropy) estimation with different length signals (except \texttt{\textbf{XCondEn}} and \texttt{\textbf{XPermEn}}).
+As a result, the new cross-entropy functions require a separate input for each sequence (\texttt{\textbf{Sig1, Sig2}}).
+
+\item[\textbf{+}] \textbf{Refined-Composite Multiscale Fuzzy Entropy}\\
+In addition to the refined-composite multiscale sample entropy that was available in earlier versions (\textbf{\texttt{cMSEn}} - \ref{cMSEn}), now one can estimate the refined-composite multiscale fuzzy entropy based on the method outlined here.
+What’s more, refined-composite multicale cross-fuzzy entropy is also available (\textbf{\texttt{cXMSEn}} - \ref{cXMSEn}), and both can be estimated using any of the fuzzy membership functions in \texttt{\textbf{FuzzEn}} (\ref{FuzzEn}) or \texttt{\textbf{XFuzzEn}} (\ref{XFuzzEn}).
+\\ \textbf{Note:} refined-composite multiscale sample entropy uses moving averaging to perform graining (analogous to the \texttt{modified} graining method in \texttt{\textbf{MSEn()}}), but refined-composite multiscale fuzzy entropy uses the moving variance (analogous to the \texttt{generalized} graining method in \texttt{\textbf{MSEn()}}) 
+
+\item[\textbf{+}] \textbf{Generalized Multiscale Entropy}\\
+Generaized multiscale entropy and generalized multiscale cross-entropy can now be estimated. Just choose the \texttt{\textbf{"generalized"}} as the graining procedure in \texttt{\textbf{MSEn}} (\ref{MSEn}) or \texttt{\textbf{XMSEn}} (\ref{XMSEn}).
+
+\item[\textbf{+}] \textbf{Variance of sample entropy}\\
+Based on the method outlined by Lake et al. \cite{Samp2}, it is now possible to obtain a measure of the variance in the sample entropy estimate.
+This is achieved by approximating the number of overlapping embedding vectors.
+To do so, just set the parameter \texttt{\textbf{Vcp==true}} in \texttt{\textbf{SampEn}} (\ref{SampEn}) and \texttt{\textbf{XSampEn}} (\ref{XSampEn}), but \textbf{note that doing so requires a lot of computer memory.}
+\end{itemize} 
+
+\ \\Several little bugs and inconsistencies have also been fixed in this release. We want to thank all who have identified and alerted us to these bugs. Most of these bugs have been noted via the GitHub issues portal.
+
+\ \\ \textbf{Bug fixes}
+\begin{itemize}
+\item[\checkmark] The \texttt{\textbf{DispEn2D}} (\ref{DispEn2D}) function in python has now fixed this issue.
+\item[\checkmark] The type hint for \texttt{\textbf{FuzzEn}} (\ref{FuzzEn}) in python has been updated as requested.
+\item[\checkmark] Compatbility issues with \textit{\textbf{EntropyHub.jl}} are now resolved.
+\item[\checkmark] A bug in the \texttt{\textbf{K2En}} (\ref{K2En}) python function led to incorrect entropy estimates for data sequences with many equal values. This has been corrected.
+\end{itemize}
+
+\ \\ \textbf{Other Changes}
+\begin{itemize}
+\item[\textbf{$\uparrow$}] The \texttt{\textbf{equal}} method for discretizing data in \texttt{\textbf{DispEn}} (\ref{DispEn}) and \texttt{\textbf{DispEn2D}} (\ref{DispEn2D}) has been updated to be consistent across Python, MatLab and Julia.
+This is unlikely to have impacted any users previously.
+\item[\textbf{$\uparrow$}] The zeroth dimension (\texttt{\textbf{m=0}}) estimate of \texttt{\textbf{ApEn}} (\ref{ApEn}) and \texttt{\textbf{XApEn}} (\ref{XApEn}) has been changed to $-\Phi_1$.
+\item[\textbf{$\uparrow$}] The default radius threshold distance for \texttt{\textbf{XApEn}}(\ref{XApEn}), \texttt{\textbf{XSampEn}} (\ref{XSampEn}) and \texttt{\textbf{XK2En}} (\ref{XK2En}) has been changed to use the pooled standard deviation [i.e. $0.2*SD_{pooled}(X,Y)$].
+\item[\textbf{$\uparrow$}] The default number of points used in the Fourier spectrum transform in XSpecEn has been changed to \textbf{\texttt{2*max(length(Sig1),length(Sig2)) + 1}}.
+\item[\textbf{$\uparrow$}] The default radius parameter value for \texttt{\textbf{FuzzEn2D}} (\ref{FuzzEn2D}) has been changed to (0.2*std(Mat),2).
+\end{itemize}
+
+
+\newpage
 \section{\textbf{Contact}}
 EntropyHub is linked to many online resources that provide further information about the toolkit and installation files. In addition to this, users can directly contact the EntropyHub developers to seek help, report bugs, or suggest features to improve the toolkit.
 The following \ref{table: tab_2} provides a list of email addresses and links to EntropyHub resources.
@@ -242,6 +319,7 @@ The following \ref{table: tab_2} provides a list of email addresses and links to
 \textbf{EntropyHub website}	&	\href{https://www.EntropyHub.xyz}{www.EntropyHub.xyz}	\\
 \ 					& \ \\	 
 \ 					& \ \ \ \ \ \emph{or alternatively} \\
+\ 					& \ \\	 
 \ 					& \href{https://MattWillFlood.github.io/EntropyHub}{MattWillFlood.github.io/EntropyHub} \\
 \ 					& \ \\	 
 \textbf{\textit{EntropyHub Julia Website}} & \href{https://MattWillFlood.github.io/EntropyHub.jl}{MattWillFlood.github.io/EntropyHub.jl} \\
@@ -256,7 +334,7 @@ The following \ref{table: tab_2} provides a list of email addresses and links to
 \ 					& \ \\	 
 \textbf{Python: PyPI }	&	\href{https://pypi.org/project/EntropyHub/}{pypi.org/project/EntropyHub/}	\\
 \ 					& \ \\	 
-\textbf{Julia: General Registry} & \href{https://juliahub.com/ui/Packages/EntropyHub/npy5E/}{juliahub.com/ui/Packages/EntropyHub/npy5E/0.1.0}	\\
+\textbf{Julia: General Registry} & \href{https://juliahub.com/ui/Packages/EntropyHub/npy5E/}{juliahub.com/ui/Packages/EntropyHub/npy5E/}	\\
 \ &	\href{https://github.com/JuliaRegistries/General/tree/master/E/EntropyHub}{Julia Registry (GitHub)}	\\
 \ 					& \ \\	
 \ 					& \ \\	 
@@ -467,7 +545,26 @@ or in abbreviated form,
 
 \newpage
 \section{\textbf{Julia}}
-\noindent There are 2 ways to install EntropyHub in Julia. Method 1 is recommended.
+\noindent There are several package dependencies which will be installed alongside EntropyHub: 
+\begin{enumerate}
+\item[] \emph{DataInterpolations.jl}
+\item[] \emph{StatsFuns.jl}
+\item[] \emph{StatsBase.jl}
+\item[] \emph{GroupSlices.jl}
+\item[] \emph{Clustering.jl}
+\item[] \emph{Combinatorics.jl}
+\item[] \emph{DSP.jl}
+\item[] \emph{FFTW.jl}
+\item[] \emph{HTTP.jl}
+\item[] \emph{Statistics.jl}
+\item[] \emph{DelimitedFiles.jl}
+\item[] \emph{Random.jl}
+\item[] \emph{LinearAlgebra.jl}
+\item[] \emph{Plots.jl}
+\end{enumerate}  
+
+\noindent \ \\
+There are 2 ways to install EntropyHub in Julia. Method 1 is recommended.
 \subsection*{\normalsize Method 1.}
 \begin{enumerate}
 \item  In your Julia IDE, open the package REPL and enter:
@@ -532,7 +629,7 @@ Python functions in EntropyHub are based primarily on the \texttt{Numpy} module.
 \newpage
 \section{Base Entropy Functions}
 \vspace{1cm}
-\subsection{\normalsize ApEn: \hspace{15mm} Approximate Entropy}
+\subsection{\normalsize ApEn: \hspace{15mm} Approximate Entropy} \label{ApEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [Ap, Phi] = ApEn(Sig, ‘m’, 2, ‘tau’, 1, ‘r’, 0.2*std(Sig), ‘Logx’, exp(1))\\
  Ap, Phi  = ApEn(Sig, m = 2, tau = 1, r = 0.2*np.std(Sig), Logx = np.exp(1))\\
@@ -543,14 +640,14 @@ Python functions in EntropyHub are based primarily on the \texttt{Numpy} module.
 \item[\texttt{Sig}]		Time series signal, a vector of length $> 10$.
 \item[\texttt{m}]		Embedding dimension, a positive integer.
 \item[\texttt{tau}]		Time delay, a positive integer.
-\item[\texttt{r}]		Distance threshold , a positive scalar.
+\item[\texttt{r}]		Distance threshold, a positive scalar.
 \item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
 \end{description}
 
 \noindent \ul{Outputs}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
 \item[\texttt{Ap}]		Approximate entropy estimates, a vector of length m+1.\\
-			**The first value of \texttt{\textbf{Ap}} is the zeroth estimate, i.e. $\frac{Log(N)}{N} \ – \ \Phi_1$,
+			**The first value of \texttt{\textbf{Ap}} is the zeroth estimate, i.e. $– \Phi_1$,
 				and the last value of \texttt{\textbf{Ap}} is the estimate for the specified \texttt{\textbf{m}}.
 \item[\texttt{Phi}]		The number of matched state vectors for each embedding dimension from 0 to m+1.
 \end{description}
@@ -561,11 +658,11 @@ Python functions in EntropyHub are based primarily on the \texttt{Numpy} module.
 
 
 \newpage
-\subsection{\normalsize SampEn: \hspace{15mm} Sample Entropy}
+\subsection{\normalsize SampEn: \hspace{15mm} Sample Entropy}\label{SampEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[Samp, A, B] = SampEn(Sig, ‘m’, 2, ‘tau’, 1, ‘r’, 0.2*std(Sig), ‘Logx’, exp(1)) \\
-Samp, A, B   = SampEn(Sig, m = 2, tau = 1, r = 0.2*np.std(Sig), Logx = np.exp(1)) \\
-Samp, A, B   = SampEn(Sig, m = 2, tau = 1, r = 0.2*std(Sig), Logx = exp(1))}
+[Samp, A, B, Vcp\_Ka\_Kb] = SampEn(Sig, ‘m’, 2, ‘tau’, 1, ‘r’, 0.2*std(Sig), ‘Logx’, exp(1), 'Vcp', false) \\
+Samp, A, B, Vcp\_Ka\_Kb   = SampEn(Sig, m = 2, tau = 1, r = 0.2*np.std(Sig), Logx = np.exp(1), Vcp = False) \\
+Samp, A, B, Vcp\_Ka\_Kb   = SampEn(Sig, m = 2, tau = 1, r = 0.2*std(Sig), Logx = exp(1), Vcp = false)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
@@ -574,23 +671,35 @@ Samp, A, B   = SampEn(Sig, m = 2, tau = 1, r = 0.2*std(Sig), Logx = exp(1))}
 \item[\texttt{tau}]		Time delay, a positive integer.
 \item[\texttt{r}]		Distance threshold, a positive scalar.
 \item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
+\item[\texttt{Vcp}]		Option to return the variance of the conditional probabilities and the number of overlapping matching vector pairs of lengths \cite{Samp2}
+
 \end{description}
 
 \noindent \ul{Outputs}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
 \item[\texttt{Samp}]		Sample entropy estimates, a vector of length \texttt{\textbf{m+1}}.\\
-				**The first value of \texttt{\textbf{Samp}} is the zeroth estimate, i.e. $\frac{1}{N}Log(N(N-1)) – Log(A_1)$, and the last value of \texttt{\textbf{Samp}} is the estimate for the specified \textbf{\texttt{m}}.
+				**The first value of \texttt{\textbf{Samp}} is the zeroth estimate, i.e. $\frac{1}{2}Log(N(N-1)) – Log(A_1)$, and the last value of \texttt{\textbf{Samp}} is the estimate for the specified \textbf{\texttt{m}}.
 \item[\texttt{A}]		The number of matched state vectors for each embedding dimension from 0 to m.
 \item[\texttt{B}]		The number of matched state vectors for each embedding dimension from 1 to m+1.
+\item[\texttt{Vcp\_Ka\_Kb}]		A vector/tuple of three values corresponding to:
+\begin{description}
+\item[\texttt{\textbf{Vcp\_Ka\_Kb(1) = V\textsubscript{cp}}}]  Estimate of the variance of conditional probabilities used in the estimation of the sample entropy estimate.
+\item[\texttt{\textbf{Vcp\_Ka\_Kb(2) = \textbf{K\textsubscript{a}}}}]  The number of overlapping vector pairs of length m+1
+\item[\texttt{\textbf{\textbf{Vcp\_Ka\_Kb(3) = K\textsubscript{b}}}}]  The number of overlapping vector pairs of length m
+\end{description}
+\ \\ \textbf{**Note:} \texttt{Vcp} is undefined for the zeroth embedding dimension (m = 0) 
+ and due to the computational demand, \textbf{\underline{will take substantially more time to return function outputs}}.\\
+ See Appendix B in \cite{Samp2} for more info.
 \end{description}
 
+
 \noindent \ul{References}\hspace{1cm}
-\cite{Samp1}
+\cite{Samp1} \cite{Samp2}
 
 
 
 \newpage
-\subsection{\normalsize FuzzEn: \hspace{15mm}  Fuzzy Entropy}
+\subsection{\normalsize FuzzEn: \hspace{15mm}  Fuzzy Entropy} \label{FuzzEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [Fuzz, Ps1, Ps2] = FuzzEn(Sig, ‘m’, 2, ‘tau’, 1, ‘Fx’, 'default', ‘r’, [0.2, 2], ‘Logx’, exp(1))\\
 Fuzz, Ps1, Ps2   = FuzzEn(Sig, m = 2, tau = 1, Fx = "default", r = (0.2, 2), Logx = np.exp(1))\\
@@ -603,26 +712,60 @@ Fuzz, Ps1, Ps2   = FuzzEn(Sig, m = 2, tau = 1, Fx = "default", r = (0.2, 2), Log
 \item[\texttt{tau}]		Time delay, a positive integer.
 \item[\texttt{Fx}]		Type of fuzzy function for distance transformation, one of the following strings:
 	\begin{description}[labelsep=14em, labelwidth=10em, nosep,style=multiline,leftmargin=6cm]
-	\item[\texttt{"default"}]	$f(x) = exp(-\frac{x^{r_2}}{r_1})$\\
-		\includegraphics[scale=.5]{Fuzz2.png}
-	\item[\texttt{"sigmoid"/"modsampen"}]	$f(x) = (1+exp(\frac{x-r_2}{r_1}))^{-1}$\\
-		\includegraphics[scale=.5]{Fuzz1.png}
+	\item[\texttt{"default"}]	$f(x) = exp(-\frac{x^{r_2}}{r_1})$\\ \ \\
+		\includegraphics[scale=.5]{Fuzz1v1.png} \\
+		 
+	\item[\texttt{"sigmoid"/"modsampen"}]	$f(x) = (1+exp(\frac{x-r_2}{r_1}))^{-1}$\\ \ \\
+		\includegraphics[scale=.5]{Fuzz2v1.png} \\
+
+	\item[\texttt{"triangular"}]	  $f(x) = \begin{cases} 1 - \frac{x}{r},  \hspace{20mm}  x\le r 
+	\\ 0,  \hspace{20mm}  x>r \end{cases}$\\
+		\includegraphics[scale=.5]{FuzzTriv1.png} \\
+
+	\item[\texttt{"trapezoidal1"}]	  $f(x) = \begin{cases} 1,  \hspace{20mm}  x<r 
+	\\ 2 - \frac{x}{r},  \hspace{10mm} r\le x<2r 
+	\\ 0,  \hspace{20mm}  x\ge 2r \end{cases}$\\
+		\includegraphics[scale=.5]{FuzzTrap1v1.png} \\ 
+
+	\item[\texttt{"trapezoidal2"}]	  $f(x) = \begin{cases} 1,  \hspace{30mm}  x<r 
+	\\ 1 - \frac{x-r_{min}}{r_{max} - r_{min}},  \hspace{5mm} r\le x<r_{max} 
+	\\ 0,  \hspace{30mm}  x\ge r_{max} \end{cases}$\\ \ \\
+		\includegraphics[scale=.5]{FuzzTrap2v1.png} \\ 
+		
+	\item[\texttt{"z\_shaped"}]	 $f(x) = \begin{cases} 1, \hspace{30mm}  x<r \\ \
+	\\ 1 - 2 \left( \frac{x-r}{r}\right)^{2},  \hspace{10mm} r<x<\frac{3}{2}r \\ \
+	\\ 2 \left( \frac{x-r}{r}\right)^{2},  \hspace{15mm} \frac{3}{2}r<x<2r \\ \
+	\\ 0,  \hspace{30mm}  x>2r \end{cases}$ \\
+		\includegraphics[scale=.5]{FuzzZSv1.png} \\
+		
+	\item[\texttt{"bell"}] $f\left( x \right) = \frac{1}{1+{\left |\frac{x}{r_1 }\right|}^{r_2 } }$ \\ 
+		\includegraphics[scale=.5]{FuzzBv1.png}\\
+				
+	\item[\texttt{"gaussian"}] $f\left( x \right) = exp(-\frac{x^2}{2r^{2}})$ \\ 
+		\includegraphics[scale=.5]{FuzzGaussv1.png} \\
+
+	\item[\texttt{"constgaussian"}] $f(x) = \begin{cases} 1,  \hspace{35mm}  x<r_{min} 
+	\\  exp(-\log(2)\frac{(x-r)^2}{r}),  \hspace{5mm}  x\ge r_{max} \end{cases}$\\
+		\includegraphics[scale=.5]{FuzzCGv1.png} \\
+
 	\item[\texttt{"gudermannian"}] 	$g(x) = atan(\frac{tanh(r_1)}{x})$
 	\item[]	$f(x) = \frac{g(x)}{g(x_{max})}$
-	\item[]		Note: Distances are normalized w.r.t. maximum distance relative to each state vector.\\
-		\includegraphics[scale=.5]{Fuzz3.png}
-	\item[\texttt{"linear"}]	If \texttt{\textbf{r}} = 0: \\
-	$f(x) = exp(-\frac{x - x_{min}}{x_{max} - x_{min}}) $
-	\item[]			If \texttt{\textbf{r}} = 1: \\ $f(x) = exp(-(x - x_{min}))$\\
-		\includegraphics[scale=.5]{Fuzz4.png}
+	\item[]		Note: Distances are normalized w.r.t. maximum distance relative to each state vector.\\ \ \\
+		\includegraphics[scale=.5]{FuzzGv1.png} \\
 	\end{description}
 	
 \item[\texttt{r}]	Parameters of the fuzzy function specified by \textbf{\texttt{Fx}}, a 1 element scalar or a 2 element tuple of positive values depending on the fuzzy function as shown above.
 	\begin{description}[labelsep=14em, labelwidth=10em, nosep,style=multiline,leftmargin=3cm]
 	\item[\texttt{\emph{Default}}]		Two element tuple (or vector in MatLab)
 	\item[\texttt{\emph{Sigmoid/ModSampEn}}]		Two element tuple (or vector in MatLab)
+	\item[\texttt{\emph{Trapezoidal2}}]		Two element tuple (or vector in MatLab)
+	\item[\texttt{\emph{Bell}}]		Two element tuple (or vector in MatLab)
+	\item[\texttt{\emph{Trapezoidal1}}]		 A scalar value
+	\item[\texttt{\emph{Triangular}}]		 A scalar value
+	\item[\texttt{\emph{Z\_Shaped}}]	 A scalar value
+	\item[\texttt{\emph{Gaussian}}] A scalar value
+	\item[\texttt{\emph{ConstGaussian}}] A scalar value
 	\item[\texttt{\emph{Gudermannian}}] A scalar value
-	\item[\texttt{\emph{Linear}}]		0 or 1
 	\end{description}
 
 \item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
@@ -636,12 +779,12 @@ Fuzz, Ps1, Ps2   = FuzzEn(Sig, m = 2, tau = 1, Fx = "default", r = (0.2, 2), Log
 \end{description}
 
 \noindent \ul{References}\hspace{1cm}
-\cite{Fuzz1} \cite{Fuzz2}
+\cite{Fuzz1} \cite{Fuzz2} \cite{Fuzz3}
 
 
 
 \newpage
-\subsection{\normalsize K2En: \hspace{15mm}  Kolmogorov Entropy}
+\subsection{\normalsize K2En: \hspace{15mm}  Kolmogorov Entropy} \label{K2En}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [K2, Ci] = K2En(Sig, ‘m’, 2, ‘tau’, 1, ‘r’, 0.2*std(Sig), ‘Logx’, exp(1)) \\
 K2, Ci  = K2En(Sig, m = 2, tau = 1, r = 0.2*np.std(Sig), Logx = np.exp(1)) \\
@@ -668,7 +811,7 @@ K2, Ci  = K2En(Sig, m = 2, tau = 1, r = 0.2*std(Sig), Logx = exp(1))}
 
 
 \newpage
-\subsection{\normalsize PermEn: \hspace{15mm}  Permutation Entropy}
+\subsection{\normalsize PermEn: \hspace{15mm}  Permutation Entropy} \label{PermEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [Perm, Pnorm, cPE] = PermEn(Sig, ‘m’, 2, ‘tau’, 1, ‘Typex’, ’none’, ‘tpx’, [], ‘Logx’, 2, ‘Norm’, false)\\
 Perm, Pnorm, cPE  = PermEn(Sig, m = 2, tau = 1, Typex = ‘none’, tpx = -1, Logx = 2, Norm = False)\\ 
@@ -688,13 +831,15 @@ Perm, Pnorm, cPE  = PermEn(Sig, m = 2, tau = 1, Typex = "none", tpx = nothing, L
 		\item[\texttt{"ampaware"}]	Amplitude-aware permutation entropy \cite{Perm5}
 		\item[\texttt{"edge"}]		Edge permutation entropy  \cite{Perm6}
 		\item[\texttt{"uniquant"}]	Uniform quantization-based permutation entropy \cite{Perm7}
+		\item[\texttt{"phase"}]  Phase permutation entropy \cite{Perm9}
 	\end{description}
 \item[\texttt{tpx}]		Tuning parameter for the permutation entropy specified by the  \textbf{\texttt{Typex}} argument.
 	\begin{description}[labelsep=10em, labelwidth=4em, nosep,style=multiline,leftmargin=3cm]
 	\item[\texttt{\emph{finegrain}}] \textbf{\texttt{tpx}} is the $\alpha$ parameter, a positive scalar (default: 1)	
 	\item[\texttt{\emph{ampaware}}]	\textbf{\texttt{tpx}} is the A parameter, a value in range [0 1]  (default: 0.5)
 	\item[\texttt{\emph{edge}}]	\textbf{\texttt{tpx}} is the r sensitivity parameter, a scalar $> 0$ (default: 1)
-	\item[\texttt{\emph{uniquant}}]	\textbf{\texttt{tpx}} is the L parameter, an integer $> 1$  (default: 4).		
+	\item[\texttt{\emph{uniquant}}]	\textbf{\texttt{tpx}} is the L parameter, an integer $> 1$  (default: 4).	
+	\item[\texttt{\emph{phase}}]	\textbf{\texttt{tpx}} is the option to unwrap the phase shift of the Hilbert-transformed data sequence, either [\ ] or 1 (default: [\ ]).				
 	\end{description}
 \item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
 \item[\texttt{Norm}]    Normalisation of \texttt{\textbf{Perm}} value, a boolean operator:\\
@@ -712,12 +857,12 @@ Perm, Pnorm, cPE  = PermEn(Sig, m = 2, tau = 1, Typex = "none", tpx = nothing, L
 \end{description}
 
 \noindent \ul{References}\hspace{1cm}
-\cite{Perm1} \cite{Perm2} \cite{Perm3} \cite{Perm4} \cite{Perm5} \cite{Perm6} \cite{Perm7} \cite{Perm8}
+\cite{Perm1} \cite{Perm2} \cite{Perm3} \cite{Perm4} \cite{Perm5} \cite{Perm6} \cite{Perm7} \cite{Perm8} \cite{Perm9}
 
 
 
 \newpage
-\subsection{\normalsize CondEn: \hspace{15mm} \textit{corrected} Conditional Entropy}
+\subsection{\normalsize CondEn: \hspace{15mm} \textit{corrected} Conditional Entropy} \label{CondEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [Cond, SEw, SEz] = CondEn(Sig, ‘m’, 2, ‘tau’, 1, ‘c’, 6, ‘Logx’, exp(1), ‘Norm’, false)\\
  Cond, SEw, SEz  = CondEn(Sig, m = 2, tau = 1, c = 6, Logx = np.exp(1), Norm = False) \\
@@ -748,7 +893,7 @@ Cond, SEw, SEz  = CondEn(Sig, m = 2, tau = 1, c = 6, Logx = exp(1), Norm = false
 
 
 \newpage
-\subsection{\normalsize DistEn: \hspace{15mm} Distribution Entropy}
+\subsection{\normalsize DistEn: \hspace{15mm} Distribution Entropy} \label{DistEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [Dist, Ppi] = DistEn(Sig, ‘m’, 2, ‘tau’, 1, ‘Bins’, ‘sturges’, ‘Logx’, 2, ‘Norm’, true)\\
  Dist, Ppi  = DistEn(Sig, m = 2, tau = 1, Bins = ‘sturges’, Logx = 2, Norm = True)\\ 
@@ -782,7 +927,7 @@ Cond, SEw, SEz  = CondEn(Sig, m = 2, tau = 1, c = 6, Logx = exp(1), Norm = false
 
 
 \newpage
-\subsection{\normalsize SpecEn: \hspace{15mm} Spectral Entropy}
+\subsection{\normalsize SpecEn: \hspace{15mm} Spectral Entropy} \label{SpecEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [Spec, BandEn] = SpecEn(Sig, ‘N’, 2*length(Sig)+1, ‘Freqs’, [0,1], ‘Logx’, exp(1), ‘Norm’, true)\\
  Spec, BandEn  = SpecEn(Sig, N = 2*len(Sig) + 1, Freqs = (0,1), Logx = np.exp(1), Norm = True)\\ 
@@ -815,7 +960,7 @@ Cond, SEw, SEz  = CondEn(Sig, m = 2, tau = 1, c = 6, Logx = exp(1), Norm = false
 
 
 \newpage
-\subsection{\normalsize DispEn: \hspace{15mm} Dispersion Entropy}
+\subsection{\normalsize DispEn: \hspace{15mm} Dispersion Entropy} \label{DispEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [Dispx, RDE] = DispEn(Sig, ‘m’, 2, ‘tau’, 1, 'c', 3, ‘Typex’, ‘ncdf’, ‘Logx’, exp(1), ‘Fluct’, false, ‘Norm’, false, ‘rho’, 1)\\
  Dispx, RDE  = DispEn(Sig, m = 2, tau = 1, c = 3, Typex = ‘ncdf’, Logx = exp(1), Fluct = False, Norm = False, rho = 1) \\
@@ -858,7 +1003,7 @@ Cond, SEw, SEz  = CondEn(Sig, m = 2, tau = 1, c = 6, Logx = exp(1), Norm = false
 
 
 \newpage
-\subsection{\normalsize SyDyEn: \hspace{15mm} Symbolic Dynamic Entropy}
+\subsection{\normalsize SyDyEn: \hspace{15mm} Symbolic Dynamic Entropy}\label{SyDyEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [SyDy, Zt] = SyDyEn(Sig, 'm', 2, 'tau', 1, 'c', 3, 'Typex', 'MEP', 'Logx', exp(1), 'Norm', true)\\
 SyDy, Zt = SyDyEn(Sig, m = 2, tau = 1, c = 3, Typex = 'MEP', Logx = np.exp(1), Norm = True)\\
@@ -899,7 +1044,7 @@ SyDy, Zt = SyDyEn(Sig, m = 2, tau = 1, c = 3, Typex = "MEP", Logx = exp(1), Norm
 
 
 \newpage
-\subsection{\normalsize IncrEn: \hspace{15mm} Increment Entropy}
+\subsection{\normalsize IncrEn: \hspace{15mm} Increment Entropy}\label{IncrEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 Incr = IncrEn(Sig, ‘m’, 2, ‘tau’, 1, ‘R’, 4, ‘Logx’, exp(1), 'Norm', false) \\
 Incr = IncrEn(Sig, m = 2, tau = 1, R = 4, Logx = np.exp(1), Norm = False) \\
@@ -928,7 +1073,7 @@ Incr = IncrEn(Sig, m = 2, tau = 1, R = 4, Logx = exp(1), Norm = false)}
 
 
 \newpage
-\subsection{\normalsize CoSiEn: \hspace{15mm} Cosine Similarity Entropy}
+\subsection{\normalsize CoSiEn: \hspace{15mm} Cosine Similarity Entropy}\label{CoSiEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [CoSi, Bm] = CoSiEn(Sig, ‘m’, 2, ‘tau’, 1, ‘r’, 0.1, ‘Logx’, 2, 'Norm', 0) \\
 CoSi, Bm  = CoSiEn(Sig, m = 2, tau = 1, r = 0.1, Logx = 2, Norm = 0) \\
@@ -961,7 +1106,7 @@ CoSi, Bm  = CoSiEn(Sig, m = 2, tau = 1, r = 0.1, Logx = 2, Norm = 0)}
 
 
 \newpage
-\subsection{\normalsize PhasEn: \hspace{15mm} Phase Entropy}
+\subsection{\normalsize PhasEn: \hspace{15mm} Phase Entropy}\label{PhasEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 Phas = PhasEn(Sig, ‘K’, 4, ‘tau’, 1, ‘Logx’, exp(1), 'Norm', true, 'Plotx', false) \\
 Phas = PhasEn(Sig, K = 4, tau = 1, Logx = np.exp(1), Norm = True, Plotx = False) \\
@@ -993,7 +1138,7 @@ Phas = PhasEn(Sig, K = 4, tau = 1, Logx = exp(1), Norm = true, Plotx = false)}
 
 
 \newpage
-\subsection{\normalsize SlopEn: \hspace{15mm} Slope Entropy}
+\subsection{\normalsize SlopEn: \hspace{15mm} Slope Entropy}\label{SlopEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 Slop = SlopEn(Sig, ‘m’, 2, ‘tau’, 1, ‘Logx’, 2, 'Lvls', [5, 45], 'Norm', true) \\
 Slop = SlopEn(Sig, m = 2, tau = 1, Logx = 2, Lvls = (5, 45), Norm = True) \\
@@ -1024,7 +1169,7 @@ Slop = SlopEn(Sig, m = 2, tau = 1, Logx = 2, Lvls = [5, 45], Norm = true)}
 
 
 \newpage
-\subsection{\normalsize BubbEn: \hspace{15mm} Bubble Entropy}
+\subsection{\normalsize BubbEn: \hspace{15mm} Bubble Entropy}\label{BubbEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [Bubb, H] = BubbEn(Sig, ‘m’, 2, ‘tau’, 1, ‘Logx’, exp(1)) \\
 Bubb, H = BubbEn(Sig, m = 2, tau = 1, Logx = np.exp(1)) \\
@@ -1050,7 +1195,7 @@ Bubb, H = BubbEn(Sig, m = 2, tau = 1, Logx = exp(1))}
 
 
 \newpage
-\subsection{\normalsize GridEn: \hspace{15mm} Gridded Distribution Entropy}
+\subsection{\normalsize GridEn: \hspace{15mm} Gridded Distribution Entropy}\label{GridEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [GDE, GDR, PIx, GIx, SIx, AIx]  = GridEn(Sig, ‘m’, 3, ‘tau’, 1, ‘Logx’, exp(1), 'Plotx', false) \\
 GDE, GDR, PIx, GIx, SIx, AIx = GridEn(Sig, m = 3, tau = 1, Logx = np.exp(1), Plotx = False) \\
@@ -1085,7 +1230,7 @@ GDE, GDR, PIx, GIx, SIx, AIx = GridEn(Sig, m = 3, tau = 1, Logx = exp(1), Plotx 
 
 
 \newpage
-\subsection{\normalsize EnofEn: \hspace{15mm} Entropy of Entropy}
+\subsection{\normalsize EnofEn: \hspace{15mm} Entropy of Entropy} \label{EnofEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [EoE, AvEn, S2]  = EnofEn(Sig, ‘tau’, 10, ‘S’, 10, ‘Xrange’, [min(Sig) max(Sig)], ‘Logx’, exp(1)) \\
 EoE, AvEn, S2 = EnofEn(Sig, tau = 10, S = 10, Xrange = (np.min(Sig), np.max(Sig)), Logx = np.exp(1)) \\
@@ -1114,7 +1259,7 @@ EoE, AvEn, S2 = EnofEn(Sig, tau = 10, S = 10, Xrange = (min(Sig),max(Sig)), Logx
 
 
 \newpage
-\subsection{\normalsize AttnEn: \hspace{15mm} Attention Entropy}
+\subsection{\normalsize AttnEn: \hspace{15mm} Attention Entropy} \label{AttnEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [Attn, Hxx, Hnn, Hxn, Hnx]  = EnofEn(Sig, ‘Logx’, 2) \\
 Attn, Hxx, Hnn, Hxn, Hnx = EnofEn(Sig, Logx = 2) \\
@@ -1141,22 +1286,85 @@ Attn, Hxx, Hnn, Hxn, Hnx = EnofEn(Sig, Logx = 2)}
 
 
 
+\newpage
+\subsection{\normalsize DivEn: \hspace{15mm} Diversity Entropy} \label{DivEn}
+\noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
+[Div, CDEn, Bm] = DivEn(Sig, 'm', 2, 'tau', 1, 'r', 5, 'Logx', exp(1)) \\
+Div, CDEn, Bm = DivEn(Sig, m = 2, tau = 1, r = 5, Logx = np.exp(1)) \\
+Div, CDEn, Bm = DivEn(Sig, m = 2, tau = 1, r = 5, Logx = exp(1))}
+
+\noindent \ul{Arguments}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{Sig}]		Time series signal, a vector of length $> 10$.
+\item[\texttt{m}]		Embedding dimension, an integer $ > 1$.
+\item[\texttt{tau}]		Time delay, a positive integer.
+\item[\texttt{r}]		Histogram bins, either: \\- an integer  $>1$ representing the number of bins \\- a vector array of 3 or more increasing values in range [-1 1] representing the bin edges including the rightmost edge.
+\item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.\\
+		Enter 0 for natural logarithm.
+\end{description}
+
+\noindent \ul{Outputs}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{Div}]	Diversity entropy estimate.
+\item[\texttt{CDEn}]	Cumulative diversity entropy estimate.
+\item[\texttt{Bm}]	    Probability from each histogram bin.
+\end{description}
+
+\noindent \ul{References}\hspace{1cm}
+\cite{Div1} \cite{Div2}
+
+
+
+\newpage
+\subsection{\normalsize RangEn: \hspace{15mm} Range Entropy} \label{RangEn}
+\noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
+[Rangx, A, B] = RangEn(Sig, 'm', 2, 'tau', 1, 'r', 0.2, 'Methodx', 'SampEn', 'Logx', exp(1)) \\
+Rangx, A, B = RangEn(Sig, m = 2, tau = 1, r = 0.2, Methodx = "SampEn", Logx = np.exp(1)) \\
+Rangx, A, B = RangEn(Sig, m = 2, tau = 1, r = 0.2, Methodx = "SampEn", Logx = exp(1))}
+
+
+\noindent \ul{Arguments}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{Sig}]		Time series signal, a vector of length $> 10$.
+\item[\texttt{m}]		Embedding dimension, an integer $ > 1$.
+\item[\texttt{tau}]		Time delay, a positive integer.
+\item[\texttt{r}]		Distance threshold, a positive scalar
+\item[\texttt{Methodx}]		Method for entropy estimation, either "ApEn" or "SampEn"  
+\item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.\\
+		Enter 0 for natural logarithm.
+\end{description}
+
+\noindent \ul{Outputs}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{Rangx}]	Range entropy estimate.
+\item[\texttt{A}]	Number of matched state vectors of length m+1.
+\item[\texttt{B}]	Number of matched state vectors of length m.
+\end{description}
+
+\noindent \ul{References}\hspace{1cm}
+\cite{Rang1} \cite{Ap1} \cite{Samp1}
+
+
+
+
+
 %------------------------------------------------------------------------
 %------------------------------------------------------------------------
 \newpage
 \section{Cross-Entropy Functions}
 \vspace{1cm}
 
-\subsection{\normalsize XApEn: \hspace{15mm} Cross-Approximate Entropy}
+\subsection{\normalsize XApEn: \hspace{15mm} Cross-Approximate Entropy}\label{XApEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[XAp, Phi] = XApEn(Sig, ‘m’, 2, ‘tau’, 1, ‘r’, 0.2*std(Sig), ‘Logx’, exp(1))\\
- XAp, Phi  = XApEn(Sig, m = 2, tau = 1, r = 0.2*np.std(Sig), Logx = np.exp(1))\\
- XAp, Phi  = XApEn(Sig, m = 2, tau = 1, r = 0.2*std(Sig), Logx = exp(1))}
+[XAp, Phi] = XApEn(Sig1, Sig2, ‘m’, 2, ‘tau’, 1, ‘r’, 0.2*std\textsubscript{pooled}(Sig1, Sig2), ‘Logx’, exp(1))\\
+ XAp, Phi  = XApEn(Sig1, Sig2, m = 2, tau = 1, r = 0.2*std\textsubscript{pooled}(Sig1, Sig2), Logx = np.exp(1))\\
+ XAp, Phi  = XApEn(Sig1, Sig2, m = 2, tau = 1, r = 0.2*std\textsubscript{pooled}(Sig1, Sig2), Logx = exp(1))}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep,,style=multiline,leftmargin=3cm]\footnotesize
-\item[\texttt{Sig}]		Time series signals, a N x 2 matrix where N $> 10$.\\
-\textbf{NOTE: \ul{XApEn is direction-dependent}}. Thus, the first column of \texttt{\textbf{Sig}} is used as the template data sequence, and the second column is the matching sequence.
+\item[\texttt{Sig1}]	First data sequence, a vector of $>10$ elements.
+\item[\texttt{Sig2}]	Second data sequence, a vector of $>10$ elements.\\
+\textbf{NOTE: \ul{XApEn is direction-dependent}}. Thus, \texttt{\textbf{Sig1}} is used as the template data sequence, and the \texttt{\textbf{Sig2}} is the matching sequence.
 \item[\texttt{m}]		Embedding dimension, a positive integer.
 \item[\texttt{tau}]		Time delay, a positive integer.
 \item[\texttt{r}]		Distance threshold, a positive scalar.
@@ -1166,8 +1374,7 @@ Attn, Hxx, Hnn, Hxn, Hnx = EnofEn(Sig, Logx = 2)}
 \noindent \ul{Outputs}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
 \item[\texttt{XAp}]		Cross-approximate entropy estimates, a vector of length m+1.\\
-		**The first value of \texttt{\textbf{XAp}} is the zeroth estimate, i.e. $(Log(N)/N) – \Phi_1$,
-						and the last value of \texttt{\textbf{XAp}} is the estimate for the specified \texttt{\textbf{m}}.
+		**The first value of \texttt{\textbf{XAp}} is the zeroth estimate, i.e. $– \Phi_1$, and the last value of \texttt{\textbf{XAp}} is the estimate for the specified \texttt{\textbf{m}}.
 \item[\texttt{Phi}]		The number of matched state vectors for each embedding dimension from 0 to m+1.
 \end{description}
 
@@ -1177,68 +1384,115 @@ Attn, Hxx, Hnn, Hxn, Hnx = EnofEn(Sig, Logx = 2)}
 
 
 \newpage
-\subsection{\normalsize XSampEn: \hspace{15mm} Cross-Sample Entropy}
+\subsection{\normalsize XSampEn: \hspace{15mm} Cross-Sample Entropy}\label{XSampEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[XSamp, Phi] = XSampEn(Sig, ‘m’, 2, ‘tau’, 1, ‘r’, 0.2*std(Sig), ‘Logx’, exp(1))\\
- XSamp, Phi  = XSampEn(Sig, m = 2, tau = 1, r = 0.2*np.std(Sig), Logx = np.exp(1))\\
- XSamp, Phi  = XSampEn(Sig, m = 2, tau = 1, r = 0.2*std(Sig), Logx = exp(1))}
+[XSamp, A, B, Vcp\_Ka\_Kb] = XSampEn(Sig1, Sig2, ‘m’, 2, ‘tau’, 1, ‘r’, 0.2*std\textsubscript{pooled}(Sig1, Sig2), ‘Logx’, exp(1), 'Vcp', false)\\
+ XSamp, A, B, Vcp\_Ka\_Kb  = XSampEn(Sig1, Sig2, m = 2, tau = 1, r = 0.2*std\textsubscript{pooled}(Sig1, Sig2), Logx = np.exp(1), Vcp = False)\\
+ XSamp, A, B, Vcp\_Ka\_Kb  = XSampEn(Sig1, Sig2, m = 2, tau = 1, r = 0.2*std\textsubscript{pooled}(Sig1, Sig2), Logx = exp(1), Vcp = false)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep,,style=multiline,leftmargin=3cm]\footnotesize
-\item[\texttt{Sig}]		Time series signals, a N x 2 matrix where N $> 10$.
+\item[\texttt{Sig1}]	First data sequence, a vector of $>10$ elements.
+\item[\texttt{Sig2}]	Second data sequence, a vector of $>10$ elements.
 \item[\texttt{m}]		Embedding dimension, a positive integer.
 \item[\texttt{tau}]		Time delay, a positive integer.
 \item[\texttt{r}]		Radius distance threshold, a positive scalar.
 \item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
+\item[\texttt{Vcp}]		Option to return the variance of the conditional probabilities and the number of overlapping matching vector pairs of lengths
 \end{description}
 
 \noindent \ul{Outputs}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
 \item[\texttt{XSamp}]		Cross-sample entropy estimates, a vector of length m+1.\\
-			**The first value of \texttt{\textbf{XSamp}} is the zeroth estimate, i.e.  $\frac{Log(N(N-1)}{N} \ – \ Log(A_1)$,
+			**The first value of \texttt{\textbf{XSamp}} is the zeroth estimate, i.e.  $Log(N1*N2) \ – \ Log(A_1)$,
 			and the last value of \texttt{\textbf{XSamp}} is the estimate for the specified \texttt{\textbf{m}}.
 \item[\texttt{A}]		The number of matched state vectors for each embedding dimension from 0 to m.
 \item[\texttt{B}]		The number of matched state vectors for each embedding dimension from 1 to m+1.
+\item[\texttt{Vcp\_Ka\_Kb}]		A vector/tuple of three values corresponding to:
+\begin{description}
+\item[\texttt{\textbf{Vcp\_Ka\_Kb(1) = V\textsubscript{cp}}}]  Estimate of the variance of conditional probabilities used in the estimation of the sample entropy estimate.
+\item[\texttt{\textbf{Vcp\_Ka\_Kb(2) = \textbf{K\textsubscript{a}}}}]  The number of overlapping vector pairs of length m+1
+\item[\texttt{\textbf{\textbf{Vcp\_Ka\_Kb(3) = K\textsubscript{b}}}}]  The number of overlapping vector pairs of length m
+\end{description}
+\ \\ \textbf{**Note:} \texttt{Vcp} is undefined for the zeroth embedding dimension (m = 0) 
+ and due to the computational demand, \textbf{\underline{will take substantially more time to return function outputs}}.\\
+ See Appendix B in \cite{Samp2} for more info.
 \end{description}
 
 \noindent \ul{References}\hspace{1cm}
-\cite{Samp1}
+\cite{Samp1} \cite{Samp2}
 
 
 
 \newpage
-\subsection{\normalsize XFuzzEn: \hspace{15mm} Cross-Fuzzy Entropy}
+\subsection{\normalsize XFuzzEn: \hspace{15mm} Cross-Fuzzy Entropy} \label{XFuzzEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[XFuzz, Ps1, Ps2] = XFuzzEn(Sig, ‘m’, 2, ‘tau’, 1, ‘Fx’, ‘default, ‘r’, [0.2, 2], ‘Logx’, exp(1))\\
-XFuzz, Ps1, Ps2   = XFuzzEn(Sig, m = 2, tau = 1, Fx = 'default', r = (0.2, 2), Logx = np.exp(1))\\
-XFuzz, Ps1, Ps2   = XFuzzEn(Sig, m = 2, tau = 1, Fx = "default", r = (0.2, 2), Logx = exp(1))}
+[XFuzz, Ps1, Ps2] = XFuzzEn(Sig1, Sig2, ‘m’, 2, ‘tau’, 1, ‘Fx’, ‘default, ‘r’, [0.2, 2], ‘Logx’, exp(1))\\
+XFuzz, Ps1, Ps2   = XFuzzEn(Sig1, Sig2, m = 2, tau = 1, Fx = 'default', r = (0.2, 2), Logx = np.exp(1))\\
+XFuzz, Ps1, Ps2   = XFuzzEn(Sig1, Sig2, m = 2, tau = 1, Fx = "default", r = (0.2, 2), Logx = exp(1))}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep,style=multiline,leftmargin=3cm]\footnotesize
-\item[\texttt{Sig}]		Time series signals, a N x 2 matrix where N $> 10$.
+\item[\texttt{Sig1}]	First data sequence, a vector of $>10$ elements.
+\item[\texttt{Sig2}]	Second data sequence, a vector of $>10$ elements.
 \item[\texttt{m}]		Embedding dimension, a positive integer.
 \item[\texttt{tau}]		Time delay, a positive integer.
 \item[\texttt{Fx}]		Type of fuzzy function for distance transformation, one of the following strings:
 	\begin{description}[labelsep=14em, labelwidth=10em, nosep,style=multiline,leftmargin=6cm]
-	\item[\texttt{"default"}]	$f(x) = exp(-\frac{x^{r_2}}{r_1})$\\
-		\includegraphics[scale=.5]{Fuzz2.png}
-	\item[\texttt{"sigmoid"/"modsampen"}]	$f(x) = (1+exp(\frac{x-r_2}{r_1}))^{-1}$\\
-		\includegraphics[scale=.5]{Fuzz1.png}
+	\item[\texttt{"default"}]	$f(x) = exp(-\frac{x^{r_2}}{r_1})$\\ \ \\
+		\includegraphics[scale=.5]{Fuzz1v1.png} \\
+		 
+	\item[\texttt{"sigmoid"/"modsampen"}]	$f(x) = (1+exp(\frac{x-r_2}{r_1}))^{-1}$\\ \ \\
+		\includegraphics[scale=.5]{Fuzz2v1.png} \\
+
+	\item[\texttt{"triangular"}]	  $f(x) = \begin{cases} 1 - \frac{x}{r},  \hspace{20mm}  x\le r 
+	\\ 0,  \hspace{20mm}  x>r \end{cases}$\\
+		\includegraphics[scale=.5]{FuzzTriv1.png} \\
+
+	\item[\texttt{"trapezoidal1"}]	  $f(x) = \begin{cases} 1,  \hspace{20mm}  x<r 
+	\\ 2 - \frac{x}{r},  \hspace{10mm} r\le x<2r 
+	\\ 0,  \hspace{20mm}  x\ge 2r \end{cases}$\\
+		\includegraphics[scale=.5]{FuzzTrap1v1.png} \\ 
+
+	\item[\texttt{"trapezoidal2"}]	  $f(x) = \begin{cases} 1,  \hspace{30mm}  x<r 
+	\\ 1 - \frac{x-r_{min}}{r_{max} - r_{min}},  \hspace{5mm} r\le x<r_{max} 
+	\\ 0,  \hspace{30mm}  x\ge r_{max} \end{cases}$\\ \ \\
+		\includegraphics[scale=.5]{FuzzTrap2v1.png} \\ 
+		
+	\item[\texttt{"z\_shaped"}]	 $f(x) = \begin{cases} 1, \hspace{30mm}  x<r \\ \
+	\\ 1 - 2 \left( \frac{x-r}{r}\right)^{2},  \hspace{10mm} r<x<\frac{3}{2}r \\ \
+	\\ 2 \left( \frac{x-r}{r}\right)^{2},  \hspace{15mm} \frac{3}{2}r<x<2r \\ \
+	\\ 0,  \hspace{30mm}  x>2r \end{cases}$ \\
+		\includegraphics[scale=.5]{FuzzZSv1.png} \\
+		
+	\item[\texttt{"bell"}] $f\left( x \right) = \frac{1}{1+{\left |\frac{x}{r_1 }\right|}^{r_2 } }$ \\ 
+		\includegraphics[scale=.5]{FuzzBv1.png}\\
+				
+	\item[\texttt{"gaussian"}] $f\left( x \right) = exp(-\frac{x^2}{2r^{2}})$ \\ 
+		\includegraphics[scale=.5]{FuzzGaussv1.png} \\
+
+	\item[\texttt{"constgaussian"}] $f(x) = \begin{cases} 1,  \hspace{35mm}  x<r_{min} 
+	\\  exp(-\log(2)\frac{(x-r)^2}{r}),  \hspace{5mm}  x\ge r_{max} \end{cases}$\\
+		\includegraphics[scale=.5]{FuzzCGv1.png} \\
+
 	\item[\texttt{"gudermannian"}] 	$g(x) = atan(\frac{tanh(r_1)}{x})$
 	\item[]	$f(x) = \frac{g(x)}{g(x_{max})}$
-	\item[]		Note: Distances are normalized w.r.t. maximum distance relative to each state vector.\\
-		\includegraphics[scale=.5]{Fuzz3.png}
-	\item[\texttt{"linear"}]	If \texttt{\textbf{r}} = 0: \\
-	$f(x) = exp(-\frac{x - x_{min}}{x_{max} - x_{min}}) $
-	\item[]			If \texttt{\textbf{r}} = 1: \\ $f(x) = exp(-(x - x_{min}))$\\
-		\includegraphics[scale=.5]{Fuzz4.png}
-	\end{description}	
+	\item[]		Note: Distances are normalized w.r.t. maximum distance relative to each state vector.\\ \ \\
+		\includegraphics[scale=.5]{FuzzGv1.png} \\
+	\end{description}
+	
 \item[\texttt{r}]	Parameters of the fuzzy function specified by \textbf{\texttt{Fx}}, a 1 element scalar or a 2 element tuple of positive values depending on the fuzzy function as shown above.
 	\begin{description}[labelsep=14em, labelwidth=10em, nosep,style=multiline,leftmargin=3cm]
 	\item[\texttt{\emph{Default}}]		Two element tuple (or vector in MatLab)
 	\item[\texttt{\emph{Sigmoid/ModSampEn}}]		Two element tuple (or vector in MatLab)
+	\item[\texttt{\emph{Trapezoidal2}}]		Two element tuple (or vector in MatLab)
+	\item[\texttt{\emph{Bell}}]		Two element tuple (or vector in MatLab)
+	\item[\texttt{\emph{Trapezoidal1}}]		 A scalar value
+	\item[\texttt{\emph{Triangular}}]		 A scalar value
+	\item[\texttt{\emph{Z\_Shaped}}]	 A scalar value
+	\item[\texttt{\emph{Gaussian}}] A scalar value
+	\item[\texttt{\emph{ConstGaussian}}] A scalar value
 	\item[\texttt{\emph{Gudermannian}}] A scalar value
-	\item[\texttt{\emph{Linear}}]		0 or 1
 	\end{description}
 
 \item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
@@ -1252,20 +1506,21 @@ XFuzz, Ps1, Ps2   = XFuzzEn(Sig, m = 2, tau = 1, Fx = "default", r = (0.2, 2), L
 \end{description}
 
 \noindent \ul{References}\hspace{1cm}
-\cite{XFuzz1}
+\cite{XFuzz1} \cite{Fuzz3}
 
 
 
 \newpage
-\subsection{\normalsize XK2En: \hspace{15mm}  Cross-Kolmogorov Entropy}
+\subsection{\normalsize XK2En: \hspace{15mm}  Cross-Kolmogorov Entropy}\label{XK2En}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[XK2, Ci] = XK2En(Sig, ‘m’, 2, ‘tau’, 1, ‘r’, 0.2*std(Sig), ‘Logx’, exp(1)) \\
-XK2, Ci  = XK2En(Sig, m = 2, tau = 1, r = 0.2*np.std(Sig), Logx = np.exp(1)) \\
-XK2, Ci  = XK2En(Sig, m = 2, tau = 1, r = 0.2*std(Sig), Logx = exp(1))}
+[XK2, Ci] = XK2En(Sig1, Sig2, ‘m’, 2, ‘tau’, 1, ‘r’, 0.2*std\textsubscript{pooled}(Sig1, Sig2), ‘Logx’, exp(1)) \\
+XK2, Ci  = XK2En(Sig1, Sig2, m = 2, tau = 1, r = 0.2*std\textsubscript{pooled}(Sig1, Sig2), Logx = np.exp(1)) \\
+XK2, Ci  = XK2En(Sig1, Sig2, m = 2, tau = 1, r = 0.2*std\textsubscript{pooled}(Sig1, Sig2), Logx = exp(1))}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
-\item[\texttt{Sig}]		Time series signals, a N x 2 matrix where N $> 10$.
+\item[\texttt{Sig1}]	First data sequence, a vector of $>10$ elements.
+\item[\texttt{Sig2}]	Second data sequence, a vector of $>10$ elements.
 \item[\texttt{m}]		Embedding dimension, a positive integer.
 \item[\texttt{tau}]		Time delay, a positive integer.
 \item[\texttt{r}]		Distance threshold value, a positive scalar.
@@ -1286,13 +1541,15 @@ XK2, Ci  = XK2En(Sig, m = 2, tau = 1, r = 0.2*std(Sig), Logx = exp(1))}
 \newpage
 \subsection{\normalsize XPermEn: \hspace{15mm} Cross-Permutation Entropy}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[XPerm] = XPermEn(Sig, ‘m’, 3, ‘tau’, 1, ‘Logx’, 2)\\
- XPerm  = XPermEn(Sig, m = 3, tau = 1, Logx = 2)\\
- XPerm  = XPermEn(Sig, m = 3, tau = 1, Logx = 2)}
+[XPerm] = XPermEn(Sig1, Sig2, ‘m’, 3, ‘tau’, 1, ‘Logx’, 2)\\
+ XPerm  = XPermEn(Sig1, Sig2, m = 3, tau = 1, Logx = 2)\\
+ XPerm  = XPermEn(Sig1, Sig2, m = 3, tau = 1, Logx = 2)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep,,style=multiline,leftmargin=3cm]\footnotesize
-\item[\texttt{Sig}]		Time series signals, a N x 2 matrix where N $> 10$.
+\item[\texttt{Sig1}]	First data sequence, a vector of $>10$ elements.
+\item[\texttt{Sig2}]	Second data sequence, a vector of $>10$ elements.\\
+\textbf{NOTE: \texttt{Sig1}} and \textbf{\texttt{Sig2}} must have the same number of elements.
 \item[\texttt{m}]		Embedding dimension, an integer $> 2$.\\
 \textbf{NOTE: \texttt{XPerm}} is undefined for \texttt{\textbf{m}} $< 3$.
 \item[\texttt{tau}]		Time delay, a positive integer.
@@ -1313,17 +1570,17 @@ XK2, Ci  = XK2En(Sig, m = 2, tau = 1, r = 0.2*std(Sig), Logx = exp(1))}
 \newpage
 \subsection{\normalsize XCondEn: \hspace{15mm} Cross-Conditional Entropy}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[XCond, SEw, SEz] = XCondEn(Sig, ‘m’, 2, ‘tau’, 1, ‘c’, 6, ‘Logx’, exp(1), ‘Norm’, false)\\
-XCond, SEw, SEz  = XCondEn(Sig, m = 2, tau = 1, c = 6, Logx = np.exp(1), Norm = False) \\
-XCond, SEw, SEz  = XCondEn(Sig, m = 2, tau = 1, c = 6, Logx = exp(1), Norm = false)}
+[XCond, SEw, SEz] = XCondEn(Sig1, Sig2, ‘m’, 2, ‘tau’, 1, ‘c’, 6, ‘Logx’, exp(1), ‘Norm’, false)\\
+XCond, SEw, SEz  = XCondEn(Sig1, Sig2, m = 2, tau = 1, c = 6, Logx = np.exp(1), Norm = False) \\
+XCond, SEw, SEz  = XCondEn(Sig1, Sig2, m = 2, tau = 1, c = 6, Logx = exp(1), Norm = false)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
-\item[\texttt{Sig}]		Time series signals, a N x 2 matrix where N $> 10$.\\
-\textbf{NOTE: \ul{XCondEn}} is direction-dependent. Therefore, the order of the
-    data sequences in \texttt{\textbf{Sig}} matters. If the first column of \texttt{\textbf{Sig}} is the
-    sequence 'y', and the second column is the sequence 'u', \texttt{\textbf{XCond}} is
-    the amount of information carried by y(i) when the pattern u(i) is found.
+\item[\texttt{Sig1}]	First data sequence, a vector of $>10$ elements.
+\item[\texttt{Sig2}]	Second data sequence, a vector of $>10$ elements.\\
+\textbf{NOTE: \texttt{Sig1}} and \textbf{\texttt{Sig2}} must have the same number of elements.\\
+\textbf{NOTE: \ul{XCondEn}} is direction-dependent. Therefore, the order of the data sequences in \texttt{\textbf{Sig}} matters. If the first column of \texttt{\textbf{Sig}} is the
+    sequence 'y', and the second column is the sequence 'u', \texttt{\textbf{XCond}} is  the amount of information carried by y(i) when the pattern u(i) is found.
 \item[\texttt{m}]		Embedding dimension, an integer $> 1$.
 \item[\texttt{tau}]		Time delay, a positive integer.
 \item[\texttt{c}]		Number of symbols in symbolic transformation, in integer $> 1$
@@ -1348,19 +1605,20 @@ XCond, SEw, SEz  = XCondEn(Sig, m = 2, tau = 1, c = 6, Logx = exp(1), Norm = fal
 \newpage
 \subsection{\normalsize XDistEn: \hspace{15mm} Cross-Distribution Entropy}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[XDist, Ppi] = XDistEn(Sig, ‘m’, 2, ‘tau’, 1, ‘Bins’, ‘sturges’, ‘Logx’, 2, ‘Norm’, true)\\
-XDist, Ppi  = XDistEn(Sig, m = 2, tau = 1, Bins = ‘sturges’, Logx = 2, Norm = True)\\ 
-XDist, Ppi  = XDistEn(Sig, m = 2, tau = 1, Bins = "sturges", Logx = 2, Norm = true)}
+[XDist, Ppi] = XDistEn(Sig1, Sig2, ‘m’, 2, ‘tau’, 1, ‘Bins’, ‘sturges’, ‘Logx’, 2, ‘Norm’, true)\\
+XDist, Ppi  = XDistEn(Sig1, Sig2, m = 2, tau = 1, Bins = ‘sturges’, Logx = 2, Norm = True)\\ 
+XDist, Ppi  = XDistEn(Sig1, Sig2, m = 2, tau = 1, Bins = "sturges", Logx = 2, Norm = true)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
-\item[\texttt{Sig}]		Time series signals, a N x 2 matrix where N $> 10$.
+\item[\texttt{Sig1}]	First data sequence, a vector of $>10$ elements.
+\item[\texttt{Sig2}]	Second data sequence, a vector of $>10$ elements.
 \item[\texttt{m}]		Embedding dimension, an integer $> 1$.
 \item[\texttt{tau}]		Time delay, a positive integer.
 \item[\texttt{Bins}]	Histogram bin selection method, in integer $> 1$ indicating the number of bins, 
 						or one of the following strings:\\
    					    "sturges", "sqrt", "rice", "doanes" \hspace{2em} [default: "sturges"]
-\\ \href{https://en.wikipedia.org/wiki/Histogram#Number_of_bins_and_width}{>> More info on binning methods}.
+\\ \href{https://en.wikipedia.org/wiki/Histogram#Number_of_bins_and_width}{$>>>$ More info on binning methods}.
 \item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.\\
 						(Enter 0 for natural logarithm)
 \item[\texttt{Norm}]	Normalization of \texttt{\textbf{XDist}} value:\\
@@ -1382,13 +1640,14 @@ XDist, Ppi  = XDistEn(Sig, m = 2, tau = 1, Bins = "sturges", Logx = 2, Norm = tr
 \newpage
 \subsection{\normalsize XSpecEn: \hspace{15mm} Cross-Spectral Entropy}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[XSpec, BandEn] = XSpecEn(Sig, ‘N’, 2*length(Sig)+1, ‘Freqs’, [0,1], ‘Logx’, exp(1), ‘Norm’, true)\\
-XSpec, BandEn  = XSpecEn(Sig, N = 2*len(Sig) + 1, Freqs = (0,1), Logx = np.exp(1), Norm = True)\\ 
-XSpec, BandEn  = XSpecEn(Sig, N = 2*length(Sig) + 1, Freqs = (0,1), Logx = exp(1), Norm = true)}
+[XSpec, BandEn] = XSpecEn(Sig1, Sig2, ‘N’, 2*max(length(Sig1), length(Sig2))+1, ‘Freqs’, [0,1], ‘Logx’, exp(1), ‘Norm’, true)\\
+XSpec, BandEn  = XSpecEn(Sig1, Sig2, N = 2*np.maximum(len(Sig1),len(Sig2)) + 1, Freqs = (0,1), Logx = np.exp(1), Norm = True)\\ 
+XSpec, BandEn  = XSpecEn(Sig, N = 2*max(length(Sig1),length(Sig2)) + 1, Freqs = (0,1), Logx = exp(1), Norm = true)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
-\item[\texttt{Sig}]		Time series signals, a N x 2 matrix where N $> 10$.
+\item[\texttt{Sig1}]	First data sequence, a vector of $>10$ elements.
+\item[\texttt{Sig2}]	Second data sequence, a vector of $>10$ elements.
 \item[\texttt{N}]		Resolution of the N-point fft, an integer $> 1$.
 \item[\texttt{Freqs}]	Normalised band edge-frequencies for calculating the band entropy (BandEn), a 2 element tuple with values in range [0, 1] where 1 is the Nyquist frequency. \\
 		* When no edge frequencies are provided, BandEn==XSpecEn
@@ -1455,7 +1714,7 @@ calculated using any of the \texttt{\textbf{Base}} entropy functions.  This is a
 
 
 \newpage
-\subsection{\normalsize MSobject: \hspace{15mm} Multiscale Entropy Object}
+\subsection{\normalsize MSobject: \hspace{15mm} Multiscale Entropy Object} \label{Mobjx}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 Mobj = MSobject(EnType, \textit{varargin})\\
 Mobj = MSobject(EnType, \textit{**kwargs})\\ 
@@ -1476,20 +1735,25 @@ Mobj = MSobject(EnType::Function, \textit{kwargs}...)}
 
 
 \newpage
-\subsection{\normalsize MSEn: \hspace{15mm} Multiscale Entropy}
+\subsection{\normalsize MSEn: \hspace{15mm} Multiscale Entropy} \label{MSEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[MSx, Ci] = MSEn(Sig, 'Scales', 3, ‘Methodx’, 'coarse', 'RadNew', 0, ‘Plotx’, false)\\
-MSx, Ci = MSEn(Sig, Scales = 3, Methodx = 'coarse', RadNew = 0, Plotx = False)\\ 
-MSx, Ci = MSEn(Sig, Scales = 3, Methodx = "coarse", RadNew = 0, Plotx = false)}
+[MSx, Ci] = MSEn(Sig, Mobj, 'Scales', 3, ‘Methodx’, 'coarse', 'RadNew', 0, ‘Plotx’, false)\\
+MSx, Ci = MSEn(Sig, Mobj, Scales = 3, Methodx = 'coarse', RadNew = 0, Plotx = False)\\ 
+MSx, Ci = MSEn(Sig, Mobj, Scales = 3, Methodx = "coarse", RadNew = 0, Plotx = false)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
 \item[\texttt{Sig}]		Time series signals, a vector of length $> 10$.
+\item[\texttt{Mobj}]	Multiscale Entropy object created with \texttt{\textbf{MSobject()}} - \ref{Mobjx}
 \item[\texttt{Scales}]		Number of grained time scales, a positive integer.
 \item[\texttt{Methodx}]		Type of graining method, one of the following strings:
 	\begin{description}[labelsep=8em, labelwidth=10em, nosep,style=multiline,leftmargin=3cm]
 	\item[\texttt{"coarse"}]	\cite{MS1}
 	\[y^{(\tau)}_{j} = \frac{1}{\tau} \sum^{j\tau}_{i=(j-1)\tau+1} x_{i},\qquad  1\leq j\leq \frac{N}{\tau}\] 
+	
+	\item[\texttt{"generalized"}]	\cite{MS12}
+	\[y^{(\tau)}_{j} = \frac{1}{\tau} \sum^{\tau-1}_{k=0} (x_{j-k} - \bar{x})^2,	\qquad  1\leq j\leq N-\tau+1 \]	
+	
 	\item[\texttt{"modified"}]	
 	\[y^{(\tau)}_{j} = \frac{1}{\tau} \sum^{\tau-1}_{k=0} x_{j-k},	\qquad  1\leq j\leq N-\tau+1 \]		
 	\item[\texttt{"timeshift"}] \cite{MS10}
@@ -1497,7 +1761,7 @@ MSx, Ci = MSEn(Sig, Scales = 3, Methodx = "coarse", RadNew = 0, Plotx = false)}
 	 x_{\beta+\lfloor\frac{N-\beta}{\tau}\rfloor \tau})  \qquad for \quad \beta  = 1, 2, ..., \tau \]
 	\[TSME_{\tau} = \frac{1}{\tau}\sum^{\tau}_{\beta=1} F_{EnType}(y^{\tau}_{\beta}) \]
 	\item[\texttt{"imf"}]	Grained time series at scale $ \tau $ is the cumulative sum of 							intrinsic mode 	functions ($ IMF^1 $ to $ IMF^\tau $), where $ IMF^1 $ is the first sifting. \cite{MS6}\\
-			\textbf{*Note:} The empirical mode decomposition method use to derive the IMFs 											differs slightly between \textbf{MatLab, Python} and \textbf{Julia}, so 									\textbf{\texttt{MSx}} values will be inconsistent between the environment. \\
+			\textbf{*Note:} The empirical mode decomposition method use to derive the IMFs 											differs slightly between \textbf{MatLab, Python} and \textbf{Julia}, so 									\textbf{\texttt{MSx}} values will be inconsistent between the programming environments. \\
 				\textbf{**Note: \texttt{Julia's}} empirical mode decomposition method is 								unstable and may not fully decompose highly stochastic or aperiodic signals.\\
 	\end{description}
 \item[\texttt{RadNew}]			Radius rescaling method, an integer in the range [0 4].\\
@@ -1524,20 +1788,21 @@ MSx, Ci = MSEn(Sig, Scales = 3, Methodx = "coarse", RadNew = 0, Plotx = false)}
 \end{description}
 
 \noindent \ul{References}\hspace{1cm}
-\cite{MS1} \cite{MS2} \cite{MS3} \cite{MS4} \cite{MS5} \cite{MS6} \cite{MS7} \cite{MS8} \cite{MS9} \cite{MS10} \cite{MS11}
+\cite{MS1} \cite{MS2} \cite{MS3} \cite{MS4} \cite{MS5} \cite{MS6} \cite{MS7} \cite{MS8} \cite{MS9} \cite{MS10} \cite{MS11} \cite{MS12}
 
 
 
 \newpage
-\subsection{\normalsize cMSEn: \hspace{10mm} Composite \& Refined-Composite Multiscale Entropy}
+\subsection{\normalsize cMSEn: \hspace{10mm} Composite \& Refined-Composite Multiscale Entropy} \label{cMSEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[MSx, Ci] = cMSEn(Sig, 'Scales', 3, 'RadNew', 0, 'Refined', false, ‘Plotx’, false)\\
-MSx, Ci = cMSEn(Sig, Scales = 3, RadNew = 0, Refined = False, Plotx = False)\\ 
-MSx, Ci = cMSEn(Sig, Scales = 3, RadNew = 0, Refined = false, Plotx = false)}
+[MSx, Ci] = cMSEn(Sig, Mobj, 'Scales', 3, 'RadNew', 0, 'Refined', false, ‘Plotx’, false)\\
+MSx, Ci = cMSEn(Sig, Mobj, Scales = 3, RadNew = 0, Refined = False, Plotx = False)\\ 
+MSx, Ci = cMSEn(Sig, Mobj, Scales = 3, RadNew = 0, Refined = false, Plotx = false)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
 \item[\texttt{Sig}]		Time series signals, a vector of length $> 10$.
+\item[\texttt{Mobj}]	Multiscale Entropy object created with \texttt{\textbf{MSobject()}} - \ref{Mobjx}
 \item[\texttt{Scales}]		Number of time scales, a positive integer.
 \item[\texttt{RadNew}]			Radius rescaling method, an integer in the range [0 4].\\
 				 When the \texttt{\textbf{Base}} entropy method specified by \texttt{\textbf{Mobj}} is \texttt{\textbf{SampEn}} or \texttt{\textbf{ApEn}}, \texttt{\textbf{RadNew}} allows the radius threshold to be updated based on the grained signal at each time scale ($X_\tau$). If a radius threshold value \texttt{\textbf{(r)}} is specified in \texttt{\textbf{Mobj}},  this becomes the rescaling coefficient, otherwise it is set to 0.2 (default). The value of \texttt{\textbf{RadNew}} specifies one of the following methods:
@@ -1549,13 +1814,15 @@ MSx, Ci = cMSEn(Sig, Scales = 3, RadNew = 0, Refined = false, Plotx = false)}
         \item[4]    Median Absolute Deviation   - $r(median(|X_{\tau} - median(X_{\tau})|)) $
 	\end{description}
 \ \\ 
-\item[\texttt{Refined}]	 When \textbf{\texttt{Refined == true}} and the entropy function (\textbf{\texttt{EnType}}) contained in  \textbf{\texttt{Mobj}} is \texttt{\textbf{SampEn}, cMSEn} returns the refined-composite multiscale entropy (\texttt{\textbf{rcMSEn}}). \indent \cite{cMS2}
+\item[\texttt{Refined}]	 When \textbf{\texttt{Refined == true}} and the entropy function (\textbf{\texttt{EnType}}) contained in  \textbf{\texttt{Mobj}} is either \texttt{\textbf{SampEn}}, or \texttt{\textbf{FuzzEn}}, \texttt{\textbf{cMSEn}} returns the refined-composite multiscale entropy (\texttt{\textbf{rcMSEn}}). \indent \cite{cMS2}  \cite{cMS3}
 \item[\texttt{Plotx}]		A plot of the multiscale entropy curve\\
 							\texttt{true} \hspace{15pt} Plots time scale vs entropy value.\\
 							\texttt{false}\hspace{12pt} No plot.\\ 							\textit{Example of composite multiscale entropy and refined-composite multiscale entropy curves for normally distributed random number sequences using sample entropy over 5 time scales.}\\
 							\includegraphics[scale=.7]{cMSEn1.png}\\
 							\includegraphics[scale=.7]{rcMSEn1.png}
 \end{description}
+
+\ \\ \textbf{Note:} refined-composite multiscale sample entropy uses moving averaging to perform graining (analogous to the \texttt{modified} graining method in \texttt{\textbf{MSEn}}), but refined-composite multiscale fuzzy entropy uses the moving variance (analogous to the \texttt{generalized} graining method in \texttt{\textbf{MSEn}}). 
 
 \noindent \ul{Outputs}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
@@ -1571,13 +1838,14 @@ MSx, Ci = cMSEn(Sig, Scales = 3, RadNew = 0, Refined = false, Plotx = false)}
 \newpage
 \subsection{\normalsize rMSEn: \hspace{15mm} Refined Multiscale Entropy}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[MSx, Ci] = rMSEn(Sig, 'Scales', 3, 'F\_Order', 6, 'F\_Num', 0.5, 'RadNew', 0, ‘Plotx’, false)\\
-MSx, Ci = rMSEn(Sig, Scales = 3, F\_Order = 6, F\_Num = 0.5, RadNew = 0, Plotx = False)\\ 
-MSx, Ci = rMSEn(Sig, Scales = 3, F\_Order = 6, F\_Num = 0.5, RadNew = 0, Plotx = false)}
+[MSx, Ci] = rMSEn(Sig, Mobj, 'Scales', 3, 'F\_Order', 6, 'F\_Num', 0.5, 'RadNew', 0, ‘Plotx’, false)\\
+MSx, Ci = rMSEn(Sig, Mobj, Scales = 3, F\_Order = 6, F\_Num = 0.5, RadNew = 0, Plotx = False)\\ 
+MSx, Ci = rMSEn(Sig, Mobj, Scales = 3, F\_Order = 6, F\_Num = 0.5, RadNew = 0, Plotx = false)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
 \item[\texttt{Sig}]		Time series signals, a vector of length $> 10$.
+\item[\texttt{Mobj}]	Multiscale Entropy object created with \texttt{\textbf{MSobject()}} - \ref{Mobjx}
 \item[\texttt{Scales}]		Number of time scales, an integer  $> 0$.
 \item[\texttt{F\_Order}]	 Butterworth low-pass filter order, a positive integer $ > 1$, (default: 6) 
 \item[\texttt{F\_Num}]	 Numerator of Butterworth low-pass filter cutoff frequency, where [0 $ <  F_{Num} < $ 1]. \\
@@ -1612,15 +1880,16 @@ The cutoff frequency at each scale ($\tau$) becomes: $F_{c} = \frac{F_{Num}}{\ta
 \newpage
 \subsection{\normalsize hMSEn: \hspace{15mm} Hierarchical Multiscale Entropy}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[MSx, Sn, Ci] = hMSEn(Sig, 'Scales', 3, 'RadNew', 0, ‘Plotx’, false)\\
-MSx, Sn, Ci = hMSEn(Sig, Scales = 3, RadNew = 0, Plotx = False)\\ 
-MSx, Sn, Ci = hMSEn(Sig, Scales = 3, RadNew = 0, Plotx = false)}
+[MSx, Sn, Ci] = hMSEn(Sig, Mobj, 'Scales', 3, 'RadNew', 0, ‘Plotx’, false)\\
+MSx, Sn, Ci = hMSEn(Sig, Mobj, Scales = 3, RadNew = 0, Plotx = False)\\ 
+MSx, Sn, Ci = hMSEn(Sig, Mobj, Scales = 3, RadNew = 0, Plotx = false)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
 \item[\texttt{Sig}]		Time series signal, a vector of length $> 10$.\\
 	The length of \texttt{\textbf{Sig}} (\emph{K}) is halved at each scale. Only use the first $2^N$ data points are used such that $\underset{N}{\min}(K - 2^N)$.\\
 i.e. For a signal of 5000 points, only the first 4096 points are used. For a signal of 1500 points, only the first 1024 points are used.
+\item[\texttt{Mobj}]	Multiscale Entropy object created with \texttt{\textbf{MSobject()}} - \ref{Mobjx}
 \item[\texttt{Scales}]		Number of time scales, an integer  $> 0$.
 \item[\texttt{RadNew}]			Radius rescaling method, an integer in the range [0 4].\\
 				 When the \texttt{\textbf{Base}} entropy method specified by \texttt{\textbf{Mobj}} is \texttt{\textbf{SampEn}} or \texttt{\textbf{ApEn}}, \texttt{\textbf{RadNew}} allows the radius threshold to be updated based on the grained signal at each time scale ($X_\tau$). If a radius threshold value \texttt{\textbf{(r)}} is specified in \texttt{\textbf{Mobj}},  this becomes the rescaling coefficient, otherwise it is set to 0.2 (default). The value of \texttt{\textbf{RadNew}} specifies one of the following methods:
@@ -1661,11 +1930,16 @@ Just as one can calculate multiscale entropy using any \texttt{Base} entropy, th
 
 \begin{center}
 \tcbox[tikznode={align=left}, colframe=ehone]{
-\ul{Multiscale cross-entropy functions have two positional arguments:} 
+\ul{Multiscale cross-entropy functions have three positional arguments:} 
 \\ \ \\
-\hspace{38pt} the time series signals \texttt{\textbf{Sig}} (an Nx2 matrix), \\
-\hspace{48pt} and the multiscale entropy object, \texttt{\textbf{Mobj}}. }
+\hspace{66pt} the first data sequence \texttt{\textbf{Sig1}} (a vector), \\
+\hspace{60pt} the second data sequence \texttt{\textbf{Sig2}} (a vector), \\
+\hspace{48pt} and the multiscale entropy object, \texttt{\textbf{Mobj}} - \ref{Mobjx}. } \ \\
+
+\textbf{**Note:} -  \emph{In versions previous to v1.0, only signals of the same length could be analysed with cross-entropy methods by passing a single Nx2 matrix. This is no longer the case - \underline{you must pass two individual signals to multiscale cross functions.}}
 \end{center}
+
+
  
 \noindent Examples (shown in Julia syntax)$\colon$ \footnotesize
 \\ \ \\ \noindent \emph{\textbf{Original multiscale cross-entropy}} \cite{MS1}
@@ -1717,20 +1991,26 @@ Mobj = MSobject(EnType::Function, \textit{kwargs}...)}
 
 
 \newpage
-\subsection{\normalsize XMSEn: \hspace{15mm} Multiscale Cross-Entropy}
+\subsection{\normalsize XMSEn: \hspace{15mm} Multiscale Cross-Entropy} \label{XMSEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[MSx, Ci] = XMSEn(Sig, 'Scales', 3, ‘Methodx’, 'coarse', 'RadNew', 0, ‘Plotx’, false)\\
-MSx, Ci = XMSEn(Sig, Scales = 3, Methodx = 'coarse', RadNew = 0, Plotx = False)\\ 
-MSx, Ci = XMSEn(Sig, Scales = 3, Methodx = "coarse", RadNew = 0, Plotx = false)}
+[MSx, Ci] = XMSEn(Sig1, Sig2, Mobj, 'Scales', 3, ‘Methodx’, 'coarse', 'RadNew', 0, ‘Plotx’, false)\\
+MSx, Ci = XMSEn(Sig1, Sig2, Mobj, Scales = 3, Methodx = 'coarse', RadNew = 0, Plotx = False)\\ 
+MSx, Ci = XMSEn(Sig1, Sig2, Mobj, Scales = 3, Methodx = "coarse", RadNew = 0, Plotx = false)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
-\item[\texttt{Sig}]		Time series signals, a N x 2 matrix where N $> 10$.
+\item[\texttt{Sig1}]		First data sequence, a vector $>10$ elements.
+\item[\texttt{Sig2}]		Second data sequence, a vector $>10$ elements.
+\item[\texttt{Mobj}]	Multiscale Entropy object created with \texttt{\textbf{MSobject()}} - \ref{Mobjx}
 \item[\texttt{Scales}]		Number of grained time scales, a positive integer.
 \item[\texttt{Methodx}]		Type of graining method, one of the following strings:
 	\begin{description}[labelsep=8em, labelwidth=10em, nosep,style=multiline,leftmargin=3cm]
 	\item[\texttt{"coarse"}]	\cite{MS1}
 	\[y^{(\tau)}_{j} = \frac{1}{\tau} \sum^{j\tau}_{i=(j-1)\tau+1} x_{i},\qquad  1\leq j\leq \frac{N}{\tau}\] 
+	
+	\item[\texttt{"generalized"}]	\cite{MS12}
+	\[y^{(\tau)}_{j} = \frac{1}{\tau} \sum^{\tau-1}_{k=0} (x_{j-k} - \bar{x})^2,	\qquad  1\leq j\leq N-\tau+1 \]		
+	
 	\item[\texttt{"modified"}]	
 	\[y^{(\tau)}_{j} = \frac{1}{\tau} \sum^{\tau-1}_{k=0} x_{j-k},	\qquad  1\leq j\leq N-\tau+1 \]		
 	\item[\texttt{"timeshift"}] \cite{MS10}
@@ -1744,10 +2024,10 @@ MSx, Ci = XMSEn(Sig, Scales = 3, Methodx = "coarse", RadNew = 0, Plotx = false)}
 				 When the \texttt{\textbf{Cross}}-entropy method specified by \texttt{\textbf{Mobj}} is \texttt{\textbf{XSampEn}} or \texttt{\textbf{XApEn}}, \texttt{\textbf{RadNew}} allows the radius threshold to be updated based on the grained signal at each time scale ($X_\tau$). If a radius threshold value \texttt{\textbf{(r)}} is specified in \texttt{\textbf{Mobj}},  this becomes the rescaling coefficient, otherwise it is set to 0.2 (default). The value of \texttt{\textbf{RadNew}} specifies one of the following methods:
 	\begin{description}[labelsep=5em, labelwidth=4em, nosep,style=multiline,leftmargin=2cm]
 		\item[0]	no rescaling
-		\item[1]    Standard Deviation          - $r\sigma_{X_\tau}$
-        \item[2]    Variance                    - $r\sigma_{X_\tau}^2$
-        \item[3]    Mean Absolute Deviation     - $r(\frac{1}{N} \sum |X_{\tau} - \bar{X_{\tau}}|) $
-        \item[4]    Median Absolute Deviation   - $r(median(|X_{\tau} - median(X_{\tau})|)) $
+		\item[1]    Pooled Standard Deviation          - $r\sigma_{X_{\tau}Y_{\tau}}$
+        \item[2]    Pooled Variance                    - $r\sigma_{X_{\tau}Y_{\tau}}^2$
+        \item[3]    Combined Mean Absolute Deviation     - $r(\frac{1}{N_{XY}} \sum |XY_{\tau} - \bar{X}\bar{Y}_{\tau}|),$ \\ where XY is the concatenation of X and Y.
+        \item[4]    Combined Median Absolute Deviation   - $r(median(|XY_{\tau} - median(XY_{\tau})|)) $  \\ where XY is the concatenation of X and Y.
 	\end{description}
 \ \\ 
 \item[\texttt{Plotx}]		A plot of the multiscale entropy curve\\
@@ -1769,27 +2049,29 @@ MSx, Ci = XMSEn(Sig, Scales = 3, Methodx = "coarse", RadNew = 0, Plotx = false)}
 
 
 \newpage
-\subsection{\normalsize cXMSEn: \hspace{15mm} Composite \& Refined-Composite Multiscale Cross-Entropy}
+\subsection{\normalsize cXMSEn: \hspace{15mm} Composite \& Refined-Composite Multiscale Cross-Entropy} \label{cXMSEn}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[MSx, Ci] = cXMSEn(Sig, 'Scales', 3, 'RadNew', 0, 'Refined', false, ‘Plotx’, false)\\
-MSx, Ci = cXMSEn(Sig, Scales = 3, RadNew = 0, Refined = False, Plotx = False)\\ 
-MSx, Ci = cXMSEn(Sig, Scales = 3, RadNew = 0, Refined = false, Plotx = false)}
+[MSx, Ci] = cXMSEn(Sig1, Sig2, Mobj, 'Scales', 3, 'RadNew', 0, 'Refined', false, ‘Plotx’, false)\\
+MSx, Ci = cXMSEn(Sig1, Sig2, Mobj, Scales = 3, RadNew = 0, Refined = False, Plotx = False)\\ 
+MSx, Ci = cXMSEn(Sig1, Sig2, Mobj, Scales = 3, RadNew = 0, Refined = false, Plotx = false)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
-\item[\texttt{Sig}]		Time series signals, a N x 2 matrix where N $> 10$.
+\item[\texttt{Sig1}]		First data sequence, a vector $>10$ elements.
+\item[\texttt{Sig2}]		Second data sequence, a vector $>10$ elements.
+\item[\texttt{Mobj}]	Multiscale Entropy object created with \texttt{\textbf{MSobject()}} - \ref{Mobjx}
 \item[\texttt{Scales}]		Number of time scales, a positive integer.
 \item[\texttt{RadNew}]			Radius rescaling method, an integer in the range [0 4].\\
 				 When the \texttt{\textbf{Cross}}-entropy method specified by \texttt{\textbf{Mobj}} is \texttt{\textbf{XSampEn}} or \texttt{\textbf{XApEn}}, \texttt{\textbf{RadNew}} allows the radius threshold to be updated based on the grained signal at each time scale ($X_\tau$). If a radius threshold value \texttt{\textbf{(r)}} is specified in \texttt{\textbf{Mobj}},  this becomes the rescaling coefficient, otherwise it is set to 0.2 (default). The value of \texttt{\textbf{RadNew}} specifies one of the following methods:
 	\begin{description}[labelsep=5em, labelwidth=4em, nosep,style=multiline,leftmargin=2cm]
 		\item[0]	no rescaling
-		\item[1]    Standard Deviation          - $r\sigma_{X_\tau}$
-        \item[2]    Variance                    - $r\sigma_{X_\tau}^2$
-        \item[3]    Mean Absolute Deviation     - $r(\frac{1}{N} \sum |X_{\tau} - \bar{X_{\tau}}|) $
-        \item[4]    Median Absolute Deviation   - $r(median(|X_{\tau} - median(X_{\tau})|)) $
+		\item[1]    Pooled Standard Deviation          - $r\sigma_{X_{\tau}Y_{\tau}}$
+        \item[2]    Pooled Variance                    - $r\sigma_{X_{\tau}Y_{\tau}}^2$
+        \item[3]    Combined Mean Absolute Deviation     - $r(\frac{1}{N_{XY}} \sum |XY_{\tau} - \bar{X}\bar{Y}_{\tau}|),$ \\ where XY is the concatenation of X and Y.
+        \item[4]    Combined Median Absolute Deviation   - $r(median(|XY_{\tau} - median(XY_{\tau})|)) $  \\ where XY is the concatenation of X and Y.
 	\end{description}
 \ \\ 
-\item[\texttt{Refined}]	 When \textbf{\texttt{Refined == true}} and the entropy function (\textbf{\texttt{EnType}}) contained in  \textbf{\texttt{Mobj}} is \texttt{\textbf{XSampEn}, cXMSEn} returns the refined-composite multiscale cross-entropy (\texttt{\textbf{rcXMSEn}}). \indent \cite{cMS2}
+\item[\texttt{Refined}]	 When \textbf{\texttt{Refined == true}} and the entropy function (\textbf{\texttt{EnType}}) contained in  \textbf{\texttt{Mobj}} is either \texttt{\textbf{XSampEn}} or \texttt{\textbf{FuzzEn}}, \texttt{\textbf{cXMSEn}} returns the refined-composite multiscale cross-entropy (\texttt{\textbf{rcXMSEn}}). \indent \cite{cMS2} \cite{cMS3}
 \item[\texttt{Plotx}]		A plot of the multiscale entropy curve\\
 							\texttt{true} \hspace{15pt} Plots time scale vs entropy value.\\
 							\texttt{false}\hspace{12pt} No plot.\\
@@ -1798,6 +2080,8 @@ MSx, Ci = cXMSEn(Sig, Scales = 3, RadNew = 0, Refined = false, Plotx = false)}
 							\includegraphics[scale=.65]{rcXMSEn1.png}
 \end{description}
 
+\ \\ \textbf{Note:} refined-composite multiscale sample entropy uses moving averaging to perform graining (analogous to the \texttt{modified} graining method in \texttt{\textbf{XMSEn}}), but refined-composite multiscale fuzzy entropy uses the moving variance (analogous to the \texttt{generalized} graining method in \texttt{\textbf{XMSEn}}). 
+
 \noindent \ul{Outputs}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
 \item[\texttt{MSx}]		Composite multiscale cross-entropy estimate at each time scale ($\tau$), a vector of length \textbf{\texttt{Scales}}.
@@ -1805,20 +2089,22 @@ MSx, Ci = cXMSEn(Sig, Scales = 3, RadNew = 0, Refined = false, Plotx = false)}
 \end{description}
 
 \noindent \ul{References}\hspace{1cm}
-\cite{XMS1} \cite{XMS2} \cite{XMS3} \cite{XMS4} \cite{cMS1} 
+\cite{XMS1} \cite{XMS2} \cite{XMS3} \cite{XMS4} \cite{cMS1} \cite{cMS3}
 
 
 
 \newpage
 \subsection{\normalsize rXMSEn: \hspace{15mm} Refined Multiscale Cross-Entropy}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[MSx, Ci] = rXMSEn(Sig, 'Scales', 3, 'F\_Order', 6, 'F\_Num', 0.5, 'RadNew', 0, ‘Plotx’, false)\\
-MSx, Ci = rXMSEn(Sig, Scales = 3, F\_Order = 6, F\_Num = 0.5, RadNew = 0, Plotx = False)\\ 
-MSx, Ci = rXMSEn(Sig, Scales = 3, F\_Order = 6, F\_Num = 0.5, RadNew = 0, Plotx = false)}
+[MSx, Ci] = rXMSEn(Sig1, Sig2, Mobj, 'Scales', 3, 'F\_Order', 6, 'F\_Num', 0.5, 'RadNew', 0, ‘Plotx’, false)\\
+MSx, Ci = rXMSEn(Sig1, Sig2, Mobj, Scales = 3, F\_Order = 6, F\_Num = 0.5, RadNew = 0, Plotx = False)\\ 
+MSx, Ci = rXMSEn(Sig1, Sig2, Mobj, Scales = 3, F\_Order = 6, F\_Num = 0.5, RadNew = 0, Plotx = false)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
-\item[\texttt{Sig}]		Time series signals, a N x 2 matrix where N $> 10$.
+\item[\texttt{Sig1}]		First data sequence, a vector $>10$ elements.
+\item[\texttt{Sig2}]		Second data sequence, a vector $>10$ elements.
+\item[\texttt{Mobj}]	Multiscale Entropy object created with \texttt{\textbf{MSobject()}} - \ref{Mobjx}
 \item[\texttt{Scales}]		Number of time scales, a positive integer.
 \item[\texttt{F\_Order}]	 Butterworth low-pass filter order, a positive integer $ > 1$, (default: 6) 
 \item[\texttt{F\_Num}]	 Numerator of Butterworth low-pass filter cutoff frequency, where [0 $ <  F_{Num} < $ 1]. \\
@@ -1827,10 +2113,10 @@ The cutoff frequency at each scale ($\tau$) becomes: $F_{c} = \frac{F_{Num}}{\ta
 				 When the \texttt{\textbf{Cross}}-entropy method specified by \texttt{\textbf{Mobj}} is \texttt{\textbf{XSampEn}} or \texttt{\textbf{XApEn}}, \texttt{\textbf{RadNew}} allows the radius threshold to be updated based on the grained signal at each time scale ($X_\tau$). If a radius threshold value \texttt{\textbf{(r)}} is specified in \texttt{\textbf{Mobj}},  this becomes the rescaling coefficient, otherwise it is set to 0.2 (default). The value of \texttt{\textbf{RadNew}} specifies one of the following methods:
 	\begin{description}[labelsep=5em, labelwidth=4em, nosep,style=multiline,leftmargin=2cm]
 		\item[0]	no rescaling
-		\item[1]    Standard Deviation          - $r\sigma_{X_\tau}$
-        \item[2]    Variance                    - $r\sigma_{X_\tau}^2$
-        \item[3]    Mean Absolute Deviation     - $r(\frac{1}{N} \sum |X_{\tau} - \bar{X_{\tau}}|) $
-        \item[4]    Median Absolute Deviation   - $r(median(|X_{\tau} - median(X_{\tau})|)) $\\
+		\item[1]    Pooled Standard Deviation          - $r\sigma_{X_{\tau}Y_{\tau}}$
+        \item[2]    Pooled Variance                    - $r\sigma_{X_{\tau}Y_{\tau}}^2$
+        \item[3]    Combined Mean Absolute Deviation     - $r(\frac{1}{N_{XY}} \sum |XY_{\tau} - \bar{X}\bar{Y}_{\tau}|),$ \\ where XY is the concatenation of X and Y.
+        \item[4]    Combined Median Absolute Deviation   - $r(median(|XY_{\tau} - median(XY_{\tau})|)) $  \\ where XY is the concatenation of X and Y.
 	\end{description}
 \item[\texttt{Plotx}]		A plot of the multiscale entropy curve\\
 							\texttt{true} \hspace{15pt} Plots time scale vs entropy value.\\
@@ -1852,24 +2138,26 @@ The cutoff frequency at each scale ($\tau$) becomes: $F_{c} = \frac{F_{Num}}{\ta
 \newpage
 \subsection{\normalsize hXMSEn: \hspace{15mm} Hierarchical Multiscale Cross-Entropy}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-[MSx, Ci] = hXMSEn(Sig, 'Scales', 3, 'RadNew', 0, ‘Plotx’, false)\\
-MSx, Ci = hXMSEn(Sig, Scales = 3, RadNew = 0, Plotx = False)\\ 
-MSx, Ci = hXMSEn(Sig, Scales = 3, RadNew = 0, Plotx = false)}
+[MSx, Ci] = hXMSEn(Sig1, Sig2, Mobj, 'Scales', 3, 'RadNew', 0, ‘Plotx’, false)\\
+MSx, Ci = hXMSEn(Sig1, Sig2, Mobj, Scales = 3, RadNew = 0, Plotx = False)\\ 
+MSx, Ci = hXMSEn(Sig1, Sig2, Mobj, Scales = 3, RadNew = 0, Plotx = false)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
-\item[\texttt{Sig}]		Time series signals, a N x 2 matrix where N $> 10$.\\
-	The length of \texttt{\textbf{Sig}} (\emph{K}) is halved at each scale. Only use the first $2^N$ data points are used such that $\underset{N}{\min}(K - 2^N)$.\\
+\item[\texttt{Sig1}]		First data sequence, a vector $>10$ elements.
+\item[\texttt{Sig2}]		Second data sequence, a vector $>10$ elements.
+	The length of \texttt{\textbf{Sig1 / Sig2}} (\emph{K}) is halved at each scale. Only use the first $2^N$ data points are used such that $\underset{N}{\min}(K - 2^N)$.\\
 i.e. For signals of 5000 points, only the first 4096 points are used. For signals of 1500 points, only the first 1024 points are used.
+\item[\texttt{Mobj}]	Multiscale Entropy object created with \texttt{\textbf{MSobject()}} - \ref{Mobjx}
 \item[\texttt{Scales}]		Number of time scales, a positive integer.
 \item[\texttt{RadNew}]			Radius rescaling method, an integer in the range [0 4].\\
 				 When the \texttt{\textbf{Cross}}-entropy method specified by \texttt{\textbf{Mobj}} is \texttt{\textbf{XSampEn}} or \texttt{\textbf{XApEn}}, \texttt{\textbf{RadNew}} allows the radius threshold to be updated based on the grained signal at each time scale ($X_\tau$). If a radius threshold value \texttt{\textbf{(r)}} is specified in \texttt{\textbf{Mobj}},  this becomes the rescaling coefficient, otherwise it is set to 0.2 (default). The value of \texttt{\textbf{RadNew}} specifies one of the following methods:
 	\begin{description}[labelsep=5em, labelwidth=4em, nosep,style=multiline,leftmargin=2cm]
 		\item[0]	no rescaling
-		\item[1]    Standard Deviation          - $r\sigma_{X_\tau}$
-        \item[2]    Variance                    - $r\sigma_{X_\tau}^2$
-        \item[3]    Mean Absolute Deviation     - $r(\frac{1}{N} \sum |X_{\tau} - \bar{X_{\tau}}|) $
-        \item[4]    Median Absolute Deviation   - $r(median(|X_{\tau} - median(X_{\tau})|)) $
+		\item[1]    Pooled Standard Deviation          - $r\sigma_{X_{\tau}Y_{\tau}}$
+        \item[2]    Pooled Variance                    - $r\sigma_{X_{\tau}Y_{\tau}}^2$
+        \item[3]    Combined Mean Absolute Deviation     - $r(\frac{1}{N_{XY}} \sum |XY_{\tau} - \bar{X}\bar{Y}_{\tau}|),$ \\ where XY is the concatenation of X and Y.
+        \item[4]    Combined Median Absolute Deviation   - $r(median(|XY_{\tau} - median(XY_{\tau})|)) $  \\ where XY is the concatenation of X and Y.
 	\end{description} 
 \item[\texttt{Plotx}]		A plot of the multiscale entropy curve\\
 		\texttt{true} \hspace{15pt} Plots a curve of the average cross-entropy value at each time scale (i.e. the multiscale entropy curve) and a hierarchical graph showing the cross-entropy value of each node in the hierarchical tree decomposition.\\
@@ -1899,7 +2187,7 @@ i.e. For signals of 5000 points, only the first 4096 points are used. For signal
 While EntropyHub functions primarily apply to time series data, with the following bidimensional entropy functions one can estimate the entropy of two-dimensional (2D) matrices. Hence, bidimensional entropy functions are useful for applications such as image analysis. \\
 
 \begin{tcolorbox}[sharp corners, colback=ehone!30, colframe=ehone, title=\hypertarget{bidinote}{\textbf{IMPORTANT NOTE}}, label={BiBox}]
-Each bidimensional entropy function (\texttt{\textbf{SampEn2D, FuzzEn2D, DistEn2D}}) has an important keyword argument - \texttt{\textbf{Lock}}. Bidimensional entropy functions are "locked" by default (\texttt{\textbf{Lock} == true}) to only permit matrices with a maximum size of 128 x 128.\\ \newline
+Each bidimensional entropy function (\texttt{\textbf{SampEn2D, FuzzEn2D, DistEn2D, DispEn2D, PermEn2D, EspEn2D}}) has an important keyword argument - \texttt{\textbf{Lock}}. Bidimensional entropy functions are "locked" by default (\texttt{\textbf{Lock} == true}) to only permit matrices with a maximum size of 128 x 128.\\ \newline
 
 The reason for this is because there are hundreds of millions of pairwise calculations performed in the estimation of bidimensional entropy, so memory errors often occur when storing data on RAM.\\
 e.g. For a matrix of size [200 x 200], an embedding dimension (\texttt{\textbf{m}}) = 3, and a time delay (\texttt{\textbf{tau}}) = 1, there are 753,049,836 pairwise matrix comparisons (6,777,448,524 elemental subtractions).\\ \newline
@@ -1943,11 +2231,11 @@ SE2D, Phi1, Phi2 = SampEn2D(Mat, m = floor(Int,size(Mat)./10), tau = 1, \\ r = 0
 
 
 \newpage
-\subsection{\normalsize FuzzEn2D: \hspace{15mm} Bidimensional Fuzzy Entropy}
+\subsection{\normalsize FuzzEn2D: \hspace{15mm} Bidimensional Fuzzy Entropy} \label{FuzzEn2D}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
-Fuzz2D = FuzzEn2D(Mat, ‘m’, floor(size(Mat)/10), ‘tau’, 1, ‘Fx’, 'default', ‘r’, [0.2, 2], ‘Logx’, exp(1), 'Lock', true)\\
-Fuzz2D = FuzzEn2D(Mat, m = Mat.shape//10, tau = 1, Fx = 'default', r = (0.2, 2), Logx = np.exp(1), Lock = True)\\
-Fuzz2D = FuzzEn2D(Mat, m = floor(Int, size(Mat)./10), tau = 1, Fx = "default", r = (0.2, 2), Logx = exp(1), Lock = true)}
+Fuzz2D = FuzzEn2D(Mat, ‘m’, floor(size(Mat)/10), ‘tau’, 1, ‘Fx’, 'default', ‘r’, [0.2*std(Mat(:)), 2], ‘Logx’, exp(1), 'Lock', true)\\
+Fuzz2D = FuzzEn2D(Mat, m = Mat.shape//10, tau = 1, Fx = 'default', r = (0.2*np.std(Mat[:]), 2), Logx = np.exp(1), Lock = True)\\
+Fuzz2D = FuzzEn2D(Mat, m = floor(Int, size(Mat)./10), tau = 1, Fx = "default", r = (0.2*std(Mat[:]), 2), Logx = exp(1), Lock = true)}
 
 \noindent \ul{Arguments}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep,,style=multiline,leftmargin=3cm]\footnotesize
@@ -1958,26 +2246,60 @@ Fuzz2D = FuzzEn2D(Mat, m = floor(Int, size(Mat)./10), tau = 1, Fx = "default", r
 \item[\texttt{tau}]		Time delay, a positive integer.
 \item[\texttt{Fx}]		Type of fuzzy function for distance transformation, one of the following strings:
 	\begin{description}[labelsep=14em, labelwidth=10em, nosep,style=multiline,leftmargin=6cm]
-	\item[\texttt{"default"}]	$f(x) = exp(-\frac{x^{r_2}}{r_1})$\\
-		\includegraphics[scale=.5]{Fuzz2.png}
-	\item[\texttt{"sigmoid"/"modsampen"}]	$f(x) = (1+exp(\frac{x-r_2}{r_1}))^{-1}$\\
-		\includegraphics[scale=.5]{Fuzz1.png}
+	\item[\texttt{"default"}]	$f(x) = exp(-\frac{x^{r_2}}{r_1})$\\ \ \\
+		\includegraphics[scale=.5]{Fuzz1v1.png} \\
+		 
+	\item[\texttt{"sigmoid"/"modsampen"}]	$f(x) = (1+exp(\frac{x-r_2}{r_1}))^{-1}$\\ \ \\
+		\includegraphics[scale=.5]{Fuzz2v1.png} \\
+
+	\item[\texttt{"triangular"}]	  $f(x) = \begin{cases} 1 - \frac{x}{r},  \hspace{20mm}  x\le r 
+	\\ 0,  \hspace{20mm}  x>r \end{cases}$\\
+		\includegraphics[scale=.5]{FuzzTriv1.png} \\
+
+	\item[\texttt{"trapezoidal1"}]	  $f(x) = \begin{cases} 1,  \hspace{20mm}  x<r 
+	\\ 2 - \frac{x}{r},  \hspace{10mm} r\le x<2r 
+	\\ 0,  \hspace{20mm}  x\ge 2r \end{cases}$\\
+		\includegraphics[scale=.5]{FuzzTrap1v1.png} \\ 
+
+	\item[\texttt{"trapezoidal2"}]	  $f(x) = \begin{cases} 1,  \hspace{30mm}  x<r 
+	\\ 1 - \frac{x-r_{min}}{r_{max} - r_{min}},  \hspace{5mm} r\le x<r_{max} 
+	\\ 0,  \hspace{30mm}  x\ge r_{max} \end{cases}$\\ \ \\
+		\includegraphics[scale=.5]{FuzzTrap2v1.png} \\ 
+		
+	\item[\texttt{"z\_shaped"}]	 $f(x) = \begin{cases} 1, \hspace{30mm}  x<r \\ \
+	\\ 1 - 2 \left( \frac{x-r}{r}\right)^{2},  \hspace{10mm} r<x<\frac{3}{2}r \\ \
+	\\ 2 \left( \frac{x-r}{r}\right)^{2},  \hspace{15mm} \frac{3}{2}r<x<2r \\ \
+	\\ 0,  \hspace{30mm}  x>2r \end{cases}$ \\
+		\includegraphics[scale=.5]{FuzzZSv1.png} \\
+		
+	\item[\texttt{"bell"}] $f\left( x \right) = \frac{1}{1+{\left |\frac{x}{r_1 }\right|}^{r_2 } }$ \\ 
+		\includegraphics[scale=.5]{FuzzBv1.png}\\
+				
+	\item[\texttt{"gaussian"}] $f\left( x \right) = exp(-\frac{x^2}{2r^{2}})$ \\ 
+		\includegraphics[scale=.5]{FuzzGaussv1.png} \\
+
+	\item[\texttt{"constgaussian"}] $f(x) = \begin{cases} 1,  \hspace{35mm}  x<r_{min} 
+	\\  exp(-\log(2)\frac{(x-r)^2}{r}),  \hspace{5mm}  x\ge r_{max} \end{cases}$\\
+		\includegraphics[scale=.5]{FuzzCGv1.png} \\
+
 	\item[\texttt{"gudermannian"}] 	$g(x) = atan(\frac{tanh(r_1)}{x})$
 	\item[]	$f(x) = \frac{g(x)}{g(x_{max})}$
-	\item[]		Note: Distances are normalized w.r.t. maximum distance relative to each state vector.\\
-		\includegraphics[scale=.5]{Fuzz3.png}
-	\item[\texttt{"linear"}]	If \texttt{\textbf{r}} = 0: \\
-	$f(x) = exp(-\frac{x - x_{min}}{x_{max} - x_{min}}) $
-	\item[]			If \texttt{\textbf{r}} = 1: \\ $f(x) = exp(-(x - x_{min}))$\\
-		\includegraphics[scale=.5]{Fuzz4.png}
+	\item[]		Note: Distances are normalized w.r.t. maximum distance relative to each state vector.\\ \ \\
+		\includegraphics[scale=.5]{FuzzGv1.png} \\
 	\end{description}
 	
 \item[\texttt{r}]	Parameters of the fuzzy function specified by \textbf{\texttt{Fx}}, a 1 element scalar or a 2 element tuple of positive values depending on the fuzzy function as shown above.
-	\begin{description}[labelsep=14em, labelwidth=10em, nosep,style=multiline,leftmargin=3cm]
+		\begin{description}[labelsep=14em, labelwidth=10em, nosep,style=multiline,leftmargin=3cm]
 	\item[\texttt{\emph{Default}}]		Two element tuple (or vector in MatLab)
 	\item[\texttt{\emph{Sigmoid/ModSampEn}}]		Two element tuple (or vector in MatLab)
+	\item[\texttt{\emph{Trapezoidal2}}]		Two element tuple (or vector in MatLab)
+	\item[\texttt{\emph{Bell}}]		Two element tuple (or vector in MatLab)
+	\item[\texttt{\emph{Trapezoidal1}}]		 A scalar value
+	\item[\texttt{\emph{Triangular}}]		 A scalar value
+	\item[\texttt{\emph{Z\_Shaped}}]	 A scalar value
+	\item[\texttt{\emph{Gaussian}}] A scalar value
+	\item[\texttt{\emph{ConstGaussian}}] A scalar value
 	\item[\texttt{\emph{Gudermannian}}] A scalar value
-	\item[\texttt{\emph{Linear}}]		0 or 1
 	\end{description}
 \item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
 \item[\texttt{Lock}]	\hyperlink{bidinote}{\ul{See note on matrix size locking}}\\
@@ -1996,7 +2318,7 @@ Fuzz2D = FuzzEn2D(Mat, m = floor(Int, size(Mat)./10), tau = 1, Fx = "default", r
 
 
 \newpage
-\subsection{\normalsize DistEn2D: \hspace{15mm} Bidimensional Distribution Entropy}
+\subsection{\normalsize DistEn2D: \hspace{15mm} Bidimensional Distribution Entropy}\label{DistEn2D}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 Dist2D = DistEn2D(Mat, ‘m’, floor(size(Mat)/10), 'tau', 1, 'Bins', 'sturges', 'Logx', 2, 'Norm', true, 'Lock', true)\\
 Dist2D = DistEn2D(Mat, m = Mat.shape//10, tau = 1, Bins = 'sturges', Logx = 2, Norm = True, Lock = True)\\
@@ -2033,7 +2355,7 @@ Dist2D = DistEn2D(Mat, m = floor(Int, size(Mat)./10), tau = 1, Bins = "Sturges",
 
 
 \newpage
-\subsection{\normalsize DispEn2D: \hspace{15mm} Bidimensional Dispersion Entropy}
+\subsection{\normalsize DispEn2D: \hspace{15mm} Bidimensional Dispersion Entropy}\label{DispEn2D}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 [Disp2D, RDE] = DispEn2D(Mat, ‘m’, floor(size(Mat)/10), 'tau', 1, 'c', 3, 'Typex', 'ncdf', 'Logx', exp(1), 'Norm', false, 'Lock', true)\\
 Disp2D, RDE  = DispEn2D(Mat, m = Mat.shape//10, tau = 1, c = 3, Typex = 'ncdf', Logx = np.exp(1), Norm = False, Lock = True)\\
@@ -2079,7 +2401,7 @@ Disp2D, RDE  = DispEn2D(Mat, m = floor(Int, size(Mat)./10), tau = 1, c = 3, Type
 
 
 \newpage
-\subsection{\normalsize PermEn2D: \hspace{15mm} Bidimensional Permutation Entropy}
+\subsection{\normalsize PermEn2D: \hspace{15mm} Bidimensional Permutation Entropy}\label{PermEn2D}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 Perm2D = PermEn2D(Mat, ‘m’, floor(size(Mat)/10), 'tau', 1, 'Logx', exp(1), 'Norm', true, 'Lock', true)\\
 Perm2D = PermEn2D(Mat, m = Mat.shape//10, tau = 1, Logx = np.exp(1), Norm = True, Lock = True)\\
@@ -2197,8 +2519,36 @@ The following sections provide some basic examples of EntropyHub functions. Thes
 \noindent  There is a custom documentation section installed with the toolkit in MatLab which provides several useful examples of every function in more detail than what is shown here.  Thus, if you are using EntropyHub for MatLab, we recommend that you consult the custom EntropyHub documentation in MatLab for more in-depth examples.
 \newline \newline
 In the following examples, signals / data are imported into MatLab/Python/Julia using the \texttt{ExampleData()} function from EntropyHub.
-To use this function as outlined in the examples below, \textbf{an internet connection is required.}\\
-\texttt{ExampleData()} accepts any of the following strings:
+
+\begin{tcolorbox}[sharp corners, colback=ehone!10, colframe=ehone, title=\textbf{NOTE}, label={BiBox}]
+
+To use the \texttt{\textbf{ExampleData() - \ref{ExampleData()}}} function as outlined in the examples below, \underline{\textbf{an internet connection is required.}}\\
+\end{tcolorbox}
+
+\begin{tcolorbox}[sharp corners, colback=ehone!10, colframe=ehone, title=\textbf{THINGS TO REMEMBER}, label={BiBox}]
+
+Parameters of the base or cross- entropy methods are passed to multiscale and multiscale cross- functions using the multiscale entropy object using \textbf{\texttt{MSobject} - \ref{Mobjx}}.\\
+Base and cross- entropy methods are declared with \texttt{MSobject()} using a string name in \textbf{MatLab} and \textbf{Python}. In \textbf{Julia}, base and cross- entropy methods are passed as a \textbf{\underline{function}}. See the MSobject example (\ref{ExMobjM},  \ref{ExMobjP}, \ref{ExMobjJ}) in the following sections for more info.\\
+\newline
+Each bidimensional entropy function (\texttt{\textbf{SampEn2D, FuzzEn2D, DistEn2D, PermEn2D, EspEn2D}}) has an important keyword argument - \texttt{\textbf{Lock}}. Bidimensional entropy functions are "locked" by default (\texttt{\textbf{Lock} == true}) to only permit matrices with a maximum size of 128 x 128.\\ \newline
+
+In hierarchical multiscale entropy (hMSEn) and hierarchical multiscale cross-entropy (hXMSEn) functions, the length of the time series signal(s) is halved at each scale. Thus, \texttt{hMSEn} and \texttt{hXMSEn} only use the first $2^N$ data points where  $2^N <=$ the length of the original time series signal.\\
+i.e. For a signal of 5000 points, only the first 4096 are used. For a signal of 1500 points, only the first 1024 are used.
+\end{tcolorbox}
+
+
+
+\newpage
+\section{\normalsize ExampleData():  Import Example Datasets} \label{ExampleData()}
+\noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
+Data = ExampleData(Name)\\
+Data = ExampleData(Name)\\
+Data = ExampleData(Name)}
+
+\noindent \ul{Arguments}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep,,style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{Name}]	One of the following strings:
+
 \begin{description}[labelsep=1cm, labelwidth=4cm, nosep,style=multiline,leftmargin=4cm]\footnotesize
 \item[\texttt{'uniform'}]	vector of uniformly distributed random numbers in range [0 1]
 \item[\texttt{'gaussian'}]  vector of normally distributed random numbers with $\mu = 0, \sigma = 1$
@@ -2220,19 +2570,14 @@ $(\sigma: 10, \beta: \frac{8}{3}, rho: 28),   [X_o = 10, Y_o = 20, Z_o = 10]$
 \item[\texttt{'mandelbrot\textunderscore Mat'}] Matrix of image of fractal generated from the mandelbrot set
 \item[\texttt{'entropyhub\textunderscore Mat'}]  Matrix of image of the entropyhub logo \\
 \end{description}
+\end{description}
 
-\begin{tcolorbox}[sharp corners, colback=ehone!10, colframe=ehone, title=\textbf{THINGS TO REMEMBER}, label={BiBox}]
+\noindent \ul{Outputs}
 
-For \textbf{cross-entropy} and \textbf{multiscale cross-entropy} functions, the two time series signals are passed as a two-column or two-row matrix. At present, it is not possible to pass signals of different lengths separately.\\
-\newline
-Parameters of the base or cross- entropy methods are passed to multiscale and multiscale cross- functions using the multiscale entropy object using \texttt{\textbf{MSobject}}.\\
-Base and cross- entropy methods are declared with \texttt{MSobject()} using a string name in \textbf{MatLab} and \textbf{Python}. In \textbf{Julia}, base and cross- entropy methods are passed as a function. See the MSobject example in the following sections for more info.\\
-\newline
-Each bidimensional entropy function (\texttt{\textbf{SampEn2D, FuzzEn2D, DistEn2D}}) has an important keyword argument - \texttt{\textbf{Lock}}. Bidimensional entropy functions are "locked" by default (\texttt{\textbf{Lock} == true}) to only permit matrices with a maximum size of 128 x 128.\\ \newline
+\begin{description}[labelsep=1cm, labelwidth=4cm, nosep,style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{Data}]	The vector or matrix containing the desired dataset.
+\end{description}
 
-In hierarchical multiscale entropy (hMSEn) and hierarchical multiscale cross-entropy (hXMSEn) functions, the length of the time series signal(s) is halved at each scale. Thus, \texttt{hMSEn} and \texttt{hXMSEn} only use the first $2^N$ data points where  $2^N <=$ the length of the original time series signal.\\
-i.e. For a signal of 5000 points, only the first 4096 are used. For a signal of 1500 points, only the first 1024 are used.
-\end{tcolorbox}
 
 
 
@@ -2334,14 +2679,15 @@ Phas = PhasEn(X, 'K', 11, 'tau', 2, 'Plotx', true)
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
 X = ExampleData('randintegers2');
 
-XDist = XDistEn(X, 'm', 5, 'tau', 3)
+XDist = XDistEn(X(:,1), X(:,2), 'm', 5, 'tau', 3)
 
 >>> Note: 17/25 bins were empty
 XDist = 0.5248
 \end{minted}
 Use Rice's method to determine the number of histogram bins and return the probability of each bin (Ppi).
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
-[XDist, Ppi] = XDistEn(X, 'm', 5, 'tau', 3, 'Bins', 'rice')
+[XDist, Ppi] = XDistEn(X(:,1), X(:,2), 'm', 5, 'tau', 3, . . .
+		 'Bins', 'rice')
 
 >>> Note: 407/415 bins were empty
 	XDist = 0.2802
@@ -2352,7 +2698,7 @@ Use Rice's method to determine the number of histogram bins and return the proba
 
 
 \newpage
-\subsection{\normalsize Example 5: \hspace{15mm} Multiscale Entropy Object [MSobject()]}
+\subsection{\normalsize Example 5: \hspace{15mm} Multiscale Entropy Object [MSobject()]} \label{ExMobjM}
 \noindent Create a multiscale entropy object (Mobj) for multiscale fuzzy entropy, calculated with an embedding dimension of 5, a time delay of 2, using a sigmoidal fuzzy function with the r scaling parameters (3, 1.2).
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
 Mobj = MSobject('FuzzEn', 'm', 5, 'tau', 2, 'Fx', ...
@@ -2447,11 +2793,12 @@ Mobj = MSobject('XApEn', 'm', 2, 'tau', 2, 'r', 0.5)
 \end{minted}
 Calculate the comsposite multiscale cross-approximate entropy over 3 temporal scales where the radius distance threshold value (r) specified by Mobj becomes scaled by the variance of the signal at each scale.
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
-MSx = cXMSEn(X, Mobj, 'Scales', 3, 'RadNew', 1)
+MSx = cXMSEn(X(:,1), X(:,2), Mobj, 'Scales', 3, 'RadNew', 1)
 
  . . . . . . .
 >>> MSx = 1×3
     1.0893    1.4746    1.2932
+
 \end{minted}
 
 
@@ -2476,8 +2823,8 @@ Mobj = MSobject('XCondEn', 'm', 2, 'tau', 2, ...
 \includegraphics[scale=.65]{henon.png}\newline \newline
 Calculate the hierarchical multiscale corrected cross-conditional entropy over 4 temporal scales and return the average cross-entropy at each scale (Sn), the complexity index (Ci), and a plot of the multiscale entropy curve and the hierarchical tree with the cross-entropy value at each node.
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
-[MSx, Sn, Ci] = hXMSEn(Data, Mobj, 'Scales', 4, ...
-   'Plotx', true)
+[MSx, Sn, Ci] = hXMSEn(Data(:,1), Data(:,2), Mobj, 'Scales', ...
+	 4, 'Plotx', true)
    
 >>> Only first 4096 samples were used in 
    hierarchical decomposition.
@@ -2506,14 +2853,13 @@ imshow(X,[],'InitialMagnification',500),
 colormap('hot')
 \end{minted}
 \includegraphics[scale=.4]{mandelbrot.png}\newline \newline
-Calculate the bidimensional fuzzy entropy in trits (logarithm base 3) with a template matrix of size [8 x 5], and a time delay (tau) of 2  using a 'linear' fuzzy function with distances linearly normalised to the range [0, 1].
-\newline 	$f(x) = exp(-\frac{x - x_{min}}{x_{max} - x_{min}}) $
+Calculate the bidimensional fuzzy entropy in trits (logarithm base 3) with a template matrix of size [8 x 5], and a time delay (tau) of 2  using a 'gaussian' fuzzy function shaped by the parameter \texttt{\textbf{r = 20}} .
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
 FE2D = FuzzEn2D(X, 'm', [8 5], 'tau', 2, 'Fx', . . .
-	'linear', 'r', 0, 'Logx', 3)
+	'gaussian', 'r', 20, 'Logx', 3)
 
 >>> FE2D = 
-	0.0016
+	1.8659
 \end{minted}
 
 
@@ -2535,6 +2881,7 @@ import EntropyHub
 \noindent In the following python examples, it is assumed that EntropyHub has been imported using the 'eh' abbreviation:
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
 import EntropyHub as eh
+eh.greet()
 
  ___  _   _  _____  _____  ____  ____  _     _          
 |  _|| \ | ||_   _||     \|    ||    || \   / |   ___________ 
@@ -2589,16 +2936,14 @@ Samp, Phi1, Phi2 = eh.SampEn(X, m = 4, tau = 2)
 \noindent Import the x, y, and z components of the Lorenz system of equations.
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
 Data = eh.ExampleData('lorenz');
-
 from matplotlib.pyplot import fig, scatter, axis
-
 fig = figure(facecolor='k')
 ax = fig.add_subplot(111, projection='3d')
 ax.set_facecolor('k')
 ax.scatter(Data[:,0], Data[:,1], Data[:,2], c='g')
 ax.axis('off')
 \end{minted}
-\includegraphics[scale=.6]{lorenz.png}\newline \newline
+\includegraphics[scale=.4]{lorenz.png}\newline \newline
 \noindent Calculate fine-grained permutation entropy of the z component in dits (logarithm base 10) with an embedding dimension of 3, time delay of 2, an alpha parameter of 1.234. Return \texttt{Pnorm} normalised w.r.t the number of all possible permutations (m!) and the condition permutation entropy (\texttt{cPE}) estimate.
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
 Z = Data[:,2];
@@ -2654,7 +2999,7 @@ Phas = eh.PhasEn(X, K = 11, tau = 2, Plotx = True)
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
 X = eh.ExampleData('randintegers2');
 
-XDist, _ = eh.XDistEn(X, m = 5, tau = 3)
+XDist, _ = eh.XDistEn(X[:,0], X[:,1], m = 5, tau = 3)
 
 >>> Note: 17/25 bins were empty
   XDist = 
@@ -2662,7 +3007,8 @@ XDist, _ = eh.XDistEn(X, m = 5, tau = 3)
 \end{minted}
 Use Rice's method to determine the number of histogram bins and return the probability of each bin (Ppi).
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
-XDist, Ppi = eh.XDistEn(X, m = 5, tau = 3, Bins = 'rice')
+XDist, Ppi = eh.XDistEn(X[:,0], X[:,1], m = 5, tau = 3, 
+	 Bins = 'rice')
 
 >>> Note: 407/415 bins were empty
 >>> XDist =
@@ -2674,7 +3020,7 @@ XDist, Ppi = eh.XDistEn(X, m = 5, tau = 3, Bins = 'rice')
 
 
 \newpage
-\subsection{\normalsize Example 5: \hspace{15mm} Multiscale Entropy Object [MSobject()]}
+\subsection{\normalsize Example 5: \hspace{15mm} Multiscale Entropy Object [MSobject()]} \label{ExMobjP}
 \noindent Create a multiscale entropy object (Mobj) for multiscale fuzzy entropy, calculated with an embedding dimension of 5, a time delay of 2, using a sigmoidal fuzzy function with the r scaling parameters (3, 1.2).
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
 Mobj = eh.MSobject('FuzzEn', m = 5, tau = 2, 
@@ -2777,7 +3123,8 @@ Mobj.Kwargs
 \end{minted}
 Calculate the comsposite multiscale cross-approximate entropy over 3 temporal scales where the radius distance threshold value (r) specified by Mobj becomes scaled by the variance of the signal at each scale.
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
-MSx, _ = eh.cXMSEn(X, Mobj, Scales = 3, RadNew = 1)
+MSx, _ = eh.cXMSEn(X[:,0], X[:,1], Mobj, Scales = 3, 
+			RadNew = 1)
 
  . . . . . . .
 >>> MSx = 
@@ -2812,7 +3159,8 @@ Mobj.Kwargs
 \includegraphics[scale=.5]{henon.png}\newline \newline
 Calculate the hierarchical multiscale corrected cross-conditional entropy over 4 temporal scales and return the average cross-entropy at each scale (Sn), the complexity index (Ci), and a plot of the multiscale entropy curve and the hierarchical tree with the cross-entropy value at each node.
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
-MSx, Sn, Ci = eh.hXMSEn(Data, Mobj, Scales = 4, Plotx = True)
+MSx, Sn, Ci = eh.hXMSEn(Data[:,0], Data[:,1], Mobj, 
+		Scales = 4, Plotx = True)
    
 >>> WARNING: Only first 4096 samples were used in 
    hierarchical decomposition.
@@ -2841,13 +3189,13 @@ from matplotlib.pyplot import imshow, show
 imshow(X, cmap = 'hot'), show()
 \end{minted}
 \includegraphics[scale=.4]{mandelbrot.png}\newline \newline
-Calculate the bidimensional fuzzy entropy in trits (logarithm base 3) with a template matrix of size [8 x 5], and a time delay (tau) of 2  using a 'linear' fuzzy function with distances linearly normalised to the range [0, 1].\newline 	$f(x) = exp(-\frac{x - x_{min}}{x_{max} - x_{min}}) $
+Calculate the bidimensional fuzzy entropy in trits (logarithm base 3) with a template matrix of size [8 x 5], and a time delay (tau) of 2  using a 'gaussian' fuzzy function shaped by the parameter \texttt{r = 20}.
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
-FE2D = eh.FuzzEn2D(X, m = (8, 5), tau = 2, Fx = 'linear',
-				r = 0, Logx = 3)
+FE2D = eh.FuzzEn2D(X, m = (8, 5), tau = 2, Fx = 'gaussian',
+			r = 20, Logx = 3)
 
 >>> FE2D = 
-	0.00159093
+	1.8659
 \end{minted}
 
 
@@ -2985,13 +3333,14 @@ julia> Phas = PhasEn(X, K = 11, tau = 2, Plotx = true)
 \noindent Import a signal of pseudorandom integers in the range [1, 8] and calculate the cross-distribution entropy with an embedding dimension of 5, a time delay (tau) of 3, and Sturges' bin selection method.
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
 julia> X = ExampleData("randintegers2");
-julia> XDist, _ = XDistEn(X, m = 5, tau = 3)
+julia> XDist, _ = XDistEn(X[:,1], X[:,2], m = 5, tau = 3)
 Note: 17/25 bins were empty
 0.524841365239631
 \end{minted}
 Use Rice's method to determine the number of histogram bins and return the probability of each bin (Ppi).
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
-julia> XDist, Ppi = XDistEn(X, m = 5, tau = 3, Bins = "rice")
+julia> XDist, Ppi = XDistEn(X[:,1], X[:,2], m = 5, tau = 3, 
+		Bins = "rice")
 Note: 407/415 bins were empty
 (0.28024570808915084, 
 [3.59537211e-5, 0.004693585, 0.03679902, 0.1095869, 0.1978132,
@@ -3000,7 +3349,7 @@ Note: 407/415 bins were empty
 
 
 \newpage
-\subsection{\normalsize Example 5: \hspace{15mm} Multiscale Entropy Object [MSobject()]}
+\subsection{\normalsize Example 5: \hspace{15mm} Multiscale Entropy Object [MSobject()]}\label{ExMobjJ}
 
 \noindent\textbf{\ul{Note:}} Unlike MatLab or Python,  in Julia the base and cross- entropy functions used in the multiscale entropy calculation are declared by passing EntropyHub \ul{\textbf{functions}} to \texttt{MSobject()}, not string names.\\
 
@@ -3069,7 +3418,8 @@ julia> Mobj = MSobject(XApEn, m = 2, tau = 2, r = 0.5)
 \end{minted}
 Calculate the comsposite multiscale cross-approximate entropy over 3 temporal scales where the radius distance threshold value (r) specified by Mobj becomes scaled by the variance of the signal at each scale.
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
-julia> MSx, _ = cXMSEn(X, Mobj, Scales = 3, RadNew = 1)
+julia> MSx, _ = cXMSEn(X[:,1], X[:,2], Mobj, Scales = 3, 
+		RadNew = 1)
 
  . . . . . . .
 [1.0893229452569062, 1.4745638145624824, 1.293182408488266]
@@ -3097,7 +3447,8 @@ julia> Mobj = MSobject(XCondEn, m = 2, tau = 2, c = 12,
 \includegraphics[scale=.5]{henonjl.png}\newline \newline
 Calculate the hierarchical multiscale corrected cross-conditional entropy over 4 temporal scales and return the average cross-entropy at each scale (Sn), the complexity index (Ci), and a plot of the multiscale entropy curve and the hierarchical tree with the cross-entropy value at each node.
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
-MSx, Sn, Ci = hXMSEn(Data, Mobj, Scales = 4, Plotx = true)
+MSx, Sn, Ci = hXMSEn(Data[:,1], Data[:,2], Mobj, Scales = 4,
+		 Plotx = true)
 [Warning: Only first 4096 samples were used in hierarchical 
 |	decomposition.
 |   The last 404 samples of the data sequence were ignored.
@@ -3124,12 +3475,11 @@ julia> X = ExampleData("mandelbrot_Mat");
 julia> heatmap(X, background_color="black")
 \end{minted}
 \includegraphics[scale=.5]{mandelbrotjl.png}\newline \newline
-Calculate the bidimensional fuzzy entropy in trits (logarithm base 3) with a template matrix of size [8 x 5], and a time delay (tau) of 2  using a 'linear' fuzzy function with distances linearly normalised to the range [0, 1].
-\newline 	$f(x) = exp(-\frac{x - x_{min}}{x_{max} - x_{min}}) $
+Calculate the bidimensional fuzzy entropy in trits (logarithm base 3) with a template matrix of size [8 x 5], and a time delay (tau) of 2  using a 'gaussian' fuzzy function shaped by the parameter \texttt{r = 20}.
 \begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
 julia> FE2D = FuzzEn2D(X, m = (8, 5), tau = 2, 
-		Fx = "linear", r = 0, Logx = 3)
-0.0015909286623630356
+		Fx = "gaussian", r = 20, Logx = 3)
+1.8659
 \end{minted}
 
 
@@ -3158,6 +3508,11 @@ Joshua S Richman and J. Randall Moorman, \\
 \emph{Physiological time-series analysis using approximate entropy and sample entropy},\\
 American Journal of Physiology-Heart and Circulatory Physiology (2000).
 
+\bibitem{Samp2}
+Douglas E Lake, Joshua S Richman, M.P. Griffin, J. Randall Moorman,\\
+\emph{Sample entropy analysis of neonatal heart rate variability,}\\
+American Journal of Physiology-Regulatory, Integrative and Comparative Physiology, 283, no. 3 (2002): R789-R797.
+
 \bibitem{Fuzz1}
 Weiting Chen, et al.\\
 \emph{Characterization of surface EMG signal based on fuzzy entropy},\\
@@ -3167,6 +3522,11 @@ IEEE Transactions on neural systems and rehabilitation engineering, 15.2 (2007):
 Hong-Bo Xie, Wei-Xing He, and Hui Liu,\\
 \emph{Measuring time series regularity using nonlinear similarity-based sample entropy},\\
 Physics Letters A, 372.48 (2008): 7140-7146.
+
+\bibitem{Fuzz3}
+Hamed Azami, et al.\\
+\emph{Fuzzy Entropy Metrics for the Analysis of Biomedical Signals: Assessment and Comparison,}\\
+IEEE Access, 7 (2019): 104833-104847
 
 \bibitem{K21}
 Peter Grassberger and Itamar Procaccia,
@@ -3217,6 +3577,11 @@ Complexity, 1403829 (2019).
 Maik Riedl, Andreas Müller, and Niels Wessel,\\
 \emph{Practical considerations of permutation entropy},\\
 The European Physical Journal Special Topics, 222.2 (2013): 249-262.
+
+\bibitem{Perm9}
+Huan Kang, Xiaofeng Zhang, Guangbin Zhang, \\
+\emph{Phase permutation entropy: A complexity measure for nonlinear time series incorporating phase information} \\
+Physica A: Statistical Mechanics and its Applications 568 (2021): 125686. \\
 
 \bibitem{Cond1}
 Alberto Porta, et al.,\\
@@ -3343,6 +3708,21 @@ Jiawei Yang, et al.,\\
 \emph{Classification of Interbeat Interval Time-series Using Attention Entropy},\\
 IEEE Transactions on Affective Computing (2020)
 
+\bibitem{Div1}
+X. Wang, S. Si and Y. Li, \\
+\emph{Multiscale Diversity Entropy: A Novel Dynamical Measure for Fault  Diagnosis of Rotating Machinery}, \\
+IEEE Transactions on Industrial Informatics, vol. 17, no. 8, pp. 5419-5429, 2021
+
+\bibitem{Div2}
+Y. Wang, et al., \\
+\emph{Cumulative Diversity Pattern Entropy (CDEn): A High-Performance, Almost-Parameter-Free Complexity Estimator for Nonstationary Time Series,}\\
+IEEE Transactions on Industrial Informatics, vol. 19, no. 9, pp. 9642-9653, 2023
+
+\bibitem{Rang1}
+Omidvarnia, Amir, et al., \\
+\emph{Range entropy: A bridge between signal complexity and self-similarity,}\\
+Entropy 20.12 (2018): 962.
+
 \bibitem{XFuzz1}
 Hong-Bo Xie, et al.,\\
 \emph{Cross-fuzzy entropy: A new method to test pattern synchrony of bivariate time series},\\
@@ -3408,6 +3788,10 @@ Hamed Azami and Javier Escudero,\\
 \emph{Coarse-graining approaches in univariate multiscale sample and dispersion entropy},\\
 Entropy 20.2 (2018): 138.
 
+\bibitem{MS12}
+Magdalena Costa and Ary Goldberger,\\
+\emph{Generalized multiscale entropy analysis: Application to quantifying the complex volatility of human heartbeat time series,}\\ Entropy, 17 (2015): 1197–1203
+
 \bibitem{cMS1}
 Shuen-De Wu, et al.,\\
 \emph{Time series analysis using composite multiscale entropy},\\
@@ -3417,6 +3801,11 @@ Entropy 15.3 (2013): 1069-1084.
 Shuen-De Wu, et al.,\\
 \emph{Analysis of complex time series using refined composite multiscale entropy},\\
 Physics Letters A 378.20 (2014): 1369-1374.
+
+\bibitem{cMS3}
+Hamed Azami, Alberto Fernández, and Javier Escudero.,\\
+\emph{Refined multiscale fuzzy entropy based on standard deviation for biomedical signal analysis.}\\
+Medical \& biological engineering \& computing 55 (2017): 2037-2052.
 
 \bibitem{rMS1}
 José Fernando Valencia, et al.,\\
@@ -3555,7 +3944,8 @@ Size of sub-matrix for bidimensional entropy estimation \\ - [SampEn2D / FuzzEn2
 \item[\texttt{tau}]		Time delay  \\ - [All \textit{Base} and \textit{Cross-}entropy methods]\\
 \item[\texttt{Typex}]		Type of permutation entropy method  \\ - [PermEn]\\
 Type of symbolic sequence transform method  \\ - [DispEn / SyDyEn / DispEn2D]\\
-\item[\texttt{tpx}]		Tuning parameter for the permutation entropy method specified by \texttt{\textbf{Typex}} \\ - [PermEn]
+\item[\texttt{tpx}]		Tuning parameter for the permutation entropy method specified by \texttt{\textbf{Typex}} \\ - [PermEn]\\
+\item[\texttt{Vcp}] 	Option to estimate the variance of the conditional probabilities in the sample entropy estimate.\\ - [SampEn, XSampEn]
 
 
 
