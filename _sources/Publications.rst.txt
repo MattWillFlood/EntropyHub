@@ -29,6 +29,10 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `From physiological complexity to data interactions—A case study of recordings from exercise monitoring <https://pubs.aip.org/aip/cha/article/34/4/043136/3282829/From-physiological-complexity-to-data-interactions>`_
+    | Małgorzata Andrzejewska, Tomasz Wróblewski, Szymon Cygan, Mateusz Ozimek, Monika Petelczyc
+    | *Chaos*
+
 * `Predictability and Complexity of Fine and Gross Motor Skills in Fibromyalgia Patients: A Pilot Study <https://www.mdpi.com/2075-4663/12/4/90#>`_
     | Nancy Brígida, David Catela, Cristiana Mercê, Marco Branco
     | *Sports (MDPI)*

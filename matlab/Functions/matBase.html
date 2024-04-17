@@ -418,21 +418,23 @@ data transform = normalised cumulative density function (ncdf)</p>
 (<code class="docutils literal notranslate"><span class="pre">RDE</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified
 name/value pair arguments:</p>
 <blockquote>
-<div><ul class="simple">
+<div><ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">m</span></code>     - Embedding Dimension, a positive integer</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tau</span></code>   - Time Delay, a positive integer</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">c</span></code>     - Number of symbols, an integer &gt; 1</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Typex</span></code> - Type of data-to-symbolic sequence transform, one of the following:
-{<code class="docutils literal notranslate"><span class="pre">linear</span></code>, <code class="docutils literal notranslate"><span class="pre">kmeans</span></code>, <code class="docutils literal notranslate"><span class="pre">ncdf</span></code>, <code class="docutils literal notranslate"><span class="pre">finesort</span></code>, <code class="docutils literal notranslate"><span class="pre">equal</span></code>}
-See the <cite>EntropyHub Guide</cite> for more info on these transforms.</p></li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">Typex</span></code> - Type of data-to-symbolic sequence transform, one of the following:</dt><dd><p>{<code class="docutils literal notranslate"><span class="pre">linear</span></code>, <code class="docutils literal notranslate"><span class="pre">kmeans</span></code>, <code class="docutils literal notranslate"><span class="pre">ncdf</span></code>, <code class="docutils literal notranslate"><span class="pre">finesort</span></code>, <code class="docutils literal notranslate"><span class="pre">equal</span></code>}</p>
+</dd>
+</dl>
+<p>See the <cite>EntropyHub Guide</cite> for more info on these transforms.</p>
+</li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Logx</span></code>  - Logarithm base, a positive scalar</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Fluct</span></code> - When <code class="docutils literal notranslate"><span class="pre">Fluct</span> <span class="pre">==</span> <span class="pre">true</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn</span></code> returns the fluctuation-based
 Dispersion entropy.   [default: false]</p></li>
 <li><dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">Norm</span></code>  - Normalisation of <code class="docutils literal notranslate"><span class="pre">Dispx</span></code> and <code class="docutils literal notranslate"><span class="pre">RDE</span></code> values, a boolean:</dt><dd><ul>
+<dt><code class="docutils literal notranslate"><span class="pre">Norm</span></code>  - Normalisation of <code class="docutils literal notranslate"><span class="pre">Dispx</span></code> and <code class="docutils literal notranslate"><span class="pre">RDE</span></code> values, a boolean:</dt><dd><ul class="simple">
 <li><p>[false]   no normalisation - default</p></li>
-<li><p>[true]    normalises w.r.t number of possible dispersion 
-patterns (<code class="docutils literal notranslate"><span class="pre">c^m</span></code>  or <code class="docutils literal notranslate"><span class="pre">(2c</span> <span class="pre">-1)^m-1</span></code> if <code class="docutils literal notranslate"><span class="pre">Fluct</span> <span class="pre">==</span> <span class="pre">true</span></code>).</p></li>
+<li><p>[true]    normalises w.r.t number of possible dispersion patterns (<code class="docutils literal notranslate"><span class="pre">c^m</span></code> or <code class="docutils literal notranslate"><span class="pre">(2c</span> <span class="pre">-1)^m-1</span></code> if <code class="docutils literal notranslate"><span class="pre">Fluct</span> <span class="pre">==</span> <span class="pre">true</span></code>).</p></li>
 </ul>
 </dd>
 </dl>
@@ -441,7 +443,7 @@ patterns (<code class="docutils literal notranslate"><span class="pre">c^m</span
 </ul>
 </div></blockquote>
 <dl class="simple">
-<dt>See also:</dt><dd><p>PermEn, SyDyEn, MSEn.</p>
+<dt>See also:</dt><dd><p>DispEn2D, MvDispEn, PermEn, SyDyEn, MSEn.</p>
 </dd>
 <dt>References:</dt><dd><dl class="simple">
 <dt>[1] Mostafa Rostaghi and Hamed Azami,</dt><dd><p>“Dispersion entropy: A measure for time-series analysis.” 

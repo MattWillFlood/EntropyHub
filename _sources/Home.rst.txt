@@ -18,7 +18,7 @@ An open-source toolkit for entropic data analysis
     :height: 150px
 
 .. centered:: Available in: 
-.. centered:: `Matlab  <https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub>`_ // `Python <https://pypi.org/project/EntropyHub/>`_  // `Julia <https://mattwillflood.github.io/EntropyHub.jl/stable/`_
+.. centered:: `Matlab  <https://www.mathworks.com/matlabcentral/fileexchange/94185-entropyhub>`_ // `Python <https://pypi.org/project/EntropyHub/>`_  // `Julia <https://mattwillflood.github.io/EntropyHub.jl/stable/>`_ 
 
 .. toctree::
    :maxdepth: 3
