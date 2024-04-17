@@ -1,6 +1,6 @@
 .. image:: https://raw.githubusercontent.com/MattWillFlood/EntropyHub/main/metrics.entropyhub.svg
     :align: right
-    :height: 80px
+    :height: 50px
     :target: https://github.com/MattWillFlood/EntropyHub
 
 **************
