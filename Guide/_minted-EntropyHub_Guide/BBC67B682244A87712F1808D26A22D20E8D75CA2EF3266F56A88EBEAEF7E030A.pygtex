@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{[}\PYG{n}{MDisp}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{RDE}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{MvDispEn}\PYG{p}{(}\PYG{n}{Data}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{],}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}c\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{7}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{...}
+\PYG{+w}{	    }\PYG{l+s}{\PYGZsq{}Norm\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}Methodx\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}v2\PYGZsq{}}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{MDisp}\PYG{+w}{ }\PYG{p}{=}
+\PYG{+w}{    }\PYG{l+m+mf}{0.95439595}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.94074854}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.93012334}
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{RDE}\PYG{+w}{ }\PYG{p}{=}
+\PYG{+w}{    }\PYG{l+m+mf}{0.02675949}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.00805324}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.00201614}
+\end{Verbatim}

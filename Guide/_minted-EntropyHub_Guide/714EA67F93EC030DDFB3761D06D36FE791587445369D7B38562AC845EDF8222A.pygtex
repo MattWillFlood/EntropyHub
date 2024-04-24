@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{MDisp}\PYG{p}{,} \PYG{n}{RDE} \PYG{o}{=} \PYG{n}{eh}\PYG{o}{.}\PYG{n}{MvDispEn}\PYG{p}{(}\PYG{n}{Data}\PYG{p}{,} \PYG{n}{m} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{array}\PYG{p}{([}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{]),} \PYG{n}{c} \PYG{o}{=} \PYG{l+m+mi}{7}\PYG{p}{,}
+			\PYG{n}{Norm} \PYG{o}{=} \PYG{k+kc}{True}\PYG{p}{)}
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{MDisp} \PYG{o}{=}
+    \PYG{l+m+mf}{0.508226}
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{RDE} \PYG{o}{=}
+    \PYG{l+m+mf}{0.0009856}
+\end{Verbatim}

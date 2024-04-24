@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{  }\PYG{n}{MDisp}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{RDE}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{MvDispEn}\PYG{p}{(}\PYG{n}{Data}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{m}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{],}\PYG{+w}{ }\PYG{n}{c}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{7}\PYG{p}{,}
+\PYG{+w}{			}\PYG{n}{Norm}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Methodx}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}v2\PYGZdq{}}\PYG{p}{)}
+\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{  }\PYG{o}{.}\PYG{+w}{  }\PYG{o}{.}
+\PYG{p}{([}\PYG{l+m+mf}{0.954395954191354}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.94074853715469}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.930123339696689}\PYG{p}{],}
+\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mf}{0.026759488075315}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.00805323667175}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.0020161358982543}\PYG{p}{])}
+\end{Verbatim}

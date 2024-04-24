@@ -14,50 +14,28 @@
 
 
 ## Latest Update
-### v1.0
-__*----- New entropy methods -----*__             
-Two new base entropy functions (and their multiscale versions) have been added:         
-        > [Diversity Entropy](https://ieeexplore.ieee.org/document/9194995)             
-        > [Range Entropy](https://www.mdpi.com/1099-4300/20/12/962)             
+### v2.0
+__*----- New multivariate methods -----*__       
+Five new multivariate entropy functions incorporating several method-specific variations        
+        > [Multivariate Sample Entropy](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.84.061918)      
+        > [Multivariate Fuzzy Entropy](https://www.mdpi.com/1099-4300/19/1/2) [++ many fuzzy functions]        
+        > [Multivariate Dispersion Entropy](https://www.mdpi.com/1099-4300/21/9/913) [++ many symbolic sequence transforms]          
+        > [Multivariate Cosine Similarity Entropy](https://www.mdpi.com/1099-4300/24/9/1287)        
+        > Multivariate Permutation Entropy  [++ *amplitude-aware*, *edge*, *phase*, *weighted* and *modified* variants]       
 
-__*----- New fuzzy membership functions -----*__          
-Several new fuzzy membership functions have been added to FuzzEn, XFuzzEn and FuzzEn2D to provide more options for mapping the degree of similarity between embedding vectors.          
-These include *trapezoidal*, *triangular* and *gaussian*, among others.                 
-Further info on these membership functions can be found [here.](https://hal.science/hal-02267711/document)              
+__*----- New multivariate multiscale methods -----*__       
+Two new multivariate multiscale entropy functions        
+        > [Multivariate Multiscale Entropy](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.84.061918) [++ coarse, modified and generalized graining procedures]          
+        > [Composite and Refined-composite Multivariate Multiscale Entropy](https://link.springer.com/article/10.1007/s11517-017-1647-5)      
 
-__*----- Phase Permutation Entropy -----*__               
-A new variant - '*phase*' permutation entropy - has been added to PermEn.                  
-This method employs a hilbert transformation of the data sequence, based on the methods outlined [here.](https://doi.org/10.1016/j.physa.2020.125686)           
+__*----- Extra signal processing tools -----*__     
+**WindowData()** is a new function that allows users to segment data (univariate or multivariate time series) into windows with/without overlapping samples! This allows users to calculate entropy on subsequences of their data to perform analyses with greater time resolution.        
 
-__*----- Cross-Entropy with different length sequences -----*__           
-EntropyHub v1.0 now allows for cross-entropy (and multiscale cross-entropy) estimation with different length signals (_except XCondEn and XPermEn_).            
-As a result, the new cross-entropy functions require a separate input for each sequence (Sig1, Sig2).                   
+*Other little fixes...*
+   
+__*----- Docs edits -----*__     
+        - Examples in the www.EntropyHub.xyz documentation were updated to match the latest package syntax.     
 
-__*----- Refined-Composite Multiscale Fuzzy Entropy -----*__              
-In addition to the refined-composite multiscale sample entropy that was available in earlier versions, now one can estimate the refined-composite multiscale fuzzy entropy based on the method outlined [here.](https://link.springer.com/article/10.1007/s11517-017-1647-5)    
-What's more, refined-composite multicale cross-fuzzy entropy is also available, and both can be estimated using any of the fuzzy membership functions in FuzzEn or XFuzzEn.             
-
-__*----- Generalized Multiscale Entropy -----*__          
-Generaized multiscale entropy and generalized multiscale cross-entropy can now be estimated. Just choose the '*generalized*' as the graining procedure in MSEn or XMSEn.        
-
-__*----- Variance of sample entropy estimate -----*__             
-Based on the [method outlined by Lake et al.,](https://journals.physiology.org/doi/epdf/10.1152/ajpregu.00069.2002) it is now possible to obtain a measure of the variance in the sample entropy estimate.              
-This is achieved by approximating the number of overlapping embedding vectors.          
-To do so, just set the parameter '*Vcp*'==true in SampEn and XSampEn, but note that doing so requires *a lot* of computer memory.              
-
-*Several little bugs and inconsistencies have also been fixed in this release. We want to thank all of you who have identified and alerted us to these bugs.*       
-*Most of these bugs have been noted via the [GitHub issues portal](https://github.com/MattWillFlood/EntropyHub/issues).*        
-
-__*----- Bug fixes -----*__             
-        - The DispEn2D function in python has now fixed [this issue](https://github.com/MattWillFlood/EntropyHub/issues/8).     
-        - The type hint for FuzzEn in python has been updated [as requested](https://github.com/MattWillFlood/EntropyHub/issues/1).             
-        - [Compatbility issues with EntropyHub.jl](https://github.com/MattWillFlood/EntropyHub.jl/issues/3) are now resolved.           
-        - A bug in the K2En python function led to incorrect entropy estimates for data sequences with many equal values. This has been corrected.              
-    
-__*----- Other Changes -----*__             
-        - The *'equal'* method for discretizing data in DispEn and DispEn2D has been updated to be consistent across Python, MatLab and Julia. This is unlikely to have impacted any users previously.          
-        - The zeroth dimension (m=0) estimate of ApEn and XApEn has been changed to -phi(1).                    
-        - The default radius threshold distance for XApEn, XSampEn and XK2En has been changed to use the *pooled* standard deviation [i.e. 0.2*SDpooled(X,Y)].          
     
 ### More to come!
 We are currently adding several new elements to EntropyHub that we hope will benefit many users. However, this is a time-consuming effort.              
@@ -189,13 +167,16 @@ Matt
 
 ## Functions
 
-EntropyHub functions fall into 5 categories: 
+EntropyHub functions fall into 8 categories: 
 
-    * Base                functions for estimating the entropy of a single univariate time series.
-    * Cross               functions for estimating the entropy between two univariate time series.
-    * Bidimensional       functions for estimating the entropy of a two-dimensional univariate matrix.
-    * Multiscale          functions for estimating the multiscale entropy of a single univariate time series using any of the Base entropy functions.
-    * Multiscale Cross    functions for estimating the multiscale entropy between two univariate time series using any of the Cross-entropy functions.
+    * Base                       functions for estimating the entropy of a single univariate time series.
+    * Cross                      functions for estimating the entropy between two univariate time series.
+    * Multivariate               functions for estimating the entropy of a multivariate dataset.
+    * Bidimensional              functions for estimating the entropy of a two-dimensional univariate matrix.
+    * Multiscale                 functions for estimating the multiscale entropy of a single univariate time series using any of the Base entropy functions.
+    * Multiscale Cross           functions for estimating the multiscale entropy between two univariate time series using any of the Cross-entropy functions.
+    * Multivariate Multiscale    functions for estimating the multivariate multiscale entropy of multivariate dataset using any of the Multivariate-entropy functions.
+    * Other                      Supplementary functions for various tasks related to EntropyHub and signal processing.
 
 #### The following tables outline the functions available in the EntropyHub package.
 
@@ -218,14 +199,14 @@ Dispersion Entropy                            		  |	DispEn
 Symbolic Dynamic Entropy                          	  |	SyDyEn
 Increment Entropy                                 	  |	IncrEn
 Cosine Similarity Entropy                         	  |	CoSiEn
-Phase Entropy                                        |	PhasEn
-Slope Entropy                                        |	SlopEn
+Phase Entropy                                             |	PhasEn
+Slope Entropy                                             |	SlopEn
 Bubble Entropy                                		  |	BubbEn
-Gridded Distribution Entropy                         |	GridEn
-Entropy of Entropy                            	     |	EnofEn
-Attention Entropy                                    |	AttnEn
-Range Entropy                                        |   RangEn
-Diversity Entropy                                    |   DivEn
+Gridded Distribution Entropy                              |	GridEn
+Entropy of Entropy                                        |	EnofEn
+Attention Entropy                                         |	AttnEn
+Range Entropy                                             |     RangEn
+Diversity Entropy                                         |     DivEn
 
 _______________________________________________________________________
 
@@ -242,6 +223,18 @@ Cross Distribution Entropy                            |	XDistEn
 Cross Spectral Entropy                          	  |	XSpecEn
 Cross Kolmogorov Entropy                              |	XK2En
 	
+_______________________________________________________________________
+
+### Multivariate Entropies:
+
+Entropy Type   |  Function Name 
+--|--
+Multivariate Sample Entropy                                  |	MvSampEn
+Multivariate Fuzzy Entropy                                   |	MvFuzzEn
+Multivariate Permutation Entropy                             |	MvPermEn
+Multivariate Dispersion Entropy                              |	MvDispEn
+Multivariate Cosine Similarity Entropy                       |	MvCoSiEn
+
 _______________________________________________________________________
 
 ### Bidimensional Entropies
@@ -276,6 +269,24 @@ Composite/Refined-Composite Multiscale Cross-Entropy  |   cXMSEn
 Refined Multiscale Cross-Entropy                            |   rXMSEn
 Hierarchical Multiscale Cross-Entropy                 |   hXMSEn
 
+_________________________________________________________________________
+
+### Multivariate Multiscale Entropy Functions
+
+Entropy Type   |  Function Name 
+--|--
+Multivariate Multiscale Entropy                                    | MvMSEn
+Composite/Refined-Composite Multivariate Multiscale Entropy        | cMvMSEn
+
+_________________________________________________________________________
+
+### Other Functions
+
+Entropy Type   |  Function Name 
+--|--
+Example Data Import Tool            |  ExampleData
+Window Data Tool                    |  WindowData
+Multiscale Entropy Object           |  MSobject
 
 
         

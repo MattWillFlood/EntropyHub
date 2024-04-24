@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{MSx}\PYG{p}{,} \PYG{n}{CI} \PYG{o}{=} \PYG{n}{eh}\PYG{o}{.}\PYG{n}{cMvMSEn}\PYG{p}{(}\PYG{n}{Data}\PYG{p}{,} \PYG{n}{Mobj}\PYG{p}{,} \PYG{n}{Scales} \PYG{o}{=} \PYG{l+m+mi}{5}\PYG{p}{,}
+		\PYG{n}{Refined} \PYG{o}{=} \PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{Plotx} \PYG{o}{=} \PYG{k+kc}{True}\PYG{p}{)}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{MSx} \PYG{o}{=}
+    \PYG{l+m+mi}{0}\PYG{p}{,}  \PYG{l+m+mf}{0.00796833}\PYG{p}{,}  \PYG{l+m+mf}{0.00926765}\PYG{p}{,}  \PYG{l+m+mf}{0.01193731}\PYG{p}{,}  \PYG{l+m+mf}{0.01686631}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{RDE} \PYG{o}{=}
+    \PYG{l+m+mf}{0.04603960}
+\end{Verbatim}

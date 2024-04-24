@@ -55,13 +55,16 @@ Alternatively, one can simply access the docstrings of a function (like any MatL
 
 ## Functions
 
-EntropyHub functions fall into 5 categories: 
+EntropyHub functions fall into 8 categories: 
 
-    * Base                functions for estimating the entropy of a single univariate time series.
-    * Cross               functions for estimating the entropy between two univariate time series.
-    * Bidimensional       functions for estimating the entropy of a two-dimensional univariate matrix.
-    * Multiscale          functions for estimating the multiscale entropy of a single univariate time series using any of the Base entropy functions.
-    * Multiscale Cross    functions for estimating the multiscale entropy between two univariate time series using any of the Cross-entropy functions.
+    * Base                       functions for estimating the entropy of a single univariate time series.
+    * Cross                      functions for estimating the entropy between two univariate time series.
+    * Multivariate               functions for estimating the entropy of a multivariate dataset.
+    * Bidimensional              functions for estimating the entropy of a two-dimensional univariate matrix.
+    * Multiscale                 functions for estimating the multiscale entropy of a single univariate time series using any of the Base entropy functions.
+    * Multiscale Cross           functions for estimating the multiscale entropy between two univariate time series using any of the Cross-entropy functions.
+    * Multivariate Multiscale    functions for estimating the multivariate multiscale entropy of multivariate dataset using any of the Multivariate-entropy functions.
+    * Other                      Supplementary functions for various tasks related to EntropyHub and signal processing.
 
 #### The following tables outline the functions available in the EntropyHub package.
 
@@ -109,7 +112,20 @@ Cross Conditional Entropy                             |	XCondEn
 Cross Distribution Entropy                            |	XDistEn
 Cross Spectral Entropy                            	   |	XSpecEn
 Cross Kolmogorov Entropy                              |	XK2En
-	
+
+_______________________________________________________________________
+
+
+### Multivariate Entropies:
+
+Entropy Type   |  Function Name 
+--|--
+Multivariate Sample Entropy                                  |	MvSampEn
+Multivariate Fuzzy Entropy                                   |	MvFuzzEn
+Multivariate Permutation Entropy                             |	MvPermEn
+Multivariate Dispersion Entropy                              |	MvDispEn
+Multivariate Cosine Similarity Entropy                       |	MvCoSiEn
+
 _______________________________________________________________________
 
 ### Bidimensional Entropies
@@ -143,6 +159,27 @@ Multiscale Cross-Entropy                              |   XMSEn
 Composite/Refined-Composite Multiscale Cross-Entropy  |   cXMSEn
 Refined Multiscale Cross-Entropy                      |   rXMSEn
 Hierarchical Multiscale Cross-Entropy                 |   hXMSEn
+
+_________________________________________________________________________
+
+### Multivariate Multiscale Entropy Functions
+
+Entropy Type   |  Function Name 
+--|--
+Multivariate Multiscale Entropy                                    | MvMSEn
+Composite/Refined-Composite Multivariate Multiscale Entropy        | cMvMSEn
+
+_________________________________________________________________________
+
+### Other Functions
+
+Entropy Type   |  Function Name 
+--|--
+Example Data Import Tool            |  ExampleData
+Window Data Tool                    |  WindowData
+Multiscale Entropy Object           |  MSobject
+
+
 
 
 

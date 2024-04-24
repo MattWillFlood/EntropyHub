@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{  }\PYG{n}{MSx}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{CI}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{cMvMSEn}\PYG{p}{(}\PYG{n}{Data}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Mobj}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Scales}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Refined}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{,}
+\PYG{+w}{			 }\PYG{n}{Plotx}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{)}
+\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}\PYG{+w}{ }\PYG{o}{.}
+\PYG{p}{([}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{0.0}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.00796833}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.00926765}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.01193731}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{0.016866306}\PYG{p}{],}
+\PYG{+w}{ }\PYG{l+m+mf}{0.046039601}\PYG{p}{)}
+\end{Verbatim}

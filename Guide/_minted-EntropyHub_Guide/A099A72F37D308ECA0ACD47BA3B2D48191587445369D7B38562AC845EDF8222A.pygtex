@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{Mobj} \PYG{o}{=} \PYG{n}{eh}\PYG{o}{.}\PYG{n}{MSobject}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}MvFuzzEn\PYGZsq{}}\PYG{p}{,} \PYG{n}{Fx} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}constgaussian\PYGZsq{}}\PYG{p}{,}
+		\PYG{n}{r} \PYG{o}{=} \PYG{l+m+mf}{1.75}\PYG{p}{,} \PYG{n}{Norm} \PYG{o}{=} \PYG{k+kc}{True}\PYG{p}{)}
+\end{Verbatim}

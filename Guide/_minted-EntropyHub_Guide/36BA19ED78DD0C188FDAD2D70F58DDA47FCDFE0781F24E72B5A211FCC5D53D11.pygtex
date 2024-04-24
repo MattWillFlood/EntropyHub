@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{  }\PYG{n}{Mobj}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{MSobject}\PYG{p}{(}\PYG{n}{MvFuzzEn}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Fx}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}constgaussian\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{               }\PYG{n}{r}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mf}{1.75}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Norm}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{)}
+\end{Verbatim}

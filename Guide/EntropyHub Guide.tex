@@ -192,38 +192,44 @@ While the majority of multiscale and multiscale-cross functions available throug
 \vspace{2cm} 
 \begin{center}
 \begin{table}[!ht]
-\begin{tabular}{|p{6cm}|p{15mm}|p{6cm}|p{20mm}|}
+\begin{tabular}{|p{50mm}|p{20mm}|p{63mm}|p{25mm}|}
  \hline
 \rowcolor{ehone} \multicolumn{4}{|c|}{\textbf{\textcolor{white}{EntropyHub Function List}}} \\
-\rowcolor{ehone} \emph{\textcolor{white}{Base Entropy}} & \emph{\textcolor{white}{Function}} & \emph{\textcolor{white}{Cross-Entropy}} & \emph{\textcolor{white}{Function}}\\
-\hline
-
-Approximate Entropy		&	ApEn			&	Cross Sample Entropy		&	XSampEn\\
-Sample Entropy			&	SampEn			&	Cross Approximate Entropy	&	XApEn\\
-Fuzzy Entropy			&	FuzzEn			&	Cross Fuzzy Entropy			&	XFuzzEn\\
-Kolmogorov Entropy		&	K2En			&	Cross Permutation Entropy	&	XPermEn\\
-Permutation Entropy		&	PermEn			&	Cross Conditional Entropy	&	XCondEn\\
-Conditional Entropy		&	CondEn			&	Cross Distribution Entropy	&	XDistEn\\
-Distribution Entropy	&	DistEn			&	Cross Spectral Entropy		&	XSpecEn\\
-Spectral Entropy		&	SpecEn			&	Cross Kolmogorov Entropy	&	XK2En\\
+\rowcolor{ehone} \emph{\textcolor{white}{Base Entropy}} & \emph{\textcolor{white}{Function}} &  
+\emph{\textcolor{white}{Cross-Entropy}} &  \emph{\textcolor{white}{Function}} \\
+Approximate Entropy		&	ApEn			&	Cross Sample Entropy	    &	XSampEn \\
+Sample Entropy			&	SampEn			&	Cross Approximate Entropy	&	XApEn   \\
+Fuzzy Entropy			&	FuzzEn			&	Cross Fuzzy Entropy			&	XFuzzEn	\\
+Kolmogorov Entropy		&	K2En			&	Cross Permutation Entropy	&	XPermEn \\
+Permutation Entropy		&	PermEn			&	Cross Conditional Entropy	&	XCondEn	\\
+Conditional Entropy		&	CondEn			&	Cross Distribution Entropy	&	XDistEn	\\
+Distribution Entropy	&	DistEn			&	Cross Spectral Entropy		&	XSpecEn	\\
+Spectral Entropy		&	SpecEn			&	Cross Kolmogorov Entropy	&	XK2En	\\
 Dispersion Entropy		&	DispEn	 	 	&		\						&	\\
-Symbolic Dynamic Entropy &	SyDyEn			&		\						&	\\
-Increment Entropy		&	IncrEn			&	\cellcolor{ehone} \emph{\textcolor{white}{Bidimensional Entropy}}		&	\cellcolor{ehone} \emph{\textcolor{white}{Function}}\\
-Cosine Similarity Entropy &	CoSiEn			&	2D Sample Entropy 			&	SampEn2D\\
-Phase Entropy			&	PhasEn			&	2D Fuzzy Entropy			&	FuzzEn2D\\
-Slope Entropy			&	SlopEn			&	2D Distribution Entropy 	&	DistEn2D\\
-Bubble Entropy			&	BubbEn		 	&	2D Dispersion Entropy 		&	DispEn2D\\
-Gridded Distribution Entropy &	GridEn	  	&	2D Permutation Entropy		&	PermEn2D\\ 	 
-Entropy of Entropy		& 	EnofEn	  		&	2D Espinosa Entropy			&	EspEn2D\\ 	 
-Attention Entropy		&   AttnEn 		 	&		\						&	\\ 
-Range Entropy			&   RangEn 		 	&		\						&	\\ 
-Diversity Entropy		&   DivEn 		 	&		\						&	\\ 
-\						&	\				&		\						&	\\ 	 	 
+Symbolic Dynamic Entropy &	SyDyEn			&		\cellcolor{ehone} \emph{\textcolor{white}{Multivariate Entropy}}	&	\cellcolor{ehone} \emph{\textcolor{white}{Function}} \\
+Cosine Similarity Entropy &	CoSiEn			&	Multivariate Sample Entropy		   &	MvSampEn \\
+Phase Entropy			&	PhasEn			&	Multivariate Fuzzy Entropy		   &	MvFuzzEn \\
+Slope Entropy			&	SlopEn			&	Multivariate Permutation Entropy   &	MvPermEn \\
+Bubble Entropy			&	BubbEn		 	&	Multivariate Dispersion Entropy    &	MvDispEn \\
+Gridded Distribution Entropy &	GridEn	  	&	Multivariate Cosine Similarity Entropy    &	MvCoSiEn \\	 
+Increment Entropy		&	IncrEn			&	\  &   \\ 
+Entropy of Entropy		& 	EnofEn	  		&	\cellcolor{ehone} \emph{\textcolor{white}{Bidimensional Entropy}}		&	\cellcolor{ehone} \emph{\textcolor{white}{Function}}  \\
+Attention Entropy		&   AttnEn 		 	&	2D Sample Entropy 	&	SampEn2D \\
+Range Entropy			&   RangEn 		 	&   2D Fuzzy Entropy	&	FuzzEn2D \\
+Diversity Entropy		&   DivEn 	    	&  2D Distribution Entropy 	&	DistEn2D \\
+\						&	\			    &  2D Dispersion Entropy 	&	DispEn2D \\ 	 
+\						&	\	 		    &  2D Permutation Entropy	&	PermEn2D \\
+\						&	\	            &  2D Espinosa Entropy		&	EspEn2D \\
+\					    &	\			    &	\	&	\\ 	 
 \rowcolor{ehone} \emph{\textcolor{white}{Multiscale Entropy}} &	\emph{\textcolor{white}{Function}}	&  \emph{\textcolor{white}{Multiscale Cross-Entropy}}		&	\emph{\textcolor{white}{Function}} \\
 Multiscale Entropy		&	MSEn			&	Multiscale Cross-Entropy	&	XMSEn \\
-Composite Multiscale Entropy (+ Refined-Composite Multiscale Entropy) & 	CMSEn		&	Composite Multiscale Cross-Entropy (+ Refined-Composite Multiscale Cross-Entropy)	& cXMSEn \\
+Composite + Refined-Composite Multiscale Entropy & 	CMSEn		&	Composite + Refined-Composite Multiscale Cross-Entropy	& cXMSEn \\
 Refined Multiscale Entropy	& rMSEn			&	Refined Multiscale Cross-Entropy	&	rXMSEn  \\
 Hierarchical Multiscale Entropy	&	hMSEn	&	Hierarchical Multiscale Cross-Entropy &	hXMSEn \\
+\						&	\				&		\						&	\\ 	 	 
+\rowcolor{ehone} \emph{\textcolor{white}{Multivariate Multiscale Entropy}} &	 \emph{\textcolor{white}{Function}}	&  \emph{\textcolor{white}{Other Functions}} &	 \emph{\textcolor{white}{Function}} \\
+Multivariate Multiscale Entropy		&	MvMSEn	& Example Dataset Importer & ExampleData \\
+Composite + Refined-Composite Multivariate Multiscale Entropy		&	cMvMSEn	& Window Data Tool & WindowData \\
 \						&	\				&		\						&	\\ 	 	 
 \hline
 \end{tabular}
@@ -235,6 +241,46 @@ Hierarchical Multiscale Entropy	&	hMSEn	&	Hierarchical Multiscale Cross-Entropy 
 
 \newpage
 \section{\textbf{Updates}}
+\subsection{\textbf{v2.0} - [April 2024]}
+Since the introduction of multivariate entropy methods over a decade ago, the utilization of multivariate and multivariate multiscale entropy methods has seen a notable increase in recent years. Systems comprising multiple dynamically related components are ubiquitous in many research fields and multivariate entropies provide a powerful method for estimating the complexity of such systems.
+\newline With EntropyHub v2.0, you can now apply many multivariate and multivariate multiscale methods with the ease, robust functionality and extensive documentation for which EntropyHub is acclaimed.
+\begin{itemize}
+\item[\textbf{+}] \textbf{New multivariate methods}\\
+Five new multivariate entropy functions incorporating several method-specific variations.
+\begin{itemize}
+\item[] \textit{Multivariate Sample Entropy} - \ref{MvSampEn} \hspace{15mm} \texttt{\textbf{MvSampEn()}} \\
+Based on methods presented in \cite{MvSamp1}, \cite{MvSamp2}
+\item[] \textit{Multivariate Fuzzy Entropy}  - \ref{MvFuzzEn} \hspace{19mm} \texttt{\textbf{MvFuzzEn()}}  \\
+++ many fuzzy functions, \cite{MvFuzz1}
+\item[] \textit{Multivariate Dispersion Entropy}  - \ref{MvDispEn} \hspace{12mm} \texttt{\textbf{MvDispEn()}}  \\ 
+++ many symbolic sequence transforms, \cite{MvDisp1}
+\item[] \textit{Multivariate Cosine Similarity Entropy}  - \ref{MvCoSiEn} \hspace{8mm}\texttt{\textbf{MvCoSiEn()}} \\
+Based on methods presented in \cite{MvCoSi1},
+\item[] \textit{Multivariate Permutation Entropy}  - \ref{MvPermEn} \hspace{14mm}\texttt{\textbf{MvPermEn()}} \\ 
+++ amplitude-aware, edge, phase, weighted and modified variants
+\end{itemize}
+
+\item[\textbf{+}] \textbf{New multivariate multiscale methods}\\
+Two new multivariate multiscale entropy functions:
+\begin{itemize}
+\item[] \textit{Multivariate Multiscale Entropy}   - \ref{MvMSEn} \hspace{15mm} \texttt{\textbf{MvMSEn()}}  \\
+++ coarse, modified and generalized graining procedures  
+\item[] \textit{Composite and Refined-composite Multivariate Multiscale Entropy}  - \ref{cMvMSEn} \hspace{3mm} \texttt{\textbf{cMvMSEn()}} 
+\end{itemize}
+
+\item[\textbf{+}] \textbf{Extra signal processing tools}
+\begin{itemize}
+\item[] \textit\textbf{{WindowData()}} is a new function that allows users to segment data (univariate or multivariate time series) into windows with/without overlapping samples! This allows users to calculate entropy on subsequences of their data to perform analyses with greater time resolution.
+\end{itemize}
+\end{itemize}
+
+\noindent \textbf{Other little fixes…}
+\begin{itemize}
+\item[\checkmark] \textbf{Docs edits} \\
+Examples in the \href{https://www.EntropyHub.xyz}{www.EntropyHub.xyz} documentation were updated to match the latest package syntax.
+\end{itemize}
+
+
 \subsection{\textbf{v1.0} - [March 2024]}
 EntropyHub is continuously growing to incorporate the lastest developments in the scientific literature.
 This new major release (v1.0) reflects that with many new functions and features to provide you with a versatile environment that makes complex entropy methods easy to implement.\\ 
@@ -612,7 +658,7 @@ using EntropyHub: SampEn, MSobject, MSEn
 \chapterimage[width=16cm, height=3cm]{Chapter Banner2.png}
 \vspace{55mm}
 
-Sections 3.1 – 3.5 outline the command line syntax of each function with descriptions of every argument and returned value, as well as references to the source literature. The order of the function commands under the syntax subheading is MatLab first, Python second, Julia third. 
+Sections 3.1 – 3.8 outline the command line syntax of each function with descriptions of every argument and returned value, as well as references to the source literature. The order of the function commands under the syntax subheading is MatLab first, Python second, Julia third. 
 
 \begin{tcolorbox}[sharp corners, colback=ehone!30, colframe=ehone, title=\textbf{NOTE}]
 For concision, function commands written in the following sections using \textbf{Python} syntax exclude the module prefix which would otherwise be required,\\ i.e. \texttt{EntropyHub.SampEn()} is written as \texttt{SampEn()}. 
@@ -842,7 +888,7 @@ Perm, Pnorm, cPE  = PermEn(Sig, m = 2, tau = 1, Typex = "none", tpx = nothing, L
 	\item[\texttt{\emph{phase}}]	\textbf{\texttt{tpx}} is the option to unwrap the phase shift of the Hilbert-transformed data sequence, either [\ ] or 1 (default: [\ ]).				
 	\end{description}
 \item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
-\item[\texttt{Norm}]    Normalisation of \texttt{\textbf{Perm}} value, a boolean operator:\\
+\item[\texttt{Norm}]    Normalisation of \texttt{\textbf{Pnorm}} value, a boolean operator:\\
 					\texttt{false} \hspace{10pt} normalises w.r.t $Log$($\#$ of permutation symbols [m]) - default\\
      		  		\texttt{true} \hspace{15pt} normalises w.r.t $Log$($\#$ of all possible permutations [m!])\\
      		  			* Note: Normalised permutation entropy is undefined for \texttt{m = 1}.\\
@@ -1086,18 +1132,18 @@ CoSi, Bm  = CoSiEn(Sig, m = 2, tau = 1, r = 0.1, Logx = 2, Norm = 0)}
 \item[\texttt{tau}]		Time delay, a positive integer.
 \item[\texttt{r}]		Angular threshold, a value in range [0 $<$ \texttt{\textbf{r}} $<$ 1]
 \item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
-\item[\texttt{Norm}]	Normalisation of \texttt{\textbf{Sig}}, an interger in range [0 4]:\\
+\item[\texttt{Norm}]	Normalisation of \texttt{\textbf{Sig}}, an integer in range [0 4]:\\
 						0 - no normalisation (default)\\
 						1 - median removed\\
 						2 - mean removed\\
-						3 - normalised by standard deviation\\
+						3 - normalised to unit variance\\
 						4 - normalised to range [-1 1]
 \end{description}
 
 \noindent \ul{Outputs}
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
-\item[\texttt{CoSi}]	Cosime similarity entropy  estimate.
-\item[\texttt{Bm}]	Global probabilities.
+\item[\texttt{CoSi}]	Cosine similarity entropy  estimate.
+\item[\texttt{Bm}]	Sum of global probabilities.
 \end{description}
 
 \noindent \ul{References}\hspace{1cm}
@@ -1671,6 +1717,296 @@ XSpec, BandEn  = XSpecEn(Sig, N = 2*max(length(Sig1),length(Sig2)) + 1, Freqs = 
 
 %------------------------------------------------------------------------
 %------------------------------------------------------------------------
+
+\newpage
+\section{Multivariate Entropy Functions}
+\vspace{8cm}
+
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{Multivariate Data}}, label={BiBox}]
+Unlike \textit{Base} and \textit{Cross-} entropy functions, \textit{\textbf{Multivariate}} entropy functions operate on a matrix of univariate sequences. This, in the following functions, the first argument \texttt{\textbf{Data}} is an N x M matrix representing M ($> 1$) univariate sequences of N ($> 10$) samples.
+\end{tcolorbox}
+\vspace{2cm}
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{ATTENTION}}, label={BiBox}]
+By default, the \texttt{\textbf{MvSampEn}} and \texttt{\textbf{MvFuzzEn}} multivariate entropy algorithms estimate entropy values using the “full” method by comparing delay vectors across all possible m+1 expansions of the embedding space as applied in \cite{MvSamp1} \cite{MvSamp2} \cite{MvFuzz1}. These methods are \ul{\textbf{not lower-bounded to 0}}, like most entropy algorithms, so \texttt{\textbf{MvMSEn}} may return negative entropy values if the base multivariate entropy function is \texttt{\textbf{MvSampEn}} and \texttt{\textbf{MvFuzzEn}}, even for stochastic processes…
+\end{tcolorbox}
+
+
+\newpage
+\subsection{\normalsize MvSampEn: \hspace{15mm} Multivariate Sample Entropy} \label{MvSampEn}
+\noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
+[MSamp, B0, Bt, B1] = MvSampEn(Data, ‘m’, 2*ones(1,size(Data,2)), \\ \indent ‘tau’, ones(1,size(Data,2)), ‘r’, 0.2, 'Norm', false, ‘Logx’, exp(1))\\
+ MSamp, B0, Bt, B1  = MvSampEn(Data, m = 2*np.ones(Data.shape[1]),  \\ \indent tau = np.ones(Data.shape[1]), r = 0.2, Norm = False, Logx = np.exp(1))\\
+ MSamp, B0, Bt, B1  = MvSampEn(Data, m = 2*ones(size(Data,2)),  \\ \indent tau = ones(size(Data,2)), r = 0.2, Norm = false Logx = exp(1))}
+ 
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{NOTE}}, label={BiBox}]
+To maximize the number of points in the embedding process, this algorithm uses \texttt{\textbf{N-max(m*tau)}} delay vectors and \textbf{not} \texttt{\textbf{N-max(m)*max(tau)}} as employed in \cite{MvSamp2},\cite{MvSamp1}.
+\end{tcolorbox}
+
+\noindent \ul{Arguments}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep,,style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{Data}]	Multivariate dataset, NxM matrix of N ($>10$) observations (rows) and M ($> 1$) univariate data sequences (cols).
+\item[\texttt{m}]		Embedding Dimension, a vector of M positive integers.
+\item[\texttt{tau}]		Time Delay, a vector of M positive integers.
+\item[\texttt{r}]		Distance threshold, a positive scalar.
+\item[\texttt{Norm}]	Normalisation of all M sequences to unit variance, a boolean
+\item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
+\end{description}
+
+\noindent \ul{Outputs}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{MSamp}]		Multivariate sample entropy estimates.
+\item[\texttt{B0}]		The number of matched state vectors for given m embedding dimensions.
+\item[\texttt{Bt}]		 The number of matched state vectors for the joint total m+1 embedded subspace.
+\item[\texttt{B1}]		The number of matched state vectors for each possible m+1 embedded subspace.
+\end{description}          
+
+\noindent \ul{References}\hspace{1cm}
+\cite{MvSamp1}  \cite{MvSamp2}
+
+
+\newpage
+\subsection{\normalsize MvFuzzEn: \hspace{15mm} Multivariate Fuzzy Entropy} \label{MvFuzzEn}
+\noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
+[MFuzz, B0, Bt, B1] = MvFuzzEn(Data, ‘m’, 2*ones(1,size(Data,2)), \\ \indent ‘tau’, ones(1,size(Data,2)), 'Fx', 'default', ‘r’, [0.2,2], \\ \indent 'Norm', false, ‘Logx’, exp(1))\\
+ MFuzz, B0, Bt, B1  = MvFuzzEn(Data, m = 2*np.ones(Data.shape[1]), \\ \indent tau = np.ones(Data.shape[1]), Fx = 'default', r = (0.2,2), \\ \indent Norm = False, Logx = np.exp(1))\\
+ MFuzz, B0, Bt, B1  = MvFuzzEn(Data, m = 2*ones(size(Data,2)), \\ \indent tau = ones(size(Data,2)), Fx = "default", r = (0.2,2), \\ \indent Norm = false, Logx = exp(1))}
+ 
+\begin{tcolorbox}[colback=ehone!5, colframe=ehone!, title=\hypertarget{bidinote}{\textbf{IMPORTANT}}, label={BiBox}]
+The entropy value returned as \texttt{\textbf{MFuzz}} is estimated using the “full” method [i.e. \texttt{-log(Bt/B0)]} which compares delay vectors across all possible m+1 expansions of the embedding space as applied in \cite{MvSamp1}. Contrary to conventional definitions of fuzzy entropy, this method does not provide a lower bound of 0!! Thus, it is possible to obtain negative entropy values for multivariate fuzzy entropy, even for stochastic processes…
+\newline
+Alternatively, one can calculate \texttt{\textbf{MFuzz}} via the “naive” method, which ensures a lower bound of 0, by using the average vector distances for an individual m+1 subspace (B1) [e.g. \texttt{-log(B1(1)/B0)}], or the average for all m+1 subspaces [i.e. \texttt{-log(mean(B1)/B0)}].
+\end{tcolorbox} 
+
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{NOTE}}, label={BiBox}]
+To maximize the number of points in the embedding process, this algorithm uses \texttt{\textbf{N-max(m*tau)}} delay vectors and \textbf{not} \texttt{\textbf{N-max(m)*max(tau)}} as employed in \cite{MvSamp2},\cite{MvSamp1}.
+\end{tcolorbox} 
+ 
+\noindent \ul{Arguments}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep,,style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{Data}]	Multivariate dataset, NxM matrix of N ($>10$) observations (rows) and M ($> 1$) univariate data sequences (cols).
+\item[\texttt{m}]		Embedding Dimension, a vector of M positive integers.
+\item[\texttt{tau}]		Time Delay, a vector of M positive integers. 
+\item[\texttt{Fx}]		Type of fuzzy function for distance transformation, one of the following strings:
+	\begin{description}[labelsep=14em, labelwidth=10em, nosep,style=multiline,leftmargin=6cm]
+	\item[\texttt{"default"}]	$f(x) = exp(-\frac{x^{r_2}}{r_1})$\\ \ \\
+		\includegraphics[scale=.5]{Fuzz1v1.png} \\
+		 
+	\item[\texttt{"sigmoid"/"modsampen"}]	$f(x) = (1+exp(\frac{x-r_2}{r_1}))^{-1}$\\ \ \\
+		\includegraphics[scale=.5]{Fuzz2v1.png} \\
+
+	\item[\texttt{"triangular"}]	  $f(x) = \begin{cases} 1 - \frac{x}{r},  \hspace{20mm}  x\le r 
+	\\ 0,  \hspace{20mm}  x>r \end{cases}$\\
+		\includegraphics[scale=.5]{FuzzTriv1.png} \\
+
+	\item[\texttt{"trapezoidal1"}]	  $f(x) = \begin{cases} 1,  \hspace{20mm}  x<r 
+	\\ 2 - \frac{x}{r},  \hspace{10mm} r\le x<2r 
+	\\ 0,  \hspace{20mm}  x\ge 2r \end{cases}$\\
+		\includegraphics[scale=.5]{FuzzTrap1v1.png} \\ 
+
+	\item[\texttt{"trapezoidal2"}]	  $f(x) = \begin{cases} 1,  \hspace{30mm}  x<r 
+	\\ 1 - \frac{x-r_{min}}{r_{max} - r_{min}},  \hspace{5mm} r\le x<r_{max} 
+	\\ 0,  \hspace{30mm}  x\ge r_{max} \end{cases}$\\ \ \\
+		\includegraphics[scale=.5]{FuzzTrap2v1.png} \\ 
+		
+	\item[\texttt{"z\_shaped"}]	 $f(x) = \begin{cases} 1, \hspace{30mm}  x<r \\ \
+	\\ 1 - 2 \left( \frac{x-r}{r}\right)^{2},  \hspace{10mm} r<x<\frac{3}{2}r \\ \
+	\\ 2 \left( \frac{x-r}{r}\right)^{2},  \hspace{15mm} \frac{3}{2}r<x<2r \\ \
+	\\ 0,  \hspace{30mm}  x>2r \end{cases}$ \\
+		\includegraphics[scale=.5]{FuzzZSv1.png} \\
+		
+	\item[\texttt{"bell"}] $f\left( x \right) = \frac{1}{1+{\left |\frac{x}{r_1 }\right|}^{r_2 } }$ \\ 
+		\includegraphics[scale=.5]{FuzzBv1.png}\\
+				
+	\item[\texttt{"gaussian"}] $f\left( x \right) = exp(-\frac{x^2}{2r^{2}})$ \\ 
+		\includegraphics[scale=.5]{FuzzGaussv1.png} \\
+
+	\item[\texttt{"constgaussian"}] $f(x) = \begin{cases} 1,  \hspace{35mm}  x<r_{min} 
+	\\  exp(-\log(2)\frac{(x-r)^2}{r}),  \hspace{5mm}  x\ge r_{max} \end{cases}$\\
+		\includegraphics[scale=.5]{FuzzCGv1.png} \\
+
+	\item[\texttt{"gudermannian"}] 	$g(x) = atan(\frac{tanh(r_1)}{x})$
+	\item[]	$f(x) = \frac{g(x)}{g(x_{max})}$
+	\item[]		Note: Distances are normalized w.r.t. maximum distance relative to each state vector.\\ \ \\
+		\includegraphics[scale=.5]{FuzzGv1.png} \\
+	\end{description}
+	
+\item[\texttt{r}]	Parameters of the fuzzy function specified by \textbf{\texttt{Fx}}, a 1 element scalar or a 2 element tuple of positive values depending on the fuzzy function as shown above.
+	\begin{description}[labelsep=14em, labelwidth=10em, nosep,style=multiline,leftmargin=3cm]
+	\item[\texttt{\emph{Default}}]		Two element tuple (or vector in MatLab)
+	\item[\texttt{\emph{Sigmoid/ModSampEn}}]		Two element tuple (or vector in MatLab)
+	\item[\texttt{\emph{Trapezoidal2}}]		Two element tuple (or vector in MatLab)
+	\item[\texttt{\emph{Bell}}]		Two element tuple (or vector in MatLab)
+	\item[\texttt{\emph{Trapezoidal1}}]		 A scalar value
+	\item[\texttt{\emph{Triangular}}]		 A scalar value
+	\item[\texttt{\emph{Z\_Shaped}}]	 A scalar value
+	\item[\texttt{\emph{Gaussian}}] A scalar value
+	\item[\texttt{\emph{ConstGaussian}}] A scalar value
+	\item[\texttt{\emph{Gudermannian}}] A scalar value
+	\end{description}
+\item[\texttt{Norm}]	Normalisation of all M sequences to unit variance, a boolean
+\item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
+\end{description}
+
+\noindent \ul{Outputs}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{MFuzz}]		Multivariate fuzzy entropy estimates.
+\item[\texttt{B0}]		Average delay vector distance for given m embedding dimensions.
+\item[\texttt{Bt}]		Average delay vector distance for the joint total m+1 embedded subspace.
+\item[\texttt{B1}]		Average delay vector distance for each possible m+1 embedded subspace.
+\end{description} 
+
+\noindent \ul{References}\hspace{1cm}
+\cite{MvFuzz1}
+
+
+\newpage
+\subsection{\normalsize MvDispEn: \hspace{15mm} Multivariate Dispersion Entropy} \label{MvDispEn}
+\noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
+[MDisp, RDE] = MvDispEn(Data, ‘m’, 2*ones(1,size(Data,2)),  \\ \indent ‘tau’, ones(1,size(Data,2)), 'c', 3, ‘Typex’, 'NCDF', 'Methodx', 'v1', \\ \indent 'Norm', false, ‘Logx’, exp(1))\\
+ MDisp, RDE  = MvDispEn(Data, m = 2*np.ones(Data.shape[1]),  \\ \indent  tau = np.ones(Data.shape[1]), c = 3, Typex = 'NCDF', Methodx = 'v1', \\ \indent Norm = False, Logx = np.exp(1))\\
+ MDisp, RDE  = MvDispEn(Data, m = 2*ones(size(Data,2)),   \\ \indent  tau = ones(size(Data,2)), c = 3, Typex = "NCDF", Methodx = "v1", \\ \indent Norm = false, Logx = exp(1))} 
+ 
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{IMPORTANT}}, label={BiBox}]
+By default, \texttt{MvDispEn} uses the method termed  \textit{\textbf{mvDEii}} in \cite{MvDisp1}, which follows the original multivariate embedding approach of Ahmed \& Mandic \cite{MvSamp1}, \cite{MvSamp2}. The \textit{\textbf{v1}} method therefore returns a singular entropy estimate.\\ \newline
+If the \textit{\textbf{v2}} method is selected (\texttt{Methodx=='v2'}), the main method outlined in \cite{MvDisp1} termed \textit{\textbf{mvDE}} is applied. In this case, entropy is estimated using each combination of multivariate delay vectors with lengths 1:max(m), with each entropy value returned accordingly. See \cite{MvDisp1} for more info.
+\end{tcolorbox}
+ 
+\noindent \ul{Arguments}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep,,style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{Data}]	Multivariate dataset, NxM matrix of N ($>10$) observations (rows) and M ($> 1$) univariate data sequences (cols).
+\item[\texttt{m}]		Embedding Dimension, a vector of M positive integers.
+\item[\texttt{tau}]		Time Delay, a vector of M positive integers. 
+\item[\texttt{c}]		Number of symbols in transform, an integer $> 1$. 
+\item[\texttt{Typex}]	Type of symbolic sequence transform, one of the following strings:
+	\begin{description}[labelsep=5em, labelwidth=8em, nosep,style=multiline,leftmargin=3cm]
+		\item[\texttt{"ncdf"}]		Normalised cumulative distribution function  \cite{Disp1}		
+		\item[\texttt{"kmeans"}] 	K-means clustering algorithm.\\
+		**Note: The \textit{"kmeans"} algorithm uses random initialization conditions.
+		 This causes results to vary slightly each time it is called.
+		\item[\texttt{"linear"}]	Linear segmentation of signal range 
+		\item[\texttt{"equal"}]		Approx. equal number of symbols.
+		\item[]		\includegraphics[scale=.75]{Disp1.png}
+	\end{description}
+\item[\texttt{Methodx}]		The method of multivariate dispersion entropy estimation as outlined in \cite{MvDispEn1}, either: 
+	\begin{description}[labelsep=5em, labelwidth=8em, nosep,style=multiline,leftmargin=3cm]
+\item[\texttt{"v1"}]    employs the method consistent with the original multivariate embedding approach of Ahmed \& Mandic \cite{MvDispEn2}, termed \textbf{\texttt{mvDEii}} in \cite{MvDispEn1}. (default) 
+\item[\texttt{"v2"}]    employs the main method derived in \cite{MvDispEn1}, termed \textbf{\texttt{mvDE}}.
+	\end{description}
+\item[\texttt{Norm}]	Normalisation of MDisp value w.r.t. the number of unique dispersion patterns, a boolean
+\item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
+\end{description}
+
+\noindent \ul{Outputs}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{MDisp}]		Multivariate dispersion entropy estimates.
+\item[\texttt{RDE}]		Multivariate reverse dispersion entropy estimate.
+\end{description} 
+
+\noindent \ul{References}\hspace{1cm}
+\cite{MvDisp1}
+
+
+
+
+\newpage
+\subsection{\normalsize MvPermEn: \hspace{15mm} Multivariate Permutation Entropy} \label{MvPermEn}
+\noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
+[MPerm, MPnorm] = MvPermEn(Data, ‘m’, 2*ones(1,size(Data,2)),  \\ \indent ‘tau’, ones(1,size(Data,2)), ‘Typex’, [], 'tpx', -1,\\ \indent 'Norm', false, ‘Logx’, 2)\\
+ MPerm, MPnorm  = MvPermEn(Data, m = 2*np.ones(Data.shape[1]),  \\ \indent tau = np.ones(Data.shape[1]), Typex = None, tpx = -1, \\ \indent Norm = False, Logx = 2)\\
+ MPerm, MPnorm  = MvPermEn(Data, m = 2*ones(size(Data,2)), \\ \indent tau = ones(size(Data,2)), Typex = nothing, tpx = -1, \\ \indent Norm = false, Logx = 2)} 
+ 
+ 
+\begin{tcolorbox}[colback=ehone!5, colframe=ehone!, title=\hypertarget{bidinote}{\textbf{IMPORTANT}}, label={BiBox}]
+The multivariate permutation entropy algorithm implemented here uses multivariate embedding based on Takens’ embedding theorem, and follows the methods for multivariate entropy estimation through shared spatial reconstruction as originally presented by Ahmed \& Mandic \cite{MvSamp1} \cite{MvSamp2}.
+\newline
+This function does \textbf{NOT} use the multivariate permutation entropy algorithm of Morabito et al. (Entropy, 2012) where the entropy values of individual univariate sequences are averaged because such methods do not follow the definition of multivariate embedding and therefore do not consider cross-channel statistical complexity.
+\end{tcolorbox} 
+
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{NOTE}}, label={BiBox}]
+To maximize the number of points in the embedding process, this algorithm uses \texttt{\textbf{N-max(m*tau)}} delay vectors and \textbf{not} \texttt{\textbf{N-max(m)*max(tau)}} as employed in \cite{MvSamp2},\cite{MvSamp1}.
+\end{tcolorbox} 
+
+ 
+\noindent \ul{Arguments}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep,,style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{Data}]	Multivariate dataset, NxM matrix of N ($>10$) observations (rows) and M ($> 1$) univariate data sequences (cols).
+\item[\texttt{m}]		Embedding Dimension, a vector of M positive integers.
+\item[\texttt{tau}]		Time Delay, a vector of M positive integers. 
+\item[\texttt{Typex}]	Variant of permutation entropy, one of the following strings:
+	\begin{description}[labelsep=10em, labelwidth=6em, nosep,style=multiline,leftmargin=3cm]
+		\item[\texttt{"modified"}] 	Modified permutation entropy \cite{Perm3}
+		\item[\texttt{"weighted"}]	Weighted permutation entropy \cite{Perm4}
+		\item[\texttt{"ampaware"}]	Amplitude-aware permutation entropy \cite{Perm5}
+		\item[\texttt{"edge"}]		Edge permutation entropy  \cite{Perm6}
+		\item[\texttt{"phase"}]  Phase permutation entropy \cite{Perm9}
+	\end{description}
+\item[\texttt{tpx}]		Tuning parameter for the permutation entropy specified by the  \textbf{\texttt{Typex}} argument.
+	\begin{description}[labelsep=10em, labelwidth=4em, nosep,style=multiline,leftmargin=3cm]	
+	\item[\texttt{\emph{ampaware}}]	\textbf{\texttt{tpx}} is the A parameter, a value in range [0 1]  (default: 0.5)
+	\item[\texttt{\emph{edge}}]	\textbf{\texttt{tpx}} is the r sensitivity parameter, a scalar $> 0$ (default: 1)	
+	\item[\texttt{\emph{phase}}]	\textbf{\texttt{tpx}} is the option to unwrap the phase shift of the Hilbert-transformed data sequence, either [\ ] or 1 (default: [\ ]).		
+	\end{description}
+\item[\texttt{Norm}]    Normalisation of \texttt{\textbf{MPnorm}} value, a boolean operator:\\
+					\texttt{false} \hspace{10pt} normalises w.r.t $Log$($\#$ of permutation symbols [\texttt{sum(m)}]) - default\\
+     		  		\texttt{true} \hspace{15pt} normalises w.r.t $Log$($\#$ of all possible permutations [\texttt{sum(m)!]})
+\item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
+\end{description}
+
+\noindent \ul{Outputs}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{MPerm}]	 Multivariate permutation entropy estimate
+\item[\texttt{MPnorm}]		Normalized multivariate permutation entropy estimates.
+\end{description} 
+
+\noindent \ul{References}\hspace{1cm}
+\cite{Matt1} \cite{MvSamp1}
+
+
+
+
+\newpage
+\subsection{\normalsize MvCoSiEn: \hspace{15mm} Multivariate Cosine Similarity Entropy}\label{MvCoSiEn}
+\noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
+[MCoSi, Bm] = MvCoSiEn(Data, ‘m’, 2*ones(1,size(Data,2)), \\ \indent ‘tau’, ones(1,size(Data,2)), ‘r’, 0.1, ‘Logx’, 2, 'Norm', 0) \\
+MCoSi, Bm  = MvCoSiEn(Data, m = 2*np.ones(Data.shape[1]),  \\ \indent tau = np.ones(Data.shape[1]), r = 0.1, Logx = 2, Norm = 0) \\
+MCoSi, Bm  = MvCoSiEn(Data, m = 2*ones(size(Data,2)), \\ \indent tau = ones(size(Data,2)), r = 0.1, Logx = 2, Norm = 0)}
+
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{NOTE}}, label={BiBox}]
+To maximize the number of points in the embedding process, this algorithm uses \texttt{\textbf{N-max(m*tau)}} delay vectors and \textbf{not} \texttt{\textbf{N-max(m)*max(tau)}} as employed in \cite{MvCoSi1},\cite{MvSamp1}.
+\end{tcolorbox}
+
+\noindent \ul{Arguments}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{Data}]	Multivariate dataset, NxM matrix of N ($>10$) observations (rows) and M ($> 1$) univariate data sequences (cols).
+\item[\texttt{m}]		Embedding Dimension, a vector of M positive integers.
+\item[\texttt{tau}]		Time Delay, a vector of M positive integers.
+\item[\texttt{r}]		Angular threshold, a value in range [0 $<$ \texttt{\textbf{r}} $<$ 1]
+\item[\texttt{Logx}]	Logarithm base in the entropy formula, a positive scalar.
+\item[\texttt{Norm}]	Normalisation of each sequence in \texttt{\textbf{Data}}, an integer in range [0 4]:\\
+						0 - no normalisation (default)\\
+						1 - median removed\\
+						2 - mean removed\\
+						3 - normalised by unit variance\\
+						4 - normalised to range [-1 1]
+\end{description}
+
+\noindent \ul{Outputs}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{MCoSi}]	Multivariate cosine similarity entropy  estimate.
+\item[\texttt{Bm}]	Sum of global probabilities.
+\end{description}
+
+\noindent \ul{References}\hspace{1cm}
+\cite{CoSi1} \cite{MvCoSi1}
+
+
+
+
+
+
+
+%------------------------------------------------------------------------
+%------------------------------------------------------------------------
 \newpage
 \section{Multiscale Entropy Functions}
 \vspace{3em}
@@ -1687,27 +2023,27 @@ calculated using any of the \texttt{\textbf{Base}} entropy functions.  This is a
  
 \noindent Examples (shown in Julia syntax)$\colon$ \footnotesize
 \\ \ \\ \noindent \emph{\textbf{Original multiscale entropy}} \cite{MS1}
-\\ \ \\ \indent \texttt{Mobj = MSobject("SampEn") \\
+\\ \ \\ \indent \texttt{Mobj = MSobject(SampEn) \\
 \indent mse = MSEn(Sig, Mobj)}
 
 \noindent \emph{\textbf{Time-shifted multiscale approximate entropy with varying tolerance across scales}} \cite{MS2} \\
-\\ \ \indent \texttt{Mobj = MSobject("ApEn", m = 5, r = 0.25)\\
+\\ \ \indent \texttt{Mobj = MSobject(ApEn, m = 5, r = 0.25)\\
 \indent mse = MSEn(Sig, Mobj, Methodx = "timeshift", RadNew = 1)}
 
 \noindent \emph{\textbf{Composite multiscale conditional entropy with a 10-symbol data sequence, calculated up to 5 temporal scales}} \cite{cMS1}
-\\ \ \\ \indent \texttt{Mobj = MSobject("CondEn", m = 5, c = 10)\\
+\\ \ \\ \indent \texttt{Mobj = MSobject(CondEn, m = 5, c = 10)\\
 \indent cmse = cMSEn(Sig, Mobj, scales = 5)}
 
 \noindent \emph{\textbf{Refined-Composite multiscale entropy calculated in bits}} \cite{cMS2}
-\\ \ \\ \indent \texttt{Mobj = MSobject("SampEn", Logx = 2)\\
+\\ \ \\ \indent \texttt{Mobj = MSobject(SampEn, Logx = 2)\\
 \indent rcmse = cMSEn(Sig, Mobj, Refined = true)}
 
 \noindent \emph{\textbf{Refined multiscale fuzzy entropy calulated using a sigmoidal fuzzy function and a time delay of 4}}
-\\ \ \\ \indent \texttt{Mobj = MSobject("FuzzEn", tau = 4, Fx = "sigmoid")\\
+\\ \ \\ \indent \texttt{Mobj = MSobject(FuzzEn, tau = 4, Fx = "sigmoid")\\
 \indent rmse = rMSEn(Sig, Mobj)}
 
 \noindent \emph{\textbf{Hierarchical multiscale edge permutation entropy with an 'r' sensitivity parameter = 2.66 normalized w.r.t. the number of symbols (4), and calculated up to 5 hierarchical scales}}
-\\ \ \\ \indent \texttt{Mobj = MSobject("PermEn", m = 4, Typex = "edge", tpx = 2.66, Norm = true)\\
+\\ \ \\ \indent \texttt{Mobj = MSobject(PermEn, m = 4, Typex = "edge", tpx = 2.66, Norm = true)\\
 \indent hmse = hMSEn(Sig, Mobj, scale = 5)}
 \normalsize
 
@@ -1943,23 +2279,23 @@ Just as one can calculate multiscale entropy using any \texttt{Base} entropy, th
  
 \noindent Examples (shown in Julia syntax)$\colon$ \footnotesize
 \\ \ \\ \noindent \emph{\textbf{Original multiscale cross-entropy}} \cite{MS1}
-\\ \ \\ \indent \texttt{Mobj = MSobject("XSampEn") \\
+\\ \ \\ \indent \texttt{Mobj = MSobject(XSampEn) \\
 \indent xmse = XMSEn(Sig, Mobj)}
 
 \noindent \emph{\textbf{Multiscale cross-distribution entropy using Rice's binning method and signal graining with empirical mode decomposition}} \cite{MS6} \cite{Dist1}\\
-\\ \ \indent \texttt{Mobj = MSobject("XDistEn", Bins = "rice")\\
+\\ \ \indent \texttt{Mobj = MSobject(XDistEn, Bins = "rice")\\
 \indent xmse = XMSEn(Sig, Mobj, Methodx = "imf")}
 
 \noindent \emph{\textbf{Composite multiscale cross-conditional entropy with a 10-symbol data sequence, calculated up to 5 temporal scales}} \cite{cMS1} \cite{Cond1}
-\\ \ \\ \indent \texttt{Mobj = MSobject("XCondEn", m = 5, c = 10)\\
+\\ \ \\ \indent \texttt{Mobj = MSobject(XCondEn, m = 5, c = 10)\\
 \indent cxmse = cXMSEn(Sig, Mobj, scales = 5)}
 
 \noindent \emph{\textbf{Refined-Composite multiscale cross-entropy calculated in dits}} \cite{cMS2}
-\\ \ \\ \indent \texttt{Mobj = MSobject("XSampEn", Logx = 10)\\
+\\ \ \\ \indent \texttt{Mobj = MSobject(XSampEn, Logx = 10)\\
 \indent rcxmse = cXMSEn(Sig, Mobj, Refined = true)}
 
 \noindent \emph{\textbf{Refined multiscale cross-permutation entropy calculated using an embedding dimension of 4 and a time delay of 4}}
-\\ \ \\ \indent \texttt{Mobj = MSobject("XPermEn", m = 4, tau = 4)\\
+\\ \ \\ \indent \texttt{Mobj = MSobject(XPermEn, m = 4, tau = 4)\\
 \indent rxmse = rXMSEn(Sig, Mobj)}
 
 %\noindent \emph{\textbf{Hierarchical multiscale cross-Kolmogorov entropy with a radius threshold = 1.25 and calculated up to 6 hierarchical scales}}
@@ -2178,6 +2514,127 @@ i.e. For signals of 5000 points, only the first 4096 points are used. For signal
 
 
 
+
+
+%------------------------------------------------------------------------
+%------------------------------------------------------------------------
+\newpage
+\section{Multivariate Multiscale Entropy Functions}
+\vspace{7em}
+
+Just as one can calculate multiscale entropy using any \texttt{Base / Cross-} entropy, the same functionality is possible with \textit{multivariate} multiscale entropy using any \textit{multivariate} entropy function (\texttt{\textbf{MvSampEn, MvDispEn, MvCoSiEn, MvPermEn, MvFuzzEn}}). To do so, we again use the \texttt{\textbf{MSobject}} function to pass a multiscale object (\texttt{\textbf{Mobj}}) to the multivariate multiscale entropy functions.
+
+\begin{center}
+ \tcbox[tikznode={align=left}, colframe=ehone]{
+\hspace{10pt} \ul{Multivariate multiscale entropy functions have 2 positional arguments:} 
+\\ \ \\
+\hspace{15pt} the multivariate dataset \texttt{\textbf{Data}} (a NxM matrix, where N$>1$, M$>1$), \\
+\hspace{55pt} and the multiscale entropy object, \texttt{\textbf{Mobj}} - \ref{Mobjx}. } \ \\
+\end{center}
+ 
+\noindent Examples (shown in Julia syntax)$\colon$ \footnotesize
+\\ \ \\ \noindent \emph{\textbf{Original multivariate multiscale entropy}} \cite{MvSamp1}
+\\ \ \\ \noindent  \indent \texttt{Mobj = MSobject(MvSampEn) \\
+\indent mvmse = MvMSEn(Data, Mobj)}
+
+\noindent \emph{\textbf{Generalized multivariate multiscale dispersion entropy using the k-means symbolic sequence transform and the "full" method for m+1 subspace extraction}} \cite{MvSamp1} \cite{MvDisp1}\\
+\\ \ \indent \texttt{Mobj = MSobject(MvDisEn, Typex = "kmeans", Methodx = "v2")\\
+\indent mvmse = MvMSEn(Data, Mobj, Methodx = "generalized")}
+
+
+\noindent \emph{\textbf{Refined-Composite multivariate multiscale fuzzy entropy calculated in dits using a triangular fuzzy function (r = 3) and with embedding dimensions (assuming a 5-sequence multivariate dataset) m = [2,3,1,3,4]}} \cite{MvFuzz1}
+\\ \ \\ \indent \texttt{Mobj = MSobject(MvFuzzEn, Logx = 10, Fx = "triangular", r = 3, m = [2,3,1,3,4])\\
+\indent rcmvmse = cMvMSEn(Data, Mobj, Refined = true)}
+
+
+
+
+
+
+
+\newpage
+\subsection{\normalsize MvMSEn: \hspace{15mm} Multivariate Multiscale Entropy} \label{MvMSEn}
+\noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
+[MSx, Ci] = MvMSEn(Data, Mobj, 'Scales', 3, ‘Methodx’, 'coarse', ‘Plotx’, false)\\
+MSx, Ci = MvMSEn(Data, Mobj, Scales = 3, Methodx = 'coarse', Plotx = False)\\ 
+MSx, Ci = MvMSEn(Data, Mobj, Scales = 3, Methodx = "coarse", Plotx = false)}
+
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{ATTENTION}}, label={BiBox}]
+By default, the \texttt{\textbf{MvSampEn}} and \texttt{\textbf{MvFuzzEn}} multivariate entropy algorithms estimate entropy values using the “full” method by comparing delay vectors across all possible m+1 expansions of the embedding space as applied in \cite{MvSamp1} \cite{MvSamp2} \cite{MvFuzz1}. These methods are \ul{\textbf{not lower-bounded to 0}}, like most entropy algorithms, so \texttt{\textbf{MvMSEn}} may return negative entropy values if the base multivariate entropy function is \texttt{\textbf{MvSampEn}} and \texttt{\textbf{MvFuzzEn}}, even for stochastic processes…
+\end{tcolorbox}
+\ \newline
+
+\noindent \ul{Arguments}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{Data}]	Multivariate dataset, NxM matrix of N ($>10$) observations (rows) and M ($> 1$) univariate data sequences (cols).
+\item[\texttt{Mobj}]	Multiscale Entropy object created with \texttt{\textbf{MSobject()}} - \ref{Mobjx}
+\item[\texttt{Scales}]		Number of grained time scales, a positive integer.
+\item[\texttt{Methodx}]		Type of graining method, one of the following strings:
+	\begin{description}[labelsep=8em, labelwidth=10em, nosep,style=multiline,leftmargin=3cm]
+	\item[\texttt{"coarse"}]	\cite{MS1}
+	\[y^{(\tau)}_{j} = \frac{1}{\tau} \sum^{j\tau}_{i=(j-1)\tau+1} x_{i},\qquad  1\leq j\leq \frac{N}{\tau}\] 
+	
+	\item[\texttt{"generalized"}]	\cite{MS12}
+	\[y^{(\tau)}_{j} = \frac{1}{\tau} \sum^{\tau-1}_{k=0} (x_{j-k} - \bar{x})^2,	\qquad  1\leq j\leq N-\tau+1 \]	
+	
+	\item[\texttt{"modified"}]	
+	\[y^{(\tau)}_{j} = \frac{1}{\tau} \sum^{\tau-1}_{k=0} x_{j-k},	\qquad  1\leq j\leq N-\tau+1 \]		
+	\end{description}
+\item[\texttt{Plotx}]		A plot of the multiscale entropy curve\\
+							\texttt{true} \hspace{15pt} Plots time scale vs entropy value.\\
+							\texttt{false}\hspace{12pt} No plot.\\ \ \\
+\end{description}
+
+\noindent \ul{Outputs}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{MSx}]		Multivariate multiscale entropy estimate at each time scale ($\tau$), a vector of length 											\textbf{\texttt{Scales}}.
+\item[\texttt{Ci}]		Complexity index (area under the multiscale entropy curve), a scalar.
+\end{description}
+
+\noindent \ul{References}\hspace{1cm}
+\cite{MS1} \cite{MS2} \cite{MvSamp1} \cite{MvSamp2}
+
+
+
+\newpage
+\subsection{\normalsize cMvMSEn: \hspace{10mm} Composite \& Refined-Composite Multivariate Multiscale Entropy} \label{cMvMSEn}
+\noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
+[MSx, Ci] = cMvMSEn(Data, Mobj, 'Scales', 3,  'Refined', false, ‘Plotx’, false)\\
+MSx, Ci = cMvMSEn(Data, Mobj, Scales = 3, Refined = False, Plotx = False)\\ 
+MSx, Ci = cMvMSEn(Data, Mobj, Scales = 3, Refined = false, Plotx = false)}
+
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{ATTENTION}}, label={BiBox}]
+By default, the \texttt{\textbf{MvSampEn}} and \texttt{\textbf{MvFuzzEn}} multivariate entropy algorithms estimate entropy values using the “full” method by comparing delay vectors across all possible m+1 expansions of the embedding space as applied in \cite{MvSamp1} \cite{MvSamp2} \cite{MvFuzz1}. These methods are \ul{\textbf{not lower-bounded to 0}}, like most entropy algorithms, so \texttt{\textbf{MvMSEn}} may return negative entropy values if the base multivariate entropy function is \texttt{\textbf{MvSampEn}} and \texttt{\textbf{MvFuzzEn}}, even for stochastic processes…
+\end{tcolorbox}
+\ \newline
+
+\noindent \ul{Arguments}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{Data}]	Multivariate dataset, NxM matrix of N ($>10$) observations (rows) and M ($> 1$) univariate data sequences (cols).
+\item[\texttt{Mobj}]	Multiscale Entropy object created with \texttt{\textbf{MSobject()}} - \ref{Mobjx}
+\item[\texttt{Scales}]		Number of time scales, a positive integer.
+\item[\texttt{Refined}]	 When \textbf{\texttt{Refined == true}} and the entropy function (\textbf{\texttt{EnType}}) contained in  \textbf{\texttt{Mobj}} is either \texttt{\textbf{MvSampEn}}, or \texttt{\textbf{MvFuzzEn}}, \texttt{\textbf{cMvMSEn}} returns the refined-composite multivariate multiscale entropy (\texttt{\textbf{rcMvMSEn}}). \indent \cite{MvSamp1}  \cite{MvFuzz1}
+\item[\texttt{Plotx}]		A plot of the multiscale entropy curve\\
+							\texttt{true} \hspace{15pt} Plots time scale vs entropy value.\\
+							\texttt{false}\hspace{12pt} No plot.\\ 
+\end{description}
+
+\ \\ \textbf{Note:} refined-composite multivariate multiscale sample entropy uses moving averaging to perform graining (analogous to the \texttt{modified} graining method in \texttt{\textbf{MvMSEn}}), but refined-composite multivariate multiscale fuzzy entropy uses the moving standard deviation (analogous to the \texttt{generalized} graining method in \texttt{\textbf{MvMSEn}}). 
+
+\noindent \ul{Outputs}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{MSx}]		Composite  / refined-composite multivariate multiscale entropy estimate at each time scale ($\tau$), a vector of length 	\textbf{\texttt{Scales}}.
+\item[\texttt{Ci}]		Complexity index (area under the multiscale entropy curve), a scalar.
+\end{description}
+
+\noindent \ul{References}\hspace{1cm}
+\cite{MvSamp1}  \cite{MvFuzz1} 
+
+
+
+
+
+
 %------------------------------------------------------------------------
 %------------------------------------------------------------------------
 \newpage
@@ -2194,6 +2651,7 @@ e.g. For a matrix of size [200 x 200], an embedding dimension (\texttt{\textbf{m
 To pass matrices with sizes greater than [128 x 128], set \texttt{\textbf{Lock} = false}.\\ \newline
 *** \ul{WARNING}: unlocking the permitted matrix size may cause your programming environment to crash.***\\
 \end{tcolorbox}
+
 
 
 
@@ -2502,44 +2960,13 @@ Esp2D = EspEn2D(Mat, m = floor(Int,size(Mat)./10), tau = 1, r = 20, ps = 0.7, Lo
 
 
 
-
-
-
-
-
 %------------------------------------------------------------------------
 %------------------------------------------------------------------------
 \newpage
-\chapter{\textbf{Examples}}
-\chapterimage[width=16cm, height=3cm]{Chapter Banner2.png}
-\vspace{45mm}
+\section{Other Functions}
+\vspace{1em}
 
-
-The following sections provide some basic examples of EntropyHub functions. These examples are \ul{merely a snippet} of the full range of EntropyHub functionality.\newline \newline
-\noindent  There is a custom documentation section installed with the toolkit in MatLab which provides several useful examples of every function in more detail than what is shown here.  Thus, if you are using EntropyHub for MatLab, we recommend that you consult the custom EntropyHub documentation in MatLab for more in-depth examples.
-\newline \newline
-In the following examples, signals / data are imported into MatLab/Python/Julia using the \texttt{ExampleData()} function from EntropyHub.
-
-\begin{tcolorbox}[sharp corners, colback=ehone!10, colframe=ehone, title=\textbf{NOTE}, label={BiBox}]
-
-To use the \texttt{\textbf{ExampleData() - \ref{ExampleData()}}} function as outlined in the examples below, \underline{\textbf{an internet connection is required.}}\\
-\end{tcolorbox}
-
-\begin{tcolorbox}[sharp corners, colback=ehone!10, colframe=ehone, title=\textbf{THINGS TO REMEMBER}, label={BiBox}]
-
-Parameters of the base or cross- entropy methods are passed to multiscale and multiscale cross- functions using the multiscale entropy object using \textbf{\texttt{MSobject} - \ref{Mobjx}}.\\
-Base and cross- entropy methods are declared with \texttt{MSobject()} using a string name in \textbf{MatLab} and \textbf{Python}. In \textbf{Julia}, base and cross- entropy methods are passed as a \textbf{\underline{function}}. See the MSobject example (\ref{ExMobjM},  \ref{ExMobjP}, \ref{ExMobjJ}) in the following sections for more info.\\
-\newline
-Each bidimensional entropy function (\texttt{\textbf{SampEn2D, FuzzEn2D, DistEn2D, PermEn2D, EspEn2D}}) has an important keyword argument - \texttt{\textbf{Lock}}. Bidimensional entropy functions are "locked" by default (\texttt{\textbf{Lock} == true}) to only permit matrices with a maximum size of 128 x 128.\\ \newline
-
-In hierarchical multiscale entropy (hMSEn) and hierarchical multiscale cross-entropy (hXMSEn) functions, the length of the time series signal(s) is halved at each scale. Thus, \texttt{hMSEn} and \texttt{hXMSEn} only use the first $2^N$ data points where  $2^N <=$ the length of the original time series signal.\\
-i.e. For a signal of 5000 points, only the first 4096 are used. For a signal of 1500 points, only the first 1024 are used.
-\end{tcolorbox}
-
-
-
-\newpage
-\section{\normalsize ExampleData():  Import Example Datasets} \label{ExampleData()}
+\subsection{\normalsize ExampleData():  Import Example Datasets} \label{ExampleData()}
 \noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
 Data = ExampleData(Name)\\
 Data = ExampleData(Name)\\
@@ -2582,6 +3009,68 @@ $(\sigma: 10, \beta: \frac{8}{3}, rho: 28),   [X_o = 10, Y_o = 20, Z_o = 10]$
 
 
 
+\newpage
+\subsection{\normalsize WindowData():  Data Windowing Tool} \label{WindowData()}
+\noindent\ul{Syntax} \vspace{6mm} \\ \noindent \texttt{\footnotesize
+WinData, Log = WindowData(Data, 'WinLen', Int32(floor(size(Data,1)/5)), \\ \indent 'Overlap', 0, 'Mode', 'exclude')\\
+WinData, Log = WindowData(Data, WinLen = Data.shape[0]//5, \\ \indent  Overlap = 0, Mode = 'exclude')\\
+WinData, Log = WindowData(Data, WinLen = floor(Int, size(Data,1)/5), \\ \indent  Overlap = 0, Mode = "exclude")}\\
+
+\noindent \ul{Arguments}
+\begin{description}[labelsep=1cm, labelwidth=2cm, nosep,,style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{WinData}]	 Number of elements in each window, a positive integer ($>10$)
+\item[\texttt{Overlap}]	 Number of overlapping elements between windows, a positive integer ($< WinLen$)
+\item[\texttt{Mode}]	Decision to include or exclude any remaining sequence elements ($< WinLen$) that do not fill the window, a string - either "include" or "exclude" (default).
+\end{description}
+
+
+\noindent \ul{Outputs}
+\begin{description}[labelsep=1cm, labelwidth=4cm, nosep,style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{WinData}]	Collection of windowed subsequences.\\ If Data is a univariate sequence (vector), Windata is a collection of vectors. \\
+If Data is a set of multivariate sequences (NxM matrix), each of M columns is treated as a sequence with N elements and WinData is a collection of matrices.  
+\item[\texttt{Log}]	Struct / dictionary containing information about the windowing process, including:\\
+\begin{description}[labelsep=1cm, labelwidth=4cm, nosep,style=multiline,leftmargin=3cm]\footnotesize
+\item[\texttt{DataType}]	 The type of data sequence passed as Data
+\item[\texttt{DataLength}]   The number of sequence elements in Data
+\item[\texttt{WindowLength}]   The number of elements in each window of WinData
+\item[\texttt{WindowOverlap}]   The number of overlapping elements between windows
+\item[\texttt{TotalWindows}]  The number of windows extracted from Data
+\item[\texttt{Mode}]   Decision to include or exclude any remaining sequence elements ($< WinLen$) that do not fill the window.
+\end{description}
+\end{description}
+
+
+
+
+
+%------------------------------------------------------------------------
+%------------------------------------------------------------------------
+\newpage
+\chapter{\textbf{Examples}}
+\chapterimage[width=16cm, height=3cm]{Chapter Banner2.png}
+\vspace{45mm}
+
+
+The following sections provide some basic examples of EntropyHub functions. These examples are \ul{merely a snippet} of the full range of EntropyHub functionality.\newline \newline
+\noindent  There is a custom documentation section installed with the toolkit in MatLab which provides several useful examples of every function in more detail than what is shown here.  Thus, if you are using EntropyHub for MatLab, we recommend that you consult the custom EntropyHub documentation in MatLab for more in-depth examples.
+\newline \newline
+In the following examples, signals / data are imported into MatLab/Python/Julia using the \texttt{ExampleData()- \ref{ExampleData()}} function from EntropyHub.
+
+\begin{tcolorbox}[sharp corners, colback=ehone!10, colframe=ehone, title=\textbf{NOTE}, label={BiBox}]
+
+To use the \texttt{\textbf{ExampleData() - \ref{ExampleData()}}} function as outlined in the examples below, \underline{\textbf{an internet connection is required.}}\\
+\end{tcolorbox}
+
+\begin{tcolorbox}[sharp corners, colback=ehone!10, colframe=ehone, title=\textbf{THINGS TO REMEMBER}, label={BiBox}]
+
+Parameters of the base or cross- entropy methods are passed to multiscale and multiscale cross- functions using the multiscale entropy object using \textbf{\texttt{MSobject} - \ref{Mobjx}}.\\
+Base and cross- entropy methods are declared with \texttt{MSobject()} using a string name in \textbf{MatLab} and \textbf{Python}. In \textbf{Julia}, base and cross- entropy methods are passed as a \textbf{\underline{function}}. See the MSobject examples (MatLab; \ref{ExMobjM}, Python:  \ref{ExMobjP}, Julia: \ref{ExMobjJ}) in the following sections for more info.\\
+\newline
+Each bidimensional entropy function (\texttt{\textbf{SampEn2D, FuzzEn2D, DistEn2D, PermEn2D, EspEn2D}}) has an important keyword argument - \texttt{\textbf{Lock}}. Bidimensional entropy functions are "locked" by default (\texttt{\textbf{Lock} == true}) to only permit matrices with a maximum size of 128 x 128.\\ \newline
+
+In hierarchical multiscale entropy (hMSEn) and hierarchical multiscale cross-entropy (hXMSEn) functions, the length of the time series signal(s) is halved at each scale. Thus, \texttt{hMSEn} and \texttt{hXMSEn} only use the first $2^N$ data points where  $2^N <=$ the length of the original time series signal.\\
+i.e. For a signal of 5000 points, only the first 4096 are used. For a signal of 1500 points, only the first 1024 are used.
+\end{tcolorbox}
 
 
 
@@ -2864,7 +3353,193 @@ FE2D = FuzzEn2D(X, 'm', [8 5], 'tau', 2, 'Fx', . . .
 
 
 
+\newpage
+\subsection{\normalsize Example 11: \hspace{15mm} Multivariate Dispersion Entropy}
+\noindent Import a vector of 4096 uniformly distributed random integers in range [1 8] and convert it to a multivariate set of 4 sequences with 1024 samples each.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
+X = ExampleData('randintegers');
+Data = reshape(X, 1024, 4);
+\end{minted}
+Calculate the multivariate dispersion entropy and reverse dispersion entropy for embedding dimensions (m) = [1,1,2,3], using a 7-symbol transform.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
+[MDisp, RDE] = MvDispEn(Data, 'm', [1,1,2,3], 'c', 7)
 
+>>> MDisp =
+    6.9227345
+
+>>> RDE =
+    0.0009856
+\end{minted}
+Perform the same calculation but normalize the output entropy estimate w.r.t the number of unique dispersion patterns.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
+[MDisp, RDE] = MvDispEn(Data, 'm', [1,1,2,3], 'c', 7, ... 
+			'Norm', true)
+>>> MDisp =
+    0.508226
+>>> RDE =
+    0.0009856
+\end{minted}    
+Compare the results above (\texttt{\textbf{Methodx=='v1'}}) with those obtained using the \emph{\textbf{mvDE}} method (\texttt{\textbf{Methodx=='v2'}}), returning estimates for each value from \texttt{\textbf{1,…,max(m)}}
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
+[MDisp, RDE] = MvDispEn(Data, 'm', [1,1,2,3], 'c', 7, ...
+	    'Norm', true, 'Methodx', 'v2')
+>>> MDisp =
+    0.95439595, 0.94074854, 0.93012334
+>>> RDE =
+    0.02675949, 0.00805324, 0.00201614
+\end{minted}
+
+
+
+\newpage
+\subsection{\normalsize Example 12: \hspace{15mm} [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy}
+\noindent Import the x, y, and z components of the Lorenz system of equations.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
+Data = ExampleData('lorenz');
+figure('Color', 'k')
+
+plot3(Data(:,1), Data(:,2), Data(:,3), 'g.')
+xlabel('x-component','color','g'), 
+ylabel('y-component','color','g'), 
+zlabel('z-component','color','g'), 
+view(-10,10), set(gca,'color','k'), axis square
+\end{minted}
+\includegraphics[scale=.4]{lorenz.png}\newline \newline
+Create a multiscale entropy object with the following parameters: \texttt{\textbf{EnType = MvFuzzEn()}}, fuzzy membership function = \texttt{\textbf{‘constgaussian’}}, fuzzy function parameter = 1.75, normalized data to unit variance = true
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
+Mobj = MSobject('MvFuzzEn', 'Fx', 'constgaussian',...
+		 'r', 1.75, 'Norm', true)
+\end{minted}
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{ATTENTION}}, label={BiBox}]
+When the multivariate entropy method is multivariate fuzzy entropy (\texttt{\textbf{MvFuzzEn}}), \texttt{\textbf{cMvMSEn}} by default employs a generalized graining procedure with the standard deviation (not the variance like in \texttt{\textbf{MvMSEn}}). This follows the method presented by Azami et. al.\footnote{Azami, Fernández and Escudero,\\ \indent\indent \emph{Refined multiscale fuzzy entropy based on standard deviation for biomedical signal analysis} \\ 
+\indent\indent Medical \& biological engineering \& computing 55 (2017): 2037-2052.}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{NOTE}}, label={BiBox}]
+As with conventional generalized multiscale entropy, the multiscale entropy value for the first scale will always == 0, as the variance or standard deviation of a singular value is 0!
+\end{tcolorbox} \
+
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
+[MSx, CI] = cMvMSEn(Data, Mobj, 'Scales', 5, ...
+			 'Refined', true, 'Plotx', true)
+>>> MSx =
+    0,  0.00796833,  0.00926765,  0.01193731,  0.01686631
+>>> RDE =
+    0.04603960
+\end{minted}
+\includegraphics[scale=.7]{rcMvMSEn.png}
+
+
+
+
+\newpage
+\subsection{\normalsize Example 13: \hspace{15mm} Windowing Data with WindowData()}
+\noindent Create a sequence of integers from 1 - 1000 and segment the values into windows of length 75, with no overlap.
+
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
+X = 1:1000
+[WinData, Log] = WindowData(X, WinLen = 75)
+
+>>> WinData =
+  {[ 1,  2,  3,  4,  5, . . . 71, 72, 73, 74, 75];
+   [ 76,  77,  78,  79, 80, . . .  146, 147, 148, 149, 150];
+   [ 151, 152, 153, 154, 155, . . . 221, 222, 223, 224, 225];
+   [ 226, 227, 228, 229, 230, . . . 296, 297, 298, 299, 300];
+   [ 301, 302, 303, 304, 305, . . . 371, 372, 373, 374, 375];
+   [ 376, 377, 378, 379, 380, . . . 446, 447, 448, 449, 450];
+   [ 451, 452, 453, 454, 455, . . . 521, 522, 523, 524, 525];
+   [ 526, 527, 528, 529, 530, . . . 596, 597, 598, 599, 600];
+   [ 601, 602, 603, 604, 605, . . . 671, 672, 673, 674, 675];
+   [ 676, 677, 678, 679, 680, . . . 746, 747, 748, 749, 750];
+   [ 751, 752, 753, 754, 755, . . . 821, 822, 823, 824, 825];
+   [ 826, 827, 828, 829, 830, . . . 896, 897, 898, 899, 900];
+   [ 901, 902, 903, 904, 905, . . . 971, 972, 973, 974, 975]}
+
+>>> Log =
+     struct with fields:
+     DataType: "single univariate vector (1 sequence)"
+   DataLength: 1000
+ WindowLength: 75
+WindowOverlap: 0
+ TotalWindows: 13
+         Mode: "exlcude"
+\end{minted}
+
+\newpage
+Repeat the previous step, but include any remaining values that do not fill the final window.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
+X = 1:1000
+[WinData, Log] = WindowData(X, WinLen = 75)
+
+>>> WinData =
+  {[ 1,  2,  3,  4,  5, . . . 71, 72, 73, 74, 75];
+   [ 76,  77,  78,  79, 80, . . .  146, 147, 148, 149, 150];
+   [ 151, 152, 153, 154, 155, . . . 221, 222, 223, 224, 225];
+   [ 226, 227, 228, 229, 230, . . . 296, 297, 298, 299, 300];
+   [ 301, 302, 303, 304, 305, . . . 371, 372, 373, 374, 375];
+   [ 376, 377, 378, 379, 380, . . . 446, 447, 448, 449, 450];
+   [ 451, 452, 453, 454, 455, . . . 521, 522, 523, 524, 525];
+   [ 526, 527, 528, 529, 530, . . . 596, 597, 598, 599, 600];
+   [ 601, 602, 603, 604, 605, . . . 671, 672, 673, 674, 675];
+   [ 676, 677, 678, 679, 680, . . . 746, 747, 748, 749, 750];
+   [ 751, 752, 753, 754, 755, . . . 821, 822, 823, 824, 825];
+   [ 826, 827, 828, 829, 830, . . . 896, 897, 898, 899, 900];
+   [ 901, 902, 903, 904, 905, . . . 971, 972, 973, 974, 975]}
+   [ 976, 977, 978, 979, 980, . . . 996, 997, 998, 999, 1000]}  
+  %% ^ Remaining values included in final array (N = 25) ^
+  
+>>> Log =
+      struct with fields:
+     DataType: "single univariate vector (1 sequence)"
+   DataLength: 1000
+ WindowLength: 75
+WindowOverlap: 0
+ TotalWindows: 14 %% < Total windows increased from 13 to 14
+         Mode: "include"
+\end{minted}
+
+\newpage
+\noindent Create a matrix of 4 sequences of integers (1:1000, 1001:2000, 2001:3000, 3001:4000). Segment the data into windows of length 130x4, with 20 samples overlap.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{matlab}
+X = [1:1000; 1001:2000; 2001:3000; 3001:4000]' ;
+[WinData, Log] = WindowData(X, WinLen = 130, Overlap = 20)
+
+>>> WinData =
+    {[1,  1001,  2001,  3001
+      2,  1002,  2002,  3002
+      3,  1003,  2003,  3003
+            ...
+      128,  1128,  2128,  3128
+      129,  1129,  2129,  3129
+      130,  1130,  2130,  3130];
+     [111,  1111,  2111,  3111
+      112,  1112,  2112,  3112
+      113,  1113,  2113,  3113
+            ...
+      238,  1238,  2238,  3238
+      239,  1239,  2239,  3239
+      240,  1240,  2240,  3240];
+        :     :       :     :
+        :     :       :     :
+        :     :       :     :
+        :     :       :     :
+     [771,  1771,  2771,  3771
+      772,  1772,  2772,  3772
+      773,  1773,  2773,  3773
+            ...
+      898,  1898,  2898,  3898
+      899,  1899,  2899,  3899
+      900,  1900,  2900,  3900]}
+
+>>> Log =
+     struct with fields:
+     DataType: "multivariate matrix (4 vectors)"
+   DataLength: 1000
+ WindowLength: 130
+WindowOverlap: 20
+ TotalWindows: 8
+         Mode: "exlcude"
+
+\end{minted}
 
 
 %---------------------------------------------------------
@@ -3200,11 +3875,189 @@ FE2D = eh.FuzzEn2D(X, m = (8, 5), tau = 2, Fx = 'gaussian',
 
 
 
+\newpage
+\subsection{\normalsize Example 11: \hspace{15mm} Multivariate Dispersion Entropy}
+\noindent Import a vector of 4096 uniformly distributed random integers in range [1 8] and convert it to a multivariate set of 4 sequences with 1024 samples each.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
+X = eh.ExampleData('randintegers')
+Data = np.reshape(X,(4,1024)).T
+\end{minted}
+Calculate the multivariate dispersion entropy and reverse dispersion entropy for embedding dimensions (m) = [1,1,2,3], using a 7-symbol transform.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
+MDisp, RDE = eh.MvDispEn(Data, m = np.array([1,1,2,3]), c = 7)
+>>> MDisp =
+    6.9227345
+>>> RDE =
+    0.0009856
+\end{minted}
+Perform the same calculation but normalize the output entropy estimate w.r.t the number of unique dispersion patterns.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
+MDisp, RDE = eh.MvDispEn(Data, m = np.array([1,1,2,3]), c = 7, 
+			Norm = True)
+>>> MDisp =
+    0.508226
+>>> RDE =
+    0.0009856
+\end{minted}    
+Compare the results above (\texttt{\textbf{Methodx=='v1'}}) with those obtained using the \emph{\textbf{mvDE}} method (\texttt{\textbf{Methodx=='v2'}}), returning estimates for each value from \texttt{\textbf{1,…,max(m)}}
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
+MDisp, RDE = eh.MvDispEn(Data, m = np.array([1,1,2,3]), c = 7, 
+			Norm = True, Methodx = 'v2')
+
+>>> MDisp =
+    0.95439595, 0.94074854, 0.93012334
+>>> RDE =
+    0.02675949, 0.00805324, 0.00201614
+\end{minted}
+
+
+
+\newpage
+\subsection{\normalsize Example 12: \hspace{15mm} [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy}
+\noindent Import the x, y, and z components of the Lorenz system of equations.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
+Data = eh.ExampleData('lorenz');
+from matplotlib.pyplot import fig, scatter, axis
+fig = figure(facecolor='k')
+ax = fig.add_subplot(111, projection='3d')
+ax.set_facecolor('k')
+ax.scatter(Data[:,0], Data[:,1], Data[:,2], c='g')
+ax.axis('off')
+\end{minted}
+\includegraphics[scale=.4]{lorenz.png}\newline \newline
+Create a multiscale entropy object with the following parameters: \texttt{\textbf{EnType = MvFuzzEn()}}, fuzzy membership function = \texttt{\textbf{‘constgaussian’}}, fuzzy function parameter = 1.75, normalized data to unit variance = true
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
+Mobj = eh.MSobject('MvFuzzEn', Fx = 'constgaussian', 
+		r = 1.75, Norm = True)
+\end{minted}
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{ATTENTION}}, label={BiBox}]
+When the multivariate entropy method is multivariate fuzzy entropy (\texttt{\textbf{MvFuzzEn}}), \texttt{\textbf{cMvMSEn}} by default employs a generalized graining procedure with the standard deviation (not the variance like in \texttt{\textbf{MvMSEn}}). This follows the method presented by Azami et. al.\footnote{Azami, Fernández and Escudero,\\ \indent\indent \emph{Refined multiscale fuzzy entropy based on standard deviation for biomedical signal analysis} \\ 
+\indent\indent Medical \& biological engineering \& computing 55 (2017): 2037-2052.}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{NOTE}}, label={BiBox}]
+As with conventional generalized multiscale entropy, the multiscale entropy value for the first scale will always == 0, as the variance or standard deviation of a singular value is 0!
+\end{tcolorbox} \
+
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
+MSx, CI = eh.cMvMSEn(Data, Mobj, Scales = 5, 
+		Refined = True, Plotx = True)
+
+>>> MSx =
+    0,  0.00796833,  0.00926765,  0.01193731,  0.01686631
+
+>>> RDE =
+    0.04603960
+\end{minted}
+\includegraphics[scale=.7]{rcMvMSEn.png}
 
 
 
 
+\newpage
+\subsection{\normalsize Example 13: \hspace{15mm} Windowing Data with WindowData()}
+\noindent Create a sequence of integers from 1 - 1000 and segment the values into windows of length 75, with no overlap.
 
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
+X = np.arange(1,1001)
+WinData, Log = eh.WindowData(X, WinLen = 75)
+
+>>> WinData =
+(array([ 1,  2,  3,  4,  5, ... 71, 72, 73, 74, 75]),
+ array([ 76,  77,  78,  79, 80, ...  146, 147, 148, 149, 150]),
+ array([151, 152, 153, 154, 155, ... 221, 222, 223, 224, 225]),
+ array([226, 227, 228, 229, 230, ... 296, 297, 298, 299, 300]),
+ array([301, 302, 303, 304, 305, ... 371, 372, 373, 374, 375]),
+ array([376, 377, 378, 379, 380, ... 446, 447, 448, 449, 450]),
+ array([451, 452, 453, 454, 455, ... 521, 522, 523, 524, 525]),
+ array([526, 527, 528, 529, 530, ... 596, 597, 598, 599, 600]),
+ array([601, 602, 603, 604, 605, ... 671, 672, 673, 674, 675]),
+ array([676, 677, 678, 679, 680, ... 746, 747, 748, 749, 750]),
+ array([751, 752, 753, 754, 755, ... 821, 822, 823, 824, 825]),
+ array([826, 827, 828, 829, 830, ... 896, 897, 898, 899, 900]),
+ array([901, 902, 903, 904, 905, ... 971, 972, 973, 974, 975]))
+
+>>> Log =
+    {'DataType': 'single univariate vector (1 sequence)',
+     'DataLength': 1000,
+     'WindowLength': 75,
+     'WindowOverlap': 0,
+     'TotalWindows': 13,
+     'Mode': 'exclude'}
+\end{minted}
+
+\newpage
+Repeat the previous step, but include any remaining values that do not fill the final window.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
+WinData, Log = eh.WindowData(X, WinLen = 75, Mode = 'include')
+
+>>> WinData =
+(array([ 1,  2,  3,  4,  5, ... 71, 72, 73, 74, 75]),
+ array([ 76,  77,  78,  79, 80, ...  146, 147, 148, 149, 150]),
+ array([151, 152, 153, 154, 155, ... 221, 222, 223, 224, 225]),
+ array([226, 227, 228, 229, 230, ... 296, 297, 298, 299, 300]),
+ array([301, 302, 303, 304, 305, ... 371, 372, 373, 374, 375]),
+ array([376, 377, 378, 379, 380, ... 446, 447, 448, 449, 450]),
+ array([451, 452, 453, 454, 455, ... 521, 522, 523, 524, 525]),
+ array([526, 527, 528, 529, 530, ... 596, 597, 598, 599, 600]),
+ array([601, 602, 603, 604, 605, ... 671, 672, 673, 674, 675]),
+ array([676, 677, 678, 679, 680, ... 746, 747, 748, 749, 750]),
+ array([751, 752, 753, 754, 755, ... 821, 822, 823, 824, 825]),
+ array([826, 827, 828, 829, 830, ... 896, 897, 898, 899, 900]),
+ array([901, 902, 903, 904, 905, ... 971, 972, 973, 974, 975]),
+ array([976, 977, 978, 979, 980, ... 996, 997, 998, 999, 1000]))  
+    # ^ Remaining values included in final array (N = 25) ^ 
+
+>>> Log =
+  {'DataType': 'single univariate vector (1 sequence)',
+   'DataLength': 1000,
+   'WindowLength': 75,
+   'WindowOverlap': 0,
+   'TotalWindows': 14, #<- Total windows increased from 13 to 14
+   'Mode': 'include'}
+\end{minted}
+
+\newpage
+\noindent Create a matrix of 4 sequences of integers (1:1000, 1001:2000, 2001:3000, 3001:4000). Segment the data into windows of length 130x4, with 20 samples overlap.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{python}
+X = np.vstack((np.arange(1,1001), np.arange(1001,2001),
+               np.arange(2001,3001), np.arange(3001,4001))).T
+
+WinData, Log = eh.WindowData(X, WinLen = 130, Overlap = 20)
+
+>>> WinData =
+    (array([1,  1001,  2001,  3001
+            2,  1002,  2002,  3002
+            3,  1003,  2003,  3003
+            ...
+            128,  1128,  2128,  3128
+            129,  1129,  2129,  3129
+            130,  1130,  2130,  3130]),
+     array([111,  1111,  2111,  3111
+            112,  1112,  2112,  3112
+            113,  1113,  2113,  3113
+            ...
+            238,  1238,  2238,  3238
+            239,  1239,  2239,  3239
+            240,  1240,  2240,  3240]),
+             :     :       :     :
+             :     :       :     :
+             :     :       :     :
+     array([771,  1771,  2771,  3771
+            772,  1772,  2772,  3772
+            773,  1773,  2773,  3773
+            ...
+            898,  1898,  2898,  3898
+            899,  1899,  2899,  3899
+            900,  1900,  2900,  3900]))
+
+>>> Log =
+    {'DataType': 'multivariate matrix (4 vectors)',
+     'DataLength': 1000,
+     'WindowLength': 130,
+     'WindowOverlap': 20,
+     'TotalWindows': 8,
+     'Mode': 'exclude'}
+\end{minted}
 
 
 
@@ -3485,13 +4338,164 @@ julia> FE2D = FuzzEn2D(X, m = (8, 5), tau = 2,
 
 
 
+\newpage
+\subsection{\normalsize Example 11: \hspace{15mm} Multivariate Dispersion Entropy}
+\noindent Import a vector of 4096 uniformly distributed random integers in range [1 8] and convert it to a multivariate set of 4 sequences with 1024 samples each.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
+julia>  X = ExampleData("randintegers")
+julia>  Data = reshape(X, 1024, 4)
+\end{minted}
+Calculate the multivariate dispersion entropy and reverse dispersion entropy for embedding dimensions (m) = [1,1,2,3], using a 7-symbol transform.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
+julia>  MDisp, RDE = MvDispEn(Data, m = [1,1,2,3], c = 7)
+(6.922734508722953, 0.0009856206548534644)
+\end{minted}
+Perform the same calculation but normalize the output entropy estimate w.r.t the number of unique dispersion patterns.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
+julia>  MDisp, RDE = MvDispEn(Data, m = [1,1,2,3], c = 7, 
+			Norm = true)
+(0.5082259698140852, 0.0009856218516602513)
+\end{minted}    
+Compare the results above (\texttt{\textbf{Methodx=='v1'}}) with those obtained using the \emph{\textbf{mvDE}} method (\texttt{\textbf{Methodx=='v2'}}), returning estimates for each value from \texttt{\textbf{1,…,max(m)}}
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
+julia>  MDisp, RDE = MvDispEn(Data, m = [1,1,2,3], c = 7, 
+			Norm = true, Methodx = "v2")
+ .  .  . 
+([0.954395954191354, 0.94074853715469, 0.930123339696689], 
+ [0.026759488075315, 0.00805323667175, 0.0020161358982543])
+\end{minted}
+
+
+
+\newpage
+\subsection{\normalsize Example 12: \hspace{15mm} [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy}
+\noindent Import the x, y, and z components of the Lorenz system of equations.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
+julia> Data = ExampleData("lorenz");
+
+julia> using Plots
+julia> Plots.backend()  # Check that the right backend is in use! 
+
+julia> scatter(Data[:,1], Data[:,2], Data[:,3], 
+markercolor = "green", markerstrokecolor = "black",
+markersize = 3, background_color = "black", grid = false)
+\end{minted}
+\includegraphics[scale=.5]{lorenzjl.png}\newline 
+
+\noindent Create a multiscale entropy object with the following parameters: \texttt{\textbf{EnType = MvFuzzEn()}}, fuzzy membership function = \texttt{\textbf{‘constgaussian’}}, fuzzy function parameter = 1.75, normalized data to unit variance = true
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
+julia>  Mobj = MSobject(MvFuzzEn, Fx = "constgaussian",
+               r = 1.75, Norm = true)
+\end{minted}
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{ATTENTION}}, label={BiBox}]
+When the multivariate entropy method is multivariate fuzzy entropy (\texttt{\textbf{MvFuzzEn}}), \texttt{\textbf{cMvMSEn}} by default employs a generalized graining procedure with the standard deviation (not the variance like in \texttt{\textbf{MvMSEn}}). This follows the method presented by Azami et. al.\footnote{Azami, Fernández and Escudero,\\ \indent\indent \emph{Refined multiscale fuzzy entropy based on standard deviation for biomedical signal analysis} \\ 
+\indent\indent Medical \& biological engineering \& computing 55 (2017): 2037-2052.}
+\end{tcolorbox}
+\begin{tcolorbox}[colback=ehone!5, colframe=ehtwo!, title=\hypertarget{bidinote}{\textbf{NOTE}}, label={BiBox}]
+As with conventional generalized multiscale entropy, the multiscale entropy value for the first scale will always == 0, as the variance or standard deviation of a singular value is 0!
+\end{tcolorbox} \
+
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
+julia>  MSx, CI = cMvMSEn(Data, Mobj, Scales = 5, Refined = true,
+			 Plotx = true)
+. . . . . . . . . . . . . . . . . . . . 
+([-0.0, 0.00796833, 0.00926765, 0.01193731, 0.016866306],
+ 0.046039601)
+\end{minted}
+\includegraphics[scale=.7]{rcMvMSEnjl.png}
 
 
 
 
+\newpage
+\subsection{\normalsize Example 13: \hspace{15mm} Windowing Data with WindowData()}
+\noindent Create a sequence of integers from 1 - 1000 and segment the values into windows of length 75, with no overlap.
+
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
+julia>  X = 1:1001
+julia>  WinData, Log = WindowData(X, WinLen = 75)
+
+(Any[[1; 2; … ; 74; 75;;], 
+[76; 77; … ; 149; 150;;],
+[151; 152; … ; 224; 225;;], 
+[226; 227; … ; 299; 300;;], 
+[301; 302; … ; 374; 375;;], 
+[376; 377; … ; 449; 450;;], 
+[451; 452; … ; 524; 525;;], 
+[526; 527; … ; 599; 600;;], 
+[601; 602; … ; 674; 675;;], 
+[676; 677; … ; 749; 750;;], 
+[751; 752; … ; 824; 825;;], 
+[826; 827; … ; 899; 900;;], 
+[901; 902; … ; 974; 975;;]], 
+Dict{String, Any}(
+"DataType" => "single univariate vector (1 sequence)", 
+"TotalWindows" => 13, 
+"WindowOverlap" => 0, 
+"Mode" => "exclude", 
+"WindowLength" => 75, 
+"DataLength" => 1001))
+\end{minted}
+
+\newpage
+Repeat the previous step, but include any remaining values that do not fill the final window.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
+julia>  WinData, Log = WindowData(X, WinLen = 75, 
+			Mode = "include")
+
+(Any[[1; 2; … ; 74; 75;;], 
+[76; 77; … ; 149; 150;;],
+[151; 152; … ; 224; 225;;], 
+[226; 227; … ; 299; 300;;], 
+[301; 302; … ; 374; 375;;], 
+[376; 377; … ; 449; 450;;], 
+[451; 452; … ; 524; 525;;], 
+[526; 527; … ; 599; 600;;], 
+[601; 602; … ; 674; 675;;], 
+[676; 677; … ; 749; 750;;], 
+[751; 752; … ; 824; 825;;], 
+[826; 827; … ; 899; 900;;], 
+[901; 902; … ; 974; 975;;],
+[976; 977; … ; 1000; 1001;;]],  # <- Remaining values included 
+Dict{String, Any}(		#    in final array (N = 25)
+"DataType" => "single univariate vector (1 sequence)", 
+"TotalWindows" => 14, #<- Total windows increased from 13 to 14
+"WindowOverlap" => 0, 
+"Mode" => "include", 
+"WindowLength" => 75, 
+"DataLength" => 1001))
+
+\end{minted}
+
+\newpage
+\noindent Create a matrix of 4 sequences of integers (1:1000, 1001:2000, 2001:3000, 3001:4000). Segment the data into windows of length 130x4, with 20 samples overlap.
+\begin{minted}[frame=lines,framesep=2mm,baselinestretch=1.2,bgcolor=ehone]{julia}
+julia>  X = hcat(1:1001, 1001:2001, 2001:3001, 3001:4001)
+julia>  WinData, Log = WindowData(X, WinLen = 130, 
+			Overlap = 20)
+
+(Any[[1 1001 2001 3001; … ; 130 1130 2130 3130], 
+[111 1111 2111 3111; … ;  240 1240 2240 3240],
+[221 1221 2221 3221; … ;  350 1350 2350 3350], 
+[331 1331 2331 3331; … ;  460 1460 2460 3460], 
+[441 1441 2441 3441; … ;  570 1570 2570 3570],
+[551 1551 2551 3551; … ;  680 1680 2680 3680],
+[661 1661 2661 3661; … ;  790 1790 2790 3790], 
+[771 1771 2771 3771; … ;  900 1900 2900 3900]], 
+Dict{String, Any}(
+"DataType" => "multivariate matrix (4 vectors)", 
+"TotalWindows" => 8, 
+"WindowOverlap" => 20, 
+"Mode" => "exclude", 
+"WindowLength" => 130, 
+"DataLength" => 1001))
+\end{minted}
 
 
-
+%-----------------------------------------------------------------
+%-----------------------------------------------------------------
+%-----------------------------------------------------------------
+%-----------------------------------------------------------------
 
 \renewcommand\bibname{\textbf{References}}
 \begin{thebibliography}{9} 
@@ -3882,6 +4886,31 @@ Ricardo Espinosa, et al.,\\
 \emph{Two-dimensional EspEn: A New Approach to Analyze Image Texture by Irregularity},\\
 Entropy, 23:1261 (2021)
 
+\bibitem{MvCoSi1}
+Xiao, H.; Chanwimalueang, T.; Mandic, D.P., \\
+\emph{Multivariate Multiscale Cosine Similarity Entropy and Its Application to Examine Circularity Properties in Division Algebras},\\
+Entropy 2022, 24, 1287. 
+
+\bibitem{MvSamp1}
+Mosabber Uddin Ahmed, Danilo P. Mandic, 
+\emph{Multivariate multiscale entropy: A tool for complexity analysis of multichannel data}.,\\
+Physical Review E 84.6 (2011): 061918.
+
+\bibitem{MvSamp2}
+Ahmed Mosabber Uddin, Danilo P. Mandic, 
+\emph{Multivariate multiscale entropy analysis},\\
+IEEE signal processing letters 19.2 (2011): 91-94.
+
+\bibitem{MvFuzz1}
+Ahmed, Mosabber U., et al. \\
+\emph{A multivariate multiscale fuzzy entropy algorithm with application to uterine EMG complexity analysis}. \\
+Entropy 19.1 (2016): 2.
+
+\bibitem{MvDisp1}
+H Azami, A Fernández, J Escudero, \\
+\emph{Multivariate Multiscale Dispersion Entropy of Biomedical Times Series},\\
+Entropy 2019, 21, 913.
+
 
 
 
@@ -3904,47 +4933,53 @@ PLoS One 16(11):e0259448 (2021).
 \newpage
 \chapter{\textbf{Glossary of Function Syntax}}
 \chapterimage[width=16cm, height=3cm]{Chapter Banner2.png}
-\vspace{55mm}
+\vspace{25mm}
 
 \begin{description}[labelsep=1cm, labelwidth=2cm, nosep, style=multiline,leftmargin=3cm]\footnotesize
 
 \item[\texttt{Bins}]		Method for determining the optimum number of histogram bins \\ - [DistEn / XDistEn / DistEn2D]\\
-\item[\texttt{c}]		Number of desired symbols in the symbolic sequence \\ - [CondEn / DispEn / XCondEn / DispEn2D]\\
-\item[\texttt{EnType}]		Type of \textit{Base} or \textit{Cross-} entropy method to use for multiscale entropy analysis \\ - [MSobject]\\
+\item[\texttt{c}]		Number of desired symbols in the symbolic sequence \\ - [CondEn / DispEn / MvDispEn / XCondEn / DispEn2D]\\
+\item[\texttt{Data}]		Matrix of N rows ($> 10$) and M columns ($> 1$) representing the M sequences of a multivariate dataset. \\ - [MvSampEn / MvDispEn / MvFuzzEn / MvPermEn / MvCoSiEn]\\
+\item[\texttt{EnType}]		Type of \textit{Base}, \textit{Cross-} or \textit{Multivariate}  entropy method to use for multiscale entropy analysis \\ - [MSobject]\\
 \item[\texttt{F\_Num}]		 Numerator of Butterworth low-pass filter cutoff frequency where the cutoff frequency at each scale ($\tau$) becomes: $F_{c} = \frac{F_{Num}}{\tau}$  \\ - [rMSEn / rXMSEn]\\
 \item[\texttt{F\_Order}]		 Butterworth low-pass filter order \\ - [rMSEn / rXMSEn]\\
 \item[\texttt{Fluct}]		 Option to return fluctuation-based dispersion entropy \\ - [DispEn]\\
 \item[\texttt{Freqs}]		 Edge frequencies of the frequency band when estimating BandEn \\ - [SpecEn]\\
-\item[\texttt{Fx}]		 The type of fuzzy membership function \\ - [FuzzEn / XFuzzEn / FuzzEn2D]\\
+\item[\texttt{Fx}]		 The type of fuzzy membership function \\ - [FuzzEn / XFuzzEn / MvFuzzEn / FuzzEn2D]\\
 \item[\texttt{K}]		 The number of angular partitions in the second-order difference plot \\ - [PhasEn]\\
 \item[\texttt{Lock}]		 Option to lock/unlock the matrix size when estimating bidimensional entropies \\ - [SampEn2D / DistEn2D / DispEn2D / FuzzEn2D]\\
 \item[\texttt{Logx}]		 The base of the logarithm in the entropy formula  \\ - [All functions]\\
 \item[\texttt{Lvls}]		 Angular threshold levels \\ - [SlopEn]\\
-\item[\texttt{m}]		 Embedding dimension value \\ - [ApEn / SampEn / FuzzEn / K2En / PermEn / CondEn / DistEn / DispEn / SyDyEn / IncrEn / CoSiEn / SlopEn / BubbEn / XApEn / XSampEn / XFuzzEn / XCondEn / XK2En / XPermEn / XDistEn] \\
+\item[\texttt{m}]		 Embedding dimension value \\ - [ApEn / SampEn / FuzzEn / K2En / PermEn / CondEn / DistEn / DispEn / SyDyEn / IncrEn / CoSiEn / SlopEn / BubbEn / RangEn / DivEn / XApEn / XSampEn / XFuzzEn / XCondEn / XK2En / XPermEn / XDistEn] \\
+Vector of embedding dimension values \\ - [MvSampEn / MvFuzzEn / MvDispEn / MvPermEn / MvCoSiEn ]\\
 Number of grid partitions \\ - [GridEn]\\
-Size of sub-matrix for bidimensional entropy estimation \\ - [SampEn2D / FuzzEn2D / DistEn2D / DispEn2D]\\
-\item[\texttt{Mat}]		Image (matrix) for estimating bidimensional entropies \\ - [SampEn2D / DistEn2D / DispEn2D / FuzzEn2D]\\
-\item[\texttt{Methodx}]		Time series graining method for multiscale entropy analysis \\ - [MSEn / XMSEn]\\
+Size of sub-matrix for bidimensional entropy estimation \\ - [SampEn2D / FuzzEn2D / DistEn2D / DispEn2D / EspEn2D]\\
+\item[\texttt{Mat}]		Image (matrix) for estimating bidimensional entropies \\ - [SampEn2D / DistEn2D / DispEn2D / FuzzEn2D / EspEn2D]\\
+\item[\texttt{Methodx}]		Time series graining method for multiscale entropy analysis \\ - [MSEn / XMSEn / MvMSEn]\\
+Option for multivariate dispersion entropy algorithm \\
+- [MvDispEn]\\
 \item[\texttt{N}]		Number of signal points to use for fast Fourier transform. If \texttt{\textbf{N}} is shorter than the length of \texttt{\textbf{Sig}}, only the first \texttt{\textbf{N}} points are used. When \texttt{\textbf{N}} is greater than the length of \texttt{\textbf{Sig}}, the signal is zero-padded to length \texttt{\textbf{N}} \\ - [SpecEn / XSpecEn]\\
 \item[\texttt{Norm}]		Normalization of the returned entropy value (method dependent) \\
- - [PermEn / CondEn / DistEn / SpecEn / DispEn / SyDyEn / CoSiEn / PhasEn / IncrEn / SlopEn / XCondEn /XDistEn / XSpecEn / DistEn2D / DispEn2D / PermEn2D]\\
+ - [PermEn / CondEn / DistEn / SpecEn / DispEn / SyDyEn / CoSiEn / PhasEn / IncrEn / SlopEn / XCondEn /XDistEn / XSpecEn / DistEn2D / DispEn2D / PermEn2D / MvPermEn / MvDispEn]\\
+ Normalization of input data \\
+ - [MvCoSiEn / MvSampEn / MvFuzzEn]\\
 \item[\texttt{Plotx}]		Option to return a plot with the entropy value (method dependent) \\
- - [PhasEn / GridEn / MSEn / XMSEn / cMSEn / rMSEn / cXMSEn / rXMSEn / hMSEn / hXMSEn]\\
+ - [PhasEn / GridEn / MSEn / XMSEn / cMSEn / rMSEn / cXMSEn / rXMSEn / hMSEn / hXMSEn / MvMSEn / cMvMSEn]\\
 \item[\texttt{ps}]		Percentage similarity \\  - [EspEn2d]\\
-\item[\texttt{r}]		Distance threshold for matching vectors \\  - [ApEn / SampEn / XApEn / XSampEn / SampEn2D / EspEn2D]\\
- Angular threshold for matching vectors \\  - [CoSiEn]\\
- Parameters for the fuzzy membership function \\ - [FuzzEn / FuzzEn2D / XFuzzEn] \\
+\item[\texttt{r}]		Distance threshold for matching vectors \\  - [ApEn / SampEn / MvSampEn / XApEn / XSampEn / SampEn2D / EspEn2D]\\
+ Angular threshold for matching vectors \\  - [CoSiEn / MvCoSiEn]\\
+ Parameters for the fuzzy membership function \\ - [FuzzEn / FuzzEn2D / XFuzzEn / MvFuzzEn] \\
 \item[\texttt{R}]		Quantifying resolution \\  - [IncrEn]\\
 \item[\texttt{RadNew}]		Option to rescale the distance matching threshold at each temporal scale for multiscale entropy analysis \\  - [MSEn / cMSEn / rMSEn / hMSEn / XMSEn / cXMSEn / rXMSEn / hXMSEn]\\
-\item[\texttt{Refined}]		Option to perform refined-composite multiscale entropy \\  - [rMSEn / rXMSEn]\\
+\item[\texttt{Refined}]		Option to perform refined-composite multiscale entropy \\  - [cMSEn / cXMSEn / cMvMSEn]\\
 \item[\texttt{rho}]		Tuning parameter for estimating fine-sorted dispersion entropy \\  - [DispEn]\\
 \item[\texttt{S}]		Number of slices (s1, s2) \\  - [EnofEn]\\
 \item[\texttt{Scales}]		Number of temporal scales for performing multiscale entropy analysis \\  - [All multiscale methods]\\
 \item[\texttt{Sig}]		Time series signal(s) \\ - [All \textit{Base} and \textit{Cross-}entropy methods]\\
 \item[\texttt{tau}]		Time delay  \\ - [All \textit{Base} and \textit{Cross-}entropy methods]\\
-\item[\texttt{Typex}]		Type of permutation entropy method  \\ - [PermEn]\\
-Type of symbolic sequence transform method  \\ - [DispEn / SyDyEn / DispEn2D]\\
-\item[\texttt{tpx}]		Tuning parameter for the permutation entropy method specified by \texttt{\textbf{Typex}} \\ - [PermEn]\\
+\item[\texttt{Typex}]		Type of permutation entropy method  \\ - [PermEn / MvPermEn]\\
+Type of symbolic sequence transform method  \\ - [DispEn / SyDyEn / DispEn2D / MvDispEn]\\
+\item[\texttt{tpx}]		Tuning parameter for the permutation entropy method specified by \texttt{\textbf{Typex}} \\ - [PermEn / MvPermEn]\\
 \item[\texttt{Vcp}] 	Option to estimate the variance of the conditional probabilities in the sample entropy estimate.\\ - [SampEn, XSampEn]
 
 

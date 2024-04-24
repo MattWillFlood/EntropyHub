@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{  }\PYG{n}{X}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{o}{:}\PYG{l+m+mi}{1001}
+\PYG{n}{julia}\PYG{o}{\PYGZgt{}}\PYG{+w}{  }\PYG{n}{WinData}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Log}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{WindowData}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{WinLen}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{75}\PYG{p}{)}
+
+\PYG{p}{(}\PYG{k+kt}{Any}\PYG{p}{[[}\PYG{l+m+mi}{1}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{…}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{74}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{75}\PYG{p}{;;],}
+\PYG{p}{[}\PYG{l+m+mi}{76}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{77}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{…}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{149}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{150}\PYG{p}{;;],}
+\PYG{p}{[}\PYG{l+m+mi}{151}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{152}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{…}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{224}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{225}\PYG{p}{;;],}
+\PYG{p}{[}\PYG{l+m+mi}{226}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{227}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{…}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{299}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{300}\PYG{p}{;;],}
+\PYG{p}{[}\PYG{l+m+mi}{301}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{302}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{…}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{374}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{375}\PYG{p}{;;],}
+\PYG{p}{[}\PYG{l+m+mi}{376}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{377}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{…}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{449}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{450}\PYG{p}{;;],}
+\PYG{p}{[}\PYG{l+m+mi}{451}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{452}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{…}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{524}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{525}\PYG{p}{;;],}
+\PYG{p}{[}\PYG{l+m+mi}{526}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{527}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{…}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{599}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{600}\PYG{p}{;;],}
+\PYG{p}{[}\PYG{l+m+mi}{601}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{602}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{…}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{674}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{675}\PYG{p}{;;],}
+\PYG{p}{[}\PYG{l+m+mi}{676}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{677}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{…}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{749}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{750}\PYG{p}{;;],}
+\PYG{p}{[}\PYG{l+m+mi}{751}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{752}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{…}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{824}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{825}\PYG{p}{;;],}
+\PYG{p}{[}\PYG{l+m+mi}{826}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{827}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{…}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{899}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{900}\PYG{p}{;;],}
+\PYG{p}{[}\PYG{l+m+mi}{901}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{902}\PYG{p}{;}\PYG{+w}{ }\PYG{o}{…}\PYG{+w}{ }\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{974}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{975}\PYG{p}{;;]],}
+\PYG{k+kt}{Dict}\PYG{p}{\PYGZob{}}\PYG{k+kt}{String}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{Any}\PYG{p}{\PYGZcb{}(}
+\PYG{l+s}{\PYGZdq{}DataType\PYGZdq{}}\PYG{+w}{ }\PYG{o}{=\PYGZgt{}}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}single univariate vector (1 sequence)\PYGZdq{}}\PYG{p}{,}
+\PYG{l+s}{\PYGZdq{}TotalWindows\PYGZdq{}}\PYG{+w}{ }\PYG{o}{=\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{13}\PYG{p}{,}
+\PYG{l+s}{\PYGZdq{}WindowOverlap\PYGZdq{}}\PYG{+w}{ }\PYG{o}{=\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}
+\PYG{l+s}{\PYGZdq{}Mode\PYGZdq{}}\PYG{+w}{ }\PYG{o}{=\PYGZgt{}}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}exclude\PYGZdq{}}\PYG{p}{,}
+\PYG{l+s}{\PYGZdq{}WindowLength\PYGZdq{}}\PYG{+w}{ }\PYG{o}{=\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{75}\PYG{p}{,}
+\PYG{l+s}{\PYGZdq{}DataLength\PYGZdq{}}\PYG{+w}{ }\PYG{o}{=\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{1001}\PYG{p}{))}
+\end{Verbatim}

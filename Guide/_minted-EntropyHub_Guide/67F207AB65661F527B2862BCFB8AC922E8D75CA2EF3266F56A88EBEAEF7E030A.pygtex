@@ -1,0 +1,41 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{X}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{l+m+mi}{1000}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{1001}\PYG{p}{:}\PYG{l+m+mi}{2000}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{2001}\PYG{p}{:}\PYG{l+m+mi}{3000}\PYG{p}{;}\PYG{+w}{ }\PYG{l+m+mi}{3001}\PYG{p}{:}\PYG{l+m+mi}{4000}\PYG{p}{]}\PYG{o}{\PYGZsq{}}\PYG{+w}{ }\PYG{p}{;}
+\PYG{p}{[}\PYG{n}{WinData}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Log}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{WindowData}\PYG{p}{(}\PYG{n}{X}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{WinLen}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{130}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{Overlap}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{l+m+mi}{20}\PYG{p}{)}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{WinData}\PYG{+w}{ }\PYG{p}{=}
+\PYG{+w}{    }\PYG{p}{\PYGZob{}[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1001}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2001}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3001}
+\PYG{+w}{      }\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1002}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2002}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3002}
+\PYG{+w}{      }\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1003}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2003}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3003}
+\PYG{+w}{            }\PYG{k}{...}
+\PYG{+w}{      }\PYG{l+m+mi}{128}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1128}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2128}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3128}
+\PYG{+w}{      }\PYG{l+m+mi}{129}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1129}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2129}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3129}
+\PYG{+w}{      }\PYG{l+m+mi}{130}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1130}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2130}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3130}\PYG{p}{];}
+\PYG{+w}{     }\PYG{p}{[}\PYG{l+m+mi}{111}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1111}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2111}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3111}
+\PYG{+w}{      }\PYG{l+m+mi}{112}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1112}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2112}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3112}
+\PYG{+w}{      }\PYG{l+m+mi}{113}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1113}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2113}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3113}
+\PYG{+w}{            }\PYG{k}{...}
+\PYG{+w}{      }\PYG{l+m+mi}{238}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1238}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2238}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3238}
+\PYG{+w}{      }\PYG{l+m+mi}{239}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1239}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2239}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3239}
+\PYG{+w}{      }\PYG{l+m+mi}{240}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1240}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2240}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3240}\PYG{p}{];}
+\PYG{+w}{        }\PYG{p}{:}\PYG{+w}{     }\PYG{p}{:}\PYG{+w}{       }\PYG{p}{:}\PYG{+w}{     }\PYG{p}{:}
+\PYG{+w}{        }\PYG{p}{:}\PYG{+w}{     }\PYG{p}{:}\PYG{+w}{       }\PYG{p}{:}\PYG{+w}{     }\PYG{p}{:}
+\PYG{+w}{        }\PYG{p}{:}\PYG{+w}{     }\PYG{p}{:}\PYG{+w}{       }\PYG{p}{:}\PYG{+w}{     }\PYG{p}{:}
+\PYG{+w}{        }\PYG{p}{:}\PYG{+w}{     }\PYG{p}{:}\PYG{+w}{       }\PYG{p}{:}\PYG{+w}{     }\PYG{p}{:}
+\PYG{+w}{     }\PYG{p}{[}\PYG{l+m+mi}{771}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1771}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2771}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3771}
+\PYG{+w}{      }\PYG{l+m+mi}{772}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1772}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2772}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3772}
+\PYG{+w}{      }\PYG{l+m+mi}{773}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1773}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2773}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3773}
+\PYG{+w}{            }\PYG{k}{...}
+\PYG{+w}{      }\PYG{l+m+mi}{898}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1898}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2898}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3898}
+\PYG{+w}{      }\PYG{l+m+mi}{899}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1899}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2899}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3899}
+\PYG{+w}{      }\PYG{l+m+mi}{900}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{1900}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{2900}\PYG{p}{,}\PYG{+w}{  }\PYG{l+m+mi}{3900}\PYG{p}{]\PYGZcb{}}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{Log}\PYG{+w}{ }\PYG{p}{=}
+\PYG{+w}{     }\PYG{n+nb}{struct}\PYG{+w}{ }\PYG{n}{with}\PYG{+w}{ }\PYG{n}{fields}\PYG{p}{:}
+\PYG{+w}{     }\PYG{n}{DataType}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}multivariate matrix (4 vectors)\PYGZdq{}}
+\PYG{+w}{   }\PYG{n}{DataLength}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mi}{1000}
+\PYG{+w}{ }\PYG{n}{WindowLength}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mi}{130}
+\PYG{n}{WindowOverlap}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mi}{20}
+\PYG{+w}{ }\PYG{n}{TotalWindows}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mi}{8}
+\PYG{+w}{         }\PYG{n}{Mode}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}exlcude\PYGZdq{}}
+
+\end{Verbatim}

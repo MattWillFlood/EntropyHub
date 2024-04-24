@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{[}\PYG{n}{MDisp}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{RDE}\PYG{p}{]}\PYG{+w}{ }\PYG{p}{=}\PYG{+w}{ }\PYG{n}{MvDispEn}\PYG{p}{(}\PYG{n}{Data}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}m\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{],}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}c\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{7}\PYG{p}{)}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{MDisp}\PYG{+w}{ }\PYG{p}{=}
+\PYG{+w}{    }\PYG{l+m+mf}{6.9227345}
+
+\PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{RDE}\PYG{+w}{ }\PYG{p}{=}
+\PYG{+w}{    }\PYG{l+m+mf}{0.0009856}
+\end{Verbatim}
