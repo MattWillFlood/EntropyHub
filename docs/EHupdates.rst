@@ -13,6 +13,38 @@ Latest Updates
 
 ..............................................................
 
+April 2024
+############
+
+Version 2.0 is out now!
+=======================
+
+| Since the introduction of multivariate entropy methods over a decade ago, the utilization of multivariate and multivariate multiscale entropy methods has seen a notable increase in recent years. 
+| Systems comprising multiple dynamically related components are ubiquitous in many research fields and multivariate entropies provide a powerful method for estimating the complexity of such systems.
+| With EntropyHub v2.0, you can now apply many multivariate and multivariate multiscale methods with the ease, robust functionality and extensive documentation for which EntropyHub is acclaimed.
+
+    **+ New multivariate methods**
+        | Five new multivariate entropy functions incorporating several method-specific variations
+        | + `Multivariate Sample Entropy <https://journals.aps.org/pre/abstract/10.1103/PhysRevE.84.061918>`_ 
+        | + `Multivariate Fuzzy Entropy <https://www.mdpi.com/1099-4300/19/1/2>`_ [++ many fuzzy functions]
+        | + `Multivariate Dispersion Entropy <https://www.mdpi.com/1099-4300/21/9/913>`_ [++ many symbolic sequence transforms]
+        | + `Multivariate Cosine Similarity Entropy <https://www.mdpi.com/1099-4300/24/9/1287>`_
+        | + Multivariate Permutation Entropy  [++ *amplitude-aware*, *edge*, *phase*, *weighted* and *modified* variants]
+
+    **+ New multivariate multiscale methods**
+        | Two new multivariate multiscale entropy functions
+        | + `Multivariate Multiscale Entropy <https://journals.aps.org/pre/abstract/10.1103/PhysRevE.84.061918>`_ [++ coarse, modified and generalized graining procedures]
+        | + `Composite and Refined-composite Multivariate Multiscale Entropy <https://link.springer.com/article/10.1007/s11517-017-1647-5>`_ 
+
+    **+ Extra signal processing tools**
+        | + **WindowData()** is a new function that allows users to segment data (univariate or multivariate time series) into windows with/without overlapping samples!
+        | This allows users to calculate entropy on subsequences of their data to perform analyses with greater time resolution.
+
+| Other little fixes...
+   
+    **Docs edits**
+        | - Examples in the www.EntropyHub.xyz documentation were updated to match the latest package syntax.
+
 
 March 2024
 ############
@@ -144,10 +176,10 @@ December 2021
 
 **Version Update - EntropyHub v0.2**
 
-EntropyHub v0.2 includes two new bidimensional entropy methods:      
+    **+ EntropyHub v0.2 includes two new bidimensional entropy methods:**          
 
-| * `Bidimensional permutation entropy (PermEn2D) <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0040689>`_         
-| * `Bidimensional Espinosa entropy (EspEn2D) <https://www.mdpi.com/1099-4300/23/10/1261>`_
+    | + `Bidimensional permutation entropy (PermEn2D) <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0040689>`_         
+    | + `Bidimensional Espinosa entropy (EspEn2D) <https://www.mdpi.com/1099-4300/23/10/1261>`_
 
 ..............................................................
 

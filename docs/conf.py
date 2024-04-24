@@ -4,7 +4,7 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os, sys
-sys.path.insert(0, os.path.abspath('../EntropyHubPy/build/lib/'))
+sys.path.insert(0, os.path.abspath('../EntropyHubPy/'))
 import sphinx_rtd_theme
 
 def setup(app):
@@ -17,7 +17,7 @@ project = 'EntropyHub'
 copyright = '2024, Matthew W. Flood'
 author = 'Matthew W. Flood'
 # The full version, including alpha/beta/rc tags
-release = '1.0'
+release = '2.0'
 
 # -- General configuration ---------------------------------------------------
 extensions = [ 'sphinx_rtd_theme', 'sphinx.ext.autodoc',

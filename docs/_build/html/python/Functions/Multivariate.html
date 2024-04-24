@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multivariate Entropies &mdash; EntropyHub 2.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bidimensional Entropies" href="Bidimensional.html" />
+    <link rel="prev" title="Cross Entropies" href="Cross.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            EntropyHub
+              <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Home.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../EHupdates.html">Latest Updates</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Publications.html">Publications</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../matlab/EHmatlab.html">EntropyHub - MatLab</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../matlab/matAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matBase.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matCross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultivariateMultiscale.html"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matOther.html"> Other Functions</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../matlab/matexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex12.html"> Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex13.html"> Ex. 13 - Windowing data with WindowData()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../EHpython.html">EntropyHub - Python</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../pyAPI.html">API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Base.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Cross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Bidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Multiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="MultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="MultivariateMultiscale.html"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Other.html"> Other Functions</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pyexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex12.html"> Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex13.html"> Ex. 13 - Windowing data with WindowData()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/Examples/Examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">EntropyHub</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../EHpython.html">EntropyHub: Python</a></li>
+          <li class="breadcrumb-item"><a href="../pyAPI.html">Python Functions:</a></li>
+      <li class="breadcrumb-item active">Multivariate Entropies</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/MattWillFlood/EntropyHub/blob/main/docs/python/Functions/Multivariate.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="multivariate-entropies">
+<span id="pymulti"></span><h1>Multivariate Entropies<a class="headerlink" href="#multivariate-entropies" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="functions-for-estimating-the-entropy-of-a-multivariate-dataset">
+<h2>Functions for estimating the entropy of a multivariate dataset.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-multivariate-dataset" title="Permalink to this heading"></a></h2>
+<p><em>The following functions also form the base entropy method used by</em> <strong>multivariate multiscale entropy</strong> <em>functions.</em></p>
+<hr class="docutils" />
+<p>These functions are directly available when EntropyHub is imported:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">EntropyHub</span> <span class="k">as</span> <span class="nn">EH</span>
+
+<span class="nb">dir</span><span class="p">(</span><span class="n">EH</span><span class="p">)</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<span class="target" id="module-EntropyHub"></span><dl class="py function">
+<dt class="sig sig-object py" id="EntropyHub.MvCoSiEn">
+<span class="sig-name descname"><span class="pre">MvCoSiEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvCoSiEn" title="Permalink to this definition"></a></dt>
+<dd><p>MvCoSiEn  estimates the multivariate cosine similarity entropy of a multivariate dataset.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MCoSi</span><span class="p">,</span> <span class="n">Bm</span> <span class="o">=</span> <span class="n">MvCoSiEn</span><span class="p">(</span><span class="n">Data</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the multivariate cosine similarity entropy estimate (<code class="docutils literal notranslate"><span class="pre">MCoSi</span></code>)
+and the corresponding global probabilities (<code class="docutils literal notranslate"><span class="pre">Bm</span></code>) estimated for the 
+M multivariate sequences in <code class="docutils literal notranslate"><span class="pre">Data</span></code> using the default parameters: 
+embedding dimension = 2*np.ones(M,1), time delay = np.ones(M,1), 
+angular threshold = 0.1, logarithm = 2, data normalization = none,</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To maximize the number of points in the embedding process, this algorithm 
+uses N-max(m*tau) delay vectors and <strong>not</strong> N-max(m)*max(tau) as employed 
+in [1][2].</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MCoSi</span><span class="p">,</span> <span class="n">Bm</span> <span class="o">=</span> <span class="n">MvCoSiEn</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the multivariate cosine similarity entropy estimates (<code class="docutils literal notranslate"><span class="pre">MCoSi</span></code>) 
+estimated from the M multivariate data sequences in <code class="docutils literal notranslate"><span class="pre">Data</span></code> using the 
+specified keyword arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">Data<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Multivariate dataset, NxM matrix of N (&gt;10) observations (rows) and M (cols) univariate data sequences</p></li>
+</ul>
+</dd>
+<dt class="field-even">m<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Embedding Dimension, a vector of M positive integers</p></li>
+</ul>
+</dd>
+<dt class="field-odd">tau<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Time Delay, a vector of M positive integers</p></li>
+</ul>
+</dd>
+<dt class="field-even">r<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Angular threshold, a value in range [0 &lt; <code class="docutils literal notranslate"><span class="pre">r</span></code> &lt; 1]</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Logx<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar (enter 0 for natural log)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Norm<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">Data</span></code>, one of the following integers:</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">0<span class="colon">:</span></dt>
+<dd class="field-odd"><p>no normalisation - default</p>
+</dd>
+<dt class="field-even">1<span class="colon">:</span></dt>
+<dd class="field-even"><p>remove median(<code class="docutils literal notranslate"><span class="pre">Data</span></code>) to get zero-median series</p>
+</dd>
+<dt class="field-odd">2<span class="colon">:</span></dt>
+<dd class="field-odd"><p>remove mean(<code class="docutils literal notranslate"><span class="pre">Data</span></code>) to get zero-mean series</p>
+</dd>
+<dt class="field-even">3<span class="colon">:</span></dt>
+<dd class="field-even"><p>normalises each sequence in <code class="docutils literal notranslate"><span class="pre">Data</span></code> to unit variance and zero mean</p>
+</dd>
+<dt class="field-odd">4<span class="colon">:</span></dt>
+<dd class="field-odd"><p>normalises each sequence in <code class="docutils literal notranslate"><span class="pre">Data</span></code> values to range [-1 1]</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">CoSiEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvDispEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvPermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] H. Xiao, T. Chanwimalueang and D. P. Mandic, </dt><dd><p>“Multivariate Multiscale Cosine Similarity Entropy” 
+IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP),
+pp. 5997-6001, doi: 10.1109/ICASSP43922.2022.9747282.</p>
+</dd>
+<dt>[2] Xiao, H.; Chanwimalueang, T.; Mandic, D.P., </dt><dd><p>“Multivariate Multiscale Cosine Similarity Entropy and Its 
+Application to Examine Circularity Properties in Division Algebras.”
+Entropy 2022, 24, 1287.</p>
+</dd>
+<dt>[3] Ahmed Mosabber Uddin, Danilo P. Mandic</dt><dd><p>“Multivariate multiscale entropy: A tool for complexity
+analysis of multichannel data.”
+Physical Review E 84.6 (2011): 061918.</p>
+</dd>
+<dt>[4] Theerasak Chanwimalueang and Danilo Mandic,</dt><dd><p>“Cosine similarity entropy: Self-correlation-based complexity
+analysis of dynamical systems.”
+Entropy 
+19.12 (2017): 652.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EntropyHub.MvDispEn">
+<span class="sig-name descname"><span class="pre">MvDispEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NCDF'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Methodx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'v1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvDispEn" title="Permalink to this definition"></a></dt>
+<dd><p>MvDispEn  estimates the multivariate dispersion entropy of a multivariate dataset.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MDisp</span><span class="p">,</span> <span class="n">RDE</span> <span class="o">=</span> <span class="n">MvDispEn</span><span class="p">(</span><span class="n">Data</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the multivariate dispersion entropy estimate (<code class="docutils literal notranslate"><span class="pre">MDisp</span></code>) and
+the reverse dispersion entropy (<code class="docutils literal notranslate"><span class="pre">RDE</span></code>) for the M multivariate sequences 
+in <code class="docutils literal notranslate"><span class="pre">Data</span></code> using the default parameters:
+embedding dimension = 2*np.ones(M,1), time delay = np.ones(M,1), # symbols = 3, 
+algorithm method = ‘v1’ (see below), data transform = normalised cumulative density function (ncdf)
+logarithm = natural, data normalization = true,</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>By default, <code class="docutils literal notranslate"><span class="pre">MvDispEn</span></code> uses the method termed <code class="docutils literal notranslate"><span class="pre">mvDEii</span></code> in [1],
+which follows the original multivariate embedding approach of Ahmed &amp; Mandic [2].
+The <code class="docutils literal notranslate"><span class="pre">v1</span></code> method therefore returns a singular entropy estimate.</p>
+<p>If the <code class="docutils literal notranslate"><span class="pre">v2</span></code> method is selected (<code class="docutils literal notranslate"><span class="pre">Methodx=='v2'</span></code>), the main method
+outlined in [1] termed <code class="docutils literal notranslate"><span class="pre">mvDE</span></code> is applied. In this case, entropy is estimated
+using each combination of multivariate delay vectors with lengths 1:max(m),
+with each entropy value returned accordingly. See [1] for more info.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MDisp</span><span class="p">,</span> <span class="n">RDE</span> <span class="o">=</span> <span class="n">MvDispEn</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the multivariate dispersion entropy estimate (<code class="docutils literal notranslate"><span class="pre">MDisp</span></code>) for the M
+multivariate data sequences in <code class="docutils literal notranslate"><span class="pre">Data</span></code> using the specified keyword arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">Data<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Multivariate dataset, NxM matrix of N (&gt;10) observations (rows) and M (cols) univariate data sequences</p></li>
+</ul>
+</dd>
+<dt class="field-even">m<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Embedding Dimension, a vector of M positive integers</p></li>
+</ul>
+</dd>
+<dt class="field-odd">tau<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Time Delay, a vector of M positive integers</p></li>
+</ul>
+</dd>
+<dt class="field-even">c<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Number of symbols in transform, an integer &gt; 1</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Methodx<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>The method of multivariate dispersion entropy estimation as outlined in [1], either:</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'v1'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><p>employs the method consistent with the original multivariate 
+embedding approach of Ahmed &amp;  Mandic [2], termed <code class="docutils literal notranslate"><span class="pre">mvDEii</span></code> in [1]. (default)</p>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'v2'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><p>employs the main method derived in [1],  termed <code class="docutils literal notranslate"><span class="pre">mvDE</span></code>.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Typex<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Type of data-to-symbolic sequence transform, one of the following strings   {<code class="docutils literal notranslate"><span class="pre">'linear'</span></code>, <code class="docutils literal notranslate"><span class="pre">'kmeans'</span></code>, <code class="docutils literal notranslate"><span class="pre">'ncdf'</span></code>, <code class="docutils literal notranslate"><span class="pre">'equal'</span></code>}</p></li>
+</ul>
+<p>See the <cite>EntropyHub Guide</cite> for more info on these transforms.</p>
+</dd>
+<dt class="field-odd">Logx<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar</p></li>
+</ul>
+</dd>
+<dt class="field-even">Norm<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">MDisp</span></code> and <code class="docutils literal notranslate"><span class="pre">RDE</span></code> values, a boolean:</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">false<span class="colon">:</span></dt>
+<dd class="field-odd"><p>no normalisation (default)</p>
+</dd>
+<dt class="field-even">true<span class="colon">:</span></dt>
+<dd class="field-even"><p>normalises w.r.t number of possible dispersion patterns (<code class="docutils literal notranslate"><span class="pre">c^m</span></code>).</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">DispEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvPermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
+</dd>
+<dt class="field-even">References<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] H Azami, A Fernández, J Escudero</dt><dd><p>“Multivariate Multiscale Dispersion Entropy of Biomedical Times Series”
+Entropy 2019, 21, 913.</p>
+</dd>
+<dt>[2] Ahmed Mosabber Uddin, Danilo P. Mandic</dt><dd><p>“Multivariate multiscale entropy: A tool for complexity
+analysis of multichannel data.”
+Physical Review E 84.6 (2011): 061918.</p>
+</dd>
+<dt>[3] Mostafa Rostaghi and Hamed Azami,</dt><dd><p>“Dispersion entropy: A measure for time-series analysis.” 
+IEEE Signal Processing Letters 
+23.5 (2016): 610-614.</p>
+</dd>
+<dt>[4] Hamed Azami and Javier Escudero,</dt><dd><p>“Amplitude-and fluctuation-based dispersion entropy.” 
+Entropy 
+20.3 (2018): 210.</p>
+</dd>
+<dt>[5] Li Yuxing, Xiang Gao and Long Wang,</dt><dd><p>“Reverse dispersion entropy: A new complexity measure for sensor signal.” 
+Sensors 
+19.23 (2019): 5203.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EntropyHub.MvFuzzEn">
+<span class="sig-name descname"><span class="pre">MvFuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.2,</span> <span class="pre">2.0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvFuzzEn" title="Permalink to this definition"></a></dt>
+<dd><p>MvFuzzEn  estimates the multivariate fuzzy entropy of a multivariate dataset.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MFuzz</span><span class="p">,</span> <span class="n">B0</span><span class="p">,</span> <span class="n">Bt</span><span class="p">,</span> <span class="n">B1</span> <span class="o">=</span> <span class="n">MvFuzzEn</span><span class="p">(</span><span class="n">Data</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the multivariate fuzzy entropy estimate (<code class="docutils literal notranslate"><span class="pre">MFuzz</span></code>) and the 
+average vector distances (<code class="docutils literal notranslate"><span class="pre">m</span></code>: <code class="docutils literal notranslate"><span class="pre">B0</span></code>; joint total 
+<code class="docutils literal notranslate"><span class="pre">m+1</span></code> subspace: <code class="docutils literal notranslate"><span class="pre">Bt</span></code>; all possible <code class="docutils literal notranslate"><span class="pre">m+1</span></code> subspaces: <code class="docutils literal notranslate"><span class="pre">B1</span></code>),
+from the M multivariate sequences in <code class="docutils literal notranslate"><span class="pre">Data</span></code> using the default parameters: 
+embedding dimension = 2*np.ones(M,1), time delay = np.ones(M,1), 
+fuzzy membership function = “default”, fuzzy function parameters= [0.2, 2],
+logarithm = natural, data normalization = false,</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The entropy value returned as <code class="docutils literal notranslate"><span class="pre">MFuzz</span></code> is estimated using the “full” 
+method [i.e.  -log(Bt/B0)] which compares delay vectors across all possible <code class="docutils literal notranslate"><span class="pre">m+1</span></code> 
+expansions of the embedding space as applied in [1][3]. Contrary to
+conventional definitions of sample entropy, this method does not provide a
+lower bound of 0!!
+Thus, it is possible to obtain negative entropy values for multivariate 
+fuzzy entropy, even for stochastic processes…</p>
+<p>Alternatively, one can calculate <code class="docutils literal notranslate"><span class="pre">MFuzz</span></code> via the “naive” method, 
+which ensures a lower bound of 0, by using the average vector distances
+for an individual <code class="docutils literal notranslate"><span class="pre">m+1</span></code> subspace (B1) [e.g. -log(B1(1)/B0)],
+or the average for all <code class="docutils literal notranslate"><span class="pre">m+1</span></code> subspaces [i.e. -log(mean(B1)/B0)].</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To maximize the number of points in the embedding process, this algorithm 
+uses N-max(m*tau) delay vectors and <strong>not</strong> N-max(m)*max(tau) as employed 
+in [1] and [3].</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MFuzz</span><span class="p">,</span> <span class="n">B0</span><span class="p">,</span> <span class="n">Bt</span><span class="p">,</span> <span class="n">B1</span> <span class="o">=</span> <span class="n">MvFuzzEn</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the multivariate fuzzy entropy estimates (<code class="docutils literal notranslate"><span class="pre">MFuzz</span></code>) estimated 
+from the M multivariate data sequences in <code class="docutils literal notranslate"><span class="pre">Data</span></code> using the specified
+keyword arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">Data<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Multivariate dataset, NxM matrix of N (&gt;10) observations (rows) and M (cols) univariate data sequences</p></li>
+</ul>
+</dd>
+<dt class="field-even">m<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Embedding Dimension, a vector of M positive integers</p></li>
+</ul>
+</dd>
+<dt class="field-odd">tau<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Time Delay, a vector of M positive integers</p></li>
+</ul>
+</dd>
+<dt class="field-even">Fx<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Fuzzy function name, one of the following strings:</p></li>
+</ul>
+<p>{<code class="docutils literal notranslate"><span class="pre">'sigmoid'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modsampen'</span></code>, <code class="docutils literal notranslate"><span class="pre">'default'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gudermannian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'bell'</span></code>, <code class="docutils literal notranslate"><span class="pre">'triangular'</span></code>, <code class="docutils literal notranslate"><span class="pre">'trapezoidal1'</span></code>, <code class="docutils literal notranslate"><span class="pre">'trapezoidal2'</span></code>, <code class="docutils literal notranslate"><span class="pre">'z_shaped'</span></code>, <code class="docutils literal notranslate"><span class="pre">'gaussian'</span></code>, <code class="docutils literal notranslate"><span class="pre">'constgaussian'</span></code>}</p>
+</dd>
+<dt class="field-odd">r<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Fuzzy function parameters, a 1 element scalar or a 2 element vector of positive values. The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy  function are defined as follows  (default: [.2 2])</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">sigmoid<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>r(1) = divisor of the exponential argument</p></li>
+<li><p>r(2) = value subtracted from argument (pre-division)</p></li>
+</ul>
+</dd>
+<dt class="field-even">modsampen<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>r(1) = divisor of the exponential argument</p></li>
+<li><p>r(2) = value subtracted from argument (pre-division)</p></li>
+</ul>
+</dd>
+<dt class="field-odd">default<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>r(1) = divisor of the exponential argument</p></li>
+<li><p>r(2) = argument exponent (pre-division)</p></li>
+</ul>
+</dd>
+<dt class="field-even">gudermannian<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>r  = a scalar whose value is the numerator of argument to gudermannian function - GD(x) = atan(tanh(r/x)). 
+GD(x) is normalised to have a maximum value of 1.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">triangular<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>r = a positive scalar whose value is the threshold 
+(corner point) of the triangular function.</p></li>
+</ul>
+</dd>
+<dt class="field-even">trapezoidal1<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>r = a positive scalar whose value corresponds
+to the upper (2r) and lower (r) corner points of the trapezoid.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">trapezoidal2<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>r(1) = a value corresponding to the upper corner point of the trapezoid.</p></li>
+<li><p>r(2) = a value corresponding to the lower corner point of the trapezoid.</p></li>
+</ul>
+</dd>
+<dt class="field-even">z_shaped<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>r = a scalar whose value corresponds to the
+upper (2r) and lower (r) corner points of the z-shape.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">bell<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>r(1) = divisor of the distance value</p></li>
+<li><p>r(2) = exponent of generalized bell-shaped function</p></li>
+</ul>
+</dd>
+<dt class="field-even">gaussian<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>r = a scalar whose value scales the slope of the Gaussian curve.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">constgaussian<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>r = a scalar whose value defines the lower 
+threshod and shape of the Gaussian curve.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Norm<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Normalisation of all M sequences to unit variance, a boolean</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Logx<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar  [default: natural]</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<p>For further information on the keyword arguments, see the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">See also<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvPermEn</span></code>.</p>
+</dd>
+<dt class="field-even">References<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Ahmed, Mosabber U., et al. </dt><dd><p>“A multivariate multiscale fuzzy entropy algorithm with application
+to uterine EMG complexity analysis.” 
+Entropy 19.1 (2016): 2.</p>
+</dd>
+<dt>[2] Azami, Alberto Fernández, Javier Escudero. </dt><dd><p>“Refined multiscale fuzzy entropy based on standard deviation for 
+biomedical signal analysis.” 
+Medical &amp; biological engineering &amp; computing 55 (2017): 2037-2052.</p>
+</dd>
+<dt>[3] Ahmed Mosabber Uddin, Danilo P. Mandic</dt><dd><p>“Multivariate multiscale entropy analysis.”
+IEEE signal processing letters 19.2 (2011): 91-94.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EntropyHub.MvPermEn">
+<span class="sig-name descname"><span class="pre">MvPermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tpx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvPermEn" title="Permalink to this definition"></a></dt>
+<dd><p>MvPermEn  estimates the multivariate permutation entropy of a multivariate dataset.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MPerm</span><span class="p">,</span> <span class="n">MPnorm</span> <span class="o">=</span> <span class="n">MvPermEn</span><span class="p">(</span><span class="n">Data</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the multivariate permutation entropy estimate (<code class="docutils literal notranslate"><span class="pre">MPerm</span></code>) and
+the normalized permutation entropy for the M multivariate sequences in
+<code class="docutils literal notranslate"><span class="pre">Data</span></code> using the default parameters:
+embedding dimension = 2*np.ones(M,1), time delay = np.ones(M,1), 
+logarithm = 2, normalisation = w.r.t #symbols (sum(<code class="docutils literal notranslate"><span class="pre">m-1</span></code>))</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The multivariate permutation entropy algorithm implemented here uses
+multivariate embedding based on Takens’ embedding theorem, and follows
+the methods for multivariate entropy estimation through shared spatial 
+reconstruction as originally presented by Ahmed &amp; Mandic [1].</p>
+<p>This function does <strong>NOT</strong> use the multivariate permutation entropy 
+algorithm of Morabito et al. (Entropy, 2012) where the entropy values of 
+individual univariate sequences are averaged because such methods do not
+follow the definition of multivariate embedding and therefore do not
+consider cross-channel statistical complexity.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To maximize the number of points in the embedding process, this
+algorithm uses N-max(tau*m) delay vectors and <strong>not</strong> N-max(m)*max(tau)
+as employed in [1].</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MPerm</span><span class="p">,</span> <span class="n">MPnorm</span> <span class="o">=</span> <span class="n">MvPermEn</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the multivariate permutation entropy estimate (<code class="docutils literal notranslate"><span class="pre">MPerm</span></code>) for
+the M multivariate data sequences in <code class="docutils literal notranslate"><span class="pre">Data</span></code> using the specified keyword arguments:</p>
+<blockquote>
+<div><dl class="field-list">
+<dt class="field-odd">Data<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Multivariate dataset, NxM matrix of N (&gt;10) observations (rows) and M (cols) univariate data sequences</p></li>
+</ul>
+</dd>
+<dt class="field-even">m<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Embedding Dimension, a vector of M positive integers</p></li>
+</ul>
+</dd>
+<dt class="field-odd">tau<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Time Delay, a vector of M positive integers</p></li>
+</ul>
+</dd>
+<dt class="field-even">Typex<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Permutation entropy variation, can be one of the following strings:</p></li>
+</ul>
+<dl class="simple">
+<dt>{<code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'ampaware'</span></code>, <code class="docutils literal notranslate"><span class="pre">'weighted'</span></code>, <code class="docutils literal notranslate"><span class="pre">'edge'</span></code>, <code class="docutils literal notranslate"><span class="pre">'phase'</span></code>}</dt><dd><p>See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on MvPermEn variants.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">tpx<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Tuning parameter for associated permutation entropy variation.</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">ampaware<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">tpx</span></code> is the A parameter, a value in range [0 1] (default = 0.5)</p>
+</dd>
+<dt class="field-even">edge<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">tpx</span></code> is the r sensitivity parameter, a scalar &gt; 0 (default = 1)</p>
+</dd>
+<dt class="field-odd">phase<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">tpx</span></code> is the option to unwrap the phase angle of Hilbert-transformed signal, either [] or 1 (default = 0)</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Norm<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Normalisation of MPnorm value, a boolean operator:</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">false<span class="colon">:</span></dt>
+<dd class="field-odd"><p>normalises w.r.t log(# of permutation symbols [sum(m)-1]) - default</p>
+</dd>
+<dt class="field-even">true<span class="colon">:</span></dt>
+<dd class="field-even"><p>normalises w.r.t log(# of all possible permutations [sum(m)!])</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">Logx<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Logarithm base, a positive scalar (defualt = 2; enter 0 for  natural logarithm)</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">PermEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">XPermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code>.</p>
+</dd>
+<dt class="field-even">References<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Ahmed Mosabber Uddin, Danilo P. Mandic</dt><dd><p>“Multivariate multiscale entropy: A tool for complexity
+analysis of multichannel data.”
+Physical Review E 84.6 (2011): 061918.</p>
+</dd>
+<dt>[2] Christoph Bandt and Bernd Pompe, </dt><dd><p>“Permutation entropy: A natural complexity measure for time series.” 
+Physical Review Letters,
+88.17 (2002): 174102.</p>
+</dd>
+<dt>[3] Chunhua Bian, et al.,</dt><dd><p>“Modified permutation-entropy analysis of heartbeat dynamics.”
+Physical Review E
+85.2 (2012) : 021906</p>
+</dd>
+<dt>[4] Bilal Fadlallah, et al.,</dt><dd><p>“Weighted-permutation entropy: A complexity measure for time 
+series incorporating amplitude information.” 
+Physical Review E 
+87.2 (2013): 022911.</p>
+</dd>
+<dt>[5] Hamed Azami and Javier Escudero,</dt><dd><p>“Amplitude-aware permutation entropy: Illustration in spike 
+detection and signal segmentation.” 
+Computer methods and programs in biomedicine,
+128 (2016): 40-51.</p>
+</dd>
+<dt>[6] Zhiqiang Huo, et al.,</dt><dd><p>“Edge Permutation Entropy: An Improved Entropy Measure for 
+Time-Series Analysis,” 
+45th Annual Conference of the IEEE Industrial Electronics Soc,
+(2019), 5998-6003</p>
+</dd>
+<dt>[7] Maik Riedl, Andreas Müller, and Niels Wessel,</dt><dd><p>“Practical considerations of permutation entropy.” 
+The European Physical Journal Special Topics 
+222.2 (2013): 249-262.</p>
+</dd>
+<dt>[8] Kang Huan, Xiaofeng Zhang, and Guangbin Zhang,</dt><dd><p>“Phase permutation entropy: A complexity measure for nonlinear time
+series incorporating phase information.”
+Physica A: Statistical Mechanics and its Applications
+568 (2021): 125686.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EntropyHub.MvSampEn">
+<span class="sig-name descname"><span class="pre">MvSampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvSampEn" title="Permalink to this definition"></a></dt>
+<dd><p>MvSampEn  estimates the multivariate sample entropy of a multivariate dataset.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSamp</span><span class="p">,</span> <span class="n">B0</span><span class="p">,</span> <span class="n">Bt</span><span class="p">,</span> <span class="n">B1</span> <span class="o">=</span> <span class="n">MvSampEn</span><span class="p">(</span><span class="n">Data</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns the multivariate sample entropy estimate (<code class="docutils literal notranslate"><span class="pre">MSamp</span></code>) and the
+average number of matched delay vectors (<code class="docutils literal notranslate"><span class="pre">m</span></code>: <code class="docutils literal notranslate"><span class="pre">B0</span></code>; joint total 
+<code class="docutils literal notranslate"><span class="pre">m+1</span></code> subspace: <code class="docutils literal notranslate"><span class="pre">Bt</span></code>; all possible <code class="docutils literal notranslate"><span class="pre">m+1</span></code> subspaces: <code class="docutils literal notranslate"><span class="pre">B1</span></code>),
+from the M multivariate sequences in <code class="docutils literal notranslate"><span class="pre">Data</span></code> using the default parameters: 
+embedding dimension = 2*np.ones(M), time delay = np.ones(M), radius threshold = 0.2,
+logarithm = natural, data normalization = false</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The entropy value returned as <code class="docutils literal notranslate"><span class="pre">MSamp</span></code> is estimated using the “full” 
+method [i.e.  -log(Bt/B0)] which compares delay vectors across all possible <code class="docutils literal notranslate"><span class="pre">m+1</span></code> 
+expansions of the embedding space as applied in [1][2]. Contrary to
+conventional definitions of sample entropy, this method does not provide a
+lower bound of 0!!
+Thus, it is possible to obtain negative entropy values for multivariate 
+sample entropy, even for stochastic processes…</p>
+<p>Alternatively, one can calculate <code class="docutils literal notranslate"><span class="pre">MSamp</span></code> via the “naive” method, 
+which ensures a lower bound of 0, by using the average number of matched
+vectors for an individual <code class="docutils literal notranslate"><span class="pre">m+1</span></code> subspace (B1) [e.g. -log(B1(1)/B0)],
+or the average for all <code class="docutils literal notranslate"><span class="pre">m+1</span></code> subspaces [i.e. -log(mean(B1)/B0)].</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To maximize the number of points in the embedding process, this algorithm 
+uses N-max(m*tau) delay vectors and <strong>not</strong> N-max(m)*max(tau) as employed 
+in [1][2].</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSamp</span><span class="p">,</span> <span class="n">B0</span><span class="p">,</span> <span class="n">Bt</span><span class="p">,</span> <span class="n">B1</span> <span class="o">=</span> <span class="n">MvSampEn</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns the multivariate sample entropy estimates (<code class="docutils literal notranslate"><span class="pre">MSamp</span></code>) estimated
+from the M multivariate data sequences in <code class="docutils literal notranslate"><span class="pre">Data</span></code> using the specified 
+keyword  arguments:</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Data<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Multivariate dataset, NxM matrix of N (&gt;10) observations (rows) and M (cols) univariate data sequences</p></li>
+</ul>
+</dd>
+<dt class="field-even">m<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Embedding Dimension, a vector of M positive integers</p></li>
+</ul>
+</dd>
+<dt class="field-odd">tau<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Time Delay, a vector of M positive integers</p></li>
+</ul>
+</dd>
+<dt class="field-even">r<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Radius Distance threshold, a positive scalar</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Norm<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Normalisation of all M sequences to unit variance, a boolean</p></li>
+</ul>
+</dd>
+<dt class="field-even">Logx<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Logarithm base, a positive scalar</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">See also<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvPermEn</span></code>.</p>
+</dd>
+<dt class="field-even">References<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Ahmed Mosabber Uddin, Danilo P. Mandic</dt><dd><p>“Multivariate multiscale entropy: A tool for complexity
+analysis of multichannel data.”
+Physical Review E 84.6 (2011): 061918.</p>
+</dd>
+<dt>[2] Ahmed Mosabber Uddin, Danilo P. Mandic</dt><dd><p>“Multivariate multiscale entropy analysis.”
+IEEE signal processing letters 19.2 (2011): 91-94.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Cross.html" class="btn btn-neutral float-left" title="Cross Entropies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Bidimensional.html" class="btn btn-neutral float-right" title="Bidimensional Entropies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

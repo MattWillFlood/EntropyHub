@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Example 12: [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy &mdash; EntropyHub 2.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Example 13: Windowing Data with WindowData()" href="Ex13.html" />
+    <link rel="prev" title="Example 11: Multivariate Dispersion Entropy" href="Ex11.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            EntropyHub
+              <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Home.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../EHupdates.html">Latest Updates</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Publications.html">Publications</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../EHmatlab.html">EntropyHub - MatLab</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../matAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matBase.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matCross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matMultivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matMultiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matMultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matMultivariateMultiscale.html"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matOther.html"> Other Functions</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../matexamples.html">Examples</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"> Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex13.html"> Ex. 13 - Windowing data with WindowData()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/EHpython.html">EntropyHub - Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../python/pyAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Base.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Cross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Multivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Bidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Multiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/MultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/MultivariateMultiscale.html"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Other.html"> Other Functions</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/pyexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex12.html"> Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex13.html"> Ex. 13 - Windowing data with WindowData()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/Examples/Examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">EntropyHub</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../EHmatlab.html">EntropyHub: MatLab</a></li>
+          <li class="breadcrumb-item"><a href="../matexamples.html">MatLab Examples:</a></li>
+      <li class="breadcrumb-item active">Example 12: [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/MattWillFlood/EntropyHub/blob/main/docs/matlab/Examples/Ex12.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="example-12-generalized-refined-composite-multivariate-multiscale-fuzzy-entropy">
+<h1>Example 12: [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy<a class="headerlink" href="#example-12-generalized-refined-composite-multivariate-multiscale-fuzzy-entropy" title="Permalink to this heading"></a></h1>
+<p>Import the x, y, and z components of the Lorenz system of equations.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">Data</span> <span class="o">=</span> <span class="n">ExampleData</span><span class="p">(</span><span class="s1">&#39;lorenz&#39;</span><span class="p">);</span>
+
+<span class="n">figure</span><span class="p">(</span><span class="s1">&#39;Color&#39;</span><span class="p">,</span> <span class="s1">&#39;k&#39;</span><span class="p">)</span>
+<span class="n">plot3</span><span class="p">(</span><span class="n">Data</span><span class="p">(:,</span><span class="mi">1</span><span class="p">),</span> <span class="n">Data</span><span class="p">(:,</span><span class="mi">2</span><span class="p">),</span> <span class="n">Data</span><span class="p">(:,</span><span class="mi">3</span><span class="p">),</span> <span class="s1">&#39;g.&#39;</span><span class="p">)</span>
+<span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x-component&#39;</span><span class="p">,</span><span class="s1">&#39;color&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">),</span>
+<span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;y-component&#39;</span><span class="p">,</span><span class="s1">&#39;color&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">),</span>
+<span class="n">zlabel</span><span class="p">(</span><span class="s1">&#39;z-component&#39;</span><span class="p">,</span><span class="s1">&#39;color&#39;</span><span class="p">,</span><span class="s1">&#39;g&#39;</span><span class="p">),</span>
+<span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="nb">set</span><span class="p">(</span><span class="n">gca</span><span class="p">,</span><span class="s1">&#39;color&#39;</span><span class="p">,</span><span class="s1">&#39;k&#39;</span><span class="p">),</span> <span class="n">axis</span> <span class="n">square</span>
+</pre></div>
+</div>
+<img alt="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/lorenz.png?raw=true" src="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/lorenz.png?raw=true" />
+<p>Create a multiscale entropy object with the following parameters:
+EnType =  MvFuzzEn(), fuzzy membership function = ‘constgaussian’, fuzzy function parameter = 1.75, normalized data to unit variance = true.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">Mobj</span> <span class="o">=</span> <span class="n">MSobject</span><span class="p">(</span><span class="s1">&#39;MvFuzzEn&#39;</span><span class="p">,</span> <span class="s1">&#39;Fx&#39;</span><span class="p">,</span> <span class="s1">&#39;constgaussian&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="mf">1.75</span><span class="p">,</span> <span class="s1">&#39;Norm&#39;</span><span class="p">,</span> <span class="n">true</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Calculate the generalized refined-composite multivariate multiscale fuzzy entropy over 5 scales and plotting the output.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>When the multivariate entropy method is multivariate fuzzy entropy (<code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>), <strong>cMvMSEn</strong> by default employs a generalized graining procedure
+with the standard deviation (not the variance like in MvMSEn). This follows the method presented in [1].</p>
+<p>[1] Azami, Fernández and Escudero.
+” <em>Refined multiscale fuzzy entropy based on standard deviation for biomedical signal analysis</em> ”
+Medical &amp; biological engineering &amp; computing 55 (2017): 2037-2052</p>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>As with conventional generalized multiscale entropy, the multiscale entropy value for the first scale will always == 0, as the variance or
+standard deviation of a singular value is 0!</p>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span><span class="p">]</span> <span class="o">=</span> <span class="n">cMvMSEn</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="s1">&#39;Scales&#39;</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;Refined&#39;</span><span class="p">,</span> <span class="n">true</span><span class="p">,</span> <span class="s1">&#39;Plotx&#39;</span><span class="p">,</span> <span class="n">true</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">MSx</span> <span class="o">=</span>
+    <span class="mi">0</span><span class="p">,</span>  <span class="mf">0.00796833</span><span class="p">,</span>  <span class="mf">0.00926765</span><span class="p">,</span>  <span class="mf">0.01193731</span><span class="p">,</span>  <span class="mf">0.01686631</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">RDE</span> <span class="o">=</span>
+    <span class="mf">0.04603960</span>
+</pre></div>
+</div>
+<img alt="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/rcMvMSEn.png?raw=true" src="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/rcMvMSEn.png?raw=true" />
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Ex11.html" class="btn btn-neutral float-left" title="Example 11: Multivariate Dispersion Entropy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Ex13.html" class="btn btn-neutral float-right" title="Example 13: Windowing Data with WindowData()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

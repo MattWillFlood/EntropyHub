@@ -1,0 +1,19 @@
+.. _matMulti:
+
+======================
+Multivariate Entropies
+======================
+
+.. toctree::
+   :maxdepth: 3
+
+
+Functions for estimating the entropy of a multivariate dataset.
+*****************************************************************
+
+*The following functions also form the base entropy method used by* **multivariate multiscale entropy** *functions.*
+
+................................................................................
+
+.. mat:automodule:: EntropyHub
+   :members: MvCoSiEn,  MvDispEn, MvFuzzEn, MvPermEn, MvSampEn

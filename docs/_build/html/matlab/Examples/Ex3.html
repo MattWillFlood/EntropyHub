@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Example 3: Phase Entropy w/ Pioncare Plot &mdash; EntropyHub 1.0 documentation</title>
+  <title>Example 3: Phase Entropy w/ Pioncare Plot &mdash; EntropyHub 2.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -97,6 +97,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Cross.html"> Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Multivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Multiscale.html"> Multiscale Entropies</a><ul class="simple">
 </ul>
 </li>
@@ -124,8 +127,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
-<li class="toctree-l2"><a class="reference external" href="https://docs.juliahub.com/EntropyHub/npy5E/0.2.0/">EntropyHub.jl</a></li>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/Examples/Examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/Examples/Examples">Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -159,31 +162,31 @@
   <section id="example-3-phase-entropy-w-pioncare-plot">
 <h1>Example 3: Phase Entropy w/ Pioncare Plot<a class="headerlink" href="#example-3-phase-entropy-w-pioncare-plot" title="Permalink to this heading"></a></h1>
 <p>Import the x and y components of the Henon system of equations.</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">Data</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">ExampleData</span><span class="p">(</span><span class="s">&#39;henon&#39;</span><span class="p">);</span><span class="w"></span>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">Data</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">ExampleData</span><span class="p">(</span><span class="s">&#39;henon&#39;</span><span class="p">);</span>
 
-<span class="nb">figure</span><span class="p">(</span><span class="s">&#39;Color&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;k&#39;</span><span class="p">)</span><span class="w"></span>
-<span class="nb">plot</span><span class="p">(</span><span class="n">Data</span><span class="p">(:,</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="n">Data</span><span class="p">(:,</span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="s">&#39;g.&#39;</span><span class="p">)</span><span class="w"></span>
-<span class="nb">xlabel</span><span class="p">(</span><span class="s">&#39;x-component&#39;</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;g&#39;</span><span class="p">),</span><span class="w"></span>
-<span class="nb">ylabel</span><span class="p">(</span><span class="s">&#39;y-component&#39;</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;g&#39;</span><span class="p">)</span><span class="w"></span>
-<span class="nb">set</span><span class="p">(</span><span class="nb">gca</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;k&#39;</span><span class="p">),</span><span class="w"> </span><span class="nb">axis</span><span class="w"> </span><span class="n">square</span><span class="w"></span>
+<span class="nb">figure</span><span class="p">(</span><span class="s">&#39;Color&#39;</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;k&#39;</span><span class="p">)</span>
+<span class="nb">plot</span><span class="p">(</span><span class="n">Data</span><span class="p">(:,</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="n">Data</span><span class="p">(:,</span><span class="mi">2</span><span class="p">),</span><span class="w"> </span><span class="s">&#39;g.&#39;</span><span class="p">)</span>
+<span class="nb">xlabel</span><span class="p">(</span><span class="s">&#39;x-component&#39;</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;g&#39;</span><span class="p">),</span>
+<span class="nb">ylabel</span><span class="p">(</span><span class="s">&#39;y-component&#39;</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;g&#39;</span><span class="p">)</span>
+<span class="nb">set</span><span class="p">(</span><span class="nb">gca</span><span class="p">,</span><span class="s">&#39;color&#39;</span><span class="p">,</span><span class="s">&#39;k&#39;</span><span class="p">),</span><span class="w"> </span><span class="nb">axis</span><span class="w"> </span><span class="n">square</span>
 </pre></div>
 </div>
 <img alt="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/henon.png?raw=true" src="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/henon.png?raw=true" />
 <p>Calculate the phase entropy of the y-component in bits (logarithm base 2) without normalization
 using 7 angular partitions and return the second-order difference plot.</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">Y</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">Data</span><span class="p">(:,</span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
-<span class="n">Phas</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">PhasEn</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;K&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Norm&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Logx&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Plotx&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span><span class="w"></span>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">Y</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">Data</span><span class="p">(:,</span><span class="mi">2</span><span class="p">);</span>
+<span class="n">Phas</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">PhasEn</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;K&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Norm&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Logx&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Plotx&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span>
 
-<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Phas</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">2.0193</span><span class="w"></span>
+<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Phas</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">2.0193</span>
 </pre></div>
 </div>
 <img alt="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/phasex1.png?raw=true" src="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/phasex1.png?raw=true" />
 <p>Calculate the phase entropy of the x-component using 11 angular partitions, a time delay
 of 2, and return the second-order difference plot.</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">Data</span><span class="p">(:,</span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
-<span class="n">Phas</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">PhasEn</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;K&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">11</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;tau&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Plotx&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span><span class="w"></span>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">Data</span><span class="p">(:,</span><span class="mi">1</span><span class="p">);</span>
+<span class="n">Phas</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">PhasEn</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;K&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">11</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;tau&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;Plotx&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span>
 
-<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Phas</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.8395</span><span class="w"></span>
+<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Phas</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">0.8395</span>
 </pre></div>
 </div>
 <img alt="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/phasex2.png?raw=true" src="https://github.com/MattWillFlood/EntropyHub/blob/main/Graphics/phasex2.png?raw=true" />

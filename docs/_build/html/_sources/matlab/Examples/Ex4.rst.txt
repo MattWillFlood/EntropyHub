@@ -9,7 +9,7 @@ and Sturges' bin selection method.
 .. code-block:: matlab
 
     X = ExampleData('randintegers2');
-    XDist = XDistEn(X, 'm', 5, 'tau', 3)
+    XDist = XDistEn(X(:,1), X(:,2), 'm', 5, 'tau', 3)
 
     >>> Note: 17/25 bins were empty
         XDist = 0.5248
@@ -20,7 +20,7 @@ of each bin (``Ppi``).
 
 .. code-block:: matlab
 
-    [XDist, Ppi] = XDistEn(X, 'm', 5, 'tau', 3, 'Bins', 'rice')
+    [XDist, Ppi] = XDistEn(X(:,1), X(:,2), 'm', 5, 'tau', 3, 'Bins', 'rice')
     
     >>> Note: 407/415 bins were empty
         XDist = 0.2802

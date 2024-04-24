@@ -9,24 +9,33 @@ MatLab Functions:
 
     Base Entropies <./Functions/matBase>
     Cross-Entropies <./Functions/matCross>
+    Multivariate Entropies <./Functions/matMultivariate>
+    Bidimensional (2D) Entropies  <./Functions/matBidimensional>
     Multiscale Entropies <./Functions/matMultiscale>
     Multiscale Cross-Entropies <./Functions/matMultiscaleCross>
-    Bidimensional (2D) Entropies  <./Functions/matBidimensional>
+    Multivariate Multiscale Entropies <./Functions/matMultivariateMultiscale>
+    Other Functions <./Functions/matOther>
 
 
-EntropyHub functions fall into 5 categories:
+EntropyHub functions fall into 8 categories:
 ############################################
 
     Base                
       functions for estimating the entropy of a single univariate time series.
     Cross   
       functions for estimating the entropy between two univariate time series.
+    Multivariate
+      functions for estimating the entropy of a multivariate dataset.
     Bidimensional   
       functions for estimating the entropy of a two-dimensional univariate matrix.
     Multiscale     
       functions for estimating the multiscale entropy of a single univariate time series using any of the *Base* entropy functions.
     Multiscale Cross  
       functions for estimating the multiscale entropy between two univariate time series using any of the *Cross*-entropy functions.
+    Multiscale Multivariate  
+      functions for estimating the multivariate multiscale entropy of multivariate dataset using any of the *Multivariate*-entropy functions.
+    Other
+      Supplementary functions for various tasks related to EntropyHub and signal processing.
 
 
 .........................................................................................................................
@@ -106,6 +115,22 @@ Cross Entropies:
 |Cross-Spectral Entropy              | XSpecEn        |
 +------------------------------------+----------------+
 
+Multivariate Entropies:
+***********************
+
++----------------------------------------+----------------+
+| Entropy Type                           | Function Name  |
++========================================+================+
+| Multivariate Sample Entropy            | MvSampEn       |
++----------------------------------------+----------------+
+| Multivariate Fuzzy Entropy             | MvFuzzEn       |
++----------------------------------------+----------------+
+| Multivariate Permutation Entropy       | MvPermEn       |
++----------------------------------------+----------------+
+| Multivariate Dispersion Entropy        | MvDispEn       |
++----------------------------------------+----------------+
+| Multivariate Cosine Similarity Entropy | MvCoSiEn       |
++----------------------------------------+----------------+
 
 Bidimensional Entropies:
 ************************
@@ -160,3 +185,27 @@ Multiscale Cross-Entropies:
 |Hierarchical Multiscale Cross-Entropy           | hXMSEn         |
 +------------------------------------------------+----------------+
 
+Multivariate Multiscale  Entropies:
+***********************************
+
++------------------------------------------+----------------+
+| Entropy Type                             | Function Name  |
++==========================================+================+
+| Multivariate Multiscale Entropy          | MvMSEn         |
++------------------------------------------+----------------+
+| Composite (+ Refined-Composite)          | cMvMSEn        |
+| Multivariate Multiscale Entropy          |                |
++------------------------------------------+----------------+
+
+
+Other Functions:
+****************
+
++------------------------------------------+----------------+
+| Function  Description                    | Function Name  |
++==========================================+================+
+| Example dataset import tool              | ExampleData    |
++------------------------------------------+----------------+
+| Windowing tool                           |  WindowData    |
+| (for data segmentation)                  |                |
++------------------------------------------+----------------+

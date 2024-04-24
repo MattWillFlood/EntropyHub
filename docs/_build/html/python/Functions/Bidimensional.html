@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bidimensional Entropies &mdash; EntropyHub 1.0 documentation</title>
+  <title>Bidimensional Entropies &mdash; EntropyHub 2.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -21,8 +21,8 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Python Examples:" href="../pyexamples.html" />
-    <link rel="prev" title="Multiscale Cross-Entropies" href="MultiscaleCross.html" /> 
+    <link rel="next" title="Multiscale Entropies" href="Multiscale.html" />
+    <link rel="prev" title="Multivariate Entropies" href="Multivariate.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -63,13 +63,22 @@
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matCross.html"> Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultiscale.html"> Multiscale Entropies</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultivariateMultiscale.html"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matOther.html"> Other Functions</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -81,10 +90,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex12.html"> Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex13.html"> Ex. 13 - Windowing data with WindowData()</a></li>
 </ul>
 </li>
 </ul>
@@ -97,13 +109,22 @@
 <li class="toctree-l3"><a class="reference internal" href="Cross.html"> Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="Multivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="Multiscale.html"> Multiscale Entropies</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="MultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#"> Bidimensional (2D) Entropies</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="MultivariateMultiscale.html"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Other.html"> Other Functions</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -115,10 +136,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex12.html"> Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex13.html"> Ex. 13 - Windowing data with WindowData()</a></li>
 </ul>
 </li>
 </ul>
@@ -620,11 +644,9 @@ the data matrix (<code class="docutils literal notranslate"><span class="pre">Ma
 logarithm = natural, template matrix size = [floor(H/10) floor(W/10)]  
 (where H and W represent the height (rows) and width (columns) of the data matrix <code class="docutils literal notranslate"><span class="pre">Mat</span></code>) 
 ** The minimum number of rows and columns of <code class="docutils literal notranslate"><span class="pre">Mat</span></code> must be &gt; 10.</p>
-<blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Perm2D</span> <span class="o">=</span> <span class="n">PermEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Perm2D</span> <span class="o">=</span> <span class="n">PermEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
-</div></blockquote>
 <p>Returns the bidimensional permutation entropy (<code class="docutils literal notranslate"><span class="pre">Perm2D</span></code>) estimates for the data
 matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the specified ‘keyword’ arguments:</p>
 <blockquote>
@@ -661,20 +683,29 @@ greater than [128 x 128] elements, set <code class="docutils literal notranslate
 </dd>
 </dl>
 </div></blockquote>
-<dl>
-<dt><strong>NOTE</strong>: </dt><dd><p><code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">original</span> <span class="pre">bidimensional</span> <span class="pre">permutation</span> <span class="pre">entropy</span> <span class="pre">algorithms</span> <span class="pre">[1][2]</span></code>
-<code class="docutils literal notranslate"><span class="pre">do</span> <span class="pre">not</span> <span class="pre">account</span> <span class="pre">for</span> <span class="pre">equal-valued</span> <span class="pre">elements</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">embedding</span> <span class="pre">matrices.</span></code>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>The original bidimensional permutation entropy algorithms [1][2]</strong>
+<strong>do not account for equal-valued elements of the embedding matrices.</strong>
 To overcome this, PermEn2D uses the lowest common rank for
-such instances. For example, given an embedding matrix A where,
-A = [3.4  5.5  7.3]</p>
+such instances. For example, given an embedding matrix A where,</p>
+<dl class="field-list">
+<dt class="field-odd">A<span class="colon">:</span></dt>
+<dd class="field-odd"><div class="line-block">
+<div class="line">[3.4  5.5  7.3]         </div>
+<div class="line">[2.1  6    9.9]       </div>
+<div class="line">[7.3  1.1  2.1]      </div>
+</div>
+</dd>
+</dl>
+<p>would normally be mapped to an ordinal pattern like so,</p>
 <blockquote>
-<div><p>[2.1  6    9.9]       
-[7.3  1.1  2.1]</p>
+<div><div class="line-block">
+<div class="line">[3.4  5.5  7.3  2.1  6  9.9  7.3  1.1  2.1] =&gt;</div>
+<div class="line">[ 8    4    9    1   2   5    3    7    6 ]</div>
+</div>
 </div></blockquote>
-<p>would normally be mapped to an ordinal pattern like so,      
-[3.4  5.5  7.3  2.1  6  9.9  7.3  1.1  2.1] =&gt;
-[ 8    4    9    1   2   5    3    7    6 ]
-However, indices 4 &amp; 9, and 3 &amp; 7 have the same values, 2.1
+<p>However, indices 4 &amp; 9, and 3 &amp; 7 have the same values, 2.1
 and 7.3 respectively. Instead, PermEn2D uses the ordinal pattern
 [ 8    4    4    1   2   5    3    3    6 ]
 where the lowest rank (4 &amp; 3) are used instead (of 9 &amp; 7). 
@@ -683,8 +714,7 @@ Therefore, the number of possible permutations is no longer
 normalized by the maximum Shannon entropy (Smax = log((mx*my)!) 
 <code class="docutils literal notranslate"><span class="pre">assuming</span> <span class="pre">that</span> <span class="pre">no</span> <span class="pre">equal</span> <span class="pre">values</span> <span class="pre">are</span> <span class="pre">found</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">permutation</span>
 <span class="pre">motif</span> <span class="pre">matrices</span></code>, as presented in [1].</p>
-</dd>
-</dl>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">EspEn2D</span></code></p>
@@ -784,8 +814,8 @@ Biomedical Physics &amp; Engineering Express
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="MultiscaleCross.html" class="btn btn-neutral float-left" title="Multiscale Cross-Entropies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../pyexamples.html" class="btn btn-neutral float-right" title="Python Examples:" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Multivariate.html" class="btn btn-neutral float-left" title="Multivariate Entropies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Multiscale.html" class="btn btn-neutral float-right" title="Multiscale Entropies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

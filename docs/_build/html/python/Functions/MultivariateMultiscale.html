@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multivariate Multiscale Entropies &mdash; EntropyHub 2.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Other Functions" href="Other.html" />
+    <link rel="prev" title="Multiscale Cross-Entropies" href="MultiscaleCross.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            EntropyHub
+              <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Home.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../EHupdates.html">Latest Updates</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Publications.html">Publications</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../matlab/EHmatlab.html">EntropyHub - MatLab</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../matlab/matAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matBase.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matCross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultivariateMultiscale.html"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matOther.html"> Other Functions</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../matlab/matexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex12.html"> Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex13.html"> Ex. 13 - Windowing data with WindowData()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../EHpython.html">EntropyHub - Python</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../pyAPI.html">API</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Base.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Cross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Multivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Bidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Multiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="MultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Other.html"> Other Functions</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pyexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex12.html"> Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex13.html"> Ex. 13 - Windowing data with WindowData()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/Examples/Examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">EntropyHub</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../EHpython.html">EntropyHub: Python</a></li>
+          <li class="breadcrumb-item"><a href="../pyAPI.html">Python Functions:</a></li>
+      <li class="breadcrumb-item active">Multivariate Multiscale Entropies</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/MattWillFlood/EntropyHub/blob/main/docs/python/Functions/MultivariateMultiscale.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="multivariate-multiscale-entropies">
+<h1>Multivariate Multiscale Entropies<a class="headerlink" href="#multivariate-multiscale-entropies" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<section id="functions-for-estimating-the-multivariate-multiscale-entropy-of-a-multivariate-dataset">
+<h2>Functions for estimating the multivariate multiscale entropy of a multivariate dataset.<a class="headerlink" href="#functions-for-estimating-the-multivariate-multiscale-entropy-of-a-multivariate-dataset" title="Permalink to this heading"></a></h2>
+<p>Multivariate multiscale entropy can be calculated using any of the <a class="reference internal" href="Multivariate.html#pymulti"><span class="std std-ref">Multivariate Entropies</span></a>:
+<code class="docutils literal notranslate"><span class="pre">MvCoSiEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvDispEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvPermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Multivariate multiscale entropy functions have two positional arguments:</p>
+<ol class="arabic simple">
+<li><p>the multivariate dataset, <code class="docutils literal notranslate"><span class="pre">Data</span></code>, a N (&gt;10) x M (&gt;1) matrix</p></li>
+<li><p>the multiscale entropy object, <code class="docutils literal notranslate"><span class="pre">Mobj</span></code>.</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<span class="target" id="module-EntropyHub"></span><dl class="py function">
+<dt class="sig sig-object py" id="EntropyHub.MSobject">
+<span class="sig-name descname"><span class="pre">MSobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">EnType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SampEn'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MSobject" title="Permalink to this definition"></a></dt>
+<dd><p>MSobject  creates an object to store multiscale entropy parameters.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Mobj</span><span class="p">]</span> <span class="o">=</span> <span class="n">MSobject</span><span class="p">()</span> 
+</pre></div>
+</div>
+<p>Returns a multiscale entropy object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) based on that originally
+proposed by Costa et al. using the following default  parameters:
+EnType = ‘SampEn’, embedding dimension = 2, time delay = 1, 
+radius = 0.2*SD(<code class="docutils literal notranslate"><span class="pre">Sig</span></code>), logarithm = natural</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Mobj</span><span class="p">]</span> <span class="o">=</span> <span class="n">MSobject</span><span class="p">(</span><span class="n">EnType</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns a multiscale entropy object using the specified entropy method
+(<code class="docutils literal notranslate"><span class="pre">EnType</span></code>) and the default parameters for that entropy method.
+To see the default parameters for a particular entropy method,          
+type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notranslate"><span class="pre">help(SampEn)</span></code>)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Mobj</span><span class="p">]</span> <span class="o">=</span> <span class="n">MSobject</span><span class="p">(</span><span class="n">EnType</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns a multiscale entropy object using the specified entropy method
+(<code class="docutils literal notranslate"><span class="pre">EnType</span></code>) and the name/value parameters for that particular method.
+To see the default parameters for a particular entropy method,          
+type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notranslate"><span class="pre">help(SampEn)</span></code>)</p>
+<p><code class="docutils literal notranslate"><span class="pre">EnType</span></code> can be any of the following (case sensitive) string names:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Base Entropies<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="field-list simple">
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'ApEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Approximate Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'SampEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Sample Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'FuzzEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Fuzzy Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'K2En'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Kolmogorov Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'PermEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Permutation Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'CondEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Conditional Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'DistEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Distribution Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'DispEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Dispersion Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'SpecEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Spectral Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'SyDyEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Symbolic Dynamic Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'IncrEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Increment Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'CoSiEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Cosine Similarity Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'PhasEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Phase Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'SlopEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Slope Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'BubbEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Bubble Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'GridEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Grid Distribution Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'EnofEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Entropy of Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'AttnEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Attention Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'DivEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Diversity Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'RangEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Range Entropy</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Cross Entropies<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="field-list simple">
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'XApEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Cross-Approximate Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'XSampEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Cross-Sample Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'XFuzzEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Cross-Fuzzy Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'XK2En'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Cross-Kolmogorov Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'XPermEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Cross-Permutation Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'XCondEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Cross-Conditional Entropy (corrected)</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'XDistEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Cross-Distribution Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'XSpecEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Cross-Spectral Entropy</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">Multivariate Entropies<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="field-list simple">
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'MvSampEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Multivariate Sample Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'MvFuzzEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Multivariate Fuzzy Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'MvDispEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Multivariate Dispersion Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'MvCoSiEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Multivariate Cosine Similarity Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'MvPermEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Multivariate Permutation Entropy</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">See also<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cMvMSEn</span></code>,  <code class="docutils literal notranslate"><span class="pre">rMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hXMSEn</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<hr class="docutils" />
+<p><strong>The following functions use the multiscale entropy object shown above.</strong></p>
+<hr class="docutils" />
+<span class="target" id="module-0"></span><dl class="py function">
+<dt class="sig sig-object py" id="EntropyHub.MvMSEn">
+<span class="sig-name descname"><span class="pre">MvMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Methodx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'coarse'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvMSEn" title="Permalink to this definition"></a></dt>
+<dd><p>MvMSEn  Returns the multivariate multiscale entropy of a multivariate dataset.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span><span class="n">CI</span> <span class="o">=</span> <span class="n">MvMSEn</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns a vector of multivariate multiscale entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) and the complexity 
+index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) of the data sequences in <code class="docutils literal notranslate"><span class="pre">Data</span></code> using the parameters specified 
+by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) over 3 temporal scales with coarse-
+graining (default).</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>By default, the <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code> and <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code> multivariate entropy algorithms
+estimate entropy values using the “full”  method by comparing delay vectors 
+across all possible <code class="docutils literal notranslate"><span class="pre">m+1</span></code> expansions of the embedding space as applied in [1].
+These methods are <strong>not</strong> lower-bounded to 0, like most entropy algorithms,
+so <code class="docutils literal notranslate"><span class="pre">MvMSEn</span></code> may return negative entropy values if the base multivariate 
+entropy function is <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code> and <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, even for stochastic processes…</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span><span class="n">CI</span> <span class="o">=</span> <span class="n">MvMSEn</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns a vector of multivariate multiscale entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) and the complexity 
+index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) of the data sequences in <code class="docutils literal notranslate"><span class="pre">Data</span></code> using the parameters specified by
+the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) and the following <code class="docutils literal notranslate"><span class="pre">keyword</span></code> arguments:</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Scales<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Number of temporal scales, an integer &gt; 1   (default: 3)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Methodx<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Graining method, one of the following: [default: <code class="docutils literal notranslate"><span class="pre">'coarse'</span></code>]  {<code class="docutils literal notranslate"><span class="pre">'coarse'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'generalized'</span></code>}</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Plotx<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>When <code class="docutils literal notranslate"><span class="pre">Plotx</span> <span class="pre">==</span> <span class="pre">True</span></code>, returns a plot of the entropy value at each time scale (i.e. the multiscale entropy curve) [default: False]</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<p>For further info on these graining procedures see the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">See also<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">MSobject</span></code>, <code class="docutils literal notranslate"><span class="pre">cMvMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvPermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvCoSiEn</span></code>,  <code class="docutils literal notranslate"><span class="pre">MvDispEn</span></code></p>
+</dd>
+<dt class="field-even">References<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Ahmed Mosabber Uddin, Danilo P. Mandic</dt><dd><p>“Multivariate multiscale entropy analysis.”
+IEEE signal processing letters 19.2 (2011): 91-94.</p>
+</dd>
+<dt>[2] Madalena Costa, Ary Goldberger, and C-K. Peng,</dt><dd><p>“Multiscale entropy analysis of complex physiologic time series.”
+Physical review letters
+89.6 (2002): 068102.</p>
+</dd>
+<dt>[3] Vadim V. Nikulin, and Tom Brismar,</dt><dd><p>“Comment on “Multiscale entropy analysis of complex physiologic
+time series”.” 
+Physical Review Letters 
+92.8 (2004): 089803.</p>
+</dd>
+<dt>[4] Madalena Costa, Ary L. Goldberger, and C-K. Peng. </dt><dd><p>“Costa, Goldberger, and Peng reply.” 
+Physical Review Letters
+92.8 (2004): 089804.</p>
+</dd>
+<dt>[5] Madalena Costa, Ary L. Goldberger and C-K. Peng,</dt><dd><p>“Multiscale entropy analysis of biological signals.” 
+Physical review E 
+71.2 (2005): 021906.</p>
+</dd>
+<dt>[6] Ranjit A. Thuraisingham and Georg A. Gottwald,</dt><dd><p>“On multiscale entropy analysis for physiological data.”
+Physica A: Statistical Mechanics and its Applications
+366 (2006): 323-332.</p>
+</dd>
+<dt>[7] Ahmed Mosabber Uddin, Danilo P. Mandic</dt><dd><p>“Multivariate multiscale entropy: A tool for complexity
+analysis of multichannel data.”
+Physical Review E 84.6 (2011): 061918.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="EntropyHub.cMvMSEn">
+<span class="sig-name descname"><span class="pre">cMvMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Refined</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.cMvMSEn" title="Permalink to this definition"></a></dt>
+<dd><p>cMvMSEn  Returns the composite + refined-composite multivariate multiscale entropy of a multivariate dataset.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span><span class="n">CI</span> <span class="o">=</span> <span class="n">cMvMSEn</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns a vector of composite multivariate multiscale entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) and the complexity 
+index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) of the data sequences in <code class="docutils literal notranslate"><span class="pre">Data</span></code> using the parameters specified 
+by the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) over 3 temporal scales with coarse-
+graining (default).</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>By default, the <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code> and <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code> multivariate entropy algorithms
+estimate entropy values using the “full”  method by comparing delay vectors 
+across all possible <code class="docutils literal notranslate"><span class="pre">m+1</span></code> expansions of the embedding space as applied in [1].
+These methods are <strong>not</strong> lower-bounded to 0, like most entropy algorithms,
+so <code class="docutils literal notranslate"><span class="pre">MvMSEn</span></code> may return negative entropy values if the base multivariate 
+entropy function is <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code> and <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, even for stochastic processes…</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">cMvMSEn</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">Refined</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> 
+</pre></div>
+</div>
+<p>Returns a vector of refined-composite multiscale entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) for the data 
+sequences in (<code class="docutils literal notranslate"><span class="pre">Data</span></code>) using the parameters specified by the multiscale object 
+(<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) using the refined-composite multivariate multiscale entropy method (rcMSE) over 3 temporal
+scales. When <code class="docutils literal notranslate"><span class="pre">Refined</span> <span class="pre">==</span> <span class="pre">True</span></code>, the base entropy method must be <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code> or <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>.
+If the entropy method is <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code>, cMvMSEn employs the method described in [1]. 
+If the entropy method is <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, cMvMSEn employs the method described in [5].</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span><span class="n">CI</span> <span class="o">=</span> <span class="n">cMvMSEn</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Returns a vector of composite multivariate multiscale entropy values (<code class="docutils literal notranslate"><span class="pre">MSx</span></code>) and the complexity 
+index (<code class="docutils literal notranslate"><span class="pre">CI</span></code>) of the data sequences in <code class="docutils literal notranslate"><span class="pre">Data</span></code> using the parameters specified by
+the multiscale object (<code class="docutils literal notranslate"><span class="pre">Mobj</span></code>) and the following <code class="docutils literal notranslate"><span class="pre">keyword</span></code> arguments:</p>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Scales<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Number of temporal scales, an integer &gt; 1   (default: 3)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Refined<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Refined-composite MvMSEn method. When <code class="docutils literal notranslate"><span class="pre">Refined</span> <span class="pre">==</span> <span class="pre">True</span></code> and the entropy function specified by <code class="docutils literal notranslate"><span class="pre">Mobj</span></code> is <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code> or <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cMvMSEn</span></code> returns the refined-composite multivariate multiscale entropy (rcMSEn) [default: False]</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Plotx<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>When <code class="docutils literal notranslate"><span class="pre">Plotx</span> <span class="pre">==</span> <span class="pre">True</span></code>, returns a plot of the entropy value at each time scale (i.e. the multiscale entropy curve) [default: False]</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<p>For further info on these graining procedures see the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">See also<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">MSobject</span></code>, <code class="docutils literal notranslate"><span class="pre">MvMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvPermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvCoSiEn</span></code>,  <code class="docutils literal notranslate"><span class="pre">MvDispEn</span></code></p>
+</dd>
+<dt class="field-even">References<span class="colon">:</span></dt>
+<dd class="field-even"><dl class="simple">
+<dt>[1] Shuen-De Wu, et al.,</dt><dd><p>“Time series analysis using composite multiscale entropy.”
+Entropy
+15.3 (2013): 1069-1084.</p>
+</dd>
+<dt>[2] Shuen-De Wu, et al.,</dt><dd><p>“Analysis of complex time series using refined composite
+multiscale entropy.”
+Physics Letters A
+378.20 (2014): 1369-1374.</p>
+</dd>
+<dt>[3] Ahmed Mosabber Uddin, Danilo P. Mandic</dt><dd><p>“Multivariate multiscale entropy: A tool for complexity
+analysis of multichannel data.”
+Physical Review E 84.6 (2011): 061918.</p>
+</dd>
+<dt>[4] Ahmed Mosabber Uddin, Danilo P. Mandic</dt><dd><p>“Multivariate multiscale entropy analysis.”
+IEEE signal processing letters 19.2 (2011): 91-94.</p>
+</dd>
+<dt>[5] Azami, Alberto Fernández, Javier Escudero.</dt><dd><p>“Refined multiscale fuzzy entropy based on standard deviation for
+biomedical signal analysis.”
+Medical &amp; biological engineering &amp; computing 55 (2017): 2037-2052.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="MultiscaleCross.html" class="btn btn-neutral float-left" title="Multiscale Cross-Entropies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Other.html" class="btn btn-neutral float-right" title="Other Functions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -9,7 +9,7 @@ and Sturges' bin selection method.
 .. code-block:: python3
 
     X = EH.ExampleData('randintegers2');
-    XDist, _ = EH.XDistEn(X, m = 5, tau = 3)
+    XDist, _ = EH.XDistEn(X[:,0], X[:,1], m = 5, tau = 3)
 
     >>> Note: 17/25 bins were empty
     >>> XDist =
@@ -21,7 +21,7 @@ of each bin (``Ppi``).
 
 .. code-block:: python3
 
-    XDist, Ppi = EH.XDistEn(X, m = 5, tau = 3, Bins = 'rice')
+    XDist, Ppi = EH.XDistEn(X[:,0], X[:,1], m = 5, tau = 3, Bins = 'rice')
 
     >>> Note: 407/415 bins were empty
     >>> XDist =

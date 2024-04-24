@@ -26,7 +26,7 @@ variance of the signal at each scale.
 
 .. code-block:: python3
 
-    MSx, _ = EH.cXMSEn(X, Mobj, Scales = 3, RadNew = 1)
+    MSx, _ = EH.cXMSEn(X[:,0], X[:,1], Mobj, Scales = 3, RadNew = 1)
     . . . . . . .
 
     >>> MSx =

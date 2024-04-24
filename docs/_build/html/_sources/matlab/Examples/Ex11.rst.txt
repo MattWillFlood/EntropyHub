@@ -1,0 +1,46 @@
+===========================================
+Example 11: Multivariate Dispersion Entropy
+===========================================
+
+Import a vector of 4096 uniformly distributed random integers in range [1 8] and convert it to a multivariate set of 4 sequences with 1024 samples each. 
+
+.. code-block:: python3
+
+    X = ExampleData('randintegers')
+    Data = reshape(X, 1024, 4)
+
+Calculate the multivariate dispersion entropy and reverse dispersion entropy for embedding dimensions (m) = [1,1,2,3], using a 7-symbol transform.
+
+.. code-block:: python3
+
+    [MDisp, RDE] = MvDispEn(Data, 'm', [1,1,2,3], 'c', 7)
+
+    >>> MDisp =
+        6.9227345
+
+    >>> RDE = 
+        0.0009856   
+
+Perform the same calculation but normalize the output entropy estimate w.r.t the number of unique dispersion patterns
+
+.. code-block:: python3
+
+    [MDisp, RDE] = MvDispEn(Data, 'm', [1,1,2,3], 'c', 7, 'Norm', true)
+
+    >>> MDisp =
+        0.508226
+
+    >>> RDE = 
+        0.0009856
+        
+Compare the results above (``Methodx == 'v1'``) with those obtained using the *mvDE* method (``Methodx=='v2'``), returning estimates for each value from 1, ..., max(m)
+
+.. code-block:: python3
+
+        [MDisp, RDE] = MvDispEn(Data, 'm', [1,1,2,3], 'c', 7, 'Norm', true, 'Methodx', 'v2')
+
+    >>> MDisp =
+        0.95439595, 0.94074854, 0.93012334
+
+    >>> RDE = 
+        0.02675949, 0.00805324, 0.00201614

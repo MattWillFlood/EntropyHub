@@ -17,6 +17,7 @@ normalization = true
     xlabel('x-component','color','g')
     ylabel('y-component','color','g')
     set(gca,'color','k'), axis square
+    
     Mobj = MSobject('XCondEn', 'm', 2, 'tau', 2, 'c', 12, 'Logx', 2, 'Norm', true)
 
 
@@ -29,7 +30,7 @@ and a plot of the multiscale entropy curve and the hierarchical tree with the cr
 
 .. code-block:: matlab
 
-    [MSx, Sn, Ci] = hXMSEn(Data, Mobj, 'Scales', 4, 'Plotx', true)
+    [MSx, Sn, Ci] = hXMSEn(Data(:,1), Data(:,2), Mobj, 'Scales', 4, 'Plotx', true)
 
     >>> Only first 4096 samples were used in hierarchical decomposition.
     >>> The last 404 samples of each data sequence were ignored.

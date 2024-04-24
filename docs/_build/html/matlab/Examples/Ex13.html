@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Example 13: Windowing Data with WindowData() &mdash; EntropyHub 2.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="EntropyHub: Python" href="../../python/EHpython.html" />
+    <link rel="prev" title="Example 12: [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy" href="Ex12.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            EntropyHub
+              <img src="../../_static/Logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../Home.html">Home</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../EHupdates.html">Latest Updates</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../Publications.html">Publications</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../EHmatlab.html">EntropyHub - MatLab</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../matAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matBase.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matCross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matMultivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matMultiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matMultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matMultivariateMultiscale.html"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Functions/matOther.html"> Other Functions</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../matexamples.html">Examples</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Ex12.html"> Ex. 12 - Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"> Ex. 13 - Windowing data with WindowData()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../python/EHpython.html">EntropyHub - Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../python/pyAPI.html">API</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Base.html"> Base Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Cross.html"> Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Multivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Bidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Multiscale.html"> Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/MultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/MultivariateMultiscale.html"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Other.html"> Other Functions</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../python/pyexamples.html">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex1.html"> Ex. 1 - Sample Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex2.html"> Ex. 2 - [Fine-Grained] Permutation Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex3.html"> Ex. 3 - Phase Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex12.html"> Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Examples/Ex13.html"> Ex. 13 - Windowing data with WindowData()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/Examples/Examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">EntropyHub</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../EHmatlab.html">EntropyHub: MatLab</a></li>
+          <li class="breadcrumb-item"><a href="../matexamples.html">MatLab Examples:</a></li>
+      <li class="breadcrumb-item active">Example 13: Windowing Data with WindowData()</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/MattWillFlood/EntropyHub/blob/main/docs/matlab/Examples/Ex13.rst" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="example-13-windowing-data-with-windowdata">
+<h1>Example 13: Windowing Data with WindowData()<a class="headerlink" href="#example-13-windowing-data-with-windowdata" title="Permalink to this heading"></a></h1>
+<p>Create a sequence of integers from 1 - 1000 and segment the values into windows of length 75, with no overlap.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">1000</span>
+<span class="p">[</span><span class="n">WinData</span><span class="p">,</span> <span class="n">Log</span><span class="p">]</span> <span class="o">=</span> <span class="n">WindowData</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">WinLen</span> <span class="o">=</span> <span class="mi">75</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">WinData</span> <span class="o">=</span>
+    <span class="p">{[</span> <span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">,</span>  <span class="mi">4</span><span class="p">,</span>  <span class="mi">5</span><span class="p">,</span> <span class="o">...</span> <span class="mi">71</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">73</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">75</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">76</span><span class="p">,</span>  <span class="mi">77</span><span class="p">,</span>  <span class="mi">78</span><span class="p">,</span>  <span class="mi">79</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="o">...</span>  <span class="mi">146</span><span class="p">,</span> <span class="mi">147</span><span class="p">,</span> <span class="mi">148</span><span class="p">,</span> <span class="mi">149</span><span class="p">,</span> <span class="mi">150</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">151</span><span class="p">,</span> <span class="mi">152</span><span class="p">,</span> <span class="mi">153</span><span class="p">,</span> <span class="mi">154</span><span class="p">,</span> <span class="mi">155</span><span class="p">,</span> <span class="o">...</span> <span class="mi">221</span><span class="p">,</span> <span class="mi">222</span><span class="p">,</span> <span class="mi">223</span><span class="p">,</span> <span class="mi">224</span><span class="p">,</span> <span class="mi">225</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">226</span><span class="p">,</span> <span class="mi">227</span><span class="p">,</span> <span class="mi">228</span><span class="p">,</span> <span class="mi">229</span><span class="p">,</span> <span class="mi">230</span><span class="p">,</span> <span class="o">...</span> <span class="mi">296</span><span class="p">,</span> <span class="mi">297</span><span class="p">,</span> <span class="mi">298</span><span class="p">,</span> <span class="mi">299</span><span class="p">,</span> <span class="mi">300</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">301</span><span class="p">,</span> <span class="mi">302</span><span class="p">,</span> <span class="mi">303</span><span class="p">,</span> <span class="mi">304</span><span class="p">,</span> <span class="mi">305</span><span class="p">,</span> <span class="o">...</span> <span class="mi">371</span><span class="p">,</span> <span class="mi">372</span><span class="p">,</span> <span class="mi">373</span><span class="p">,</span> <span class="mi">374</span><span class="p">,</span> <span class="mi">375</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">376</span><span class="p">,</span> <span class="mi">377</span><span class="p">,</span> <span class="mi">378</span><span class="p">,</span> <span class="mi">379</span><span class="p">,</span> <span class="mi">380</span><span class="p">,</span> <span class="o">...</span> <span class="mi">446</span><span class="p">,</span> <span class="mi">447</span><span class="p">,</span> <span class="mi">448</span><span class="p">,</span> <span class="mi">449</span><span class="p">,</span> <span class="mi">450</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">451</span><span class="p">,</span> <span class="mi">452</span><span class="p">,</span> <span class="mi">453</span><span class="p">,</span> <span class="mi">454</span><span class="p">,</span> <span class="mi">455</span><span class="p">,</span> <span class="o">...</span> <span class="mi">521</span><span class="p">,</span> <span class="mi">522</span><span class="p">,</span> <span class="mi">523</span><span class="p">,</span> <span class="mi">524</span><span class="p">,</span> <span class="mi">525</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">526</span><span class="p">,</span> <span class="mi">527</span><span class="p">,</span> <span class="mi">528</span><span class="p">,</span> <span class="mi">529</span><span class="p">,</span> <span class="mi">530</span><span class="p">,</span> <span class="o">...</span> <span class="mi">596</span><span class="p">,</span> <span class="mi">597</span><span class="p">,</span> <span class="mi">598</span><span class="p">,</span> <span class="mi">599</span><span class="p">,</span> <span class="mi">600</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">601</span><span class="p">,</span> <span class="mi">602</span><span class="p">,</span> <span class="mi">603</span><span class="p">,</span> <span class="mi">604</span><span class="p">,</span> <span class="mi">605</span><span class="p">,</span> <span class="o">...</span> <span class="mi">671</span><span class="p">,</span> <span class="mi">672</span><span class="p">,</span> <span class="mi">673</span><span class="p">,</span> <span class="mi">674</span><span class="p">,</span> <span class="mi">675</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">676</span><span class="p">,</span> <span class="mi">677</span><span class="p">,</span> <span class="mi">678</span><span class="p">,</span> <span class="mi">679</span><span class="p">,</span> <span class="mi">680</span><span class="p">,</span> <span class="o">...</span> <span class="mi">746</span><span class="p">,</span> <span class="mi">747</span><span class="p">,</span> <span class="mi">748</span><span class="p">,</span> <span class="mi">749</span><span class="p">,</span> <span class="mi">750</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">751</span><span class="p">,</span> <span class="mi">752</span><span class="p">,</span> <span class="mi">753</span><span class="p">,</span> <span class="mi">754</span><span class="p">,</span> <span class="mi">755</span><span class="p">,</span> <span class="o">...</span> <span class="mi">821</span><span class="p">,</span> <span class="mi">822</span><span class="p">,</span> <span class="mi">823</span><span class="p">,</span> <span class="mi">824</span><span class="p">,</span> <span class="mi">825</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">826</span><span class="p">,</span> <span class="mi">827</span><span class="p">,</span> <span class="mi">828</span><span class="p">,</span> <span class="mi">829</span><span class="p">,</span> <span class="mi">830</span><span class="p">,</span> <span class="o">...</span> <span class="mi">896</span><span class="p">,</span> <span class="mi">897</span><span class="p">,</span> <span class="mi">898</span><span class="p">,</span> <span class="mi">899</span><span class="p">,</span> <span class="mi">900</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">901</span><span class="p">,</span> <span class="mi">902</span><span class="p">,</span> <span class="mi">903</span><span class="p">,</span> <span class="mi">904</span><span class="p">,</span> <span class="mi">905</span><span class="p">,</span> <span class="o">...</span> <span class="mi">971</span><span class="p">,</span> <span class="mi">972</span><span class="p">,</span> <span class="mi">973</span><span class="p">,</span> <span class="mi">974</span><span class="p">,</span> <span class="mi">975</span><span class="p">]}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Log</span> <span class="o">=</span>
+     <span class="n">struct</span> <span class="k">with</span> <span class="n">fields</span><span class="p">:</span>
+     <span class="n">DataType</span><span class="p">:</span> <span class="s2">&quot;single univariate vector (1 sequence)&quot;</span>
+   <span class="n">DataLength</span><span class="p">:</span> <span class="mi">1000</span>
+ <span class="n">WindowLength</span><span class="p">:</span> <span class="mi">75</span>
+<span class="n">WindowOverlap</span><span class="p">:</span> <span class="mi">0</span>
+ <span class="n">TotalWindows</span><span class="p">:</span> <span class="mi">13</span>
+         <span class="n">Mode</span><span class="p">:</span> <span class="s2">&quot;exlcude&quot;</span>
+</pre></div>
+</div>
+<p>Repeat the previous step, but include any remaining values that do not fill the final window.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">WinData</span><span class="p">,</span> <span class="n">Log</span> <span class="o">=</span> <span class="n">WindowData</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">WinLen</span> <span class="o">=</span> <span class="mi">75</span><span class="p">,</span> <span class="n">Mode</span> <span class="o">=</span> <span class="s1">&#39;include&#39;</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">WinData</span> <span class="o">=</span>
+    <span class="p">{[</span> <span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">,</span>  <span class="mi">4</span><span class="p">,</span>  <span class="mi">5</span><span class="p">,</span> <span class="o">...</span> <span class="mi">71</span><span class="p">,</span> <span class="mi">72</span><span class="p">,</span> <span class="mi">73</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">75</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">76</span><span class="p">,</span>  <span class="mi">77</span><span class="p">,</span>  <span class="mi">78</span><span class="p">,</span>  <span class="mi">79</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="o">...</span>  <span class="mi">146</span><span class="p">,</span> <span class="mi">147</span><span class="p">,</span> <span class="mi">148</span><span class="p">,</span> <span class="mi">149</span><span class="p">,</span> <span class="mi">150</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">151</span><span class="p">,</span> <span class="mi">152</span><span class="p">,</span> <span class="mi">153</span><span class="p">,</span> <span class="mi">154</span><span class="p">,</span> <span class="mi">155</span><span class="p">,</span> <span class="o">...</span> <span class="mi">221</span><span class="p">,</span> <span class="mi">222</span><span class="p">,</span> <span class="mi">223</span><span class="p">,</span> <span class="mi">224</span><span class="p">,</span> <span class="mi">225</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">226</span><span class="p">,</span> <span class="mi">227</span><span class="p">,</span> <span class="mi">228</span><span class="p">,</span> <span class="mi">229</span><span class="p">,</span> <span class="mi">230</span><span class="p">,</span> <span class="o">...</span> <span class="mi">296</span><span class="p">,</span> <span class="mi">297</span><span class="p">,</span> <span class="mi">298</span><span class="p">,</span> <span class="mi">299</span><span class="p">,</span> <span class="mi">300</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">301</span><span class="p">,</span> <span class="mi">302</span><span class="p">,</span> <span class="mi">303</span><span class="p">,</span> <span class="mi">304</span><span class="p">,</span> <span class="mi">305</span><span class="p">,</span> <span class="o">...</span> <span class="mi">371</span><span class="p">,</span> <span class="mi">372</span><span class="p">,</span> <span class="mi">373</span><span class="p">,</span> <span class="mi">374</span><span class="p">,</span> <span class="mi">375</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">376</span><span class="p">,</span> <span class="mi">377</span><span class="p">,</span> <span class="mi">378</span><span class="p">,</span> <span class="mi">379</span><span class="p">,</span> <span class="mi">380</span><span class="p">,</span> <span class="o">...</span> <span class="mi">446</span><span class="p">,</span> <span class="mi">447</span><span class="p">,</span> <span class="mi">448</span><span class="p">,</span> <span class="mi">449</span><span class="p">,</span> <span class="mi">450</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">451</span><span class="p">,</span> <span class="mi">452</span><span class="p">,</span> <span class="mi">453</span><span class="p">,</span> <span class="mi">454</span><span class="p">,</span> <span class="mi">455</span><span class="p">,</span> <span class="o">...</span> <span class="mi">521</span><span class="p">,</span> <span class="mi">522</span><span class="p">,</span> <span class="mi">523</span><span class="p">,</span> <span class="mi">524</span><span class="p">,</span> <span class="mi">525</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">526</span><span class="p">,</span> <span class="mi">527</span><span class="p">,</span> <span class="mi">528</span><span class="p">,</span> <span class="mi">529</span><span class="p">,</span> <span class="mi">530</span><span class="p">,</span> <span class="o">...</span> <span class="mi">596</span><span class="p">,</span> <span class="mi">597</span><span class="p">,</span> <span class="mi">598</span><span class="p">,</span> <span class="mi">599</span><span class="p">,</span> <span class="mi">600</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">601</span><span class="p">,</span> <span class="mi">602</span><span class="p">,</span> <span class="mi">603</span><span class="p">,</span> <span class="mi">604</span><span class="p">,</span> <span class="mi">605</span><span class="p">,</span> <span class="o">...</span> <span class="mi">671</span><span class="p">,</span> <span class="mi">672</span><span class="p">,</span> <span class="mi">673</span><span class="p">,</span> <span class="mi">674</span><span class="p">,</span> <span class="mi">675</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">676</span><span class="p">,</span> <span class="mi">677</span><span class="p">,</span> <span class="mi">678</span><span class="p">,</span> <span class="mi">679</span><span class="p">,</span> <span class="mi">680</span><span class="p">,</span> <span class="o">...</span> <span class="mi">746</span><span class="p">,</span> <span class="mi">747</span><span class="p">,</span> <span class="mi">748</span><span class="p">,</span> <span class="mi">749</span><span class="p">,</span> <span class="mi">750</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">751</span><span class="p">,</span> <span class="mi">752</span><span class="p">,</span> <span class="mi">753</span><span class="p">,</span> <span class="mi">754</span><span class="p">,</span> <span class="mi">755</span><span class="p">,</span> <span class="o">...</span> <span class="mi">821</span><span class="p">,</span> <span class="mi">822</span><span class="p">,</span> <span class="mi">823</span><span class="p">,</span> <span class="mi">824</span><span class="p">,</span> <span class="mi">825</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">826</span><span class="p">,</span> <span class="mi">827</span><span class="p">,</span> <span class="mi">828</span><span class="p">,</span> <span class="mi">829</span><span class="p">,</span> <span class="mi">830</span><span class="p">,</span> <span class="o">...</span> <span class="mi">896</span><span class="p">,</span> <span class="mi">897</span><span class="p">,</span> <span class="mi">898</span><span class="p">,</span> <span class="mi">899</span><span class="p">,</span> <span class="mi">900</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">901</span><span class="p">,</span> <span class="mi">902</span><span class="p">,</span> <span class="mi">903</span><span class="p">,</span> <span class="mi">904</span><span class="p">,</span> <span class="mi">905</span><span class="p">,</span> <span class="o">...</span> <span class="mi">971</span><span class="p">,</span> <span class="mi">972</span><span class="p">,</span> <span class="mi">973</span><span class="p">,</span> <span class="mi">974</span><span class="p">,</span> <span class="mi">975</span><span class="p">];</span>
+     <span class="p">[</span> <span class="mi">976</span><span class="p">,</span> <span class="mi">977</span><span class="p">,</span> <span class="mi">978</span><span class="p">,</span> <span class="mi">979</span><span class="p">,</span> <span class="mi">980</span><span class="p">,</span> <span class="o">...</span> <span class="mi">996</span><span class="p">,</span> <span class="mi">997</span><span class="p">,</span> <span class="mi">998</span><span class="p">,</span> <span class="mi">999</span><span class="p">,</span> <span class="mi">1000</span><span class="p">]}</span>   <span class="o">&lt;-</span> <span class="n">Remaining</span> <span class="n">values</span> <span class="n">included</span> <span class="ow">in</span> <span class="n">final</span> <span class="n">array</span> <span class="p">(</span><span class="n">N</span> <span class="o">=</span> <span class="mi">25</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Log</span> <span class="o">=</span>
+      <span class="n">struct</span> <span class="k">with</span> <span class="n">fields</span><span class="p">:</span>
+     <span class="n">DataType</span><span class="p">:</span> <span class="s2">&quot;single univariate vector (1 sequence)&quot;</span>
+   <span class="n">DataLength</span><span class="p">:</span> <span class="mi">1000</span>
+ <span class="n">WindowLength</span><span class="p">:</span> <span class="mi">75</span>
+<span class="n">WindowOverlap</span><span class="p">:</span> <span class="mi">0</span>
+ <span class="n">TotalWindows</span><span class="p">:</span> <span class="mi">14</span>
+         <span class="n">Mode</span><span class="p">:</span> <span class="s1">&#39;include&#39;</span>
+</pre></div>
+</div>
+<p>Create a matrix of 4 sequences of integers (1:1000, 1001:2000, 2001:3000, 3001:4000).
+Segment the data into windows of length 130x4, with 20 samples overlap.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">1000</span><span class="p">;</span> <span class="mi">1001</span><span class="p">:</span><span class="mi">2000</span><span class="p">;</span> <span class="mi">2001</span><span class="p">:</span><span class="mi">3000</span><span class="p">;</span> <span class="mi">3001</span><span class="p">:</span><span class="mi">4000</span><span class="p">]</span><span class="s1">&#39; ;</span>
+
+<span class="p">[</span><span class="n">WinData</span><span class="p">,</span> <span class="n">Log</span><span class="p">]</span> <span class="o">=</span> <span class="n">WindowData</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">WinLen</span> <span class="o">=</span> <span class="mi">130</span><span class="p">,</span> <span class="n">Overlap</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">WinData</span> <span class="o">=</span>
+    <span class="p">{[</span><span class="mi">1</span><span class="p">,</span>  <span class="mi">1001</span><span class="p">,</span>  <span class="mi">2001</span><span class="p">,</span>  <span class="mi">3001</span>
+      <span class="mi">2</span><span class="p">,</span>  <span class="mi">1002</span><span class="p">,</span>  <span class="mi">2002</span><span class="p">,</span>  <span class="mi">3002</span>
+      <span class="mi">3</span><span class="p">,</span>  <span class="mi">1003</span><span class="p">,</span>  <span class="mi">2003</span><span class="p">,</span>  <span class="mi">3003</span>
+            <span class="o">...</span>
+      <span class="mi">128</span><span class="p">,</span>  <span class="mi">1128</span><span class="p">,</span>  <span class="mi">2128</span><span class="p">,</span>  <span class="mi">3128</span>
+      <span class="mi">129</span><span class="p">,</span>  <span class="mi">1129</span><span class="p">,</span>  <span class="mi">2129</span><span class="p">,</span>  <span class="mi">3129</span>
+      <span class="mi">130</span><span class="p">,</span>  <span class="mi">1130</span><span class="p">,</span>  <span class="mi">2130</span><span class="p">,</span>  <span class="mi">3130</span><span class="p">];</span>
+     <span class="p">[</span><span class="mi">111</span><span class="p">,</span>  <span class="mi">1111</span><span class="p">,</span>  <span class="mi">2111</span><span class="p">,</span>  <span class="mi">3111</span>
+      <span class="mi">112</span><span class="p">,</span>  <span class="mi">1112</span><span class="p">,</span>  <span class="mi">2112</span><span class="p">,</span>  <span class="mi">3112</span>
+      <span class="mi">113</span><span class="p">,</span>  <span class="mi">1113</span><span class="p">,</span>  <span class="mi">2113</span><span class="p">,</span>  <span class="mi">3113</span>
+            <span class="o">...</span>
+      <span class="mi">238</span><span class="p">,</span>  <span class="mi">1238</span><span class="p">,</span>  <span class="mi">2238</span><span class="p">,</span>  <span class="mi">3238</span>
+      <span class="mi">239</span><span class="p">,</span>  <span class="mi">1239</span><span class="p">,</span>  <span class="mi">2239</span><span class="p">,</span>  <span class="mi">3239</span>
+      <span class="mi">240</span><span class="p">,</span>  <span class="mi">1240</span><span class="p">,</span>  <span class="mi">2240</span><span class="p">,</span>  <span class="mi">3240</span><span class="p">];</span>
+        <span class="p">:</span>     <span class="p">:</span>       <span class="p">:</span>     <span class="p">:</span>
+        <span class="p">:</span>     <span class="p">:</span>       <span class="p">:</span>     <span class="p">:</span>
+        <span class="p">:</span>     <span class="p">:</span>       <span class="p">:</span>     <span class="p">:</span>
+        <span class="p">:</span>     <span class="p">:</span>       <span class="p">:</span>     <span class="p">:</span>
+     <span class="p">[</span><span class="mi">771</span><span class="p">,</span>  <span class="mi">1771</span><span class="p">,</span>  <span class="mi">2771</span><span class="p">,</span>  <span class="mi">3771</span>
+      <span class="mi">772</span><span class="p">,</span>  <span class="mi">1772</span><span class="p">,</span>  <span class="mi">2772</span><span class="p">,</span>  <span class="mi">3772</span>
+      <span class="mi">773</span><span class="p">,</span>  <span class="mi">1773</span><span class="p">,</span>  <span class="mi">2773</span><span class="p">,</span>  <span class="mi">3773</span>
+            <span class="o">...</span>
+      <span class="mi">898</span><span class="p">,</span>  <span class="mi">1898</span><span class="p">,</span>  <span class="mi">2898</span><span class="p">,</span>  <span class="mi">3898</span>
+      <span class="mi">899</span><span class="p">,</span>  <span class="mi">1899</span><span class="p">,</span>  <span class="mi">2899</span><span class="p">,</span>  <span class="mi">3899</span>
+      <span class="mi">900</span><span class="p">,</span>  <span class="mi">1900</span><span class="p">,</span>  <span class="mi">2900</span><span class="p">,</span>  <span class="mi">3900</span><span class="p">]}</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Log</span> <span class="o">=</span>
+     <span class="n">struct</span> <span class="k">with</span> <span class="n">fields</span><span class="p">:</span>
+     <span class="n">DataType</span><span class="p">:</span> <span class="s2">&quot;multivariate matrix (4 vectors)&quot;</span>
+   <span class="n">DataLength</span><span class="p">:</span> <span class="mi">1000</span>
+ <span class="n">WindowLength</span><span class="p">:</span> <span class="mi">130</span>
+<span class="n">WindowOverlap</span><span class="p">:</span> <span class="mi">20</span>
+ <span class="n">TotalWindows</span><span class="p">:</span> <span class="mi">8</span>
+         <span class="n">Mode</span><span class="p">:</span> <span class="s2">&quot;exlcude&quot;</span>
+</pre></div>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Ex12.html" class="btn btn-neutral float-left" title="Example 12: [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../python/EHpython.html" class="btn btn-neutral float-right" title="EntropyHub: Python" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Matthew W. Flood.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
