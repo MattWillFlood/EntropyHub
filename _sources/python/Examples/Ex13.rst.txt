@@ -1,0 +1,116 @@
+=============================================
+Example 13: Windowing Data with WindowData()
+=============================================
+
+Create a sequence of integers from 1 - 1000 and segment the values into windows of length 75, with no overlap.
+
+.. code-block:: python3
+
+    X = np.arange(1,1001)
+    WinData, Log = EH.WindowData(X, WinLen = 75)
+
+    >>> WinData = 
+        (array([ 1,  2,  3,  4,  5, ... 71, 72, 73, 74, 75]),
+         array([ 76,  77,  78,  79, 80, ...  146, 147, 148, 149, 150]),
+         array([151, 152, 153, 154, 155, ... 221, 222, 223, 224, 225]),
+         array([226, 227, 228, 229, 230, ... 296, 297, 298, 299, 300]),
+         array([301, 302, 303, 304, 305, ... 371, 372, 373, 374, 375]),
+         array([376, 377, 378, 379, 380, ... 446, 447, 448, 449, 450]),
+         array([451, 452, 453, 454, 455, ... 521, 522, 523, 524, 525]),
+         array([526, 527, 528, 529, 530, ... 596, 597, 598, 599, 600]),
+         array([601, 602, 603, 604, 605, ... 671, 672, 673, 674, 675]),
+         array([676, 677, 678, 679, 680, ... 746, 747, 748, 749, 750]),
+         array([751, 752, 753, 754, 755, ... 821, 822, 823, 824, 825]),
+         array([826, 827, 828, 829, 830, ... 896, 897, 898, 899, 900]),
+         array([901, 902, 903, 904, 905, ... 971, 972, 973, 974, 975]))
+
+    >>> Log =
+        {'DataType': 'single univariate vector (1 sequence)',
+         'DataLength': 1000,
+         'WindowLength': 75,
+         'WindowOverlap': 0,
+         'TotalWindows': 13,
+         'Mode': 'exclude'}
+
+
+
+Repeat the previous step, but include any remaining values that do not fill the final window.
+
+.. code-block:: python3
+
+    WinData, Log = EH.WindowData(X, WinLen = 75, Mode = 'include')
+
+    >>> WinData = 
+        (array([ 1,  2,  3,  4,  5, ... 71, 72, 73, 74, 75]),
+         array([ 76,  77,  78,  79, 80, ...  146, 147, 148, 149, 150]),
+         array([151, 152, 153, 154, 155, ... 221, 222, 223, 224, 225]),
+         array([226, 227, 228, 229, 230, ... 296, 297, 298, 299, 300]),
+         array([301, 302, 303, 304, 305, ... 371, 372, 373, 374, 375]),
+         array([376, 377, 378, 379, 380, ... 446, 447, 448, 449, 450]),
+         array([451, 452, 453, 454, 455, ... 521, 522, 523, 524, 525]),
+         array([526, 527, 528, 529, 530, ... 596, 597, 598, 599, 600]),
+         array([601, 602, 603, 604, 605, ... 671, 672, 673, 674, 675]),
+         array([676, 677, 678, 679, 680, ... 746, 747, 748, 749, 750]),
+         array([751, 752, 753, 754, 755, ... 821, 822, 823, 824, 825]),
+         array([826, 827, 828, 829, 830, ... 896, 897, 898, 899, 900]),
+         array([901, 902, 903, 904, 905, ... 971, 972, 973, 974, 975]),
+         array([976, 977, 978, 979, 980, ... 996, 997, 998, 999, 1000]))   <- Remaining values included in final array (N = 25)
+
+    >>> Log =
+        {'DataType': 'single univariate vector (1 sequence)',
+         'DataLength': 1000,
+         'WindowLength': 75,
+         'WindowOverlap': 0,
+         'TotalWindows': 14,   <- Total windows increased from 13 to 14
+         'Mode': 'include'}
+
+
+
+Create a matrix of 4 sequences of integers (1:1000, 1001:2000, 2001:3000, 3001:4000).
+Segment the data into windows of length 130x4, with 20 samples overlap.
+
+.. code-block:: python3
+
+    X = np.vstack((np.arange(1,1001),
+                   np.arange(1001,2001),
+                   np.arange(2001,3001),
+                   np.arange(3001,4001))).T   
+                   
+    WinData, Log = EH.WindowData(X, WinLen = 130, Overlap = 20)
+
+    >>> WinData = 
+        (array([1,  1001,  2001,  3001
+                2,  1002,  2002,  3002
+                3,  1003,  2003,  3003
+                ...
+                128,  1128,  2128,  3128
+                129,  1129,  2129,  3129
+                130,  1130,  2130,  3130]),
+         array([111,  1111,  2111,  3111
+                112,  1112,  2112,  3112
+                113,  1113,  2113,  3113
+                ...
+                238,  1238,  2238,  3238
+                239,  1239,  2239,  3239
+                240,  1240,  2240,  3240]),
+
+                 :     :       :     :
+                 :     :       :     :
+                 :     :       :     :
+                 :     :       :     :
+
+         array([771,  1771,  2771,  3771
+                772,  1772,  2772,  3772
+                773,  1773,  2773,  3773
+                ...
+                898,  1898,  2898,  3898
+                899,  1899,  2899,  3899
+                900,  1900,  2900,  3900]))
+
+    >>> Log =
+        {'DataType': 'multivariate matrix (4 vectors)',
+         'DataLength': 1000,
+         'WindowLength': 130,
+         'WindowOverlap': 20,
+         'TotalWindows': 8,
+         'Mode': 'exclude'}

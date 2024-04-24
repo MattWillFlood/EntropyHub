@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Multiscale Entropies &mdash; EntropyHub 1.0 documentation</title>
+  <title>Multiscale Entropies &mdash; EntropyHub 2.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Multiscale Cross-Entropies" href="MultiscaleCross.html" />
-    <link rel="prev" title="Cross Entropies" href="Cross.html" /> 
+    <link rel="prev" title="Bidimensional Entropies" href="Bidimensional.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -63,13 +63,22 @@
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matCross.html"> Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultiscale.html"> Multiscale Entropies</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matMultivariateMultiscale.html"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Functions/matOther.html"> Other Functions</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -81,10 +90,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex12.html"> Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../matlab/Examples/Ex13.html"> Ex. 13 - Windowing data with WindowData()</a></li>
 </ul>
 </li>
 </ul>
@@ -97,13 +109,22 @@
 <li class="toctree-l3"><a class="reference internal" href="Cross.html"> Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="Multivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Bidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#"> Multiscale Entropies</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="MultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="Bidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="MultivariateMultiscale.html"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Other.html"> Other Functions</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -115,10 +136,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex12.html"> Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Examples/Ex13.html"> Ex. 13 - Windowing data with WindowData()</a></li>
 </ul>
 </li>
 </ul>
@@ -201,7 +225,7 @@ type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notrans
 To see the default parameters for a particular entropy method,          
 type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notranslate"><span class="pre">help(SampEn)</span></code>)</p>
 <p><code class="docutils literal notranslate"><span class="pre">EnType</span></code> can be any of the following (case sensitive) string names:</p>
-<dl class="field-list">
+<dl class="field-list simple">
 <dt class="field-odd">Base Entropies<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="field-list simple">
 <dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'ApEn'</span></code><span class="colon">:</span></dt>
@@ -294,9 +318,17 @@ type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notrans
 <li><p>Attention Entropy</p></li>
 </ul>
 </dd>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'DivEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p>Diversity Entropy</p></li>
+</ul>
+</dd>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'RangEn'</span></code><span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Range Entropy</p></li>
+</ul>
+</dd>
 </dl>
-<p>[<code class="docutils literal notranslate"><span class="pre">'DivEn'</span></code>]:    - Diversity Entropy
-[<code class="docutils literal notranslate"><span class="pre">'RangEn'</span></code>]:   - Range Entropy</p>
 </dd>
 <dt class="field-even">Cross Entropies<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="field-list simple">
@@ -342,42 +374,37 @@ type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notrans
 </dd>
 </dl>
 </dd>
-<dt class="field-odd">Bidimensional Entropies<span class="colon">:</span></dt>
+<dt class="field-odd">Multivariate Entropies<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="field-list simple">
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'SampEn2D'</span></code><span class="colon">:</span></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'MvSampEn'</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p>Bidimensional Sample Entropy</p></li>
+<li><p>Multivariate Sample Entropy</p></li>
 </ul>
 </dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'FuzzEn2D'</span></code><span class="colon">:</span></dt>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'MvFuzzEn'</span></code><span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p>Bidimensional Fuzzy Entropy</p></li>
+<li><p>Multivariate Fuzzy Entropy</p></li>
 </ul>
 </dd>
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'DispEn2D'</span></code><span class="colon">:</span></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'MvDispEn'</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p>Bidimensional Dispersion Entropy</p></li>
+<li><p>Multivariate Dispersion Entropy</p></li>
 </ul>
 </dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'DistEn2D'</span></code><span class="colon">:</span></dt>
+<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'MvCoSiEn'</span></code><span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p>Bidimensional Distribution Entropy</p></li>
+<li><p>Multivariate Cosine Similarity Entropy</p></li>
 </ul>
 </dd>
-<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'PermEn2D'</span></code><span class="colon">:</span></dt>
+<dt class="field-odd"><code class="docutils literal notranslate"><span class="pre">'MvPermEn'</span></code><span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p>Bidimensional Permutation Entropy</p></li>
-</ul>
-</dd>
-<dt class="field-even"><code class="docutils literal notranslate"><span class="pre">'EspEn2D'</span></code><span class="colon">:</span></dt>
-<dd class="field-even"><ul class="simple">
-<li><p>Bidimensional Espinosa Entropy</p></li>
+<li><p>Multivariate Permutation Entropy</p></li>
 </ul>
 </dd>
 </dl>
 </dd>
 <dt class="field-even">See also<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hXMSEn</span></code></p>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cMvMSEn</span></code>,  <code class="docutils literal notranslate"><span class="pre">rMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hXMSEn</span></code></p>
 </dd>
 </dl>
 </dd></dl>
@@ -776,7 +803,7 @@ Cardiovascular engineering and technology
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Cross.html" class="btn btn-neutral float-left" title="Cross Entropies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Bidimensional.html" class="btn btn-neutral float-left" title="Bidimensional Entropies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="MultiscaleCross.html" class="btn btn-neutral float-right" title="Multiscale Cross-Entropies" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

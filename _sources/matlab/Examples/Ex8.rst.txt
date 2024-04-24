@@ -26,7 +26,7 @@ variance of the signal at each scale.
 
 .. code-block:: matlab
 
-    MSx = cXMSEn(X, Mobj, 'Scales', 3, 'RadNew', 1)
+    MSx = cXMSEn(X(:,1), X(:,2), Mobj, 'Scales', 3, 'RadNew', 1)
     . . . . . . .
     
     >>> MSx = 1×3

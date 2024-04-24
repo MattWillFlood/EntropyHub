@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EntropyHub: Julia &mdash; EntropyHub 1.0 documentation</title>
+  <title>EntropyHub: Julia &mdash; EntropyHub 2.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
@@ -21,7 +21,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Example 10: Bidimensional Fuzzy Entropy" href="../python/Examples/Ex10.html" /> 
+    <link rel="prev" title="Example 13: Windowing Data with WindowData()" href="../python/Examples/Ex13.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -62,13 +62,22 @@
 <li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matCross.html"> Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matMultivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matMultiscale.html"> Multiscale Entropies</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matMultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matBidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matMultivariateMultiscale.html"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Functions/matOther.html"> Other Functions</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -80,10 +89,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex12.html"> Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../matlab/Examples/Ex13.html"> Ex. 13 - Windowing data with WindowData()</a></li>
 </ul>
 </li>
 </ul>
@@ -96,13 +108,22 @@
 <li class="toctree-l3"><a class="reference internal" href="../python/Functions/Cross.html"> Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/Multivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/Bidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../python/Functions/Multiscale.html"> Multiscale Entropies</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../python/Functions/MultiscaleCross.html"> Multiscale Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../python/Functions/Bidimensional.html"> Bidimensional (2D) Entropies</a><ul class="simple">
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/MultivariateMultiscale.html"> Multivariate Multiscale Entropies</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Functions/Other.html"> Other Functions</a><ul class="simple">
 </ul>
 </li>
 </ul>
@@ -114,10 +135,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex4.html"> Ex. 4 - Cross-Distribution Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex5.html"> Ex. 5 - Multiscale Entropy Object</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex6.html"> Ex. 6 - Multiscale [Increment] Entropy</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex7.html"> Ex. 7 - Refined Multisclae [Sample] Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex7.html"> Ex. 7 - Refined Multiscale [Sample] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex8.html"> Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex9.html"> Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex10.html"> Ex. 10 - Bidimensional Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex11.html"> Ex. 11 - Multivariate Dispersion Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex12.html"> Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../python/Examples/Ex13.html"> Ex. 13 - Windowing data with WindowData()</a></li>
 </ul>
 </li>
 </ul>
@@ -275,7 +299,7 @@ a .pdf document available to <a class="reference download internal" download="" 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../python/Examples/Ex10.html" class="btn btn-neutral float-left" title="Example 10: Bidimensional Fuzzy Entropy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../python/Examples/Ex13.html" class="btn btn-neutral float-left" title="Example 13: Windowing Data with WindowData()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

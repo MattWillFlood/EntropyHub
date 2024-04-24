@@ -1,0 +1,30 @@
+.. _pyMulti:
+
+======================
+Multivariate Entropies
+======================
+
+.. toctree::
+   :maxdepth: 3
+
+
+Functions for estimating the entropy of a multivariate dataset.
+*****************************************************************
+
+*The following functions also form the base entropy method used by* **multivariate multiscale entropy** *functions.*
+
+................................................................................
+
+These functions are directly available when EntropyHub is imported:
+
+.. code-block:: python
+
+    import EntropyHub as EH
+
+    dir(EH)
+
+................................................................................
+
+
+.. automodule:: EntropyHub
+   :members: MvCoSiEn,  MvDispEn, MvFuzzEn, MvPermEn, MvSampEn

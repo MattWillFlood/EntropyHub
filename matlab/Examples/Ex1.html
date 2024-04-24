@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Example 1: Sample Entropy &mdash; EntropyHub 1.0 documentation</title>
+  <title>Example 1: Sample Entropy &mdash; EntropyHub 2.0 documentation</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
@@ -97,6 +97,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Cross.html"> Cross-Entropies</a><ul class="simple">
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Multivariate.html"> Multivariate Entropies</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../python/Functions/Multiscale.html"> Multiscale Entropies</a><ul class="simple">
 </ul>
 </li>
@@ -124,8 +127,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../julia/EHjulia.html">EntropyHub - Julia</a><ul>
-<li class="toctree-l2"><a class="reference external" href="https://docs.juliahub.com/EntropyHub/npy5E/0.2.0/">EntropyHub.jl</a></li>
-<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/Examples/Examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/">EntropyHub.jl</a></li>
+<li class="toctree-l2"><a class="reference external" href="https://mattwillflood.github.io/EntropyHub.jl/stable/Examples/Examples">Examples</a></li>
 </ul>
 </li>
 </ul>
@@ -160,25 +163,25 @@
 <h1>Example 1: Sample Entropy<a class="headerlink" href="#example-1-sample-entropy" title="Permalink to this heading"></a></h1>
 <p>Import a signal of normally distributed random numbers [mean = 0; SD = 1], and calculate the
 sample entropy for each embedding dimension (<code class="docutils literal notranslate"><span class="pre">m</span></code>) from 0 to 4.</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">ExampleData</span><span class="p">(</span><span class="s">&quot;gaussian&quot;</span><span class="p">);</span><span class="w"></span>
-<span class="n">Samp</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">SampEn</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;m&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">ExampleData</span><span class="p">(</span><span class="s">&quot;gaussian&quot;</span><span class="p">);</span>
+<span class="n">Samp</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">SampEn</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;m&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span>
 
-<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Samp</span><span class="w"> </span><span class="p">=</span><span class="w"> </span>1<span class="n">x5</span><span class="w"></span>
-<span class="w">    </span><span class="mf">2.1789</span><span class="p">,</span><span class="w"> </span><span class="mf">2.1757</span><span class="p">,</span><span class="w"> </span><span class="mf">2.1819</span><span class="p">,</span><span class="w"> </span><span class="mf">2.2209</span><span class="p">,</span><span class="w"> </span><span class="mf">2.1756</span><span class="w"></span>
+<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Samp</span><span class="w"> </span><span class="p">=</span><span class="w"> </span>1<span class="n">x5</span>
+<span class="w">    </span><span class="mf">2.1789</span><span class="p">,</span><span class="w"> </span><span class="mf">2.1757</span><span class="p">,</span><span class="w"> </span><span class="mf">2.1819</span><span class="p">,</span><span class="w"> </span><span class="mf">2.2209</span><span class="p">,</span><span class="w"> </span><span class="mf">2.1756</span>
 </pre></div>
 </div>
 <p>Select the last value to get the sample entropy for <code class="docutils literal notranslate"><span class="pre">m</span></code> = 4.</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">Samp</span><span class="p">(</span><span class="k">end</span><span class="p">)</span><span class="w"></span>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="n">Samp</span><span class="p">(</span><span class="k">end</span><span class="p">)</span>
 
-<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="nb">ans</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">2.1756</span><span class="w"></span>
+<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="nb">ans</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mf">2.1756</span>
 </pre></div>
 </div>
 <p>Calculate the sample entropy for each embedding dimension (<code class="docutils literal notranslate"><span class="pre">m</span></code>) from 0 to 4 with
 a time delay (<code class="docutils literal notranslate"><span class="pre">tau</span></code>) of 2 samples.</p>
-<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Samp</span><span class="p">,</span><span class="w"> </span><span class="n">Phi1</span><span class="p">,</span><span class="w"> </span><span class="n">Phi2</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">SampEn</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;m&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;tau&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<div class="highlight-matlab notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Samp</span><span class="p">,</span><span class="w"> </span><span class="n">Phi1</span><span class="p">,</span><span class="w"> </span><span class="n">Phi2</span><span class="p">]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="n">SampEn</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;m&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="s">&#39;tau&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span>
 
-<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Samp</span><span class="w"> </span><span class="p">=</span><span class="w"> </span>1<span class="n">x5</span><span class="w"></span>
-<span class="w">    </span><span class="mf">2.1789</span><span class="w"> </span><span class="mf">2.1833</span><span class="w"> </span><span class="mf">2.1880</span><span class="w"> </span><span class="mf">2.1892</span><span class="w"> </span><span class="mf">2.1441</span><span class="w"></span>
+<span class="o">&gt;&gt;&gt;</span><span class="w"> </span><span class="n">Samp</span><span class="w"> </span><span class="p">=</span><span class="w"> </span>1<span class="n">x5</span>
+<span class="w">    </span><span class="mf">2.1789</span><span class="w"> </span><span class="mf">2.1833</span><span class="w"> </span><span class="mf">2.1880</span><span class="w"> </span><span class="mf">2.1892</span><span class="w"> </span><span class="mf">2.1441</span>
 </pre></div>
 </div>
 </section>

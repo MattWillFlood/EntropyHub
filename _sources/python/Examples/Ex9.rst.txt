@@ -35,7 +35,7 @@ and a plot of the multiscale entropy curve and the hierarchical tree with the cr
 
 .. code-block:: python3
 
-    MSx, Sn, Ci = EH.hXMSEn(Data, Mobj, Scales = 4, Plotx = True)
+    MSx, Sn, Ci = EH.hXMSEn(Data[:,0], Data[:,1], Mobj, Scales = 4, Plotx = True)
 
     >>> WARNING: Only first 4096 samples were used in hierarchical decomposition.
     The last 404 samples of each data sequence were ignored.

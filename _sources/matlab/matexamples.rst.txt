@@ -13,10 +13,13 @@ MatLab Examples:
     Ex. 4 - Cross-Distribution Entropy <./Examples/Ex4>
     Ex. 5 - Multiscale Entropy Object <./Examples/Ex5>
     Ex. 6 - Multiscale [Increment] Entropy <./Examples/Ex6>
-    Ex. 7 - Refined Multisclae [Sample] Entropy <./Examples/Ex7>
+    Ex. 7 - Refined Multiscale [Sample] Entropy <./Examples/Ex7>
     Ex. 8 - Composite Multiscale Cross-[Approximate] Entropy <./Examples/Ex8>
     Ex. 9 - Hierarchical Multiscale corrected Cross-[Conditional] Entropy <./Examples/Ex9>
     Ex. 10 - Bidimensional Fuzzy Entropy <./Examples/Ex10>
+    Ex. 11 - Multivariate Dispersion Entropy <./Examples/Ex11>
+    Ex. 12 - [Generalized] Refined-composite Multivariate Multiscale Fuzzy Entropy <./Examples/Ex12>
+    Ex. 13 - Windowing data with WindowData() <./Examples/Ex13>
     
 
 .....................................................................................................
@@ -61,13 +64,13 @@ These examples are merely a snippet of the full range of EntropyHub functionalit
 
 .. admonition::  THINGS TO REMEMBER
 
-    Parameters of the *base* or *cross-* entropy methods are passed to *multiscale* and
-    *multiscale cross-* entropy functions using the multiscale entropy object given by ``MSobject()``.
-    *Base* and *cross-* entropy methods are declared with ``MSobject()`` using a string of the function name.
+    Parameters of the *base*, *cross-* or *mulitvariate* entropy methods are passed to *multiscale*,
+    *multiscale cross-*, *multivariate multiscale* entropy functions using the multiscale entropy object given by ``MSobject()``.
+    *Base*, *cross-*, *multivariate* entropy methods are declared with ``MSobject()`` using a string of the function name.
 
     Each bidimensional entropy function (*SampEn2D*, *FuzzEn2D*, *DistEn2D*, *DispEn2D*, *EspEn2D*) has
     an important keyword argument - ``Lock``. *Bidimensional* entropy functions are
-    "locked" by default (``Lock == true``) to only permit matrices with a maximum size of 128 x 128.
+    "locked" by default (``Lock == True``) to only permit matrices with a maximum size of 128 x 128.
 
     In *hierarchical multiscale entropy* (``hMSEn()``) and *hierarchical multiscale cross-
     entropy* (``hXMSEn()``) functions, the length of the time series signal(s) is halved at each scale. 

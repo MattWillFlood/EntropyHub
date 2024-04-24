@@ -1,0 +1,17 @@
+===============
+Other Functions
+===============
+
+.. toctree::
+   :maxdepth: 3
+
+
+Supplementary functions for various tasks related to EntropyHub and signal processing.
+***************************************************************************************
+
+..........................................................................
+
+.. mat:automodule:: EntropyHub
+    :members: ExampleData, WindowData
+
+..........................................................................

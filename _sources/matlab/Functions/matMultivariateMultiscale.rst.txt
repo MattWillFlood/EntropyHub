@@ -1,0 +1,34 @@
+=================================
+Multivariate Multiscale Entropies
+=================================
+
+.. toctree::
+   :maxdepth: 3
+
+
+Functions for estimating the multivariate multiscale entropy of a multivariate dataset.
+***************************************************************************************
+
+Multivariate multiscale entropy can be calculated using any of the :ref:`matMulti`: 
+``MvCoSiEn``, ``MvDispEn``, ``MvFuzzEn``, ``MvPermEn``, ``MvSampEn``.
+
+.. important::
+
+    Multivariate multiscale entropy functions have two positional arguments:
+
+    1. the multivariate dataset, ``Data``, a N (>10) x M (>1) matrix
+    2. the multiscale entropy object, ``Mobj``.
+
+..........................................................................
+
+.. mat:automodule:: EntropyHub
+    :members: MSobject
+
+..........................................................................
+
+**The following functions use the multiscale entropy object shown above.**
+
+..........................................................................
+
+.. mat:automodule:: EntropyHub
+   :members: MvMSEn, cMvMSEn
