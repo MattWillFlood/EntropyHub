@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  24 APR 2024 14:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3) (preloaded format=pdflatex 2024.3.26)  26 APR 2024 19:39
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1479,42 +1479,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--155
-
+Overfull \hbox (1.58194pt too wide) in paragraph at lines 150--151
+   [] \OT1/cmr/m/n/12 func-tions for es-ti-mat-ing the en-tropy of a two-dimens
+ional
  []
 
 File: ../Graphics/Chapter Banner2.png Graphic file (type png)
 <use ../Graphics/Chapter Banner2.png>
 Package pdftex.def Info: ../Graphics/Chapter Banner2.png  used on input line 15
-6.
+3.
 (pdftex.def)             Requested size: 455.25195pt x 85.34825pt.
 [1
 
 
 {C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-56.
+Overfull \hbox (4.38885pt too wide) in paragraph at lines 154--155
+   [] \OT1/cmr/m/n/12 func-tions for per-form-ing sig-nal pro-cess-ing and othe
+r tasks
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
+
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
+59.
 (C:\Users\mattw\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
-
+Overfull \hbox (3.31804pt too wide) in paragraph at lines 167--169
+\OT1/cmr/m/n/10.95 can cal-cu-late the edge, weighted, mod-i-fied, amplitude-aw
+are, fine-grained or uniform-quantization
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
 
  []
 
-LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <12> not available
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 179.
-
-Overfull \hbox (13.0835pt too wide) in paragraph at lines 181--182
-[] \OT1/pcr/m/n/12 help(\OT1/pcr/m/sl/12 EntropyHub.function-name\OT1/pcr/m/n/1
-2 )   \OT1/cmr/m/n/12 e.g. \OT1/pcr/m/n/12 help EntropyHub.PermEn 
- []
-
 [2]
 Underfull \hbox (badness 2573) in paragraph at lines 214--214
 []|\OT1/cmr/m/n/12 Gridded Dis-tri-bu-tion En-
@@ -1556,29 +1561,23 @@ Overfull \hbox (44.30937pt too wide) in paragraph at lines 195--236
  []
 
 [3]
-Overfull \hbox (45.05211pt too wide) in paragraph at lines 268--269
-[]\OT1/cmr/m/it/12 Composite and Refined-composite Mul-ti-vari-ate Mul-ti-scale
- En-tropy \OT1/cmr/m/n/12 - [][]3.6.2[][]   \OT1/pcr/b/n/12 cMvMSEn() 
- []
+Overfull \hbox (14.35272pt too wide) in paragraph at lines 268--269
+[]\OT1/cmr/m/it/10.95 Composite and Refined-composite Mul-ti-vari-ate Mul-ti-sc
+ale En-tropy \OT1/cmr/m/n/10.95 - [][]3.6.2[][]   \OT1/pcr/b/n/10.95 cMvMSEn() 
 
-[4]
-Overfull \hbox (13.76445pt too wide) in paragraph at lines 298--302
-\OT1/cmr/m/n/12 Several new fuzzy mem-ber-ship func-tions have been added to \O
-T1/pcr/b/n/12 FuzzEn \OT1/cmr/m/n/12 ([][]3.1.3[][]), \OT1/pcr/b/n/12 XFuzzEn
- []
-
-[5]
-Overfull \hbox (2.4843pt too wide) in paragraph at lines 348--349
-[]\OT1/cmr/m/n/12 The de-fault ra-dius thresh-old dis-tance for \OT1/pcr/b/n/12
- XApEn\OT1/cmr/m/n/12 ([][]3.2.1[][]), \OT1/pcr/b/n/12 XSampEn \OT1/cmr/m/n/12 
-([][]3.2.2[][]) and \OT1/pcr/b/n/12 XK2En
  []
 
 
-Overfull \hbox (11.47607pt too wide) in paragraph at lines 348--349
-\OT1/cmr/m/n/12 ([][]3.2.4[][]) has been changed to use the pooled stan-dard de
--vi-a-tion [i.e. $0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 2 \OMS/cmsy/m/n/12 ^^C \OM
-L/cmm/m/it/12 SD[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X; Y\OT1/cmr/m/n/12 )$]. 
+Overfull \hbox (14.43707pt too wide) in paragraph at lines 292--294
+\OT1/cmr/m/n/10.95 A method that em-ploys co-sine sim-i-lar-ity to mea-sure sim
+-i-lar-ity be-tween de-lay vectors.[[]] 
+ []
+
+[4] [5]
+Overfull \hbox (23.62738pt too wide) in paragraph at lines 350--351
+[]\OT1/cmr/m/n/10.95 The de-fault ra-dius pa-ram-e-ter value for \OT1/pcr/b/n/1
+0.95 FuzzEn2D \OT1/cmr/m/n/10.95 ([][]3.7.2[][]) has been changed to (0.2*std(M
+at),2). 
  []
 
 [6]
@@ -1596,7 +1595,7 @@ Chapter 2.
 
 Package xcolor Warning: Incompatible color definition on input line 413.
 
-<../Graphics/matscreen1.png, id=824, 959.83594pt x 673.76718pt>
+<../Graphics/matscreen1.png, id=823, 959.83594pt x 673.76718pt>
 File: ../Graphics/matscreen1.png Graphic file (type png)
 <use ../Graphics/matscreen1.png>
 Package pdftex.def Info: ../Graphics/matscreen1.png  used on input line 442.
@@ -4722,7 +4721,10 @@ BEAEF7E030A.pygtex) [124]
 
 
 (_minted-EntropyHub_Guide/A2BA09E1A3F9B68E34455C1EEE64387DE8D75CA2EF3266F56A88E
-BEAEF7E030A.pygtex) [125]
+BEAEF7E030A.pygtex
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <12> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 20.
+) [125]
 \openout4 = `EntropyHub_Guide.pyg'.
 
 
@@ -5329,10 +5331,6 @@ Package pdftex.def Info: ../Graphics/rcMvMSEnjl.png  used on input line 4405.
 1FCC5D53D11.pygtex) [163]
 \openout4 = `EntropyHub_Guide.pyg'.
 
-runsystem(pygmentize -l "julia" -f latex -P commandprefix=PYG -F tokenmerge -P 
-stripnl="False" -o _minted-EntropyHub_Guide/A134DC94486FEDE11BD50EF26C32E01E7FC
-DFE0781F24E72B5A211FCC5D53D11.pygtex EntropyHub_Guide.pyg)...executed.
-
 
 (_minted-EntropyHub_Guide/A134DC94486FEDE11BD50EF26C32E01E7FCDFE0781F24E72B5A21
 1FCC5D53D11.pygtex) [164]
@@ -5519,9 +5517,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 4982--4983
 
  []
 
-runsystem(del _minted-EntropyHub_Guide\E43496DDDB79C8917A84FD0BE95297FF7FCDFE07
-81F24E72B5A211FCC5D53D11.pygtex)...executed.
-
 [173] (EntropyHub Guide.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -5544,11 +5539,11 @@ runsystem(del EntropyHub_Guide.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 37525 strings out of 474424
- 812971 string characters out of 5741739
+ 37533 strings out of 474424
+ 812827 string characters out of 5741739
  1967496 words of memory out of 5000000
- 58484 multiletter control sequences out of 15000+600000
- 579595 words of font info for 110 fonts, out of 8000000 for 9000
+ 58490 multiletter control sequences out of 15000+600000
+ 582334 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  88i,13n,96p,860b,831s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <./Kramer.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fonts/type1/publi
@@ -5588,7 +5583,7 @@ s/type1/urw/courier/ucrb8a.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX/fo
 nts/type1/urw/courier/ucrbo8a.pfb><C:/Users/mattw/AppData/Local/Programs/MiKTeX
 /fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/mattw/AppData/Local/Programs/MiKT
 eX/fonts/type1/urw/courier/ucrro8a.pfb>
-Output written on "EntropyHub Guide.pdf" (181 pages, 4448808 bytes).
+Output written on "EntropyHub Guide.pdf" (181 pages, 4449716 bytes).
 PDF statistics:
  2179 PDF objects out of 2487 (max. 8388607)
  415 named destinations out of 1000 (max. 500000)

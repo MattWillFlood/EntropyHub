@@ -2,7 +2,7 @@
 \contentsline {chapter}{\numberline {1}\textbf {Introduction}}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}\textbf {Updates}}{4}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}\textbf {v2.0} - [April 2024]}{4}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}\textbf {v1.0} - [March 2024]}{5}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.2}\textbf {v1.0} - [March 2024]}{4}{subsection.1.1.2}%
 \contentsline {section}{\numberline {1.2}\textbf {Contact}}{7}{section.1.2}%
 \contentsline {chapter}{\numberline {2}\textbf {Installation}}{8}{chapter.2}%
 \contentsline {section}{\numberline {2.1}\textbf {MatLab}}{8}{section.2.1}%

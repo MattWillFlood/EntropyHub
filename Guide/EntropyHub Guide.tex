@@ -141,34 +141,34 @@ It is important to clarify at the outset that the term \emph{entropy} henceforth
 \\\indent\indent Bell System Technical Journal (1948), 27 (3): 379–423.}
 , and not thermodynamic or other entropies from classical physics.
 \end{tcolorbox}
-\ \\ EntropyHub functions fall into five categories:\\
-\begin{description}[labelsep=5mm, labelwidth=3cm, nosep,style=multiline,leftmargin=45mm]
+\ \\ EntropyHub functions fall into eight categories:\\
+\begin{description}[labelsep=5mm, labelwidth=7cm, nosep,style=multiline,leftmargin=60mm]
 %\renewcommand{\labelitemi}{\scriptsize$\blacksquare$}
 \item[Base] functions for estimating the entropy of a single univariate data sequence.
-\item[Cross] functions for estimating the entropy between two univariate data sequences.
+\item[Cross-] functions for estimating the entropy between two univariate data sequences.
+\item[Multivariate] functions for estimating the entropy of a series of multivariate sequences.
 \item[Bidimensional] functions for estimating the entropy of a two-dimensional univariate matrix.
 \item[Multiscale] functions for estimating the multiscale entropy of a single univariate data sequences using any of the Base entropy functions.
 \item [Multiscale Cross-] functions for estimating the multiscale entropy between two univariate data sequences using any of the Cross-entropy functions.
+\item [Multivariate Multiscale] functions for estimating the multivariate multiscale entropy of a multivariate dataset using any of the multivariate entropy functions.
+\item [Other] functions for performing signal processing and other tasks pertaining to EntropyHub.
 \end{description}
 \ \noindent \newline
 \indent\indent [See \emph{Table \ref{table: tab_1}} for a list of all functions]\\
 
-While each function has its own unique keyword arguments, there are several keyword arguments (also known as Name/Value pairs in MatLab) common to most \texttt{Base, Cross} and \texttt{Bidimensional} entropies. These are: \small
+While each function has its own unique keyword arguments, there are several keyword arguments (also known as Name/Value pairs in MatLab) common to most \texttt{Base, Cross, Multivariate} and \texttt{Bidimensional} entropies. These are: \small
 \begin{description}[labelsep=5mm, labelwidth=3cm, nosep,style=multiline,leftmargin=45mm]
 \item[\texttt{\textbf{m}}]  	embedding dimension
 \item[\texttt{\textbf{tau}}] time delay
 \item[\texttt{\textbf{Logx}}]  	base of the logarithm in Shannon’s formula for entropy. \\
 					(this argument allows the entropy to be estimated in bits (base 2), nats (base \emph{e}), dits (base 10), or whatever the user specifies)
-\item[\texttt{\textbf{Norm}}]  normalisation of the entropy value as outlined in the source literature for that particular function.
 \end{description}
 
-\vspace{4mm}\normalsize
-\noindent All \texttt{Multiscale} and \texttt{Multiscale Cross-}entropy functions keyword arguments are \ul{identical}.\\
- 
+\ \newline
 One of the advantages of EntropyHub is the variety of keyword arguments available for many functions. For example, by specifying the \texttt{\textbf{Typex}} keyword argument when calling \texttt{PermEn}, one can calculate the edge, weighted, modified, amplitude-aware, fine-grained or uniform-quantization variants of permutation entropy, in addition to the original defined by Bandt and Pope \cite{Perm1}. Similarly, one can employ different fuzzy functions to transform state vector distances when calculating fuzzy entropy (\texttt{FuzzEn}) by specifying the \texttt{\textbf{Fx}} keyword argument. This ability to augment various parameters at the command line enables more advanced entropy methods to be performed with ease. \\
 
 \begin{tcolorbox}[sharp corners, colback=ehone!30, colframe=ehone, title=\textbf{IMPORTANT NOTE}]
-Although each function is complete with default arguments, blindly analysing time series data using these arguments is \textbf{\ul{strongly discouraged}}.\\ Inferring meaning about time series from entropy estimates is only valid when the parameters used accurately capture the underlying dynamics of the data.
+Although each function is complete with default arguments, blindly analysing data using these arguments is \textbf{\ul{strongly discouraged}}.\\ Inferring meaning about the nature of data from entropy estimates is only valid when the parameters used accurately capture the underlying dynamics of the data.
 \end{tcolorbox}
 
 
