@@ -29,6 +29,10 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `Radiological complexity of nuclear facilities: an information complexity approach to workplace monitoring <https://iopscience.iop.org/article/10.1088/1361-6498/ad42a5/meta>`_
+    | Abinash Chakraborty, Neeraj Parashar, Dhananjay Kumar Pandey, Pankaj Kumar, UV Deokar, JPN Pandey, MS Kulkarni
+    | *Journal of Radiological Protection*
+
 * `From physiological complexity to data interactions—A case study of recordings from exercise monitoring <https://pubs.aip.org/aip/cha/article/34/4/043136/3282829/From-physiological-complexity-to-data-interactions>`_
     | Małgorzata Andrzejewska, Tomasz Wróblewski, Szymon Cygan, Mateusz Ozimek, Monika Petelczyc
     | *Chaos*
