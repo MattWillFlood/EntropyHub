@@ -29,6 +29,10 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `Extracting Stress-Related EEG Patterns from Pre-Sleep EEG for Forecasting Slow-Wave Sleep Deficiency <https://ieeexplore.ieee.org/document/10510041>`_
+    | Cheng-Hua Su, Li-Wei Ko, Tzyy-Ping Jung, Julie Onton, Shey-Cherng Tzou, Jia-chi Juang, Chung-Yao Hsu,
+    | *IEEE Transactions on Neural Systems and Rehabilitation Engineering*
+
 * `Radiological complexity of nuclear facilities: an information complexity approach to workplace monitoring <https://iopscience.iop.org/article/10.1088/1361-6498/ad42a5/meta>`_
     | Abinash Chakraborty, Neeraj Parashar, Dhananjay Kumar Pandey, Pankaj Kumar, UV Deokar, JPN Pandey, MS Kulkarni
     | *Journal of Radiological Protection*
@@ -64,10 +68,6 @@ List of research articles citing EntropyHub
 
 2023
 ----
-
-* `Radiological Complexity of Nuclear Facilities: An Information Complexity Approach to Workplace Monitoring <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4643418>`_
-    | Abinash Chakraborty, Neeraj Parashar, DK Pandey, Pankaj Kumar, UV Deokar, JPN Pandey
-    | *SSRN - Social Science Research Network*
 
 * `Nonlinear Analysis of the Dynamical Characteristics of EEG Signals in Epileptic Brains <https://mhnursing.or.kr/index.php/JKPMHN/article/view/153>`_
     | Shervin Skaria, Sreelatha KS

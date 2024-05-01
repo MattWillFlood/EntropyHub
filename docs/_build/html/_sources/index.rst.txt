@@ -3,7 +3,7 @@
     <div style="display: flex; justify-content: flex-end">    
         <div class="__dimensions_badge_embed__" data-doi="10.1371/journal.pone.0259448"  data-style="small_circle"></div><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
         <div  class="altmetric-embed" data-badge-type='donut' data-badge-popover='right' data-altmetric-id="116252437"></div><script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
-        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="EntropyHub" data-description="Support me on Buy me a coffee!" data-message="Want to support EntropyHub? You can support us by buying us a coffee!" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+        <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="EntropyHub" data-description="Support me on Buy me a coffee!" data-message="Want to support EntropyHub? You can support the project by buying us a coffee!" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     </div>
 
 **********
