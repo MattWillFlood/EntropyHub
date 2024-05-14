@@ -35,77 +35,81 @@ There are 2 ways to install EntropyHub for MatLab.
 
 Method 1:
 *********
+.. toggle::
+      
+   1. In MatLab, open the Add-Ons browser under the home tab by clicking 'Get Add-Ons'.
 
-1. In MatLab, open the Add-Ons browser under the home tab by clicking 'Get Add-Ons'.
-
-   .. image:: ../_images/MATLAB_README3.png
-      :width: 800px
-      :align: center
-      :height: 400px  
+      .. image:: ../_images/MATLAB_README3.png
+         :width: 800px
+         :align: center
+         :height: 400px  
 
 
-2. In the search bar, search for *'EntropyHub'*.
+   2. In the search bar, search for *'EntropyHub'*.
 
-   .. image:: ../_images/matscreen2.png
-      :width: 800px
-      :align: center
-      :height: 400px  
+      .. image:: ../_images/matscreen2.png
+         :width: 800px
+         :align: center
+         :height: 400px  
 
-   .. image:: ../_images/matscreen3.png
-      :width: 800px
-      :align: center
-      :height: 250px  
+      .. image:: ../_images/matscreen3.png
+         :width: 800px
+         :align: center
+         :height: 250px  
 
-3. Open the resulting link, and click '*add*' in the top-right corner.
+   3. Open the resulting link, and click '*add*' in the top-right corner.
 
-   .. image:: ../_images/matscreen4.png
-      :width: 600px
-      :align: center
-      :height: 500px  
+      .. image:: ../_images/matscreen4.png
+         :width: 600px
+         :align: center
+         :height: 500px  
 
-4. Follow the instructions to install the toolbox. **Note: You must be logged in to your MathWorks account**. 
+   4. Follow the instructions to install the toolbox. **Note: You must be logged in to your MathWorks account**. 
 
-   .. image:: ../_images/matscreen5.png
-      :width: 600px
-      :align: center
-      :height: 500px  
+      .. image:: ../_images/matscreen5.png
+         :width: 600px
+         :align: center
+         :height: 500px  
 
 	
 Method 2:
 *********
 
-1. Go to the `MatLab folder in the EntropyHub repository <https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20MatLab>`_ on GitHub. 
+.. toggle::
 
-   .. image:: ../_images/MATLAB_README4.png
-      :width: 600px
-      :align: center
-      :height: 500px 
 
-2. Open the link to the MatLab toolbox file (**EntropyHub.mltbx**) file.
+   1. Go to the `MatLab folder in the EntropyHub repository <https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20MatLab>`_ on GitHub. 
 
-   .. image:: ../_images/matscreen8.png
-      :width: 600px
-      :align: center
-      :height: 500px 
+      .. image:: ../_images/MATLAB_README4.png
+         :width: 600px
+         :align: center
+         :height: 500px 
 
-3. Download the toolbox file.
+   2. Open the link to the MatLab toolbox file (**EntropyHub.mltbx**) file.
 
-   .. image:: ../_images/matscreen9.png
-      :width: 600px
-      :align: center
-      :height: 500px 
+      .. image:: ../_images/matscreen8.png
+         :width: 600px
+         :align: center
+         :height: 500px 
 
-4. Open matlab and change the current folder to the directory where the .mltbx file is saved.
+   3. Download the toolbox file.
 
-   .. image:: ../_images/MATLAB_README1.png
-      :width: 600px
-      :align: center
-      :height: 600px 
+      .. image:: ../_images/matscreen9.png
+         :width: 600px
+         :align: center
+         :height: 500px 
 
-5. Double-click the .mltbx file to open it and click install.
+   4. Open matlab and change the current folder to the directory where the .mltbx file is saved.
 
-   .. image:: ../_images/MATLAB_README2.png
-      :align: center
+      .. image:: ../_images/MATLAB_README1.png
+         :width: 600px
+         :align: center
+         :height: 600px 
+
+   5. Double-click the .mltbx file to open it and click install.
+
+      .. image:: ../_images/MATLAB_README2.png
+         :align: center
 
 
  

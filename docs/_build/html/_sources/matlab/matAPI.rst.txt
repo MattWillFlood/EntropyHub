@@ -46,166 +46,176 @@ EntropyHub functions fall into 8 categories:
 
 Base Entropies:
 ***************
+.. toggle::
 
-+------------------------------+----------------+
-|Entropy Type                  | Function Name  |
-+==============================+================+
-|Approximate Entropy           | ApEn           |
-+------------------------------+----------------+
-|Sample Entropy                | SampEn         |
-+------------------------------+----------------+
-|Fuzzy Entropy                 | FuzzEn         |
-+------------------------------+----------------+
-|Kolmogorov Entropy            | K2En           |
-+------------------------------+----------------+
-|Permutation Entropy           | PermEn         |
-+------------------------------+----------------+
-|Conditional Entropy           | CondEn         |
-+------------------------------+----------------+
-|Distribution Entropy          | DistEn         |
-+------------------------------+----------------+
-|Spectral Entropy              | SpecEn         |
-+------------------------------+----------------+
-|Dispersion Entropy            | DispEn         |
-+------------------------------+----------------+
-|Symbolic Dynamic Entropy      | SyDyEn         |
-+------------------------------+----------------+
-|Increment Entropy             | IncrEn         |
-+------------------------------+----------------+
-|Cosine Similarity Entropy     | CoSiEn         |
-+------------------------------+----------------+
-|Phase Entropy                 | PhasEn         |
-+------------------------------+----------------+
-|Slope Entropy                 | SlopEn         |
-+------------------------------+----------------+
-|Bubble Entropy                | BubbEn         |
-+------------------------------+----------------+
-|Gridded Distribution Entropy  | GridEn         |
-+------------------------------+----------------+
-|Entropy of Entropy            | EnofEn         |
-+------------------------------+----------------+
-|Attention Entropy             | AttnEn         |
-+------------------------------+----------------+
-|Diversity Entropy             | DivEn          |
-+------------------------------+----------------+
-|Range Entropy                 | RangEn         |
-+------------------------------+----------------+
-
+  +------------------------------+----------------+
+  |Entropy Type                  | Function Name  |
+  +==============================+================+
+  |Approximate Entropy           | ApEn           |
+  +------------------------------+----------------+
+  |Sample Entropy                | SampEn         |
+  +------------------------------+----------------+
+  |Fuzzy Entropy                 | FuzzEn         |
+  +------------------------------+----------------+
+  |Kolmogorov Entropy            | K2En           |
+  +------------------------------+----------------+
+  |Permutation Entropy           | PermEn         |
+  +------------------------------+----------------+
+  |Conditional Entropy           | CondEn         |
+  +------------------------------+----------------+
+  |Distribution Entropy          | DistEn         |
+  +------------------------------+----------------+
+  |Spectral Entropy              | SpecEn         |
+  +------------------------------+----------------+
+  |Dispersion Entropy            | DispEn         |
+  +------------------------------+----------------+
+  |Symbolic Dynamic Entropy      | SyDyEn         |
+  +------------------------------+----------------+
+  |Increment Entropy             | IncrEn         |
+  +------------------------------+----------------+
+  |Cosine Similarity Entropy     | CoSiEn         |
+  +------------------------------+----------------+
+  |Phase Entropy                 | PhasEn         |
+  +------------------------------+----------------+
+  |Slope Entropy                 | SlopEn         |
+  +------------------------------+----------------+
+  |Bubble Entropy                | BubbEn         |
+  +------------------------------+----------------+
+  |Gridded Distribution Entropy  | GridEn         |
+  +------------------------------+----------------+
+  |Entropy of Entropy            | EnofEn         |
+  +------------------------------+----------------+
+  |Attention Entropy             | AttnEn         |
+  +------------------------------+----------------+
+  |Diversity Entropy             | DivEn          |
+  +------------------------------+----------------+
+  |Range Entropy                 | RangEn         |
+  +------------------------------+----------------+
 
 Cross Entropies:
 ****************
+.. toggle::
 
-+------------------------------------+----------------+
-|Entropy Type                        | Function Name  |
-+====================================+================+
-|Cross-Approximate Entropy           | XApEn          |
-+------------------------------------+----------------+
-|Cross-Sample Entropy                | XSampEn        |
-+------------------------------------+----------------+
-|Cross-Fuzzy Entropy                 | XFuzzEn        |
-+------------------------------------+----------------+
-|Cross-Kolmogorov Entropy            | XK2En          |
-+------------------------------------+----------------+
-|Cross-Permutation Entropy           | XPermEn        |
-+------------------------------------+----------------+
-|Cross-Conditional Entropy           | XCondEn        |
-+------------------------------------+----------------+
-|Cross-Distribution Entropy          | XDistEn        |
-+------------------------------------+----------------+
-|Cross-Spectral Entropy              | XSpecEn        |
-+------------------------------------+----------------+
+  +------------------------------------+----------------+
+  |Entropy Type                        | Function Name  |
+  +====================================+================+
+  |Cross-Approximate Entropy           | XApEn          |
+  +------------------------------------+----------------+
+  |Cross-Sample Entropy                | XSampEn        |
+  +------------------------------------+----------------+
+  |Cross-Fuzzy Entropy                 | XFuzzEn        |
+  +------------------------------------+----------------+
+  |Cross-Kolmogorov Entropy            | XK2En          |
+  +------------------------------------+----------------+
+  |Cross-Permutation Entropy           | XPermEn        |
+  +------------------------------------+----------------+
+  |Cross-Conditional Entropy           | XCondEn        |
+  +------------------------------------+----------------+
+  |Cross-Distribution Entropy          | XDistEn        |
+  +------------------------------------+----------------+
+  |Cross-Spectral Entropy              | XSpecEn        |
+  +------------------------------------+----------------+
 
 Multivariate Entropies:
 ***********************
+.. toggle::
 
-+----------------------------------------+----------------+
-| Entropy Type                           | Function Name  |
-+========================================+================+
-| Multivariate Sample Entropy            | MvSampEn       |
-+----------------------------------------+----------------+
-| Multivariate Fuzzy Entropy             | MvFuzzEn       |
-+----------------------------------------+----------------+
-| Multivariate Permutation Entropy       | MvPermEn       |
-+----------------------------------------+----------------+
-| Multivariate Dispersion Entropy        | MvDispEn       |
-+----------------------------------------+----------------+
-| Multivariate Cosine Similarity Entropy | MvCoSiEn       |
-+----------------------------------------+----------------+
+  +----------------------------------------+----------------+
+  | Entropy Type                           | Function Name  |
+  +========================================+================+
+  | Multivariate Sample Entropy            | MvSampEn       |
+  +----------------------------------------+----------------+
+  | Multivariate Fuzzy Entropy             | MvFuzzEn       |
+  +----------------------------------------+----------------+
+  | Multivariate Permutation Entropy       | MvPermEn       |
+  +----------------------------------------+----------------+
+  | Multivariate Dispersion Entropy        | MvDispEn       |
+  +----------------------------------------+----------------+
+  | Multivariate Cosine Similarity Entropy | MvCoSiEn       |
+  +----------------------------------------+----------------+
+
+
 
 Bidimensional Entropies:
 ************************
+.. toggle::
 
-+------------------------------------+----------------+
-|Entropy Type                        | Function Name  |
-+====================================+================+
-|Bidimensional Sample Entropy        | SampEn2D       |
-+------------------------------------+----------------+
-|Bidimensional Fuzzy Entropy         | FuzzEn2D       |
-+------------------------------------+----------------+
-|Bidimensioanl Distribution Entropy  | DistEn2D       |
-+------------------------------------+----------------+
-|Bidimensioanl Dispersion Entropy    | DispEn2D       |
-+------------------------------------+----------------+
-|Bidimensioanl Permutation Entropy   | PermEn2D       |
-+------------------------------------+----------------+
-|Bidimensioanl Espinosa Entropy      | EspEn2D        |
-+------------------------------------+----------------+
+  +------------------------------------+----------------+
+  |Entropy Type                        | Function Name  |
+  +====================================+================+
+  |Bidimensional Sample Entropy        | SampEn2D       |
+  +------------------------------------+----------------+
+  |Bidimensional Fuzzy Entropy         | FuzzEn2D       |
+  +------------------------------------+----------------+
+  |Bidimensioanl Distribution Entropy  | DistEn2D       |
+  +------------------------------------+----------------+
+  |Bidimensioanl Dispersion Entropy    | DispEn2D       |
+  +------------------------------------+----------------+
+  |Bidimensioanl Permutation Entropy   | PermEn2D       |
+  +------------------------------------+----------------+
+  |Bidimensioanl Espinosa Entropy      | EspEn2D        |
+  +------------------------------------+----------------+
 
 
 Multiscale  Entropies:
 **********************
+.. toggle::
 
-+------------------------------------------+----------------+
-|Entropy Type                              | Function Name  |
-+==========================================+================+
-|Multiscale Entropy                        | MSEn           |
-+------------------------------------------+----------------+
-|Composite Multiscale Entropy              | cMSEn          |
-|(+ Refined-Composite Multiscale Entropy)  |                |
-+------------------------------------------+----------------+
-|Refined Multiscale Entropy                | rMSEn          |
-+------------------------------------------+----------------+
-|Hierarchical Multiscale Entropy           | hMSEn          |
-+------------------------------------------+----------------+
+  +------------------------------------------+----------------+
+  |Entropy Type                              | Function Name  |
+  +==========================================+================+
+  |Multiscale Entropy                        | MSEn           |
+  +------------------------------------------+----------------+
+  |Composite Multiscale Entropy              | cMSEn          |
+  |(+ Refined-Composite Multiscale Entropy)  |                |
+  +------------------------------------------+----------------+
+  |Refined Multiscale Entropy                | rMSEn          |
+  +------------------------------------------+----------------+
+  |Hierarchical Multiscale Entropy           | hMSEn          |
+  +------------------------------------------+----------------+
 
 
 Multiscale Cross-Entropies:
 ***************************
+.. toggle::
 
-+------------------------------------------------+----------------+
-|Entropy Type                                    | Function Name  |
-+================================================+================+
-|Multiscale Cross-Entropy                        | XMSEn          |
-+------------------------------------------------+----------------+
-|Composite Multiscale Cross-Entropy              | cXMSEn         |
-|(+ Refined-Composite Multiscale Cross-Entropy)  |                |
-+------------------------------------------------+----------------+
-|Refined Multiscale Cross-Entropy                | rXMSEn         |
-+------------------------------------------------+----------------+
-|Hierarchical Multiscale Cross-Entropy           | hXMSEn         |
-+------------------------------------------------+----------------+
+  +------------------------------------------------+----------------+
+  |Entropy Type                                    | Function Name  |
+  +================================================+================+
+  |Multiscale Cross-Entropy                        | XMSEn          |
+  +------------------------------------------------+----------------+
+  |Composite Multiscale Cross-Entropy              | cXMSEn         |
+  |(+ Refined-Composite Multiscale Cross-Entropy)  |                |
+  +------------------------------------------------+----------------+
+  |Refined Multiscale Cross-Entropy                | rXMSEn         |
+  +------------------------------------------------+----------------+
+  |Hierarchical Multiscale Cross-Entropy           | hXMSEn         |
+  +------------------------------------------------+----------------+
+
 
 Multivariate Multiscale  Entropies:
 ***********************************
+.. toggle::
 
-+------------------------------------------+----------------+
-| Entropy Type                             | Function Name  |
-+==========================================+================+
-| Multivariate Multiscale Entropy          | MvMSEn         |
-+------------------------------------------+----------------+
-| Composite (+ Refined-Composite)          | cMvMSEn        |
-| Multivariate Multiscale Entropy          |                |
-+------------------------------------------+----------------+
+  +------------------------------------------+----------------+
+  | Entropy Type                             | Function Name  |
+  +==========================================+================+
+  | Multivariate Multiscale Entropy          | MvMSEn         |
+  +------------------------------------------+----------------+
+  | Composite (+ Refined-Composite)          | cMvMSEn        |
+  | Multivariate Multiscale Entropy          |                |
+  +------------------------------------------+----------------+
 
 
 Other Functions:
 ****************
+.. toggle::
 
-+------------------------------------------+----------------+
-| Function  Description                    | Function Name  |
-+==========================================+================+
-| Example dataset import tool              | ExampleData    |
-+------------------------------------------+----------------+
-| Windowing tool                           |  WindowData    |
-| (for data segmentation)                  |                |
-+------------------------------------------+----------------+
+  +------------------------------------------+----------------+
+  | Function  Description                    | Function Name  |
+  +==========================================+================+
+  | Example dataset import tool              | ExampleData    |
+  +------------------------------------------+----------------+
+  | Windowing tool                           |  WindowData    |
+  | (for data segmentation)                  |                |
+  +------------------------------------------+----------------+

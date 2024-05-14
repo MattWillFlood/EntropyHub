@@ -41,6 +41,9 @@ Method 1:
 	
 Method 2:
 *********
+
+.. toggle::
+   
    1. Download the ``EntropyHub.x.x.x.tar.gz`` folder from the `EntropyHub PyPI repo <https://pypi.org/project/EntropyHub/>`_       
       (or the `EntropyHub GitHub repo <https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Python>`_)  and unzip it.
 

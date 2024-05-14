@@ -12,7 +12,7 @@ Publications
 .. image:: https://raw.githubusercontent.com/MattWillFlood/EntropyHub/main/metrics.entropyhub.svg
     :align: left
     :target: https://github.com/MattWillFlood/EntropyHub
-    :scale: 50 %
+    :scale: 50%
 
 .. raw:: html
         

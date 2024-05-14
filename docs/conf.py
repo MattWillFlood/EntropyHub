@@ -5,6 +5,7 @@
 #
 import os, sys
 sys.path.insert(0, os.path.abspath('../EntropyHubPy/'))
+#sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
 
 def setup(app):
@@ -21,8 +22,8 @@ release = '2.0'
 
 # -- General configuration ---------------------------------------------------
 extensions = [ 'sphinx_rtd_theme', 'sphinx.ext.autodoc',
-     'sphinxcontrib.matlab', 'sphinx.ext.githubpages']
-#extensions = [ 'sphinx_rtd_theme', 'sphinx.ext.autodoc']
+     'sphinxcontrib.matlab', 'sphinx.ext.githubpages', 'sphinx_togglebutton' ]
+#extensions = [ 'sphinx_rtd_theme', 'sphinx.ext.autodoc', 'sphinx_toolbox.collapse', 'hidden_code_block']
 
 autodoc_mock_imports = ["numpy", 'scipy','matplotlib','PyEMD','requests']
 pygments_style = 'sphinx'

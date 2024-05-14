@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cross Entropies &mdash; EntropyHub 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=338110d2" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -181,17 +190,18 @@
            <div itemprop="articleBody">
              
   <section id="cross-entropies">
-<span id="matcross"></span><h1>Cross Entropies<a class="headerlink" href="#cross-entropies" title="Permalink to this heading"></a></h1>
+<span id="matcross"></span><h1>Cross Entropies<a class="headerlink" href="#cross-entropies" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <section id="functions-for-estimating-the-entropy-between-two-univariate-time-series">
-<h2>Functions for estimating the entropy between two univariate time series.<a class="headerlink" href="#functions-for-estimating-the-entropy-between-two-univariate-time-series" title="Permalink to this heading"></a></h2>
+<h2>Functions for estimating the entropy between two univariate time series.<a class="headerlink" href="#functions-for-estimating-the-entropy-between-two-univariate-time-series" title="Link to this heading"></a></h2>
 <p><em>The following functions also form the cross-entropy method used by</em> <strong>multiscale cross-entropy</strong> <em>functions.</em></p>
 <hr class="docutils" />
-<span class="target" id="module-EntropyHub"></span><dl class="mat function">
+<dl class="mat function" id="module-EntropyHub">
 <dt class="sig sig-object mat" id="EntropyHub.XApEn">
-<span class="sig-name descname"><span class="pre">XApEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XApEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XApEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XApEn" title="Link to this definition"></a></dt>
 <dd><p>XApEn  estimates the cross-approximate entropy between two univariate  data sequences.</p>
+<div class="toggle docutils container">
 <p>[XAp, Phi] = XApEn(Sig1, Sig2)</p>
 <p>Returns the cross-approximate entropy estimates (<code class="docutils literal notranslate"><span class="pre">XAp</span></code>) and the log-average
 number of matched vectors (<code class="docutils literal notranslate"><span class="pre">Phi</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [0,1,2], estimated for the data
@@ -228,12 +238,14 @@ Annals of the New York Academy of Sciences
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XCondEn">
-<span class="sig-name descname"><span class="pre">XCondEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XCondEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XCondEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XCondEn" title="Link to this definition"></a></dt>
 <dd><p>XCondEn  estimates the corrected cross-conditional entropy between two univariate data sequences.</p>
+<div class="toggle docutils container">
 <p>[XCond, SEw, SEz] = XCondEn(Sig1, Sig2)</p>
 <p>Returns the corrected cross-conditional entropy estimates (<code class="docutils literal notranslate"><span class="pre">XCond</span></code>) and
 the corresponding Shannon entropies (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">SEw</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">SEz</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] 
@@ -278,12 +290,14 @@ Biological cybernetics
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XDistEn">
-<span class="sig-name descname"><span class="pre">XDistEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XDistEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XDistEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XDistEn" title="Link to this definition"></a></dt>
 <dd><p>XDistEn  estimates the cross-distribution entropy between two univariate data sequences.</p>
+<div class="toggle docutils container">
 <p>[XDist, Ppi] = XDistEn(Sig1, Sig2)</p>
 <p>Returns the cross-distribution entropy estimate (<code class="docutils literal notranslate"><span class="pre">XDist</span></code>) and the
 corresponding distribution probabilities (<code class="docutils literal notranslate"><span class="pre">Ppi</span></code>) estimated between the data 
@@ -325,12 +339,14 @@ Nonlinear Dynamics
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XFuzzEn">
-<span class="sig-name descname"><span class="pre">XFuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XFuzzEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XFuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XFuzzEn" title="Link to this definition"></a></dt>
 <dd><p>XFuzzEn  estimates the cross-fuzzy entropy between two univariate data sequences.</p>
+<div class="toggle docutils container">
 <p>[XFuzz, Ps1, Ps2] = XFuzzEn(Sig1, Sig2)</p>
 <p>Returns the cross-fuzzy entropy estimates (<code class="docutils literal notranslate"><span class="pre">XFuzz</span></code>) and the average fuzzy
 distances (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">Ps1</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">Ps2</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] estimated for the data sequences
@@ -445,12 +461,14 @@ IEEE Access
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XK2En">
-<span class="sig-name descname"><span class="pre">XK2En</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XK2En" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XK2En</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XK2En" title="Link to this definition"></a></dt>
 <dd><p>XK2En  estimates the cross-Kolmogorov (K2) entropy between two univariate data sequences.</p>
+<div class="toggle docutils container">
 <p>[XK2, Ci] = XK2En(Sig1, Sig2)</p>
 <p>Returns the cross-Kolmogorov entropy estimates (<code class="docutils literal notranslate"><span class="pre">XK2</span></code>) and the correlation
 integrals (<code class="docutils literal notranslate"><span class="pre">Ci</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] estimated between the data sequences 
@@ -479,12 +497,14 @@ pair arguments:</p>
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XPermEn">
-<span class="sig-name descname"><span class="pre">XPermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XPermEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XPermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XPermEn" title="Link to this definition"></a></dt>
 <dd><p>XPermEn  estimates the cross-permutation entropy between two univariate data sequences.</p>
+<div class="toggle docutils container">
 <p>[XPerm] = XPermEn(Sig1, Sig2)</p>
 <p>Returns the cross-permuation entropy estimates (<code class="docutils literal notranslate"><span class="pre">XPerm</span></code>) estimated betweeen
 the data sequences contained in  <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the default parameters:
@@ -513,12 +533,14 @@ Nonlinear Dynamics
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XSampEn">
-<span class="sig-name descname"><span class="pre">XSampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XSampEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XSampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XSampEn" title="Link to this definition"></a></dt>
 <dd><p>XSampEn  estimates the cross-sample entropy between two univariate data sequences.</p>
+<div class="toggle docutils container">
 <p>[XSamp, A, B] = XSampEn(Sig1, Sig2)</p>
 <p>Returns the cross-sample entropy estimates (<code class="docutils literal notranslate"><span class="pre">XSamp</span></code>) and the number of 
 matched vectors (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">A</span></code>) for m = [0,1,2] estimated for the two 
@@ -563,12 +585,14 @@ American Journal of Physiology-Regulatory, Integrative and Comparative Physiolog
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.XSpecEn">
-<span class="sig-name descname"><span class="pre">XSpecEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XSpecEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XSpecEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig1</span></em>, <em class="sig-param"><span class="pre">Sig2</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XSpecEn" title="Link to this definition"></a></dt>
 <dd><p>XSpecEn  estimates the cross-spectral entropy between two univariate  data sequences.</p>
+<div class="toggle docutils container">
 <p>[XSpec, BandEn] = XSpecEn(Sig1, Sig2)</p>
 <p>Returns the cross-spectral entropy estimate (<code class="docutils literal notranslate"><span class="pre">XSpec</span></code>) of the full cross-
 spectrum and the within-band entropy (<code class="docutils literal notranslate"><span class="pre">BandEn</span></code>) estimated between the data 
@@ -608,6 +632,7 @@ spectrum/band   [default]</p></li>
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 </section>

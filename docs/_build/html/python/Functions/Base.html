@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Base Entropies &mdash; EntropyHub 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=338110d2" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -181,11 +190,11 @@
            <div itemprop="articleBody">
              
   <section id="base-entropies">
-<span id="pybase"></span><h1>Base Entropies<a class="headerlink" href="#base-entropies" title="Permalink to this heading"></a></h1>
+<span id="pybase"></span><h1>Base Entropies<a class="headerlink" href="#base-entropies" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <section id="functions-for-estimating-the-entropy-of-a-single-univariate-time-series">
-<h2>Functions for estimating the entropy of a single univariate time series.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-single-univariate-time-series" title="Permalink to this heading"></a></h2>
+<h2>Functions for estimating the entropy of a single univariate time series.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-single-univariate-time-series" title="Link to this heading"></a></h2>
 <p><em>The following functions also form the base entropy method used by</em> <strong>multiscale entropy</strong> <em>functions.</em></p>
 <hr class="docutils" />
 <p>These functions are directly available when EntropyHub is imported:</p>
@@ -195,10 +204,11 @@
 </pre></div>
 </div>
 <hr class="docutils" />
-<span class="target" id="module-EntropyHub"></span><dl class="py function">
+<dl class="py function" id="module-EntropyHub">
 <dt class="sig sig-object py" id="EntropyHub.ApEn">
-<span class="sig-name descname"><span class="pre">ApEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.ApEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">ApEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.ApEn" title="Link to this definition"></a></dt>
 <dd><p>ApEn  estimates the approximate entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Ap</span><span class="p">,</span> <span class="n">Phi</span> <span class="o">=</span> <span class="n">ApEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -248,12 +258,14 @@ Proceedings of the National Academy of Sciences
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.AttnEn">
-<span class="sig-name descname"><span class="pre">AttnEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.AttnEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">AttnEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.AttnEn" title="Link to this definition"></a></dt>
 <dd><p>AttnEn  estimates the attention entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Attn</span><span class="p">,</span> <span class="p">(</span><span class="n">Hxx</span><span class="p">,</span> <span class="n">Hnn</span><span class="p">,</span> <span class="n">Hxn</span><span class="p">,</span> <span class="n">Hnx</span><span class="p">)</span> <span class="o">=</span> <span class="n">AttnEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -307,12 +319,14 @@ IEEE Transactions on Affective Computing
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.BubbEn">
-<span class="sig-name descname"><span class="pre">BubbEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.BubbEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">BubbEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.BubbEn" title="Link to this definition"></a></dt>
 <dd><p>BubbEn  estimates the bubble entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Bubb</span><span class="p">,</span> <span class="n">H</span> <span class="o">=</span> <span class="n">BubbEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -357,12 +371,14 @@ IEEE Transactions on Biomedical Engineering
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.CoSiEn">
-<span class="sig-name descname"><span class="pre">CoSiEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.CoSiEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">CoSiEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.CoSiEn" title="Link to this definition"></a></dt>
 <dd><p>CoSiEn  estimates the cosine similarity entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">CoSi</span><span class="p">,</span> <span class="n">Bm</span> <span class="o">=</span> <span class="n">CoSiEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -425,12 +441,14 @@ Entropy
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.CondEn">
-<span class="sig-name descname"><span class="pre">CondEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.CondEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">CondEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.CondEn" title="Link to this definition"></a></dt>
 <dd><p>CondEn  estimates the corrected conditional entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Cond</span><span class="p">,</span> <span class="n">SEw</span><span class="p">,</span> <span class="n">SEz</span> <span class="o">=</span> <span class="n">CondEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -491,12 +509,14 @@ Biological cybernetics
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.DispEn">
-<span class="sig-name descname"><span class="pre">DispEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NCDF'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fluct</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rho</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DispEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DispEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NCDF'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fluct</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rho</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DispEn" title="Link to this definition"></a></dt>
 <dd><p>DispEn  estimates the dispersion entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Dispx</span><span class="p">,</span> <span class="n">Ppi</span> <span class="o">=</span> <span class="n">DispEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -548,9 +568,9 @@ estimated from the data sequence (<code class="docutils literal notranslate"><sp
 </ul>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">False</span></code>  no normalisation - default</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>  normalises w.r.t # possible vector permutations 
-(<code class="docutils literal notranslate"><span class="pre">c^m</span></code>  or <code class="docutils literal notranslate"><span class="pre">(2c</span> <span class="pre">-1)^m-1</span></code> if <code class="docutils literal notranslate"><span class="pre">Fluct</span> <span class="pre">==</span> <span class="pre">True</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>  normalises w.r.t # possible vector permutations</p></li>
 </ul>
+<p>(<code class="docutils literal notranslate"><span class="pre">c^m</span></code>  or <code class="docutils literal notranslate"><span class="pre">(2c</span> <span class="pre">-1)^m-1</span></code> if <code class="docutils literal notranslate"><span class="pre">Fluct</span> <span class="pre">==</span> <span class="pre">True</span></code>).</p>
 </dd>
 <dt class="field-even">rho<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
@@ -586,12 +606,14 @@ Entropy
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.DistEn">
-<span class="sig-name descname"><span class="pre">DistEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Sturges'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DistEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DistEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Sturges'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DistEn" title="Link to this definition"></a></dt>
 <dd><p>DistEn  estimates the distribution entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Dist</span><span class="p">,</span> <span class="n">Ppi</span> <span class="o">=</span> <span class="n">DistEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -656,12 +678,14 @@ Medical &amp; biological engineering &amp; computing
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.DivEn">
-<span class="sig-name descname"><span class="pre">DivEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DivEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DivEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DivEn" title="Link to this definition"></a></dt>
 <dd><p>DivEn  estimates the diversity entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Div</span><span class="p">,</span> <span class="n">CDEn</span><span class="p">,</span> <span class="n">Bm</span> <span class="o">=</span> <span class="n">DivEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -721,12 +745,14 @@ vol. 19, no. 9, pp. 9642-9653, Sept. 2023</p>
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.EnofEn">
-<span class="sig-name descname"><span class="pre">EnofEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Xrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.EnofEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">EnofEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">S</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Xrange</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.EnofEn" title="Link to this definition"></a></dt>
 <dd><p>EnofEn  estimates the entropy of entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">EoE</span><span class="p">,</span> <span class="n">AvEn</span><span class="p">,</span> <span class="n">S2</span> <span class="o">=</span> <span class="n">EnofEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -777,12 +803,14 @@ Entropy
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.FuzzEn">
-<span class="sig-name descname"><span class="pre">FuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.2,</span> <span class="pre">2.0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.2,</span> <span class="pre">2.0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn" title="Link to this definition"></a></dt>
 <dd><p>FuzzEn  estimates the fuzzy entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Fuzz</span><span class="p">,</span> <span class="n">Ps1</span><span class="p">,</span> <span class="n">Ps2</span> <span class="o">=</span> <span class="n">FuzzEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -818,16 +846,15 @@ estimated for the data sequence (<code class="docutils literal notranslate"><spa
 <dd class="field-even"><ul class="simple">
 <li><p>Fuzzy function parameters, a 1 element scalar or a 2 element vector of positive values.</p></li>
 </ul>
-<dl class="simple">
-<dt>The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy  function are defined as follows:   [default: (.2 2)]</dt><dd><ul class="simple">
-<li><dl class="simple">
-<dt>default:      [Tuple]</dt><dd><ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy  function are defined as follows:   [default: (.2 2)]
+- default:      [Tuple]</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>r[0] = divisor of the exponential argument</p></li>
 <li><p>r[1] = argument exponent (pre-division)</p></li>
 </ul>
-</dd>
-</dl>
-</li>
+</div></blockquote>
+<ul class="simple">
 <li><dl class="simple">
 <dt>sigmoid:      [Tuple]</dt><dd><ul>
 <li><p>r[0] = divisor of the exponential argument</p></li>
@@ -910,8 +937,6 @@ normalised between [0 1]. When r = 1, the minimuum value of the exponential argu
 </li>
 </ul>
 </dd>
-</dl>
-</dd>
 <dt class="field-odd">Logx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Logarithm base, a positive scalar  [default: natural]</p></li>
@@ -943,12 +968,14 @@ IEEE Access
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.GridEn">
-<span class="sig-name descname"><span class="pre">GridEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.GridEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">GridEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.GridEn" title="Link to this definition"></a></dt>
 <dd><p>GridEn  estimates the gridded distribution entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">GDE</span><span class="p">,</span> <span class="n">GDR</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">GridEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -1012,12 +1039,14 @@ Physiological measurement
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.IncrEn">
-<span class="sig-name descname"><span class="pre">IncrEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">R</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.IncrEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">IncrEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">R</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.IncrEn" title="Link to this definition"></a></dt>
 <dd><p>IncrEn  estimates the increment entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Incr</span> <span class="o">=</span> <span class="n">IncrEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -1083,12 +1112,14 @@ Computers in biology and medicine
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.K2En">
-<span class="sig-name descname"><span class="pre">K2En</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.K2En" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">K2En</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.K2En" title="Link to this definition"></a></dt>
 <dd><p>K2En  estimates the Kolmogorov (K2) entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">K2</span><span class="p">,</span> <span class="n">Ci</span> <span class="o">=</span> <span class="n">K2En</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -1141,14 +1172,15 @@ J Neural Eng. 2013 Jun;10(3):03602</p>
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.PermEn">
-<span class="sig-name descname"><span class="pre">PermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'none'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tpx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PermEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'none'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tpx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PermEn" title="Link to this definition"></a></dt>
 <dd><p>PermEn  estimates the permutation entropy of a univariate data sequence.</p>
-<blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Perm</span><span class="p">,</span> <span class="n">Pnorm</span><span class="p">,</span> <span class="n">cPE</span> <span class="o">=</span> <span class="n">PermEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
+<div class="toggle docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Perm</span><span class="p">,</span> <span class="n">Pnorm</span><span class="p">,</span> <span class="n">cPE</span> <span class="o">=</span> <span class="n">PermEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
 <p>Returns the permuation entropy estimates (<code class="docutils literal notranslate"><span class="pre">Perm</span></code>), the normalised
@@ -1194,22 +1226,16 @@ estimated from the data sequence (<code class="docutils literal notranslate"><sp
 <ul class="simple">
 <li><p>False -  normalises w.r.t log(# of permutation symbols [<code class="docutils literal notranslate"><span class="pre">m-1]</span></code>) - default</p></li>
 <li><p>True  -  normalises w.r.t log(# of all possible permutations [<code class="docutils literal notranslate"><span class="pre">m!</span></code>])</p></li>
-</ul>
-<blockquote>
-<div><ul class="simple">
 <li><p>Note: Normalised permutation entropy is undefined for <code class="docutils literal notranslate"><span class="pre">m</span></code> = 1.</p></li>
 </ul>
 <p>** Note: When <code class="docutils literal notranslate"><span class="pre">Typex</span> <span class="pre">=</span> <span class="pre">'uniquant'</span></code> and <code class="docutils literal notranslate"><span class="pre">Norm</span> <span class="pre">=</span> <span class="pre">True</span></code>, normalisation is calculated w.r.t. <code class="docutils literal notranslate"><span class="pre">log(tpx^m)</span></code> **</p>
-</div></blockquote>
 </dd>
 <dt class="field-odd">Typex<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Permutation entropy variation, one of the following:</p></li>
 </ul>
-<dl class="simple">
-<dt>{<code class="docutils literal notranslate"><span class="pre">'uniquant'</span></code>, <code class="docutils literal notranslate"><span class="pre">'finegrain'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'ampaware'</span></code>, <code class="docutils literal notranslate"><span class="pre">'weighted'</span></code>, <code class="docutils literal notranslate"><span class="pre">'edge'</span></code>, <code class="docutils literal notranslate"><span class="pre">'phase'</span></code>}</dt><dd><p>See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on PermEn variants.</p>
-</dd>
-</dl>
+<p>{<code class="docutils literal notranslate"><span class="pre">'uniquant'</span></code>, <code class="docutils literal notranslate"><span class="pre">'finegrain'</span></code>, <code class="docutils literal notranslate"><span class="pre">'modified'</span></code>, <code class="docutils literal notranslate"><span class="pre">'ampaware'</span></code>, <code class="docutils literal notranslate"><span class="pre">'weighted'</span></code>, <code class="docutils literal notranslate"><span class="pre">'edge'</span></code>, <code class="docutils literal notranslate"><span class="pre">'phase'</span></code>}
+See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on PermEn variants.</p>
 </dd>
 <dt class="field-even">tpx<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
@@ -1225,7 +1251,6 @@ estimated from the data sequence (<code class="docutils literal notranslate"><sp
 </dl>
 <p>See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on PermEn variants.</p>
 </div></blockquote>
-</div></blockquote>
 <dl class="field-list simple">
 <dt class="field-odd">See also<span class="colon">:</span></dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">XPermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">ApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CondEn</span></code></p>
@@ -1236,12 +1261,10 @@ estimated from the data sequence (<code class="docutils literal notranslate"><sp
 Physical Review Letters,
 88.17 (2002): 174102.</p>
 </dd>
-<dt>[2] Xiao-Feng Liu, and Wang Yue,</dt><dd><dl class="simple">
-<dt>“Fine-grained permutation entropy as a measure of natural </dt><dd><p>complexity for time series.” 
+<dt>[2] Xiao-Feng Liu, and Wang Yue,</dt><dd><p>“Fine-grained permutation entropy as a measure of natural 
+complexity for time series.” 
 Chinese Physics B 
 18.7 (2009): 2690.</p>
-</dd>
-</dl>
 </dd>
 <dt>[3] Chunhua Bian, et al.,</dt><dd><p>“Modified permutation-entropy analysis of heartbeat dynamics.”
 Physical Review E
@@ -1279,12 +1302,14 @@ Physica A: Statistical Mechanics and its Applications
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.PhasEn">
-<span class="sig-name descname"><span class="pre">PhasEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PhasEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PhasEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">K</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PhasEn" title="Link to this definition"></a></dt>
 <dd><p>PhasEn  estimates the phase entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Phas</span> <span class="o">=</span> <span class="n">PhasEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -1346,12 +1371,14 @@ Physiological measurement
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.RangEn">
-<span class="sig-name descname"><span class="pre">RangEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Methodx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SampEn'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.RangEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RangEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Methodx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SampEn'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.RangEn" title="Link to this definition"></a></dt>
 <dd><p>RangEn  estimates the range entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Rangx</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span> <span class="o">=</span> <span class="n">RangEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -1411,12 +1438,14 @@ American Journal of Physiology-Heart and Circulatory Physiology
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.SampEn">
-<span class="sig-name descname"><span class="pre">SampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Vcp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SampEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">SampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Vcp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SampEn" title="Link to this definition"></a></dt>
 <dd><p>SampEn  estimates the sample entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Samp</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span> <span class="o">=</span> <span class="n">SampEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -1487,12 +1516,14 @@ American Journal of Physiology-Regulatory, Integrative and Comparative Physiolog
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.SlopEn">
-<span class="sig-name descname"><span class="pre">SlopEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lvls</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(5,</span> <span class="pre">45)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SlopEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">SlopEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lvls</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(5,</span> <span class="pre">45)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SlopEn" title="Link to this definition"></a></dt>
 <dd><p>SlopEn  estimates the slope entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Slop</span> <span class="o">=</span> <span class="n">SlopEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -1552,12 +1583,14 @@ Entropy
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.SpecEn">
-<span class="sig-name descname"><span class="pre">SpecEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Freqs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SpecEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">SpecEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Freqs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SpecEn" title="Link to this definition"></a></dt>
 <dd><p>SpecEn  estimates the spectral entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Spec</span><span class="p">,</span> <span class="n">BandEn</span> <span class="o">=</span> <span class="n">SpecEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -1595,12 +1628,12 @@ estimate from the data sequence (<code class="docutils literal notranslate"><spa
 <dd class="field-even"><ul class="simple">
 <li><p>Normalisation of Spec value, a boolean:</p></li>
 </ul>
+</dd>
+</dl>
 <ul class="simple">
 <li><p>[False]  no normalisation.</p></li>
 <li><p>[True]   normalises w.r.t # of spectrum/band frequency values - default.</p></li>
 </ul>
-</dd>
-</dl>
 </div></blockquote>
 <p>For more info, see the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a>.</p>
 <dl class="field-list simple">
@@ -1622,12 +1655,14 @@ Electroencephalography and clinical neurophysiology
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.SyDyEn">
-<span class="sig-name descname"><span class="pre">SyDyEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SyDyEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">SyDyEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'MEP'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SyDyEn" title="Link to this definition"></a></dt>
 <dd><p>SyDyEn  estimates the symbolic dynamic entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SyDy</span><span class="p">,</span> <span class="n">Zt</span> <span class="o">=</span> <span class="n">SyDyEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -1642,7 +1677,7 @@ normalisation = normalises w.r.t # possible vector permutations (<code class="do
 <p>Returns the symbolic dynamic entropy (<code class="docutils literal notranslate"><span class="pre">SyDy</span></code>) and the symbolic sequence
 (<code class="docutils literal notranslate"><span class="pre">Zt</span></code>) of the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the specified ‘keyword’ arguments:</p>
 <blockquote>
-<div><dl class="field-list">
+<div><dl class="field-list simple">
 <dt class="field-odd">m<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Embedding Dimension, a positive integer</p></li>
@@ -1662,21 +1697,15 @@ normalisation = normalises w.r.t # possible vector permutations (<code class="do
 <dd class="field-even"><ul class="simple">
 <li><p>Type of symbolic sequence partitioning, one of the following:</p></li>
 </ul>
-<p>{<code class="docutils literal notranslate"><span class="pre">'linear'</span></code>, <code class="docutils literal notranslate"><span class="pre">'uniform'</span></code>, <code class="docutils literal notranslate"><span class="pre">'MEP'</span></code> (default), <code class="docutils literal notranslate"><span class="pre">'kmeans'</span></code>}</p>
-</dd>
-<dt class="field-odd">‘Logx<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p>Logarithm base, a positive scalar</p></li>
-</ul>
-</dd>
-<dt class="field-even">Norm<span class="colon">:</span></dt>
-<dd class="field-even"><ul class="simple">
-<li><p>Normalisation of SyDyEn value, a boolean:</p></li>
-</ul>
-<p>[False]  no normalisation 
-[True]   normalises w.r.t # possible dispersion patterns (<code class="docutils literal notranslate"><span class="pre">c^m+1</span></code>) - default</p>
 </dd>
 </dl>
+<p>{<code class="docutils literal notranslate"><span class="pre">'linear'</span></code>, <code class="docutils literal notranslate"><span class="pre">'uniform'</span></code>, <code class="docutils literal notranslate"><span class="pre">'MEP'</span></code> (default), <code class="docutils literal notranslate"><span class="pre">'kmeans'</span></code>} 
+:’Logx:  - Logarithm base, a positive scalar  
+:Norm:  - Normalisation of SyDyEn value, a boolean:</p>
+<blockquote>
+<div><p>[False]  no normalisation 
+[True]   normalises w.r.t # possible dispersion patterns (<code class="docutils literal notranslate"><span class="pre">c^m+1</span></code>) - default</p>
+</div></blockquote>
 </div></blockquote>
 <p>See the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a> for more info on these parameters.</p>
 <dl class="field-list simple">
@@ -1704,6 +1733,7 @@ Signal processing
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 </section>

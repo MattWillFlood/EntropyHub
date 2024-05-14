@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Multivariate Entropies &mdash; EntropyHub 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=338110d2" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -181,17 +190,18 @@
            <div itemprop="articleBody">
              
   <section id="multivariate-entropies">
-<span id="matmulti"></span><h1>Multivariate Entropies<a class="headerlink" href="#multivariate-entropies" title="Permalink to this heading"></a></h1>
+<span id="matmulti"></span><h1>Multivariate Entropies<a class="headerlink" href="#multivariate-entropies" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <section id="functions-for-estimating-the-entropy-of-a-multivariate-dataset">
-<h2>Functions for estimating the entropy of a multivariate dataset.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-multivariate-dataset" title="Permalink to this heading"></a></h2>
+<h2>Functions for estimating the entropy of a multivariate dataset.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-multivariate-dataset" title="Link to this heading"></a></h2>
 <p><em>The following functions also form the base entropy method used by</em> <strong>multivariate multiscale entropy</strong> <em>functions.</em></p>
 <hr class="docutils" />
-<span class="target" id="module-EntropyHub"></span><dl class="mat function">
+<dl class="mat function" id="module-EntropyHub">
 <dt class="sig sig-object mat" id="EntropyHub.MvCoSiEn">
-<span class="sig-name descname"><span class="pre">MvCoSiEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Data</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvCoSiEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MvCoSiEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Data</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvCoSiEn" title="Link to this definition"></a></dt>
 <dd><p>MvCoSiEn  estimates the multivariate cosine similarity entropy of a multivariate dataset.</p>
+<div class="toggle docutils container">
 <p>[MCoSi, Bm] = MvCoSiEn(Data)</p>
 <p>Returns the multivariate cosine similarity entropy estimate (<code class="docutils literal notranslate"><span class="pre">MCoSi</span></code>)
 and the corresponding global probabilities (<code class="docutils literal notranslate"><span class="pre">Bm</span></code>) estimated for the 
@@ -282,12 +292,14 @@ Entropy
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.MvDispEn">
-<span class="sig-name descname"><span class="pre">MvDispEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Data</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvDispEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MvDispEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Data</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvDispEn" title="Link to this definition"></a></dt>
 <dd><p>MvDispEn  estimates the multivariate dispersion entropy of a multivariate dataset.</p>
+<div class="toggle docutils container">
 <p>[MDisp, RDE] = MvDispEn(Data)</p>
 <p>Returns the multivariate dispersion entropy estimate (<code class="docutils literal notranslate"><span class="pre">MDisp</span></code>) and
 the reverse dispersion entropy (<code class="docutils literal notranslate"><span class="pre">RDE</span></code>) for the M multivariate sequences 
@@ -399,12 +411,14 @@ Sensors
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.MvFuzzEn">
-<span class="sig-name descname"><span class="pre">MvFuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Data</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvFuzzEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MvFuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Data</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvFuzzEn" title="Link to this definition"></a></dt>
 <dd><p>MvFuzzEn  estimates the multivariate fuzzy entropy of a multivariate dataset.</p>
+<div class="toggle docutils container">
 <p>[MFuzz, B0, Bt, B1] = MvFuzzEn(Data)</p>
 <p>Returns the multivariate fuzzy entropy estimate (<code class="docutils literal notranslate"><span class="pre">MFuzz</span></code>) and the 
 average vector distances (<code class="docutils literal notranslate"><span class="pre">m</span></code>: <code class="docutils literal notranslate"><span class="pre">B0</span></code>; joint total 
@@ -567,12 +581,14 @@ IEEE signal processing letters 19.2 (2011): 91-94.</p>
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.MvPermEn">
-<span class="sig-name descname"><span class="pre">MvPermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Data</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvPermEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MvPermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Data</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvPermEn" title="Link to this definition"></a></dt>
 <dd><p>MvPermEn  estimates the multivariate permutation entropy of a multivariate dataset.</p>
+<div class="toggle docutils container">
 <p>[MPerm MPnorm] = MvPermEn(Data)</p>
 <p>Returns the multivariate permutation entropy estimate (<code class="docutils literal notranslate"><span class="pre">MPerm</span></code>) and
 the normalized permutation entropy for the M multivariate sequences in
@@ -706,12 +722,14 @@ Physica A: Statistical Mechanics and its Applications
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.MvSampEn">
-<span class="sig-name descname"><span class="pre">MvSampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Data</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvSampEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MvSampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Data</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvSampEn" title="Link to this definition"></a></dt>
 <dd><p>MvSampEn  estimates the multivariate sample entropy of a multivariate dataset.</p>
+<div class="toggle docutils container">
 <p>[MSamp, B0, Bt, B1] = MvSampEn(Data)</p>
 <p>Returns the multivariate sample entropy estimate (<code class="docutils literal notranslate"><span class="pre">MSamp</span></code>) and the
 average number of matched delay vectors (<code class="docutils literal notranslate"><span class="pre">m</span></code>: <code class="docutils literal notranslate"><span class="pre">B0</span></code>; joint total 
@@ -791,6 +809,7 @@ IEEE signal processing letters 19.2 (2011): 91-94.</p>
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 </section>

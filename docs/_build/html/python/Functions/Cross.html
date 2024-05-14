@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cross Entropies &mdash; EntropyHub 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=338110d2" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -181,11 +190,11 @@
            <div itemprop="articleBody">
              
   <section id="cross-entropies">
-<span id="pycross"></span><h1>Cross Entropies<a class="headerlink" href="#cross-entropies" title="Permalink to this heading"></a></h1>
+<span id="pycross"></span><h1>Cross Entropies<a class="headerlink" href="#cross-entropies" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <section id="functions-for-estimating-the-entropy-between-two-univariate-time-series">
-<h2>Functions for estimating the entropy between two univariate time series.<a class="headerlink" href="#functions-for-estimating-the-entropy-between-two-univariate-time-series" title="Permalink to this heading"></a></h2>
+<h2>Functions for estimating the entropy between two univariate time series.<a class="headerlink" href="#functions-for-estimating-the-entropy-between-two-univariate-time-series" title="Link to this heading"></a></h2>
 <p><em>The following functions also form the cross-entropy method used by</em> <strong>multiscale cross-entropy</strong> <em>functions.</em></p>
 <hr class="docutils" />
 <p>These functions are directly available when EntropyHub is imported:</p>
@@ -195,10 +204,11 @@
 </pre></div>
 </div>
 <hr class="docutils" />
-<span class="target" id="module-EntropyHub"></span><dl class="py function">
+<dl class="py function" id="module-EntropyHub">
 <dt class="sig sig-object py" id="EntropyHub.XApEn">
-<span class="sig-name descname"><span class="pre">XApEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XApEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XApEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XApEn" title="Link to this definition"></a></dt>
 <dd><p>XApEn  estimates the cross-approximate entropy between two univariate data sequences.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">XAp</span><span class="p">,</span> <span class="n">Phi</span> <span class="o">=</span> <span class="n">XApEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -208,11 +218,9 @@ sequences contained in <code class="docutils literal notranslate"><span class="p
 embedding dimension = 2, time delay = 1, 
 radius threshold = 0.2*SDpooled(<code class="docutils literal notranslate"><span class="pre">Sig1</span></code>,``Sig2``),  logarithm = natural</p>
 <p><a href="#id1"><span class="problematic" id="id2">**</span></a>NOTE: <code class="docutils literal notranslate"><span class="pre">XApEn</span></code> is direction-dependent. Thus, <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> is used as the template data sequence, and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> is the matching sequence.</p>
-<blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">XAp</span><span class="p">,</span> <span class="n">Phi</span> <span class="o">=</span> <span class="n">XApEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">XAp</span><span class="p">,</span> <span class="n">Phi</span> <span class="o">=</span> <span class="n">XApEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
-</div></blockquote>
 <p>Returns the cross-approximate entropy estimates (<code class="docutils literal notranslate"><span class="pre">XAp</span></code>) between the data
 sequences contained in <code class="docutils literal notranslate"><span class="pre">Sig1</span></code> and <code class="docutils literal notranslate"><span class="pre">Sig2</span></code> using the specified ‘keyword’ arguments:</p>
 <blockquote>
@@ -256,12 +264,14 @@ Annals of the New York Academy of Sciences
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.XCondEn">
-<span class="sig-name descname"><span class="pre">XCondEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XCondEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XCondEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XCondEn" title="Link to this definition"></a></dt>
 <dd><p>XCondEn  estimates the corrected cross-conditional entropy between two univariate data sequences.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">XCond</span><span class="p">,</span> <span class="n">SEw</span><span class="p">,</span> <span class="n">SEz</span> <span class="o">=</span> <span class="n">XCondEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -326,12 +336,14 @@ Biological cybernetics
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.XDistEn">
-<span class="sig-name descname"><span class="pre">XDistEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Sturges'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XDistEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XDistEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Sturges'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XDistEn" title="Link to this definition"></a></dt>
 <dd><p>XDistEn  estimates the cross-distribution entropy between two univariate data sequences.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">XDist</span><span class="p">,</span> <span class="n">Ppi</span> <span class="o">=</span> <span class="n">XDistEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -396,12 +408,14 @@ Nonlinear Dynamics
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.XFuzzEn">
-<span class="sig-name descname"><span class="pre">XFuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.2,</span> <span class="pre">2.0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XFuzzEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XFuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.2,</span> <span class="pre">2.0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XFuzzEn" title="Link to this definition"></a></dt>
 <dd><p>XFuzzEn  estimates the cross-fuzzy entropy between two univariate data sequences.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">XFuzz</span><span class="p">,</span> <span class="n">Ps1</span><span class="p">,</span> <span class="n">Ps2</span> <span class="o">=</span> <span class="n">XFuzzEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span><span class="n">Sig2</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -437,16 +451,15 @@ estimated for the data sequences in <code class="docutils literal notranslate"><
 <dd class="field-even"><ul class="simple">
 <li><p>Fuzzy function parameters, a 1 element scalar or a 2 element vector of positive values.</p></li>
 </ul>
-<dl class="simple">
-<dt>The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy  function are defined as follows:   [default: (.2 2)]</dt><dd><ul class="simple">
-<li><dl class="simple">
-<dt>default:      [Tuple]</dt><dd><ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy  function are defined as follows:   [default: (.2 2)]
+- default:      [Tuple]</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>r(1) = divisor of the exponential argument</p></li>
 <li><p>r(2) = argument exponent (pre-division)</p></li>
 </ul>
-</dd>
-</dl>
-</li>
+</div></blockquote>
+<ul class="simple">
 <li><dl class="simple">
 <dt>sigmoid:      [Tuple]</dt><dd><ul>
 <li><p>r(1) = divisor of the exponential argument</p></li>
@@ -529,8 +542,6 @@ normalised between [0 1]. When r = 1, the minimuum value of the exponential argu
 </li>
 </ul>
 </dd>
-</dl>
-</dd>
 <dt class="field-odd">Logx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Logarithm base, a positive scalar  [default: natural]</p></li>
@@ -558,12 +569,14 @@ IEEE Access
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.XK2En">
-<span class="sig-name descname"><span class="pre">XK2En</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XK2En" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XK2En</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XK2En" title="Link to this definition"></a></dt>
 <dd><p>XK2En  estimates the cross-Kolmogorov entropy between two univariate  data sequences.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">XK2</span><span class="p">,</span> <span class="n">Ci</span> <span class="o">=</span> <span class="n">XK2En</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -613,12 +626,14 @@ the data sequences contained in <code class="docutils literal notranslate"><span
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.XPermEn">
-<span class="sig-name descname"><span class="pre">XPermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XPermEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XPermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XPermEn" title="Link to this definition"></a></dt>
 <dd><p>XPermEn  estimates the cross-permutation entropy between two univariate data sequences.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">XPerm</span> <span class="o">=</span> <span class="n">XPermEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -664,12 +679,14 @@ Nonlinear Dynamics
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.XSampEn">
-<span class="sig-name descname"><span class="pre">XSampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Vcp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XSampEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XSampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Vcp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XSampEn" title="Link to this definition"></a></dt>
 <dd><p>XSampEn  Estimates the cross-sample entropy between two univariate data sequences.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">XSamp</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">B</span> <span class="o">=</span> <span class="n">XSampEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -736,12 +753,14 @@ American Journal of Physiology-Regulatory, Integrative and Comparative Physiolog
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.XSpecEn">
-<span class="sig-name descname"><span class="pre">XSpecEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Freqs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XSpecEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">XSpecEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">N</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Freqs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.XSpecEn" title="Link to this definition"></a></dt>
 <dd><p>XSpecEn  estimates the cross-spectral entropy between two univariate data sequences.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">XSpec</span><span class="p">,</span> <span class="n">BandEn</span> <span class="o">=</span> <span class="n">XSpecEn</span><span class="p">(</span><span class="n">Sig1</span><span class="p">,</span> <span class="n">Sig2</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -799,6 +818,7 @@ using the  following specified ‘keyword’ arguments:</p>
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 </section>

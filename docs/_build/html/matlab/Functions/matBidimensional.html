@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bidimensional Entropies &mdash; EntropyHub 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=338110d2" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -181,11 +190,11 @@
            <div itemprop="articleBody">
              
   <section id="bidimensional-entropies">
-<h1>Bidimensional Entropies<a class="headerlink" href="#bidimensional-entropies" title="Permalink to this heading"></a></h1>
+<h1>Bidimensional Entropies<a class="headerlink" href="#bidimensional-entropies" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <section id="functions-for-estimating-the-entropy-of-a-two-dimensional-univariate-matrix">
-<h2>Functions for estimating the entropy of a two-dimensional univariate matrix.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-two-dimensional-univariate-matrix" title="Permalink to this heading"></a></h2>
+<h2>Functions for estimating the entropy of a two-dimensional univariate matrix.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-two-dimensional-univariate-matrix" title="Link to this heading"></a></h2>
 <p>While EntropyHub functions primarily apply to univariate data sequences, with the following
 bidimensional entropy functions one can estimate the entropy of two-dimensional (2D)
 matrices. Hence, bidimensional entropy functions are useful for applications such as image/texture analysis.</p>
@@ -205,10 +214,11 @@ To pass matrices with sizes greater than [128 x 128], set <cite>Lock = false</ci
 <p><code class="docutils literal notranslate"><span class="pre">CAUTION:</span> <span class="pre">unlocking</span> <span class="pre">the</span> <span class="pre">permitted</span> <span class="pre">matrix</span> <span class="pre">size</span> <span class="pre">may</span> <span class="pre">cause</span> <span class="pre">your</span> <span class="pre">MatLab</span> <span class="pre">application</span> <span class="pre">to</span> <span class="pre">crash.</span></code></p>
 </div>
 <hr class="docutils" />
-<span class="target" id="module-EntropyHub"></span><dl class="mat function">
+<dl class="mat function" id="module-EntropyHub">
 <dt class="sig sig-object mat" id="EntropyHub.SampEn2D">
-<span class="sig-name descname"><span class="pre">SampEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SampEn2D" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">SampEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SampEn2D" title="Link to this definition"></a></dt>
 <dd><p>SampEn2D  estimates the bidimensional sample entropy of a data matrix.</p>
+<div class="toggle docutils container">
 <p>[SE2D, Phi1, Phi2] = SampEn2D(Mat)</p>
 <p>Returns the bidimensional sample entropy estimate (<code class="docutils literal notranslate"><span class="pre">SE2D</span></code>) and the number
 of matched sub-matricess (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">Phi1</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">Phi2</span></code>) estimated for the data 
@@ -252,12 +262,14 @@ Biomedical Physics &amp; Engineering Express
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.FuzzEn2D">
-<span class="sig-name descname"><span class="pre">FuzzEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn2D" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FuzzEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn2D" title="Link to this definition"></a></dt>
 <dd><p>FuzzEn2D  estimates the bidimensional fuzzy entropy of a data matrix.</p>
+<div class="toggle docutils container">
 <p>[Fuzz2D] = FuzzEn2D(Mat)</p>
 <p>Returns the bidimensional fuzzy entropy estimate (<code class="docutils literal notranslate"><span class="pre">Fuzz2D</span></code>) estimated for 
 the data matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the default parameters: time delay = 1,
@@ -386,12 +398,14 @@ IEEE Access
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.DistEn2D">
-<span class="sig-name descname"><span class="pre">DistEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DistEn2D" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DistEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DistEn2D" title="Link to this definition"></a></dt>
 <dd><p>DistEn2D  estimates the bidimensional distribution entropy of a data matrix.</p>
+<div class="toggle docutils container">
 <p>[Dist2D] = DistEn2D(Mat)</p>
 <p>Returns the bidimensional distribution entropy estimate (<code class="docutils literal notranslate"><span class="pre">Dist2D</span></code>)
 estimated for the data matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the default parameters:
@@ -450,12 +464,14 @@ IEEE Signal Processing Letters
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.DispEn2D">
-<span class="sig-name descname"><span class="pre">DispEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DispEn2D" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DispEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DispEn2D" title="Link to this definition"></a></dt>
 <dd><p>DispEn2D  estimates the bidimensional dispersion entropy of a data matrix.</p>
+<div class="toggle docutils container">
 <p>[Disp2D, RDE] = DispEn2D(Mat)</p>
 <p>Returns the bidimensional dispersion entropy estimate (<code class="docutils literal notranslate"><span class="pre">Disp2D</span></code>) and 
 reverse bidimensional dispersion entropy (<code class="docutils literal notranslate"><span class="pre">RDE</span></code>) estimated for the data 
@@ -512,15 +528,18 @@ Signal Processing: Image Communication,
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.PermEn2D">
-<span class="sig-name descname"><span class="pre">PermEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PermEn2D" title="Permalink to this definition"></a></dt>
-<dd><p>m, tau, Logx
-PermEn2D  estimates the bidimensional permutation entropy of a data matrix.</p>
-<blockquote>
-<div><p>[Perm2D] = PermEn2D(Mat)</p>
+<span class="sig-name descname"><span class="pre">PermEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PermEn2D" title="Link to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>m, tau, Logx</dt><dd><p>PermEn2D  estimates the bidimensional permutation entropy of a data matrix.</p>
+</dd>
+</dl>
+<div class="toggle docutils container">
+<p>[Perm2D] = PermEn2D(Mat)</p>
 <p>Returns the bidimensional permutation entropy estimate (<code class="docutils literal notranslate"><span class="pre">Perm2D</span></code>) estimated for 
 the data matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the default parameters: time delay = 1,
 logarithm = natural, template matrix size = [floor(H/10) floor(W/10)]  
@@ -601,13 +620,14 @@ PLoS ONE (2021) 16(11): e0259448.</p>
 </dl>
 </dd>
 </dl>
-</div></blockquote>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.EspEn2D">
-<span class="sig-name descname"><span class="pre">EspEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.EspEn2D" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">EspEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Mat</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.EspEn2D" title="Link to this definition"></a></dt>
 <dd><p>EspEn2D  estimates the bidimensional Espinosa entropy of a data matrix.</p>
+<div class="toggle docutils container">
 <p>[Esp2D] = EspEn2D(Mat)</p>
 <p>Returns the bidimensional Espinosa entropy estimate (<code class="docutils literal notranslate"><span class="pre">Esp2D</span></code>) 
 estimated for the data matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the default parameters: 
@@ -651,6 +671,7 @@ Entropy,
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 </section>

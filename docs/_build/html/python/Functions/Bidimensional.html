@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bidimensional Entropies &mdash; EntropyHub 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=338110d2" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -181,11 +190,11 @@
            <div itemprop="articleBody">
              
   <section id="bidimensional-entropies">
-<h1>Bidimensional Entropies<a class="headerlink" href="#bidimensional-entropies" title="Permalink to this heading"></a></h1>
+<h1>Bidimensional Entropies<a class="headerlink" href="#bidimensional-entropies" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <section id="functions-for-estimating-the-entropy-of-a-two-dimensional-univariate-matrix">
-<h2>Functions for estimating the entropy of a two-dimensional univariate matrix.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-two-dimensional-univariate-matrix" title="Permalink to this heading"></a></h2>
+<h2>Functions for estimating the entropy of a two-dimensional univariate matrix.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-two-dimensional-univariate-matrix" title="Link to this heading"></a></h2>
 <p>While EntropyHub functions primarily apply to univarite data sequences, with the following
 bidimensional entropy functions one can estimate the entropy of two-dimensional (2D)
 matrices. Hence, bidimensional entropy functions are useful for applications such as image/texture analysis.</p>
@@ -211,10 +220,11 @@ To pass matrices with sizes greater than [128 x 128], set <cite>Lock = false</ci
 </pre></div>
 </div>
 <hr class="docutils" />
-<span class="target" id="module-EntropyHub"></span><dl class="py function">
+<dl class="py function" id="module-EntropyHub">
 <dt class="sig sig-object py" id="EntropyHub.DispEn2D">
-<span class="sig-name descname"><span class="pre">DispEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NCDF'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DispEn2D" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DispEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NCDF'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DispEn2D" title="Link to this definition"></a></dt>
 <dd><p>DispEn2D  Estimates the bidimensional dispersion entropy of a data matrix.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Disp2D</span><span class="p">,</span> <span class="n">RDE</span> <span class="o">=</span> <span class="n">DispEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -265,10 +275,15 @@ See the <a class="reference external" href="https://github.com/MattWillFlood/Ent
 </dd>
 <dt class="field-even">Norm<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p>Normalisation of <code class="docutils literal notranslate"><span class="pre">Disp2D</span></code> and <code class="docutils literal notranslate"><span class="pre">RDE</span></code> values, a boolean:</p></li>
+<li><dl class="simple">
+<dt>Normalisation of <code class="docutils literal notranslate"><span class="pre">Disp2D</span></code> and <code class="docutils literal notranslate"><span class="pre">RDE</span></code> values, a boolean:</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code>  no normalisation - default</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">False</span></code>  no normalisation - default</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">True</span></code>  normalises w.r.t # possible vector permutations (c^m).</p></li>
 </ul>
 </dd>
@@ -297,12 +312,14 @@ Signal Processing: Image Communication,
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.DistEn2D">
-<span class="sig-name descname"><span class="pre">DistEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Sturges'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DistEn2D" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DistEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Sturges'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DistEn2D" title="Link to this definition"></a></dt>
 <dd><p>DistEn2D  Estimates the bidimensional distribution entropy of a data matrix.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Dist2D</span> <span class="o">=</span> <span class="n">DistEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -379,12 +396,14 @@ IEEE Signal Processing Letters
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.EspEn2D">
-<span class="sig-name descname"><span class="pre">EspEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.EspEn2D" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">EspEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.7</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.EspEn2D" title="Link to this definition"></a></dt>
 <dd><p>EspEn2D  Estimates the bidimensional Espinosa entropy of a data matrix.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Esp2D</span> <span class="o">=</span> <span class="n">EspEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -395,11 +414,9 @@ logarithm = natural, matrix template size = [floor(H/10) floor(W/10)]
 (where H and W represent the height (rows) and width (columns) of 
 the data matrix <code class="docutils literal notranslate"><span class="pre">Mat</span></code>) 
 ** The minimum number of rows and columns of <code class="docutils literal notranslate"><span class="pre">Mat</span></code> must be &gt; 10.</p>
-<blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Esp2D</span> <span class="o">=</span> <span class="n">EspEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Esp2D</span> <span class="o">=</span> <span class="n">EspEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
-</div></blockquote>
 <p>Returns the bidimensional Espinosa entropy (<code class="docutils literal notranslate"><span class="pre">Esp2D</span></code>) estimates for the data
 matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the specified ‘keyword’ arguments:</p>
 <blockquote>
@@ -445,21 +462,21 @@ creates a vector of 753049836 elements. To enable matrices greater than [128 x 1
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn2D</span></code></p>
 </dd>
 <dt class="field-even">References<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
-<dt>[1] Ricardo Espinosa, et al.,</dt><dd><p>“Two-dimensional EspEn: A New Approach to Analyze Image Texture 
+<dd class="field-even"><p>[1] Ricardo Espinosa, et al.,
+“Two-dimensional EspEn: A New Approach to Analyze Image Texture 
 by Irregularity.” 
 Entropy,
 23:1261 (2021)</p>
 </dd>
 </dl>
-</dd>
-</dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.FuzzEn2D">
-<span class="sig-name descname"><span class="pre">FuzzEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn2D" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FuzzEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn2D" title="Link to this definition"></a></dt>
 <dd><p>FuzzEn2D  estimates the bidimensional fuzzy entropy of a data matrix.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Fuzz2D</span> <span class="o">=</span> <span class="n">FuzzEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -496,16 +513,15 @@ matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span><
 <dd class="field-even"><ul class="simple">
 <li><p>Fuzzy function parameters, a 1 element scalar or a 2 element vector of positive values.</p></li>
 </ul>
-<dl class="simple">
-<dt>The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy  function are defined as follows:   [default: (0.2*SD(Mat), 2)]</dt><dd><ul class="simple">
-<li><dl class="simple">
-<dt>default:      [Tuple]</dt><dd><ul>
+<p>The <code class="docutils literal notranslate"><span class="pre">r</span></code> parameters for each fuzzy  function are defined as follows:   [default: (0.2*SD(Mat), 2)]
+- default:      [Tuple]</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>r(1) = divisor of the exponential argument</p></li>
 <li><p>r(2) = argument exponent (pre-division)</p></li>
 </ul>
-</dd>
-</dl>
-</li>
+</div></blockquote>
+<ul class="simple">
 <li><dl class="simple">
 <dt>sigmoid:      [Tuple]</dt><dd><ul>
 <li><p>r(1) = divisor of the exponential argument</p></li>
@@ -588,8 +604,6 @@ normalised between [0 1]. When r = 1, the minimuum value of the exponential argu
 </li>
 </ul>
 </dd>
-</dl>
-</dd>
 <dt class="field-odd">Logx<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p>Logarithm base, a positive scalar    (default: natural)</p></li>
@@ -630,12 +644,14 @@ IEEE Access
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.PermEn2D">
-<span class="sig-name descname"><span class="pre">PermEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PermEn2D" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PermEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PermEn2D" title="Link to this definition"></a></dt>
 <dd><p>PermEn2D  Estimates the bidimensional permutation entropy of a data matrix.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Perm2D</span> <span class="o">=</span> <span class="n">PermEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -686,15 +702,18 @@ greater than [128 x 128] elements, set <code class="docutils literal notranslate
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>The original bidimensional permutation entropy algorithms [1][2]</strong>
-<strong>do not account for equal-valued elements of the embedding matrices.</strong>
-To overcome this, PermEn2D uses the lowest common rank for
+<strong>do not account for equal-valued elements of the embedding matrices.</strong></p>
+<blockquote>
+<div><p>To overcome this, PermEn2D uses the lowest common rank for
 such instances. For example, given an embedding matrix A where,</p>
 <dl class="field-list">
 <dt class="field-odd">A<span class="colon">:</span></dt>
 <dd class="field-odd"><div class="line-block">
 <div class="line">[3.4  5.5  7.3]         </div>
+<div class="line-block">
 <div class="line">[2.1  6    9.9]       </div>
 <div class="line">[7.3  1.1  2.1]      </div>
+</div>
 </div>
 </dd>
 </dl>
@@ -714,6 +733,7 @@ Therefore, the number of possible permutations is no longer
 normalized by the maximum Shannon entropy (Smax = log((mx*my)!) 
 <code class="docutils literal notranslate"><span class="pre">assuming</span> <span class="pre">that</span> <span class="pre">no</span> <span class="pre">equal</span> <span class="pre">values</span> <span class="pre">are</span> <span class="pre">found</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">permutation</span>
 <span class="pre">motif</span> <span class="pre">matrices</span></code>, as presented in [1].</p>
+</div></blockquote>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">See also<span class="colon">:</span></dt>
@@ -735,12 +755,14 @@ PLoS ONE (2021) 16(11): e0259448.</p>
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.SampEn2D">
-<span class="sig-name descname"><span class="pre">SampEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SampEn2D" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">SampEn2D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Lock</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SampEn2D" title="Link to this definition"></a></dt>
 <dd><p>SampEn2D  Estimates the bidimensional sample entropy of a data matrix.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SE2D</span><span class="p">,</span> <span class="n">Phi1</span><span class="p">,</span> <span class="n">Phi2</span> <span class="o">=</span> <span class="n">SampEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -751,11 +773,9 @@ radius distance threshold = 0.2*SD(<code class="docutils literal notranslate"><s
 matrix template size = [floor(H/10) floor(W/10)]  (where H and W represent
 the height (rows) and width (columns) of the data matrix <code class="docutils literal notranslate"><span class="pre">Mat</span></code>) 
 * The minimum dimension size of Mat must be &gt; 10.</p>
-<blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SE2D</span><span class="p">,</span> <span class="n">Phi1</span><span class="p">,</span> <span class="n">Phi2</span> <span class="o">=</span> <span class="n">SampEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SE2D</span><span class="p">,</span> <span class="n">Phi1</span><span class="p">,</span> <span class="n">Phi2</span> <span class="o">=</span> <span class="n">SampEn2D</span><span class="p">(</span><span class="n">Mat</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
-</div></blockquote>
 <p>Returns the bidimensional sample entropy (<code class="docutils literal notranslate"><span class="pre">SE2D</span></code>) estimates for the data
 matrix (<code class="docutils literal notranslate"><span class="pre">Mat</span></code>) using the specified ‘keyword’ arguments:</p>
 <blockquote>
@@ -805,6 +825,7 @@ Biomedical Physics &amp; Engineering Express
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 </section>
