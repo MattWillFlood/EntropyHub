@@ -29,6 +29,10 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `Diverging functional connectivity timescales: Capturing distinct aspects of cognitive performance in early psychosis <https://www.medrxiv.org/content/10.1101/2024.05.07.24306932v1>`_
+    | Fabian Hirsch, Ângelo Bumanglag, Yifei Zhang, Afra Wohlschlaeger
+    | *MedrXiv*
+
 * `Extracting Stress-Related EEG Patterns from Pre-Sleep EEG for Forecasting Slow-Wave Sleep Deficiency <https://ieeexplore.ieee.org/document/10510041>`_
     | Cheng-Hua Su, Li-Wei Ko, Tzyy-Ping Jung, Julie Onton, Shey-Cherng Tzou, Jia-chi Juang, Chung-Yao Hsu,
     | *IEEE Transactions on Neural Systems and Rehabilitation Engineering*
