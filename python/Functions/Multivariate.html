@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Multivariate Entropies &mdash; EntropyHub 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=338110d2" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -181,11 +190,11 @@
            <div itemprop="articleBody">
              
   <section id="multivariate-entropies">
-<span id="pymulti"></span><h1>Multivariate Entropies<a class="headerlink" href="#multivariate-entropies" title="Permalink to this heading"></a></h1>
+<span id="pymulti"></span><h1>Multivariate Entropies<a class="headerlink" href="#multivariate-entropies" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <section id="functions-for-estimating-the-entropy-of-a-multivariate-dataset">
-<h2>Functions for estimating the entropy of a multivariate dataset.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-multivariate-dataset" title="Permalink to this heading"></a></h2>
+<h2>Functions for estimating the entropy of a multivariate dataset.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-multivariate-dataset" title="Link to this heading"></a></h2>
 <p><em>The following functions also form the base entropy method used by</em> <strong>multivariate multiscale entropy</strong> <em>functions.</em></p>
 <hr class="docutils" />
 <p>These functions are directly available when EntropyHub is imported:</p>
@@ -195,10 +204,11 @@
 </pre></div>
 </div>
 <hr class="docutils" />
-<span class="target" id="module-EntropyHub"></span><dl class="py function">
+<dl class="py function" id="module-EntropyHub">
 <dt class="sig sig-object py" id="EntropyHub.MvCoSiEn">
-<span class="sig-name descname"><span class="pre">MvCoSiEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvCoSiEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MvCoSiEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvCoSiEn" title="Link to this definition"></a></dt>
 <dd><p>MvCoSiEn  estimates the multivariate cosine similarity entropy of a multivariate dataset.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MCoSi</span><span class="p">,</span> <span class="n">Bm</span> <span class="o">=</span> <span class="n">MvCoSiEn</span><span class="p">(</span><span class="n">Data</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -296,12 +306,14 @@ Entropy
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.MvDispEn">
-<span class="sig-name descname"><span class="pre">MvDispEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NCDF'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Methodx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'v1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvDispEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MvDispEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'NCDF'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Methodx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'v1'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvDispEn" title="Link to this definition"></a></dt>
 <dd><p>MvDispEn  estimates the multivariate dispersion entropy of a multivariate dataset.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MDisp</span><span class="p">,</span> <span class="n">RDE</span> <span class="o">=</span> <span class="n">MvDispEn</span><span class="p">(</span><span class="n">Data</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -393,7 +405,9 @@ embedding approach of Ahmed &amp;  Mandic [2], termed <code class="docutils lite
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">DispEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DispEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvPermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code></p>
 </dd>
 <dt class="field-even">References<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
+<dd class="field-even"><p></p></dd>
+</dl>
+<dl class="simple">
 <dt>[1] H Azami, A Fernández, J Escudero</dt><dd><p>“Multivariate Multiscale Dispersion Entropy of Biomedical Times Series”
 Entropy 2019, 21, 913.</p>
 </dd>
@@ -414,14 +428,14 @@ Sensors
 19.23 (2019): 5203.</p>
 </dd>
 </dl>
-</dd>
-</dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.MvFuzzEn">
-<span class="sig-name descname"><span class="pre">MvFuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.2,</span> <span class="pre">2.0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvFuzzEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MvFuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0.2,</span> <span class="pre">2.0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvFuzzEn" title="Link to this definition"></a></dt>
 <dd><p>MvFuzzEn  estimates the multivariate fuzzy entropy of a multivariate dataset.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MFuzz</span><span class="p">,</span> <span class="n">B0</span><span class="p">,</span> <span class="n">Bt</span><span class="p">,</span> <span class="n">B1</span> <span class="o">=</span> <span class="n">MvFuzzEn</span><span class="p">(</span><span class="n">Data</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -452,7 +466,7 @@ or the average for all <code class="docutils literal notranslate"><span class="p
 uses N-max(m*tau) delay vectors and <strong>not</strong> N-max(m)*max(tau) as employed 
 in [1] and [3].</p>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MFuzz</span><span class="p">,</span> <span class="n">B0</span><span class="p">,</span> <span class="n">Bt</span><span class="p">,</span> <span class="n">B1</span> <span class="o">=</span> <span class="n">MvFuzzEn</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MFuzz</span><span class="p">,</span> <span class="n">B0</span><span class="p">,</span> <span class="n">Bt</span><span class="p">,</span> <span class="n">B1</span> <span class="o">=</span> <span class="n">MvFuzzEn</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Returns the multivariate fuzzy entropy estimates (<code class="docutils literal notranslate"><span class="pre">MFuzz</span></code>) estimated 
@@ -506,20 +520,29 @@ keyword arguments:</p>
 </dd>
 <dt class="field-even">gudermannian<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p>r  = a scalar whose value is the numerator of argument to gudermannian function - GD(x) = atan(tanh(r/x)). 
-GD(x) is normalised to have a maximum value of 1.</p></li>
+<li><dl class="simple">
+<dt>r  = a scalar whose value is the numerator of argument to gudermannian function - GD(x) = atan(tanh(r/x)). </dt><dd><p>GD(x) is normalised to have a maximum value of 1.</p>
+</dd>
+</dl>
+</li>
 </ul>
 </dd>
 <dt class="field-odd">triangular<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p>r = a positive scalar whose value is the threshold 
-(corner point) of the triangular function.</p></li>
+<li><dl class="simple">
+<dt>r = a positive scalar whose value is the threshold </dt><dd><p>(corner point) of the triangular function.</p>
+</dd>
+</dl>
+</li>
 </ul>
 </dd>
 <dt class="field-even">trapezoidal1<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p>r = a positive scalar whose value corresponds
-to the upper (2r) and lower (r) corner points of the trapezoid.</p></li>
+<li><dl class="simple">
+<dt>r = a positive scalar whose value corresponds</dt><dd><p>to the upper (2r) and lower (r) corner points of the trapezoid.</p>
+</dd>
+</dl>
+</li>
 </ul>
 </dd>
 <dt class="field-odd">trapezoidal2<span class="colon">:</span></dt>
@@ -530,8 +553,11 @@ to the upper (2r) and lower (r) corner points of the trapezoid.</p></li>
 </dd>
 <dt class="field-even">z_shaped<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
-<li><p>r = a scalar whose value corresponds to the
-upper (2r) and lower (r) corner points of the z-shape.</p></li>
+<li><dl class="simple">
+<dt>r = a scalar whose value corresponds to the</dt><dd><p>upper (2r) and lower (r) corner points of the z-shape.</p>
+</dd>
+</dl>
+</li>
 </ul>
 </dd>
 <dt class="field-odd">bell<span class="colon">:</span></dt>
@@ -547,8 +573,11 @@ upper (2r) and lower (r) corner points of the z-shape.</p></li>
 </dd>
 <dt class="field-odd">constgaussian<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p>r = a scalar whose value defines the lower 
-threshod and shape of the Gaussian curve.</p></li>
+<li><dl class="simple">
+<dt>r = a scalar whose value defines the lower </dt><dd><p>threshod and shape of the Gaussian curve.</p>
+</dd>
+</dl>
+</li>
 </ul>
 </dd>
 </dl>
@@ -571,7 +600,9 @@ threshod and shape of the Gaussian curve.</p></li>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvPermEn</span></code>.</p>
 </dd>
 <dt class="field-even">References<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
+<dd class="field-even"><p></p></dd>
+</dl>
+<dl class="simple">
 <dt>[1] Ahmed, Mosabber U., et al. </dt><dd><p>“A multivariate multiscale fuzzy entropy algorithm with application
 to uterine EMG complexity analysis.” 
 Entropy 19.1 (2016): 2.</p>
@@ -584,14 +615,14 @@ Medical &amp; biological engineering &amp; computing 55 (2017): 2037-2052.</p>
 IEEE signal processing letters 19.2 (2011): 91-94.</p>
 </dd>
 </dl>
-</dd>
-</dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.MvPermEn">
-<span class="sig-name descname"><span class="pre">MvPermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tpx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvPermEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MvPermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Typex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tpx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvPermEn" title="Link to this definition"></a></dt>
 <dd><p>MvPermEn  estimates the multivariate permutation entropy of a multivariate dataset.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MPerm</span><span class="p">,</span> <span class="n">MPnorm</span> <span class="o">=</span> <span class="n">MvPermEn</span><span class="p">(</span><span class="n">Data</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -690,7 +721,9 @@ the M multivariate data sequences in <code class="docutils literal notranslate">
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">PermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">PermEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">XPermEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvSampEn</span></code>.</p>
 </dd>
 <dt class="field-even">References<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
+<dd class="field-even"><p></p></dd>
+</dl>
+<dl class="simple">
 <dt>[1] Ahmed Mosabber Uddin, Danilo P. Mandic</dt><dd><p>“Multivariate multiscale entropy: A tool for complexity
 analysis of multichannel data.”
 Physical Review E 84.6 (2011): 061918.</p>
@@ -728,14 +761,14 @@ Physica A: Statistical Mechanics and its Applications
 568 (2021): 125686.</p>
 </dd>
 </dl>
-</dd>
-</dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.MvSampEn">
-<span class="sig-name descname"><span class="pre">MvSampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvSampEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MvSampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tau</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Logx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">numpy.exp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MvSampEn" title="Link to this definition"></a></dt>
 <dd><p>MvSampEn  estimates the multivariate sample entropy of a multivariate dataset.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSamp</span><span class="p">,</span> <span class="n">B0</span><span class="p">,</span> <span class="n">Bt</span><span class="p">,</span> <span class="n">B1</span> <span class="o">=</span> <span class="n">MvSampEn</span><span class="p">(</span><span class="n">Data</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -810,7 +843,9 @@ keyword  arguments:</p>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">SampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XSampEn</span></code>, <code class="docutils literal notranslate"><span class="pre">SampEn2D</span></code>, <code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvFuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvPermEn</span></code>.</p>
 </dd>
 <dt class="field-even">References<span class="colon">:</span></dt>
-<dd class="field-even"><dl class="simple">
+<dd class="field-even"><p></p></dd>
+</dl>
+<dl class="simple">
 <dt>[1] Ahmed Mosabber Uddin, Danilo P. Mandic</dt><dd><p>“Multivariate multiscale entropy: A tool for complexity
 analysis of multichannel data.”
 Physical Review E 84.6 (2011): 061918.</p>
@@ -819,8 +854,7 @@ Physical Review E 84.6 (2011): 061918.</p>
 IEEE signal processing letters 19.2 (2011): 91-94.</p>
 </dd>
 </dl>
-</dd>
-</dl>
+</div>
 </dd></dl>
 
 </section>

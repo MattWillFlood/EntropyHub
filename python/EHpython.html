@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EntropyHub: Python &mdash; EntropyHub 2.0 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=338110d2" />
+
+  
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -179,13 +189,13 @@
            <div itemprop="articleBody">
              
   <section id="entropyhub-python">
-<h1>EntropyHub: Python<a class="headerlink" href="#entropyhub-python" title="Permalink to this heading"></a></h1>
+<h1>EntropyHub: Python<a class="headerlink" href="#entropyhub-python" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <p class="centered">
 <strong>Links to installation files:  <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Python">GitHub</a> || <a class="reference external" href="https://pypi.org/project/EntropyHub/">PyPi</a></strong></p><hr class="docutils" />
 <section id="requirements-installation">
-<h2>Requirements &amp; Installation:<a class="headerlink" href="#requirements-installation" title="Permalink to this heading"></a></h2>
+<h2>Requirements &amp; Installation:<a class="headerlink" href="#requirements-installation" title="Link to this heading"></a></h2>
 <dl class="simple">
 <dt>There are several package dependencies which will be installed alongside EntropyHub (if not already installed):</dt><dd><ul class="simple">
 <li><p><em>Numpy</em></p></li>
@@ -200,7 +210,7 @@
 Python versions &gt; 3.6 are required for using EntropyHub.</p>
 <p>There are 2 ways to install EntropyHub for Python. <strong>Method 1 is strongly recommended.</strong></p>
 <section id="method-1">
-<h3>Method 1:<a class="headerlink" href="#method-1" title="Permalink to this heading"></a></h3>
+<h3>Method 1:<a class="headerlink" href="#method-1" title="Link to this heading"></a></h3>
 <blockquote>
 <div><ol class="arabic">
 <li><p>Using <code class="docutils literal notranslate"><span class="pre">pip</span></code> in your python IDE, type:</p>
@@ -214,9 +224,9 @@ Python versions &gt; 3.6 are required for using EntropyHub.</p>
 </div></blockquote>
 </section>
 <section id="method-2">
-<h3>Method 2:<a class="headerlink" href="#method-2" title="Permalink to this heading"></a></h3>
-<blockquote>
-<div><ol class="arabic">
+<h3>Method 2:<a class="headerlink" href="#method-2" title="Link to this heading"></a></h3>
+<div class="toggle docutils container">
+<ol class="arabic">
 <li><p>Download the <code class="docutils literal notranslate"><span class="pre">EntropyHub.x.x.x.tar.gz</span></code> folder from the <a class="reference external" href="https://pypi.org/project/EntropyHub/">EntropyHub PyPI repo</a>
 (or the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/tree/main/EntropyHub%20-%20Python">EntropyHub GitHub repo</a>)  and unzip it.</p>
 <a class="reference internal image-reference" href="../_images/pyscreen1.png"><img alt="../_images/pyscreen1.png" class="align-center" src="../_images/pyscreen1.png" style="width: 600px; height: 450px;" /></a>
@@ -242,7 +252,7 @@ or use the Anaconda prompt if you use Anaconda as your python package distributi
 </div></blockquote>
 </li>
 </ul>
-</div></blockquote>
+</div>
 <p>To use EntropyHub, import the module with the following command,</p>
 <blockquote>
 <div><div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">EntropyHub</span>
@@ -278,7 +288,7 @@ or use the Anaconda prompt if you use Anaconda as your python package distributi
 </section>
 <hr class="docutils" />
 <section id="documentation-help">
-<h2>Documentation &amp; Help:<a class="headerlink" href="#documentation-help" title="Permalink to this heading"></a></h2>
+<h2>Documentation &amp; Help:<a class="headerlink" href="#documentation-help" title="Link to this heading"></a></h2>
 <p>A key advantage of EntropyHub is the comprehensive documentation available to help users to make the most of the toolkit.
 One can simply access the docstrings of a function (like any Python function) by typing <code class="docutils literal notranslate"><span class="pre">help</span> <span class="pre">FunctionName,</span> <span class="pre">e.g.</span> <span class="pre">help</span> <span class="pre">SampEn</span></code> in the command line which will print the docstrings.</p>
 <p>All information on the EntropyHub package is detailed in the <em>EntropyHub Guide</em>,

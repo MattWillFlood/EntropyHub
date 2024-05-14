@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Multiscale Entropies &mdash; EntropyHub 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=338110d2" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -181,11 +190,11 @@
            <div itemprop="articleBody">
              
   <section id="multiscale-entropies">
-<h1>Multiscale Entropies<a class="headerlink" href="#multiscale-entropies" title="Permalink to this heading"></a></h1>
+<h1>Multiscale Entropies<a class="headerlink" href="#multiscale-entropies" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <section id="functions-for-estimating-the-multiscale-entropy-of-a-univariate-time-series">
-<h2>Functions for estimating the multiscale entropy of a univariate time series.<a class="headerlink" href="#functions-for-estimating-the-multiscale-entropy-of-a-univariate-time-series" title="Permalink to this heading"></a></h2>
+<h2>Functions for estimating the multiscale entropy of a univariate time series.<a class="headerlink" href="#functions-for-estimating-the-multiscale-entropy-of-a-univariate-time-series" title="Link to this heading"></a></h2>
 <p>Multiscale entropy can be calculated using any of the <a class="reference internal" href="Base.html#pybase"><span class="std std-ref">Base Entropies</span></a>:
 <code class="docutils literal notranslate"><span class="pre">ApEn</span></code>, <code class="docutils literal notranslate"><span class="pre">AttnEn</span></code>, <code class="docutils literal notranslate"><span class="pre">BubbEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CondEn</span></code>, <code class="docutils literal notranslate"><span class="pre">CoSiEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DistEn</span></code>,
 <code class="docutils literal notranslate"><span class="pre">DispEn</span></code>, <code class="docutils literal notranslate"><span class="pre">DivEn</span></code>, <code class="docutils literal notranslate"><span class="pre">EnofEn</span></code>, <code class="docutils literal notranslate"><span class="pre">FuzzEn</span></code>, <code class="docutils literal notranslate"><span class="pre">GridEn</span></code>, <code class="docutils literal notranslate"><span class="pre">IncrEn</span></code>, <code class="docutils literal notranslate"><span class="pre">K2En</span></code>,
@@ -199,10 +208,11 @@
 </ol>
 </div>
 <hr class="docutils" />
-<span class="target" id="module-EntropyHub"></span><dl class="py function">
+<dl class="py function" id="module-EntropyHub">
 <dt class="sig sig-object py" id="EntropyHub.MSobject">
-<span class="sig-name descname"><span class="pre">MSobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">EnType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SampEn'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MSobject" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MSobject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">EnType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'SampEn'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MSobject" title="Link to this definition"></a></dt>
 <dd><p>MSobject  creates an object to store multiscale entropy parameters.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Mobj</span><span class="p">]</span> <span class="o">=</span> <span class="n">MSobject</span><span class="p">()</span> 
 </pre></div>
 </div>
@@ -407,15 +417,17 @@ type:   <cite>help(EnType)</cite>   (e.g.  <code class="docutils literal notrans
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">MSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">MvMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cMvMSEn</span></code>,  <code class="docutils literal notranslate"><span class="pre">rMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">XMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">rXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">cXMSEn</span></code>, <code class="docutils literal notranslate"><span class="pre">hXMSEn</span></code></p>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <hr class="docutils" />
 <p><strong>The following functions use the multiscale entropy object shown above.</strong></p>
 <hr class="docutils" />
-<span class="target" id="module-0"></span><dl class="py function">
+<dl class="py function" id="module-0">
 <dt class="sig sig-object py" id="EntropyHub.MSEn">
-<span class="sig-name descname"><span class="pre">MSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Methodx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'coarse'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MSEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">MSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Methodx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'coarse'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.MSEn" title="Link to this definition"></a></dt>
 <dd><p>MSEn  Returns the multiscale entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span><span class="n">CI</span> <span class="o">=</span> <span class="n">MSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -528,12 +540,14 @@ Entropy 17.3 (2015): 1197-1203.</p>
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.cMSEn">
-<span class="sig-name descname"><span class="pre">cMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Refined</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.cMSEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">cMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Refined</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.cMSEn" title="Link to this definition"></a></dt>
 <dd><p>cMSEn  Returns the composite (or refined-composite) multiscale entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">cMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -628,12 +642,14 @@ Med Biol Eng Comput
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.hMSEn">
-<span class="sig-name descname"><span class="pre">hMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.hMSEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">hMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.hMSEn" title="Link to this definition"></a></dt>
 <dd><p>hMSEn  returns the hierarchical entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">Sn</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">hMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -697,12 +713,14 @@ Journal of Computational and Applied Mathematics
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.rMSEn">
-<span class="sig-name descname"><span class="pre">rMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">F_Order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">F_Num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.rMSEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">rMSEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mbjx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Scales</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">F_Order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">F_Num</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">RadNew</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Plotx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.rMSEn" title="Link to this definition"></a></dt>
 <dd><p>rMSEn  returns the refined multiscale entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MSx</span><span class="p">,</span> <span class="n">CI</span> <span class="o">=</span> <span class="n">rMSEn</span><span class="p">(</span><span class="n">Sig</span><span class="p">,</span> <span class="n">Mobj</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -794,6 +812,7 @@ Cardiovascular engineering and technology
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 </section>

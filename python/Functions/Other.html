@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Other Functions &mdash; EntropyHub 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=338110d2" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -181,16 +190,17 @@
            <div itemprop="articleBody">
              
   <section id="other-functions">
-<h1>Other Functions<a class="headerlink" href="#other-functions" title="Permalink to this heading"></a></h1>
+<h1>Other Functions<a class="headerlink" href="#other-functions" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <section id="supplementary-functions-for-various-tasks-related-to-entropyhub-and-signal-processing">
-<h2>Supplementary functions for various tasks related to EntropyHub and signal processing.<a class="headerlink" href="#supplementary-functions-for-various-tasks-related-to-entropyhub-and-signal-processing" title="Permalink to this heading"></a></h2>
+<h2>Supplementary functions for various tasks related to EntropyHub and signal processing.<a class="headerlink" href="#supplementary-functions-for-various-tasks-related-to-entropyhub-and-signal-processing" title="Link to this heading"></a></h2>
 <hr class="docutils" />
-<span class="target" id="module-EntropyHub"></span><dl class="py function">
+<dl class="py function" id="module-EntropyHub">
 <dt class="sig sig-object py" id="EntropyHub.ExampleData">
-<span class="sig-name descname"><span class="pre">ExampleData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">SigName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.ExampleData" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">ExampleData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">SigName</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.ExampleData" title="Link to this definition"></a></dt>
 <dd><p>Imports sample data time series and matrices.</p>
+<div class="toggle docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Data</span> <span class="o">=</span> <span class="n">ExampleData</span><span class="p">(</span><span class="n">SigName</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -284,17 +294,17 @@ which can be one of the following:</p>
 </dl>
 </div></blockquote>
 <p>For further info on these graining procedures see the <a class="reference external" href="https://github.com/MattWillFlood/EntropyHub/blob/main/EntropyHub%20Guide.pdf">EntropyHub guide</a>.</p>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="EntropyHub.WindowData">
-<span class="sig-name descname"><span class="pre">WindowData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">WinLen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Overlap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'exclude'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.WindowData" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">WindowData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">WinLen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Overlap</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'exclude'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.WindowData" title="Link to this definition"></a></dt>
 <dd><p>WindowData restructures a univariate/multivariate dataset into a collection of subsequence windows.</p>
-<blockquote>
-<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">WinData</span><span class="p">,</span> <span class="n">Log</span> <span class="o">=</span> <span class="n">WindowData</span><span class="p">(</span><span class="n">Data</span><span class="p">)</span> 
+<div class="toggle docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">WinData</span><span class="p">,</span> <span class="n">Log</span> <span class="o">=</span> <span class="n">WindowData</span><span class="p">(</span><span class="n">Data</span><span class="p">)</span> 
 </pre></div>
 </div>
-</div></blockquote>
 <p>Windows the sequence(s) given in <code class="docutils literal notranslate"><span class="pre">Data</span></code> into a collection of subsequnces  
 of floor(N/5) elements with no overlap, excluding any remainder
 elements that do not fill the final window.
@@ -304,7 +314,6 @@ each of M columns is treated as a sequence with N elements
 and <code class="docutils literal notranslate"><span class="pre">WinData</span></code> is a tuple of 5 matrices of size [(floor*N,5), M]. 
 The <code class="docutils literal notranslate"><span class="pre">Log</span></code> dictionary contains information about the windowing process, including:</p>
 <blockquote>
-<div><blockquote>
 <div><dl class="field-list simple">
 <dt class="field-odd">DataType<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -341,7 +350,6 @@ The <code class="docutils literal notranslate"><span class="pre">Log</span></cod
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">WinData</span><span class="p">,</span> <span class="n">Log</span> <span class="o">=</span> <span class="n">WindowData</span><span class="p">(</span><span class="n">Data</span><span class="p">,</span> <span class="n">keyword</span> <span class="o">=</span> <span class="n">value</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
-</div></blockquote>
 <p>Windows the sequence(s) given in <code class="docutils literal notranslate"><span class="pre">Data</span></code> into a collection of subsequnces
 using the specified keyword arguments:</p>
 <blockquote>
@@ -368,6 +376,7 @@ using the specified keyword arguments:</p>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">ExampleData</span></code></p>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <hr class="docutils" />

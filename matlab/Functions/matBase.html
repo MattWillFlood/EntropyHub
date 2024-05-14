@@ -1,23 +1,32 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Base Entropies &mdash; EntropyHub 2.0 documentation</title>
-      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=338110d2" />
+
+  
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
   <!--[if lt IE 9]>
     <script src="../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-        <script src="../../_static/jquery.js"></script>
-        <script src="../../_static/underscore.js"></script>
-        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=60dbed4a"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -181,17 +190,18 @@
            <div itemprop="articleBody">
              
   <section id="base-entropies">
-<span id="matbase"></span><h1>Base Entropies<a class="headerlink" href="#base-entropies" title="Permalink to this heading"></a></h1>
+<span id="matbase"></span><h1>Base Entropies<a class="headerlink" href="#base-entropies" title="Link to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 </div>
 <section id="functions-for-estimating-the-entropy-of-a-single-univariate-time-series">
-<h2>Functions for estimating the entropy of a single univariate time series.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-single-univariate-time-series" title="Permalink to this heading"></a></h2>
+<h2>Functions for estimating the entropy of a single univariate time series.<a class="headerlink" href="#functions-for-estimating-the-entropy-of-a-single-univariate-time-series" title="Link to this heading"></a></h2>
 <p><em>The following functions also form the base entropy method used by</em> <strong>multiscale entropy</strong> <em>functions.</em></p>
 <hr class="docutils" />
-<span class="target" id="module-EntropyHub"></span><dl class="mat function">
+<dl class="mat function" id="module-EntropyHub">
 <dt class="sig sig-object mat" id="EntropyHub.ApEn">
-<span class="sig-name descname"><span class="pre">ApEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.ApEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">ApEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.ApEn" title="Link to this definition"></a></dt>
 <dd><p>ApEn  estimates the approximate entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Ap, Phi] = ApEn(Sig)</p>
 <p>Returns the approximate entropy estimates (<code class="docutils literal notranslate"><span class="pre">Ap</span></code>) and the log-average number of 
 matched vectors (<code class="docutils literal notranslate"><span class="pre">Phi</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [0, 1, 2], estimated from the data 
@@ -220,12 +230,14 @@ Proceedings of the National Academy of Sciences
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.AttnEn">
-<span class="sig-name descname"><span class="pre">AttnEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.AttnEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">AttnEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.AttnEn" title="Link to this definition"></a></dt>
 <dd><p>AttnEn  estimates the attention entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Attn] = AttnEn(Sig)</p>
 <p>Returns the attention entropy (<code class="docutils literal notranslate"><span class="pre">Attn</span></code>) calculated as the average of the
 sub-entropies (<code class="docutils literal notranslate"><span class="pre">Hxx</span></code>, <code class="docutils literal notranslate"><span class="pre">Hxn</span></code>, <code class="docutils literal notranslate"><span class="pre">Hnn</span></code>, <code class="docutils literal notranslate"><span class="pre">Hnx</span></code>) estimated from the data
@@ -255,12 +267,14 @@ IEEE Transactions on Affective Computing
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.BubbEn">
-<span class="sig-name descname"><span class="pre">BubbEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.BubbEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">BubbEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.BubbEn" title="Link to this definition"></a></dt>
 <dd><p>BubbEn  estimates the bubble entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Bubb, H] = BubbEn(Sig)</p>
 <p>Returns the bubble entropy (<code class="docutils literal notranslate"><span class="pre">Bubb</span></code>) and the conditional Renyi entropy (<code class="docutils literal notranslate"><span class="pre">H</span></code>)
 estimates from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the default parameters:
@@ -287,12 +301,14 @@ IEEE Transactions on Biomedical Engineering
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.CondEn">
-<span class="sig-name descname"><span class="pre">CondEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.CondEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">CondEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.CondEn" title="Link to this definition"></a></dt>
 <dd><p>CondEn  estimates the corrected conditional entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Cond, SEw, SEz] = CondEn(Sig)</p>
 <p>Returns the corrected conditional entropy estimates (<code class="docutils literal notranslate"><span class="pre">Cond</span></code>) and the
 corresponding Shannon entropies (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">SEw</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">SEz</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] 
@@ -335,12 +351,14 @@ Biological cybernetics
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.CoSiEn">
-<span class="sig-name descname"><span class="pre">CoSiEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.CoSiEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">CoSiEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.CoSiEn" title="Link to this definition"></a></dt>
 <dd><p>CoSiEn  estimates the cosine similarity entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[CoSi, Bm] = CoSiEn(Sig)</p>
 <p>Returns the cosine similarity entropy (<code class="docutils literal notranslate"><span class="pre">CoSi</span></code>) and the corresponding
 global probabilities (<code class="docutils literal notranslate"><span class="pre">Bm</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) 
@@ -381,12 +399,14 @@ Entropy
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.DistEn">
-<span class="sig-name descname"><span class="pre">DistEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DistEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DistEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DistEn" title="Link to this definition"></a></dt>
 <dd><p>DistEn  estimates the distribution entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Dist, Ppi] = DistEn(Sig)</p>
 <p>Returns the distribution entropy estimate (<code class="docutils literal notranslate"><span class="pre">Dist</span></code>) and the
 corresponding distribution probabilities (<code class="docutils literal notranslate"><span class="pre">Ppi</span></code>) estimated from the data 
@@ -426,12 +446,14 @@ Medical &amp; biological engineering &amp; computing
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.DispEn">
-<span class="sig-name descname"><span class="pre">DispEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DispEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DispEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DispEn" title="Link to this definition"></a></dt>
 <dd><p>DispEn  estimates the dispersion entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Dispx, RDE] = DispEn(Sig)</p>
 <p>Returns the dispersion entropy (<code class="docutils literal notranslate"><span class="pre">Dispx</span></code>) and the reverse dispersion entropy
 (<code class="docutils literal notranslate"><span class="pre">RDE</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the default parameters:
@@ -491,12 +513,14 @@ Entropy
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.DivEn">
-<span class="sig-name descname"><span class="pre">DivEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DivEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">DivEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.DivEn" title="Link to this definition"></a></dt>
 <dd><p>DivEn  estimates the diversity entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Div, CDEn, Bm] = DivEn(Sig)</p>
 <p>Returns the diversity entropy (<code class="docutils literal notranslate"><span class="pre">Div</span></code>), the cumulative diversity entropy (<code class="docutils literal notranslate"><span class="pre">CDEn</span></code>),
 and the corresponding probabilities (<code class="docutils literal notranslate"><span class="pre">Bm</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
@@ -541,12 +565,14 @@ vol. 19, no. 9, pp. 9642-9653, Sept. 2023</p>
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.EnofEn">
-<span class="sig-name descname"><span class="pre">EnofEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.EnofEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">EnofEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.EnofEn" title="Link to this definition"></a></dt>
 <dd><p>EnofEn  estimates the entropy of entropy from a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[EoE, AvEn, S2] = EnofEn(Sig)</p>
 <p>Returns the entropy of entropy (<code class="docutils literal notranslate"><span class="pre">EoE</span></code>), the average Shannon entropy 
 (<code class="docutils literal notranslate"><span class="pre">AvEn</span></code>), and the number of levels (<code class="docutils literal notranslate"><span class="pre">S2</span></code>) across all windows 
@@ -580,12 +606,14 @@ Entropy
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.FuzzEn">
-<span class="sig-name descname"><span class="pre">FuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">FuzzEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.FuzzEn" title="Link to this definition"></a></dt>
 <dd><p>FuzzEn  estimates the fuzzy entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Fuzz, Ps1, Ps2] = FuzzEn(Sig)</p>
 <p>Returns the fuzzy entropy estimates (<code class="docutils literal notranslate"><span class="pre">Fuzz</span></code>) and the average fuzzy distances 
 (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">Ps1</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">Ps2</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] estimated from the data sequence 
@@ -704,12 +732,14 @@ IEEE Access
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.GridEn">
-<span class="sig-name descname"><span class="pre">GridEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.GridEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">GridEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.GridEn" title="Link to this definition"></a></dt>
 <dd><p>GridEn  estimates the gridded distribution entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[GDE, GDR] = GridEn(Sig)</p>
 <p>Returns the gridded distribution entropy (<code class="docutils literal notranslate"><span class="pre">GDE</span></code>) and the gridded 
 distribution rate (<code class="docutils literal notranslate"><span class="pre">GDR</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using 
@@ -764,12 +794,14 @@ Physiological measurement
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.IncrEn">
-<span class="sig-name descname"><span class="pre">IncrEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.IncrEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">IncrEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.IncrEn" title="Link to this definition"></a></dt>
 <dd><p>IncrEn  estimates the increment entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Incr] = IncrEn(Sig)</p>
 <p>Returns the increment entropy (<code class="docutils literal notranslate"><span class="pre">Incr</span></code>) estimated from the data sequence 
 (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the default parameters: 
@@ -815,12 +847,14 @@ Computers in biology and medicine
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.K2En">
-<span class="sig-name descname"><span class="pre">K2En</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.K2En" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">K2En</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.K2En" title="Link to this definition"></a></dt>
 <dd><p>K2En  estimates the Kolmogorov (K2) entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[K2, Ci] = K2En(Sig)</p>
 <p>Returns the Kolmogorov entropy estimates (<code class="docutils literal notranslate"><span class="pre">K2</span></code>) and the correlation
 integrals (<code class="docutils literal notranslate"><span class="pre">Ci</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [1,2] estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
@@ -852,12 +886,14 @@ J Neural Eng. 2013 Jun;10(3):03602</p>
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.PermEn">
-<span class="sig-name descname"><span class="pre">PermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PermEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PermEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PermEn" title="Link to this definition"></a></dt>
 <dd><p>PermEn  estimates the permutation entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Perm, Pnorm, cPE] = PermEn(Sig)</p>
 <p>Returns the permuation entropy estimates (<code class="docutils literal notranslate"><span class="pre">Perm</span></code>), the normalised
 permutation entropy (<code class="docutils literal notranslate"><span class="pre">Pnorm</span></code>) and the conditional permutation entropy
@@ -964,12 +1000,14 @@ Physica A: Statistical Mechanics and its Applications
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.PhasEn">
-<span class="sig-name descname"><span class="pre">PhasEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PhasEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">PhasEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.PhasEn" title="Link to this definition"></a></dt>
 <dd><p>PhasEn  estimates the phase entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Phas] = PhasEn(Sig)</p>
 <p>Returns the phase entropy (<code class="docutils literal notranslate"><span class="pre">Phas</span></code>) estimate of the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
 using the default parameters: 
@@ -1018,12 +1056,14 @@ Physiological measurement
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.RangEn">
-<span class="sig-name descname"><span class="pre">RangEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.RangEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">RangEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.RangEn" title="Link to this definition"></a></dt>
 <dd><p>RangEn  estimates the range entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Rangx, A, B] = RangEn(Sig)</p>
 <p>Returns the range entropy estimate (<code class="docutils literal notranslate"><span class="pre">Rangx</span></code>) and the number of matched state
 vectors (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">A</span></code>) estimated from the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>)
@@ -1057,12 +1097,14 @@ American Journal of Physiology-Heart and Circulatory Physiology
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.SampEn">
-<span class="sig-name descname"><span class="pre">SampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SampEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">SampEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SampEn" title="Link to this definition"></a></dt>
 <dd><p>SampEn  estimates the sample entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Samp, A, B] = SampEn(Sig)</p>
 <p>Returns the sample entropy estimates (<code class="docutils literal notranslate"><span class="pre">Samp</span></code>) and the number of matched state 
 vectors (<code class="docutils literal notranslate"><span class="pre">m:</span> <span class="pre">B</span></code>, <code class="docutils literal notranslate"><span class="pre">m+1:</span> <span class="pre">A</span></code>) for <code class="docutils literal notranslate"><span class="pre">m</span></code> = [0,1,2] estimated from the data 
@@ -1105,12 +1147,14 @@ American Journal of Physiology-Regulatory, Integrative and Comparative Physiolog
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.SlopEn">
-<span class="sig-name descname"><span class="pre">SlopEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SlopEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">SlopEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SlopEn" title="Link to this definition"></a></dt>
 <dd><p>SlopEn  estimates the slope entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Slop] = SlopEn(Sig)</p>
 <p>Returns the slope entropy (<code class="docutils literal notranslate"><span class="pre">Slop</span></code>) estimates for embedding dimensions
 [2, …, <code class="docutils literal notranslate"><span class="pre">m</span></code>] of the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the default parameters: 
@@ -1149,12 +1193,14 @@ Entropy
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.SpecEn">
-<span class="sig-name descname"><span class="pre">SpecEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SpecEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">SpecEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SpecEn" title="Link to this definition"></a></dt>
 <dd><p>SpecEn  estimates the spectral entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[Spec, BandEn] = SpecEn(Sig)</p>
 <p>Returns the spectral entropy estimate of the full spectrum (<code class="docutils literal notranslate"><span class="pre">Spec</span></code>)
 and the within-band entropy (<code class="docutils literal notranslate"><span class="pre">BandEn</span></code>) estimated from the data sequence 
@@ -1198,12 +1244,14 @@ Electroencephalography and clinical neurophysiology
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 <dl class="mat function">
 <dt class="sig sig-object mat" id="EntropyHub.SyDyEn">
-<span class="sig-name descname"><span class="pre">SyDyEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SyDyEn" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">SyDyEn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">Sig</span></em>, <em class="sig-param"><span class="pre">varargin</span></em><span class="sig-paren">)</span><a class="headerlink" href="#EntropyHub.SyDyEn" title="Link to this definition"></a></dt>
 <dd><p>SyDyEn  estimates the symbolic dynamic entropy of a univariate data sequence.</p>
+<div class="toggle docutils container">
 <p>[SyDy, Zt] = SyDyEn(Sig)</p>
 <p>Returns the symbolic dynamic entropy (<code class="docutils literal notranslate"><span class="pre">SyDy</span></code>) and the symbolic sequence
 (<code class="docutils literal notranslate"><span class="pre">Zt</span></code>) of the data sequence (<code class="docutils literal notranslate"><span class="pre">Sig</span></code>) using the default parameters: 
@@ -1258,6 +1306,7 @@ Signal processing
 </dl>
 </dd>
 </dl>
+</div>
 </dd></dl>
 
 </section>
