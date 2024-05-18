@@ -29,6 +29,14 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `Effect of interhemispheric zero-phase entrainment of the intrinsic mu-rhythm on behavioral and neural markers of predictive coding <https://www.biorxiv.org/content/10.1101/2024.05.07.592996v1>`_
+    | Kirstin-Friederike Heise, Geneviève Albouy, Nina Dolfen, Ronald Peeters, Dante Mantini, Stephan P. Swinnen
+    | *BioRxiv*
+
+* `The Temporal Dimension of Consciousness: exploring Intrinsic Neural Timescales (INTs) and their role as a facilitator of consciousness <https://www.research.unipd.it/handle/11577/3513504>`_    
+    | Andrea Buccellato
+    | *University of Padua Archive*
+
 * `Diverging functional connectivity timescales: Capturing distinct aspects of cognitive performance in early psychosis <https://www.medrxiv.org/content/10.1101/2024.05.07.24306932v1>`_
     | Fabian Hirsch, Ângelo Bumanglag, Yifei Zhang, Afra Wohlschlaeger
     | *MedrXiv*
