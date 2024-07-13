@@ -29,6 +29,22 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `Disruption of neural periodicity predicts clinical response after deep brain stimulation for obsessive-compulsive disorder <https://doi.org/10.1038/s41591-024-03125-0>`_
+    | Provenza NR, Reddy S, Allam AK et al. 
+    | *Nature Medicine*
+
+* `Maloperation of Zone-3 Distance Relay Prevention Using Distribution Entropy <https://ieeexplore.ieee.org/abstract/document/10584515>`_
+    | U. Mukundarajan, K. Shanti Swarup
+    | *IEEE Access*
+
+* `ComplexityMeasures.jl: scalable software to unify and accelerate entropy and complexity timeseries analysis <https://arxiv.org/abs/2406.05011>`_ 
+    | George Datseris, Kristian Agasøster Haaga
+    | *arXiv*
+
+* `Using EEG to advance mindfulness science: A survey of emerging methods and approaches <https://osf.io/preprints/psyarxiv/v3ny8>`_
+    | Yanli Lin, Daniel Andrew Atad, Anthony P. Zanesco
+    | *PsyArXiv*
+
 * `Effect of interhemispheric zero-phase entrainment of the intrinsic mu-rhythm on behavioral and neural markers of predictive coding <https://www.biorxiv.org/content/10.1101/2024.05.07.592996v1>`_
     | Kirstin-Friederike Heise, Geneviève Albouy, Nina Dolfen, Ronald Peeters, Dante Mantini, Stephan P. Swinnen
     | *BioRxiv*
