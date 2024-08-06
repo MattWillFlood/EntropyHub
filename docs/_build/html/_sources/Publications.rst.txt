@@ -29,6 +29,10 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `Exploring the Real-Time Variability and Complexity of Sitting Patterns in Office Workers with Non-Specific Chronic Spinal Pain and Pain-Free Individuals <https://www.mdpi.com/1424-8220/24/14/4750>`_
+    | Eduarda Oliosi, Afonso Júlio, Phillip Probst, Luís Silva, João Paulo Vilas-Boas, Ana Rita Pinheiro, Hugo Gamboa
+    | *Sensors (MDPI)*
+
 * `Disruption of neural periodicity predicts clinical response after deep brain stimulation for obsessive-compulsive disorder <https://doi.org/10.1038/s41591-024-03125-0>`_
     | Provenza NR, Reddy S, Allam AK et al. 
     | *Nature Medicine*
