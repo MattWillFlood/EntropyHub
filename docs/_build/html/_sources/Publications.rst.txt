@@ -29,6 +29,10 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `Quantifying the randomness and scale invariance of the repeating fast radio bursts <https://doi.org/10.1093/mnras/stae1873>`_
+    | Yu Sang, Hai-Nan Lin
+    | *Monthly Notices of the Royal Astronomical Society*
+
 * `Exploring the Real-Time Variability and Complexity of Sitting Patterns in Office Workers with Non-Specific Chronic Spinal Pain and Pain-Free Individuals <https://www.mdpi.com/1424-8220/24/14/4750>`_
     | Eduarda Oliosi, Afonso Júlio, Phillip Probst, Luís Silva, João Paulo Vilas-Boas, Ana Rita Pinheiro, Hugo Gamboa
     | *Sensors (MDPI)*
