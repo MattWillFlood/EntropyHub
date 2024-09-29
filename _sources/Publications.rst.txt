@@ -29,6 +29,22 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `2-D Threshold Hyperchaotic Map and Application in Timed One-Time Password <https://ieeexplore.ieee.org/document/10614840>`_
+    | H Bao, et al.
+    | *IEEE Transactions on Industrial Informatics*
+
+* `Capacity configuration of cascaded hydro-wind-photovoltaic complementary systems considering comprehensive benefits based on a synergetic-orderly framework <https://doi.org/10.1016/j.enconman.2024.118916>`_
+    | Y Cui, et al. 
+    | *Energy Conversion and Management*
+
+* `Entropy-based feature selection for capturing impacts in Earth system models with extreme forcing <https://arxiv.org/abs/2409.18011>`_
+    | J Watkins, Jerry, et al.
+    | *arXiv*
+
+* `FateNet: an integration of dynamical systems and deep learning for cell fate prediction <https://academic.oup.com/bioinformatics/article/40/9/btae525/7739702>`_
+    | M Sadria, T.M. Bury
+    | *Bioinformatics*
+
 * `Quantifying the randomness and scale invariance of the repeating fast radio bursts <https://doi.org/10.1093/mnras/stae1873>`_
     | Yu Sang, Hai-Nan Lin
     | *Monthly Notices of the Royal Astronomical Society*
