@@ -29,6 +29,10 @@ List of research articles citing EntropyHub
 2024
 ----
 
+* `Using Entropy in Time Series Analysis <https://link.springer.com/article/10.3103/S0027134924700607>`_
+    | AM Adelyanov, EA Generalov, Wen Zhen, LV Yakovenko 
+    | *Moscow University Physics Bulletin*
+
 * `2-D Threshold Hyperchaotic Map and Application in Timed One-Time Password <https://ieeexplore.ieee.org/document/10614840>`_
     | H Bao, et al.
     | *IEEE Transactions on Industrial Informatics*
@@ -38,11 +42,11 @@ List of research articles citing EntropyHub
     | *Energy Conversion and Management*
 
 * `Entropy-based feature selection for capturing impacts in Earth system models with extreme forcing <https://arxiv.org/abs/2409.18011>`_
-    | J Watkins, Jerry, et al.
+    | J Watkins, et al.
     | *arXiv*
 
 * `FateNet: an integration of dynamical systems and deep learning for cell fate prediction <https://academic.oup.com/bioinformatics/article/40/9/btae525/7739702>`_
-    | M Sadria, T.M. Bury
+    | M Sadria and T.M. Bury
     | *Bioinformatics*
 
 * `Quantifying the randomness and scale invariance of the repeating fast radio bursts <https://doi.org/10.1093/mnras/stae1873>`_
