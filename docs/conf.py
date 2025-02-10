@@ -15,7 +15,7 @@ def setup(app):
 
 # -- Project information -----------------------------------------------------
 project = 'EntropyHub'
-copyright = '2024, Matthew W. Flood'
+copyright = '2025, Matthew W. Flood'
 author = 'Matthew W. Flood'
 # The full version, including alpha/beta/rc tags
 release = '2.0'
