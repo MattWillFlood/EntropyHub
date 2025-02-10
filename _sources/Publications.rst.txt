@@ -26,8 +26,80 @@ List of research articles citing EntropyHub
 ###########################################
 
 
+2025
+----
+
+* `Enhancing multiple sclerosis diagnosis: A comparative study of electroencephalogram signal processing and entropy methods <https://doi.org/10.1016/j.compbiomed.2024.109615>`_
+    | Umut Aslan and Mehmet Feyzi Akşahin
+    | *Computers in Medicine and Biology*
+
+* `Multimodal feature fusion and ensemble learning for non-intrusive occupancy monitoring using smart meters <https://doi.org/10.1016/j.buildenv.2025.112635>`_
+    | Sakib Mahmud, Faycal Bensaali, Muhammad EH Chowdhury, Mahdi Houchati
+    | *Building and Environment*
+
+* `Using a Composite Summary of Daily Sex Hormones to Gauge Time Until Menopause: A Focus on Pregnanediol Glucuronide (PDG) Get access Arrow <https://doi.org/10.1210/clinem/dgae895>`_
+    | JF Winkles, A Colvin, SR El Khoudary, N Santoro, M Sammel, S Crawford
+    | *Journal of Clinical Endocrinology & Metabolism*
+
+* `Spatial Cognitive Electroencephalogram Network Topological Features Extraction Based on Cross Fuzzy Entropy Network Graph <https://doi.org/10.3390/sym17020243>`_
+    | Y Zhou, X Liu, D Wen, S Xu, X Wan, H Lu
+    | *Symmetry (MDPI)*
+
+* `Single-neuron spiking variability in hippocampus dynamically tracks sensory content during memory formation in humans <https://www.nature.com/articles/s41467-024-55406-4>`_
+    | Leonhard Waschke, Fabian Kamp, Evi van den Elzen, Suresh Krishna, Ulman Lindenberger,  Ueli Rutishauser, Douglas D. Garrett
+    | *Nature Communications*
+
+* `A weighted frequency domain energy operator spectral method based on soft thresholding fast iterative filtering for rolling bearing incipient fault feature extraction <https://doi.org/10.1177/14759217241306723>`_
+    | W Jiang, H Jiang, R Yao, M Mu, Y Liu
+    | *Structural Health Monitoring*
+
+* `A Comprehensive Assessment of EEG Entropy Measures for Bipolar Disorder Diagnosis Using Machine Learning <https://ieeexplore.ieee.org/abstract/document/10876140>`_
+    | H Bagheri, SR Mahdavi, NE Eyvazzadeh, A Neshaseh-Riz, MS Rad, S Sadeghi    
+    | *IEEE Access*
+
+
 2024
 ----
+
+* `A novel chirp-based 2D hyperchaotic map for enhanced image encryption <https://iopscience.iop.org/article/10.1088/1402-4896/ad9428/meta>`_
+    | M Demirtaş and S Altunkaya
+    | *Physica Scripta*
+
+* `Quantifying the memory and dynamical stability of magnetar bursts <https://iopscience.iop.org/article/10.1088/1674-1137/ad9d1c/meta>`_
+    | Y Sang and H-N Lin
+    | *Chinese Physics C*
+
+* `Input-Output Optics as a Causal Time Series Mapping: A Generative Machine Learning Solution <https://doi.org/10.48550/arXiv.2411.19897>`_
+    | A Sen, BK Parida, K Jacobs, DI Bondar
+    | *arXiv*
+
+* `Effects of Stroboscopic Goggles on Standing Balance in the Spatiotemporal and Frequency Domains: An Exploratory Study <https://doi.org/10.1123/jab.2023-0285>`_
+    | ME McCreary, CM Lapish, NM Lewis, RD Swearinger, DP Ferris, EM Pliner
+    | *Journal of Applied Biomechanics*
+
+* `Electroencenphalogram-Based Effective Features for Sustained Attention Assessment in Conversation <https://ieeexplore.ieee.org/abstract/document/10849138/>`_
+    | Masaya Togashi, Ingon Chanpornpakdi, Toshihisa Tanaka
+    | *IEEE APSIPA Conference*
+
+* `Analysis of continuous glucose monitoring data in patients with type 2 diabetes mellitus based on entropy analysis <https://doi.org/10.1117/12.3045353>`_
+    | Y Sun, R Tao, Y Wang, J Cai, H Li, J Zhou, X Yu
+    | *International Conference on Future of Medicine and Biological Information Engineering*
+
+* `Deep Learning Models of Cellular Decision-Making Using Single-Cell Genomic Data <https://uwspace.uwaterloo.ca/items/50e7ed02-fa70-4920-b1ff-bb8741269c43>`_
+    | M Sadria
+    | *University of Waterloo Repository*
+
+* `Exploratory Analysis of Electric Demand Using Informational Tools <http://dx.doi.org/10.1109/ARGENCON62399.2024.10735714>`_
+    | JL Barberia, LL Caruso, G Lottero, et al.
+    | *IEEE Biennial Congress of Argentina*
+
+* `Jump Performance in Trampoline Athletes and how to Measure it: Developing a Repeated Jump Test <https://doi.org/10.52165/sgj.16.3.447-460>`_
+    | Y Prosch, MT Fleddermann, L Reichert, K, Zentgraf
+    | *Science of Gymnastics Journal*
+
+* `Anomaly detection on temporal graphs for suppression of adversarial communication in multi-agent reinforcement learning <https://scholar.googleusercontent.com/scholar?q=cache:vMxpj603tkwJ:scholar.google.com/&hl=en&as_sdt=0,5>`_
+    | Dobromir Marinov
+    | *University of Cambridge Repository*
 
 * `Using Entropy in Time Series Analysis <https://link.springer.com/article/10.3103/S0027134924700607>`_
     | AM Adelyanov, EA Generalov, Wen Zhen, LV Yakovenko 
@@ -120,6 +192,14 @@ List of research articles citing EntropyHub
 * `What can entropy metrics tell us about the characteristics of ocular fixation trajectories? <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0291823>`_
     | Kateryna Melnyk, Lee Friedman, Oleg V. Komogortsev
     | *PLoS One*
+
+* `Sleep Deprivation in Mice: Looking Beyond the Slow Wave Rebound <https://doi.org/10.1101/2024.10.31.621300>`_
+    | TZ Magyar, O Szalárdy, R Bódizs
+    | *BioRxiv*
+
+* `Deep Learning Model for Prediction of Dementia Severity based on EEG Signals <https://doi.org/10.22153/kej.2024.08.002>`_
+    | NK Al-Qazzaz, SH Bin Mohd Ali, SA Ahmad
+    | *Al-Khwarizmi Engineering Journal*
 
 
 2023
@@ -216,10 +296,6 @@ List of research articles citing EntropyHub
 * `Improved Stress Classification Using Automatic Feature Selection from Heart Rate and Respiratory Rate Time Signals <https://www.mdpi.com/2076-3417/13/5/2950>`_
     | Talha Iqbal, Adnan Elahi, William Wijns, Bilal Amin, Atif Shahzad
     | *Applied Sciences (MDPI)*
-
-* `Single-neuron spiking variability in hippocampus dynamically tracks sensory content during memory formation in humans <https://www.biorxiv.org/content/10.1101/2023.02.23.529684v1>`_
-    | Leonhard Waschke, Fabian Kamp, Evi van den Elzen, Suresh Krishna, Ulman Lindenberger,  Ueli Rutishauser, Douglas D. Garrett
-    | *BioRxiv*
 
 * `Complexity and Entropy in Physiological Signals (CEPS): Resonance Breathing Rate Assessed Using Measures of Fractal Dimension, Heart Rate Asymmetry and Permutation Entropy <https://www.mdpi.com/1099-4300/25/2/301>`_
     | David Mayor, Tony Steffert, George Datseris, Andrea Firth, Deepak Panday, Harikala Kandel, Duncan Banks
