@@ -29,6 +29,26 @@ List of research articles citing EntropyHub
 2025
 ----
 
+* `On generalized bidimensional ensemble permutation entropy <https://doi.org/10.1063/5.0253887>`_
+    | M. Muñoz-Guillermo
+    | *Chaos*
+
+* `Addressing Challenges in Time Series Forecasting: A Comprehensive Comparison of Machine Learning Techniques <https://doi.org/10.48550/arXiv.2503.20148>`_
+    | Seyedeh Azadeh Fallah Mortezanejad, Ruochen Wang
+    | *arXiv*
+
+* `Detection and Severity Classification of Sleep Apnea Using Continuous Wearable SpO2 Signals: A Multi-Scale Feature Approach <https://doi.org/10.3390/s25061698>`_
+    | Nhung H. Hoang, Zilu Liang 
+    | *Sensors (MDPI)*
+
+* `Action Complexity Modulates Motor Performance in the Emotional Oddball Task <https://doi.org/10.1152/jn.00480.2023>`_
+    | Junfu Tian,Guanghui Zhang,Qi Zhao, Yingzhi Lu
+    | *Journal of Neurophysiology*
+
+* `Uncertainty during visual search: Insights from a computational model and behavioral experiment in natural stimuli <https://doi.org/10.1101/2025.01.14.632909>`_
+    | Gaston Bujia, Gonzalo Ruarte, Melanie Sclar, Guillermo Solovey, Juan E. Kamienkowski
+    | *BioRxiv*
+
 * `Enhancing multiple sclerosis diagnosis: A comparative study of electroencephalogram signal processing and entropy methods <https://doi.org/10.1016/j.compbiomed.2024.109615>`_
     | Umut Aslan and Mehmet Feyzi Akşahin
     | *Computers in Medicine and Biology*
