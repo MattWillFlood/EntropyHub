@@ -29,6 +29,62 @@ List of research articles citing EntropyHub
 2025
 ----
 
+* `Capturing Bitcoin Market Dynamics: Assessing Advanced Permutation Entropy Metrics as Early-Warning Indicators <https://ceur-ws.org/Vol-3988/paper8.pdf>`_
+    | AO Bielinskyi, VN Soloviev, AV Matviychuk, TL Kmytiuk
+    | *8th International Workshop on Computer Modeling and Intelligent Systems*
+
+* `On Optimizing Sensor Data Collection, Processing, and Storage for Industrial Additive Manufacturing <https://scholarsmine.mst.edu/masters_theses/8247>`_
+    | SW Thompson
+    | *Missouri University of Science & Technology Library*
+
+* `Enhancing Adversarial Attack Detection in EEG Signals With Covariance Entropy: A Novel Framework for BCI Security <https://ieeexplore.ieee.org/abstract/document/11037497>`_
+    | Aashish Khilnani, Jyoti Singh Kirar, Ganga Ram Gautam
+    | *IEEE Signal Processing Letters*
+
+* `Two-dimensional multi-tooth hyperchaotic map and application in medical secure transmission <https://www.sciencedirect.com/science/article/pii/S0957417425020676>`_
+    | Bao Han, Zheng Fan, Zhongyun Hua, Yunzhen Zhang, Quan Xu, Bocheng Bao"
+    | *Expert Systems with Applications*
+
+* `EEG entropy reflects both intrinsic and stimulation-induced corticospinal excitability <https://www.biorxiv.org/content/10.1101/2025.05.16.654439.abstract>`_
+    | Simon Ruch, Joel Frohlich, Marius Keute, Ge Tang, Nelli Keksel
+    | *BioRxiv*
+
+* `Development of Non-Invasive Continuous Glucose Prediction Models Using Multi-Modal Wearable Sensors in Free-Living Conditions <https://www.mdpi.com/1424-8220/25/10/3207>`_
+    | Thilini S. Karunarathna, Zilu Liang. 
+    | *Sensors (MDPI)*
+
+* `A Novel Nonlinear Method for Cardiovascular Data Synchronization <https://ieeexplore.ieee.org/iel8/6287639/6514899/11006692.pdf>`_
+    | Daniele Padovano, Arturo Martinez-Rodrigo, Norbert Marwan, Santiago Mula, Jose J. Rieta, Raul Alcaraz
+    | *IEEE Access*
+
+* `BiEntropiGram: a novel time-frequency entropy map for rotating machines incipient fault diagnosis <https://link.springer.com/article/10.1007/s11071-025-11204-1>`_
+    | Emadaldin Sh Khoram-Nejad, Abdolreza Ohadi, Farshad Almasganj
+    | *Nonlinear Dynamics*
+
+* `Detecting infection-related mortality using dynamical statistical indicators of high-resolution activity time series <https://www.biorxiv.org/content/10.1101/2025.04.21.649753.full.pdf>`_
+    | Megan AM Kutzer, Shima Abdullateef, Alejandro V. Cano, Iris L. Soare-Nguyen, Katy Monteith, Javier Escudero, Vasilis Dakos, Pedro F. Vale
+    | *BioRxiv*
+
+* `Interbrain synchrony attenuation during a peer cooperative task in young children with autistic traits – an EEG hyperscanning study <https://www.sciencedirect.com/science/article/pii/S1053811925002204>`_
+    | I-Chun Chen, Hao-Che Hsu, Chia-Ling Chen, Meng-Han Chang, Chun-Shu Wei, Chun-Hsiang Chuang
+    | *NeuroImage*
+
+* `Personalized preictal EEG pattern characterization: do timing and localization matter? <https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2025.1526963/full>`_
+    | Galya Segal, Noam Keidar, Moshe Herskovitz, Yael Yaniv
+    | *Frontiers in Neuroscience*
+
+*  `Normalization and cross-entropy connectivity in brain disease classification <https://doi.org/10.1016/j.isci.2025.112226>`_
+    | Wu Haifeng, Shunliang Li, Yu Zeng
+    | *iScience*
+
+* `Vibroarthrographic Signal Classification for Knee Joint Disorder Detection using Tunable Q-factor Wavelet Transform based on Entropy Measures <https://etasr.com/index.php/ETASR/article/view/9245>`_
+    | Krishna Sundeep Basavaraju, T. Kishore Kumar, K. Ashoka Reddy
+    | Engineering, Technology & Applied Science Research
+   
+* `Non-Invasive Adverse Cardiac Risk Assessment Based on Electrocardiogram, Photoplethysmogram and Their Coupling Characteristics <https://ieeexplore.ieee.org/document/10958304>`_
+    | Dhaladhuli Jahnavi, Ashutosh Dash, KM Mandana, Nirmalya Ghosh, Amit Patra
+    | *IEEE 21st India Council International Conference (INDICON)*
+
 * `On generalized bidimensional ensemble permutation entropy <https://doi.org/10.1063/5.0253887>`_
     | M. Muñoz-Guillermo
     | *Chaos*
