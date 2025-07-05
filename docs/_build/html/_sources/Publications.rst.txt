@@ -113,7 +113,7 @@ List of research articles citing EntropyHub
     | Sakib Mahmud, Faycal Bensaali, Muhammad EH Chowdhury, Mahdi Houchati
     | *Building and Environment*
 
-* `Using a Composite Summary of Daily Sex Hormones to Gauge Time Until Menopause: A Focus on Pregnanediol Glucuronide (PDG) Get access Arrow <https://doi.org/10.1210/clinem/dgae895>`_
+* `Using a Composite Summary of Daily Sex Hormones to Gauge Time Until Menopause: A Focus on Pregnanediol Glucuronide (PDG) <https://doi.org/10.1210/clinem/dgae895>`_
     | JF Winkles, A Colvin, SR El Khoudary, N Santoro, M Sammel, S Crawford
     | *Journal of Clinical Endocrinology & Metabolism*
 
