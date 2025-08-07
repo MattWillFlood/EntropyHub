@@ -29,6 +29,14 @@ List of research articles citing EntropyHub
 2025
 ----
 
+* `Altered Entropy Modulation in Bipolar Disorder: EEG Entropy Measures During Steady-State Auditory Entrainment Exposure <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5357085>`_
+    | W Creel, GE DeChance, C Brenner, R Hartman
+    | *SSRN*
+
+* `Cognitive brain lateralization through neurovascular coupling in healthy subjects: A statistical complexity analysis <https://physoc.onlinelibrary.wiley.com/doi/10.14814/phy2.70492>`_
+    | H Rojas-Pescio, L Beishon, RB Panerai, M Chacón 
+    | *Physiological Reports*
+
 * `Capturing Bitcoin Market Dynamics: Assessing Advanced Permutation Entropy Metrics as Early-Warning Indicators <https://ceur-ws.org/Vol-3988/paper8.pdf>`_
     | AO Bielinskyi, VN Soloviev, AV Matviychuk, TL Kmytiuk
     | *8th International Workshop on Computer Modeling and Intelligent Systems*
