@@ -25,9 +25,72 @@ Publications
 List of research articles citing EntropyHub
 ###########################################
 
+2026
+----
+
+* `Parametrically perturbed logistic map - a new approach based on the least significant bits in the state variable’s representation <https://www.sciencedirect.com/science/article/abs/pii/S0020025525008734>`_
+    | Madhu Sharma
+    | *Information Sciences*
+
 
 2025
 ----
+
+* `How to Probe Dynamics of Brain Function: A Narrative Review <https://www.sciencedirect.com/science/article/abs/pii/S0006322325016725>`_
+    | H Pushkarskaya, S Krishnaswamy, C Pittenger
+    | *Biological Psychiatry*
+
+* `Early Warning Signs: Evaluating Permutation Entropy Metrics for Stock Market Crashes <https://link.springer.com/chapter/10.1007/978-3-031-97529-5_21>`_
+    | A Bielinskyi, V Soloviev, A Matviychuk, V Solovieva, T Kmytiuk, H Velykoivanenko
+    | *Systems Analysis and Data Mining*
+
+* `Dynamic topographies of intrinsic neural timescales: a key role for consciousness <https://doi.org/10.1016/j.compbiomed.2025.111102>`_
+    | A Buccellato, D Zang, Y Çatal, B Ventura, M Facca, Z Qi, P Bisiacchi, A Del Felice, X Wu, G Northoff 
+    | *Computers in Biology and Medicine*
+
+* `Permutation entropy-based quantification for joint effect of gestalt principles on grouping segments of cross-curves <https://www.tandfonline.com/doi/abs/10.1080/13658816.2025.2531186>`_
+    | Z Wu, Z Li, T Lan 
+    | *International Journal of Geographical Information Science*
+
+* `Measuring associations between hormonal entropy, the prevalence of vasomotor symptoms, and menstrual dynamics <https://journals.physiology.org/doi/full/10.1152/ajpendo.00083.2025>`_
+    | JF Winkles, N Santoro, MD Sammel, SR El Khoudary, A Colvin, S Crawford
+    | *American Journal of Physiology-Endocrinology and Metabolism*
+
+* `Temporal and Spectral Analysis of High-Resolution ECG Alterations in Chagas Disease <https://link.springer.com/chapter/10.1007/978-3-032-08206-0_16>`_
+    | KT Ruano-Bravo, P Passos-Avendaño, C Tobón, JP Ugarte 
+    | *Applied Computer Sciences in Engineering (Workshop on Engineering Applications)*
+
+* `An ancient evolutionary calculus for attention signaling retained in modern music <https://www.biorxiv.org/content/10.1101/2025.09.28.679029v3.abstract>`_
+    | GA Babbitt, EP Fokoue
+    | *BioRxiv*
+
+* `Exploration on Bubble Entropy <https://ieeexplore.ieee.org/abstract/document/11097881>`_
+    | G Manis, D Platakis, R Sassi
+    | *IEEE Journal of Biomedical and Health Informatics*
+
+* `Novel indicators for monitoring bearing condition using frequency-domain dictionary learning <https://link.springer.com/article/10.1007/s00170-025-16534-3>`_
+    | H Yun, C Doru Giurcaneanu, G Dobbie
+    | *International Journal of Advanced Manufacturing Technology*
+
+* `EEG entropy modulation as a biomarker of emotion regulation and resilience <https://www.sciencedirect.com/science/article/pii/S2667242125001721>`_
+    | W Tanner Creel, Richard Hartman
+    | *IBRO Neuroscience Reports*
+
+* `Real-Time Bearing Faults Diagnosis with ARIMA-based Denoising and Residual Attention <https://ieeexplore.ieee.org/abstract/document/11233769>`_
+    | W Ren Sia, MSRM Saufi, MF Isham, MS Leong, A Jamali
+    | *IEEE International Conference on Smart Instrumentation, Measurement and Applications (ICSIMA)*
+
+* `Entropy Knows You’re Low: Wearable Signal Coupling Patterns Reveal Glucose State <https://sciforum.net/manuscripts/26590/manuscript.pdf>`_
+    | S Khurshe, C Franca Carvalho, N Huyen Hoang 
+    | *Engineering Proceedings (MDPI)*
+
+* `Lzcomplexity: Entropy Measurement Library <https://revistacubanadefisica.org/index.php/rcf/article/view/31>`_
+    | E Aragon-Perez, E Estevez-Rams
+    | *Rev. Cubana Fis.*
+
+* `A robust encryption algorithm for DICOM image protection using a new chaotic map and O-shaped scanning <https://link.springer.com/article/10.1140/epjp/s13360-025-06707-0>`_
+    | M Demirtas, S Altunkaya
+    | *European Physical Journal Plus*
 
 * `Altered Entropy Modulation in Bipolar Disorder: EEG Entropy Measures During Steady-State Auditory Entrainment Exposure <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5357085>`_
     | W Creel, GE DeChance, C Brenner, R Hartman
