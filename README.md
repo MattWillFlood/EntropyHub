@@ -130,7 +130,7 @@ DOI: 10.1371/journal.pone.0259448
 __________________________________________________________________
 
 
-        © Copyright 2024 Matthew W. Flood, EntropyHub
+        © Copyright 2025 Matthew W. Flood, EntropyHub
         Licensed under the Apache License, Version 2.0 (the "License");
         you may not use this file except in compliance with the License.
         You may obtain a copy of the License at
